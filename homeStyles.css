@@ -109,6 +109,9 @@ h1{
 	height:120px;	
 	
 }
+#buttonNav img{
+height: 100px; width: 90px;
+}
 /* ============== MAIN CONTENT ====================*/
 #maincontent{
 height: 1000px;
