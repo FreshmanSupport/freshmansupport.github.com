@@ -43,11 +43,11 @@ background-color:#CCC;
 .searchButton{
 	text-indent: -99999px;
   display: inline-block;
-  width: 32px;
-  height: 28px;
+  width: 25px;
+  height: 22px;
   position: relative;
-  left: 785px;
-  top: -50px;
+  left: 787px;
+  top: -49px;
   background-color: white;
   background-image:url(images/triangle.png);
   border-width: 0px;
@@ -94,6 +94,9 @@ h1{
 /* =========== Nav Boxes =============== */
 #buttonNav{
 	height: 100px;
+	width: 964px;
+	margin-left: -2px;
+	margin-bottom: -1px;
 }
 #buttonNav ul{
 		list-style-type: none;
@@ -103,14 +106,17 @@ h1{
 	}
 	
 .box{
-	padding-top: 13px;
 	color:white; 
 	background-color:rgb(157, 154, 154);
-	height:120px;	
-	
 }
 #buttonNav img{
-height: 100px; width: 90px;
+ padding: 0px;
+ margin: 0px 0px 0px 10px;
+}
+table{
+	border: 0;
+}
+td{ width: 120px;
 }
 /* ============== MAIN CONTENT ====================*/
 #maincontent{
@@ -135,7 +141,7 @@ float: left;
 	width: 49.99%;
 }
 .col-1-8{
-	width: 12.5%;
+	width: 12%;
 }
 .grid:after {
 	content: "";
@@ -148,7 +154,7 @@ float: left;
 	box-sizing: border-box;
 }
 [class*='col-'] {
- padding-right: 10px;
+ padding-right: 2px;
 }
 [class*='col-']:last-of-type {
 	padding-right: 0;
