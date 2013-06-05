@@ -19,24 +19,25 @@
 	font-family: "franchise",serif;
 	color:rgb(51, 62, 106);
 	font-size:40px;
-	height: 83px;
+	height: 75px;
 	text-indent: 20px;
-	padding-top: 20px;
+	padding-top: 17px;
 }
 #headerContent{
 	margin-left:125px;
-	height: 200px;
+	height: 190px;
 	width: 836px;
 	}	
+	
 #loginBar{
 	width: 100;
-	height: 50px;
-background-color:#CCC;
+	height: 40px;
+background-color:rgb(157,154,154);
 }
 #loginBar button{
 	display:inline-block;
 	float:right;
-	margin-top: 10px;
+	margin-top: 5px;
 	margin-right: 5px;
 	}
 /* ========= Searching ====== */
@@ -50,15 +51,16 @@ background-color:#CCC;
 	font-family: georgia;
 	font-weight: bold;
 	font-size: 24px;
-	color:#CCC;
+	color:rgb(157,154,154);
 	height: 45px;
 	width: 815px;
-	border-color:#CCC;
+	border-color:rgb(157,154,154);
 	border-width: 2px;
 	border-radius: 5px;
 	display: block;
 	margin: auto;
 	padding-left: 10px;
+	
 	
 }
 
@@ -77,66 +79,43 @@ background-color:#CCC;
  
 }
 .searchBox::-webkit-input-placeholder { /* WebKit browsers */
-    color:#CCC;
+    color:rgb(157,154,154);
 }
 .searchBox:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:#CCC;
+    color:rgb(157,154,154);
 }
 .searchBox::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:#CCC;
+    color:rgb(157,154,154);
 }
 .searchBox:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color:#CCC;
+    color:rgb(157,154,154);
 }
-/* ========= College Site Search ============= */
-#collegeSiteSearch{
-	height: 100px;
-}
-#collegeSiteSearch form{
-float:right;
-margin-top: 25px;
-}
-.collegeSiteSearchSkin{
-width: 300px;
-text-align: right;
-}
-#magnify{
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  position: relative;
-  left: 122px;
-  top: 29px;
-  background-image:url(images/magnifyingglass.png);
-}
-h1{
-	margin:0;
-	padding:0;
-	padding-top: 20px;
-	padding-left: 5px;
-}
+
 
 /* ============ GRAPHIC TABLE============ */
 table{ 
 	display: table;
-	margin: auto;
-	border:2px;
-	border-color:  rgb(51, 62, 106);
-	
+	margin-left: auto;
+	margin-right: auto;
 }
 
-
-td{
-	
+table td{
+	line-height=50px;
+	margin-top:0px;
 	text-align:center;
+	padding-left:30px;
+	padding-right:30px;
+	
 }
+
+
 
 .tableText{
 	font-family:"franchise",serif;
-	font-size:36px;
+	font-size:32px;
 	text-align:center;
 	color:rgb(51, 62, 106);
-
+	line-height: 5%;
 }
 
 
@@ -144,7 +123,14 @@ td{
 .icon{
 	margin: auto;
 	padding: 0px;
-	display: block;
+}
+
+.icon2{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+	padding-top:0px;
+	
 }
 
 /* ============== MAIN CONTENT ====================*/
