@@ -3,9 +3,10 @@
 #header{color:white; width:960px;text-align:left:}
 #logo{
 	background-image: url(images/logobanner.png);
-	height: 174px;
-	width: 124px;
+	width:120px;
+	height: 168px;
 	position:absolute;
+	margin-left: 2px;
 	}
 #headerContent{
 	margin-left:125px;
@@ -23,7 +24,31 @@ background-color:#CCC;
 	margin-top: 10px;
 	margin-right: 5px;
 	}
-/* ========= Searching ====== */
+/* ======== ICON ID ======== */
+#home{}
+#homeSelected{ background-image:url(images/collegeImage/homeSelected.png);}
+
+#housing{}
+#housingSelected{}
+
+#roommate{}
+#roommateSelected{background-image:url(images/collegeImage/roommateMatchingLandinggrey.png); width: 100px; height: 100px;}
+
+#financial{}
+#financialSelected{background-image:url(images/collegeImage/financeLandinggrey.png);}
+
+#admission{}
+#admissionSelected{background-image:url(images/collegeImage/admissionsLandinggrey.png);}
+
+#realLife
+#realLifeSelected{background-image:url(images/collegeImage/theRealLifeLandinggrey.png);}
+
+#visit{}
+#visitSelected{background-image:url(images/collegeImage/visitLandinggrey.png);}
+
+#deadline{}
+#deadlineSelected{background-image:url(images/collegeImage/visitLandinggrey.png);}
+/* ======== SEARCHING ====== */
 #collegeSearch
 {
 	background-color:rgb(255,255,255);
@@ -79,7 +104,7 @@ text-align: right;
 #magnify{
   display: inline-block;
   width: 16px;
-  height: 16px;
+  height: 15px;
   position: relative;
   left: 122px;
   top: 29px;
@@ -106,12 +131,17 @@ h1{
 	}
 	
 .box{
+	width:118px;
+	height: 97px;
 	color:white; 
-	background-color:rgb(157, 154, 154);
+	/*background-color:rgb(157, 154, 154);*/
+	background-color:white;
+	z-index: -2;
 }
 #buttonNav img{
  padding: 0px;
- margin: 0px 0px 0px 10px;
+ display:block;
+ margin: 0 auto;
 }
 table{
 	border: 0;
@@ -123,6 +153,7 @@ td{ width: 120px;
 height: 1000px;
 background: white;
 }
+/* ===== HOME SLIDER ===== */
 
 /* ============== COLUMN CLASS ===================*/
 
