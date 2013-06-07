@@ -1,11 +1,53 @@
 
-/* =============== HEADER =========================*/
+@font-face {
+font-family: 'franchise';
+src: url('fonts/franchisekit/franchise-webfont.eot') format('eot');
+src: url('fonts/franchisekit/franchise-webfont.eot?#iefix') format('embedded-opentype'),
+url('fonts/franchisekit/franchise-webfont.woff') format('woff'),
+url('fonts/franchisekit/franchise-webfont.ttf') format('truetype'),
+url('fonts/franchisekit/franchise-webfont.svg') format('svg');
+font-weight: normal;
+font-style:normal;
+} 
 
-@font-face{
-	font-family:"franchise";
-	src: url("fonts/franchise.ttf");
 
+
+#panel {
+    height: 200px;
+    width: 950px;
 }
+
+
+
+#panel li {
+    width: 175px;
+    height: 230px;
+	float: left;
+	position: relative;
+	color:white;
+}
+
+#panel li div {
+    width: 175px;
+    height: 220px;
+    overflow: hidden;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#panel li div.back {
+    left: -999em;
+    background: rgb(157,154,154);
+	color: rgb(51, 62, 106);
+	
+}
+
+
+
+
+/* =============== HEADER =========================*/
 #header{color:white; width:960px;text-align:left:}
 #logo{
 	background-image: url(images/logobanner.png);
@@ -19,9 +61,9 @@
 	font-family: "franchise",serif;
 	color:rgb(51, 62, 106);
 	font-size:40px;
-	height: 75px;
+	height: 85px;
 	text-indent: 20px;
-	padding-top: 17px;
+	padding-top: 21px;
 }
 #headerContent{
 	margin-left:125px;
@@ -108,16 +150,13 @@ table td{
 	
 }
 
-
-
 .tableText{
 	font-family:"franchise",serif;
-	font-size:32px;
+	font-size:28px;
 	text-align:center;
 	color:rgb(51, 62, 106);
 	line-height: 5%;
 }
-
 
 
 .icon{

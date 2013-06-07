@@ -1,9 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <link type="text/css" rel="stylesheet" href="landingStyle.css"/>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
 
 
@@ -28,53 +31,17 @@ $(document).ready(function () {
     
     $('#panel li').hover(
         function () {
-            $(this).find('div').stop().rotate3Di('flip', 100, {direction: 'clockwise', sideChange: mySideChange});
+            $(this).find('div').stop().rotate3Di('flip', 250, {direction: 'clockwise', sideChange: mySideChange});
         },
         function () {
-            $(this).find('div').stop().rotate3Di('unflip', 250, {sideChange: mySideChange});
+            $(this).find('div').stop().rotate3Di('unflip', 500, {sideChange: mySideChange});
         }
     );
 });
 </script>
 
-
-
-
-
-
-<title>Freshman Support</title>
 </head>
-
 <body>
-<div id="bodyWrapper" class="wrapper">
-  
-  
-  <div id="header">
-    <div id="logo"></div>
-    <div id="headerContent">
-      <div id="loginBar">
-        <button class='loginButtonSkin'>Register</button>
-        <button class='loginButtonSkin'>Login</button>
-      </div>
-    
-    	<div id="title">
-    		Freshman Support
-   	 	</div>
-    </div>
-    
-  </div>
-  
-  
-    <div id="collegeSearch">
-      <form id="searchbox" action="">
-        <input id="submit" type="submit" value="Search" name="submit"class="searchButton">
-        <input id="search" type="text" name="collegeSearch" placeholder="Choose a School" class="searchBox" />
-      </form>
-    </div>
-  
-  <div id="maincontent">
-	
-
 
   <u1 id="panel">
 
@@ -86,7 +53,7 @@ $(document).ready(function () {
   <li>
   <div class="front">
   
-  <p class="tableText"><img src=images/compareDormLanding.png height=120 class="icon"/></p>
+  <p class="tableText"><img src=images/compareDormLanding.png height=130 class="icon"/></p>
     <p class="tableText">Housing</p>
     </div>
     
@@ -103,7 +70,7 @@ $(document).ready(function () {
   <li>
 <div class="front">
   
-  <p class="tableText"><img src=images/roommateMatchingLanding.png class="icon" height=120 /></p>
+  <p class="tableText"><img src=images/roommateMatchingLanding.png class="icon" height=130 /></p>
   <p class="tableText">Roommates</p>
  </div>
  <div class="back">content
@@ -117,7 +84,7 @@ $(document).ready(function () {
   <td width=25%>
    <li>
  <div class="front">
- <p class="tableText"><img src=images/admissionsLanding.png height=120 class="icon" /></p>
+ <p class="tableText"><img src=images/admissionsLanding.png height=130 class="icon" /></p>
     <p class="tableText">Admissions</p>
     </div>
     <div class="back">content
@@ -130,7 +97,7 @@ $(document).ready(function () {
   <td width=25%>
   <li><div class="front">
   
-  <p class="tableText"><img src=images/financeLanding.png height=120 class="icon"/></p>
+  <p class="tableText"><img src=images/financeLanding.png height=130 class="icon"/></p>
     <p class="tableText">Finance</p>
     </div>
     <div class="back">content
@@ -144,7 +111,7 @@ $(document).ready(function () {
     <tr>
   <td>
   <li><div class="front">
-  <p class="tableText"><img class="icon2" src=images/theRealLifeLanding.png height=120  /></p>
+  <p class="tableText"><img class="icon2" src=images/theRealLifeLanding.png height=130  /></p>
     <p class="tableText">The Real Life</p>
     </div>
     <div class="back">content
@@ -157,7 +124,7 @@ $(document).ready(function () {
   <td>
   <li><div class="front">
   
-  <p class="tableText"><img src=images/visitLanding.png height=120 class="icon2" /></p>
+  <p class="tableText"><img src=images/visitLanding.png height=130 class="icon2" /></p>
     <p class="tableText">Visit</p>
     
     </div>
@@ -172,7 +139,7 @@ $(document).ready(function () {
   <li>
   <div class="front">
   
-  <p class="tableText"><img src=images/deadlineLanding.png height=120 class="icon2"/></p>
+  <p class="tableText"><img src=images/deadlineLanding.png height=130 class="icon2"/></p>
     <p class="tableText">Deadlines</p>
     </div>
     <div class="back"> content
@@ -187,7 +154,7 @@ $(document).ready(function () {
   <li>
   <div class="front">
   
-  <p class="tableText"><img src=images/scholarshipLanding.png height=120 class="icon2"/></p>
+  <p class="tableText"><img src=images/scholarshipLanding.png height=130 class="icon2"/></p>
     <p class="tableText">Scholarships </p>
     </div>
     <div class="back">content
@@ -196,14 +163,10 @@ $(document).ready(function () {
     
     </td>
   </tr>
-	
+	</u1>
   </table>
 
 
 
-
-  
-  </div>
-</div>
 </body>
 </html>
