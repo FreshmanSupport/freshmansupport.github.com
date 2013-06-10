@@ -27,8 +27,15 @@ img, object, embed, video {
 }
 
 
+html, body{
+	height:100%;
+	width:100%;
+	margin:0px;
+}
+
 body{
 	background-color:rgb(51, 62, 106);
+	
 }
 
 table{
@@ -89,8 +96,8 @@ table{
 }
 
 .schoolPic{
-	width=98%;
 	margin-top:5px;
+	height:30%;
 }
 
 .content{
@@ -123,14 +130,16 @@ a:hover {color:white};
 	background-color:rgb(255,255,255);
 	height:30px;
 	overflow:hidden;
+	color: rgb(51, 62, 106);
+
 }
 .searchWrapper{
 	background-color:white;
 	width:99%;
 	margin-right:auto;
 	margin-left:auto;
-	padding-top:2px;
-	padding-bottom:2px;
+	padding-top:3px;
+	padding-bottom:3px;
 	
 	
 }
@@ -175,7 +184,6 @@ a:hover {color:white};
 	margin-left: auto;
 	margin-right: auto;
 	width: 87.36%;
-	width:100%;
 	padding-left: 1.82%;
 	padding-right: 1.82%;
 }
@@ -214,6 +222,7 @@ a:hover {color:white};
 	padding-right: 0.9%;
 	margin: auto;
 	background-color:rgb(51, 62, 106);
+	height:100%;
 }
 #LayoutDiv1 {
 	clear: both;
