@@ -95,7 +95,7 @@ table{
 
 .schoolPic{
 	margin-top:5px;
-	height:33%;
+	height:25%;
 }
 
 .content{
@@ -195,6 +195,11 @@ a:hover {color:white};
 	width: 100%;
 	display: block;
 }
+
+/*portrait vs landscape*/
+@media screen and (orientation:portrait) { … }
+@media screen and (orientation:landscape) { … }
+
 
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
