@@ -94,20 +94,21 @@ table{
 
 .schoolPic{
 	margin-top:5px;
-	height:25%;
+	height:30%;
 }
 
 .content{
+	background-color:white;
 	margin-top:8px;
 	margin-bottom:8px;
-	background-color:white;
 	width:98%;
-	height:20%;
+	height:175px;
 	margin-left:auto;
 	margin-right:auto;
 	border:none;
-	
+	color:rgb(155,155,155);
 }
+
 
 #bottomNav{
 	margin:auto;
