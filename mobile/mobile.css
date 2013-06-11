@@ -33,7 +33,7 @@ html, body{
 
 body{
 	background-color:rgb(51, 62, 106);
-	
+	position:relative;
 }
 
 table{
@@ -43,7 +43,7 @@ table{
 
 #fitToScreen{
 	position:absolute;
-	top:0; bottom:0; right:auto; left:auto;
+	top:0; bottom:0; 
 }
 
 .loginBar{
@@ -63,7 +63,7 @@ table{
 	padding-top:0px;
 	padding-right:8px;
 }
-
+/*
 .pageButton{
 	width:100%;
 	height:50%;
@@ -91,7 +91,7 @@ table{
 	margin-right:auto;
 	padding-top:5px;
 
-}
+}*/
 /*
 .schoolPic{
 	margin-top:5px;
@@ -201,11 +201,21 @@ a:hover {color:white};
 
 /*portrait vs landscape*/
 @media screen and (orientation:portrait) { 
+.headerWrap{
+}
+
+.header{
+}
+
+
+
 .schoolPic{
 	margin-top:5px;
 	height:25%;
 	width:100%;
 }
+
+
 
 .content{
 	background-color:white;
@@ -220,12 +230,38 @@ a:hover {color:white};
 }
 
 #bottomNav{
-	margin:auto;
-	margin-bottom:2px;
-	float: left;
-
+	position:absolute;
+	bottom:0px;
 }
 
+.pageButton{
+	width:100%;
+	height:50%;
+	background-color:white;
+	text-align:center;
+	color:rgb(157,154,154);
+	font-family:franchise;
+	font-size:16px;
+}
+
+
+.button{
+	width:100%;
+	background-color:rgb(157,154,154);
+	text-align:center;
+	color:white;
+	font-family:franchise;
+	font-size:16px;
+	}
+	
+.buttonPic{
+	width:80%;
+	background-color:inherit;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:5px;
+	
+}
 
 }
 @media screen and (orientation:landscape) {
@@ -248,7 +284,35 @@ a:hover {color:white};
 }
 
 #bottomNav{
-	float:left;
+
+}
+
+.pageButton{
+	width:100%;
+	height:50%;
+	background-color:white;
+	text-align:center;
+	color:rgb(157,154,154);
+	font-family:franchise;
+	font-size:16px;
+}
+
+
+.button{
+	width:100%;
+	background-color:rgb(157,154,154);
+	text-align:center;
+	color:white;
+	font-family:franchise;
+	font-size:16px;
+	}
+	
+.buttonPic{
+	width:80%;
+	background-color:inherit;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:5px;
 
 }
 
@@ -259,11 +323,11 @@ a:hover {color:white};
 
 @media only screen and (min-width: 481px) {
 .gridContainer {
-	/*width: 90.675%;*/
+	width: 90.675%;
 	height:100%;
-	width:100%;
 	padding-left: 1.1625%;
 	padding-right: 1.1625%;
+	position:relative;
 }
 #LayoutDiv1 {
 	clear: both;
@@ -278,10 +342,9 @@ a:hover {color:white};
 
 @media only screen and (min-width: 769px) {
 .gridContainer {
-	/*width: 88.2%;*/
+	width: 88.2%;
 	
 	height:100%;
-	width:100%;
 	max-width: 1232px;
 	padding-left: 0.9%;
 	padding-right: 0.9%;
