@@ -201,13 +201,18 @@ a:hover {color:white};
 .schoolPic{
 	margin-top:5px;
 	height:25%;
+	width:100%;
 }
+
 }
 @media screen and (orientation:landscape) {
 	.schoolPic{
 	margin-top:5px;
-	height:40%;
+	height:70%;
+	width:100%;
 }
+
+
 	}
 
 
