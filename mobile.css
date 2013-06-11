@@ -111,13 +111,14 @@ table{
 	color:rgb(155,155,155);
 }
 */
+/*
 
 #bottomNav{
 	margin:auto;
 	margin-bottom:2px;
 	
 
-}
+}*/
 
 a:link {color:white; text-decoratoin:none}
 a:visited {color:white; text-decoration:none}
@@ -218,6 +219,14 @@ a:hover {color:white};
 	color:rgb(155,155,155);
 }
 
+#bottomNav{
+	margin:auto;
+	margin-bottom:2px;
+	float: left;
+
+}
+
+
 }
 @media screen and (orientation:landscape) {
 	.schoolPic{
@@ -238,7 +247,10 @@ a:hover {color:white};
 	color:rgb(155,155,155);
 }
 
+#bottomNav{
+	float:left;
 
+}
 
 	}
 
@@ -267,6 +279,7 @@ a:hover {color:white};
 @media only screen and (min-width: 769px) {
 .gridContainer {
 	/*width: 88.2%;*/
+	
 	height:100%;
 	width:100%;
 	max-width: 1232px;
