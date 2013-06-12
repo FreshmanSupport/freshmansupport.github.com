@@ -32,7 +32,7 @@ html, body{
 }
 
 body{
-	background-color:rgb(51, 62, 106);
+	background-color:white;
 	position:relative;
 	
 }
@@ -48,19 +48,19 @@ table{
 }
 
 .loginBar{
-	background-color:rgb(157,154,154);
+	background-color:rgb(51, 62, 106);
 	border-color: rgb(51, 62, 106);
 	border:medium;
 	color:white;
 	text-align:right;
 	width:100%;
-	height:20px;
+	height:40px;
 	font-family:franchise;
-	font-size:16px;
+	font-size:20px;
 }
 
 .login{
-	padding-top:0px;
+	padding-top:9px;
 	padding-right:5px;
 }
 
@@ -205,19 +205,25 @@ a:hover {color:white};
 
 /*portrait vs landscape*/
 @media screen and (orientation:portrait) { 
-#headerWrap { background:rgb(51,62,106); height:auto; left:0; position:fixed; top:0; padding-bottom:5px; width:100%;}
+
+#landscapeHeaderWrap {display:none;}
+#landscapeHeader{ display:none;}
+
+
+
+#headerWrap { background:inherit; height:auto; left:0; position:fixed; top:0; padding-bottom:5px; width:100%;}
 #header{ margin:0 auto; width:100%; text-align:center; border:1px;}
 
 
 
-#scrollingContainer { width:95%; background-color:white;   overflow:hidden; padding-bottom:32%; margin-left:3%; position:inherit;}
+#scrollingContainer { left:0px; width:100%; background-color:white; overflow:hidden; padding-bottom:32%; }
 
 #content{
 
 }
 
 
-#footerWrap{ background:rgb(51,62,106); bottom:0px; padding-top:5px; left:0; position:fixed;  width:100%; }
+#footerWrap{ background:inherit; bottom:0px; padding-top:5px; left:0; position:fixed;  width:100%; }
 #footer {margin:0 auto; width:inherit; text-align:center;   }
 
 
@@ -259,12 +265,11 @@ a:hover {color:white};
 	color:white;
 	font-family:franchise;
 	font-size:16px;
-	height:auto;
 	}
 	
 .buttonPic{
 	width:80%;
-	height:auto;
+	height:80%;
 	background-color:inherit;
 	margin-left:auto;
 	margin-right:auto;
@@ -274,6 +279,18 @@ a:hover {color:white};
 
 }
 @media screen and (orientation:landscape) {
+
+#footerWrap{ display:none; }
+#footer {display:none;  }
+
+#headerWrap { display:none;}
+#header{display:none;}
+
+
+#landscapeHeaderWrap { background:inherit; height:auto; left:0; position:fixed; top:0; padding-bottom:5px; width:100%;}
+#landscapeHeader{ margin:0 auto; width:100%; text-align:center; border:1px;}
+
+
 	.schoolPic{
 	margin-top:5px;
 	height:70%;
