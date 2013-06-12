@@ -27,9 +27,7 @@ img, object, embed, video {
 }
 
 
-html, body{
-	height:100%;
-}
+
 
 body{
 	background-color:rgb(51, 62, 106);
@@ -38,8 +36,8 @@ body{
 }
 
 table{
-	margin-bottom:5px;
-	boder:none;
+	margin-bottom: 0px;
+	boder: none;
 }
 
 #fitToScreen{
@@ -142,6 +140,8 @@ a:hover {color:white};
 	width:99%;
 	margin-right:auto;
 	margin-left:auto;
+	margin-top:5px;
+	margin-bottom:5px;
 	padding-top:3px;
 	padding-bottom:3px;
 	
@@ -215,8 +215,10 @@ a:hover {color:white};
 }
 
 
-#footerWrap{ background:rgb(51,62,106);  bottom:0px; left:0; position:fixed; padding-top:5px; width:100%; }
-#footer {margin:0 auto; width:100%; text-align:center;}
+#footerWrap{ background:rgb(51,62,106); bottom:0px; padding-top:5px; left:0; position:fixed;  width:100%; }
+#footer {margin:0 auto; width:inherit; text-align:center;   }
+
+
 
 .schoolPic{
 	margin-top:5px;
@@ -303,12 +305,13 @@ a:hover {color:white};
 
 
 .button{
-	width:100%;
-	background-color:rgb(157,154,154);
-	text-align:center;
-	color:white;
-	font-family:franchise;
-	font-size:16px;
+	width: 100%;
+	background-color: rgb(157,154,154);
+	text-align: center;
+	color: white;
+	font-family: franchise;
+	font-size: 16px;
+	bottom: 0px;
 	}
 	
 .buttonPic{
@@ -360,7 +363,7 @@ a:hover {color:white};
 #LayoutDiv1 {
 	clear: both;
 	float: left;
-	margin-left: 0;
+	margin-left: 0px;
 	width: 100%;
 	display: block;
 }
