@@ -51,9 +51,10 @@ font-style:normal;
 #header{color:white; width:960px;text-align:left:}
 #logo{
 	background-image: url(images/logobanner.png);
-	height: 174px;
-	width: 124px;
+	width:120px;
+	height: 168px;
 	position:absolute;
+	margin-left: 2px;
 	}
 
 #title{
