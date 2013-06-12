@@ -27,7 +27,9 @@ img, object, embed, video {
 }
 
 
-
+html, body{
+	height:100%;
+}
 
 body{
 	background-color:rgb(51, 62, 106);
