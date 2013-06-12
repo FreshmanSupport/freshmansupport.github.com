@@ -63,6 +63,8 @@ table{
 	padding-top:0px;
 	padding-right:5px;
 }
+
+
 /*
 .pageButton{
 	width:100%;
@@ -201,19 +203,19 @@ a:hover {color:white};
 
 /*portrait vs landscape*/
 @media screen and (orientation:portrait) { 
-#headerWrap { background:rgb(51,62,106); height:29%; left:0; position:fixed; top:0; }
+#headerWrap { background:rgb(51,62,106); height:auto; left:0; position:fixed; top:0; padding-bottom:5px; }
 #header{ margin:0 auto; width:100%; text-align:center; border:1px;}
 
 
 
-#scrollingContainer { background-color:white;   overflow:hidden; width:100%; padding-bottom:30%; margin-left:0;}
+#scrollingContainer { width:95%; background-color:white;   overflow:hidden; padding-bottom:32%; margin-left:3%; overflow-x:hidden;}
 
 #content{
 
 }
 
 
-#footerWrap{ background:rgb(51,62,106);  bottom:0; left:0; position:fixed; }
+#footerWrap{ background:rgb(51,62,106);  bottom:0; left:0; position:fixed; padding-top:5px; height:auto;}
 #footer { line-height:60px; margin:0 auto; width:100%; text-align:center; }
 
 .schoolPic{
@@ -236,12 +238,14 @@ a:hover {color:white};
 	color:rgb(155,155,155);
 }
 
+/*button for current page */
 .pageButton{
 	background-color:white;
 	text-align:center;
 	color:rgb(157,154,154);
 	font-family:franchise;
 	font-size:16px;
+	height:auto;
 }
 
 
@@ -251,10 +255,12 @@ a:hover {color:white};
 	color:white;
 	font-family:franchise;
 	font-size:16px;
+	height:auto;
 	}
 	
 .buttonPic{
 	width:80%;
+	height:auto;
 	background-color:inherit;
 	margin-left:auto;
 	margin-right:auto;
@@ -320,6 +326,7 @@ a:hover {color:white};
 
 @media only screen and (min-width: 481px) {
 .gridContainer {
+	width:100%;
 	width: 90.675%;
 	height:100%;
 	padding-left: 1.1625%;
