@@ -304,6 +304,10 @@ a:hover {color:white};
 #landscapeHeader{ margin:0 auto; width:100%; text-align:center; border:1px;}
 */
 
+table{
+	cellpadding:1%;
+}
+
 	.schoolPic{
 	margin-top:5px;
 	height:70%;
@@ -329,7 +333,7 @@ a:hover {color:white};
 	width:100%;
 	background-color:(232,229,228);
 	text-align:center;
-	color:rgb(157,154,154);
+	color:rgb(155,155,155);
 	font-family:franchise;
 	font-size:16px;
 }
@@ -339,15 +343,15 @@ a:hover {color:white};
 	width: 100%;
 	background-color: rgb(232,229,228);
 	text-align: center;
-	color: white;
+	color: rgb(155,155,155);
 	font-family: franchise;
 	font-size: 16px;
 	bottom: 0px;
 	}
 	
 .buttonPic{
-	height:80%;
-	background-color:inherit;
+	height:70%;
+	background-color:rgb(232,229,228);
 	margin-left:auto;
 	margin-right:auto;
 	padding-top:2%;
