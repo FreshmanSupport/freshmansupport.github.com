@@ -241,3 +241,12 @@ background-color:rgb(51, 62, 106);
         position:relative;
         top:1px;
     }
+
+/* ======================== EXPERIMENTAL STUFF ======================= */
+body{
+	width: 100%;
+	background-color: blue;
+}
+#container{
+	width: 90%;
+}
