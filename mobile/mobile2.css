@@ -287,7 +287,7 @@ a:hover {color:white};
 #header{display:none;}
 
 
-#landscapeHeaderWrap { background:inherit; height:auto; left:0; position:fixed; top:0; padding-bottom:5px; width:100%;}
+#landscapeHeaderWrap { background:inherit; height:auto; left:0; display:block; top:0; padding-bottom:5px; width:100%;}
 #landscapeHeader{ margin:0 auto; width:100%; text-align:center; border:1px;}
 
 
