@@ -29,6 +29,7 @@ img, object, embed, video {
 
 html, body{
 	height:100%;
+	font-size:100%;
 }
 
 body{
@@ -68,12 +69,12 @@ table td{
 	width:97%;
 	height:35px;
 	font-family:navigationFont;
-	font-size:18px;
+	font-size:20px;
 	margin:auto;
 }
 
 .login{
-	padding-top:6px;
+	padding-top:7px;
 	padding-right:5px;
 }
 
@@ -207,29 +208,28 @@ td{width:25%;}
 
 /*button for current page */
 .pageButton{
-	height:100%;
+	width:100%;
 	background-color:rgb(230,229,227);
 	text-align:center;
 	color:rgb(51, 62, 106);
 	font-family:navigationFont;
-	font-size:16px;
+	font-size:1em;
 	margin:auto;
 }
 
 
 .button{
-	height:100%;
 	width:100%;
 	background-color:rgb(230,229,227);
 	text-align:center;
 	color:rgb(119,117,117);
 	font-family:navigationFont;
-	font-size:16px;
+	font-size:1em;
 	margin:auto;
 	}
 	
 .buttonPic{
-	width:80%;
+	width:60%;
 	background-color:(230,229,227);
 	margin:auto;
 	padding-top:2%;
@@ -291,7 +291,7 @@ td{width:25%;}
 	text-align:center;
 	color:rgb(51, 62, 106);
 	font-family:navigationFont;
-	font-size:16px;
+	font-size:1em;
 	margin:auto;
 }
 
@@ -303,7 +303,7 @@ td{width:25%;}
 	text-align:center;
 	color:rgb(119,117,117);
 	font-family:navigationFont;
-	font-size:16px;
+	font-size:1em;
 	margin:auto;
 	}
 	
