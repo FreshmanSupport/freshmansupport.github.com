@@ -65,10 +65,11 @@ table td{
 	border:medium;
 	color:white;
 	text-align:right;
-	width:100%;
+	width:97%;
 	height:40px;
 	font-family:navigationFont;
 	font-size:20px;
+	margin:auto;
 }
 
 .login{
@@ -94,7 +95,7 @@ table td{
 }
 .searchWrapper{
 	background-color:white;
-	width:99%;
+	width:97%;
 	margin-right:auto;
 	margin-left:auto;
 	margin-top:5px;
@@ -110,7 +111,7 @@ table td{
 	font-size: 12px;
 	color: rgb(51, 62, 106);
 	height: 30px;
-	width: 95%;
+	width: 98%;
 	border-style:solid;
 	border-color:rgb(51, 62, 106);
 	border-width: 2px;
@@ -173,7 +174,7 @@ td{width:25%;}
 
 
 
-#scrollingContainer { margin-left:0px; padding-top:50%; width:100%; background-color:white; overflow:hidden; padding-bottom:32%; }
+#scrollingContainer { margin:auto; padding-top:50%; width:97%; background-color:white; overflow:hidden; padding-bottom:32%; }
 
 
 
