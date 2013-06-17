@@ -66,14 +66,14 @@ table td{
 	color:white;
 	text-align:right;
 	width:97%;
-	height:30px;
+	height:35px;
 	font-family:navigationFont;
 	font-size:18px;
 	margin:auto;
 }
 
 .login{
-	padding-top:4px;
+	padding-top:6px;
 	padding-right:5px;
 }
 
@@ -111,7 +111,7 @@ table td{
 	font-weight: bold;
 	font-size: 12px;
 	color: rgb(51, 62, 106);
-	height: 25px;
+	height: 30px;
 	width: 95%;
 	border-style:solid;
 	border-color:rgb(51, 62, 106);
