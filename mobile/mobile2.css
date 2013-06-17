@@ -77,67 +77,10 @@ table td{
 }
 
 
-/*
-.pageButton{
-	width:100%;
-	height:50%;
-	background-color:white;
-	text-align:center;
-	color:rgb(157,154,154);
-	font-family:franchise;
-	font-size:16px;
-}
-
-
-.button{
-	width:100%;
-	background-color:rgb(157,154,154);
-	text-align:center;
-	color:white;
-	font-family:franchise;
-	font-size:16px;
-	}
-	
-.buttonPic{
-	width:80%;
-	background-color:inherit;
-	margin-left:auto;
-	margin-right:auto;
-	padding-top:5px;
-
-}*/
-/*
-.schoolPic{
-	margin-top:5px;
-	height:20%;
-}*/
-/*
-
-.content{
-	background-color:white;
-	margin-top:8px;
-	margin-bottom:8px;
-	width:98%;
-	height:165px;
-	margin-left:auto;
-	margin-right:auto;
-	border:none;
-	color:rgb(155,155,155);
-}
-*/
-/*
-
-#bottomNav{
-	margin:auto;
-	margin-bottom:2px;
-	
-
-}*/
-
-a:link {color:white; text-decoratoin:none}
-a:visited {color:white; text-decoration:none}
-a:active {color:white};
-a:hover {color:white};
+.loginBar a:link {color:white; text-decoratoin:none}
+.loginBar a:visited {color:white; text-decoration:none}
+.loginBar a:active {color:white};
+.loginBar a:hover {color:white};
 
 
 /* ========= Searching ====== */
@@ -218,6 +161,8 @@ a:hover {color:white};
 
 @media screen and (max-height:400px) and (max-width:600px){
 	
+td{width:25%;}
+	
 #landscapeHeaderWrap {display:none;}
 #landscapeHeader{ display:none;}
 
@@ -294,6 +239,8 @@ a:hover {color:white};
 
 /*portrait vs landscape*/
 @media screen and (max-width: 600px) { 
+td{width:25%;}
+
 
 #landscapeHeaderWrap {display:none;}
 #landscapeHeader{ display:none;}
@@ -368,6 +315,8 @@ a:hover {color:white};
 
 }
 @media screen and (min-width:600px) {
+
+td {width:12.5%};
 
 #footerWrap{ display:none; }
 #footer {display:none;  }
