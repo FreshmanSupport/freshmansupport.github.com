@@ -216,7 +216,7 @@ a:hover {color:white};
 
 /*hide bottom buttons when keyboard is up */
 
-@media screen and (max-height:500px){
+@media screen and (max-height:400px) and (max-width:600px){
 	
 #landscapeHeaderWrap {display:none;}
 #landscapeHeader{ display:none;}
