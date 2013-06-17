@@ -66,14 +66,14 @@ table td{
 	color:white;
 	text-align:right;
 	width:97%;
-	height:40px;
+	height:30px;
 	font-family:navigationFont;
-	font-size:20px;
+	font-size:18px;
 	margin:auto;
 }
 
 .login{
-	padding-top:9px;
+	padding-top:4px;
 	padding-right:5px;
 }
 
@@ -88,20 +88,21 @@ table td{
 #collegeSearch
 {
 	background-color:rgb(255,255,255);
-	height:30px;
+	height:25px;
+	margin:auto;
 	overflow:hidden;
 	color: rgb(51, 62, 106);
 
 }
 .searchWrapper{
 	background-color:white;
-	width:97%;
+	width:100%;
 	margin-right:auto;
 	margin-left:auto;
-	margin-top:5px;
-	margin-bottom:5px;
-	padding-top:3px;
-	padding-bottom:3px;
+	margin-top:3px;
+	margin-bottom:3px;
+	padding-top:2px;
+	padding-bottom:2px;
 	
 	
 }
@@ -110,8 +111,8 @@ table td{
 	font-weight: bold;
 	font-size: 12px;
 	color: rgb(51, 62, 106);
-	height: 30px;
-	width: 98%;
+	height: 25px;
+	width: 95%;
 	border-style:solid;
 	border-color:rgb(51, 62, 106);
 	border-width: 2px;
@@ -119,7 +120,8 @@ table td{
 	margin-right: auto;
 	margin-left:auto;
 	margin-top:0px;
-	padding-left:7px;
+	padding-left:2px;
+
 	display:block;
 }
 
@@ -174,7 +176,7 @@ td{width:25%;}
 
 
 
-#scrollingContainer { margin:auto; padding-top:50%; width:97%; background-color:white; overflow:hidden; padding-bottom:32%; }
+#scrollingContainer { margin:auto; padding-top:40%; width:97%; background-color:white; overflow:hidden; padding-bottom:32%; }
 
 
 
