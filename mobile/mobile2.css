@@ -251,7 +251,7 @@ td{width:25%;}
 
 
 
-#scrollingContainer { margin-left:0px; padding-top:37%; min-height:500px; width:100%; background-color:rgb(51,62,106); overflow:hidden; padding-bottom:20%; }
+#scrollingContainer { margin-left:0px; margin-top:-7px; padding-top:37%; min-height:500px; width:100%; background-color:rgb(51,62,106); overflow:hidden; padding-bottom:20%; }
 
 
 
@@ -328,8 +328,7 @@ td {width:12.5%; height:auto;}
 #landscapeHeader{ margin:0 auto; width:100%; text-align:center; border:1px;}
 
 
-
-#scrollingContainer {margin-top:-3px; padding-top:0px; min-height:500px; width:100%; background-color:rgb(51,62,106); overflow:hidden; }
+#scrollingContainer {margin-top:-5px; padding-top:0px; min-height:500px; width:100%; background-color:rgb(51,62,106); overflow:hidden; }
 
 
 
