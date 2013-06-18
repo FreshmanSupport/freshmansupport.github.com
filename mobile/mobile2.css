@@ -282,6 +282,7 @@ td{width:25%;}
 /*button for current page */
 .pageButton{
 	height:100%;
+	width:100%;
 	background-color:rgb(230,229,227);
 	text-align:center;
 	color:rgb(51, 62, 106);
@@ -314,7 +315,7 @@ td{width:25%;}
 }
 @media screen and (min-width:600px) {
 
-td {width:12.5%; height:100%;}
+td {width:12.5%; height:auto;}
 
 #footerWrap{ display:none; }
 #footer {display:none;  }
@@ -323,7 +324,7 @@ td {width:12.5%; height:100%;}
 #header{display:none;}
 
 
-#landscapeHeaderWrap { background:rgb(51,62,106); height:5%;  left:0; top:0; padding-bottom:5px; width:100%;}
+#landscapeHeaderWrap { background:rgb(51,62,106); height:10%;  left:0; top:0; padding-bottom:5px; width:100%;}
 #landscapeHeader{ margin:0 auto; width:100%; text-align:center; border:1px;}
 
 
@@ -345,6 +346,7 @@ td {width:12.5%; height:100%;}
 
 
 .pageButton{
+	height:100%;
 	width:100%;
 	background-color:rgb(230,229,227);
 	text-align:center;
@@ -355,22 +357,21 @@ td {width:12.5%; height:100%;}
 
 
 .button{
+	height:100%;
 	width: 100%;
 	background-color: rgb(230,229,227);
 	text-align: center;
 	color: rgb(119,117,117);
 	font-family: navigationFont;
 	font-size: 16px;
-	bottom: 0px;
 	}
 	
 .buttonPic{
-	height:70%;
+	height:80%;
 	background-color:rgb(230,229,227);
 	margin-left:auto;
 	margin-right:auto;
-	padding-top:2%;
-
+ 	 
 }
 
 	}
