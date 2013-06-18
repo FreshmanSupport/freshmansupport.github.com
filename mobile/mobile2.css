@@ -255,7 +255,7 @@ td{width:25%;}
 
 
 
-#scrollingContainer { margin-left:0px; padding-top:35%; min-height:200px; width:100%; background-color:white; overflow:hidden; padding-bottom:32%; }
+#scrollingContainer { margin-left:0px; padding-top:40%; min-height:500px; width:100%; background-color:rgb(51,62,106); overflow:hidden; padding-bottom:32%; }
 
 
 
@@ -274,12 +274,11 @@ td{width:25%;}
 
 #content{
 	background-color:white;
-	margin-top:8px;
-	margin-bottom:8px;
-	height:25%;
+	margin-top:0px;
+	min-height:500px;
 	width:98%;
-	margin-left:2%;
-	margin-right:auto;
+	
+	margin:auto;
 	border:none;
 	color:rgb(119,117,117);
 }
@@ -327,17 +326,13 @@ td {width:12.5%};
 #headerWrap { display:none;}
 #header{display:none;}
 
-/*
-#landscapeHeaderWrap { background:inherit; height:auto;  left:0; top:0; padding-bottom:5px; min-width:100%;}
+
+#landscapeHeaderWrap { background:rgb(51,62,106); height:5%;  left:0; top:0; padding-bottom:5px; width:100%;}
 #landscapeHeader{ margin:0 auto; width:100%; text-align:center; border:1px;}
-*/
 
 
-	.schoolPic{
-	margin-top:5px;
-	height:70%;
-	width:100%;
-}
+
+#scrollingContainer { margin-left:0px; padding-top:0px; min-height:500px; width:100%; background-color:rgb(51,62,106); overflow:hidden; padding-bottom:32%; }
 
 
 
