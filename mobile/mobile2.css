@@ -33,7 +33,7 @@ html, body{
 }
 
 body{
-	background-color:white;
+	background-color:rgb(51,62,106);
 	position:relative;
 	
 }
@@ -66,15 +66,15 @@ table td{
 	border:medium;
 	color:white;
 	text-align:right;
-	width:97%;
-	height:35px;
+	width:100%;
+	height:25px;
 	font-family:navigationFont;
 	font-size:20px;
 	margin:auto;
 }
 
 .login{
-	padding-top:7px;
+	padding-top:3px;
 	padding-right:5px;
 }
 
@@ -88,7 +88,7 @@ table td{
 /* ========= Searching ====== */
 #collegeSearch
 {
-	background-color:rgb(255,255,255);
+	background-color:rgb(51,62,106);
 	height:25px;
 	margin:auto;
 	overflow:hidden;
@@ -96,14 +96,14 @@ table td{
 
 }
 .searchWrapper{
-	background-color:white;
+	background-color:rgb(52,63,106);
 	width:100%;
 	margin-right:auto;
 	margin-left:auto;
 	margin-top:3px;
 	margin-bottom:3px;
-	padding-top:2px;
-	padding-bottom:2px;
+	padding-top:0px;
+	padding-bottom:0px;
 	
 	
 }
@@ -113,7 +113,7 @@ table td{
 	font-size: 12px;
 	color: rgb(51, 62, 106);
 	height: 30px;
-	width: 95%;
+	width: 97%;
 	border-style:solid;
 	border-color:rgb(51, 62, 106);
 	border-width: 2px;
@@ -172,12 +172,12 @@ td{width:25%;}
 
 
 
-#headerWrap { background:inherit; height:auto; left:0; position:fixed; top:0; padding-bottom:5px; width:100%;}
+#headerWrap { background:rgb(51,62,106); height:auto; left:0; position:fixed; top:0; padding-bottom:5px; width:100%;}
 #header{ margin:0 auto; width:inherit; text-align:center; border:1px;}
 
 
 
-#scrollingContainer { margin:auto; padding-top:40%; width:97%; background-color:white; overflow:hidden; padding-bottom:32%; }
+#scrollingContainer { margin:auto; padding-top:1%; padding-top:70%; width:97%; background-color:white; overflow:hidden; padding-bottom:32%; }
 
 
 
@@ -196,8 +196,7 @@ td{width:25%;}
 
 #content{
 	background-color:white;
-	margin-top:8px;
-	margin-bottom:8px;
+
 	height:25%;
 	width:98%;
 	margin-left:2%;
@@ -229,7 +228,6 @@ td{width:25%;}
 	}
 	
 .buttonPic{
-	width:60%;
 	background-color:(230,229,227);
 	margin:auto;
 	padding-top:2%;
@@ -250,12 +248,14 @@ td{width:25%;}
 
 
 
-#headerWrap { background:inherit; height:auto; left:0; position:fixed; top:0; padding-bottom:5px; width:100%;}
+
+#headerWrap { background:rgb(51,62,106); height:20%; left:0; position:fixed; top:0;  width:100%;}
 #header{ margin:0 auto; width:inherit; text-align:center; border:1px;}
 
 
 
-#scrollingContainer { margin-left:0px; padding-top:50%; width:100%; background-color:white; overflow:hidden; padding-bottom:32%; }
+
+#scrollingContainer { margin-left:0px; padding-top:35%; min-height:200px; width:100%; background-color:white; overflow:hidden; padding-bottom:32%; }
 
 
 
@@ -390,6 +390,7 @@ td {width:12.5%};
 
 @media only screen and (min-width: 481px) {
 .gridContainer {
+	background-color:rgb(52,63,106);
 	width:100%;
 	height:100%;
 	/*width: 90.675%;
@@ -398,6 +399,8 @@ td {width:12.5%};
 	position:relative;
 }
 #LayoutDiv1 {
+		background-color:rgb(52,63,106);
+
 	clear: both;
 	float: left;
 	margin-left: 0px;
@@ -417,7 +420,7 @@ td {width:12.5%};
 	padding-left: 0%;
 	padding-right: 0%;
 	margin: auto;
-	background-color: white;
+	background-color: rgb(52,63,106);
 	height: 100%;
 }
 #LayoutDiv1 {
