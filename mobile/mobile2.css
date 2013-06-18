@@ -51,7 +51,7 @@ table td{
 	margin-top:0px;
 	text-align:center;
 	padding:0;
-	height:100%;
+	height:auto;
 
 }
 
@@ -71,7 +71,7 @@ table td{
 
 .login{
 	padding-top:2px;
-	padding-right:10px;
+	padding-right:1.5%;
 }
 
 
@@ -314,7 +314,7 @@ td{width:25%;}
 }
 @media screen and (min-width:600px) {
 
-td {width:12.5%};
+td {width:12.5%; height:100%;}
 
 #footerWrap{ display:none; }
 #footer {display:none;  }
