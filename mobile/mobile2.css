@@ -71,7 +71,7 @@ table td{
 
 .login{
 	padding-top:2px;
-	padding-right:7px;
+	padding-right:10px;
 }
 
 
@@ -328,18 +328,17 @@ td {width:12.5%};
 
 
 
-#scrollingContainer { margin-left:0px; padding-top:0px; min-height:500px; width:100%; background-color:rgb(51,62,106); overflow:hidden; padding-bottom:32%; }
+#scrollingContainer {margin-top:-5px; padding-top:0px; min-height:500px; width:100%; background-color:rgb(51,62,106); overflow:hidden; }
 
 
 
 #content{
 	background-color:white;
-	margin-top:8px;
-	margin-bottom:8px;
-	height:25%;
+	margin-top:0px;
+	min-height:500px;
 	width:98%;
-	margin-left:2%;
-	margin-right:auto;
+	
+	margin:auto;
 	border:none;
 	color:rgb(119,117,117);
 }
