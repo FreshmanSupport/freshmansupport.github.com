@@ -190,47 +190,6 @@ table td{
 }
 }
 
-/*hide bottom buttons when keyboard is up */
-
-@media screen and (max-height:481px) and (max-width:481px){
-td{width:25%;}
-
-
-#landscapeHeaderWrap {display:none;}
-#landscapeHeader{ display:none;}
-
-
-
-
-#headerWrap { background:rgb(51,62,106); height:25%; left:0; position:fixed; top:0;  width:100%;}
-#header{ margin:0 auto; width:inherit; text-align:center; border:1px;}
-
-
-
-
-#scrollingContainer { margin-left:0px; margin-top:-5px; min-height:500px; width:100%; background-color:rgb(51,62,106); overflow:hidden; padding-bottom:20%; }
-
-
-
-#footerWrap{ background:inherit; bottom:0px; padding-top:5px; left:0;  width:100%; }
-#footer {margin:0 auto; width:inherit; text-align:center;   }
-
-
-
-
-
-#content{
-	background-color:white;
-	margin-top:0px;
-	min-height:500px;
-	width:98%;
-	padding-top:40%;
-	margin:auto;
-	border:none;
-	color:rgb(119,117,117);
-}
-
-}
 
 
 /*portrait vs landscape*/
@@ -250,7 +209,7 @@ td{width:25%;}
 
 
 
-#scrollingContainer { margin-left:0px; margin-top:-5px; min-height:500px; width:100%; background-color:rgb(51,62,106); overflow:hidden; padding-bottom:20%; }
+#scrollingContainer { margin-left:0px; margin-top:-1%; min-height:500px; width:100%; background-color:rgb(51,62,106); overflow:hidden; padding-bottom:20%; }
 
 
 
