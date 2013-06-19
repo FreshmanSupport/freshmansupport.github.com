@@ -26,6 +26,38 @@ img, object, embed, video {
 	width:100%;
 }
 
+/*button for current page */
+.pageButton{
+	width:100%;
+	background-color:rgb(230,229,227);
+	text-align:center;
+	color:rgb(51, 62, 106);
+	font-family:helvetica;
+	font-size:.7em;
+	margin:auto;
+	height:100%;
+}
+
+
+.button{
+	width:100%;
+	background-color:rgb(230,229,227);
+	text-align:center;
+	color:rgb(119,117,117);
+	font-family:helvetica;
+	font-size:.7em;
+	margin:auto;
+	height:100%;
+	}
+	
+.buttonPic{
+	background-color:(230,229,227);
+	margin:auto;
+	padding-top:2%;
+	
+	
+
+}
 
 html, body{
 	height:100%;
@@ -64,14 +96,14 @@ table td{
 	text-align:right;
 	width:100%;
 	height:23px;
-	font-family:navigationFont;
-	font-size:20px;
+	font-family:helvetica;
+	font-size:1em;
 	margin:auto;
 }
 
 .login{
-	padding-top:2px;
-	padding-right:1.5%;
+	padding-top:4px;
+	padding-right:3%;
 }
 
 
@@ -156,86 +188,11 @@ table td{
 	width: 100%;
 	display: block;
 }
+}
 
 /*hide bottom buttons when keyboard is up */
 
-@media screen and (max-height:400px) and (max-width:600px){
-	
-td{width:25%;}
-	
-#landscapeHeaderWrap {display:none;}
-#landscapeHeader{ display:none;}
-
-
-
-#headerWrap { background:rgb(51,62,106); height:auto; left:0; position:fixed; top:0; padding-bottom:0px; width:100%;}
-#header{ margin:0 auto; width:inherit; text-align:center; border:0px;}
-
-
-
-#scrollingContainer { margin-top:0px; margin:auto; padding-top:0%; padding-top:70%; width:97%; background-color:white; overflow:hidden; padding-bottom:32%; }
-
-
-
-#footerWrap{ display:none; }
-#footer {display:none;  }
-
-
-
-.schoolPic{
-	margin-top:5px;
-	height:25%;
-	width:100%;
-}
-
-
-
-#content{
-	background-color:white;
-
-	height:25%;
-	width:98%;
-	margin-left:2%;
-	margin-right:auto;
-	border:none;
-	color:rgb(119,117,117);
-}
-
-/*button for current page */
-.pageButton{
-	width:100%;
-	background-color:rgb(230,229,227);
-	text-align:center;
-	color:rgb(51, 62, 106);
-	font-family:navigationFont;
-	font-size:1em;
-	margin:auto;
-}
-
-
-.button{
-	width:100%;
-	background-color:rgb(230,229,227);
-	text-align:center;
-	color:rgb(119,117,117);
-	font-family:navigationFont;
-	font-size:1em;
-	margin:auto;
-	}
-	
-.buttonPic{
-	background-color:(230,229,227);
-	margin:auto;
-	padding-top:2%;
-	
-	
-
-}
-}
-
-
-/*portrait vs landscape*/
-@media screen and (max-width: 600px) { 
+@media screen and (max-height:481px) and (max-width:481px){
 td{width:25%;}
 
 
@@ -245,26 +202,20 @@ td{width:25%;}
 
 
 
-#headerWrap { background:rgb(51,62,106); height:20%; left:0; position:fixed; top:0;  width:100%;}
+#headerWrap { background:rgb(51,62,106); height:25%; left:0; position:fixed; top:0;  width:100%;}
 #header{ margin:0 auto; width:inherit; text-align:center; border:1px;}
 
 
 
 
-#scrollingContainer { margin-left:0px; margin-top:-3px; padding-top:37%; min-height:500px; width:100%; background-color:rgb(51,62,106); overflow:hidden; padding-bottom:20%; }
+#scrollingContainer { margin-left:0px; margin-top:-5px; min-height:500px; width:100%; background-color:rgb(51,62,106); overflow:hidden; padding-bottom:20%; }
 
 
 
-#footerWrap{ background:inherit; bottom:0px; padding-top:5px; left:0; position:fixed;  width:100%; }
+#footerWrap{ background:inherit; bottom:0px; padding-top:5px; left:0;  width:100%; }
 #footer {margin:0 auto; width:inherit; text-align:center;   }
 
 
-
-.schoolPic{
-	margin-top:5px;
-	height:25%;
-	width:100%;
-}
 
 
 
@@ -273,47 +224,57 @@ td{width:25%;}
 	margin-top:0px;
 	min-height:500px;
 	width:98%;
-	
+	padding-top:40%;
 	margin:auto;
 	border:none;
 	color:rgb(119,117,117);
 }
 
-/*button for current page */
-.pageButton{
-	height:100%;
-	width:100%;
-	background-color:rgb(230,229,227);
-	text-align:center;
-	color:rgb(51, 62, 106);
-	font-family:navigationFont;
-	font-size:1em;
-	margin:auto;
 }
 
 
-.button{
-	height:100%;
-	width:100%;
-	background-color:rgb(230,229,227);
-	text-align:center;
+/*portrait vs landscape*/
+@media screen and (orientation:portrait) { 
+td{width:25%;}
+
+
+#landscapeHeaderWrap {display:none;}
+#landscapeHeader{ display:none;}
+
+
+
+
+#headerWrap { background:rgb(51,62,106); height:25%; left:0; position:fixed; top:0;  width:100%;}
+#header{ margin:0 auto; width:inherit; text-align:center; border:1px;}
+
+
+
+
+#scrollingContainer { margin-left:0px; margin-top:-5px; min-height:500px; width:100%; background-color:rgb(51,62,106); overflow:hidden; padding-bottom:20%; }
+
+
+
+#footerWrap{ background:inherit; bottom:0px; padding-top:5px; left:0; position:fixed;  width:100%; }
+#footer {margin:0 auto; width:inherit; text-align:center;   }
+
+
+
+
+
+#content{
+	background-color:white;
+	margin-top:0px;
+	min-height:500px;
+	width:98%;
+	padding-top:40%;
+	margin:auto;
+	border:none;
 	color:rgb(119,117,117);
-	font-family:navigationFont;
-	font-size:1em;
-	margin:auto;
-	}
-	
-.buttonPic{
-	width:80%;
-	background-color:(230,229,227);
-	margin:auto;
-	padding-top:2%;
-	
-	
 }
 
+
 }
-@media screen and (min-width:600px) {
+@media screen and (orientation:landscape) {
 
 td {width:12.5%; height:auto;}
 
@@ -324,8 +285,8 @@ td {width:12.5%; height:auto;}
 #header{display:none;}
 
 
-#landscapeHeaderWrap { background:rgb(51,62,106); height:10%;  left:0; top:0; padding-bottom:5px; width:100%;}
-#landscapeHeader{ margin:0 auto; width:100%; text-align:center; border:1px;}
+#landscapeHeaderWrap { background:rgb(51,62,106); height:40%;   padding-bottom:5px; width:100%;}
+#landscapeHeader{ margin:0 auto; width:100%; text-align:center; border:1px; height:100%;}
 
 
 #scrollingContainer {margin-top:-5px; padding-top:0px; min-height:500px; width:100%; background-color:rgb(51,62,106); overflow:hidden; }
@@ -344,34 +305,6 @@ td {width:12.5%; height:auto;}
 }
 
 
-.pageButton{
-	height:100%;
-	width:100%;
-	background-color:rgb(230,229,227);
-	text-align:center;
-	color:rgb(51, 62, 106);
-	font-family:navigationFont;
-	font-size:16px;
-}
-
-
-.button{
-	height:100%;
-	width: 100%;
-	background-color: rgb(230,229,227);
-	text-align: center;
-	color: rgb(119,117,117);
-	font-family: navigationFont;
-	font-size: 16px;
-	}
-	
-.buttonPic{
-	height:80%;
-	background-color:rgb(230,229,227);
-	margin-left:auto;
-	margin-right:auto;
- 	 
-}
 
 	}
 
