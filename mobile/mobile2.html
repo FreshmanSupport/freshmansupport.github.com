@@ -24,22 +24,26 @@ Do the following if you're using your customized build of modernizr (http://www.
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<script src="respond.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 </head>
 <body>
 <div class="gridContainer clearfix">
   <div id="LayoutDiv1">
  	
+    
      <!-- landscape header -->
     	<div id="landscapeHeaderWrap">
         <div id="landscapeHeader">
        
        
-        <div class="loginBar">
+        <div class="loginBar" >
     		<div class="login">
-        	<a href=#>Login</a>
-        	|
-        	<a href=#>Register</a>
+            <a href="#">Login</a>
+            |
+            <a href="#">Register</a>
+
         	</div>
     	</div>
   	
@@ -47,7 +51,8 @@ Do the following if you're using your customized build of modernizr (http://www.
       <div class="searchWrapper">
     <div id="collegeSearch">
       <form id="searchbox" action="">
-        <input id="search" type="text" name="collegeSearch" placeholder="The University of Texas at Austin" class="searchBox" />
+        <input type="search" name="search" id="searc-basic" value="" data-mini="true" height="20px" />
+
       </form>
     </div>
     </div>
@@ -118,7 +123,8 @@ Do the following if you're using your customized build of modernizr (http://www.
           <div class="searchWrapper">
     <div id="collegeSearch">
       <form id="searchbox" action="">
-        <input id="search" type="text" name="collegeSearch" placeholder="The University of Texas at Austin" class="searchBox" />
+        <input type="search" name="search" id="searc-basic" value="" data-mini="true" />
+
       </form>
     </div>
     </div>
@@ -151,7 +157,6 @@ Do the following if you're using your customized build of modernizr (http://www.
     
     
     <!-- SCROLLABLE CONTENT -->
-    
     <div id="scrollingContainer">
     	<div id="content">
        		 hello world
