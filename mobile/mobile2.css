@@ -203,13 +203,13 @@ td{width:25%;}
 
 
 
-#headerWrap { background:rgb(51,62,106); height:25%; left:0; position:fixed; top:0;  width:100%;}
+#headerWrap { background:rgb(51,62,106); height:23%; left:0; position:fixed; top:0;  width:100%;}
 #header{ margin:0 auto; width:inherit; text-align:center; border:1px;}
 
 
 
 
-#scrollingContainer { margin-left:0px; margin-top:-1%; min-height:500px; width:100%; background-color:rgb(51,62,106); overflow:hidden; padding-bottom:20%; }
+#scrollingContainer { margin-left:0px; margin-top:-1%; min-height:500px; width:100%; background-color:rgb(51,62,106); overflow:hidden; padding-bottom:20%; padding-top:-3%;}
 
 
 
@@ -222,7 +222,7 @@ td{width:25%;}
 
 #content{
 	background-color:white;
-	margin-top:0px;
+	margin-top:-2%;
 	min-height:500px;
 	width:98%;
 	padding-top:40%;
