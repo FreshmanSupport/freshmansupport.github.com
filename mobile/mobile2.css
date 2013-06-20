@@ -22,6 +22,21 @@ a:visited{color:white; text-decoration:none;font-weight:normal;}
 a:hover{color:white; text-decoration:none;font-weight:normal;}
 a:active{color:white; text-decoration:none;font-weight:normal;}
 
+#scrollingContainer { min-height:540px; width:100%; background-color:rgb(51,62,106); overflow:hidden; }
+
+
+
+#content{
+	background-color:white;
+	width:98%;
+	min-height:400px;
+	border:none;
+	color:rgb(119,117,117);
+	margin-top:0px;
+	margin:auto;
+}
+
+
 
 img, object, embed, video {
 	max-width: 100%;
@@ -31,15 +46,6 @@ img, object, embed, video {
 	width:100%;
 }
 
-
-/*Opera Fix*/
-body:before {
-	content:"";
-	height:100%;
-	float:left;
-	width:0;
-	margin-top:-32767px;/
-}
 
 
 /*button for current page */
@@ -217,28 +223,14 @@ td{width:25%;}
 
 
 
-#scrollingContainer { margin-left:0px;  padding-top:5px;min-height:540px; width:100%; background-color:rgb(51,62,106); overflow:hidden; padding-bottom:20%;}
 
 
 
 #footerWrap{ background:inherit; bottom:0; 
-data-role:"footer"; data-position:"fixed";padding-top:5px; left:0; min-height:70px;  width:100%; }
-#footer {data-role:"footer"; data-position:"fixed"; margin:0 auto; width:inherit; text-align:center;   }
+ left:0;  width:100%; }
+#footer { margin:0 auto; width:inherit; text-align:center;   }
 
 
-
-
-
-#content{
-	background-color:white;
-	margin-top:-2%;
-	min-height:500px;
-	width:98%;
-	padding-top:38%;
-	margin:auto;
-	border:none;
-	color:rgb(119,117,117);
-}
 
 
 }
@@ -257,20 +249,6 @@ td {width:12.5%; height:auto;}
 #landscapeHeader{ margin:0 auto; width:100%; text-align:center; border:1px; height:100%;}
 
 
-#scrollingContainer {margin-top:-5px; padding-top:0px; min-height:540px; width:100%; background-color:rgb(51,62,106); overflow:hidden; }
-
-
-
-#content{
-	background-color:white;
-	margin-top:0px;
-	min-height:500px;
-	width:98%;
-	
-	margin:auto;
-	border:none;
-	color:rgb(119,117,117);
-}
 
 
 
