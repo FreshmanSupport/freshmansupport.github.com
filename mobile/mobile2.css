@@ -209,7 +209,7 @@ td{width:25%;}
 
 
 
-#footerWrap{ data-role:"footer"; data-position:"fixed"; background:inherit; bottom:0px; padding-top:5px; left:0; position:fixed;  width:100%; }
+#footerWrap{ data-role:"footer"; data-position:"fixed"; background:inherit; bottom:0px; padding-top:5px; left:0; min-height:10%; position:fixed;  width:100%; }
 #footer {margin:0 auto; width:inherit; text-align:center;   }
 
 
