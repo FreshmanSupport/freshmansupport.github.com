@@ -17,6 +17,11 @@ font-style:normal;
 } 
 
 
+a:link {color:white; text-decoration:none; font-weight:normal;}
+a:visited{color:white; text-decoration:none;font-weight:normal;}
+a:hover{color:white; text-decoration:none;font-weight:normal;}
+a:active{color:white; text-decoration:none;font-weight:normal;}
+
 
 img, object, embed, video {
 	max-width: 100%;
@@ -128,22 +133,20 @@ table td{
 	margin-bottom:3px;
 	padding-top:0px;
 	padding-bottom:0px;
-	height:inherit;
-	height:35px;
+	height:30px;
+	width:97%;
 }
 .searchBox{
 	font-family: georgia;
 	font-weight: bold;
-	font-size:1em;
 	color: rgb(51, 62, 106);
 	border-style:solid;
 	border-color:rgb(51, 62, 106);
-
 	margin-right: auto;
 	margin-left:auto;
 	margin-top:0px;
 	padding-left:2px;
-	height:25px;
+	height:15px;
 	display:block;
 }
 
@@ -202,7 +205,7 @@ td{width:25%;}
 
 
 
-#scrollingContainer { margin-left:0px;  padding-top:5px;min-height:500px; width:100%; background-color:rgb(51,62,106); overflow:hidden; padding-bottom:20%;}
+#scrollingContainer { margin-left:0px;  padding-top:5px;min-height:540px; width:100%; background-color:rgb(51,62,106); overflow:hidden; padding-bottom:20%;}
 
 
 
@@ -218,7 +221,7 @@ td{width:25%;}
 	margin-top:-2%;
 	min-height:500px;
 	width:98%;
-	padding-top:40%;
+	padding-top:38%;
 	margin:auto;
 	border:none;
 	color:rgb(119,117,117);
@@ -241,7 +244,7 @@ td {width:12.5%; height:auto;}
 #landscapeHeader{ margin:0 auto; width:100%; text-align:center; border:1px; height:100%;}
 
 
-#scrollingContainer {margin-top:-5px; padding-top:0px; min-height:500px; width:100%; background-color:rgb(51,62,106); overflow:hidden; }
+#scrollingContainer {margin-top:-5px; padding-top:0px; min-height:540px; width:100%; background-color:rgb(51,62,106); overflow:hidden; }
 
 
 
