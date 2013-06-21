@@ -26,6 +26,15 @@ a:active{color:white; text-decoration:none;font-weight:normal;}
 
 
 
+#content{
+	background-color:white;
+	width:96%;
+	min-height:540px;
+	color:rgb(119,117,117);
+	margin-left:auto;
+	margin-right:auto;
+}
+
 
 
 
@@ -118,7 +127,7 @@ table td{
 
 .topRight{
 	float:right;
-	margin-right:2.5%;
+	margin-right:3%;
 }
 
 .FS{
@@ -211,15 +220,6 @@ td{width:25%;}
 #header{ width:inherit; text-align:center;  }
 
 
-#content{
-	background-color:white;
-	width:96%;
-	min-height:540px;
-	color:rgb(119,117,117);
-	margin-left:auto;
-	margin-right:auto;
-}
-
 
 
 
@@ -245,14 +245,7 @@ td {width:12.5%; height:auto;}
 #landscapeHeaderWrap { background:rgb(51,62,106);   padding-bottom:0px; width:100%;}
 #landscapeHeader{ width:100%; text-align:center;}
 
-#content{
-	background-color:white;
-	width:98%;
-	min-height:540px;
-	color:rgb(119,117,117);
-	margin-left:auto;
-	margin-right:auto;
-}
+
 
 
 
