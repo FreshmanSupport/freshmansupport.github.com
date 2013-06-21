@@ -110,14 +110,14 @@ table td{
 	color:white;
 	text-align:right;
 	width:100%;
-	height:30px;
+	height:35px;
 	font-family:helvetica;
 	font-size:1em;
 	margin:auto;
 }
 
 .login{
-	padding-top:6px;
+	padding-top:4px;
 	padding-right:3%;
 }
 
@@ -205,7 +205,7 @@ td{width:25%;}
 
 
 
-#headerWrap {background:rgb(51,62,106); width:100%; height:27%;;}
+#headerWrap {background:rgb(51,62,106); width:100%; min-height:27%;}
 #header{ width:inherit; text-align:center;  }
 
 
