@@ -110,14 +110,14 @@ table td{
 	color:white;
 	text-align:right;
 	width:100%;
-	height:23px;
+	height:30px;
 	font-family:helvetica;
 	font-size:1em;
 	margin:auto;
 }
 
 .login{
-	padding-top:4px;
+	padding-top:6px;
 	padding-right:3%;
 }
 
@@ -140,24 +140,20 @@ table td{
 	margin-right:auto;
 	margin-left:auto;
 	margin-top:3px;
-	margin-bottom:3px;
-	padding-top:0px;
-	padding-bottom:0px;
-	height:30px;
+	margin-bottom:10px;
+
+	height:25px;
 	width:97%;
 }
 .searchBox{
+	background-color:white;
 	font-family: georgia;
 	font-weight: bold;
 	color: rgb(51, 62, 106);
-	border-style:solid;
-	border-color:rgb(51, 62, 106);
-	margin-right: auto;
-	margin-left:auto;
-	margin-top:0px;
-	padding-left:2px;
-	height:15px;
+	margin:auto;
+	height:25px;
 	display:block;
+	width:100%;
 }
 
 
@@ -209,13 +205,13 @@ td{width:25%;}
 
 
 
-#headerWrap {background:rgb(51,62,106); width:100%; height:auto; padding-bottom:0px;}
-#header{ width:inherit; text-align:center; }
+#headerWrap {background:rgb(51,62,106); width:100%; height:27%;;}
+#header{ width:inherit; text-align:center;  }
 
 
 #content{
 	background-color:white;
-	width:98%;
+	width:96%;
 	min-height:540px;
 	color:rgb(119,117,117);
 	margin-left:auto;
