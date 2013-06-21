@@ -112,7 +112,7 @@ table td{
 	width:100%;
 	height:35px;
 	font-family:helvetica;
-	font-size:1em;
+	font-size:.8em;
 	margin:auto;
 }
 
@@ -141,13 +141,11 @@ table td{
 	margin-left:auto;
 	margin-top:3px;
 	margin-bottom:10px;
-
 	height:25px;
 }
 .searchBox{
 	background-color:white;
 	font-family: georgia;
-	font-weight: bold;
 	color: rgb(51, 62, 106);
 	margin:auto;
 	height:25px;
