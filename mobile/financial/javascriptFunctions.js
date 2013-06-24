@@ -1,5 +1,5 @@
+.accordion{
+	width: 98%;
 
-  $(function() {
-    $( "#accordion" ).accordion();
-  });
- 
+	
+}

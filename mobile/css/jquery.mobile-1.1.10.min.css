@@ -1038,10 +1038,8 @@ body.ui-mobile-viewport, div.ui-mobile-viewport {
 	margin: 0
 }
 .ui-bar h1, .ui-bar h2, .ui-bar h3, .ui-bar h4, .ui-bar h5, .ui-bar h6 {
-	margin: 0;
-	padding: 0;
-	font-size: 16px;
-	display: inline-block
+
+	
 }
 .ui-header, .ui-footer {
 	position: relative;
@@ -1812,7 +1810,6 @@ to {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	float: left;
 	min-height: 1px
 }
 .ui-grid-solo .ui-block-a {
@@ -2099,12 +2096,13 @@ to {
 	text-indent: -9999px
 }
 .ui-collapsible {
-	margin: .5em 0
+		color:rgb(51,62,106);
+
 }
 .ui-collapsible-heading {
 	font-size: 16px;
+	color:rgb(51,62,106);
 	display: block;
-	margin: 0 -8px;
 	padding: 0;
 	border-width: 0 0 1px 0;
 	position: relative
@@ -2122,10 +2120,13 @@ to {
 }
 .ui-collapsible-heading .ui-btn-icon-top .ui-btn-inner, .ui-collapsible-heading .ui-btn-icon-bottom .ui-btn-inner {
 	padding-right: 40px;
+		color:rgb(51,62,106);
+
 	text-align: center
 }
 .ui-collapsible-heading a span.ui-btn {
 	position: absolute;
+	color:rgb(51,62,106);
 	left: 6px;
 	top: 50%;
 	margin: -12px 0 0 0;
@@ -2158,10 +2159,9 @@ to {
 	display: none
 }
 .ui-collapsible-set {
-	margin: .5em 0
 }
 .ui-collapsible-set .ui-collapsible {
-	margin: -1px 0 0
+	margin: -11px 0 0
 }
 .ui-controlgroup, fieldset.ui-controlgroup {
 	padding: 0;
