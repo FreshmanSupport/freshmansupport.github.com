@@ -87,9 +87,14 @@ img, object, embed, video {
 
 }
 
+h3{
+		color:rgb(51,62,106);
+	font-family:helvetica new light;
+}
 html, body{
 	height:100%;
 	font-size:100%;
+	color:rgb(51,62,106);
 }
 
 body{
