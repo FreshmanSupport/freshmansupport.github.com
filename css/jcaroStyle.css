@@ -1,0 +1,13 @@
+
+pre {
+  border:1px solid #000;
+  overflow-x:auto;
+  background: #222;
+  color: #fff;
+  text-shadow: none;
+}
+
+.wrapper {
+    width: 620px;
+    margin: auto;
+}
