@@ -30,6 +30,15 @@ Do the following if you're using your customized build of modernizr (http://www.
 <link rel="stylesheet" href="../css/jquery.mobile-1.1.10.min.css" />
 	<script src="../js/jquery-1.7.1.min.js"></script>
   <script src="../js/jquery.mobile.js"></script> 
+  
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  
+  <script>
+  $(function() {
+    $( "#accordion" ).accordion();
+  });
+  </script>
 </head>
 <body>
 <div class="gridContainer clearfix">
@@ -64,38 +73,38 @@ Do the following if you're using your customized build of modernizr (http://www.
 
     
 	<table width=100%  style="border:1px solid rgb(52,63,106);">
-		<td  ><div class="pageButton">
+		<td  ><a href="../"><div class="pageButton">
     	<div class="buttonPic">
     	<img src=../images/homegrey.gif width=70%>
-    	<br>HOME</div>
+    	<br>HOME</div></a>
         </div></td>
     
     
-    	<td ><a href="housing"><div class="button"><div class="buttonPic">
+    	<td ><a href="../housing"><div class="button"><div class="buttonPic">
 	    <img src=../images/housinggrey.png width=70%>
     	<br>HOUSING</div></a></div></td>
 	
     
-    	<td ><a href="roomiematch"><div class="button"><div class="buttonPic"><img src=../images/roommategrey.png width=70%><br>ROOMIE MATCH</div></a></div></td>
+    	<td ><a href="../roomiematch"><div class="button"><div class="buttonPic"><img src=../images/roommategrey.png width=70%><br>ROOMIE MATCH</div></a></div></td>
 	
     
-    	<td ><a href="admissions"><div class="button"><div class="buttonPic"><img src=../images/admissionsgrey.png width=70%><br>ADMISSIONS</div></a></div></td>
+    	<td ><a href="../admissions"><div class="button"><div class="buttonPic"><img src=../images/admissionsgrey.png width=70%><br>ADMISSIONS</div></a></div></td>
         
-        <td ><a href="financial"><div class="button">
+        <td ><a href="../financial"><div class="button">
     	<div class="buttonPic">
     	<img src=../images/financegrey.png width=70%>
     	<br>FINANCIAL</div></a></div></td>
     
     
-    	<td ><a href="thereallife"><div class="button"><div class="buttonPic">
+    	<td ><a href="../thereallife"><div class="button"><div class="buttonPic">
 	    <img src=../images/thereallifegrey.png width=70%>
     	<br>THE REAL LIFE</div></a></div></td>
 	
     
-    	<td ><a href="visit"><div class="button"><div class="buttonPic"><img src=../images/visitgrey.png width=70%><br>VISIT</div></a></div></td>
+    	<td ><a href="../visit"><div class="button"><div class="buttonPic"><img src=../images/visitgrey.png width=70%><br>VISIT</div></a></div></td>
 	
     
-    	<td ><a href="deadlines"><div class="button"><div class="buttonPic"><img src=../images/deadlinegrey.png width=70%><br>DEADLINES</div></a></div></td>
+    	<td ><a href="../deadlines"><div class="button"><div class="buttonPic"><img src=../images/deadlinegrey.png width=70%><br>DEADLINES</div></a></div></td>
         
 </table>
   
@@ -138,21 +147,21 @@ Do the following if you're using your customized build of modernizr (http://www.
 
   	
 	<table width=100% cellpadding=2px style="border:1px solid rgb(52,63,106);">
-		<td><div class="pageButton">
+		<td><a href="../"><div class="pageButton">
     	<div class="buttonPic">
     	<img src=../images/homegrey.gif width=70% >
-    	<br>HOME</div></div></td>
+    	<br>HOME</div></a></div></td>
     
     
-    	<td><a href="housing"><div class="button"><div class="buttonPic">
+    	<td><a href="../housing"><div class="button"><div class="buttonPic">
 	    <img src=../images/housinggrey.png width=70%>
     	<br>HOUSING</div></a></div></td>
 	
     
-    	<td><a href="roomiematch"><div class="button"><div class="buttonPic"><img src=../images/roommategrey.png width=70%><br>ROOMIE MATCH</div></a></div></td>
+    	<td><a href="../roomiematch"><div class="button"><div class="buttonPic"><img src=../images/roommategrey.png width=70%><br>ROOMIE MATCH</div></a></div></td>
 	
     
-    	<td ><a href="admissions"><div class="button"><div class="buttonPic"><img src=../images/admissionsgrey.png width=70%><br>ADMISSIONS</div></a></div></td>
+    	<td ><a href="../admissions"><div class="button"><div class="buttonPic"><img src=../images/admissionsgrey.png width=70%><br>ADMISSIONS</div></a></div></td>
 </table> 
 
       </div>
@@ -167,7 +176,29 @@ Do the following if you're using your customized build of modernizr (http://www.
     <!-- SCROLLABLE CONTENT -->
     <div id="scrollingContainer">
     	<div id="content">
-       		 clear eyes full hearts cant lose
+       		 <div id="accordion">
+             <h3>Data</h3>
+             <div><p>
+             
+             </p></div>
+             
+             <h3>Budget Planner</h3>
+             <div><p>
+             
+             </p></div>
+             
+             <h3>Financial Aid</h3>
+             <div><p>
+             
+             </p></div>
+             
+             <h3>Ask a Financial Advisor</h3>
+             <div><p>
+             
+             </p></div>
+             
+             
+             </div>
        
         </div>
     
@@ -184,21 +215,21 @@ Do the following if you're using your customized build of modernizr (http://www.
     <div id="footerWrap" data-role="footer" data-position="fixed" data-tap-toggle="false">
     <div id="footer">
       	<table width=100% cellpadding=0 style="border:1px solid rgb(52,63,106);">
-		<td ><a href="financial"><div class="button">
+		<td ><a href="../financial"><div class="button">
     	<div class="buttonPic">
     	<img src=../images/financegrey.png width=70%>
     	<br>FINANCIAL</div></a></div></td>
     
     
-    	<td ><a href="thereallife"><div class="button"><div 		class="buttonPic">
+    	<td ><a href="../thereallife"><div class="button"><div 		class="buttonPic">
 	    <img src=../images/thereallifegrey.png width=70%>
     	<br>THE REAL LIFE</div></a></div></td>
 	
     
-    	<td><a href="visit"><div class="button"><div class="buttonPic"><img src=../images/visitgrey.png width=70%><br>VISIT</div></a></div></td>
+    	<td><a href="../visit"><div class="button"><div class="buttonPic"><img src=../images/visitgrey.png width=70%><br>VISIT</div></a></div></td>
 	
     
-    	<td ><a href="deadlines"><div class="button"><div class="buttonPic"><img src=../images/deadlinegrey.png width=70%><br>DEADLINES</div></a></div></td>
+    	<td ><a href="../deadlines"><div class="button"><div class="buttonPic"><img src=../images/deadlinegrey.png width=70%><br>DEADLINES</div></a></div></td>
 </table>
     
     

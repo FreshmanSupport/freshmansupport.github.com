@@ -32,9 +32,12 @@ a:active{color:rgb(119,117,117); text-decoration:none;font-weight:normal;}
 	background-color:white;
 	width:96%;
 	min-height:540px;
-	color:rgb(119,117,117);
+	color:rgb(51,62,106);
 	margin-left:auto;
 	margin-right:auto;
+	font-family:helvetica new light;
+	font-weight:normal;
+	font-size:16px;
 }
 
 
