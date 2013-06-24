@@ -6,7 +6,7 @@
 
 
 @font-face {
-font-family: 'franchise';
+font-family: 'navigationFont';
 src: url('fonts/franchisekit/franchise-webfont.eot') format('eot');
 src: url('fonts/franchisekit/franchise-webfont.eot?#iefix') format('embedded-opentype'),
 url('fonts/franchisekit/franchise-webfont.woff') format('woff'),
@@ -15,6 +15,27 @@ url('fonts/franchisekit/franchise-webfont.svg') format('svg');
 font-weight: normal;
 font-style:normal;
 } 
+
+
+a:link {color:white; text-decoration:none; font-weight:normal;}
+a:visited{color:white; text-decoration:none;font-weight:normal;}
+a:hover{color:white; text-decoration:none;font-weight:normal;}
+a:active{color:white; text-decoration:none;font-weight:normal;}
+
+#scrollingContainer { min-height:540px; width:100%; background-color:rgb(51,62,106);  }
+
+
+
+#content{
+	background-color:white;
+	width:96%;
+	min-height:540px;
+	color:rgb(119,117,117);
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
 
 
 
@@ -27,13 +48,49 @@ img, object, embed, video {
 }
 
 
-html, body{
+
+/*button for current page */
+.pageButton{
+	width:100%;
+	background-color:rgb(230,229,227);
+	text-align:center;
+	color:rgb(51, 62, 106);
+	font-family:helvetica;
+	font-size:.7em;
+	margin:auto;
 	height:100%;
 }
 
+
+.button{
+	width:100%;
+	background-color:rgb(230,229,227);
+	text-align:center;
+	color:rgb(119,117,117);
+	font-family:helvetica;
+	font-size:.7em;
+	margin:auto;
+	height:100%;
+	}
+	
+.buttonPic{
+	background-color:(230,229,227);
+	margin:auto;
+	padding-top:2%;
+	
+	
+
+}
+
+html, body{
+	height:100%;
+	font-size:100%;
+}
+
 body{
-	background-color:white;
+	background-color:rgb(51,62,106);
 	position:relative;
+	height:100%;
 	
 }
 
@@ -41,22 +98,19 @@ body{
 table{
 	display:table;
 	margin-bottom: 0px;
-	boder: none;
 	padding:0;
 	height:100%;
+	margin-top:0px; 
+	
 }
 table td{
 	margin-top:0px;
 	text-align:center;
 	padding:0;
-	height:100%;
+	height:auto;
 
 }
 
-#fitToScreen{
-	position:absolute;
-	top:0; bottom:0; 
-}
 
 .loginBar{
 	background-color:rgb(51, 62, 106);
@@ -65,117 +119,52 @@ table td{
 	color:white;
 	text-align:right;
 	width:100%;
-	height:40px;
-	font-family:franchise;
-	font-size:20px;
-}
-
-.login{
-	padding-top:9px;
-	padding-right:5px;
-}
-
-
-/*
-.pageButton{
-	width:100%;
-	height:50%;
-	background-color:white;
-	text-align:center;
-	color:rgb(157,154,154);
-	font-family:franchise;
-	font-size:16px;
-}
-
-
-.button{
-	width:100%;
-	background-color:rgb(157,154,154);
-	text-align:center;
-	color:white;
-	font-family:franchise;
-	font-size:16px;
-	}
-	
-.buttonPic{
-	width:80%;
-	background-color:inherit;
-	margin-left:auto;
-	margin-right:auto;
-	padding-top:5px;
-
-}*/
-/*
-.schoolPic{
-	margin-top:5px;
-	height:20%;
-}*/
-/*
-
-.content{
-	background-color:white;
-	margin-top:8px;
-	margin-bottom:8px;
-	width:98%;
-	height:165px;
-	margin-left:auto;
-	margin-right:auto;
-	border:none;
-	color:rgb(155,155,155);
-}
-*/
-/*
-
-#bottomNav{
+	height:35px;
+	font-family:helvetica;
+	font-size:.75em;
 	margin:auto;
-	margin-bottom:2px;
-	
+}
 
-}*/
+.topRight{
+	float:right;
+	margin-right:3%;
+}
 
-a:link {color:white; text-decoratoin:none}
-a:visited {color:white; text-decoration:none}
-a:active {color:white};
-a:hover {color:white};
-
+.FS{
+	padding-top:5px;
+	max-width:70px;
+	float:left;
+	margin-right:5px;
+}
 
 /* ========= Searching ====== */
 #collegeSearch
 {
-	background-color:rgb(255,255,255);
-	height:30px;
+	background-color:rgb(51,62,106);
+	margin:auto;
 	overflow:hidden;
 	color: rgb(51, 62, 106);
+	width:100%;
+	
 
 }
 .searchWrapper{
-	background-color:white;
-	width:99%;
+	background-color:rgb(52,63,106);
+	width:100%;
 	margin-right:auto;
 	margin-left:auto;
-	margin-top:5px;
-	margin-bottom:5px;
-	padding-top:3px;
-	padding-bottom:3px;
-	
-	
+	margin-top:3px;
+	margin-bottom:10px;
+	height:25px;
 }
 .searchBox{
+	background-color:white;
 	font-family: georgia;
-	font-weight: bold;
-	font-size: 12px;
 	color: rgb(51, 62, 106);
-	height: 30px;
-	width: 95%;
-	border-style:solid;
-	border-color:rgb(51, 62, 106);
-	border-width: 2px;
-	border-radius: 5px;
-	margin-right: auto;
-	margin-left:auto;
-	margin-top:0px;
-	padding-left:7px;
+	margin:auto;
+	height:25px;
 	display:block;
+	width:94%;
 }
 
 
@@ -213,85 +202,38 @@ a:hover {color:white};
 	display: block;
 }
 
+
+
+
 /*portrait vs landscape*/
-@media screen and (max-width: 600px) { 
+@media screen and (orientation:portrait) { 
+td{width:25%;}
+
 
 #landscapeHeaderWrap {display:none;}
 #landscapeHeader{ display:none;}
 
 
 
-#headerWrap { background:inherit; height:auto; left:0; position:fixed; top:0; padding-bottom:5px; width:100%;}
-#header{ margin:0 auto; width:inherit; text-align:center; border:1px;}
+
+#headerWrap {background:rgb(51,62,106); width:100%; min-height:27%;}
+#header{ width:inherit; text-align:center;  }
 
 
 
-#scrollingContainer { left:0px; width:100%; background-color:white; overflow:hidden; padding-bottom:32%; }
-
-#content{
-
-}
-
-
-#footerWrap{ background:inherit; bottom:0px; padding-top:5px; left:0; position:fixed;  width:100%; }
-#footer {margin:0 auto; width:inherit; text-align:center;   }
 
 
 
-.schoolPic{
-	margin-top:5px;
-	height:25%;
-	width:100%;
-}
+#footerWrap{ background:inherit; width:100%; }
+#footer { margin:0 auto; width:inherit; text-align:center;   }
 
 
 
-.content{
-	background-color:white;
-	margin-top:8px;
-	margin-bottom:8px;
-	height:25%;
-	width:98%;
-	margin-left:0;
-	margin-right:auto;
-	border:none;
-	color:rgb(155,155,155);
-}
-
-/*button for current page */
-.pageButton{
-	height:100%;
-	background-color:(232,229,228);
-	text-align:center;
-	color:rgb(157,154,154);
-	font-family:franchise;
-	font-size:16px;
-	margin:auto;
-}
-
-
-.button{
-	height:100%;
-	width:100%;
-	background-color:rgb(232,229,228);
-	text-align:center;
-	color:rgb(157,154,154);
-	font-family:franchise;
-	font-size:16px;
-	margin:auto;
-	}
-	
-.buttonPic{
-	width:80%;
-	background-color:(232,229,228);
-	margin:auto;
-	padding-top:2%;
-	
-	
-}
 
 }
-@media screen and (min-width:600px) {
+@media screen and (orientation:landscape) {
+
+td {width:12.5%; height:auto;}
 
 #footerWrap{ display:none; }
 #footer {display:none;  }
@@ -299,64 +241,14 @@ a:hover {color:white};
 #headerWrap { display:none;}
 #header{display:none;}
 
-/*
-#landscapeHeaderWrap { background:inherit; height:auto;  left:0; top:0; padding-bottom:5px; min-width:100%;}
-#landscapeHeader{ margin:0 auto; width:100%; text-align:center; border:1px;}
-*/
 
-table{
-	cellpadding:1%;
-}
-
-	.schoolPic{
-	margin-top:5px;
-	height:70%;
-	width:100%;
-}
-
-
-.content{
-	background-color:white;
-	margin-top:8px;
-	margin-bottom:8px;
-	height:50%;
-	width:100%;
-	margin-left:auto;
-	margin-right:auto;
-	border:none;
-	color:rgb(232,229,228);
-}
+#landscapeHeaderWrap { background:rgb(51,62,106);   padding-bottom:0px; width:100%;}
+#landscapeHeader{ width:100%; text-align:center;}
 
 
 
-.pageButton{
-	width:100%;
-	background-color:(232,229,228);
-	text-align:center;
-	color:rgb(155,155,155);
-	font-family:franchise;
-	font-size:16px;
-}
 
 
-.button{
-	width: 100%;
-	background-color: rgb(232,229,228);
-	text-align: center;
-	color: rgb(155,155,155);
-	font-family: franchise;
-	font-size: 16px;
-	bottom: 0px;
-	}
-	
-.buttonPic{
-	height:70%;
-	background-color:rgb(232,229,228);
-	margin-left:auto;
-	margin-right:auto;
-	padding-top:2%;
-
-}
 
 	}
 
@@ -365,6 +257,7 @@ table{
 
 @media only screen and (min-width: 481px) {
 .gridContainer {
+	background-color:rgb(52,63,106);
 	width:100%;
 	height:100%;
 	/*width: 90.675%;
@@ -373,6 +266,8 @@ table{
 	position:relative;
 }
 #LayoutDiv1 {
+		background-color:rgb(52,63,106);
+
 	clear: both;
 	float: left;
 	margin-left: 0px;
@@ -392,7 +287,7 @@ table{
 	padding-left: 0%;
 	padding-right: 0%;
 	margin: auto;
-	background-color: rgb(51, 62, 106);
+	background-color: rgb(52,63,106);
 	height: 100%;
 }
 #LayoutDiv1 {

@@ -11,6 +11,9 @@
 <title>Freshman Support</title>
 <link href="boilerplate.css" rel="stylesheet" type="text/css">
 <link href="mobile2.css" rel="stylesheet" type="text/css">
+
+
+
 <!-- 
 To learn more about the conditional comments around the html tags at the top of the file:
 paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
@@ -24,72 +27,84 @@ Do the following if you're using your customized build of modernizr (http://www.
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<script src="respond.min.js"></script>
+<link rel="stylesheet" href="jquery.mobile-1.1.10.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/latest/jquery.mobile.js"></script> 
 </head>
 <body>
 <div class="gridContainer clearfix">
   <div id="LayoutDiv1">
  	
+    
      <!-- landscape header -->
-    	<div id="landscapeHeaderWrap">
+    	<div id="landscapeHeaderWrap" data-role="header" data-tap-toggle="false" >
         <div id="landscapeHeader">
-        <div class="loginBar">
-    		<div class="login">
-        	<a href=#>Login</a>
-        	|
-        	<a href=#>Register</a>
-        	</div>
+       
+          <div class="loginBar">
+    	<div class="topRight">
+        
+            <div class="FS">FRESHMAN SUPPORT</div>
+            
+            <span class="logo"><img src="images/owl.png" width="38px" ></span>
+
+    		 <div class="logo"></div>
+             
+       	  </div>
     	</div>
   	
-	<table width=100% cellpadding=0 height=fixed>
-		<td width=12.5% height=100%><div class="pageButton">
+    
+      <div class="searchWrapper">
+    <div id="collegeSearch">
+      <form id="searchBox" action="">
+          <input id="search" type="text" name="collegeSearch" placeholder="The University of Texas at Austin" class="searchBox">
+
+      </form>
+    </div>
+    </div>
+
+    
+	<table width=100%  style="border:1px solid rgb(52,63,106);">
+		<td  ><div class="pageButton">
     	<div class="buttonPic">
-    	<img src=images/housinggrey.png >
-    	Home</div></div></td>
+    	<img src=images/housinggrey.png width=70%>
+    	<br>HOME</div>
+        </div></td>
     
     
-    	<td width=12.5%><div class="button"><div 		class="buttonPic">
-	    <img src=images/housinggrey.png >
-    	<br>Housing</div></div></td>
+    	<td ><div class="button"><div class="buttonPic">
+	    <img src=images/housinggrey.png width=70%>
+    	<br>HOUSING</div></div></td>
 	
     
-    	<td width=12.5%><div class="button"><div class="buttonPic"><img src=images/roommategrey.png ><br>Roommates</div></div></td>
+    	<td ><div class="button"><div class="buttonPic"><img src=images/roommategrey.png width=70%><br>ROOMIE MATCH</div></div></td>
 	
     
-    	<td width=12.5%><div class="button"><div class="buttonPic"><img src=images/admissionsgrey.png ><br>Admissions</div></div></td>
+    	<td ><div class="button"><div class="buttonPic"><img src=images/admissionsgrey.png width=70%><br>ADMISSIONS</div></div></td>
         
-        <td width=12.5% ><div class="button">
+        <td ><div class="button">
     	<div class="buttonPic">
-    	<img src=images/financegrey.png width=100%>
-    	<br>Financial</div></div></td>
+    	<img src=images/financegrey.png width=70%>
+    	<br>FINANCIAL</div></div></td>
     
     
-    	<td width=12.5%><div class="button"><div 		class="buttonPic">
-	    <img src=images/thereallifegrey.png width=100%>
-    	<br>The Real Life</div></div></td>
+    	<td ><div class="button"><div class="buttonPic">
+	    <img src=images/thereallifegrey.png width=70%>
+    	<br>THE REAL LIFE</div></div></td>
 	
     
-    	<td width=12.5%><div class="button"><div class="buttonPic"><img src=images/visitgrey.png width=100%><br>Visit</div></div></td>
+    	<td ><div class="button"><div class="buttonPic"><img src=images/visitgrey.png width=70%><br>VISIT</div></div></td>
 	
     
-    	<td width=12.5%><div class="button"><div class="buttonPic"><img src=images/deadlinegrey.png width=100%><br>Deadlines</div></div></td>
+    	<td ><div class="button"><div class="buttonPic"><img src=images/deadlinegrey.png width=70%><br>DEADLINES</div></div></td>
         
 </table>
   
  
-    
+    </div>
+      </div> 	  
   
   
-  
-  <div class="searchWrapper">
-    <div id="collegeSearch">
-      <form id="searchbox" action="">
-        <input id="search" type="text" name="collegeSearch" placeholder="The University of Texas at Austin" class="searchBox" />
-      </form>
-    </div>
-    </div>
-    </div>
-      </div>
+
     <!-- landscape header -->
     
     
@@ -97,56 +112,61 @@ Do the following if you're using your customized build of modernizr (http://www.
     
     
     <!-- HEADER BUTTONS -->
-    	<div id="headerWrap">
+    	<div id="headerWrap"data-role="header" data-position="fixed" data-tap-toggle="false">
         <div id="header">
+        
         <div class="loginBar">
-    		<div class="login">
-        	<a href=#>Login</a>
-        	|
-        	<a href=#>Register</a>
-        	</div>
+    	<div class="topRight">
+        
+            <div class="FS">FRESHMAN SUPPORT</div>
+            
+            <span class="logo"><img src="images/owl.png" width="38px" ></span>
+
+    		 <div class="logo"></div>
+             
+       	  </div>
     	</div>
+        
+        
+          <div class="searchWrapper">
+    <div id="collegeSearch">
+      <form id="searchbox" action="">
+<input id="search" type="text" name="collegeSearch" placeholder="The University of Texas at Austin" class="searchBox">      </form>
+    </div>
+    </div>
+
   	
-	<table width=100% cellpadding=0>
-		<td width=25%><div class="pageButton">
+	<table width=100% cellpadding=2px style="border:1px solid rgb(52,63,106);">
+		<td><div class="pageButton">
     	<div class="buttonPic">
-    	<img src=images/housinggrey.png >
-    	Home</div></div></td>
+    	<img src=images/housinggrey.png width=70% >
+    	<br>HOME</div></div></td>
     
     
-    	<td width=25% height=100%><div class="button"><div 		class="buttonPic">
-	    <img src=images/housinggrey.png >
-    	<br>Housing</div></div></td>
+    	<td><div class="button"><div class="buttonPic">
+	    <img src=images/housinggrey.png width=70%>
+    	<br>HOUSING</div></div></td>
 	
     
-    	<td width=25% height=100%><div class="button"><div class="buttonPic"><img src=images/roommategrey.png ><br>Roommates</div></div></td>
+    	<td><div class="button"><div class="buttonPic"><img src=images/roommategrey.png width=70%><br>ROOMIE MATCH</div></div></td>
 	
     
-    	<td width=25%><div class="button"><div class="buttonPic"><img src=images/admissionsgrey.png><br>Admissions</div></div></td>
-</table>
-  
+    	<td ><div class="button"><div class="buttonPic"><img src=images/admissionsgrey.png width=70%><br>ADMISSIONS</div></div></td>
+</table> 
+
+      </div>
+      </div>
  
     
   
-  
-  
-  <div class="searchWrapper">
-    <div id="collegeSearch">
-      <form id="searchbox" action="">
-        <input id="search" type="text" name="collegeSearch" placeholder="The University of Texas at Austin" class="searchBox" />
-      </form>
-    </div>
-    </div>
-    </div>
-      </div>
+
     <!-- END HEADER -->
     
     
     <!-- SCROLLABLE CONTENT -->
-    
     <div id="scrollingContainer">
-    	<div class="content">
-       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>got a problem put it in a divvvv
+    	<div id="content">
+       		 clear eyes full hearts cant lose
        
         </div>
     
@@ -160,24 +180,24 @@ Do the following if you're using your customized build of modernizr (http://www.
    <!-- FOOTER -->
     
     
-    <div id="footerWrap">
+    <div id="footerWrap" data-role="footer" data-position="fixed" data-tap-toggle="false">
     <div id="footer">
-      	<table width=100% cellpadding=0>
-		<td width=25% ><div class="button">
+      	<table width=100% cellpadding=0 style="border:1px solid rgb(52,63,106);">
+		<td ><div class="button">
     	<div class="buttonPic">
-    	<img src=images/financegrey.png>
-    	<br>Financial</div></div></td>
+    	<img src=images/financegrey.png width=70%>
+    	<br>FINANCIAL</div></div></td>
     
     
-    	<td width=25%><div class="button"><div 		class="buttonPic">
-	    <img src=images/thereallifegrey.png>
-    	<br>The Real Life</div></div></td>
+    	<td ><div class="button"><div 		class="buttonPic">
+	    <img src=images/thereallifegrey.png width=70%>
+    	<br>THE REAL LIFE</div></div></td>
 	
     
-    	<td width=25%><div class="button"><div class="buttonPic"><img src=images/visitgrey.png><br>Visit</div></div></td>
+    	<td><div class="button"><div class="buttonPic"><img src=images/visitgrey.png width=70%><br>VISIT</div></div></td>
 	
     
-    	<td width=25%><div class="button"><div class="buttonPic"><img src=images/deadlinegrey.png><br>Deadlines</div></div></td>
+    	<td ><div class="button"><div class="buttonPic"><img src=images/deadlinegrey.png width=70%><br>DEADLINES</div></div></td>
 </table>
     
     
