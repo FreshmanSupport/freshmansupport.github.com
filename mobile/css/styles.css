@@ -17,10 +17,12 @@ font-style:normal;
 } 
 
 
-a:link {color:white; text-decoration:none; font-weight:normal;}
-a:visited{color:white; text-decoration:none;font-weight:normal;}
-a:hover{color:white; text-decoration:none;font-weight:normal;}
-a:active{color:white; text-decoration:none;font-weight:normal;}
+a:link {color:rgb(119,117,117); text-decoration:none; font-weight:normal;}
+a:visited{color:rgb(119,117,117); text-decoration:none;font-weight:normal;}
+a:hover{color:rgb(119,117,117); text-decoration:none;font-weight:normal;}
+a:active{color:rgb(119,117,117); text-decoration:none;font-weight:normal;}
+
+
 
 #scrollingContainer { min-height:540px; width:100%; background-color:rgb(51,62,106);  }
 
@@ -127,7 +129,13 @@ table td{
 
 .topRight{
 	float:right;
-	margin-right:3%;
+	margin-right:2%;
+}
+.topLeft{
+	float:left;
+	margin-left:2%;
+	margin-top:8px;
+
 }
 
 .FS{
