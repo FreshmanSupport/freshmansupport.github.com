@@ -104,6 +104,11 @@ body{
 	
 }
 
+#collapseContent{
+padding-bottom:2px;
+padding-top:2px;
+text-align:center;
+}
 
 table{
 	display:table;
