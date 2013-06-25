@@ -11030,6 +11030,7 @@ $.mobile.document.delegate( ":jqmData(role='table')", "tablecreate refresh", fun
 				.bind( "orientationchange.iosorientationfix", zoom.enable )
 				.bind( "devicemotion.iosorientationfix", checkTilt );
 		}
+		   
 	});
 
 }( jQuery, this ));
