@@ -17,10 +17,10 @@ font-style:normal;
 } 
 
 
-a:link {color:rgb(119,117,117); text-decoration:none; font-weight:normal;}
-a:visited{color:rgb(119,117,117); text-decoration:none;font-weight:normal;}
-a:hover{color:rgb(119,117,117); text-decoration:none;font-weight:normal;}
-a:active{color:rgb(119,117,117); text-decoration:none;font-weight:normal;}
+a:link {color:rgb(51,62,106); text-decoration:none; font-weight:normal;}
+a:visited{color:rgb(51,62,106); text-decoration:none;font-weight:normal;}
+a:hover{color:rgb(51,62,106); text-decoration:none;font-weight:normal;}
+a:active{color:rgb(51,62,106); text-decoration:none;font-weight:normal;}
 
 
 
@@ -314,13 +314,47 @@ td {width:12.5%; height:auto;}
 }
 }
 
+.sendLink{
+float:right;
+font-size:14px;
+font-family:georgia;
+}
+
 
 .blueline{
 	margin:auto;
 	margin-top:-10px;
 	width:100%;
-
 }
+
+#smallTextAreas{
+	width:100%;
+	font-size:12px;
+}
+
+#smallTextAreaRight {
+	width:49%;
+	height:30px;
+	font-size:12px;
+	display:inline-block;
+	float:right;
+}
+
+#smallTextAreaLeft {
+	width:49%;
+	height:30px;
+	font-size:12px;
+	display:inline-block;
+	float:left;
+}
+
+
+#bigTextArea{
+	height:100px;
+	width:100%;
+	font-size:12px;
+}
+
 
 
 #collapseContent{
