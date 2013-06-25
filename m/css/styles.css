@@ -329,7 +329,6 @@ font-family:georgia;
 
 #smallTextAreas{
 	width:100%;
-	font-size:12px;
 }
 
 #smallTextAreaRight {
@@ -352,7 +351,8 @@ font-family:georgia;
 #bigTextArea{
 	height:100px;
 	width:100%;
-	font-size:12px;
+	font-size:14px;
+	font-style:italic;
 }
 
 
