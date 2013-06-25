@@ -1,7 +1,6 @@
 /* =============== HEADER =========================*/
 
-#logo {
-	background-image: url(images/logobanner2.png);
+#logoContainer img {
 	width: 120px;
 	height: 168px;
 	position: absolute;
@@ -46,7 +45,6 @@
 	margin: 0;
 	width: 12.5%;
 	text-align:center;
-	text-decoration:underline;
 	color:rgb(51, 62, 106);
 	text-align: center;
 }
@@ -54,6 +52,32 @@
 #newNav p{display:block;white-space: nowrap;overflow: hidden;}
 
 #newNav img{ width: 100px; height: 100px;margin: 0 auto; }
+
+/* ====== Sub Nav ======== */
+#subNav {
+	margin-top: 350px;
+	text-align: center;
+	white-space: nowrap;
+	background-color: grey;
+	width: 100%;
+	z-index: 2;
+	position:absolute;
+}
+#subNav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#subNav li {
+	display: inline;
+	color: white;
+}
+#subNav a {
+	font-size: .9em;
+	text-decoration: none;
+}
+
+
 
 /* ======== SEARCHING ====== */
 
@@ -118,14 +142,52 @@ h1 {
 
 /* ============== MAIN CONTENT ====================*/
 #maincontent {
-	height: 1000px;
+	height-min: 200px;
 	background: white;
 	margin-top: 152px;
 }
-#maincontent h2{
-	color: rgb(51, 62, 107);
-}
+#maincontent h2{color: rgb(51, 62, 107);}
 #maincontent h3{color: rgb(49, 0, 0);}
+#maincontent h2, #maincontent h3{ text-align: center;}
+
+/* ======= RoomMate ========= */
+.rmTable{
+margin: 0 auto;
+border: none;
+border-collapse: collapse;
+}
+.rmTable td{
+font-size: 2em;
+color: gray;
+width: 50%;
+height: 30px;
+border-left: 2px solid gray;
+border-right: 2px solid gray;
+}
+.rmTable td:first-child{
+	border-left: none;
+	text-align: right;
+	padding-right: 20px;
+}
+.rmTable td:nth-child(2){
+	text-align:left;
+	border-right: none;
+}
+
+.property{
+	width: 95%;
+	background-color: rgb(232, 229, 228);
+	height: 210px;
+	text-align: center;
+	border: 4px solid gray;
+	position:absolute;
+	left: 0;
+	white-space:nowrap;
+}
+.property img{
+	margin: 0 auto;
+}
+
 /* ============== COLUMN  ===================*/
 
 /* Select all of the column*/
@@ -195,7 +257,7 @@ body {
 	font-family:
 }
 #container {
-	width: 90%;
+	width: 95%;
 	margin: 0 auto;
 }
 /* ======================== EXPERIMENTAL STUFF ======================= */
@@ -231,15 +293,14 @@ padding-left: 50px;
 	display: inline-block;
 	width: 25px;
 	height: 22px;
-	background-image: url(images/triangle.png);
+	background-image: url(../img/triangle.png);
 	background-color: rgb(51, 62, 106);
 	border: 0;
 	padding-top: 8px;
 	padding-left: 5px;
 	background-repeat:no-repeat;
 }
-#searchContainer {
-}
+
 #header h1 {
 	color: rgb(51, 62, 106);
 	font-size: 1.5em;
@@ -247,7 +308,7 @@ padding-left: 50px;
 #magnify {
 	width: 16px;
 	height: 15px;
-	background-image: url(images/magnifyingglass.png);
+	background-image: url(../img/magnifyingglass.png);
 	display: inline-block;
 	margin-bottom: -2px;
 	margin-left: 5px;
