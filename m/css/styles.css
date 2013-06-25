@@ -104,11 +104,8 @@ body{
 	
 }
 
-#collapseContent{
-padding-bottom:2px;
-padding-top:2px;
-text-align:center;
-}
+
+
 
 table{
 	display:table;
@@ -165,7 +162,7 @@ table td{
 	margin:auto;
 	overflow:hidden;
 	color: rgb(51, 62, 106);
-	width:100%;
+	width:96%;
 	
 
 }
@@ -176,16 +173,15 @@ table td{
 	margin-left:auto;
 	margin-top:3px;
 	margin-bottom:10px;
-	height:25px;
+	height:33px;
 }
 .searchBox{
-	background-color:white;
 	font-family: georgia;
 	color: rgb(51, 62, 106);
 	margin:auto;
 	height:25px;
 	display:block;
-	width:96%;
+	width:100%;
 }
 
 
@@ -319,3 +315,22 @@ td {width:12.5%; height:auto;}
 	display: block;
 }
 }
+
+
+
+#collapseContent{
+padding-bottom:2px;
+padding-top:2px;
+text-align:center;
+}
+
+.collapseRight{
+text-align:right;
+float:right;
+margin-right:10px;
+font-size: 12px;
+}
+
+
+
+
