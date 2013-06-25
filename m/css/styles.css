@@ -17,10 +17,12 @@ font-style:normal;
 } 
 
 
-a:link {color:white; text-decoration:none; font-weight:normal;}
-a:visited{color:white; text-decoration:none;font-weight:normal;}
-a:hover{color:white; text-decoration:none;font-weight:normal;}
-a:active{color:white; text-decoration:none;font-weight:normal;}
+a:link {color:rgb(119,117,117); text-decoration:none; font-weight:normal;}
+a:visited{color:rgb(119,117,117); text-decoration:none;font-weight:normal;}
+a:hover{color:rgb(119,117,117); text-decoration:none;font-weight:normal;}
+a:active{color:rgb(119,117,117); text-decoration:none;font-weight:normal;}
+
+
 
 #scrollingContainer { min-height:540px; width:100%; background-color:rgb(51,62,106);  }
 
@@ -30,9 +32,12 @@ a:active{color:white; text-decoration:none;font-weight:normal;}
 	background-color:white;
 	width:96%;
 	min-height:540px;
-	color:rgb(119,117,117);
+	color:rgb(51,62,106);
 	margin-left:auto;
 	margin-right:auto;
+	font-family:helvetica new light;
+	font-weight:normal;
+	font-size:16px;
 }
 
 
@@ -82,9 +87,14 @@ img, object, embed, video {
 
 }
 
+h3{
+		color:rgb(51,62,106);
+	font-family:helvetica new light;
+}
 html, body{
 	height:100%;
 	font-size:100%;
+	color:rgb(51,62,106);
 }
 
 body{
@@ -93,6 +103,8 @@ body{
 	height:100%;
 	
 }
+
+
 
 
 table{
@@ -119,7 +131,7 @@ table td{
 	color:white;
 	text-align:right;
 	width:100%;
-	height:35px;
+	height:29px;
 	font-family:helvetica;
 	font-size:.75em;
 	margin:auto;
@@ -127,7 +139,13 @@ table td{
 
 .topRight{
 	float:right;
-	margin-right:3%;
+	margin-right:2%;
+}
+.topLeft{
+	float:left;
+	margin-left:2%;
+	margin-top:8px;
+
 }
 
 .FS{
@@ -144,7 +162,7 @@ table td{
 	margin:auto;
 	overflow:hidden;
 	color: rgb(51, 62, 106);
-	width:100%;
+	width:96%;
 	
 
 }
@@ -155,16 +173,15 @@ table td{
 	margin-left:auto;
 	margin-top:3px;
 	margin-bottom:10px;
-	height:25px;
+	height:34px;
 }
 .searchBox{
-	background-color:white;
 	font-family: georgia;
 	color: rgb(51, 62, 106);
 	margin:auto;
 	height:25px;
 	display:block;
-	width:94%;
+	width:100%;
 }
 
 
@@ -298,3 +315,22 @@ td {width:12.5%; height:auto;}
 	display: block;
 }
 }
+
+
+
+#collapseContent{
+padding-bottom:2px;
+padding-top:2px;
+text-align:center;
+}
+
+.collapseRight{
+text-align:right;
+float:right;
+margin-right:10px;
+font-size: 12px;
+}
+
+
+
+

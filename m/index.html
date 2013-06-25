@@ -9,8 +9,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>Freshman Support</title>
-<link href="boilerplate.css" rel="stylesheet" type="text/css">
-<link href="mobile2.css" rel="stylesheet" type="text/css">
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
 
 
 
@@ -27,9 +27,13 @@ Do the following if you're using your customized build of modernizr (http://www.
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<link rel="stylesheet" href="jquery.mobile-1.1.10.min.css" />
-	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-  <script src="http://code.jquery.com/mobile/latest/jquery.mobile.js"></script> 
+
+
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.1.min.css" />
+	<script src="js/jquery-1.7.1.min.js"></script>
+    
+  <script src="js/jquery.mobile-1.3.1.js"></script> 
+
 </head>
 <body>
 <div class="gridContainer clearfix">
@@ -41,8 +45,8 @@ Do the following if you're using your customized build of modernizr (http://www.
         <div id="landscapeHeader">
        
           <div class="loginBar">
+          <div class="topLeft"><img src="images/drop.gif" width="38px" ></div>
     	<div class="topRight">
-        
             <div class="FS">FRESHMAN SUPPORT</div>
             
             <span class="logo"><img src="images/owl.png" width="38px" ></span>
@@ -55,10 +59,8 @@ Do the following if you're using your customized build of modernizr (http://www.
     
       <div class="searchWrapper">
     <div id="collegeSearch">
-      <form id="searchBox" action="">
-          <input id="search" type="text" name="collegeSearch" placeholder="The University of Texas at Austin" class="searchBox">
+              <input type="search" name="password" id="search" value="" placeholder="The University of Texas at Austin">
 
-      </form>
     </div>
     </div>
 
@@ -66,36 +68,36 @@ Do the following if you're using your customized build of modernizr (http://www.
 	<table width=100%  style="border:1px solid rgb(52,63,106);">
 		<td  ><div class="pageButton">
     	<div class="buttonPic">
-    	<img src=images/housinggrey.png width=70%>
+    	<img src=images/homegrey.gif width=70%>
     	<br>HOME</div>
         </div></td>
     
     
-    	<td ><div class="button"><div class="buttonPic">
+    	<td ><a href="housing"><div class="button"><div class="buttonPic">
 	    <img src=images/housinggrey.png width=70%>
-    	<br>HOUSING</div></div></td>
+    	<br>HOUSING</div></a></div></td>
 	
     
-    	<td ><div class="button"><div class="buttonPic"><img src=images/roommategrey.png width=70%><br>ROOMIE MATCH</div></div></td>
+    	<td ><a href="roomiematch"><div class="button"><div class="buttonPic"><img src=images/roommategrey.png width=70%><br>ROOMIE MATCH</div></a></div></td>
 	
     
-    	<td ><div class="button"><div class="buttonPic"><img src=images/admissionsgrey.png width=70%><br>ADMISSIONS</div></div></td>
+    	<td ><a href="admissions"><div class="button"><div class="buttonPic"><img src=images/admissionsgrey.png width=70%><br>ADMISSIONS</div></a></div></td>
         
-        <td ><div class="button">
+        <td ><a href="financial"><div class="button">
     	<div class="buttonPic">
     	<img src=images/financegrey.png width=70%>
-    	<br>FINANCIAL</div></div></td>
+    	<br>FINANCIAL</div></a></div></td>
     
     
-    	<td ><div class="button"><div class="buttonPic">
+    	<td ><a href="thereallife"><div class="button"><div class="buttonPic">
 	    <img src=images/thereallifegrey.png width=70%>
-    	<br>THE REAL LIFE</div></div></td>
+    	<br>THE REAL LIFE</div></a></div></td>
 	
     
-    	<td ><div class="button"><div class="buttonPic"><img src=images/visitgrey.png width=70%><br>VISIT</div></div></td>
+    	<td ><a href="visit"><div class="button"><div class="buttonPic"><img src=images/visitgrey.png width=70%><br>VISIT</div></a></div></td>
 	
     
-    	<td ><div class="button"><div class="buttonPic"><img src=images/deadlinegrey.png width=70%><br>DEADLINES</div></div></td>
+    	<td ><a href="deadlines"><div class="button"><div class="buttonPic"><img src=images/deadlinegrey.png width=70%><br>DEADLINES</div></a></div></td>
         
 </table>
   
@@ -116,6 +118,7 @@ Do the following if you're using your customized build of modernizr (http://www.
         <div id="header">
         
         <div class="loginBar">
+        <div class="topLeft"><img src="images/drop.gif" width="38px" ></div>
     	<div class="topRight">
         
             <div class="FS">FRESHMAN SUPPORT</div>
@@ -130,28 +133,27 @@ Do the following if you're using your customized build of modernizr (http://www.
         
           <div class="searchWrapper">
     <div id="collegeSearch">
-      <form id="searchbox" action="">
-<input id="search" type="text" name="collegeSearch" placeholder="The University of Texas at Austin" class="searchBox">      </form>
-    </div>
+            <input type="search" name="password" id="search" value="" placeholder="The University of Texas at Austin">
+</div>
     </div>
 
   	
 	<table width=100% cellpadding=2px style="border:1px solid rgb(52,63,106);">
 		<td><div class="pageButton">
     	<div class="buttonPic">
-    	<img src=images/housinggrey.png width=70% >
+    	<img src=images/homegrey.gif width=70% >
     	<br>HOME</div></div></td>
     
     
-    	<td><div class="button"><div class="buttonPic">
+    	<td><a href="housing"><div class="button"><div class="buttonPic">
 	    <img src=images/housinggrey.png width=70%>
-    	<br>HOUSING</div></div></td>
+    	<br>HOUSING</div></a></div></td>
 	
     
-    	<td><div class="button"><div class="buttonPic"><img src=images/roommategrey.png width=70%><br>ROOMIE MATCH</div></div></td>
+    	<td><a href="roomiematch"><div class="button"><div class="buttonPic"><img src=images/roommategrey.png width=70%><br>ROOMIE MATCH</div></a></div></td>
 	
     
-    	<td ><div class="button"><div class="buttonPic"><img src=images/admissionsgrey.png width=70%><br>ADMISSIONS</div></div></td>
+    	<td ><a href="admissions"><div class="button"><div class="buttonPic"><img src=images/admissionsgrey.png width=70%><br>ADMISSIONS</div></a></div></td>
 </table> 
 
       </div>
@@ -183,21 +185,21 @@ Do the following if you're using your customized build of modernizr (http://www.
     <div id="footerWrap" data-role="footer" data-position="fixed" data-tap-toggle="false">
     <div id="footer">
       	<table width=100% cellpadding=0 style="border:1px solid rgb(52,63,106);">
-		<td ><div class="button">
+		<td ><a href="financial"><div class="button">
     	<div class="buttonPic">
     	<img src=images/financegrey.png width=70%>
-    	<br>FINANCIAL</div></div></td>
+    	<br>FINANCIAL</div></a></div></td>
     
     
-    	<td ><div class="button"><div 		class="buttonPic">
+    	<td ><a href="thereallife"><div class="button"><div 		class="buttonPic">
 	    <img src=images/thereallifegrey.png width=70%>
-    	<br>THE REAL LIFE</div></div></td>
+    	<br>THE REAL LIFE</div></a></div></td>
 	
     
-    	<td><div class="button"><div class="buttonPic"><img src=images/visitgrey.png width=70%><br>VISIT</div></div></td>
+    	<td><a href="visit"><div class="button"><div class="buttonPic"><img src=images/visitgrey.png width=70%><br>VISIT</div></a></div></td>
 	
     
-    	<td ><div class="button"><div class="buttonPic"><img src=images/deadlinegrey.png width=70%><br>DEADLINES</div></div></td>
+    	<td ><a href="deadlines"><div class="button"><div class="buttonPic"><img src=images/deadlinegrey.png width=70%><br>DEADLINES</div></a></div></td>
 </table>
     
     
