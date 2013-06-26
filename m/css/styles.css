@@ -64,6 +64,7 @@ img, object, embed, video {
 	font-size:.7em;
 	margin:auto;
 	height:100%;
+	
 }
 
 
@@ -76,14 +77,14 @@ img, object, embed, video {
 	font-size:.7em;
 	margin:auto;
 	height:100%;
+	
 	}
 	
 .buttonPic{
 	background-color:(230,229,227);
 	margin:auto;
 	padding-top:2%;
-	
-	
+	padding-bottom:3%;
 
 }
 
@@ -231,7 +232,7 @@ td{width:25%;}
 
 
 
-#headerWrap {background:rgb(51,62,106); width:100%; min-height:27%;}
+#headerWrap {background:rgb(51,62,106); width:100%; min-height:25%;}
 #header{ width:inherit; text-align:center;  }
 
 
@@ -387,4 +388,18 @@ font-size: 12px;
 
 
 
+.swipe {
+  position: relative;
+  width:100%;
+  margin:auto;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
 
+}
