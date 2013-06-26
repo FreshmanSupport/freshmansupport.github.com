@@ -64,6 +64,7 @@ img, object, embed, video {
 	font-size:.7em;
 	margin:auto;
 	height:100%;
+	
 }
 
 
@@ -76,14 +77,14 @@ img, object, embed, video {
 	font-size:.7em;
 	margin:auto;
 	height:100%;
+	
 	}
 	
 .buttonPic{
 	background-color:(230,229,227);
 	margin:auto;
 	padding-top:2%;
-	
-	
+	padding-bottom:3%;
 
 }
 
@@ -387,4 +388,17 @@ font-size: 12px;
 
 
 
-
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
