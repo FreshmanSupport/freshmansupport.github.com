@@ -1614,21 +1614,21 @@ label.ui-submit {
 }
 }
 .ui-collapsible-inset {
-	margin: .5em 0
+	margin: 0 0
 }
 .ui-collapsible-heading {
 	font-size: 16px;
 	display: block;
-	margin: 0 -15px;
+	margin: -15px 0px;
 	padding: 0;
 	position: relative
 }
 .ui-collapsible-inset .ui-collapsible-heading {
-	margin: 0
+	margin-top: -10px
 }
 .ui-collapsible-heading .ui-btn {
 	text-align: left;
-	margin: 0;
+	margin: -10px 0;
 	border-left-width: 0;
 	border-right-width: 0
 }
@@ -1676,7 +1676,8 @@ label.ui-submit {
 }
 .ui-collapsible-heading .ui-btn span.ui-btn .ui-icon {
 	left: 0;
-	margin-top: -10px
+		margin-top: -10px
+
 }
 .ui-collapsible-heading-status {
 	position: absolute;
@@ -1686,7 +1687,7 @@ label.ui-submit {
 .ui-collapsible-content {
 	display: block;
 	margin: 0 -15px;
-	padding: 10px 15px;
+	padding: 5px 15px;
 	border-left-width: 0;
 	border-right-width: 0;
 	border-top: 0;
@@ -2494,7 +2495,7 @@ ol.ui-listview, ol.ui-listview .ui-li-divider {
 	margin: 1em 0
 }
 .ui-collapsible-content .ui-listview-inset {
-	margin: .5em 0
+	margin: 0 0
 }
 .ui-listview, .ui-li {
 	list-style: none;
