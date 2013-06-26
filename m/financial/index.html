@@ -32,8 +32,6 @@ Do the following if you're using your customized build of modernizr (http://www.
 
 
 
-
-
 </head>
 <body>
 <div class="gridContainer clearfix">
@@ -176,13 +174,14 @@ Do the following if you're using your customized build of modernizr (http://www.
             
             
             	<div id='slider' class='swipe'>
- 				 <div class='swipe-wrap'>
+ 				 <div class='swipe-wrap'>Loans
    					 <div>Loans</div>
    					 <div>Grants</div>
   			    	  <div>Pants</div>
  				 </div>
 				</div>
             
+
             
             
             </div>
@@ -250,10 +249,15 @@ Do the following if you're using your customized build of modernizr (http://www.
 
 
 
-<script type="text/javascript">
 
+
+</body>
+
+
+</html>
+<script type="text/javascript">
 window.mySwipe = new Swipe(document.getElementById('slider'), {
-  startSlide: 2,
+  startSlide: 8,
   speed: 400,
   auto: 3000,
   continuous: true,
@@ -262,14 +266,4 @@ window.mySwipe = new Swipe(document.getElementById('slider'), {
   callback: function(index, elem) {},
   transitionEnd: function(index, elem) {}
 });
-
 </script>
-
-
-
-
-
-</body>
-
-
-</html>

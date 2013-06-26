@@ -232,7 +232,7 @@ td{width:25%;}
 
 
 
-#headerWrap {background:rgb(51,62,106); width:100%; min-height:24%;}
+#headerWrap {background:rgb(51,62,106); width:100%; min-height:25%;}
 #header{ width:inherit; text-align:center;  }
 
 
@@ -389,9 +389,9 @@ font-size: 12px;
 
 
 .swipe {
-  overflow: hidden;
-  visibility: hidden;
   position: relative;
+  width:100%;
+  margin:auto;
 }
 .swipe-wrap {
   overflow: hidden;
@@ -401,4 +401,5 @@ font-size: 12px;
   float:left;
   width:100%;
   position: relative;
+
 }
