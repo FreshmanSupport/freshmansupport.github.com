@@ -3,8 +3,15 @@
 	src: url(../fonts/helveticaneue-light.otf);
 }
 /* =============== HEADER =========================*/
-#header {
-	padding-right: 50px;
+
+#headerContent {
+	margin-left: 140px;
+	height: 336px;
+}
+#header h1 {
+	color: white;
+	font-size: 1.5em;
+	font-weight:normal;
 }
 #logoContainer img {
 	width: 120px;
@@ -13,37 +20,35 @@
 	margin-left: 10px;
 	background-size: 100% 100%;
 }
-#headerContent {
-	margin-left: 140px;
-	height: 200px;
-}
+
 #loginBar {
-	width: inherit;
+	width: 100%;
 	height: 50px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
-#loginBar a {
-	display: inline-block;
-	float: right;
-	margin-top: 10px;
-	margin-right: 5px;
-	color: white;
-	font-size: 1.3em;
+#loginBarContainer{
+	margin-top: 15px;
+	float:right;
+	font-size: 1em;
+	}
+#loginBar a{
+	color:white;
 }
 /* ============= Button Nav ====== */
 #newNav {
-	width: 100%;
+	width: 100%;	
 	position: absolute;
+	left: 0;
+	white-space: nowrap;
 	background-color: rgb(232, 229, 228);
-	height: 150px;
-	margin-top: 200px;
+	height-min: 100px;
 	border-width: 3px;
 	border-color: rgb(51, 62, 106);
 	border-style: solid;
 	display: table;
-	;
 	border-collapse: collapse;
 	border: none;
+	padding-top: 3px;
 }
 #newNav ul {
 	display: table-row;
@@ -60,21 +65,27 @@
 	display: block;
 	white-space: nowrap;
 	overflow: hidden;
+	color:gray;
+	margin: 0;
+	margin-bottom: 5px;
 }
 #newNav img {
-	width: 100px;
+	width: 124px;
 	height: 100px;
 	margin: 0 auto;
+	margin-bottom: 5px;
 }
 /* ====== Sub Nav ======== */
 #subNav {
-	margin-top: 350px;
 	text-align: center;
 	white-space: nowrap;
 	background-color: grey;
 	width: 100%;
 	z-index: 2;
 	position: absolute;
+	left:0;
+	margin-top: 126px;
+	padding: 5px 0;
 }
 #subNav ul {
 	list-style-type: none;
@@ -84,6 +95,7 @@
 #subNav li {
 	display: inline;
 	color: white;
+	margin: 0 5px;
 }
 #subNav a {
 	font-size: .9em;
@@ -108,7 +120,7 @@
 }
 /* ========= College Site Search ============= */
 #collegeSiteSearch {
-	height: 100px;
+	height: 90px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 #collegeSiteSearch form {
@@ -155,7 +167,6 @@ h1 {
 #maincontent {
 	height-min: 200px;
 	background: white;
-	margin-top: 152px;
 }
 #maincontent h2 {
 	color: rgb(51, 62, 107);
@@ -194,7 +205,7 @@ h1 {
 .property {
 	width: 80%;
 	background-color: rgb(232, 229, 228);
-	height: 210px;
+	height-min: 210px;
 	text-align: center;
 	border: 4px solid gray;
 	position: absolute;
@@ -272,11 +283,14 @@ body {
 	font-family: HelveticaNeue;
 }
 #container {
-	width: 95%;
+	width: 97.5%;
 	margin: 0 auto;
 }
 a {
 	text-decoration: none;
+}
+a:visited{
+	color: inherit;
 }
 /* ======================== EXPERIMENTAL STUFF ======================= */
 
@@ -295,7 +309,7 @@ a {
 	color: white;
 	background-color: white;
 	border: 0;
-	padding-left: 20px;
+	padding-left: 10px;
 }
 .searchBox input {
 	padding-left: 50px;
@@ -312,11 +326,7 @@ a {
 	padding-left: 5px;
 	background-repeat: no-repeat;
 }
-#header h1 {
-	color: white;
-	font-size: 1.5em;
-	font-weight:normal;
-}
+
 #magnify {
 	width: 16px;
 	height: 15px;

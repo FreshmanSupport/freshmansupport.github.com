@@ -13,66 +13,64 @@
 </head>
 
 <body>
-<div id="newNav">
-  <ul>
-    <li><a href="../home"><img /><p>HOME</p></a></li>
-    
-    <li><a href="../home"><img src="../img/navBar/housinggrey.png" />
-      <p>HOUSING</p></a>
-    </li>
-    <li><img src="../img/navBar/roommategrey.png" />
-      <p>ROOMMATE</p>
-    </li>
-    <li><img src="../img/navBar/admissionsgrey.png" />
-      <p>ADMISSION</p>
-    </li>
-    <li><img src="../img/navBar/financegrey.png" />
-      <p>FINANCES</p>
-    </li>
-    <li><img src="../img/navBar/theRealLifegrey.png" />
-      <p>THE REAL LIFE</p>
-    </li>
-    <li><img src="../img/navBar/visitgrey.png" />
-      <p>VISIT</p>
-    </li>
-    <li><img src="../img/navBar/deadlinegrey.png" />
-      <p>DEADLINE</p>
-    </li>
-  </ul>
-</div>
-<div id="subNav">
-  <ul>
-    <li><a>MATCHING QUESTIONARE</a> |</li>
-    <li><a>STUDENT PROFILE</a> |</li>
-    <li><a>SEARCH MATCHES</a></li>
-  </ul>
-</div>
 <div id="container">
-<div id="bodyWrapper">
-  <div id="header">
-    <div id="logoContainer"> <img src="../img/logo.png" /> </div>
-    <div id="headerContent">
-      <div id="loginBar"> 
-        <!--<button class='loginButtonSkin'>Register</button>
-          <button class='loginButtonSkin'>Login</button> --> 
-        <a href="#">| Register</a> <a href="#">Login</a> </div>
-      <div id="collegeSearch">
-        <form id="searchbox" action="">
-          <input id="search" type="text" name="collegeSearch" placeholder="The University of Texas at Austin" class="searchBox">
-          <input id="submit" type="submit" value="Search" name="submit"class="searchButton">
+<div id="header">
+  <div id="logoContainer"> <img src="../img/logo.png" /> </div>
+  <div id="headerContent">
+    <div id="loginBar">
+      <div id="loginBarContainer"> <a href="#">Login |</a> <a href="#"> Register</a> </div>
+    </div>
+    <div id="collegeSearch">
+      <form id="searchbox" action="">
+        <input id="search" type="text" name="collegeSearch" placeholder="The University of Texas at Austin" class="searchBox">
+        <input id="submit" type="submit" value="Search" name="submit"class="searchButton">
+      </form>
+    </div>
+    <div id="collegeSiteSearch">
+      <div class="col-1-2">
+        <h1> Texas Longhorns</h1>
+      </div>
+      <div class="col-1-2">
+        <form id="searchbox" action="" class="siteSearchContainer">
+          <div id="magnify"></div>
+          <input id="search" type="text" placeholder="Search The University of North Texas" class="collegeSiteSearchSkin">
         </form>
       </div>
-      <div id="collegeSiteSearch">
-        <div class="col-1-2">
-          <h1> Texas Longhorns</h1>
-        </div>
-        <div class="col-1-2">
-          <form id="searchbox" action="" class="siteSearchContainer">
-            <div id="magnify"></div>
-            <input id="search" type="text" placeholder="Search The University of North Texas" class="collegeSiteSearchSkin">
-          </form>
-        </div>
-      </div>
+    </div>
+    <div id="newNav">
+      <ul>
+        <li><a href="../home"><img src="../img/navBar/homeGrey.png" onmouseover="this.src='../img/navBar/homeNavy.png'" onmouseout="this.src='../img/navBar/homeGrey.png'" />
+          <p>HOME</p>
+          </a></li>
+        <li><a href="../housing"><img src="../img/navBar/housingGrey.png" onmouseover="this.src='../img/navBar/housingNavy.png'" onmouseout="this.src='../img/navBar/housingGrey.png'" />
+          <p>COMPARE HOUSING</p>
+          </a> </li>
+        <li><a href="../roommate"><img src="../img/navBar/roommateGrey.png" onmouseover="this.src='../img/navBar/roommatenavy.png'" onmouseout="this.src='../img/navBar/roommateGrey.png'"/>
+          <p>ROOMMATE MATCHING</p>
+          </a> </li>
+        <li ><a href="../admission" ><img src="../img/navBar/admissionsGrey.png" onmouseover="this.src='../img/navBar/admissionsNavy.png'" onmouseout="this.src='../img/navBar/admissionsGrey.png'"/>
+          <p>ADMISSION</p>
+          </a> </li>
+        <li><a href="../finance"><img src="../img/navBar/financeGrey.png" onmouseover="this.src='../img/navBar/financeNavy.png'" onmouseout="this.src='../img/navBar/financeGrey.png'"/>
+          <p>FINANCES</p>
+          </a> </li>
+        <li><a href="../theRealLife"><img src="../img/navBar/theRealLifeGrey.png" onmouseover="this.src='../img/navBar/theRealLifeNavy.png'" onmouseout="this.src='../img/navBar/theRealLifeGrey.png'"/>
+          <p>THE REAL LIFE</p>
+          </a> </li>
+        <li><a href="../visit"><img src="../img/navBar/visitGrey.png" onmouseover="this.src='../img/navBar/visitNavy.png'" onmouseout="this.src='../img/navBar/visitGrey.png'" />
+          <p>VISIT</p>
+          </a> </li>
+        <li><a href="../deadline"><img src="../img/navBar/deadlineGrey.png" onmouseover="this.src='../img/navBar/deadlineNavy.png'" onmouseout="this.src='../img/navBar/deadlineGrey.png'" />
+          <p>DEADLINES</p>
+          </a> </li>
+      </ul>
+    </div>
+    <div id="subNav">
+      <ul>
+        <li><a>MATCHING QUESTIONARE</a> |</li>
+        <li><a>STUDENT PROFILE</a> |</li>
+        <li><a>SEARCH MATCHES</a></li>
+      </ul>
     </div>
   </div>
 </div>
@@ -99,25 +97,22 @@
                   <input type="radio" id="c5" name="cc" />
                   <label for="c5"><span></span>Check Box 5</label>
                 </fieldset>
-                 </li>
+              </li>
               <li><img src="../_shared/img/img2.jpg" width="600" height="400" alt=""></li>
               <li><img src="../_shared/img/img3.jpg" width="600" height="400" alt=""></li>
               <li><img src="../_shared/img/img4.jpg" width="600" height="400" alt=""></li>
               <li><img src="../_shared/img/img5.jpg" width="600" height="400" alt=""></li>
               <li><img src="../_shared/img/img6.jpg" width="600" height="400" alt=""></li>
-           
             </ul>
-            
           </div>
-          <a data-jcarousel-control="true" data-target="-=1" href="#" class="carousel-control-prev">&lsaquo;</a> <a data-jcarousel-control="true" data-target="+=1" href="#" class="carousel-control-next">&rsaquo;</a>
-        </div>
+          <a data-jcarousel-control="true" data-target="-=1" href="#" class="carousel-control-prev">&lsaquo;</a> <a data-jcarousel-control="true" data-target="+=1" href="#" class="carousel-control-next">&rsaquo;</a> </div>
       </div>
     </div>
     <div class="span6">
-    <h2>UT Roommate Deadline</h2>
-    <h3>July, 14, 2013</h3>
-    <p>View more Deadlines</p>
-    <hr />
+      <h2>UT Roommate Deadline</h2>
+      <h3>July, 14, 2013</h3>
+      <span style="text-align: center; margin: 0 auto;">View more Deadlines</span>
+      <hr />
       <h2>UT Roomates</h2>
       <h2>By the Numbers</h2>
       <table class="rmTable">
