@@ -2,6 +2,10 @@
 	font-family: "HelveticaNeue";
 	src: url(../fonts/helveticaneue-light.otf);
 }
+@font-face{
+	font-family: "HNB";
+	src: url(../fonts/helveticaneue-bold.otf);
+}
 /* =============== HEADER =========================*/
 #header{ margin: 0 auto;}
 #headerContent {
@@ -22,14 +26,16 @@
 }
 #loginBar {
 	width: 100%;
-	height: 50px;
-	font-family: Georgia, "Times New Roman", Times, serif;
+	height: 25px;
 }
 #loginBarContainer {
-	font-size: 1em;
+	float: right;
+	margin-right: 20px;
+	margin-top: 3px;
 }
 #loginBar a {
 	color: white;
+	font-family: HelveticaNeue, "Times New Roman", Times, serif;
 }
 /* ============= Button Nav ====== */
 #newNav {
@@ -114,10 +120,16 @@
 .searchBox:-ms-input-placeholder { /* Internet Explorer 10+ */
  color:rgb(51, 62, 106);
 }
-/* ========= College Site Search ============= */
+/* ========= Search Bar ============= */
 #collegeSiteSearch {
 	height: 90px;
 	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.siteSearchContainer {
+	border-width: 1px;
+	border-color: gray;
+	border-style: solid;
+	background-color: white;
 }
 #collegeSiteSearch form {
 	float: right;
@@ -133,6 +145,46 @@ h1 {
 	padding: 0;
 	padding-top: 20px;
 	padding-left: 5px;
+}
+#collegeSearch {
+	background-color: white;
+	height: 45px;
+	overflow: hidden;
+	border-width: 1px;
+	border-color: gray;
+}
+.searchBox {
+	font-size: 32px;
+	height: 45px;
+	width: 95%;
+	color: white;
+	background-color: white;
+	border: 0;
+	padding-left: 10px;
+}
+.searchBox input {
+	padding-left: 50px;
+}
+.searchButton {
+	text-indent: -99999px;
+	display: inline-block;
+	width: 39px;
+	height: 21px;
+	background-image: url(../img/triangle.png);
+	background-color: white;
+	border: 0;
+	padding-top: 8px;
+	padding-left: 5px;
+	background-repeat: no-repeat;
+}
+#magnify {
+	width: 16px;
+	height: 15px;
+	background-image: url(../img/magnifyingglass.png);
+	display: inline-block;
+	margin-bottom: -2px;
+	margin-left: 5px;
+	background-repeat: no-repeat;
 }
 /* =========== Nav Boxes =============== */
 #buttonNav {
@@ -286,21 +338,23 @@ float: left;
 	color: rgb(51, 62, 106);
 	display:block;
 	}
-.ring{ margin: 0 auto;}
-.ring ul{
-display:inline-block;
-margin: 0 auto;
+#ringContainer{
+	overflow:hidden;
+	width: 370px;
+	margin:0 auto;
 }
-.ring li{
-	margin: 0;
-	height: 110px;
-	width: 110px;
+.ring{ 
+	background-image:url(../img/orangeRing.png);
+	background-size: 100% 100%;	
 	text-align: center;
 	color: rgb(51, 62, 106);
-	background-image:url(../img/orangeRing.png);
-	background-size: 100% 100%;
-
+	height: 100px;
+	width: 100px;
+	float:left;
+	top-padding: 20px;
+	margin: 0 10px;
 }
+
 /* ============== NULLIFY =======================*/
 
 html, body {
@@ -323,53 +377,9 @@ a {text-decoration: none;}
 a:visited {color: inherit;}
 /* ======================== EXPERIMENTAL STUFF ======================= */
 
+.borderRight{border-right: 2px solid rgb(232, 229, 228);}
 
-#collegeSearch {
-	background-color: white;
-	height: 45px;
-	overflow: hidden;
-	border-width: 1px;
-	border-color: gray;
-}
-.searchBox {
-	font-size: 32px;
-	height: 45px;
-	width: 95%;
-	color: white;
-	background-color: white;
-	border: 0;
-	padding-left: 10px;
-}
-.searchBox input {
-	padding-left: 50px;
-}
-.searchButton {
-	text-indent: -99999px;
-	display: inline-block;
-	width: 39px;
-	height: 21px;
-	background-image: url(../img/triangle.png);
-	background-color: white;
-	border: 0;
-	padding-top: 8px;
-	padding-left: 5px;
-	background-repeat: no-repeat;
-}
-#magnify {
-	width: 16px;
-	height: 15px;
-	background-image: url(../img/magnifyingglass.png);
-	display: inline-block;
-	margin-bottom: -2px;
-	margin-left: 5px;
-	background-repeat: no-repeat;
-}
-.siteSearchContainer {
-	border-width: 1px;
-	border-color: gray;
-	border-style: solid;
-	background-color: white;
-}
+
 /* ========== Messing with Boot Strap ============= */
 [class*="span"] .span6 {
 	display: inline-block;

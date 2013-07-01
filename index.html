@@ -1,71 +1,32 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link type="text/css" rel="stylesheet" href="css/landingStyle.css"/>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/base.js"></script>
-<script type="text/javascript" src="js/rotate3di.js"></script>
-<!--
-<script type="text/javascript" language="javascript" charset="utf-8">
-$(document).ready(function () {
-    $('#panel li div.back').hide().css('left', 0);
-    
-    function mySideChange(front) {
-        if (front) {
-            $(this).parent().find('div.front').show();
-            $(this).parent().find('div.back').hide();
-            
-        } else {
-            $(this).parent().find('div.front').hide();
-            $(this).parent().find('div.back').show();
-        }
-    }
-    
-    $('#panel li').hover(
-        function () {
-            $(this).find('div').stop().rotate3Di('flip', 100, {direction: 'clockwise', sideChange: mySideChange});
-        },
-        function () {
-            $(this).find('div').stop().rotate3Di('unflip', 250, {sideChange: mySideChange});
-        }
-    );
-});
-</script>
--->
-<script>
-$(function () {
-    // Utilize the modernzr feature support class to detect CSS 3D transform support
-    if ($('html').hasClass('csstransforms3d')) {    
-    
-        // if it's supported, remove the scroll effect add the cool card flipping instead
-        $('.thumb').removeClass('scroll').addClass('flip');        
-        
-        // add/remove flip class that make the transition effect
-        $('.thumb.flip').hover(
-            function () {
-                $(this).find('.thumb-wrapper').addClass('flipIt');
-            },
-            function () {
-                $(this).find('.thumb-wrapper').removeClass('flipIt');            
-            }
-        );
-        
-    } else {
-        
-        // CSS 3D is not supported, use the scroll up effect instead
-        $('.thumb').hover(
-            function () {
-                $(this).find('.thumb-detail').stop().animate({bottom:0}, 500, 'easeOutCubic');
-            },
-            function () {
-                $(this).find('.thumb-detail').stop().animate({bottom: ($(this).height() * -1) }, 500, 'easeOutCubic');            
-            }
-        );
-    }
-});
-</script>
 <title>Freshman Support</title>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery.quickflip.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+    
+    // for performance first init the quickFlip
+    $('.quickFlip').quickFlip();
+    
+    // set up a hover effect for each of the quickflip wrappers
+    for ( var i = 0; i < $.quickFlip.wrappers.length; i++ ) {
+        var thisOne = $.quickFlip.wrappers[i];
+
+        $( thisOne.wrapper ).hover( function(ev) {
+            var $target = $(ev.target);
+            // make sure it isn't a child node
+            if ( !$target.hasClass('quickFlip') ) $target = $target.parent();
+            
+            $target.quickFlipper();
+            
+        }, function() {});
+    }
+});
+</script>
+<link rel="stylesheet" type="text/css" href="css/hover-quickflips.css" />
+<link rel="stylesheet" type="text/css" href="css/landingStyle.css" />
 </head>
 
 <body>
@@ -79,103 +40,75 @@ $(function () {
     <input id="submit" type="submit" value="Search" name="submit" class="searchButton">
   </div>
 </div>
-<div id="subContent">
-<!--
-<u1 id="panel">
-<table cellpadding=0 >
-  <tr>
-    <td width=25%><li>
-        <div class="front">
-          <p class="tableText"><img src=images/compareDormLanding.png height=120 class="icon"/></p>
-          <p class="tableText">Housing</p>
-        </div>
-        <div class="back">Check out your </div>
-      </li></td>
-    <td width=25%><li>
-        <div class="front">
-          <p class="tableText"><img src=images/roommateMatchingLanding.png class="icon" height=120 /></p>
-          <p class="tableText">Roommates</p>
-        </div>
-        <div class="back">content </div>
-      </li></td>
-    <td width=25%><li>
-        <div class="front">
-          <p class="tableText"><img src=images/admissionsLanding.png height=120 class="icon" /></p>
-          <p class="tableText">Admissions</p>
-        </div>
-        <div class="back">content </div>
-      </li></td>
-    <td width=25%><li>
-        <div class="front">
-          <p class="tableText"><img src=images/financeLanding.png height=120 class="icon"/></p>
-          <p class="tableText">Finance</p>
-        </div>
-        <div class="back">content </div>
-      </li></td>
-  </tr>
-  <tr>
-    <td><li>
-        <div class="front">
-          <p class="tableText"><img class="icon2" src=images/theRealLifeLanding.png height=120  /></p>
-          <p class="tableText">The Real Life</p>
-        </div>
-        <div class="back">content </div>
-      </li></td>
-    <td><li>
-        <div class="front">
-          <p class="tableText"><img src=images/visitLanding.png height=120 class="icon2" /></p>
-          <p class="tableText">Visit</p>
-        </div>
-        <div class="back"> content </div>
-      </li></td>
-    <td><li>
-        <div class="front">
-          <p class="tableText"><img src=images/deadlineLanding.png height=120 class="icon2"/></p>
-          <p class="tableText">Deadlines</p>
-        </div>
-        <div class="back"> content </div>
-      </li></td>
-    <td><li>
-        <div class="front">
-          <p class="tableText"><img src=images/scholarshipLanding.png height=120 class="icon2"/></p>
-          <p class="tableText">Scholarships </p>
-        </div>
-        <div class="back">content </div>
-      </li></td>
-  </tr>
-</table>
--->
-<div id="randy">
-<h2 style="text-align:center;">The Randy Navigation Bar</h2>
-<div id="newNav">
-    <ul>
-      <li><a href="home"><img src="img/navBar/homeGrey.png" onmouseover="this.src='img/navBar/homeNavy.png'" onmouseout="this.src='img/navBar/homeGrey.png'" />
-        <p>HOME</p>
-        </a></li>
-      <li><a href="housing"><img src="img/navBar/housingGrey.png" onmouseover="this.src='img/navBar/housingNavy.png'" onmouseout="this.src='img/navBar/housingGrey.png'" />
-        <p>COMPARE HOUSING</p>
-        </a> </li>
-      <li><a href="roommate"><img src="img/navBar/roommateGrey.png" onmouseover="this.src='img/navBar/roommatenavy.png'" onmouseout="this.src='img/navBar/roommateGrey.png'"/>
-        <p>ROOMMATE MATCHING</p>
-        </a> </li>
-      <li ><a href="admissions" ><img src="img/navBar/admissionsGrey.png" onmouseover="this.src='img/navBar/admissionsNavy.png'" onmouseout="this.src='img/navBar/admissionsGrey.png'"/>
-        <p>ADMISSIONS</p>
-        </a> </li>
-      <li><a href="finance"><img src="img/navBar/financeGrey.png" onmouseover="this.src='img/navBar/financeNavy.png'" onmouseout="this.src='img/navBar/financeGrey.png'"/>
-        <p>FINANCES</p>
-        </a> </li>
-      <li><a href="theRealLife"><img src="img/navBar/theRealLifeGrey.png" onmouseover="this.src='img/navBar/theRealLifeNavy.png'" onmouseout="this.src='img/navBar/theRealLifeGrey.png'"/>
-        <p>THE REAL LIFE</p>
-        </a> </li>
-      <li><a href="visit"><img src="img/navBar/visitGrey.png" onmouseover="this.src='img/navBar/visitNavy.png'" onmouseout="this.src='img/navBar/visitGrey.png'" />
-        <p>VISIT</p>
-        </a> </li>
-      <li><a href="deadline"><img src="img/navBar/deadlineGrey.png" onmouseover="this.src='img/navBar/deadlineNavy.png'" onmouseout="this.src='img/navBar/deadlineGrey.png'" />
-        <p>DEADLINES</p>
-        </a> </li>
-    </ul>
+<!-- FLIPPY DAMNN --->
+
+<div id="content">
+  <div class="quickFlip">
+    <div class="panel1">HOME</div>
+    <div class="panel2">Check out your college feature</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">COMPARE HOUSING</div>
+    <div class="panel2">Comparing the housing for your college</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">ROOMIE MATCH</div>
+    <div class="panel2">Find the roommate of your dream</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">ADMISSIONS</div>
+    <div class="panel2">See statistic about your college</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FINANCIAL</div>
+    <div class="panel2">See the aids you could receive</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">THE REAL LIFE</div>
+    <div class="panel2">Real life. Real people. Check it out!</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">VISIT</div>
+    <div class="panel2">Plan your visit here</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">DEADLINES</div>
+    <div class="panel2">Quick! Look before your time hits!</div>
   </div>
 </div>
+
+<div id="subContent"> 
+  <div id="randy">
+    <h2 style="text-align:center;">The Randy Navigation Bar</h2>
+    <div id="newNav">
+      <ul>
+        <li><a href="home"><img src="img/navBar/homeGrey.png" onmouseover="this.src='img/navBar/homeNavy.png'" onmouseout="this.src='img/navBar/homeGrey.png'" />
+          <p>HOME</p>
+          </a></li>
+        <li><a href="housing"><img src="img/navBar/housingGrey.png" onmouseover="this.src='img/navBar/housingNavy.png'" onmouseout="this.src='img/navBar/housingGrey.png'" />
+          <p>COMPARE HOUSING</p>
+          </a> </li>
+        <li><a href="roommate"><img src="img/navBar/roommateGrey.png" onmouseover="this.src='img/navBar/roommatenavy.png'" onmouseout="this.src='img/navBar/roommateGrey.png'"/>
+          <p>ROOMMATE MATCHING</p>
+          </a> </li>
+        <li ><a href="admissions" ><img src="img/navBar/admissionsGrey.png" onmouseover="this.src='img/navBar/admissionsNavy.png'" onmouseout="this.src='img/navBar/admissionsGrey.png'"/>
+          <p>ADMISSIONS</p>
+          </a> </li>
+        <li><a href="finance"><img src="img/navBar/financeGrey.png" onmouseover="this.src='img/navBar/financeNavy.png'" onmouseout="this.src='img/navBar/financeGrey.png'"/>
+          <p>FINANCES</p>
+          </a> </li>
+        <li><a href="theRealLife"><img src="img/navBar/theRealLifeGrey.png" onmouseover="this.src='img/navBar/theRealLifeNavy.png'" onmouseout="this.src='img/navBar/theRealLifeGrey.png'"/>
+          <p>THE REAL LIFE</p>
+          </a> </li>
+        <li><a href="visit"><img src="img/navBar/visitGrey.png" onmouseover="this.src='img/navBar/visitNavy.png'" onmouseout="this.src='img/navBar/visitGrey.png'" />
+          <p>VISIT</p>
+          </a> </li>
+        <li><a href="deadline"><img src="img/navBar/deadlineGrey.png" onmouseover="this.src='img/navBar/deadlineNavy.png'" onmouseout="this.src='img/navBar/deadlineGrey.png'" />
+          <p>DEADLINES</p>
+          </a> </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div id="footer"> <span style="padding: 5px 0 5px 25px;">Copyright 2013 Freshman Support. All right reserved.</span> </div>
 </body>
