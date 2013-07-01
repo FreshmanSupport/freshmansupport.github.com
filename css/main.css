@@ -3,42 +3,37 @@
 	src: url(../fonts/helveticaneue-light.otf);
 }
 /* =============== HEADER =========================*/
-
+#header{ margin: 0 auto;}
 #headerContent {
 	margin-left: 140px;
-	height: 336px;
+	height: 125px;
+	 width: 97.5%;
 }
 #header h1 {
 	color: white;
 	font-size: 1.5em;
-	font-weight:normal;
+	font-weight: normal;
 }
 #logoContainer img {
-	width: 120px;
-	height: 168px;
-	position: absolute;
-	margin-left: 10px;
+	width: 100px;
+	height: 100px;
 	background-size: 100% 100%;
+	position:absolute;
 }
-
 #loginBar {
 	width: 100%;
 	height: 50px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
-#loginBarContainer{
-	margin-top: 15px;
-	float:right;
+#loginBarContainer {
 	font-size: 1em;
-	}
-#loginBar a{
-	color:white;
+}
+#loginBar a {
+	color: white;
 }
 /* ============= Button Nav ====== */
 #newNav {
-	width: 100%;	
-	position: absolute;
-	left: 0;
+	width: 100%;
 	white-space: nowrap;
 	background-color: rgb(232, 229, 228);
 	height-min: 100px;
@@ -59,13 +54,12 @@
 	width: 12.5%;
 	text-align: center;
 	color: rgb(51, 62, 106);
-	text-align: center;
 }
 #newNav p {
 	display: block;
 	white-space: nowrap;
 	overflow: hidden;
-	color:gray;
+	color: gray;
 	margin: 0;
 	margin-bottom: 5px;
 }
@@ -82,9 +76,6 @@
 	background-color: grey;
 	width: 100%;
 	z-index: 2;
-	position: absolute;
-	left:0;
-	margin-top: 126px;
 	padding: 5px 0;
 }
 #subNav ul {
@@ -95,11 +86,16 @@
 #subNav li {
 	display: inline;
 	color: white;
-	margin: 0 5px;
+	padding: 0 10px;
+	border-right: 2px solid white;
+}
+#subNav li:last-child {
+	border: 0;
 }
 #subNav a {
 	font-size: .9em;
 	text-decoration: none;
+	color: white;
 }
 
 
@@ -167,6 +163,8 @@ h1 {
 #maincontent {
 	height-min: 200px;
 	background: white;
+	width: 97.5%;
+	margin: 0 auto;
 }
 #maincontent h2 {
 	color: rgb(51, 62, 107);
@@ -176,6 +174,10 @@ h1 {
 }
 #maincontent h2, #maincontent h3 {
 	text-align: center;
+}
+#maincontent p{
+color: gray;
+text-align: center;
 }
 /* ======= RoomMate ========= */
 .rmTable {
@@ -202,20 +204,32 @@ h1 {
 	text-align: left;
 	border-right: none;
 }
-.property {
-	width: 80%;
+
+/* ============== Footer  ===================*/
+.footer {
+	width: 99%;
 	background-color: rgb(232, 229, 228);
 	height-min: 210px;
 	text-align: center;
 	border: 4px solid gray;
-	position: absolute;
-	left: 0;
 	white-space: nowrap;
-}
-.property img {
 	margin: 0 auto;
 }
 
+.footer img {
+	margin: 0 auto;
+}
+.footer form{
+margin:auto;
+position:relative;
+width:100%;
+height:450px;
+	}
+.footer input, .footer textarea{
+width:100%;
+display:block;
+}
+.footer textarea{ height: 200px;}
 /* ============== COLUMN  ===================*/
 
 /* Select all of the column*/
@@ -266,6 +280,27 @@ float: left;
 .items div {
 	float: left;
 }
+.view{
+	text-align: center;
+	font-size: .9em;
+	color: rgb(51, 62, 106);
+	display:block;
+	}
+.ring{ margin: 0 auto;}
+.ring ul{
+display:inline-block;
+margin: 0 auto;
+}
+.ring li{
+	margin: 0;
+	height: 110px;
+	width: 110px;
+	text-align: center;
+	color: rgb(51, 62, 106);
+	background-image:url(../img/orangeRing.png);
+	background-size: 100% 100%;
+
+}
 /* ============== NULLIFY =======================*/
 
 html, body {
@@ -282,16 +317,10 @@ body {
 	width: 100%;
 	font-family: HelveticaNeue;
 }
-#container {
-	width: 97.5%;
-	margin: 0 auto;
-}
-a {
-	text-decoration: none;
-}
-a:visited{
-	color: inherit;
-}
+
+#container {margin: 0 auto;}
+a {text-decoration: none;}
+a:visited {color: inherit;}
 /* ======================== EXPERIMENTAL STUFF ======================= */
 
 
@@ -326,7 +355,6 @@ a:visited{
 	padding-left: 5px;
 	background-repeat: no-repeat;
 }
-
 #magnify {
 	width: 16px;
 	height: 15px;

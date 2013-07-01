@@ -3,14 +3,10 @@
 <head>
 <link type="text/css" rel="stylesheet" href="css/landingStyle.css"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-
-
-
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/base.js"></script>
 <script type="text/javascript" src="js/rotate3di.js"></script>
-
+<!--
 <script type="text/javascript" language="javascript" charset="utf-8">
 $(document).ready(function () {
     $('#panel li div.back').hide().css('left', 0);
@@ -36,174 +32,151 @@ $(document).ready(function () {
     );
 });
 </script>
-
-
-
-
-
-
+-->
+<script>
+$(function () {
+    // Utilize the modernzr feature support class to detect CSS 3D transform support
+    if ($('html').hasClass('csstransforms3d')) {    
+    
+        // if it's supported, remove the scroll effect add the cool card flipping instead
+        $('.thumb').removeClass('scroll').addClass('flip');        
+        
+        // add/remove flip class that make the transition effect
+        $('.thumb.flip').hover(
+            function () {
+                $(this).find('.thumb-wrapper').addClass('flipIt');
+            },
+            function () {
+                $(this).find('.thumb-wrapper').removeClass('flipIt');            
+            }
+        );
+        
+    } else {
+        
+        // CSS 3D is not supported, use the scroll up effect instead
+        $('.thumb').hover(
+            function () {
+                $(this).find('.thumb-detail').stop().animate({bottom:0}, 500, 'easeOutCubic');
+            },
+            function () {
+                $(this).find('.thumb-detail').stop().animate({bottom: ($(this).height() * -1) }, 500, 'easeOutCubic');            
+            }
+        );
+    }
+});
+</script>
 <title>Freshman Support</title>
 </head>
 
 <body>
-<div id="bodyWrapper" class="wrapper">
-  
-  
-  <div id="header">
-    <div id="logo"></div>
-    <div id="headerContent">
-      <div id="loginBar">
-        <button class='loginButtonSkin'>Register</button>
-        <button class='loginButtonSkin'>Login</button>
-      </div>
-    
-    	<div id="title">
-    		Freshman Support
-   	 	</div>
-    </div>
-    
-  </div>
-  
-  
-    <div id="collegeSearch">
-      <form id="searchbox" action="">
-        <input id="submit" type="submit" value="Search" name="submit"class="searchButton">
-        <input id="search" type="text" name="collegeSearch" placeholder="Choose a School" class="searchBox" />
-      </form>
-    </div>
-  
-  <div id="maincontent">
-	
-
-
-  <u1 id="panel">
-
- <table cellpadding=0 >
-  <tr>
-  
-  
-<td width=25%>
-  <li>
-  <div class="front">
-  
-  <p class="tableText"><img src=images/compareDormLanding.png height=120 class="icon"/></p>
-    <p class="tableText">Housing</p>
-    </div>
-    
-    <div class="back">content
-    </div>
-    
-    </li>
-</td>
-
-
- 
-  <td width=25%>
-  
-  <li>
-<div class="front">
-  
-  <p class="tableText"><img src=images/roommateMatchingLanding.png class="icon" height=120 /></p>
-  <p class="tableText">Roommates</p>
- </div>
- <div class="back">content
- </div>
- </li>
- </td>
- 
- 
- 
-
-  <td width=25%>
-   <li>
- <div class="front">
- <p class="tableText"><img src=images/admissionsLanding.png height=120 class="icon" /></p>
-    <p class="tableText">Admissions</p>
-    </div>
-    <div class="back">content
-    </div>
-    </li>
-    </td>
- 
- 
- 
-  <td width=25%>
-  <li><div class="front">
-  
-  <p class="tableText"><img src=images/financeLanding.png height=120 class="icon"/></p>
-    <p class="tableText">Finance</p>
-    </div>
-    <div class="back">content
-    </div>
-    </li>
-    
-    
-    </td>
-  </tr>
- 
-    <tr>
-  <td>
-  <li><div class="front">
-  <p class="tableText"><img class="icon2" src=images/theRealLifeLanding.png height=120  /></p>
-    <p class="tableText">The Real Life</p>
-    </div>
-    <div class="back">content
-    </div>
-    </li>
-    
-    
-    </td>
- 
-  <td>
-  <li><div class="front">
-  
-  <p class="tableText"><img src=images/visitLanding.png height=120 class="icon2" /></p>
-    <p class="tableText">Visit</p>
-    
-    </div>
-    <div class="back">
-    content
-    </div>
-    </li>
-    
-    </td>
- 
-  <td>
-  <li>
-  <div class="front">
-  
-  <p class="tableText"><img src=images/deadlineLanding.png height=120 class="icon2"/></p>
-    <p class="tableText">Deadlines</p>
-    </div>
-    <div class="back"> content
-    </div>
-    </li>
-    
-    
-    </td>
- 
-  <td>
-  
-  <li>
-  <div class="front">
-  
-  <p class="tableText"><img src=images/scholarshipLanding.png height=120 class="icon2"/></p>
-    <p class="tableText">Scholarships </p>
-    </div>
-    <div class="back">content
-    </div>
-    </li>
-    
-    </td>
-  </tr>
-	
-  </table>
-
-
-
-
-  
+<div id="loginBar">
+  <div id="loginBarContainer"> <a href="#">Login |</a> <a href="#"> Register</a> </div>
+</div>
+<div id="mainContent">
+  <div id="logoContainer"> <img src="img/logo.png" /> </div>
+  <div id="searchContainer">
+    <input id="search" type="text" name="collegeSearch" placeholder="Choose a School" class="searchBox">
+    <input id="submit" type="submit" value="Search" name="submit" class="searchButton">
   </div>
 </div>
+<div id="subContent">
+<!--
+<u1 id="panel">
+<table cellpadding=0 >
+  <tr>
+    <td width=25%><li>
+        <div class="front">
+          <p class="tableText"><img src=images/compareDormLanding.png height=120 class="icon"/></p>
+          <p class="tableText">Housing</p>
+        </div>
+        <div class="back">Check out your </div>
+      </li></td>
+    <td width=25%><li>
+        <div class="front">
+          <p class="tableText"><img src=images/roommateMatchingLanding.png class="icon" height=120 /></p>
+          <p class="tableText">Roommates</p>
+        </div>
+        <div class="back">content </div>
+      </li></td>
+    <td width=25%><li>
+        <div class="front">
+          <p class="tableText"><img src=images/admissionsLanding.png height=120 class="icon" /></p>
+          <p class="tableText">Admissions</p>
+        </div>
+        <div class="back">content </div>
+      </li></td>
+    <td width=25%><li>
+        <div class="front">
+          <p class="tableText"><img src=images/financeLanding.png height=120 class="icon"/></p>
+          <p class="tableText">Finance</p>
+        </div>
+        <div class="back">content </div>
+      </li></td>
+  </tr>
+  <tr>
+    <td><li>
+        <div class="front">
+          <p class="tableText"><img class="icon2" src=images/theRealLifeLanding.png height=120  /></p>
+          <p class="tableText">The Real Life</p>
+        </div>
+        <div class="back">content </div>
+      </li></td>
+    <td><li>
+        <div class="front">
+          <p class="tableText"><img src=images/visitLanding.png height=120 class="icon2" /></p>
+          <p class="tableText">Visit</p>
+        </div>
+        <div class="back"> content </div>
+      </li></td>
+    <td><li>
+        <div class="front">
+          <p class="tableText"><img src=images/deadlineLanding.png height=120 class="icon2"/></p>
+          <p class="tableText">Deadlines</p>
+        </div>
+        <div class="back"> content </div>
+      </li></td>
+    <td><li>
+        <div class="front">
+          <p class="tableText"><img src=images/scholarshipLanding.png height=120 class="icon2"/></p>
+          <p class="tableText">Scholarships </p>
+        </div>
+        <div class="back">content </div>
+      </li></td>
+  </tr>
+</table>
+-->
+<div id="randy">
+<h2 style="text-align:center;">The Randy Navigation Bar</h2>
+<div id="newNav">
+    <ul>
+      <li><a href="home"><img src="img/navBar/homeGrey.png" onmouseover="this.src='img/navBar/homeNavy.png'" onmouseout="this.src='img/navBar/homeGrey.png'" />
+        <p>HOME</p>
+        </a></li>
+      <li><a href="housing"><img src="img/navBar/housingGrey.png" onmouseover="this.src='img/navBar/housingNavy.png'" onmouseout="this.src='img/navBar/housingGrey.png'" />
+        <p>COMPARE HOUSING</p>
+        </a> </li>
+      <li><a href="roommate"><img src="img/navBar/roommateGrey.png" onmouseover="this.src='img/navBar/roommatenavy.png'" onmouseout="this.src='img/navBar/roommateGrey.png'"/>
+        <p>ROOMMATE MATCHING</p>
+        </a> </li>
+      <li ><a href="admissions" ><img src="img/navBar/admissionsGrey.png" onmouseover="this.src='img/navBar/admissionsNavy.png'" onmouseout="this.src='img/navBar/admissionsGrey.png'"/>
+        <p>ADMISSIONS</p>
+        </a> </li>
+      <li><a href="finance"><img src="img/navBar/financeGrey.png" onmouseover="this.src='img/navBar/financeNavy.png'" onmouseout="this.src='img/navBar/financeGrey.png'"/>
+        <p>FINANCES</p>
+        </a> </li>
+      <li><a href="theRealLife"><img src="img/navBar/theRealLifeGrey.png" onmouseover="this.src='img/navBar/theRealLifeNavy.png'" onmouseout="this.src='img/navBar/theRealLifeGrey.png'"/>
+        <p>THE REAL LIFE</p>
+        </a> </li>
+      <li><a href="visit"><img src="img/navBar/visitGrey.png" onmouseover="this.src='img/navBar/visitNavy.png'" onmouseout="this.src='img/navBar/visitGrey.png'" />
+        <p>VISIT</p>
+        </a> </li>
+      <li><a href="deadline"><img src="img/navBar/deadlineGrey.png" onmouseover="this.src='img/navBar/deadlineNavy.png'" onmouseout="this.src='img/navBar/deadlineGrey.png'" />
+        <p>DEADLINES</p>
+        </a> </li>
+    </ul>
+  </div>
+</div>
+</div>
+<div id="footer"> <span style="padding: 5px 0 5px 25px;">Copyright 2013 Freshman Support. All right reserved.</span> </div>
 </body>
 </html>
