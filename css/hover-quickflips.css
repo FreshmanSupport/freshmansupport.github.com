@@ -7,7 +7,8 @@ a {
 }
 
 #content {
-    width: 600px;
+    width: 900px;
+	height: 500px;
     margin: 30px auto;
 }
 
@@ -22,10 +23,16 @@ a {
     width: 25%;
     float: left;
 }
-
+.quickFlip img{
+	width: 124px;
+	height: 100px;
+	margin: 0 auto;
+	
+	background-position: 20px 100px;
+}
 .panel1, .panel2, .panel3 {
-    height: 50px;
-    width: 60px;
+    height: 200px;
+    width: 200px;
     position: absolute;
     overflow: hidden;
     text-align: center;
@@ -38,8 +45,7 @@ a {
 .panel1 {
     background-color: white;
     z-index: 10;
-	color: black;
-	
+	color: rgb(51, 62, 106);
 }
 
 .panel2 {
@@ -60,3 +66,17 @@ a {
 .footer {
     font-size: .8em;
 }
+
+/* Background Image */
+#compareHousing{background-image:url(../img/navBar/housingGrey.png);}
+#roommateMatching{background-image:url(../img/navBar/roommateGrey.png);}
+#admissions{background-image:url(../img/navBar/admissionsGrey.png);}
+#financial{background-image:url(../img/navBar/financeGrey.png);}
+#theRealLife{background-image:url(../img/navBar/theRealLifeGrey.png);}
+#visit{background-image:url(../img/navBar/visitGrey.png);}
+#scholarships{background-image:url(../img/navBar/homeGrey.png);}
+#deadlines{background-image:url(../img/navBar/deadlineGrey.png);}
+
+#compareHousing,#roommateMatching,#admissions,#financial,#theRealLife,#visit,#scholarships,#deadlines{
+	background-repeat:no-repeat;
+	}
