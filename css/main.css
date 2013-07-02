@@ -1,17 +1,19 @@
 @font-face {
-	font-family: "HelveticaNeue";
+	font-family: "HNL";
 	src: url(../fonts/helveticaneue-light.otf);
 }
-@font-face{
+@font-face {
 	font-family: "HNB";
 	src: url(../fonts/helveticaneue-bold.otf);
 }
 /* =============== HEADER =========================*/
-#header{ margin: 0 auto;}
+#header {
+	margin: 0 auto;
+}
 #headerContent {
 	margin-left: 140px;
 	height: 125px;
-	 width: 97.5%;
+	width: 97.5%;
 }
 #header h1 {
 	color: white;
@@ -22,7 +24,9 @@
 	width: 76px;
 	height: 76px;
 	background-size: 100% 100%;
-	position:absolute;
+	position: absolute;
+	margin-top: -18px;
+	margin-left: -20px;
 }
 #loginBar {
 	width: 100%;
@@ -35,24 +39,23 @@
 }
 #loginBar a {
 	color: white;
-	font-family: HelveticaNeue, "Times New Roman", Times, serif;
+	font-family: HBL, "Times New Roman", Times, serif;
+	text-decoration: none;
 }
 /* ============= Button Nav ====== */
 #newNav {
 	width: 100%;
 	white-space: nowrap;
-	background-color: rgb(232, 229, 228);
-	height-min: 100px;
+	background-color: rgb(230, 229, 228);
 	border-width: 3px;
 	border-color: rgb(51, 62, 106);
 	border-style: solid;
 	display: table;
 	border-collapse: collapse;
 	border: none;
-	padding-top: 3px;
-	text-align:center;
-	font-weight:bold;
-	font-size:12px;	
+	text-align: center;
+	font-weight: bold;
+	font-size: 12px;
 }
 #newNav ul {
 	display: table-row;
@@ -63,41 +66,45 @@
 	width: 12.5%;
 	text-align: center;
 	color: rgb(51, 62, 106);
+	padding-top: 10px;
 }
 #newNav p {
 	display: block;
 	white-space: nowrap;
 	overflow: hidden;
-	color: gray;
+	color: rgb(116,116,116);
 	margin: 0;
 	margin-bottom: 5px;
+	font-family: HNB;
 }
-
-#newNav td{
-	height:75px;
+#newNav td {
+	height: 75px;
 }
-
-#newNav a:link {color:rgb(118,117,117);}      /* unvisited link */
-#newNav a:visited {color:rgb(118,117,117);}  /* visited link */
-#newNav a:hover {color:rgb(118,117,117);}  /* mouse over link */
-#newNav a:active {color:rgb(118,117,117);}  /* selected link */
-
-
-
+#newNav a:link {
+	color: rgb(118,117,117);
+}      /* unvisited link */
+#newNav a:visited {
+	color: rgb(118,117,117);
+}  /* visited link */
+#newNav a:hover {
+	color: rgb(118,117,117);
+}  /* mouse over link */
+#newNav a:active {
+	color: rgb(118,117,117);
+}  /* selected link */
 #newNav img {
-	width: 91px;
-	height:auto;
+	width: 74px;
+	height: auto;
 }
-
-
 /* ====== Sub Nav ======== */
 #subNav {
 	text-align: center;
 	white-space: nowrap;
-	background-color: grey;
+	background-color: rgb(116,116,116);
 	width: 100%;
 	z-index: 2;
 	padding: 5px 0;
+	height: 25px;
 }
 #subNav ul {
 	list-style-type: none;
@@ -108,55 +115,74 @@
 	display: inline;
 	color: white;
 	padding: 0 10px;
-	border-right: 2px solid white;
+	border-right: 1px solid white;
 }
 #subNav li:last-child {
 	border: 0;
 }
 #subNav a {
-	font-size: .9em;
+	font-size: .875em;
 	text-decoration: none;
 	color: white;
+	font-family: HNL;
 }
-
+/* MAKE HNB WHEN SELECED =========================================================================================================*/
 
 
 /* ======== SEARCHING ====== */
 
-.searchBox::-webkit-input-placeholder { /* WebKit browsers */
+.collegeSearchBox::-webkit-input-placeholder { /* WebKit browsers */
  color:rgb(51, 62, 106);
 }
-.searchBox:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+.collegeSearchBox:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
  color:rgb(51, 62, 106);
 }
-.searchBox::-moz-placeholder { /* Mozilla Firefox 19+ */
+.collegeSearchBox::-moz-placeholder { /* Mozilla Firefox 19+ */
  color:rgb(51, 62, 106);
 }
-.searchBox:-ms-input-placeholder { /* Internet Explorer 10+ */
+.collegeSearchBox:-ms-input-placeholder { /* Internet Explorer 10+ */
+ color:rgb(51, 62, 106);
+}
+.siteSearchSkin::-webkit-input-placeholder { /* WebKit browsers */
+ color:rgb(51, 62, 106);
+}
+.siteSearchSkin:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color:rgb(51, 62, 106);
+}
+.siteSearchSkin::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color:rgb(51, 62, 106);
+}
+.siteSearchSkin:-ms-input-placeholder { /* Internet Explorer 10+ */
  color:rgb(51, 62, 106);
 }
 /* ============ Search Bar =============== */
-#searchBar{width: 100%; height: 45px; border-bottom: 2px solid rgb(51, 62, 106); background-color:pink; }
-
+#searchBar {
+	width: 100%;
+	height: 45px;
+	border-bottom: 2px solid rgb(51, 62, 106);
+	background-color: white;
+}
 /* ====== COLLEGE SEARCH ===== */
 #collegeSearchContainer {
 	background-color: white;
-	height: 45px;
+	height: 43px;
 	overflow: hidden;
 	border-width: 1px;
 	border-color: gray;
 	width: 50%;
-	float:left;
+	float: left;
 }
-
 .collegeSearchBox {
 	font-size: 32px;
 	height: 45px;
-	width: 80%;
-	color: white;
+	width: 90%;
+	color: rgb(51, 62, 106);
 	background-color: white;
 	border: 0;
 	padding-left: 10px;
+	font-family: HNB;
+	font-size: 1.875em;
+	overflow:hidden;
 }
 .collegeSearchBox input {
 	padding-left: 50px;
@@ -164,27 +190,26 @@
 .collegeSearchButton {
 	text-indent: -99999px;
 	display: inline-block;
-	width: 39px;
-	height: 21px;
+	width: 23px;
+	height: 20px;
 	background-image: url(../img/triangle.png);
 	background-color: white;
 	border: 0;
 	padding-top: 8px;
-	padding-left: 5px;
+	margin-left: 10px;
 	background-repeat: no-repeat;
 }
-
 /* ==== Site Search ==== */
 #siteSearchContainer {
 	margin-top: 9px;
 	margin-right: 25px;
 	width: 300px;
 	height: 25px;
-	border: 3px solid rgb(51, 62, 106);
+	border: 2px solid rgb(51, 62, 106);
 	border-radius: 20px;
-	float:right;
-	background:white;
-	overflow:hidden;
+	float: right;
+	background: white;
+	overflow: hidden;
 }
 .siteSearchSkin {
 	width: 90%;
@@ -192,8 +217,10 @@
 	border: 0;
 	height: 18px;
 	margin: 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 0.875em;
+	color: rgb(51, 62, 106);
 }
-
 #magnify {
 	width: 16px;
 	height: 15px;
@@ -236,23 +263,29 @@ h1 {
 }
 /* ============== MAIN CONTENT ====================*/
 #maincontent {
-	height-min: 200px;
 	background: white;
 	width: 97.5%;
 	margin: 0 auto;
 }
 #maincontent h2 {
 	color: rgb(51, 62, 107);
+	font-size: 1.875em;
+	font-weight: normal;
+	font-family: HNL;
 }
 #maincontent h3 {
-	color: rgb(49, 0, 0);
+	font-family: HNL;
+	font-size: .875em;
+	color: rgb(116,116,116);
+	font-weight: normal;
+	margin: 0;
 }
 #maincontent h2, #maincontent h3 {
 	text-align: center;
 }
-#maincontent p{
-color: gray;
-text-align: center;
+#maincontent p {
+	color: gray;
+	text-align: center;
 }
 /* ======= RoomMate ========= */
 .rmTable {
@@ -279,32 +312,52 @@ text-align: center;
 	text-align: left;
 	border-right: none;
 }
-
 /* ============== Footer  ===================*/
 .footer {
 	width: 99%;
 	background-color: rgb(232, 229, 228);
-	height-min: 210px;
 	text-align: center;
 	border: 4px solid gray;
 	white-space: nowrap;
 	margin: 0 auto;
 }
-
+.footer h2 {
+	font-family: HNL, Arial, Helvetica, sans-serif;
+	font-size: 1.875em;
+	color: rgb( 51, 62, 106);
+	font-weight: normal;
+	margin: 0;
+}
+.footer h3 {
+	font-family: HNL;
+	font-size: .875em;
+	color: rgb(116,116,116);
+	font-weight: normal;
+	margin: 0;
+}
+.footer p {
+	color: rgb(118,116,116);
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: .875em;
+	text-align: left;
+	margin: 0;
+}
 .footer img {
 	margin: 0 auto;
 }
-.footer form{
-margin:auto;
-position:relative;
-width:100%;
-height:450px;
-	}
-.footer input, .footer textarea{
-width:100%;
-display:block;
+.footer form {
+	margin: auto;
+	position: relative;
+	width: 100%;
+	height: 450px;
 }
-.footer textarea{ height: 200px;}
+.footer input, .footer textarea {
+	width: 100%;
+	display: block;
+}
+.footer textarea {
+	height: 200px;
+}
 /* ============== COLUMN  ===================*/
 
 /* Select all of the column*/
@@ -341,6 +394,13 @@ float: left;
 	padding-right: 0;
 }
 /* =============== Random Class ================= */
+.borderLeft {
+	border-left: 2px solid rgb(232, 229, 228);
+}
+.borderRight {
+	border-right: 2px solid rgb(232, 229, 228);
+}
+
 /* ======  Scrollable  ======= */
 .scrollable {
 	position: relative;
@@ -355,29 +415,36 @@ float: left;
 .items div {
 	float: left;
 }
-.view{
+.view {
 	text-align: center;
-	font-size: .9em;
+	font-size: .875em;
 	color: rgb(51, 62, 106);
-	display:block;
-	}
-#ringContainer{
-	overflow:hidden;
-	width: 370px;
-	margin:0 auto;
+	display: block;
+	text-decoration: none;
+	font-family:Georgia, "Times New Roman", Times, serif;
 }
-.ring{ 
-	background-image:url(../img/orangeRing.png);
-	background-size: 100% 100%;	
+#ringContainer {
+	overflow: hidden;
+	width: 370px;
+	margin: 0 auto;
+}
+.ring {
+	background-image: url(../img/orangeRing.png);
+	background-size: 100% 100%;
 	text-align: center;
 	color: rgb(51, 62, 106);
 	height: 100px;
 	width: 100px;
-	float:left;
-	top-padding: 20px;
+	float: left;
 	margin: 0 10px;
 }
-
+.ring p{ margin:0;}
+.ring p:first-child{margin-top: 20px;}
+.ringNumber {
+	font-family: HNL;
+	font-size: 30px;
+	margin: 0;
+}
 /* ============== NULLIFY =======================*/
 
 html, body {
@@ -392,15 +459,18 @@ html, body {
 body {
 	background-color: rgb(51, 62, 106);
 	width: 100%;
-	font-family: HelveticaNeue;
+	font-family: HBL;
 }
-
-#container {margin: 0 auto;}
-a {text-decoration: none;}
-a:visited {color: inherit;}
+#container {
+	margin: 0 auto;
+}
+#newNav a {
+	text-decoration: none;
+}
+#newNav a:visited {
+	color: inherit;
+}
 /* ======================== EXPERIMENTAL STUFF ======================= */
-
-.borderRight{border-right: 2px solid rgb(232, 229, 228);}
 
 
 /* ========== Messing with Boot Strap ============= */
