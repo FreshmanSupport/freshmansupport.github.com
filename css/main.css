@@ -50,6 +50,9 @@
 	border-collapse: collapse;
 	border: none;
 	padding-top: 3px;
+	text-align:center;
+	font-weight:bold;
+	font-size:12px;	
 }
 #newNav ul {
 	display: table-row;
@@ -69,12 +72,24 @@
 	margin: 0;
 	margin-bottom: 5px;
 }
-#newNav img {
-	width: 124px;
-	height: 100px;
-	margin: 0 auto;
-	margin-bottom: 5px;
+
+#newNav td{
+	height:75px;
 }
+
+#newNav a:link {color:rgb(118,117,117);}      /* unvisited link */
+#newNav a:visited {color:rgb(118,117,117);}  /* visited link */
+#newNav a:hover {color:rgb(118,117,117);}  /* mouse over link */
+#newNav a:active {color:rgb(118,117,117);}  /* selected link */
+
+
+
+#newNav img {
+	width: 91px;
+	height:auto;
+}
+
+
 /* ====== Sub Nav ======== */
 #subNav {
 	text-align: center;
