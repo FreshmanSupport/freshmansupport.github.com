@@ -1,5 +1,0 @@
-.accordion{
-	width: 98%;
-
-	
-}
