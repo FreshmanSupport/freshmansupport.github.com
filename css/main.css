@@ -182,7 +182,7 @@
 	padding-left: 10px;
 	font-family: HNB;
 	font-size: 1.875em;
-	overflow:hidden;
+	overflow: hidden;
 }
 .collegeSearchBox input {
 	padding-left: 50px;
@@ -272,6 +272,7 @@ h1 {
 	font-size: 1.875em;
 	font-weight: normal;
 	font-family: HNL;
+	margin: 0;
 }
 #maincontent h3 {
 	font-family: HNL;
@@ -286,6 +287,8 @@ h1 {
 #maincontent p {
 	color: gray;
 	text-align: center;
+	font-family: HNL;
+	font-size: .875em;
 }
 /* ======= RoomMate ========= */
 .rmTable {
@@ -312,6 +315,42 @@ h1 {
 	text-align: left;
 	border-right: none;
 }
+/* ========The Real Life ============ */
+.realLifeNav {
+	width: 99%;
+	background-color: rgb(232, 229, 228);
+	text-align: center;
+	border: 4px solid gray;
+	white-space: nowrap;
+	margin: 0 auto;
+}
+.realLifeNav table {
+	width: 97.5%;
+	resize: both;
+	overflow: hidden;
+}
+.realLifeNav td {
+	width: 100px;
+}
+.realLifeNav img {
+	width: 80px;
+	height: 80px;
+}
+.realLifeNav h3 {
+	color: rgb(51, 62,106);
+	text-align: left;
+	font-weight: normal;
+	font-family: HNL;
+}
+.realLifeNav p {
+	color: rgb(51, 62, 106);
+	font-family: HNL;
+}
+
+.realLifeSub ul{list-style:none; margin:0; padding: 0;}
+.realLifeSub li{color:rgb(51,62,106); font-size: 1.875em;}
+.realLifeSub li img{height: 40px; width: 40px;}
+.realLifeSub form{ border: 1px solid rgb( 51, 62, 106); width: 80%; margin:0 auto;}
 /* ============== Footer  ===================*/
 .footer {
 	width: 99%;
@@ -400,17 +439,17 @@ float: left;
 .borderRight {
 	border-right: 2px solid rgb(232, 229, 228);
 }
-
-/* ======  Scrollable  ======= */
-.scrollable {
-	position: relative;
-	overflow: hidden;
-	width: 660px;
-	height: 90px;
+#contentHead {
+	background: white;
+	width: 97.5%;
+	margin: 0 auto;
 }
-.scrollable .items {
-	width: 2000em;
-	position: absolute;
+#contentHead h2 {
+	color: rgb(51, 62, 107);
+	font-size: 1.875em;
+	font-weight: normal;
+	font-family: HNL;
+	margin: 0;
 }
 .items div {
 	float: left;
@@ -421,7 +460,7 @@ float: left;
 	color: rgb(51, 62, 106);
 	display: block;
 	text-decoration: none;
-	font-family:Georgia, "Times New Roman", Times, serif;
+	font-family: Georgia, "Times New Roman", Times, serif;
 }
 #ringContainer {
 	overflow: hidden;
@@ -438,12 +477,27 @@ float: left;
 	float: left;
 	margin: 0 10px;
 }
-.ring p{ margin:0;}
-.ring p:first-child{margin-top: 20px;}
+.ring p {
+	margin: 0;
+}
+.ring p:first-child {
+	margin-top: 20px;
+}
 .ringNumber {
 	font-family: HNL;
 	font-size: 30px;
 	margin: 0;
+}
+/* ======  Scrollable  ======= */
+.scrollable {
+	position: relative;
+	overflow: hidden;
+	width: 660px;
+	height: 90px;
+}
+.scrollable .items {
+	width: 2000em;
+	position: absolute;
 }
 /* ============== NULLIFY =======================*/
 
