@@ -583,7 +583,7 @@ input[type="radio"]:checked + label span {
 /*=========housing matcher===============*/
 
 #housingContainer{
-	width:85%;
+	width:87%;
 	float:none;
 	margin:auto;
 }
@@ -643,21 +643,22 @@ margin-right:10px;
 #choices{
 	margin-left:auto;
 	margin-right:auto;	
-	margin-top:10px;
+	margin-top:15px;
 
 }
 
 
 #choice{
-	width:135px;
+	width:155px;
 	margin-bottom:10px;
-	margin-right:7.5px;
+	margin-right:10px;
 	display:inline-block;
+	color:rgb(51,62,106);
 	
 }
 
 #choice #important, #choice #notImportant, #choice #dealBreaker, #choice #semiImportant{
-	float:right;
+	float:left;
 }
 
 #notImportant{
@@ -673,7 +674,7 @@ margin-right:10px;
 }
 
 #semiImportant{
-	background-color:rgb(116,116,116);
+	background-color:rgb(140,146,162);
 	height: 15px;
     width: 15px;
     border-radius: 50%;
@@ -708,7 +709,215 @@ margin-right:10px;
 }
 
 
+ol li{
+	display:block;
+	margin-top:25px;
+	
+}
+
+#matches{
+	width:100%;
+	min-height:200px;
+	background-color:white;
+		border: 1px solid rgb(51,62,106);
+
+		font-family: Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	color:rgb(116,116,116);
+}
+
+#matches h3{
+	font-size:18px;
+	font-weight:bold;
+	text-align:left;
+	margin:auto;
+	color:rgb(51,62,106);
+	display:inline;
+	margin-right:10px;
+}
+
+
+#matchInfo{
+	width:250px;
+	height:250px;
+	display:inline-block;
+	margin-top:5px;
+	margin-right:5px;
+}
+
+#matchInfo .compatibility{
+	font-style:italic;
+	color:rgb(220, 134, 39);
+	font-size:12px;
+	display:inline;
+}
+#matchInfo .interests{
+	font-weight:bold;
+	font-size:14px;
+	color:rgb(51,62,106);
+}
+
+#matchInfo .reco{
+	font-size:12px;
+	color:rgb(51,62,106);
+	display:inline;
+	margin-right:5px;
+}
+
+#matchInfo .date{
+	color:rgb(220, 134, 39);
+	font-size:12px;
+	display:inline;
+}
+
+
+#availability{
+	width:760px;
+	height:165px;
+    border: 1px solid rgb(51,62,106);
+	display:inline-block;
+	padding-top:5px;
+	padding-left:10px;
+
+
+}
+
+#availability h3{
+	font-size:18px;
+	font-weight:none;
+	text-align:left;
+	color:rgb(51,62,106);
+	display:inline;
+	margin-right:10px;
+	font-weight:normal;
+	margin-bottom:20px;
+}
+
+#name, #phone{
+	width:165px;
+	height:25px;
+	margin-top:10px;
+	display:inline-block;
+}
+
+#email{
+	width:350px	;
+	height:25px;
+	margin-top:5px;
+	display:inline-block;
+}
+
+#question{
+	width:686px;
+	height:75px;
+}
 
 
 
 
+/* ------------ housing matcher --------------*/
+
+#housingMatcherLeft{
+	width:65%;
+	display:inline-block;
+    border-right: 2px solid rgb(51,62,106);
+	
+
+}
+#housingMatcherRight{
+	width:34%;
+	float:right;
+	display:inline-block;
+	margin-top:0px;
+}
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  width:100%;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  min-height: 100%;
+  position: relative;
+}
+
+
+#housingQ{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: .875em;
+	color: rgb(116,116,116);
+	font-weight: normal;
+	text-align:center;
+	margin-top:0px;	
+	font-style:italic;
+	
+}
+#housingQ h3{
+	font-family: HNL;
+	font-size: 1.875em;
+	color: rgb(140,146,162);
+	font-weight: normal;
+text-align:center;
+margin-top:0px;	
+margin-bottom:5px;
+margin:auto;
+	font-style:normal;
+}
+
+#matcherBottomWrap{
+	width:100%;
+	margin-top:25px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	color: red;
+}
+
+
+.prev{
+	background-color:transparent;
+	border:none;
+	font-family: HNL;
+	font-size: 1.875em;
+	color: rgb(51,62,106);
+	font-weight: normal;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.next{
+	background-color:transparent;
+	border:none;
+	font-family: HNL;
+	font-size: 1.875em;
+	color: rgb(51,62,106);
+	font-weight: normal;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+
+
+#matcherImportance{
+	background-color: rgb(230, 229, 228);
+	border-width: 1px;
+	border-color: rgb(51, 62, 106);
+	border-style: solid;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:.875em;
+	width:45%;
+	margin-left:auto;
+	margin-right:auto;
+	display:inline-block;
+}
+
+#matcherImportance #choice{
+	width:43%;
+}
