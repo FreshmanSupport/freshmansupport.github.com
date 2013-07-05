@@ -46,6 +46,11 @@
 .thisPage{
 	color:rgb(51, 62, 106);
 }
+a:link {color:rgb(51,62,106); text-decoration:none;}
+a:visited {color:rgb(51,62,106); text-decoration:none;}
+a:hover {color:rgb(51,62,106); text-decoration:none;}
+a:active {color:rgb(51,62,106); text-decoration:none;}
+
 
 #newNav {
 	width: 100%;
@@ -289,10 +294,10 @@ h1 {
 }
 #maincontent h3 {
 	font-family: HNL;
-	font-size: .875em;
-	color: rgb(116,116,116);
+	font-size: 1.875em;
+	color: rgb(51,62,106);
 	font-weight: normal;
-	margin: 0;
+	margin: 25px;
 }
 #maincontent h2, #maincontent h3 {
 	text-align: center;
@@ -757,6 +762,7 @@ ol li{
 	font-weight:bold;
 	font-size:14px;
 	color:rgb(51,62,106);
+	padding-top:15px;
 }
 
 #matchInfo .reco{
@@ -766,10 +772,11 @@ ol li{
 	margin-right:5px;
 }
 
-#matchInfo .date{
+.date{
 	color:rgb(220, 134, 39);
 	font-size:12px;
 	display:inline;
+	margin-left:5px;
 }
 
 
@@ -886,8 +893,8 @@ margin:auto;
 .prev{
 	background-color:transparent;
 	border:none;
-	font-family: HNL;
-	font-size: 1.875em;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: .875em;
 	color: rgb(51,62,106);
 	font-weight: normal;
 	margin-right:auto;
@@ -897,8 +904,8 @@ margin:auto;
 .next{
 	background-color:transparent;
 	border:none;
-	font-family: HNL;
-	font-size: 1.875em;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: .875em;
 	color: rgb(51,62,106);
 	font-weight: normal;
 	margin-right:auto;
@@ -918,8 +925,52 @@ margin:auto;
 	margin-left:auto;
 	margin-right:auto;
 	display:inline-block;
+	margin-top:-25px;
 }
 
 #matcherImportance #choice{
 	width:43%;
+}
+
+#recommended{
+	width:100%;
+	font-size:.875em;
+	display:inline-block;
+	line-height:15px;
+}
+#recommended h2{
+	font-family:HNB;
+	font-size:1.875em;
+	color:rgb(51, 62, 106);
+	text-align:left;
+	margin-top:5px;
+	margin-bottom:0px;
+	padding-bottom:0px;
+}
+#recommended .compare{
+	font-family: HNL;
+	color:(116,116,116);
+	font-size: .875em;
+}
+
+#recommended .interests{
+	font-family:HNB;
+	font-size:.875em;
+	color:rgb(140,146,162);
+}
+.appDate{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:.875em;
+	color:rgb(51,62,106);
+}
+
+#housingVideo{
+	width:115px;
+	height:105px;
+	float:left;
+	display:inline-block;	
+	background-color:rgb(51, 62, 106);
+	border-radius:5px;
+	margin-right:15px;
+	margin-bottom:10px;
 }
