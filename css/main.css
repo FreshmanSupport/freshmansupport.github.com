@@ -965,22 +965,32 @@ ol li {
 	width:100%;
 	font-size:.875em;
 	display:inline-block;
-	line-height:15px;
 }
 #recommended h2{
 	font-family:HNB;
 	font-size:1.875em;
 	color:rgb(51, 62, 106);
 	text-align:left;
-	margin-top:5px;
-	margin-bottom:0px;
+	margin-top:0px;
+	margin-bottom:-18px;
 	padding-bottom:0px;
 }
+
+
+
 #recommended .compare{
 	font-family: HNL;
-	color:(116,116,116);
+	color:rgb(116,116,116);
 	font-size: .875em;
+
+	margin-left:3px;
+
+	
 }
+
+#recommended img{
+}
+
 
 #recommended .interests{
 	font-family:HNB;
@@ -994,8 +1004,8 @@ ol li {
 }
 
 #housingVideo{
-	width:115px;
-	height:105px;
+	width:105px;
+	height:95px;
 	float:left;
 	display:inline-block;	
 	background-color:rgb(51, 62, 106);
