@@ -46,15 +46,13 @@
 .thisPage {
 	color: rgb(51, 62, 106);
 }
-<<<<<<< HEAD
-=======
+
 a:link {color:rgb(51,62,106); text-decoration:none;}
 a:visited {color:rgb(51,62,106); text-decoration:none;}
 a:hover {color:rgb(51,62,106); text-decoration:none;}
 a:active {color:rgb(51,62,106); text-decoration:none;}
 
 
->>>>>>> b20c5f1612e309c35017ba3f2ec12d17d7c2e0c8
 #newNav {
 	width: 100%;
 	white-space: nowrap;
@@ -685,6 +683,7 @@ input[type="radio"]:checked + label span {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 15px;
+	margin-bottom:10px;
 }
 #choice {
 	width: 155px;
@@ -772,18 +771,18 @@ ol li {
 	font-size: 12px;
 	display: inline;
 }
-<<<<<<< HEAD
+
 #matchInfo .interests {
 	font-weight: bold;
 	font-size: 14px;
 	color: rgb(51,62,106);
-=======
+}
+
 #matchInfo .interests{
 	font-weight:bold;
 	font-size:14px;
 	color:rgb(51,62,106);
 	padding-top:15px;
->>>>>>> b20c5f1612e309c35017ba3f2ec12d17d7c2e0c8
 }
 #matchInfo .reco {
 	font-size: 12px;
@@ -791,19 +790,18 @@ ol li {
 	display: inline;
 	margin-right: 5px;
 }
-<<<<<<< HEAD
+
 #matchInfo .date {
 	color: rgb(220, 134, 39);
 	font-size: 12px;
 	display: inline;
-=======
+}
 
 .date{
 	color:rgb(220, 134, 39);
 	font-size:12px;
 	display:inline;
 	margin-left:5px;
->>>>>>> b20c5f1612e309c35017ba3f2ec12d17d7c2e0c8
 }
 #availability {
 	width: 760px;
@@ -896,13 +894,7 @@ ol li {
 	text-align: center;
 	color: red;
 }
-<<<<<<< HEAD
-.prev {
-	background-color: transparent;
-	border: none;
-	font-family: HNL;
-	font-size: 1.875em;
-=======
+
 
 
 .prev{
@@ -910,26 +902,17 @@ ol li {
 	border:none;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size: .875em;
->>>>>>> b20c5f1612e309c35017ba3f2ec12d17d7c2e0c8
 	color: rgb(51,62,106);
 	font-weight: normal;
 	margin-right: auto;
 	margin-left: auto;
 }
-<<<<<<< HEAD
-.next {
-	background-color: transparent;
-	border: none;
-	font-family: HNL;
-	font-size: 1.875em;
-=======
 
 .next{
 	background-color:transparent;
 	border:none;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size: .875em;
->>>>>>> b20c5f1612e309c35017ba3f2ec12d17d7c2e0c8
 	color: rgb(51,62,106);
 	font-weight: normal;
 	margin-right: auto;
@@ -940,22 +923,15 @@ ol li {
 	border-width: 1px;
 	border-color: rgb(51, 62, 106);
 	border-style: solid;
-<<<<<<< HEAD
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: .875em;
 	width: 45%;
 	margin-left: auto;
 	margin-right: auto;
 	display: inline-block;
-=======
-	font-family:Georgia, "Times New Roman", Times, serif;
-	font-size:.875em;
-	width:45%;
-	margin-left:auto;
-	margin-right:auto;
+
 	display:inline-block;
 	margin-top:-25px;
->>>>>>> b20c5f1612e309c35017ba3f2ec12d17d7c2e0c8
 }
 #matcherImportance #choice {
 	width: 43%;
