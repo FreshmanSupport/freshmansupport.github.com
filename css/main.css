@@ -46,15 +46,13 @@
 .thisPage {
 	color: rgb(51, 62, 106);
 }
-<<<<<<< HEAD
-=======
-a:link {color:rgb(51,62,106); text-decoration:none;}
-a:visited {color:rgb(51,62,106); text-decoration:none;}
-a:hover {color:rgb(51,62,106); text-decoration:none;}
-a:active {color:rgb(51,62,106); text-decoration:none;}
+
+a:link {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
+a:visited {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
+a:hover {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
+a:active {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
 
 
->>>>>>> b20c5f1612e309c35017ba3f2ec12d17d7c2e0c8
 #newNav {
 	width: 100%;
 	white-space: nowrap;
@@ -287,6 +285,7 @@ h1 {
 	background: white;
 	width: 97.5%;
 	margin: 0 auto;
+	
 }
 #maincontent h2 {
 	color: rgb(51, 62, 107);
@@ -685,6 +684,7 @@ input[type="radio"]:checked + label span {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 15px;
+	margin-bottom:10px;
 }
 #choice {
 	width: 155px;
@@ -772,18 +772,18 @@ ol li {
 	font-size: 12px;
 	display: inline;
 }
-<<<<<<< HEAD
+
 #matchInfo .interests {
 	font-weight: bold;
 	font-size: 14px;
 	color: rgb(51,62,106);
-=======
+}
+
 #matchInfo .interests{
 	font-weight:bold;
 	font-size:14px;
 	color:rgb(51,62,106);
 	padding-top:15px;
->>>>>>> b20c5f1612e309c35017ba3f2ec12d17d7c2e0c8
 }
 #matchInfo .reco {
 	font-size: 12px;
@@ -791,19 +791,18 @@ ol li {
 	display: inline;
 	margin-right: 5px;
 }
-<<<<<<< HEAD
+
 #matchInfo .date {
 	color: rgb(220, 134, 39);
 	font-size: 12px;
 	display: inline;
-=======
+}
 
 .date{
 	color:rgb(220, 134, 39);
 	font-size:12px;
 	display:inline;
 	margin-left:5px;
->>>>>>> b20c5f1612e309c35017ba3f2ec12d17d7c2e0c8
 }
 #availability {
 	width: 760px;
@@ -842,21 +841,27 @@ ol li {
 /* ------------ housing matcher --------------*/
 
 #housingMatcherLeft {
-	width: 65%;
+	width: 64%;
 	display: inline-block;
-	border-right: 2px solid rgb(51,62,106);
+	height:100%;
 }
 #housingMatcherRight {
-	width: 34%;
+	width: 35%;
 	float: right;
 	display: inline-block;
 	margin-top: 0px;
+		border-left: 2px solid rgb(51,62,106);
+
+
 }
+
 .swipe {
 	overflow: hidden;
 	visibility: hidden;
 	position: relative;
-	width: 100%;
+	width: 99%;
+	margin-left:auto;
+	margin-right:auto;
 }
 .swipe-wrap {
 	overflow: hidden;
@@ -896,13 +901,7 @@ ol li {
 	text-align: center;
 	color: red;
 }
-<<<<<<< HEAD
-.prev {
-	background-color: transparent;
-	border: none;
-	font-family: HNL;
-	font-size: 1.875em;
-=======
+
 
 
 .prev{
@@ -910,26 +909,17 @@ ol li {
 	border:none;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size: .875em;
->>>>>>> b20c5f1612e309c35017ba3f2ec12d17d7c2e0c8
 	color: rgb(51,62,106);
 	font-weight: normal;
 	margin-right: auto;
 	margin-left: auto;
 }
-<<<<<<< HEAD
-.next {
-	background-color: transparent;
-	border: none;
-	font-family: HNL;
-	font-size: 1.875em;
-=======
 
 .next{
 	background-color:transparent;
 	border:none;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size: .875em;
->>>>>>> b20c5f1612e309c35017ba3f2ec12d17d7c2e0c8
 	color: rgb(51,62,106);
 	font-weight: normal;
 	margin-right: auto;
@@ -940,22 +930,15 @@ ol li {
 	border-width: 1px;
 	border-color: rgb(51, 62, 106);
 	border-style: solid;
-<<<<<<< HEAD
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: .875em;
 	width: 45%;
 	margin-left: auto;
 	margin-right: auto;
 	display: inline-block;
-=======
-	font-family:Georgia, "Times New Roman", Times, serif;
-	font-size:.875em;
-	width:45%;
-	margin-left:auto;
-	margin-right:auto;
+
 	display:inline-block;
 	margin-top:-25px;
->>>>>>> b20c5f1612e309c35017ba3f2ec12d17d7c2e0c8
 }
 #matcherImportance #choice {
 	width: 43%;
@@ -965,21 +948,43 @@ ol li {
 	width:100%;
 	font-size:.875em;
 	display:inline-block;
-	line-height:15px;
+	margin-left:15px;
 }
+#recommendedWrap{
+	margin-top:30px;
+
+}
+
+
 #recommended h2{
 	font-family:HNB;
 	font-size:1.875em;
 	color:rgb(51, 62, 106);
 	text-align:left;
-	margin-top:5px;
-	margin-bottom:0px;
+	margin-top:0px;
+	margin-bottom:-18px;
 	padding-bottom:0px;
 }
+
+
+
 #recommended .compare{
 	font-family: HNL;
-	color:(116,116,116);
+	color:rgb(116,116,116);
 	font-size: .875em;
+	margin-left:3px;
+	position:relative;
+	top:2px	;
+}
+
+#recommended #compareDiv{
+	margin-top:5px;
+	height:10px;
+	margin-bottom:-5px;
+}
+
+#recommended #compareDiv img{
+	vertical-align:middle;
 }
 
 #recommended .interests{
@@ -991,11 +996,13 @@ ol li {
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:.875em;
 	color:rgb(51,62,106);
+	margin-left:15px;
+
 }
 
 #housingVideo{
-	width:115px;
-	height:105px;
+	width:105px;
+	height:95px;
 	float:left;
 	display:inline-block;	
 	background-color:rgb(51, 62, 106);
@@ -1003,3 +1010,91 @@ ol li {
 	margin-right:15px;
 	margin-bottom:10px;
 }
+
+
+/* ------- homepage ----------*/
+#homeSwipe{
+		background-color: rgb(230, 229, 228);
+		border: 2px solid rgb(116,116,116);
+			
+}
+
+#homeSwipeLeft{
+	width:49.5%;
+	height:300px;
+	display:inline-block;
+	padding-left:10px;
+	padding-right:10px;
+}
+#homeSwipeRight{
+	width:50%;
+	display:inline-block;
+	height:300px;
+	padding-right:10px;
+	float:right;
+	padding-top:5px;
+}
+
+#getAdvice{
+	background-color:rgb(51,62,106);
+	color:white;
+	font-family:HNB;
+	font-size:1.875em;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-left:5px;
+
+}
+.adviceName{
+	font-family:HNL;
+}
+
+#homeSwipeLeftRight{
+	display:inline-block;
+	width:280px;
+	text-align:center;
+	font-family:HNB;
+	font-size:1.875em;
+	color:rgb(51,62,106);
+	height:250px;
+	margin-right:5px;
+}
+
+#homeSwipeLeftRight a:link{font-size:.875em; font-family:Georgia, "Times New Roman", Times, serif;}
+#homeSwipeLeftRight .swipeLink{
+	font-size:.875em;
+	padding-bottom:5px;
+	
+	
+}
+#homeSwipeVideo{
+	width:100%;
+	height:98%;
+	background-color:white;
+	
+}
+
+#bulletsWrap{
+
+	margin-top:15px;
+	margin-bottom:15px;
+	
+}
+
+bullets{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+bullets ul,nav ol{list-style:none;list-style-image:none;margin:0;padding:0; margin-left:auto; margin-right:auto; text-align:center;}
+bullets #position li{display:inline-block;width:12px;height:12px;border-radius:10px;background:white; border: 2px solid rgb(116,116,116);
+margin:0 5px;}
+bullets #position li.on{background-color:rgb(220, 134, 39);}
+bullets #position button{
+	background-color:transparent;
+	border:none;
+}
+
