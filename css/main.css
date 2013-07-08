@@ -285,7 +285,7 @@ h1 {
 	background: white;
 	width: 97.5%;
 	margin: 0 auto;
-	
+	padding-bottom: 25px;
 }
 #maincontent h2 {
 	color: rgb(51, 62, 107);
@@ -296,7 +296,7 @@ h1 {
 }
 #maincontent h3 {
 	font-family: HNL;
-	font-size: 1.875em;
+	font-size: 0.875em;
 	color: rgb(51,62,106);
 	font-weight: normal;
 	margin: 25px;
@@ -307,8 +307,13 @@ h1 {
 #maincontent p {
 	color: gray;
 	text-align: center;
-	font-family: HNL;
 	font-size: .875em;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+/* ======== Admission ======= */
+.essay img{
+display: block;
+margin:0 auto;
 }
 /* ======= RoomMate ========= */
 .rmTable {
@@ -344,7 +349,9 @@ h1 {
 .ringNumber {
 	font-family: HNL;
 	font-size: 30px;
-	margin: 0;
+	margin-top: 20px;
+	color: gray;
+
 }
 /* ========The Real Life ============ */
 .realLifeNav {
@@ -463,10 +470,17 @@ h1 {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: .875em;
 	text-align: left;
-	margin: 0;
+	margin: 5px;
+}
+.footer p:last-child{
+	margin-bottom: 25px;
 }
 .footer img {
 	margin: 0 auto;
+	width: 50px;
+	height: 50px;
+	display:block;
+	margin-top: 10px;
 }
 .footer form {
 	margin: auto;
@@ -571,6 +585,13 @@ float: left;
 	padding-left: 10px;
 	content: url(../img/arrowRight.png)
 }
+.HNL{
+	font-family: HNL;
+	font-size: 0.875em;
+	color:gray;
+	display:block;
+	text-align: center;	
+}
 /* ======  Scrollable  ======= */
 .scrollable {
 	position: relative;
@@ -615,6 +636,7 @@ body {
 	display: inline-block;
 	width: 48.61878453038674%
 }
+
 /* ============ Radio Button CSS ================== */
 input[type="radio"] {
 	display: none;
@@ -845,14 +867,13 @@ ol li {
 	display: inline-block;
 	height:100%;
 }
+
 #housingMatcherRight {
 	width: 35%;
 	float: right;
 	display: inline-block;
 	margin-top: 0px;
-		border-left: 2px solid rgb(51,62,106);
-
-
+	border-left: 2px solid rgb(51,62,106);
 }
 
 .swipe {
@@ -901,7 +922,6 @@ ol li {
 	text-align: center;
 	color: red;
 }
-
 
 
 .prev{
