@@ -296,7 +296,7 @@ h1 {
 }
 #maincontent h3 {
 	font-family: HNL;
-	font-size: 0.875em;
+	font-size: 18px;
 	color: rgb(51,62,106);
 	font-weight: normal;
 	margin: 25px;
@@ -636,7 +636,15 @@ body {
 	display: inline-block;
 	width: 48.61878453038674%
 }
-
+.mycontent-left {
+  border-right: 1px dashed #333;
+  height:200px;
+}
+.mycontent-right {
+  border-left: 1px dashed #333;
+  height: 200px;
+}
+.hr {width:2px;height:150px;background-color:#000000; position:relative; top:0px;left:50px;z-index:10; float:right;}
 /* ============ Radio Button CSS ================== */
 input[type="radio"] {
 	display: none;
