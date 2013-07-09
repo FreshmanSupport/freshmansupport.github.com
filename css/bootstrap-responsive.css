@@ -282,10 +282,11 @@
   .row-fluid .span1 {
     width: 5.982905982905983%;
     *width: 5.929714493544281%;
+	
   }
   .row-fluid .span05{
-  	width: 1%;
-    *width: 1.1111111111111%;
+  	width: 0.00000000000005%;
+    *width: 0.00000000000005%;
   }
   .row-fluid .offset12 {
     margin-left: 105.12820512820512%;
@@ -636,6 +637,7 @@
   .row-fluid .span1 {
     width: 5.801104972375691%;
     *width: 5.747913483013988%;
+	display:none;
   }
   .row-fluid .offset12 {
     margin-left: 105.52486187845304%;

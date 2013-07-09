@@ -5,7 +5,22 @@
 <link type="text/css" rel="stylesheet" href="../css/bootstrap-responsive.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Admissions</title>
+<script>
+// JQuery function for equal height divs
+function equalHeight(group) {
+    var tallest = 0;
+    group.each(function() {
+        var thisHeight = $(this).height();                                      
+        if(thisHeight > tallest) {
+            tallest = thisHeight;
+        }
+    });
+    group.height(tallest);
+}   
 
+// Set the divs to have the height equaliser applied to them. 
+equalHeight($('.equalColumns'));
+</script>
 </head>
 
 <body>
@@ -67,9 +82,7 @@
 <div class="container-fluid"><!-- WIDTH IS 425PX ------------------------------------>
   <div id="maincontent">
     <div class="row-fluid">
-    <div class="span05"></div>
-      <div class="span3">
-      <!-- style="padding-right:20px; border-right: 1px solid #ccc; -->
+      <div class="span4" style="padding-right:20px; border-right: 1px solid #ccc;">
         <h2>Recently Answered</h2>
         <div class="row-fluid">
           <div class="span6">
@@ -89,10 +102,7 @@
             <a href="#" class="view" style="dispaly:block; margin-top: 10px;">View All Questions</a> </div>
         </div>
       </div>
-      <div class="span1" style="text-align:center;">
-  		<hr style="width: 1px; height: 400px; display: block;">
-      </div>
-      <div class="span3">
+      <div class="span4" style="padding-right:20px; border-right: 1px solid #ccc;">
         <h2>June 1, 2013</h2>
         <h3>Fall admission deadline</h3>
         <a href="#" class="view">View more Deadlines</a>
@@ -114,10 +124,7 @@
           </div>
         </div>
         <a href="#" class="view"> View All Admission Data</a> </div>
-        <div class="span1" style="text-align:right;">
-<hr style="width: 1px; height: 400px; display: block;">
-        </div>
-      <div class="span3 essay">
+      <div class="span4 essay">
      
         <h2>Accepted Student Profiles</h2>
         <p>Click on essay to view profile</p>
@@ -201,7 +208,6 @@
           </div>
         </div>--> 
       </div>
-      <div class="span05"></div>
     </div>
   </div>
   <div class="footer"><!--ADD THIS TO CSSS FILE FOR ALL THE WITTLE THINGIDK OK-->

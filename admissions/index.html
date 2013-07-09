@@ -5,22 +5,6 @@
 <link type="text/css" rel="stylesheet" href="../css/bootstrap-responsive.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Admissions</title>
-<script>
-// JQuery function for equal height divs
-function equalHeight(group) {
-    var tallest = 0;
-    group.each(function() {
-        var thisHeight = $(this).height();                                      
-        if(thisHeight > tallest) {
-            tallest = thisHeight;
-        }
-    });
-    group.height(tallest);
-}   
-
-// Set the divs to have the height equaliser applied to them. 
-equalHeight($('.equalColumns'));
-</script>
 </head>
 
 <body>
@@ -43,6 +27,7 @@ equalHeight($('.equalColumns'));
       </form>
     </div>
   </div>
+  <div id="duke">
   <div id="newNav">
     <ul>
       <li><a href="../home"><img src="../img/navBar/homeGrey.png" onmouseover="this.src='../img/navBar/homeNavy.png'" onmouseout="this.src='../img/navBar/homeGrey.png'" />
@@ -71,18 +56,20 @@ equalHeight($('.equalColumns'));
         </a> </li>
     </ul>
   </div>
+  </div>
   <div id="subNav">
     <ul>
       <li><a>Recently Answered</a></li>
       <li><a>Data</a></li>
-      <li><a>Accepted Student Profiles</a></li>
+      <li><a>Accepted Student Essays</a></li>
     </ul>
   </div>
 </div>
 <div class="container-fluid"><!-- WIDTH IS 425PX ------------------------------------>
   <div id="maincontent">
     <div class="row-fluid">
-      <div class="span4" style="padding-right:20px; border-right: 1px solid #ccc;">
+      <div class="span4"> 
+        <!-- style="padding-right:20px; border-right: 1px solid #ccc; -->
         <h2>Recently Answered</h2>
         <div class="row-fluid">
           <div class="span6">
@@ -102,7 +89,10 @@ equalHeight($('.equalColumns'));
             <a href="#" class="view" style="dispaly:block; margin-top: 10px;">View All Questions</a> </div>
         </div>
       </div>
-      <div class="span4" style="padding-right:20px; border-right: 1px solid #ccc;">
+      <div class="span05" style="text-align:center;">
+        <hr style="width: 1px; height: 440px; display: block;">
+      </div>
+      <div class="span3">
         <h2>June 1, 2013</h2>
         <h3>Fall admission deadline</h3>
         <a href="#" class="view">View more Deadlines</a>
@@ -123,9 +113,11 @@ equalHeight($('.equalColumns'));
             <div class="HNL">Writing</div>
           </div>
         </div>
-        <a href="#" class="view"> View All Admission Data</a> </div>
+        <a href="#" class="view" style="margin-top: 40px;"> View All Admission Data</a> </div>
+      <div class="span05" style="text-align:right;">
+        <hr style="width: 1px; height: 440px; display: block;">
+      </div>
       <div class="span4 essay">
-     
         <h2>Accepted Student Profiles</h2>
         <p>Click on essay to view profile</p>
         <div class="row-fluid">
@@ -158,62 +150,15 @@ equalHeight($('.equalColumns'));
               Rank:9/259</p>
           </div>
         </div>
-        <!--
-                <div class="row-fluid">
-          <div class="span6">
-            <div class="row-fluid">
-              <div class="span9">
-                <p>San Diego,CA<br />
-                  GPA: 3.9<br />
-                  SAT:1900<br  />
-                  Rank:9/259</p>
-              </div>
-              <div class="span3"> <img src="../img/essay.png"/></div>
-            </div>
-          </div>
-          <div class="span6">
-            <div class="row-fluid">
-              <div class="span3"> <img src="../img/essay.png"/></div>
-              <div class="span9">
-                <p>San Diego,CA<br />
-                  GPA: 3.9<br />
-                  SAT:1900<br  />
-                  Rank:9/259</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row-fluid">
-          <div class="span6">
-            <div class="row-fluid">
-              <div class="span9">
-                <p>San Diego,CA<br />
-                  GPA: 3.9<br />
-                  SAT:1900<br  />
-                  Rank:9/259</p>
-              </div>
-              <div class="span3"> <img src="../img/essay.png"/></div>
-            </div>
-          </div>
-          <div class="span6">
-            <div class="row-fluid">
-              <div class="span3"> <img src="../img/essay.png"/></div>
-              <div class="span9">
-                <p>San Diego,CA<br />
-                  GPA: 3.9<br />
-                  SAT:1900<br  />
-                  Rank:9/259</p>
-              </div>
-            </div>
-          </div>
-        </div>--> 
       </div>
     </div>
   </div>
   <div class="footer"><!--ADD THIS TO CSSS FILE FOR ALL THE WITTLE THINGIDK OK-->
     <h2>Ask an Admissions</h2>
-    <h3>Select whoyou would like to message.</h3>
-    <div class="row-fluid">
+    <h3>Select who you would like to message.</h3>
+    <h3>Our admissions officers have a set limit of questions that can be sent each day.</h3>
+    <h3>If an admissions officer is unavailable, please try the following day, or <a href="#">view previously answered questions</a>.</h3>
+    <div class="row-fluid" style="margin-top: 25px;">
       <div class="span6">
         <div class="row-fluid">
           <div class="span6">
