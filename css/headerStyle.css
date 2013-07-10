@@ -69,6 +69,7 @@
 	width: 12.5%;
 	text-align: center;
 	color: rgb(51, 62, 106);
+	position:relative;
 }
 #newNav a {
 	text-decoration: none;
@@ -76,8 +77,8 @@
 	color: rgb(51, 62, 106);
 	margin-bottom: 5px;
 	font-family: HNB;
-	margin-top: 52px;
-	display: block;
+	padding-top: 52px;
+	display: inline-block;
 }
 #newNav td {
 	height: 75px;
@@ -87,53 +88,32 @@
 	height: auto;
 	margin-bottom: 10px;
 }
+.bottomText{position:absolute; bottom:0;}
 /* =Image= */
-#home {
-	background-image: url(../img/navBar/home.png);
-}
-#home:hover, #homeSelected {
-	background-image: url(../img/navBar/homeSelected.png);	
-}
-#housing {
-	background-image: url(../img/navBar/housing.png);
-}
-#housing:hover, #housingSelected {
-	background-image: url(../img/navBar/housingSelected.png);
-}
-#roomie {
-	background-image: url(../img/navBar/roomie.png);
-}
-#roomie:hover, #roomieSelected {
-	background-image: url(../img/navBar/roomieSelected.png);
-}
-#admissions {
-	background-image: url(../img/navBar/admissions.png);
-}
-#admissions:hover, #admissionsSelected {
-	background-image: url(../img/navBar/admissionsSelected.png);
-}
-#finances {
-	background-image: url(../img/navBar/finances.png);
-}
-#finances:hover, #financesSelected {
-	background-image: url(../img/navBar/financesSelected.png);
-}
-#theRealLife {
-	background-image: url(../img/navBar/theRealLife.png);
-}
-#theRealLife:hover, #theRealLifeSelected {
-	background-image: url(../img/navBar/theRealLifeSelected.png);
-}
-#visit {
-	background-image: url(../img/navBar/visit.png);
-}
-#visit:hover, #visitSelected {
-	background-image: url(../img/navBar/visitSelected.png);}
-#deadlines {
-	background-image: url(../img/navBar/deadlines.png);
-}
-#deadlines:hover, #deadlinesSelected {
-	background-image: url(../img/navBar/deadlinesSelected.png);}
+#home {background-image: url(../img/navBar/home.png);}
+#home:hover, #homeSelected {background-image: url(../img/navBar/homeSelected.png);}
+
+#housing {background-image: url(../img/navBar/housing.png);}
+#housing:hover, #housingSelected {background-image: url(../img/navBar/housingSelected.png);}
+
+#roomie {background-image: url(../img/navBar/roomie.png);}
+#roomie:hover, #roomieSelected {background-image: url(../img/navBar/roomieSelected.png);}
+
+#admissions {background-image: url(../img/navBar/admissions.png);}
+#admissions:hover, #admissionsSelected {background-image: url(../img/navBar/admissionsSelected.png);}
+
+#finances {background-image: url(../img/navBar/finances.png);}
+#finances:hover, #financesSelected {background-image: url(../img/navBar/financesSelected.png);}
+
+#theRealLife {background-image: url(../img/navBar/theRealLife.png);}
+#theRealLife:hover, #theRealLifeSelected {background-image: url(../img/navBar/theRealLifeSelected.png);}
+
+#visit {background-image: url(../img/navBar/visit.png);}
+#visit:hover, #visitSelected {background-image: url(../img/navBar/visitSelected.png);}
+
+#deadlines {background-image: url(../img/navBar/deadlines.png);}
+#deadlines:hover, #deadlinesSelected {background-image: url(../img/navBar/deadlinesSelected.png);}
+
 /* =Change text color= */
 #home:hover a, #homeSelected a, #housing:hover a, #housingSelected a, 
 #roomie:hover a, #roomieSelected a, #admissions:hover a, #admissionsSelected a, 
@@ -150,7 +130,7 @@
 	background-size: 50px 45px;
 	background-position: 50% 0;
 }
-/* ====== Sub Nav ======== */
+/* ===Sub Nav=== */
 #subNav {
 	text-align: center;
 	white-space: nowrap;
@@ -187,7 +167,7 @@
 	font-family: HNL;
 }
 
-/* ======== SEARCHING ====== */
+/* ===Searching=== */
 
 .collegeSearchBox::-webkit-input-placeholder { /* WebKit browsers */
  color:rgb(51, 62, 106);
