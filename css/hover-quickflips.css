@@ -68,15 +68,16 @@ a {
 }
 
 /* Background Image */
-#compareHousing{background-image:url(../img/navBar/housingGrey.png);}
-#roommateMatching{background-image:url(../img/navBar/roommateGrey.png);}
-#admissions{background-image:url(../img/navBar/admissionsGrey.png);}
-#financial{background-image:url(../img/navBar/financeGrey.png);}
-#theRealLife{background-image:url(../img/navBar/theRealLifeGrey.png);}
-#visit{background-image:url(../img/navBar/visitGrey.png);}
-#scholarships{background-image:url(../img/navBar/homeGrey.png);}
-#deadlines{background-image:url(../img/navBar/deadlineGrey.png);}
+#compareHousingFlip{background-image:url(../img/navBar/housing.png);}
+#roommateMatchingFlip{background-image:url(../img/navBar/roomie.png);}
+#admissionsFlip{background-image:url(../img/navBar/admissions.png);}
+#financialFlip{background-image:url(../img/navBar/finances.png);}
+#theRealLifeFlip{background-image:url(../img/navBar/theRealLife.png);}
+#visitFlip{background-image:url(../img/navBar/visit.png);}
+#scholarshipsFlip{background-image:url(../img/navBar/scholarship.png);}
+#deadlinesFlip{background-image:url(../img/navBar/deadlines.png);}
 
-#compareHousing,#roommateMatching,#admissions,#financial,#theRealLife,#visit,#scholarships,#deadlines{
+#compareHousingFlip,#roommateMatchingFlip,#admissionsFlip,#financialFlip,#theRealLifeFlip,#visitFlip,#scholarshipsFlip,#deadlinesFlip{
 	background-repeat:no-repeat;
+	background-position:50% 50%;
 	}
