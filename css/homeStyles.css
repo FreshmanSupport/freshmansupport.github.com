@@ -1,0 +1,252 @@
+
+/* =============== HEADER =========================*/
+#header{color:white; width:960px;text-align:left:}
+#logo{
+	background-image: url(images/logobanner.png);
+	width:120px;
+	height: 168px;
+	position:absolute;
+	margin-left: 2px;
+	}
+#headerContent{
+	margin-left:125px;
+	height: 200px;
+	width: 836px;
+	}	
+#loginBar{
+	width: 100;
+	height: 50px;
+background-color:#CCC;
+}
+#loginBar button{
+	display:inline-block;
+	float:right;
+	margin-top: 10px;
+	margin-right: 5px;
+	}
+/* ======== ICON ID ======== */
+#home{}
+#homeSelected{ background-image:url(images/collegeImage/homeSelected.png);}
+
+#housing{}
+#housingSelected{}
+
+#roommate{}
+#roommateSelected{background-image:url(images/collegeImage/roommateMatchingLandinggrey.png); width: 100px; height: 100px;}
+
+#financial{}
+#financialSelected{background-image:url(images/collegeImage/financeLandinggrey.png);}
+
+#admission{}
+#admissionSelected{background-image:url(images/collegeImage/admissionsLandinggrey.png);}
+
+#realLife
+#realLifeSelected{background-image:url(images/collegeImage/theRealLifeLandinggrey.png);}
+
+#visit{}
+#visitSelected{background-image:url(images/collegeImage/visitLandinggrey.png);}
+
+#deadline{}
+#deadlineSelected{background-image:url(images/collegeImage/visitLandinggrey.png);}
+/* ======== SEARCHING ====== */
+#collegeSearch
+{
+	background-color:rgb(255,255,255);
+	height:75px;
+	overflow:hidden;	
+}
+.searchBox{
+	font-size: 32px;
+	height: 45px;
+	width: 815px;
+	color:rgb(51, 62, 106);
+	border-color:#CCC;
+	border-width: 2px;
+	border-radius: 5px;
+	margin: 15px 10px;
+}
+.searchButton{
+	text-indent: -99999px;
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  position: relative;
+  left: 787px;
+  top: -49px;
+  background-color: white;
+  background-image:url(images/triangle.png);
+  border-width: 0px;
+}
+.searchBox::-webkit-input-placeholder { /* WebKit browsers */
+    color:rgb(51, 62, 106);
+}
+.searchBox:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:rgb(51, 62, 106);
+}
+.searchBox::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:rgb(51, 62, 106);
+}
+.searchBox:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:rgb(51, 62, 106);
+}
+/* ========= College Site Search ============= */
+#collegeSiteSearch{
+	height: 100px;
+}
+#collegeSiteSearch form{
+float:right;
+margin-top: 25px;
+}
+.collegeSiteSearchSkin{
+width: 300px;
+text-align: right;
+}
+#magnify{
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  position: relative;
+  left: 122px;
+  top: 29px;
+  background-image:url(images/magnifyingglass.png);
+}
+h1{
+	margin:0;
+	padding:0;
+	padding-top: 20px;
+	padding-left: 5px;
+}
+/* =========== Nav Boxes =============== */
+#buttonNav{
+	height: 100px;
+	width: 964px;
+	margin-left: -2px;
+	margin-bottom: -1px;
+}
+#buttonNav ul{
+		list-style-type: none;
+}
+#buttonNav ul li{
+	display:inline-block;
+	}
+	
+.box{
+	width:118px;
+	height: 97px;
+	color:white; 
+	/*background-color:rgb(157, 154, 154);*/
+	background-color:white;
+	z-index: -2;
+}
+#buttonNav img{
+ padding: 0px;
+ display:block;
+ margin: 0 auto;
+}
+table{
+	border: 0;
+}
+td{ width: 120px;
+}
+/* ============== MAIN CONTENT ====================*/
+#maincontent{
+height: 1000px;
+background: white;
+}
+/* ===== HOME SLIDER ===== */
+
+/* ============== COLUMN CLASS ===================*/
+
+/* Select all of the column*/
+[class*='col-'] {
+float: left;
+}
+/* 2-3 represent 2/3 of whole width */
+.col-2-3 {
+	width: 66.66%;
+}
+.col-1-3 {
+	width: 33.33%;
+}
+.col-1-2 {
+	width: 49.99%;
+}
+.col-1-8{
+	width: 12%;
+}
+.grid:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+[class*='col-'] {
+ padding-right: 2px;
+}
+[class*='col-']:last-of-type {
+	padding-right: 0;
+}
+/* =============== Random Class ================= */
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+/* ============== NULLIFY =======================*/
+
+html, body{
+	
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body{background-color:rgb(51, 62, 106);}
+/* ============= Generated CSS =================*/
+
+    .loginButtonSkin {
+        
+background-color:rgb(51, 62, 106);
+        
+        border:1px solid #314179;
+        
+        display:inline-block;
+        color:#ffffff;
+        font-family:arial;
+        font-size:13px;
+        font-weight:bold;
+        padding:6px 12px;
+        text-decoration:none;
+        
+    }
+    .loginButtonSkin:hover {
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5972a7), color-stop(1, #637aad));
+        background:-moz-linear-gradient(top, #5972a7 5%, #637aad 100%);
+        background:-webkit-linear-gradient(top, #5972a7 5%, #637aad 100%);
+        background:-o-linear-gradient(top, #5972a7 5%, #637aad 100%);
+        background:-ms-linear-gradient(top, #5972a7 5%, #637aad 100%);
+        background:linear-gradient(to bottom, #5972a7 5%, #637aad 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5972a7', endColorstr='#637aad',GradientType=0);
+        
+        background-color:#5972a7;
+    }
+    .loginButtonSkin:active {
+        position:relative;
+        top:1px;
+    }
+
+/* ======================== EXPERIMENTAL STUFF ======================= */
+body{
+	width: 100%;
+	background-color: blue;
+}
+#container{
+	width: 90%;
+}

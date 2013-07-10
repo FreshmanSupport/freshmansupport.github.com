@@ -1,0 +1,752 @@
+@font-face {
+	font-family: "HNL";
+	src: url(../fonts/helveticaneue-light.otf);
+}
+@font-face {
+	font-family: "HNB";
+	src: url(../fonts/helveticaneue-bold.otf);
+}
+
+
+a:link {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
+a:visited {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
+a:hover {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
+a:active {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
+/* ============== MAIN CONTENT ====================*/
+#maincontent {
+	background: white;
+	width: 97.5%;
+	margin: 0 auto;
+	
+}
+#maincontent h2 {
+	color: rgb(51, 62, 107);
+	font-size: 1.875em;
+	font-weight: normal;
+	font-family: HNL;
+	margin: 25px;
+}
+#maincontent h3 {
+	font-family: HNL;
+	font-size: 1.875em;
+	color: rgb(51,62,106);
+	font-weight: normal;
+	margin: 25px;
+}
+#maincontent h2, #maincontent h3 {
+	text-align: center;
+}
+#maincontent p {
+	color: gray;
+	text-align: center;
+	font-family: HNL;
+	font-size: .875em;
+}
+
+/* ============== Footer  ===================*/
+.footer {
+	width: 99%;
+	background-color: rgb(232, 229, 228);
+	text-align: center;
+	border: 4px solid gray;
+	white-space: nowrap;
+	margin: 0 auto;
+}
+.footer h2 {
+	font-family: HNL, Arial, Helvetica, sans-serif;
+	font-size: 1.875em;
+	color: rgb( 51, 62, 106);
+	font-weight: normal;
+	margin: 0;
+}
+.footer h3 {
+	font-family: HNL;
+	font-size: .875em;
+	color: rgb(116,116,116);
+	font-weight: normal;
+	margin: 0;
+}
+.footer p {
+	color: rgb(118,116,116);
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: .875em;
+	text-align: left;
+	margin: 0;
+}
+.footer img {
+	margin: 0 auto;
+}
+.footer form {
+	margin: auto;
+	position: relative;
+	width: 100%;
+	height: 450px;
+}
+.footer input, .footer textarea {
+	width: 100%;
+	display: block;
+}
+.footer textarea {
+	height: 200px;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: white;
+}
+body {
+	background-color:white;
+	width: 100%;
+	font-family: HBL;
+}
+#container {
+	margin: 0 auto;
+}
+
+/
+/*=========housing matcher===============*/
+
+#housingContainer {
+	width: 87%;
+	float: none;
+	margin: auto;
+}
+.button {
+	background-color: rgb(230, 229, 228);
+	color: rgb(51, 62, 106);
+	font-size: 14px;
+	border: 1px solid rgb(51,62,106);
+	padding-right: 5px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin-right: 10px;
+}
+.button img {
+	margin-left: 2px;
+	margin-right: 1px;
+	width: 16px;
+	height: 10px;
+}
+#preferences {
+	width: 100%;
+	min-height: 200px;
+	background-color: white;
+	border: 1px solid rgb(51,62,106);
+	padding-top: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: rgb(116,116,116);
+}
+#listWrap {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#preferences ul, #preferences li {
+	margin-left: -20px;
+	margin-right: 30px;
+	display: inline;
+	list-style-type: circle;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	text-align: left;
+}
+#preferences p1 {
+	color: rgb(51,62,106);
+}
+#choices {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	margin-bottom:10px;
+}
+#choice {
+	width: 155px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	display: inline-block;
+	color: rgb(51,62,106);
+}
+#choice #important, #choice #notImportant, #choice #dealBreaker, #choice #semiImportant {
+	float: left;
+}
+#notImportant {
+	background-color: white;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: 1px solid rgb(51,62,106);
+	display: inline-block;
+	margin: auto;
+	margin-left: 2px;
+	margin-right: 7px;
+}
+#semiImportant {
+	background-color: rgb(140,146,162);
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: 1px solid rgb(51,62,106);
+	display: inline-block;
+	margin-left: 2px;
+	margin-right: 7px;
+}
+#important {
+	background-color: rgb(51, 62, 106);
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: 1px solid rgb(51,62,106);
+	display: inline-block;
+	margin-left: 2px;
+	margin-right: 7px;
+}
+#dealBreaker {
+	background-color: rgb(220, 134, 39);
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: 1px solid rgb(51,62,106);
+	display: inline-block;
+	margin-left: 2px;
+	margin-right: 7px;
+}
+ol li {
+	display: block;
+	margin-top: 25px;
+}
+#matches {
+	width: 100%;
+	min-height: 200px;
+	background-color: white;
+	border: 1px solid rgb(51,62,106);
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: rgb(116,116,116);
+}
+#matches h3 {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	margin: auto;
+	color: rgb(51,62,106);
+	display: inline;
+	margin-right: 10px;
+}
+#matchInfo {
+	width: 250px;
+	height: 250px;
+	display: inline-block;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+#matchInfo .compatibility {
+	font-style: italic;
+	color: rgb(220, 134, 39);
+	font-size: 12px;
+	display: inline;
+}
+
+#matchInfo .interests {
+	font-weight: bold;
+	font-size: 14px;
+	color: rgb(51,62,106);
+}
+
+#matchInfo .interests{
+	font-weight:bold;
+	font-size:14px;
+	color:rgb(51,62,106);
+	padding-top:15px;
+}
+#matchInfo .reco {
+	font-size: 12px;
+	color: rgb(51,62,106);
+	display: inline;
+	margin-right: 5px;
+}
+
+#matchInfo .date {
+	color: rgb(220, 134, 39);
+	font-size: 12px;
+	display: inline;
+}
+
+.date{
+	color:rgb(220, 134, 39);
+	font-size:12px;
+	display:inline;
+	margin-left:5px;
+}
+#availability {
+	width: 760px;
+	height: 165px;
+	border: 1px solid rgb(51,62,106);
+	display: inline-block;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+#availability h3 {
+	font-size: 18px;
+	font-weight: none;
+	text-align: left;
+	color: rgb(51,62,106);
+	display: inline;
+	margin-right: 10px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+#name, #phone {
+	width: 165px;
+	height: 25px;
+	margin-top: 10px;
+	display: inline-block;
+}
+#email {
+	width: 350px;
+	height: 25px;
+	margin-top: 5px;
+	display: inline-block;
+}
+#question {
+	width: 686px;
+	height: 75px;
+}
+/* ------------ housing matcher --------------*/
+
+#housingMatcherLeft {
+	width: 64%;
+	display: inline-block;
+	height:100%;
+}
+#housingMatcherRight {
+	width: 35%;
+	float: right;
+	display: inline-block;
+	margin-top: 0px;
+		border-left: 2px solid rgb(51,62,106);
+
+
+}
+
+.swipe {
+	overflow: hidden;
+	visibility: hidden;
+	position: relative;
+	width: 99%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.swipefinAid {
+	overflow: hidden;
+	visibility: hidden;
+	position: relative;
+	width: 100%;
+	display:inline-block;
+}
+.swipe-wrap {
+	overflow: hidden;
+	position: relative;
+}
+.swipe-wrap > div {
+	float: left;
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+}
+#housingQ {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: .875em;
+	color: rgb(116,116,116);
+	font-weight: normal;
+	text-align: center;
+	margin-top: 0px;
+	font-style: italic;
+}
+#housingQ h3 {
+	font-family: HNL;
+	font-size: 1.875em;
+	color: rgb(140,146,162);
+	font-weight: normal;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	margin: auto;
+	font-style: normal;
+}
+
+
+#matcherBottomWrap {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: inline-block;
+}
+
+#nextCount{
+	display: inline-block;
+	width:170px;
+	height:100px;
+}
+
+#nextCount p{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: .875em;
+	color: rgb(116,116,116);
+	font-weight: normal;
+	text-align: center;
+	font-style: italic;
+}
+
+.prev{
+	background-color:transparent;
+	border:none;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: .875em;
+	color: rgb(51,62,106);
+	font-weight: normal;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.next{
+	background-color:transparent;
+	border:none;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: .875em;
+	color: rgb(51,62,106);
+	font-weight: normal;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+#matcherImportance {
+	background-color: rgb(230, 229, 228);
+	border-width: 1px;
+	border-color: rgb(51, 62, 106);
+	border-style: solid;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: .875em;
+	float:none;	
+
+	display: inline-block;
+	width:45%;
+	padding-bottom:10px;
+	padding-left:2px;
+}
+
+
+#recommended{
+	width:100%;
+	font-size:.875em;
+	display:inline-block;
+	margin-left:15px;
+}
+#recommendedWrap{
+margin-top:23px;
+}
+
+
+#recommended h2{
+	font-family:HNB;
+	font-size:1.875em;
+	color:rgb(51, 62, 106);
+	text-align:left;
+	margin-top:-5px;
+	margin-bottom:-18px;
+	padding-bottom:0px;
+}
+
+
+
+#recommended .compare{
+	font-family: HNL;
+	color:rgb(116,116,116);
+	margin-left:3px;
+	position:relative;
+	top:2px	;
+}
+
+#recommended #compareDiv{
+	margin-top:3px;
+	height:10px;
+	margin-bottom:0px;
+}
+
+#recommended #compareDiv img{
+	vertical-align:middle;
+	width:20px;
+}
+
+#recommended #interests{
+	font-family:HNB;
+	color:rgb(140,146,162);
+	padding-bottom:2px;
+	margin-top:17px;
+	margin-bottom:5px;	
+}
+.appDate{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:.875em;
+	color:rgb(51,62,106);
+	margin-left:15px;
+line-height:20px;
+}
+
+#housingVideo{
+	width:105px;
+	height:95px;
+	float:left;
+	display:inline-block;	
+	background-color:rgb(51, 62, 106);
+	border-radius:5px;
+	margin-right:15px;
+	margin-bottom:10px;
+}
+
+
+/* ------- homepage ----------*/
+#homeSwipe{
+		background-color: rgb(230, 229, 228);
+		border: 2px solid rgb(116,116,116);
+		height:305px;		
+}	
+
+#homeSwipeLeft{
+	width:49.5%;
+	height:300px;
+	display:inline-block;
+	padding-left:10px;
+	padding-right:10px;
+}
+#homeSwipeRight{
+	width:50%;
+	display:inline-block;
+	height:300px;
+	padding-right:10px;
+	float:right;
+	padding-top:5px;
+}
+
+#getAdvice{
+	background-color:rgb(51,62,106);
+	color:white;
+	font-family:HNB;
+	font-size:1.875em;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-left:5px;
+
+}
+.adviceName{
+	font-family:HNL;
+}
+
+#homeSwipeLeftRight{
+	display:inline-block;
+	width:280px;
+	text-align:center;
+	font-family:HNB;
+	font-size:1.875em;
+	color:rgb(51,62,106);
+	height:250px;
+	margin-right:5px;
+}
+
+#homeSwipeLeftRight a:link{font-size:.875em; font-family:Georgia, "Times New Roman", Times, serif;}
+#homeSwipeLeftRight .swipeLink{
+	font-size:.875em;
+	padding-bottom:5px;
+	
+	
+}
+#homeSwipeVideo{
+	width:100%;
+	height:98%;
+	background-color:white;
+	
+}
+
+#bulletsWrap{
+
+	margin-top:15px;
+	margin-bottom:15px;
+	
+}
+
+bullets{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+bullets ul,nav ol{list-style:none;list-style-image:none;margin:0;padding:0; margin-left:auto; margin-right:auto; text-align:center;}
+bullets #position li{display:inline-block;width:12px;height:12px;border-radius:10px;background:white; border: 2px solid rgb(116,116,116);
+margin:0 5px;}
+bullets #position li.on{background-color:rgb(220, 134, 39);}
+bullets #position button{
+	background-color:transparent;
+	border:none;
+}
+
+
+
+/* -------- financial page -------------*/
+#financeContainer{
+	width:100%;
+	float:left;
+}
+
+#financeContainer #recentAnswers{
+	width:33%;
+	vertical-align:top;
+	height:360px;
+	display:inline-block;
+	border-right:2px solid rgb(116,116,116);
+	text-align:center;
+}
+
+#financeContainer #answeredBy{
+	text-align:center;
+	
+}
+
+#financeContainer #recentAnswers #question{
+	color:rgb(51,62,106);
+	font-family:HNL;
+	display:inline-block;
+	width:46%;
+	margin:auto;
+	float:none;
+	min-height:120px;
+	padding:0 5px;
+	border-right: 2px solid rgb(116,116,116);
+	vertical-align:top;
+}
+
+#financeContainer #recentAnswers #answers{
+	color:rgb(51,62,106);
+	font-family:HNL;
+	display:inline-block;
+	width:46%;
+	min-height:120px;
+	float:none;
+	margin:auto;
+	padding:0 5px;
+		vertical-align:top;
+
+	
+}
+#financeContainer button{
+	background-color:transparent;
+	border:none;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:.875em;
+	color:rgb(51,62,106);
+}
+
+#financeContainer #deadlinesAndData{
+	vertical-align:top;
+		width:33%;
+	display:inline-block;
+}
+
+#financeContainer #deadlines{
+	width:100%;
+	float:none;
+	height:110px;
+}
+
+#financeContainer #data{
+	width:100%;
+	float:none;
+	height:250px;
+	border-top:2px solid rgb(116,116,116);
+}
+#financeContainer #data p{
+	margin-top:10px;
+	margin-bottom:2px;
+}
+
+#financeContainer #finAid{
+	width:33%;
+	height:360px;
+	display:inline-block;
+	vertical-align:top;	
+	border-left: 2px solid rgb(116,116,116);
+
+}
+
+#budgetPlanner{
+	background-color:black;
+	display:inline-block;
+	width:100%;
+	
+}
+
+#financeContainer #finAid #wrap{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	float:none;	
+	display:block;
+	width:85%;
+	padding-top:20px;
+}
+
+
+
+
+
+
+#financialRight h3, #financeContainer h3{
+	margin-top:0px;
+	padding-top:7px;
+	margin-bottom:5px;
+}
+
+#financialRight h2, #financeContainer h2{
+	color:rgb(116,116,116);
+	margin-top:0px;
+}
+
+#financialRight .viewMore, #financeContainer .viewMore{
+	font-size:.875em;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	
+}
+
+#financialRight p, #financeContainer p{
+	font-size:.875em;
+	font-family:HNL;
+	margin-top:10px;
+	text-align:center;
+	margin-bottom:10px;
+}
+
+
+#financeContainer .cost{
+	
+	font-family:HNL;
+	font-size:1.875em;
+	text-align:center;
+	color:rgb(116,116,116);
+
+}
+
+#financeContainer .state{
+	
+	font-family:HNL;
+	font-size:.875em;
+	color:rgb(116,116,116);
+	margin-left:5px;
+}

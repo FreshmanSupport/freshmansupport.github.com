@@ -1,0 +1,292 @@
+@font-face {
+	font-family: "HNL";
+	src: url(../fonts/helveticaneue-light.otf);
+}
+@font-face {
+	font-family: "HNB";
+	src: url(../fonts/helveticaneue-bold.otf);
+}
+
+
+/* =============== HEADER =========================*/
+#header {
+	margin: 0 auto;
+}
+#headerContent {
+	margin-left: 140px;
+	height: 125px;
+	width: 97.5%;
+}
+#header h1 {
+	color: white;
+	font-size: 1.5em;
+	font-weight: normal;
+}
+#logoContainer img {
+	width: 76px;
+	height: 76px;
+	background-size: 100% 100%;
+	position: absolute;
+	margin-top: -18px;
+	margin-left: -20px;
+}
+#loginBar {
+	width: 100%;
+	height: 25px;
+	background-color:rgb( 51, 62, 106);
+}
+#loginBarContainer {
+	float: right;
+	margin-right: 20px;
+	margin-top: 3px;
+}
+#loginBar a {
+	color: white;
+	font-family: HBL, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+/* ============= Button Nav ====== */
+.thisPage {
+	color: rgb(51, 62, 106);
+}
+
+a:link {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
+a:visited {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
+a:hover {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
+a:active {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
+
+
+#newNav {
+	margin:0 auto;
+	width: 75%;
+	white-space: nowrap;
+	border-width: 3px;
+	border-color: rgb(51, 62, 106);
+	border-style: solid;
+	display: table;
+	border-collapse: collapse;
+	border: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: 12px;
+	margin-top: 3px;
+	
+}
+#newNav ul {
+	display: table-row;
+}
+#newNav li {
+	display: table-cell;
+	margin: 0;
+	width: 12.5%;
+	text-align: center;
+	color: rgb(51, 62, 106);
+	padding-top: 10px;
+}
+#newNav p {
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	color: rgb(116,116,116);
+	margin: 0;
+	margin-bottom: 5px;
+	font-family: HNB;
+}
+#newNav td {
+	height: 75px;
+}
+#newNav a:link {
+	color: rgb(118,117,117);
+}      /* unvisited link */
+#newNav a:visited {
+	color: rgb(118,117,117);
+}  /* visited link */
+#newNav a:hover {
+	color: rgb(118,117,117);
+}  /* mouse over link */
+#newNav a:active {
+	color: rgb(118,117,117);
+}  /* selected link */
+#newNav img {
+	width: 50px;
+	height: auto;
+	margin-bottom: 10px;
+}
+/* ====== Sub Nav ======== */
+#subNav {
+	text-align: center;
+	white-space: nowrap;
+	background-color: transparent;
+	width: 75%;
+	z-index: 2;
+	height: 25px;
+	border-top: 4px solid rgb(116,116,116);
+	margin: 0 auto;
+}
+#subNav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-family: inherit;
+	font-size: inherit;
+	
+}
+#subNav li {
+	display: inline;
+	color: white;
+	padding: 0 10px;
+	border-right: 1px solid white;
+	font-family: inherit;
+	font-size: inherit;
+	background-color:rgb(116,116,116);
+}
+#subNav li:last-child {
+	border: 0;
+}
+#subNav a {
+	font-size: .875em;
+	text-decoration: none;
+	color: white;
+	font-family: HNL;
+}
+
+/* ======== SEARCHING ====== */
+
+.collegeSearchBox::-webkit-input-placeholder { /* WebKit browsers */
+ color:rgb(51, 62, 106);
+}
+.collegeSearchBox:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color:rgb(51, 62, 106);
+}
+.collegeSearchBox::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color:rgb(51, 62, 106);
+}
+.collegeSearchBox:-ms-input-placeholder { /* Internet Explorer 10+ */
+ color:rgb(51, 62, 106);
+}
+.siteSearchSkin::-webkit-input-placeholder { /* WebKit browsers */
+ color:rgb(51, 62, 106);
+}
+.siteSearchSkin:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color:rgb(51, 62, 106);
+}
+.siteSearchSkin::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color:rgb(51, 62, 106);
+}
+.siteSearchSkin:-ms-input-placeholder { /* Internet Explorer 10+ */
+ color:rgb(51, 62, 106);
+}
+/* ============ Search Bar =============== */
+#searchBar {
+	width: 100%;
+	height: 45px;
+	border-bottom: 2px solid rgb(51, 62, 106);
+	background-color: rgb(232, 229, 228);
+}
+/* ====== COLLEGE SEARCH ===== */
+#collegeSearchContainer {
+	background-color: rgb(232, 229, 228);
+	height: 43px;
+	overflow: hidden;
+	border-width: 1px;
+	border-color: gray;
+	width: 50%;
+	float: left;
+}
+.collegeSearchBox {
+	font-size: 32px;
+	height: 45px;
+	width: 90%;
+	color: rgb(51, 62, 106);
+	background-color: transparent;
+	border: 0;
+	padding-left: 10px;
+	font-family: HNB;
+	font-size: 1.875em;
+	overflow: hidden;
+}
+.collegeSearchBox input {
+	padding-left: 50px;
+}
+.collegeSearchButton {
+	text-indent: -99999px;
+	display: inline-block;
+	width: 23px;
+	height: 20px;
+	background-image: url(../img/triangle.png);
+	background-color: transparent;
+	border: 0;
+	padding-top: 8px;
+	margin-left: 10px;
+	background-repeat: no-repeat;
+}
+/* ==== Site Search ==== */
+#siteSearchContainer {
+	margin-top: 9px;
+	margin-right: 25px;
+	width: 300px;
+	height: 25px;
+	border: 2px solid rgb(51, 62, 106);
+	border-radius: 20px;
+	float: right;
+	background: white;
+	overflow: hidden;
+}
+.siteSearchSkin {
+	width: 90%;
+	text-align: right;
+	border: 0;
+	height: 18px;
+	margin: 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 0.875em;
+	color: rgb(51, 62, 106);
+}
+#magnify {
+	width: 16px;
+	height: 15px;
+	background-image: url(../img/magnifyingglass.png);
+	display: inline-block;
+	margin-bottom: -2px;
+	margin-left: 5px;
+	background-repeat: no-repeat;
+}
+h1 {
+	margin: 0;
+	padding: 0;
+	padding-top: 20px;
+	padding-left: 5px;
+}
+/* =========== Nav Boxes =============== */
+#buttonNav {
+	height: 100px;
+	width: 964px;
+	margin-left: -2px;
+	margin-bottom: -1px;
+}
+#buttonNav ul {
+	list-style-type: none;
+}
+#buttonNav ul li {
+	display: inline-block;
+}
+.box {
+	width: 118px;
+	height: 97px;
+	color: white;
+	background-color: white;
+	z-index: -2;
+}
+#buttonNav img {
+	padding: 0px;
+	display: block;
+	margin: 0 auto;
+}
+
+/* =======  Nullify ============== */
+#newNav a {
+	text-decoration: none;
+}
+#newNav a:visited {
+	color: inherit;
+}
