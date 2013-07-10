@@ -24,7 +24,7 @@ a:active {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Time
 	font-size: 1.875em;
 	font-weight: normal;
 	font-family: HNL;
-	margin: 25px;
+	margin: 13px;
 }
 #maincontent h3 {
 	font-family: HNL;
@@ -57,7 +57,7 @@ a:active {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Time
 	font-size: 1.875em;
 	color: rgb( 51, 62, 106);
 	font-weight: normal;
-	margin: 0;
+	margin: 10px 0;
 }
 .footer h3 {
 	font-family: HNL;
@@ -330,17 +330,17 @@ ol li {
 	display: inline-block;
 	margin-top: 0px;
 		border-left: 2px solid rgb(51,62,106);
+		}
 
 
-}
-
-.swipe {
+.swipeRecent {
 	overflow: hidden;
 	visibility: hidden;
-	position: relative;
-	width: 99%;
-	margin-left:auto;
-	margin-right:auto;
+	position:relative;
+	margin:0 auto;
+	width: 100%;
+	display:inline-block;
+
 }
 
 .swipefinAid {
@@ -349,6 +349,16 @@ ol li {
 	position: relative;
 	width: 100%;
 	display:inline-block;
+}
+
+.swipeBudget {
+	overflow: hidden;
+	visibility: hidden;
+	position: relative;
+	width: 100%;
+	display:inline-block;
+
+
 }
 .swipe-wrap {
 	overflow: hidden;
@@ -606,6 +616,10 @@ bullets #position button{
 	float:left;
 }
 
+#financeContainer #recentAnswers, #financeContainer #deadlinesAndData, #financeContainer #finAid{
+	margin-top:10px;
+}
+
 #financeContainer #recentAnswers{
 	width:33%;
 	vertical-align:top;
@@ -615,14 +629,29 @@ bullets #position button{
 	text-align:center;
 }
 
-#financeContainer #answeredBy{
+#financeContainer #recentAnswers #answeredBy{
 	text-align:center;
-	
+	line-height:5px;
+	margin:15px;
+}
+
+#financeContainer #recentAnswers #answeredBy #info{
+	display:inline-block;
+}
+
+#pic{
+	background-color:rgb(116,116,116);
+	height:45px;
+	width:45px;
+	border-radius:50%;
+	border: 0px solid rgb(116,116,116);
+	display:inline-block;
+	margin-left:10px;
 }
 
 #financeContainer #recentAnswers #question{
 	color:rgb(51,62,106);
-	font-family:HNL;
+	font-family:Georgia;
 	display:inline-block;
 	width:46%;
 	margin:auto;
@@ -631,6 +660,7 @@ bullets #position button{
 	padding:0 5px;
 	border-right: 2px solid rgb(116,116,116);
 	vertical-align:top;
+	
 }
 
 #financeContainer #recentAnswers #answers{
@@ -686,11 +716,167 @@ bullets #position button{
 
 }
 
-#budgetPlanner{
-	background-color:black;
+#financeContainer #budgetPlanner{
+	background-color:white;
 	display:inline-block;
 	width:100%;
+	border-top:2px solid rgb(116,116,116);
 	
+}
+
+#financeContainer #budgetPlanner #left{
+	width: 67%;
+	display:inline-block;
+	vertical-align:top;
+}
+
+#financeContainer #budgetPlanner #left .darkBlue{
+	color:rgb(51,62,106);
+}
+
+#financeContainer #budgetPlanner #left .lightBlue{
+		color:rgb(146,166,196);
+	
+}
+
+#financeContainer #budgetPlanner #left #blueButton1{
+	background-color:rgb(182,197,220);
+	 height: 15px;
+    width: 15px;
+    border-radius: 50%;
+	margin-right:7px;
+	display:inline-block;
+}
+
+#financeContainer #budgetPlanner #left #blueButton2{
+	background-color:rgb(145,165,195);
+	 height: 15px;
+    width: 15px;
+    border-radius: 50%;
+	margin-right:7px;}
+	
+#financeContainer #budgetPlanner #left #blueButton3{
+	background-color:rgb(89,107,158);
+	 height: 15px;
+    width: 15px;
+    border-radius: 50%;
+	margin-right:7px;
+}
+
+
+
+#financeContainer #budgetPlanner #left #blueButton4{
+	background-color:rgb(68,86,127);
+	 height: 15px;
+    width: 15px;
+    border-radius: 50%;
+	margin-right:7px;
+}
+
+#financeContainer #budgetPlanner #left #blueButton5{
+	background-color:rgb(51,61,105);
+	 height: 15px;
+    width: 15px;
+    border-radius: 50%;
+	margin-right:7px;
+	display:inline-block;
+}
+
+#financeContainer #budgetPlanner #left #stateWrap{
+	margin:0 auto;
+	width:200px;
+}
+#financeContainer #budgetPlanner #left #stateWrap #blueButton1{
+margin:0px 15px;
+width:20px;
+height:20px;
+}
+#financeContainer #budgetPlanner #left #stateWrap #blueButton5{
+margin:0px 45px;
+width:20px;
+height:20px;
+}
+
+#financeContainer #budgetPlanner #left #boxWrap{
+	width:318px;
+	margin:0 auto;
+}
+
+#financeContainer #budgetPlanner #left #blueBox1{
+	background-color:rgb(146,166,196);
+	color:white;
+	width:100px;
+	height:24px;
+	margin-right:5px;
+	padding-top:6px;
+	display:inline-block;
+			text-align:center;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+#financeContainer #budgetPlanner #left #blueBox2{
+	background-color:rgb(89,109,160);
+	color:white;
+	width:100px;
+	height:24px;
+	padding-top:6px;
+	margin-right:5px;
+	display:inline-block;
+			text-align:center;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+#financeContainer #budgetPlanner #left #blueBox3{
+	background-color:rgb(51,62,106);
+	color:white;
+	width:100px;
+	height:24px;
+	margin-right:0px;
+	padding-top:6px;
+	display:inline-block;
+			text-align:center;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	
+}
+
+
+
+
+#financeContainer #budgetPlanner #left p{
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+
+
+#financeContainer #budgetPlanner #right{
+	width:32.5%;
+	display:inline-block;
+}
+#financeContainer #budgetPlanner h2{
+	display:inline-block;
+	text-align:center;
+
+}
+#financeContainer #budgetPlanner #right #wrap{
+	text-align:center;
+	line-height:10px;
+	display:inline-block;
+	margin-top:75px;
+
+	margin-right:auto;
+	margin-left:auto;
+	width:89%;
+
+}
+#financeContainer #budgetPlanner #right h2{
+	color:rgb(116,116,116);
+	margin-bottom:25px;
+
+}
+
+#financeContainer #budgetPlanner #right img{
+	margin-top:80px;
+
 }
 
 #financeContainer #finAid #wrap{
@@ -704,25 +890,17 @@ bullets #position button{
 }
 
 
-
-
-
-
 #financialRight h3, #financeContainer h3{
 	margin-top:0px;
 	padding-top:7px;
 	margin-bottom:5px;
 }
 
-#financialRight h2, #financeContainer h2{
-	color:rgb(116,116,116);
-	margin-top:0px;
-}
 
-#financialRight .viewMore, #financeContainer .viewMore{
+
+#financeContainer .viewMore{
 	font-size:.875em;
 	font-family:Georgia, "Times New Roman", Times, serif;
-	
 }
 
 #financialRight p, #financeContainer p{
@@ -749,4 +927,38 @@ bullets #position button{
 	font-size:.875em;
 	color:rgb(116,116,116);
 	margin-left:5px;
+}
+
+
+.footer #leftWrap #advisorWrap{
+	width:40%;
+	display:inline-block;
+	margin:10px 0;
+}
+
+.footer #leftWrap{
+	display:inline-block;
+	width:54%;
+	height:100px;
+	background-color:blue;
+	vertical-align:top;
+	
+	}
+
+.footer #rightWrap{
+	display:inline-block;
+	width:44%;
+	height:100px;
+	background-color:red;
+		vertical-align:top;
+}
+
+ .footer #advisorWrap #pic{
+display:inline-block;
+margin-right:10px;
+
+}
+
+ .footer #advisorWrap #info{
+display:inline-block;
 }
