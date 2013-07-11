@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Freshman Support</title>
-<script src="../../Documents/GitHub/freshmansupport.github.com/js/jquery-1.9.1.js" type="text/javascript"></script>
+<script src="js/jquery-1.9.1.js" type="text/javascript"></script>
 <script src="js/jquery.quickflip.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 $(function() {
@@ -32,7 +32,36 @@ $(function() {
 <link rel="stylesheet" type="text/css" href="css/hover-quickflips.css" />
 <link rel="stylesheet" type="text/css" href="css/landingStyle.css" />
 <link rel="stylesheet" type="text/css" href="css/headerStyle.css" />
-
+<style>
+#list5 {
+	color: #eee;
+	background-color: black;
+	text-align: left;
+}
+#list5 ol {
+	font-size: 24px;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#list5 ol li {
+}
+#list5 ol li ol {
+	padding: 10px 0 5px 50px;
+	font-size: 20px;
+	list-style-image: url("img/nested.png");
+}
+#list5 ol li ol li {
+	color: #bfe1f1;
+	height: 15px;
+	margin-left: 10px;
+	padding: 5px 0;
+}
+#list5 ol li ol li:hover {
+	background-color: gray;
+}
+#list5 a:visited{color:inherit}
+</style>
 </head>
 
 <body>
@@ -86,18 +115,72 @@ $(function() {
   <div id="randy">
     <h2 style="text-align:center;">The Randy Navigation Bar</h2>
     <div id="newNav">
-    <ul>
-      <li id="home"><a href="../home">HOME</a></li>
-      <li id="housing"><a href="../housing">COMPARE HOUSING</a></li>
-      <li id="roomie"><a href="../roomieMatching">ROOMIE MATCHING</a></li>
-      <li id="admissions"><a href="../admissions" >ADMISSIONS</a> </li>
-      <li id="finances"><a href="../finances">FINANCES</a> </li>
-      <li id="theRealLife"><a href="../theRealLife">THE REAL LIFE</a> </li>
-      <li id="visit"><a href="../visit">VISIT</a> </li>
-      <li id="deadlines"><a href="../deadlines">DEADLINES</a> </li>
-    </ul>
+      <ul>
+        <li id="home"><a href="../home">HOME</a></li>
+        <li id="housing"><a href="../housing">COMPARE HOUSING</a></li>
+        <li id="roomie"><a href="../roomieMatching">ROOMIE MATCHING</a></li>
+        <li id="admissions"><a href="../admissions" >ADMISSIONS</a> </li>
+        <li id="finances"><a href="../finances">FINANCES</a> </li>
+        <li id="theRealLife"><a href="../theRealLife">THE REAL LIFE</a> </li>
+        <li id="visit"><a href="../visit">VISIT</a> </li>
+        <li id="deadlines"><a href="../deadlines">DEADLINES</a> </li>
+      </ul>
+    </div>
   </div>
-  </div>
+</div>
+<h2>They Hey Kristen All the Webpage so far Nav bar</h2>
+<p style="color:gray">Only page that are being worked are displayed</p>
+<div id="list5">
+  <ol>
+    <li>Home
+      <ol>
+        <li><a href="home">Index</a></li>
+      </ol>
+    </li>
+    <li>Compare Housing
+      <ol>
+        <li><a href="housing">Index</a></li>
+        <li><a href="housingmatcherresults">Result</a></li>
+      </ol>
+    </li>
+    <li>Roomie Match
+      <ol>
+        <li><a href="roomieMatch">Index</a></li>
+        <li></li>
+      </ol>
+    </li>
+    <li>Admissions
+      <ol>
+        <li><a href="admissions">Index</a></li>
+      </ol>
+    </li>
+    <li>Finances
+      <ol>
+        <li></li>
+      </ol>
+    </li>
+    <li>The Real Life
+      <ol>
+        <li><a href="theRealLife">Index</a></li>
+        <li><a href="theRealLife/profile.html">Profile</a></li>
+      </ol>
+    </li>
+    <li>Visit
+      <ol>
+        <li></li>
+      </ol>
+    </li>
+    <li>deadline
+      <ol>
+        <li></li>
+      </ol>
+    </li>
+        <li>Other
+      <ol>
+        <li></li>
+      </ol>
+    </li>
+  </ol>
 </div>
 <div id="footer"> <span style="padding: 5px 0 5px 25px;">Copyright 2013 Freshman Support. All right reserved.</span> </div>
 </body>

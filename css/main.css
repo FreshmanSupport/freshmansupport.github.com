@@ -80,7 +80,7 @@ height: 45px;
 width: 45px;
 display: inline-block;
 margin-left: 10px;}
-/* ===Roomie Watching=== */
+/* ===Roomie Match=== */
 .rmTable {
 	margin: 0 auto;
 	margin-bottom: 25px;
@@ -117,9 +117,8 @@ margin-left: 10px;}
 	font-size: 30px;
 	margin-top: 20px;
 	color: gray;
-
 }
-/* ========The Real Life ============ */
+/* ===The Real Life==== */
 .realLifeNav {
 	width: 99%;
 	background-color: rgb(232, 229, 228);
@@ -485,22 +484,6 @@ body {
 .mycontent-right {
   border-left: 1px dashed #333;
   height: 200px;
-}
-.hr {width:2px;height:150px;background-color:#000000; position:relative; top:0px;left:50px;z-index:10; float:right;}
-/* ============ Radio Button CSS ================== */
-input[type="radio"] {
-	display: none;
-}
-input[type="radio"] + label span {
-	display: inline-block;
-	width: 22px;
-	height: 22px;
-	vertical-align: middle;
-	background: url(images/roommateRadioButton.png) left top no-repeat;
-	cursor: pointer;
-}
-input[type="radio"]:checked + label span {
-	background: url(images/roommateRadioButton.png) -22px top no-repeat;
 }
 /*=========housing matcher===============*/
 
