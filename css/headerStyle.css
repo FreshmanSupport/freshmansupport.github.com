@@ -140,6 +140,7 @@
 	height: 25px;
 	border-top: 4px solid rgb(116,116,116);
 	margin: 0 auto;
+	padding-top: 2px;
 }
 #subNav ul {
 	list-style-type: none;

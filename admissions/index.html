@@ -4,6 +4,7 @@
 <link type="text/css" rel="stylesheet" href="../css/main.css"/>
 <link type="text/css" rel="stylesheet" href="../css/headerStyle.css"/>
 <link type="text/css" rel="stylesheet" href="../css/bootstrap-responsive.css" />
+<script src="../js/swipe.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Admissions</title>
 </head>
@@ -40,36 +41,66 @@
       <li id="deadlines"><a href="../deadlines">DEADLINES</a> </li>
     </ul>
   </div>
-
   <div id="subNav">
     <ul>
-      <li><a>Recently Answered</a></li><li><a>Data</a></li><li><a>Accepted Student Essays</a></li>
+      <li><a>Recently Answered</a></li>
+      <li><a>Data</a></li>
+      <li><a>Accepted Student Essays</a></li>
     </ul>
   </div>
 </div>
-<div class="container-fluid"><!-- WIDTH IS 425PX ------------------------------------>
+<div class="container-fluid">
   <div id="maincontent">
     <div class="row-fluid">
-      <div class="span4"> 
-        <!-- style="padding-right:20px; border-right: 1px solid #ccc; -->
+      <div id="recentAnswers" class="span4" style="overflow:hidden;">
         <h2>Recently Answered</h2>
-        <div class="row-fluid">
-          <div class="span6">
-            <div div class="HNL">Question:</div>
-            <p>How important are admissions essays in getting accepted to UT?</p>
+        <div id='answerSlider' class='swipeRecent' style="margin:20px 0;">
+          <div class='swipe-wrap'>
+            <div>
+              <div class="question">
+                <p>Question:</p>
+                <p>What do I do with other scholarship awards?</p>
+              </div>
+              <div class="answer">
+                <p>Answer:</p>
+                <p>Any scholarships awarded by an institution separate from the university...</p>
+                <a href="#" class="view" style="margin-top:-13px;">View More</a> </div>
+              <div class="answeredBy">
+                <div class="info">
+                  <p>Answered by Lindsay Bluth,<br />
+                    Salesperson<br />
+                    Some Store in the Mall</p>
+                </div>
+                <img src="../img/BUT/rb5.png" / class="answerPic">
+              </div>
+            </div>
+                 <div>
+              <div class="question">
+                <p>Question:</p>
+                <p>What is the answer to life?</p>
+              </div>
+              <div class="answer">
+                <p>Answer:</p>
+                <p>The answer to life is 42, you won't...</p>
+                <a href="#" class="view" style="margin-top:-13px;">View More</a> </div>
+              <div class="answeredBy">
+                <div class="info">
+                  <p>Answered by Lindsay Bluth,<br />
+                    Salesperson<br />
+                    Some Store in the Mall</p>
+                </div>
+                <img src="../img/BUT/rb5.png" / class="answerPic">
+              </div>
+            </div>
           </div>
-          <div class="span6 borderLeft">
-            <div class="HNL">Answer:</div>
-            <p>Admissions essays are used to determine many different things: acceptance into UT, and within the College you are applying to major...</p>
-            <a href="#" class="view">View More</a> </div>
         </div>
-        <div class="row-fluid">
-          <div class="span12">
-            <p>Answered by Lindsay Lohan<br />
-              SalesPerson<br />
-              Some Store in mall</p>
-            <a href="#" class="view" style="dispaly:block; margin-top: 10px;">View All Questions</a> </div>
-        </div>
+        <center id="answerNav">
+          <button onClick="answerSlider.prev()"><img src=../img/arrowLeft.png width=10px/> Prev</button>
+          <button onClick="answerSlider.next()">Next <img src=../img/arrowRight.png width=10px /></button>
+          <br />
+          <br />
+          <a href="" class="view">View All Questions</a>
+        </center>
       </div>
       <div class="span05" style="text-align:center;">
         <hr style="width: 1px; height: 440px; display: block;">
@@ -225,3 +256,15 @@
 </div>
 </body>
 </html>
+<script type='text/javascript'>
+window.answerSlider = new Swipe(document.getElementById('answerSlider'), {
+  startSlide: 0,
+  speed: 400,
+  auto: 30000,
+  continuous: true,
+  disableScroll: false,
+  stopPropagation: false,
+  callback: function(index, elem) {},
+  transitionEnd: function(index, elem) {}
+});
+</script>

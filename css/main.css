@@ -7,7 +7,7 @@
 	src: url(../fonts/helveticaneue-bold.otf);
 }
 
-/* ================= MAIN CONTENT =========================*/
+/* === MAIN CONTENT ===*/
 #maincontent {
 	background: white;
 	width: 97.5%;
@@ -38,12 +38,49 @@
 	font-size: .875em;
 	font-family:Georgia, "Times New Roman", Times, serif;
 }
-/* ======== Admission ======= */
+/* ===Admission=== */
 .essay img{
 display: block;
 margin:0 auto;
 }
-/* ======= RoomMate ========= */
+.question{
+color: rgb(51,62,106);
+font-family: Georgia;
+display: inline-block;
+width: 46%;
+margin: auto;
+float: none;
+min-height: 120px;
+padding: 0 5px;
+border-right: 2px solid rgb(116,116,116);
+vertical-align: top;
+}
+.answer{
+color: rgb(51,62,106);
+font-family: HNL;
+display: inline-block;
+width: 46%;
+min-height: 120px;
+float: none;
+margin: auto;
+padding: 0 5px;
+vertical-align: top;
+}
+.answeredBy{text-align: center;}
+.info {
+	display:inline-block;
+}
+#answerNav button{
+	border:0;
+	background-color:transparent;
+}
+
+.answerPic{
+height: 45px;
+width: 45px;
+display: inline-block;
+margin-left: 10px;}
+/* ===Roomie Watching=== */
 .rmTable {
 	margin: 0 auto;
 	margin-bottom: 25px;
