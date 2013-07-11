@@ -6,7 +6,6 @@
 <link type="text/css" rel="stylesheet" href="../css/bootstrap-responsive.css" />
 <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
 <script src="../js/swipe.js"></script>
-
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Roomie Match</title>
 </head>
@@ -14,25 +13,25 @@
 <body>
 <div id="container">
 <div id="header">
-<div id="loginBar">
-  <div id="loginBarContainer"> <a href="#">Login |</a> <a href="#"> Register</a> </div>
-</div>
-<div id="searchBar">
-  <div id="collegeSearchContainer">
-    <form id="collegeSearchbox" action="">
-      <input id="submit" type="submit" value="Search" name="submit"class="collegeSearchButton">
-      <input id="search" type="text" name="collegeSearch" placeholder="The University of Texas at Austin" class="collegeSearchBox">
-    </form>
+  <div id="loginBar">
+    <div id="loginBarContainer"> <a href="#">Login |</a> <a href="#"> Register</a> </div>
   </div>
-  <div id="logoContainer"> <img src="../img/logo.png" /> </div>
-  <div id="siteSearchContainer">
-    <form id="searchbox" action="">
-      <div id="magnify"></div>
-      <input id="search" type="text" placeholder="Search The University of North Texas" class="siteSearchSkin">
-    </form>
+  <div id="searchBar">
+    <div id="collegeSearchContainer">
+      <form id="collegeSearchbox" action="">
+        <input id="submit" type="submit" value="Search" name="submit"class="collegeSearchButton">
+        <input id="search" type="text" name="collegeSearch" placeholder="The University of Texas at Austin" class="collegeSearchBox">
+      </form>
+    </div>
+    <div id="logoContainer"> <img src="../img/logo.png" /> </div>
+    <div id="siteSearchContainer">
+      <form id="searchbox" action="">
+        <div id="magnify"></div>
+        <input id="search" type="text" placeholder="Search The University of North Texas" class="siteSearchSkin">
+      </form>
+    </div>
   </div>
-</div>
- <div id="newNav">
+  <div id="newNav">
     <ul>
       <li id="home"><a href="../home">HOME</a></li>
       <li id="housing"><a href="../housing">COMPARE HOUSING</a></li>
@@ -47,26 +46,56 @@
 </div>
 <div id="subNav">
   <ul>
-    <li><a>Matching Questionare</a></li>
-    <li><a>Student Profile</a></li>
-    <li><a>Search Matches</a></li>
+    <li><a href="#">Matching Questionare</a></li>
+    <li><a href="#">Student Profile</a></li>
+    <li><a href="#">Search Matches</a></li>
   </ul>
 </div>
 <div id="maincontent">
   <div class="container-fluid">
     <div class="row-fluid">
       <div class="span7" style="overflow:hidden;">
-        <h2>Matching Questionare</h2>
         <div id='roomieSlider' class='swipeRecent' style="margin:20px 0;">
           <div class='swipe-wrap'>
-   			<div>
-                <form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
-                <div align="center">
-                <input type="radio" name="group1" value="Milk"> Milk<br>
-                <input type="radio" name="group1" value="Butter" checked> Butter<br>
-                <input type="radio" name="group1" value="Cheese"> Cheese<
-     			</div>
-                </form>
+            <div>
+              <h2>Sleep Schedule</h2>
+              <h3>Matching Questionare</h3>
+              <form name="myform" action="" method="POST">
+                <ul>
+                  <li class="rmLabel">
+                      <p>early bird</p>
+                      <p>late owl</p>
+                  </li>
+                  <li>
+                    <p class="butLabel">you</p>
+                    <input type="radio" name="you" value="one">
+                    <input type="radio" name="you" value="two">	
+                    <input type="radio" name="you" value="three">
+                    <input type="radio" name="you" value="four">
+                    <input type="radio" name="you" value="five">
+                  </li>
+                  <li>
+                    <p>ideal roommate</p>
+                    <input type="radio" name="roommate" value="one">
+                    <input type="radio" name="roommate" value="two">
+                    <input type="radio" name="roommate" value="three">
+                    <input type="radio" name="roommate" value="four">
+                    <input type="radio" name="roommate" value="five">
+                    <div class="rmLabel">
+                      <p>low</p>
+                      <p>high</p>
+                    </div>
+                  </li>
+                  <li>
+                    <p>question importance</p>
+                    <input type="radio" name="importance" value="one">
+                    <input type="radio" name="importance" value="two">
+                    <input type="radio" name="importance" value="three">
+                    <input type="radio" name="importance" value="four">
+                    <input type="radio" name="importance" value="five">
+                  </li>
+                </ul>
+              </form>
             </div>
           </div>
         </div>

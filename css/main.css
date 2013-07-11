@@ -118,6 +118,13 @@ margin-left: 10px;}
 	margin-top: 20px;
 	color: gray;
 }
+/* ==Roomie Slider== */
+#roomieSlider{}
+#roomieSlider ul{list-style:none; width: 80%; margin: 0 auto;}
+#roomieSlider ul li{}
+#roomieSlider p{display: inline-block; border-right: 2px solid gray; padding: 5px 5px 5px 0}
+.rmLabel{}
+.butLabel{width:9.99%;align:right;}
 /* ===The Real Life==== */
 .realLifeNav {
 	width: 99%;
