@@ -121,10 +121,58 @@ margin-left: 10px;}
 /* ==Roomie Slider== */
 #roomieSlider{}
 #roomieSlider ul{list-style:none; width: 80%; margin: 0 auto;}
-#roomieSlider ul li{}
-#roomieSlider p{display: inline-block; border-right: 2px solid gray; padding: 5px 5px 5px 0}
-.rmLabel{}
-.butLabel{width:9.99%;align:right;}
+#roomieSlider ul li{width:100%;}
+#roomieSlider p{display: inline-block;}
+#roomieSlider .rowLabel{
+	width:20%;
+	height: 65px;
+	text-align:right;
+	vertical-align:central;
+	border-right: 2px solid gray;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: gray;
+	display:inline-block;
+}
+#roomieSlider .rmLabel{
+width: 400;
+padding-left:20%;
+padding-right: 20%;
+}
+#roomieSlider .rmLabel p:first-child{color:rgb(182,197,220);}
+#roomieSlider .rmLabel p:last-child{color:rgb(51,61,105); float:right;}
+
+label {  
+    display: inline-block;  
+    cursor: pointer;  
+    position: relative;  
+    height: 67px;
+	width: 67px;
+}
+input[type=radio] {  
+    display: none;  
+} 
+label:before {  
+    content: "";  
+    display: inline-block;  
+  
+    width: 65px;  
+    height: 65px;  
+  
+    margin-right: 10px;  
+    position: absolute;  
+    left: 0;  
+    bottombottom: 1px;  
+    background-color: white;  
+	border: 1px solid rgb(51,61,105);
+    /*box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);  */
+}  
+#roomieSlider label:before {  
+    border-radius: 40px;  
+}  
+input[type=radio]:checked + label:before {  
+	background-color:rgb(51,61,105);   
+}  
 /* ===The Real Life==== */
 .realLifeNav {
 	width: 99%;
