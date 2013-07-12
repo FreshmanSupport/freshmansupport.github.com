@@ -1,0 +1,339 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link type="text/css" rel="stylesheet" href="../../css/brentstyles.css"/>
+<link type="text/css" rel="stylesheet" href="../../css/headerStyle.css"/>
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-responsive.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>University of Texas at Austin | Freshman Support</title>
+
+	
+    <script src="../../js/swipe.js"></script>
+
+
+
+
+</head>
+
+<body>
+<div id="header">
+  <div id="loginBar">
+    <div id="loginBarContainer"> <a href="#">Login |</a> <a href="#"> Register</a> </div>
+  </div>
+  <div id="searchBar">
+    <div id="collegeSearchContainer">
+      <form id="collegeSearchbox" action="">
+        <input id="submit" type="submit" value="Search" name="submit"class="collegeSearchButton">
+        <input id="search" type="text" name="collegeSearch" placeholder="The University of Texas at Austin" class="collegeSearchBox">
+      </form>
+    </div>
+	<div id="logoContainer"><a href="/"> <img src="../../img/logo.png" /></a> </div>
+    <div id="siteSearchContainer">
+      <form id="searchbox" action="">
+        <div id="magnify"></div>
+        <input id="search" type="text" placeholder="Search The University of North Texas" class="siteSearchSkin">
+      </form>
+    </div>
+  </div>
+  <div id="newNav">
+    <ul>
+      <li id="home"><a href="../../home">HOME</a></li>
+      <li id="housingSelected"><a href="../../housing">COMPARE HOUSING</a></li>
+      <li id="roomie"><a href="../../roomieMatch">ROOMIE MATCH</a></li>
+      <li id="admissions"><a href="../../admissions" >ADMISSIONS</a> </li>
+      <li id="finances"><a href="../../finances">FINANCES</a> </li>
+      <li id="theRealLife"><a href="../../theRealLife">THE REAL LIFE</a> </li>
+      <li id="visit"><a href="../../visit">VISIT</a> </li>
+      <li id="deadlines"><a href="../../deadlines">DEADLINES</a> </li>
+    </ul>
+  </div>
+  <div id="subNav">
+    <ul>
+      <li><a>Recently Answered</a></li>
+      <li><a>Data</a></li>
+      <li><a>Accepted Student Profiles</a></li>
+    </ul>
+  </div>
+</div>
+<div class="container-fluid"><!-- WIDTH IS 425PX ------------------------------------>
+  <div id="maincontent">
+  <div class="row-fluid">
+	<div id="property">
+	<div id="left">
+    	<div id="generalInfo">
+        <h3>Towers</h3>
+       <a href=""> <div id="compareDiv">
+        <img src="../../img/comparestar.gif" /><span class="compare">Compare</span>
+        
+        </div></a>
+        <div style="margin-top:20px;	"><a href="">(3 Reviews)</a>
+        <br />1-855-311-1166 ext. 502
+        <br />801 West 24th Street
+        </div>
+        
+        <div id="interests">Fall 2016 - 855 Roomie Interests</div>
+        
+        <center><a href="">Add to Roomie Match</a>
+        <br />
+        <br /><span class="reco">Recommended Application Date</span><span class="date">8-10-13</span>
+        </center>
+        </div>
+        
+    
+    <div id="availability">
+    
+    <h3>Check Availability</h3>
+    <br /><br />
+    <textarea name="name" style="height:20px; width:150px; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:.875em; resize:none; color:rgb(51,62,106); margin-bottom:10px;" placeholder="Name"></textarea>
+    
+     <br />
+    <textarea name="email" placeholder="E-mail" style="height:20px; width:200px; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:.875em; resize:none; color:rgb(51,62,106); margin-bottom:10px;"></textarea>
+    
+    
+     <br />
+    <textarea name="phone" style="height:20px; width:150px; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:.875em; resize:none; color:rgb(51,62,106); margin-bottom:10px;" placeholder="Phone #"></textarea>
+    
+     <br />
+    <textarea name="question" style="height:75px; width:275px; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:.875em; resize:none; color:rgb(51,62,106);" placeholder="Questions"></textarea>
+    
+    
+    <br /><div onClick="availabilitySent();" style="cursor:pointer"><a>Send</a></div>
+
+    </div>
+    
+    
+     <div id="availSent" style="display:none;">
+    
+    <h3>Check Availability</h3>
+    
+    <p>Your availability check request has been succesfully submitted!
+    </p>
+    <p>Towers will send you an email shortly with information regarding available units that match your cirteria. If you do not receive an email from Towers after 5 business days, please contact <a href="mailto:support@freshmansupport.com">Support@FreshmanSupport.com</a>.
+    </p>
+    <p>
+    In the meantime, please feel free to check availability for any other properties that you are interested in.
+    </p>
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="information">
+    <div id="selector">
+    <button onClick="unitFunc();" ><span id="unitButton" class="hbold" style="cursor:pointer">Unit</span></button> | <button onClick="commFunc();" id="comButton"><span id="commButton" style="cursor:pointer">Community</span></button> | <button onClick="mapFunc();" id="mapButton"><span id="mapButton" style="cursor:pointer">Map</span></button>
+    </div>
+   
+
+    <div id="unit" style="display:hidden">
+    <ul style="list-style-type:none; ">
+    <li>Full sized kitchen</li>
+    <li>Private rooms available (extra-charge)</li>
+    <li>Housekeeping</li>
+    <li>Flexible meal plans</li>
+    <li>HD Cable TV</li>
+    <li>Full sized kitchen</li>
+    <li>Private rooms available (extra-charge)</li>
+    <li>Housekeeping</li>
+    <li>Flexible meal plans</li>
+    <li>HD Cable TV</li>
+    
+    <li>Full sized kitchen</li>
+    <li>Private rooms available (extra-charge)</li>
+    <li>Housekeeping</li>
+    <li>Flexible meal plans</li>
+    <li>HD Cable TV</li>
+    <li>Full sized kitchen</li>
+    <li>Private rooms available (extra-charge)</li>
+    <li>Housekeeping</li>
+    <li>Flexible meal plans</li>
+    <li>HD Cable TV</li>
+    
+    
+    
+    </ul>
+    </div>
+    <div id="community" style="display:none">
+     <ul style="list-style-type:none; ">
+    <li>Ninjas</li>
+    <li>Crime</li>
+        <li>Mafia</li>
+	<li>Hipsters</li>
+    
+    
+    </ul>
+    </div>
+    <div id="map" style="display:none;">map</div>
+    
+
+    
+    </div>
+    </div>
+
+	<div id="right">
+    	<div id="dormTour">
+    		<h3>Dorm Tour</h3>
+            
+            <div id="videoWrap"><ul>
+            <li>
+            <div id="video"></div>
+            </li>
+            <li><a href="">More Videos</a></li>
+            </ul></div>
+            
+            
+            <div id="pics">
+            <ul>
+            <li><img src="../../img/property/place2.png"  /></li>
+                        <li><img src="../../img/property/place2.png"  /></li>
+            <li><img src="../../img/property/place2.png"  /></li>
+			<li><a href="">More Pictures</a></li>
+            </ul>
+            </div>
+            
+    	</div>
+        <div id="desc">
+        <h3>Description</h3>
+        <p >Paragraphs and words and words and paragraphs.
+                Paragraphs and words and words and paragraphs.
+        Paragraphs and words and words and paragraphs.
+        Paragraphs and words and words and paragraphs.
+        Paragraphs and words and words and paragraphs.
+        Paragraphs and words and words and paragraphs.
+        Paragraphs and words and words and paragraphs.
+        Paragraphs and words and words and paragraphs.
+        Paragraphs and words and words and paragraphs.
+        Paragraphs and words and words and paragraphs.
+        Paragraphs and words and words and paragraphs.
+</p><p>      Paragraphs and words and words and paragraphs.
+        Paragraphs and words and words and paragraphs.
+        Paragraphs and words and words and paragraphs.
+        Paragraphs and words and words and paragraphs.
+        Paragraphs and words and words and paragraphs.
+        Paragraphs and words and words and paragraphs.
+        Paragraphs and words and words and paragraphs.</p>
+
+        </div>
+        <div id="pricing">
+        <h3>Pricing</h3>
+        
+        <div id="wrap">
+        	<div id="col">
+           		<div id="item"><p>Num. of Bedrooms</p></div>
+                <ul><li>.5</li>
+                <li>.5</li>
+                <li>.5</li>
+                </ul>
+        	</div>
+            
+            <div id="col">
+           		<div id="item"><p>Occupancy per Bedrooms</p></div>
+                <ul><li>Efficiency</li>
+                <li>Efficiency</li>
+                <li>40</li>
+                </ul>
+        	</div>
+            
+            <div id="col">
+           		<div id="item"><p>Price per Month per Bedroom</p></div>
+                <ul><li>$1</li>
+                <li>1200-1500 USD</li>
+                <li>25 cents</li>
+                </ul>
+        	</div>
+            
+            <div id="col">
+           		<div id="item"><p>Floor plan</p></div>
+                <ul><li>pic</li>
+                <li>pic</li>
+                <li>pic</li>
+                </ul>
+        	</div>
+            
+        </div>
+        
+        <p>Leases are per academic year. Prices shown above are lease prices divided by ten months. To find the total price of a lease multiply the numbers abover by ten.
+        </p>
+        <p>Note: Prices are subject to change.</p>
+        
+        
+        
+        </div>
+        
+        
+        
+    </div>
+
+
+
+</div>
+</div></div></div>
+</body></html>
+<!--
+ <script type='text/javascript'>
+window.mySwipe = new Swipe(document.getElementById('slider'), {
+  startSlide: 0,
+  speed: 1,
+  auto: 3000000,
+  continuous: false,
+  disableScroll: false,
+  stopPropagation: false,
+  callback: function(index, elem) {},
+  transitionEnd: function(index, elem) {}
+});
+
+</script>
+
+-->
+<script>
+function availabilitySent() { 
+document.getElementById('availSent').style.display='block';
+document.getElementById('availability').style.display='none';
+
+}
+
+function unitFunc() { 
+document.getElementById('unit').style.display='block';
+document.getElementById('community').style.display='none';
+document.getElementById('map').style.display='none';
+	
+document.getElementById('unitButton').style.fontFamily='HNB';
+document.getElementById('commButton').style.fontFamily='HNL';
+document.getElementById('mapButton').style.fontFamily='HNL';
+
+}
+function commFunc() { 
+document.getElementById('unit').style.display='none';
+document.getElementById('community').style.display='block';
+document.getElementById('map').style.display='none';
+	
+document.getElementById('unitButton').style.fontFamily='HNL';
+document.getElementById('commButton').style.fontFamily='HNB';
+document.getElementById('mapButton').style.fontFamily='HNL';
+}
+function mapFunc() { 
+document.getElementById('unit').style.display='none';
+document.getElementById('community').style.display='none';
+document.getElementById('map').style.display='block';
+	
+document.getElementById('unitButton').style.fontFamily='HNL';
+document.getElementById('commButton').style.fontFamily='HNL';
+document.getElementById('mapButton').style.fontFamily='HNB';
+}
+
+
+
+
+</script>

@@ -7,6 +7,17 @@
 	src: url(../fonts/helveticaneue-bold.otf);
 }
 
+.bold{
+	font-weight:bold;
+}
+
+.hbold{
+	font-family:HNB;
+}
+.normal{
+	font-weight:normal;
+}
+a {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
 
 a:link {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
 a:visited {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
@@ -940,7 +951,6 @@ height:20px;
 	display:inline-block;
 	width:54%;
 	height:100px;
-	background-color:blue;
 	vertical-align:top;
 	
 	}
@@ -949,7 +959,6 @@ height:20px;
 	display:inline-block;
 	width:44%;
 	height:100px;
-	background-color:red;
 		vertical-align:top;
 }
 
@@ -965,4 +974,259 @@ display:inline-block;
 
 
 /* ------ individual housing page ------- */
+#individualHousing{
+	width:100%;
+	display:block;
 
+}
+
+
+#property #left{
+	width:100%;
+	max-width:425px;
+	display:inline-block;
+	height:900px;
+	padding-left:30px;
+	margin-top:15px;
+	padding-right:15px;
+}
+
+#property #left #generalInfo{
+	width:100%;
+	height:230px;
+	background-color:white;
+	margin-top:0px;
+	border-bottom:2px solid rgb(51,62,106);
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:rgb(116,116,116);
+}
+
+#property #left #generalInfo h3{
+	font-family:HNB;
+	text-align:left;
+	margin:0 0;	
+	
+}
+
+#generalInfo #interests {
+	font-weight: bold;
+	width:100%;
+	font-size: 14px;
+	color: rgb(89,107,158);
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:10px;
+}
+
+#generalInfo .review{
+line-height:50px;}
+#generalInfo .compare{
+	font-family: HNL;
+	color:rgb(116,116,116);
+	margin-left:3px;
+	position:relative;
+	top:2px	;
+}
+
+#generalInfo #compareDiv{
+	margin-top:3px;
+	height:10px;
+	margin-bottom:0px;
+}
+
+#generalInfo #compareDiv img{
+	vertical-align:middle;
+	width:20px;
+}
+
+#generalInfo .reco {
+	color: rgb(51,62,106);
+	margin-right: 5px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+#generalInfo .date {
+	color: rgb(220, 134, 39);
+		font-family:Georgia, "Times New Roman", Times, serif;
+
+}
+
+#left #availability, #left #availSent{
+	height:300px;
+	width:100%;
+	border:none;
+	border-bottom:2px solid rgb(51,62,106);
+	text-align:left;
+	background-color:white;
+	padding-left:0px;
+	padding-top:10px;
+
+}
+#left p{
+	font-size:.875em;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:rgb(116,116,116);
+	text-align:left;
+}
+
+#left h3, #right h3{
+	font-size:1.875em;
+	font-family:HNL;
+	text-align:left;
+margin:0;
+
+}
+
+#left #information{
+	width:100%;
+	height:600px;
+}
+
+#property #left #information #selector{
+	width:100%;
+	height:45px;
+	background-color:rgb(116,116,116);
+	color:white;
+	font-size:1.875em;
+	font-family:HNL;
+	text-align:center;
+	margin-top:10px;
+	padding-top:2px;
+	margin-bottom:30px;
+}
+
+#property #left #information #selector button{
+background-color:rgb(116,116,116);
+	color:white;
+		font-size:inherit;
+	font-family:HNL;
+	border:none;
+
+}
+
+#property #left #information #unit, #property #left #information #community, #property #left #information #map{
+
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:.875em;
+	color:rgb(116,116,116);
+	width:100%;
+	font-style:italic;
+	margin-top:-15px;
+}
+
+
+#property #left #information #unit ul li, #property #left #information #community ul li, #property #left #information #map ul li{
+	list-style-type:none;
+	padding:0;
+	margin-left:-30px;
+}
+
+#property #right{
+	width:100%;
+	max-width:725px;
+	display:inline-block;
+	height:1000px;
+	background-color:white;
+	float:right;
+	border-left:2px solid rgb(51,62,106);
+	padding-right:30px;
+	margin-top:15px;
+}
+
+
+
+#property #right #dormTour{
+	height:340px;
+	background-color:white;
+	border-bottom:2px solid rgb(51,62,106);
+	margin-left:20px;
+}
+
+#property #right #dormTour #video{
+	height:260px;
+	width:350px;
+	border-radius:5px;
+	background-color:gray;
+	display:inline-block;	
+	margin-top:15px;
+}
+#property #right #dormTour #videoWrap{
+	display:inline-block;	
+}
+
+#property #right #dormTour #pics{
+
+	display:inline-block;
+	width:200px;
+}
+#property #right #dormTour ul li{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+
+#property #right #dormTour ul{
+	margin:0;
+	padding:0;
+	margin-right:30px;
+}
+
+#property #right #dormTour #pics img{
+	width:83px;
+	border-radius:5px;	
+}
+
+#property #right #desc{
+	background-color:white;
+	border-bottom:2px solid rgb(51,62,106);
+	margin-left:20px;
+	padding-bottom:5px;
+	
+}
+
+#property #right #pricing{
+	height:340px;
+	background-color:white;
+	margin-left:20px;
+	
+}
+
+
+#property #right #pricing h3, #property #right #desc h3{
+	margin-top:10px;
+}
+
+#property #right #pricing p, #property #right #desc p{
+	text-align:left;
+}
+
+#property #right #pricing #wrap{
+	display:inline-block;
+	margin-bottom:15px;
+}
+
+
+
+#property #right #pricing  p{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:rgb(116,116,116);
+}
+
+#property #right #pricing #wrap #col{
+	display:inline-block;
+	margin-right:20px;
+	max-width:170px;
+	min-width:117px;
+}
+
+#property #right #pricing #wrap #col ul li{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:rgb(51,62,106);
+	list-style-type:none;	
+}
+
+#property #right #pricing #wrap #col ul{
+	margin:0;
+	padding:0;
+	vertical-align:top;
+}
