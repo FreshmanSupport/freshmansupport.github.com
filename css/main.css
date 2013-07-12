@@ -24,11 +24,10 @@
 }
 #maincontent h3 {
 	font-family: HNL;
-	font-size: 18px;
+	font-size:1.875em;
 	color: rgb(51,62,106);
 	font-weight: normal;
-	margin: 25px 0;
-}
+	}
 #maincontent h2, #maincontent h3 {
 	text-align: center;
 }
@@ -542,6 +541,29 @@ body {
 }
 /*=========housing matcher===============*/
 
+#matcherBottomWrap {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: inline-block;
+}
+
+#nextCount{
+	display: inline-block;
+	width:170px;
+	height:100px;
+}
+
+#nextCount p{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: .875em;
+	color: rgb(116,116,116);
+	font-weight: normal;
+	text-align: center;
+	font-style: italic;
+}
+
 #housingContainer {
 	width: 87%;
 	float: none;
@@ -660,15 +682,7 @@ ol li {
 	font-size: 12px;
 	color: rgb(116,116,116);
 }
-#matches h3 {
-	font-size: 18px;
-	font-weight: bold;
-	text-align: left;
-	margin: auto;
-	color: rgb(51,62,106);
-	display: inline;
-	margin-right: 10px;
-}
+
 #matchInfo {
 	width: 250px;
 	height: 250px;

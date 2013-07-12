@@ -465,12 +465,13 @@ ol li {
 	border-style: solid;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: .875em;
-	float:none;	
 
 	display: inline-block;
 	width:45%;
 	padding-bottom:10px;
-	padding-left:2px;
+	
+	margin-right:auto;
+	margin-left:auto;
 }
 
 
