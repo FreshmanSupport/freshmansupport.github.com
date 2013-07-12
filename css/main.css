@@ -218,7 +218,10 @@ input[type=radio]:checked + label:before {
 #studentProfile h3:nth-child(2) {
 	color: orange;
 }
-
+.matchDetails{
+	width:100%;
+	background-color:rgb(232, 229, 228);
+}
 /* ===The Real Life==== */
 .realLifeNav {
 	width: 99%;
