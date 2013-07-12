@@ -371,6 +371,16 @@ ol li {
 
 
 }
+
+.swipe {
+	overflow: hidden;
+	visibility: hidden;
+	position: relative;
+	width: 100%;
+	display:inline-block;
+
+
+}
 .swipe-wrap {
 	overflow: hidden;
 	position: relative;
