@@ -23,7 +23,7 @@
 }
 #maincontent h3 {
 	font-family: HNL;
-	font-size: 1.875em;
+	font-size: 1.125em;
 	color: rgb(51,62,106);
 	font-weight: normal;
 }
@@ -128,9 +128,25 @@
 }
 #roomieSlider ul li {
 	width: 100%;
+	line-height:4em;
+	white-space:nowrap;
+}
+.rowLabel>span{
+	display: inline-block;
+    line-height: 0;
+    vertical-align: middle;	
+}
+#roomieSlider ul li:last-child{
+	line-height: 30px;
+	white-space:normal;
+}
+#roomieSlider .twoLine{
+	line-height:30px;
 }
 #roomieSlider p {
 	display: inline-block;
+	margin:0;
+	padding:0;
 }
 #roomieSlider .rowLabel {
 	width: 20%;
@@ -142,11 +158,20 @@
 	font-size: 14px;
 	color: gray;
 	display: inline-block;
+	vertical-align:top;
+	margin-right: 25px;
+	padding-right: 5px;
 }
-#roomieSlider .rmLabel {
-	width: 400;
-	padding-left: 20%;
+
+#roomieSlider .rmLabel:first-child{
+	padding-left: 25%;
 	padding-right: 20%;
+	margin-bottom:-13px;
+}
+#roomieSlider .rmLabel:last-child{
+	padding-left: 28%;
+	padding-right: 23.5%;
+	margin-bottom: -13px;
 }
 #roomieSlider .rmLabel p:first-child {
 	color: rgb(182,197,220);
@@ -155,17 +180,20 @@
 	color: rgb(51,61,105);
 	float: right;
 }
-label {
+#roomieSlider label {
 	display: inline-block;
 	cursor: pointer;
 	position: relative;
 	height: 67px;
 	width: 67px;
 }
-input[type=radio] {
+#roomieSlider div form ul li:nth-child(2) {
+	margin-bottom: 30px;
+}
+#roomieSlider input[type=radio] {
 	display: none;
 }
-label:before {
+ label:before {
 	content: "";
 	display: inline-block;
 	width: 65px;
@@ -215,7 +243,7 @@ input[type=radio]:checked + label:before {
 	text-align: left;
 	font-family:Georgia, "Times New Roman", Times, serif;
 }
-#studentProfile h3:nth-child(2) {
+#studentProfile ul li div h3:nth-child(3) {
 	color: orange;
 }
 .matchDetails{
@@ -366,7 +394,7 @@ input[type=radio]:checked + label:before {
 }
 .footer h3 {
 	font-family: HNL;
-	font-size: .875em;
+	font-size: 1.125em;
 	color: rgb(116,116,116);
 	font-weight: normal;
 	margin: 0;

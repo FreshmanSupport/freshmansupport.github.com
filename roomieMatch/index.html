@@ -97,7 +97,7 @@
                     </div>
                   </li>
                   <li>
-                    <div class="rowLabel">question importance</div>
+                    <div class="rowLabel"><span><span class="twoLine">question<br />importance</span></span></div>
                     <input id="111" type="radio" name="importance" value="1">
                     <label for="111">&nbsp;</label>
                     <input id="222" type="radio" name="importance" value="2">
@@ -112,11 +112,66 @@
                 </ul>
               </form>
             </div>
+            <div>
+              <h2>Cleaniness</h2>
+              <h3>Matching Questionare</h3>
+              <form name="myform" action="" method="POST">
+                <ul>
+                  <li class="rmLabel">
+                    <p>super clean</p>
+                    <p>trashy dirty</p>
+                  </li>
+                  <li>
+                    <div class="rowLabel">you</div>
+                    <input id="6" type="radio" name="you" value="6">
+                    <label for="6">&nbsp;</label>
+                    <input id="7" type="radio" name="you" value="7">
+                    <label for="7">&nbsp;</label>
+                    <input id="8" type="radio" name="you" value="8">
+                    <label for="8">&nbsp;</label>
+                    <input id="9" type="radio" name="you" value="9">
+                    <label for="9">&nbsp;</label>
+                    <input id="0" type="radio" name="you" value="0">
+                    <label for="0">&nbsp;</label>
+                  </li>
+                  <li>
+                    <div class="rowLabel">roommate</div>
+                    <input id="66" type="radio" name="roommate" value="6">
+                    <label for="66">&nbsp;</label>
+                    <input id="77" type="radio" name="roommate" value="7">
+                    <label for="77">&nbsp;</label>
+                    <input id="88" type="radio" name="roommate" value="8">
+                    <label for="88">&nbsp;</label>
+                    <input id="99" type="radio" name="roommate" value="9">
+                    <label for="99">&nbsp;</label>
+                    <input id="00" type="radio" name="roommate" value="0">
+                    <label for="00">&nbsp;</label>
+                    <div class="rmLabel">
+                      <p>low</p>
+                      <p>high</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="rowLabel">question importance</div>
+                    <input id="666" type="radio" name="importance" value="6">
+                    <label for="666">&nbsp;</label>
+                    <input id="777" type="radio" name="importance" value="7">
+                    <label for="777">&nbsp;</label>
+                    <input id="888" type="radio" name="importance" value="8">
+                    <label for="888">&nbsp;</label>
+                    <input id="999" type="radio" name="importance" value="9">
+                    <label for="999">&nbsp;</label>
+                    <input id="000" type="radio" name="importance" value="0">
+                    <label for="000">&nbsp;</label>
+                  </li>
+                </ul>
+              </form>
+            </div>
           </div>
         </div>
         <center id="answerNav">
-          <button onClick="answerSlider.prev()"><img src=../img/arrowLeft.png width=10px/> Prev</button>
-          <button onClick="answerSlider.next()">Next <img src=../img/arrowRight.png width=10px /></button>
+          <button onClick="answerSlider.prev()"><img src=../img/arrowLeft.png width=10px/> prev</button>
+          <button onClick="answerSlider.next()">next <img src=../img/arrowRight.png width=10px /></button>
           <br />
           <br />
           <a href="" class="view">View All Questions</a>
@@ -131,7 +186,7 @@
         <a href="#" class="view">View More Deadlines</a>
         <hr />
         <h2>UT Roomates</h2>
-        <h2>By the Numbers</h2>
+        <h3>By the Numbers</h3>
         <table class="rmTable">
           <tr>
             <td>total</td>
@@ -194,7 +249,7 @@
 window.answerSlider = new Swipe(document.getElementById('roomieSlider'), {
   startSlide: 0,
   speed: 400,
-  auto: 30000,
+  auto: 9000000000000,
   continuous: true,
   disableScroll: false,
   stopPropagation: false,
