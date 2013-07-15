@@ -1310,28 +1310,59 @@ background-color:rgb(116,116,116);
 	margin:0;
 	padding:0;
 }
-
+#picsAndVids #videoWrap p{
+	margin-top:10px;
+}
 #picsAndVids #picsWrap h3{
 	font-size:.875em;
 	margin:0;
 	padding:0;
 	text-align:left;
+	margin-left:43px;
 }
 
-#upload #uploadRight{
-width:50%;
-float:right;
-display:inline-block;
-
-}
-
-#upload #uploadLeft{
+#availUpload #availability{
+	border:none;
 	width:49%;
 	display:inline-block;
+	height:485px;
 }
 
-#upload #uploadLeft h3{
+#availUpload h2{
+margin:20px;
+}
+
+
+#availUpload #upload {
+	width:49%;
+	display:inline-block;
+	float:right;
+		border-left:2px solid rgb(51,62,106);
+		margin-top:10px;
+		height:100%;
+
+}
+
+#availUpload #upload #dragger{
+	border:2px solid rgb(51,62,106);
+	width:50px;
+	height:30px;
+	background-color:white;
+	display:inline-block;
+	margin:10px 8px;
+
+}
+
+#mediaRecommendedHousing{
+	width:100%;
+	border-top:2px solid rgb(51,62,106);
+}
+
+button{
+	border:none;
+		background-color: rgb(220, 134, 39);
+	color:white;
+	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:.875em;
-	margin:0;
-	padding:0;
+	
 }
