@@ -1,4 +1,7 @@
-
+@font-face {
+	font-family: "HNL";
+	src:url(../fonts/helveticaneue-light.otf);
+}
 /* =========================== Header ============================== */
 #mainContent {
 	height: 900px;
@@ -67,15 +70,19 @@ color: white;
 /* ================== Extra ================= */
 .searchBox::-webkit-input-placeholder { /* WebKit browsers */
  color:rgb(232, 229, 228);
+ font-family:HNL,Arial, Helvetica, sans-serif;
 }
 .searchBox:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
  color:rgb(232, 229, 228);
+ font-family:HNL,Arial, Helvetica, sans-serif;
 }
 .searchBox::-moz-placeholder { /* Mozilla Firefox 19+ */
  color:rgb(232, 229, 228);
+ font-family:HNL,Arial, Helvetica, sans-serif;
 }
 .searchBox:-ms-input-placeholder { /* Internet Explorer 10+ */
  color:rgb(232, 229, 228);
+ font-family:HNL,Arial, Helvetica, sans-serif;
 }
 /* ============================ Nullify ============================== */
 

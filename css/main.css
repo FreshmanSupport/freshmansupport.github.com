@@ -130,7 +130,7 @@
 }
 #roomieSlider ul li {
 	width: 100%;
-	line-height:4em;
+	line-height: 53px;
 	white-space:nowrap;
 }
 .rowLabel>span{
@@ -152,7 +152,7 @@
 }
 #roomieSlider .rowLabel {
 	width: 20%;
-	height: 65px;
+	height: 50px;
 	text-align: right;
 	border-right: 2px solid gray;
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -182,21 +182,14 @@
 	color: rgb(51,61,105);
 	float: right;
 }
-#roomieSlider label {
-	display: inline-block;
-	cursor: pointer;
-	position: relative;
-	height: 67px;
-	width: 67px;
-}
-#roomieSlider div form ul li:nth-child(2) {margin-bottom: 30px;}
+#roomieSlider div form ul li:nth-child(2) {margin-bottom: 17px;}
 
 #roomieSlider input[type="radio"] {display:none;}
 #roomieSlider label{
 	display:inline-block;
 	vertical-align:top;
-	width: 65px;
-	height: 65px;
+	width: 50px;
+	height: 50px;
 	background-color: white;
 	border: 1px solid rgb(51,61,105);
 	border-radius:50%;
@@ -462,6 +455,8 @@
 .footer .video img {
 	width: 200px;
 	height: 150px;
+	margin-top:0;
+	border-radius: 0;
 }
 .footer .video p {
 	text-align: center;
