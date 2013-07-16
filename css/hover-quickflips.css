@@ -26,8 +26,7 @@ a {
 .quickFlip img{
 	width: 124px;
 	height: 100px;
-	margin: 0 auto;
-	
+	margin: 0 auto
 	background-position: 20px 100px;
 }
 .panel1, .panel2, .panel3 {
@@ -38,7 +37,7 @@ a {
     text-align: center;
     color: #FFF;
     font-size: 18px;
-    font-family: "Trebuchet MS", Verdana, Sans-serif, sans;
+    font-family: HNB, Georgia, "Times New Roman", Times, serif;
     line-height: 40px;
 }
 

@@ -4,7 +4,7 @@
 }
 @font-face {
 	font-family: "HNB";
-	src: url(../fonts/helveticaneue-bold.otf);
+	src: url(../fonts/helveticaneue-boldcond.otf);
 }
 /* ===HEADER=== */
 #header {
@@ -40,7 +40,7 @@
 }
 #loginBar a {
 	color: white;
-	font-family: HBL, "Times New Roman", Times, serif;
+	font-family:Georgia, "Times New Roman", Times, serif;
 	text-decoration: none;
 }
 /* ===Image Navigation Bar=== */
@@ -150,13 +150,15 @@
 	font-size: inherit;
 }
 #subNav li {
-	display: inline;
+	display: inline-block;
+	width:180px;
+	height:25px;
 	color: white;
-	padding: 0 10px;
-	border-right: 1px solid white;
+	border-top: 2px solid white;
 	font-family: inherit;
 	font-size: inherit;
 	background-color: rgb(116,116,116);
+	line-height:23px;
 }
 #subNav li:last-child {
 	border: 0;

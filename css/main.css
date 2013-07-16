@@ -74,6 +74,9 @@
 #answerNav button {
 	border: 0;
 	background-color: transparent;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: 0.875em;
+	color:rgb(51, 62, 107);
 }
 .answerPic {
 	height: 45px;
@@ -260,7 +263,6 @@
 	background-color: rgb(232, 229, 228);
 	border: 1px solid rgb(51,61,105);
 	border-radius:50%;
-	margin:0 5px;
 }
 #rmEdit input[type=radio]:checked + label{background-color: rgb(220, 134, 39);}
 #rmEdit .rowLabel{
@@ -273,6 +275,7 @@
 	vertical-align:top;
 	margin-right: 10px;
 	line-height:30px;
+	white-space:nowrap;
 }	
 	
 /* ===The Real Life==== */
@@ -420,7 +423,7 @@
 .footer h3 {
 	font-family: HNL;
 	font-size: 1.125em;
-	color: rgb(116,116,116);
+	color: rgb(51 , 62, 106);
 	font-weight: normal;
 	margin: 0;
 }
@@ -602,6 +605,8 @@ float: left;
 	display: block;
 	text-align: center;
 }
+.left{}
+.right{}
 /* ======  Scrollable  ======= */
 .scrollable {
 	position: relative;
