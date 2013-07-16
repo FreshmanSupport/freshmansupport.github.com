@@ -110,11 +110,13 @@ html, body {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: white;
+
 }
 body {
 	background-color:white;
-	width: 100%;
 	font-family: HBL;
+	width:100%;
+	height:100%;
 }
 #container {
 	margin: 0 auto;
@@ -323,19 +325,31 @@ ol li {
 	height: 75px;
 }
 /* ------------ housing matcher --------------*/
-
-#housingMatcherLeft {
-	width: 64%;
+#housingMatcherContainer{
+	width:100%;
+	margin:auto;
+	text-align:center;
+}
+#housingMatcherContainer #housingMatcherLeft {
+	width:100%;
+	max-width: 800px;
 	display: inline-block;
 	height:100%;
+	vertical-align:top;
+	text-align:left;	
 }
-#housingMatcherRight {
-	width: 35%;
-	float: right;
+
+
+#housingMatcherContainer #housingMatcherRight {
+	width:100%;
+	max-width:350px;
 	display: inline-block;
 	margin-top: 0px;
 		border-left: 2px solid rgb(51,62,106);
-		}
+		text-align:left;
+			width:100%;
+	padding-left:20px;
+}
 
 
 .swipeRecent {
@@ -991,21 +1005,22 @@ display:inline-block;
 
 
 /* ------ individual housing page ------- */
-#individualHousing{
+
+
+#property{
 	width:100%;
-	display:block;
-
-}
-
-
+	margin:auto;
+	text-align:center;
+	}
 #property #left{
 	width:100%;
-	max-width:507px;
+	max-width:450px;
 	display:inline-block;
 	height:900px;
-	padding-left:30px;
 	margin-top:15px;
-	padding-right:15px;
+	text-align:left;
+	margin-right:10px;
+
 }
 
 #property #left #generalInfo{
@@ -1138,13 +1153,14 @@ margin:0;
 
 #property #right{
 	width:100%;
-	max-width:725px;
+	max-width:665px;
 	display:inline-block;
 	background-color:white;
-	float:right;
 	border-left:2px solid rgb(51,62,106);
 	padding-right:30px;
 	margin-top:15px;
+	vertical-align:top;
+	text-align:left;
 }
 
 
@@ -1171,7 +1187,8 @@ margin:0;
 }
 
 #property #right #dormTour #pics{
-
+	float:right;
+	margin-top:15px;
 	display:inline-block;
 }
 #property #right #dormTour ul li{
@@ -1184,6 +1201,10 @@ margin:0;
 	margin:0;
 	padding:0;
 	margin-right:30px;
+}
+
+#property #right #dormTour #pics ul{
+	margin-right:10px;
 }
 
 #property #right #dormTour #pics img{
@@ -1255,8 +1276,8 @@ margin:0;
 
 #property #right #pricing #wrap #col{
 	display:inline-block;
-	margin-right:20px;
-	max-width:170px;
+	margin-right:30px;
+	max-width:130px;
 	min-width:117px;
 }
 
@@ -1278,6 +1299,7 @@ margin:0;
 #picsAndVids{
 	width:90%;
 	border-bottom:2px solid rgb(51,62,106);
+	text-align:center;
 }
 
 #picsAndVids h2{
@@ -1288,13 +1310,19 @@ margin:0;
 }
 
 #picsAndVids #videoWrap{
-	width:49%;
+	width:100%;
+	max-width:520px;
+	vertical-align:top;
 	display:inline-block;
+	text-align:left;
+	margin-right:20px;
 }
 #picsAndVids #picsWrap{
-	width:50%;
+	width:100%;
+	max-width:520px;
 	display:inline-block;
-	float:right;
+	text-align:left;
+	
 }
 #picsAndVids #picsWrap img{
 	height:50px;
@@ -1338,11 +1366,20 @@ margin:0;
 	margin-left:43px;
 }
 
+#availUpload{
+	width:100%;
+	text-align:center;
+	
+}
+
 #availUpload #availability{
 	border:none;
-	width:49%;
+	width:100%;
+	max-width:500px;
 	display:inline-block;
 	height:485px;
+	text-align:left;
+	vertical-align:top;
 }
 
 #availUpload h2{
@@ -1351,13 +1388,13 @@ margin:20px;
 
 
 #availUpload #upload {
-	width:49%;
+width:100%;
+	max-width:500px;
 	display:inline-block;
-	float:right;
 		border-left:2px solid rgb(51,62,106);
 		margin-top:10px;
 		height:100%;
-
+text-align:left;
 }
 
 #availUpload #upload #dragger{
