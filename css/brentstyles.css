@@ -4,8 +4,9 @@
 }
 @font-face {
 	font-family: "HNB";
-	src: url(../fonts/helveticaneue-bold.otf);
+	src: url(../font/helveticaneue-boldcond.otf);
 }
+
 
 .bold{
 	font-weight:bold;
@@ -263,15 +264,8 @@ ol li {
 	display: inline;
 }
 
-#matchInfo .interests {
-	font-weight: bold;
-	font-size: 14px;
-	color: rgb(51,62,106);
-}
-
 #matchInfo .interests{
-	font-weight:bold;
-	font-size:14px;
+	font-family:HNB;
 	color:rgb(51,62,106);
 	padding-top:15px;
 }
@@ -1006,7 +1000,7 @@ display:inline-block;
 
 #property #left{
 	width:100%;
-	max-width:425px;
+	max-width:507px;
 	display:inline-block;
 	height:900px;
 	padding-left:30px;
@@ -1016,7 +1010,7 @@ display:inline-block;
 
 #property #left #generalInfo{
 	width:100%;
-	height:230px;
+	height:240px;
 	background-color:white;
 	margin-top:0px;
 	border-bottom:2px solid rgb(51,62,106);
@@ -1032,10 +1026,9 @@ display:inline-block;
 }
 
 #generalInfo #interests {
-	font-weight: bold;
+	font-family:HNB;
 	width:100%;
-	font-size: 14px;
-	color: rgb(89,107,158);
+	color: rgb(51,62,106);
 	text-align:center;
 	margin-top:20px;
 	margin-bottom:10px;
@@ -1108,8 +1101,7 @@ margin:0;
 #property #left #information #selector{
 	width:100%;
 	height:45px;
-	background-color:rgb(116,116,116);
-	color:white;
+	color:rgb(51,62,106);
 	font-size:1.875em;
 	font-family:HNL;
 	text-align:center;
@@ -1119,8 +1111,8 @@ margin:0;
 }
 
 #property #left #information #selector button{
-background-color:rgb(116,116,116);
-	color:white;
+	color:rgb(51,62,106);
+	background-color:white;
 		font-size:inherit;
 	font-family:HNL;
 	border:none;
@@ -1148,7 +1140,6 @@ background-color:rgb(116,116,116);
 	width:100%;
 	max-width:725px;
 	display:inline-block;
-	height:1000px;
 	background-color:white;
 	float:right;
 	border-left:2px solid rgb(51,62,106);
@@ -1209,14 +1200,40 @@ background-color:rgb(116,116,116);
 }
 
 #property #right #pricing{
+	background-color:white;
+	margin-left:20px;
+	border-bottom:2px solid rgb(51,62,106);
+	max-height:260px;
+}
+#property #right #reviews{
+	background-color:white;
+	margin-left:20px;
+	
+}
+
+#property #right #reviews #item{
+	background-color:white;
+		margin:auto;
+
+	margin-top:10px;
+	border-bottom:1px solid rgb(51,62,106);
+	
+	
+}
+
+#property #right #reviews p{
+	text-align:left;
+	margin-top:0px;
+}
+
+#property #right #pricing{
 	height:340px;
 	background-color:white;
 	margin-left:20px;
 	
 }
 
-
-#property #right #pricing h3, #property #right #desc h3{
+#property #right #pricing h3, #property #right #desc h3, #property #right #reviews h3{
 	margin-top:10px;
 }
 
@@ -1353,10 +1370,6 @@ margin:20px;
 
 }
 
-#mediaRecommendedHousing{
-	width:100%;
-	border-top:2px solid rgb(51,62,106);
-}
 
 button{
 	border:none;
@@ -1365,4 +1378,50 @@ button{
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:.875em;
 	
+}
+
+#recommendedHousingFooter{
+	width:90%;
+	border-top:2px solid rgb(51,62,106);
+	margin-right:auto;
+
+	margin-left:auto;
+}
+
+#recommendedHousingFooter #item{
+	display:inline-block;
+	margin-right:20px;
+	margin-left:20px;
+	
+}
+
+#recommendedHousingFooter h3{
+	color:rgb(51,62,106);
+	font-family:HNB;
+	margin-bottom:0;
+	margin-top:0px;
+}
+
+#recommendedHousingFooter #item p{
+	font-family:HNL;
+	font-size:.875em;
+	color:rgb(51,62,106);
+	margin-bottom:0px;
+}
+
+#recommendedHousingFooter #item .appDate{
+	color:rgb(220, 134, 39);
+	font-family:Georgia;
+	font-size:.875em;
+}
+
+
+#fiveOwls{
+	width:145px;
+	display:inline-block;
+}
+
+#fiveOwls img{
+	display:inline;
+	width:25px;
 }

@@ -1,0 +1,29 @@
+  <div id="recommendedHousingFooter">
+    <h2>Recommended Housing</h2>
+    <br>
+	<center>
+	<div id="item">
+		<h3>Towers</h3>
+		<div style="width:250px; height:130px; border-radius:5px; background-color:grey;"></div>
+		<p>Recommended Application Date</p>
+		<span class="appDate">8-10-13</span>
+    </div>
+	
+	
+	<div id="item">
+		<h3>Towers</h3>
+		<div style="width:250px; height:130px; border-radius:5px; background-color:grey;"></div>
+		<p>Recommended Application Date</p>
+		<span class="appDate">8-10-13</span>
+    </div>
+	
+		
+	<div id="item">
+		<h3>Towers</h3>
+		<div style="width:250px; height:130px; border-radius:5px; background-color:grey;"></div>
+		<p>Recommended Application Date</p>
+		<span class="appDate">8-10-13</span>
+    </div>
+	</center>
+	
+  </div>
