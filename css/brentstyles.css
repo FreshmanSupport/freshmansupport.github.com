@@ -126,10 +126,12 @@ body {
 /*=========housing matcher===============*/
 
 #housingContainer {
-	width: 87%;
+	width: 90%;
 	float: none;
 	margin: auto;
-}
+	text-align:center;
+	}
+	
 .button {
 	background-color: rgb(230, 229, 228);
 	color: rgb(51, 62, 106);
@@ -145,14 +147,15 @@ body {
 	width: 16px;
 	height: 10px;
 }
-#preferences {
-	width: 100%;
+#housingContainer #preferences {
+	width:1100px;
+	max-width:100%;
+	margin:auto;
 	min-height: 200px;
 	background-color: white;
 	border: 1px solid rgb(51,62,106);
-	padding-top: 30px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left:20px;
+	padding-top:10px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 12px;
 	color: rgb(116,116,116);
@@ -172,6 +175,17 @@ body {
 }
 #preferences p1 {
 	color: rgb(51,62,106);
+}
+#housingContainer #choices{
+	border-top: 1px solid rgb(116,116,116);
+	width:98%;
+	margin:auto;
+	margin-left:0px;
+	padding-top:10px;
+}
+#housingContainer #choice{
+	width:140px;
+
 }
 #choices {
 	margin-left: auto;
@@ -246,16 +260,15 @@ ol li {
 }
 #matches {
 	width: 100%;
-	min-height: 200px;
 	background-color: white;
-	border: 1px solid rgb(51,62,106);
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 12px;
 	color: rgb(116,116,116);
+	text-align:center;
 }
 #matches h3 {
 	font-size: 18px;
-	font-weight: bold;
+font-family: HNB;
 	text-align: left;
 	margin: auto;
 	color: rgb(51,62,106);
@@ -263,11 +276,11 @@ ol li {
 	margin-right: 10px;
 }
 #matchInfo {
-	width: 250px;
-	height: 250px;
+	width: 397px;
 	display: inline-block;
-	margin-top: 5px;
-	margin-right: 5px;
+	margin-top:20px;
+	text-align:left;
+	vertical-align:top;
 }
 #matchInfo .compatibility {
 	font-style: italic;
@@ -301,17 +314,19 @@ ol li {
 	display:inline;
 	margin-left:5px;
 }
-#availability {
-	width: 760px;
-	height: 165px;
+#matches #availability {
+	width: 710px;
+	max-width:100%;
 	border: 1px solid rgb(51,62,106);
 	display: inline-block;
 	padding-top: 5px;
 	padding-left: 10px;
+	text-align:left;
+	margin-top:20px;
 }
-#availability h3 {
+#matches #availability h3 {
 	font-size: 18px;
-	font-weight: none;
+	font-family:HNL;
 	text-align: left;
 	color: rgb(51,62,106);
 	display: inline;
@@ -339,6 +354,7 @@ ol li {
 #housingMatcherContainer{
 	width:100%;
 	margin:auto;
+	margin-top:10px;
 	text-align:center;
 }
 #housingMatcherContainer #housingMatcherLeft {
@@ -433,7 +449,7 @@ ol li {
 }
 #housingQ h3 {
 	font-family: HNL;
-	font-size: 30px;
+	font-size: 18px;
 	color: rgb(140,146,162);
 	font-weight: normal;
 	text-align: center;
@@ -1507,7 +1523,7 @@ text-align:center;
 }
 
 #housingMain #right #matcher{
-
+	margin-top:-10px;
 }
 
 #housingMain #right #matcher h2{
