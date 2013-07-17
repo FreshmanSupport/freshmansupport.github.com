@@ -89,8 +89,15 @@
 	height: 0; 
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
-	border-bottom: 5px solid black;}
-.downVote{}
+	border-bottom: 5px solid rgb(51, 62, 107);
+}
+.downVote{
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid rgb(220, 134, 39);	
+}
 /* ===Roomie Match=== */
 .rmTable {
 	margin: 0 auto;
@@ -233,7 +240,7 @@
 	font-family:Georgia, "Times New Roman", Times, serif;
 }
 #studentProfile ul li div h3:nth-child(3) {
-	color: orange;
+	color: rgb(220, 134, 39);
 }
 .matchDetails{
 	width:100%;
