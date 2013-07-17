@@ -230,20 +230,20 @@
     
     <div id="choices">
     	
-       <div id="choice"><div id="dealBreaker"></div>Individual Leases</div>
-        <div id="choice"><div id="important"></div>Wireless Internet</div>
-      <div id="choice"><div id="important"></div>Free Cable</div>
-   		<div id="choice"><div id="notImportant"></div>Gated Community</div>
+       <div id="choice"><div id="lease" onClick=radio('lease') class="dealBreaker"></div>Individual Leases</div>
+        <div id="choice"><div id="internet" onClick=radio('internet') class="important"></div>Wireless Internet</div>
+      <div id="choice"><div id="cable" onClick=radio('cable') class="semiImportant"></div>Free Cable</div>
+   		<div id="choice"><div id="gated" onClick=radio('gated') class="notImportant"></div>Gated Community</div>
 
-		<div id="choice"><div id="notImportant"></div>Parking</div>
-        <div id="choice"><div id="semiImportant"></div>Furnished</div>
-      	<div id="choice"><div id="notImportant"></div>Swimming Pool</div>
-   		<div id="choice"><div id="semiImportant"></div>Fitness Center</div>
+		<div id="choice"><div id="parking" onClick=radio('parking') class="dealBreaker"></div>Parking</div>
+        <div id="choice"><div id="furnished" onClick=radio('furnished') class="notImportant"></div>Furnished</div>
+      	<div id="choice"><div id="pool" onClick=radio('pool') class="important"></div>Swimming Pool</div>
+   		<div id="choice"><div id="fitness" onClick=radio('fitness') class="dealBreaker"></div>Fitness Center</div>
         
-        <div id="choice"><div id="notImportant"></div>Balcony</div>
-        <div id="choice"><div id="notImportant"></div>Parking Garage</div>
-      	<div id="choice"><div id="dealBreaker"></div>Near Bus Route</div>
-   		<div id="choice"><div id="notImportant"></div>Study Room</div>
+        <div id="choice"><div id="balcony" onClick=radio('balcony')  class="dealBreaker"></div>Balcony</div>
+        <div id="choice"><div id="garage" onClick=radio('garage') class="important"></div>Parking Garage</div>
+      	<div id="choice"><div id="busroute" onClick=radio('busroute') class="notImportant"></div>Near Bus Route</div>
+   		<div id="choice"><div id="studyroom" onClick=radio('studyroom') class="dealBreaker"></div>Study Room</div>
 
 
         
@@ -328,10 +328,12 @@
    
    <div id="choices" style="margin-left:10px">
     	
-       <div id="choice"><div id="notImportant"></div>Not Important</div>
-       <div id="choice"><div id="semiImportant"></div>Semi-Important</div>
-       <div id="choice"><div id="important"></div>Important</div>
-   	   <div id="choice"><div id="dealBreaker"></div>Deal Breaker</div>
+ 
+       <div id="choice"><div id="important" class="notImportant"></div>Not Important</div>
+       <div id="choice"><div id="important" class="semiImportant"></div>Semi-Important</div>
+       <div id="choice"><div id="important" class="important"></div>Important</div>
+   	   <div id="choice"><div id="important" class="dealBreaker"></div>Deal Breaker</div>
+
 </div>
  
 
@@ -368,4 +370,31 @@ mySwipe = new Swipe(document.getElementById('slider'), {
   callback: function(index, elem) {},
   transitionEnd: function(index, elem) {}
 });
+
+</script>
+
+<script type='text/javascript'>
+
+	
+function radio(x){
+	if(document.getElementById(x).className=='notImportant'){
+		document.getElementById(x).className = 'semiImportant';
+	}
+	
+	else if(document.getElementById(x).className=='semiImportant'){
+		document.getElementById(x).className = 'important';
+	}
+	
+	else if(document.getElementById(x).className=='important'){
+		document.getElementById(x).className = 'dealBreaker';
+	}
+	
+	else if(document.getElementById(x).className=='dealBreaker'){
+		document.getElementById(x).className = 'notImportant';
+	}
+
+
+}
+
+
 </script>
