@@ -280,13 +280,14 @@ ol li {
 
 #matchInfo .date {
 	color: rgb(220, 134, 39);
-	font-size: 12px;
+	font-size:.875em;
 	display: inline;
 }
 
 .date{
 	color:rgb(220, 134, 39);
-	font-size:12px;
+	font-size:.875em;
+	font-family:Georgia;
 	display:inline;
 	margin-left:5px;
 }
@@ -489,6 +490,7 @@ ol li {
 	display: inline-block;
 	width:45%;
 	padding-bottom:10px;
+	
 	
 	margin-right:auto;
 	margin-left:auto;
@@ -1453,6 +1455,121 @@ button{
 }
 
 
+
+#housingMain{
+width:100%;
+text-align:center;
+}
+
+#housingMain #left{
+	margin-top:20px;
+	width:100%;
+	max-width:700px;
+	display:inline-block;
+	text-align:left;
+	border-right:2px solid rgb(51,62,106);
+}
+
+#housingMain #left #item h3{
+	font-family:HNB;
+	font-size:1.125em;
+	margin-bottom:5px;
+}
+
+#housingMain #right{
+	width:100%;
+	max-width:400px;
+	display:inline-block;
+	text-align:left;
+	vertical-align:top;
+	padding-left:10px;
+	margin-top:20px;
+}
+
+#housingMain #right h2, #housingMain #left h2{
+	margin-top:0px;
+}
+
+#housingMain #left p{
+
+	margin:0;
+	padding:0;
+}
+
+#housingMain #right #matcher{
+
+}
+
+#housingMain #right #matcher h2{
+	margin-top:25px;
+}
+
+#housingMain #right #deadlinesDiv{
+text-align:center;
+border-bottom:2px solid rgb(51,62,106);
+padding-bottom:10px;
+}
+
+
+
+#housingMain .compare{
+	font-family: HNL;
+	color:rgb(116,116,116);
+	margin-left:3px;
+	position:relative;
+	top:2px	;
+}
+
+#housingMain #compareDiv{
+	margin-top:3px;
+	height:10px;
+	margin-bottom:10px;
+	margin-right:3px;
+	
+}
+
+#housingMain #compareDiv img{
+	vertical-align:middle;
+	width:20px;
+}
+
+#housingMain .appDate{
+	margin-left:0;
+	font-size:.875em;
+	font-family:Georgia;
+}
+#housingMain .date{
+	font-size:.875em;
+		font-family:Georgia;
+
+}
+#housingMain .housingType{
+	font-family:HNL;
+	font-size:.875em;
+	color:rgb(116,116,116);
+}
+
+#housingMain #checkAvailability{
+	border: 1px solid rgb(116,116,116);
+	width:98%;
+	margin-top:10px;
+	
+
+}
+#housingMain #checkAvailability h2{
+	font-size:1.125em;
+	text-align:left;
+	margin:5px 10px;
+}
+
+.optional{
+	font-family:HNL;
+	font-size:.875em;
+	color: rgb(220, 134, 39);
+}
+
+
+
 #fiveOwls{
 	width:145px;
 	display:inline-block;
@@ -1460,5 +1577,13 @@ button{
 
 #fiveOwls img{
 	display:inline;
-	width:25px;
+	width:23px;
+	
 }
+.interests{
+	color:rgb(51,62,106);
+	font-family:HNB;
+	font-size:.875em;
+}
+
+
