@@ -103,7 +103,7 @@
         </center>
       </div>
       <div class="span05" style="text-align:center;">
-        <hr style="width: 1px; height: 440px; display: block;">
+        <hr style="width: 1px; height: 390px; display: block;">
       </div>
       <div class="span3">
         <h2>June 1, 2013</h2>
@@ -128,7 +128,7 @@
         </div>
         <a href="#" class="view" style="margin-top: 40px;"> View All Admission Data</a> </div>
       <div class="span05" style="text-align:right;">
-        <hr style="width: 1px; height: 440px; display: block;">
+        <hr style="width: 1px; height: 390px; display: block;">
       </div>
       <div class="span4 essay">
         <h2>Accepted Student Essays</h2>
@@ -136,6 +136,12 @@
         <div class="row-fluid">
           <div class="span3"> <img src="../img/essay.png"/>
             <p>Rate Essay</p>
+            <div class="voteContainer">
+                <span class="upOne">69</span>
+                <div class="upVote"></div>
+                <div class="downVote"></div>
+                <span class="downOne">911</span>
+            </div>
             <p>San Diego,CA<br />
               GPA: 3.9<br />
               SAT:1900<br  />
@@ -143,6 +149,12 @@
           </div>
           <div class="span3"> <img src="../img/essay.png"/>
             <p>Rate Essay</p>
+            <div class="voteContainer">
+                <span class="upOne">69</span>
+                <div class="upVote"></div>
+                <div class="downVote"></div>
+                <span class="downOne">911</span>
+            </div>
             <p>San Diego,CA<br />
               GPA: 3.9<br />
               SAT:1900<br  />
@@ -150,6 +162,12 @@
           </div>
           <div class="span3"> <img src="../img/essay.png"/>
             <p>Rate Essay</p>
+            <div class="voteContainer">
+                <span class="upOne">1</span>
+                <div class="upVote"></div>
+                <div class="downVote"></div>
+                <span class="downOne">77</span>
+            </div>
             <p>San Diego,CA<br />
               GPA: 3.9<br />
               SAT:1900<br  />
@@ -157,6 +175,12 @@
           </div>
           <div class="span3"> <img src="../img/essay.png"/>
             <p>Rate Essay</p>
+            <div class="voteContainer">
+                <span class="upOne">1000</span>
+                <div class="upVote"></div>
+                <div class="downVote"></div>
+                <span class="downOne">800</span>
+            </div>
             <p>San Diego,CA<br />
               GPA: 3.9<br />
               SAT:1900<br  />
@@ -170,7 +194,7 @@
     <h2>Ask an Admissions</h2>
     <h3>Select who you would like to message.</h3>
     <span class="disclaimer">Our admissions officers have a set limit of questions that can be sent each day.</span>
-    <span class="disclaimer">If an admissions officer is unavailable, please try the following day, or <a href="#" class="view">view previously answered questions</a>.</span>
+    <span class="disclaimer">If an admissions officer is unavailable, please try the following day, or <a href="#" class="view" style="display:inline;">view previously answered questions</a>.</span>
     <div class="row-fluid" style="margin-top: 25px;">
       <div class="span6">
         <div class="row-fluid">
@@ -244,10 +268,20 @@
       <div class="span6">
         <form>
           <textarea name="question" placeholder="Enter your question here."></textarea>
-          <input type="text" name="name" placeholder="Your Name" />
-          <input type="text" name="email" placeholder="Email" />
-          <div id="button container" style="float: right;"></div>
-          <input type="submit" value="Send"/>
+         	
+            <div class="col-1-2">
+            <div class="dropDown">
+                <select>
+                    <option>Select a Category</option>
+                    <option>Tanner Issue</option>
+                    <option>Tanner Design</option>
+                    <option>Getting tanner</option>
+                </select>
+            </div>
+            </div>
+            <div class="col-1-2">
+          		<button style="float:right;">Send Question</button>
+			</div>
         </form>
       </div>
     </div>
