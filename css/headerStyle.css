@@ -167,7 +167,7 @@
 	color: white;
 	font-family: HNL;
 }
-
+#subNav .selected{font-family:HNB; text-transform: uppercase;}
 /* ===Searching=== */
 
 .collegeSearchBox::-webkit-input-placeholder { /* WebKit browsers */
