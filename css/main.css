@@ -227,7 +227,22 @@
 	margin-right: 5px;
 }
 #roomieSlider input[type=radio]:checked + label{background-color: rgb(51,61,105);}
-
+/* =Initial color for buttons = */
+#roomieSlider .initialColor label:nth-child(3){
+	background-color:rgb(182,197,220);
+}
+#roomieSlider .initialColor label:nth-child(5){
+	background-color:rgb(145,165,195);
+}
+#roomieSlider .initialColor label:nth-child(7){
+	background-color:rgb(89,107,158);
+}
+#roomieSlider .initialColor label:nth-child(9){
+	background-color:rgb(68,86,127);
+}
+#roomieSlider .initialColor label:nth-child(11){
+	background-color:rgb(51,61,105);
+}
 /* ==Student Profiles== */
 #spHeader{
 	width:100%;
@@ -744,6 +759,13 @@ button{
    color:gray;
    font-family:Georgia, "Times New Roman", Times, serif;
    line-height: 14px;
+}
+
+hr{
+	width:80%;
+	color:rgb(232, 229, 228);
+	background-color:rgb(232, 229, 228);
+	height: 2px;
 }
 /* ============== NULLIFY =======================*/
 

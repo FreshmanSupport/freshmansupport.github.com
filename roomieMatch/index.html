@@ -6,6 +6,12 @@
 <link type="text/css" rel="stylesheet" href="../css/bootstrap-responsive.css" />
 <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
 <script src="../js/swipe.js"></script>
+<script type="text/javascript">
+
+$('label').click(function(){
+   $('li').removeClass('initialColor');
+});
+</script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Roomie Match</title>
 </head>
@@ -46,9 +52,6 @@
 </div>
 <div id="subNav">
   <ul>
-    <li><a href="#">Matching Questionare</a></li>
-    <li><a href="#">Student Profile</a></li>
-    <li><a href="#">Search Matches</a></li>
   </ul>
 </div>
 <div id="maincontent">
@@ -66,7 +69,7 @@
                     <p>early bird</p>
                     <p>late owl</p>
                   </li>
-                  <li>
+                  <li class="initialColor">
                     <div class="rowLabel">you</div>
                     <input id="1" type="radio" name="you" value="1">
                     <label for="1"></label>
@@ -178,7 +181,7 @@
         </center>
       </div>
       <div class="span05">
-        <hr style="width: 1px; height: 550px; display: block; float:left;">
+        <hr style="width: 1px; height: 550px; display: block; float:left;color:gray;">
       </div>
       <div class="span4">
         <h2>July 14, 2013</h2>
