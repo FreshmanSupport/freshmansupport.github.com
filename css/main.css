@@ -6,6 +6,7 @@
 	font-family: "HNB";
 	src: url(../fonts/helveticaneue-boldcond.otf);
 }
+#roommate{}
 /* === MAIN CONTENT ===*/
 #maincontent {
 	background: white;
