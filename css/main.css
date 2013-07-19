@@ -342,8 +342,11 @@
 .matchDetails .roommateSelect{
 	background-color: rgb(51, 62, 107);	
 }
-.matchDetails .fuzzy{
+.fuzzy{
 	background-color:rgb(89,107,158);
+}
+#roomieSlider .fuzzy{
+		background-color:rgb(89,107,158);
 }
 .matchDetails .mdDrop{
 	color:gray;

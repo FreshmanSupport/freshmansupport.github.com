@@ -1,0 +1,43 @@
+$(document).ready(function () {
+       $('input').click(function() {
+		   $('input:checked').parent().removeClass("initialColor");
+		    var index = $(this).index();
+			
+			cancel();
+			var before = index;
+			var after = index + 4;
+			if (before > 2)
+			{
+				$('input:checked').parent(".roommate").children("label:nth-child("+ before +")").addClass("fuzzy");
+			}
+			if(after < 12)
+			{
+				$('input:checked').parent(".roommate").children("label:nth-child("+ after +")").addClass("fuzzy");
+			}
+			
+			function cancel(){
+				$('input:checked').parent(".roommate").children("label").siblings().removeClass("fuzzy");
+			}
+			display("You clicked the label at index " + index);
+			display("Before index is " + before);
+			display("After index is " + after);
+			 
+			function display(msg) {
+			$("<p>").html(msg).appendTo(document.body);}
+       });  
+})
+
+/*#roomieSlider .initialColor label:nth-child(3){
+	background-color:rgb(182,197,220);
+}
+#roomieSlider .initialColor label:nth-child(5){
+	background-color:rgb(145,165,195);
+}
+#roomieSlider .initialColor label:nth-child(7){
+	background-color:rgb(89,107,158);
+}
+#roomieSlider .initialColor label:nth-child(9){
+	background-color:rgb(68,86,127);
+}
+#roomieSlider .initialColor label:nth-child(11){
+	background-color:rgb(51,61,105);*/
