@@ -1,30 +1,28 @@
 $(document).ready(function () {
-       $('input').click(function() {
+       
+	   $('input').click(function() {
+		  	
 		   $('input:checked').parent().removeClass("initialColor");
-		    var index = $(this).index();
-			
-			cancel();
+		  
+       }); 
+	 $('.roommate input').click(function(){
+	 	 var index = $(this).index();
+			clear();
 			var before = index;
 			var after = index + 4;
 			if (before > 2)
 			{
-				$('input:checked').parent(".roommate").children("label:nth-child("+ before +")").addClass("fuzzy");
+				$(this).parent(".roommate").children("label:nth-child("+ before +")").addClass("fuzzy");
 			}
 			if(after < 12)
 			{
-				$('input:checked').parent(".roommate").children("label:nth-child("+ after +")").addClass("fuzzy");
+				$(this).parent(".roommate").children("label:nth-child("+ after +")").addClass("fuzzy");
 			}
 			
-			function cancel(){
-				$('input:checked').parent(".roommate").children("label").siblings().removeClass("fuzzy");
+			function clear(){
+				$('.roommate input').parent().children().removeClass("fuzzy");
 			}
-			display("You clicked the label at index " + index);
-			display("Before index is " + before);
-			display("After index is " + after);
-			 
-			function display(msg) {
-			$("<p>").html(msg).appendTo(document.body);}
-       });  
+	 })
 })
 
 /*#roomieSlider .initialColor label:nth-child(3){
@@ -41,3 +39,13 @@ $(document).ready(function () {
 }
 #roomieSlider .initialColor label:nth-child(11){
 	background-color:rgb(51,61,105);*/
+
+
+/*
+display("You clicked the label at index " + index);
+			display("Before index is " + before);
+			display("After index is " + after);
+			 
+			function display(msg) {
+			$("<p>").html(msg).appendTo(document.body);}
+*/
