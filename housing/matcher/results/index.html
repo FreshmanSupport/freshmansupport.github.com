@@ -6,7 +6,7 @@
 <link type="text/css" rel="stylesheet" href="../../../css/headerStyle.css"/>
 <link type="text/css" rel="stylesheet" href="../../../css/bootstrap-responsive.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Find Housing at the University of Texas | Freshman Support</title>
+<title>Housing Matcher Results | University of Texas |Freshman Support</title>
 
 	
     <script src="../../js/swipe.js"></script>
@@ -62,48 +62,152 @@
 	<h2>Housing Matcher Results</h2>
     
 
-<div id="housingContainer">
+<div id="housingResultsContainer">
 
-  <button class="button" style="margin-left:96px;">Edit Preferences <img src="../img/triangle.png" width=12px /> </button>
-	  <button class="button" ><i>Sort By</i><img src="../img/triangle.png" width=12px /> </button>
-  <button class="button" >Save PDF</button>
-  <button class="button" >Email This List</button>
 
-<div id="preferences">
-<br><br><br>
+<div class="dropDown" onClick="prefFunc()" style="display:inline-block; width:150px; margin-left:96px;">
+
+<div class="pref">Edit Preferences</div>
+</div>  
+
+<div class="dropDown" style="display:inline-block; width:150px">
+<select>
+<option>Sort By</option>
+</select></div>  
+<button  >Save PDF</button>
+  <button >Email This List</button>
+
+<div id="preferences" class="arrow_box" class="hidden">
 Click on circles to change importance.
 <br />
 
-<div id="listWrap"><p1>
-<ul ><li>Not important = <div class="notImportant"></div></li>
-<li>Semi-Important = <div class="semiImportant"></div></li>
-<li>Important = <div class="important"></div></li>
-<li>Deal Breaker =  <div class="dealBreaker"></div></li>
-</ul></p1>
+<div id="listWrap">
+<ul ><li>Not important = <div class="notImportant" style="position:relative; top:4px" ></div></li>
+<li>Semi-Important = <div class="semiImportant" style="position:relative; top:4px"></div></li>
+<li>Important = <div class="important" style="position:relative; top:4px"></div></li>
+<li>Deal Breaker =  <div class="dealBreaker" style="position:relative; top:4px"></div></li>
+</ul>	
 </div>
 <center><img src="../img/greyline.png" width="100%" height="2px" /></center>
 
 <div id="choices">
 
-<div id="choice">Cleanliness <div class="semiImportant"></div></div>
+<div id="choice">Cleanliness <div onClick=radio('clean') id="clean" class="semiImportant"></div></div>
+<div id="choice">Smoking <div onClick=radio('smoke') id="smoke" class="notImportant"></div></div>
+<div id="choice">Partying <div onClick=radio('party') id="party" class="important"></div></div>
+<div id="choice">Loudness<div onClick=radio('loud') id="loud" class="semiImportant"></div></div>
+
+<div id="choice">Cleanliness <div onClick=radio('clean1') id="clean1" class="semiImportant"></div></div>
+<div id="choice">Smoking <div onClick=radio('smoke1') id="smoke1" class="notImportant"></div></div>
+<div id="choice">Partying <div onClick=radio('party1') id="party1" class="important"></div></div>
+<div id="choice">Loudness<div onClick=radio('loud1') id="loud1" class="semiImportant"></div></div>
+
+<div id="choice">Cleanliness <div onClick=radio('clean2') id="clean2" class="semiImportant"></div></div>
+<div id="choice">Smoking <div onClick=radio('smoke2') id="smoke2" class="notImportant"></div></div>
+<div id="choice">Partying <div onClick=radio('party2') id="party2" class="important"></div></div>
+<div id="choice">Loudness<div onClick=radio('loud2') id="loud2" class="semiImportant"></div></div>
+
+<div id="choice">Cleanliness <div onClick=radio('clean3') id="clean3" class="semiImportant"></div></div>
+<div id="choice">Smoking <div onClick=radio('smoke3') id="smoke3" class="notImportant"></div></div>
+<div id="choice">Partying <div onClick=radio('party3') id="party3" class="important"></div></div>
+<div id="choice">Loudness<div onClick=radio('loud3') id="loud3" class="semiImportant"></div></div>
+
+<div id="choice">Cleanliness <div onClick=radio('clean4') id="clean4" class="semiImportant"></div></div>
+<div id="choice">Smoking <div onClick=radio('smoke4') id="smoke4" class="notImportant"></div></div>
+<div id="choice">Partying <div onClick=radio('party4') id="party4" class="important"></div></div>
+<div id="choice">Loudness<div onClick=radio('loud4') id="loud4" class="semiImportant"></div></div>
+
+
+
+
+
+
+</div>
+
+</div>
+
+<div id="matches" >
+
+
+<div id="matchInfo" >
+
+<h3>Quarters</h3> <span class="compatibility">98% Compatibility</span>
+	<br>
+	<div id="fiveOwls">
+			<img src="../../../img/Owl-Full-Vector.png">
+			<img src="../../../img/Owl-Full-Vector.png">
+			<img src="../../../img/Owl-Full-Vector.png">
+			<img src="../../../img/Owl-Full-Vector.png">
+			<img src="../../../img/Owl-Full-Vector.png">
+
+
+		</div>
+
+<br>
+<br>
+<br>
+<span class="interests" style="margin-left:4px">855 Roomie Interests</span>
+  <br><button>Add to Roomie Match</button>
+<br><br>
+<br />
+<span class="appDate" style="margin-left:4px">Recommended Application Date </span><span class="date">8.10.13</span>
+
+</div>
+
+<div id="availability">
+<h3>Check Availability</h3>
+<div style="margin:10px">
+			  <textarea name="name" style="height:20px; width:200px; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="Name" ></textarea>
+			<textarea name="email" style="height:20px; width:240px; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:.14px; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="E-Mail"></textarea>
+		<textarea name="phone" style="height:20px; width:200px; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%;" placeholder="Phone #*"></textarea>
+		
+		<textarea name="movein" style="height:20px; width:325px; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="Move in Semester"></textarea>
+				<textarea name="leasingperiod" style="height:20px; width:325px; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%;" placeholder="Leasing Period"></textarea>
+	
+			<textarea name="
+			" style="height:40px; width:660px; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%;" placeholder="*Questions"></textarea>
+			</div>
+		<br><button style="margin:10px; margin-top:-20px;	">Send</button>
+			
+			
+
+			
+		</div>
+
+		
+		<div id="video"></div>
+		<div id="compatibility">
+		<h3>Matching Compatibility</h3> <div id="choice" style="color:rgb(116,116,116); margin-left:20px">Don't Match = <div class="notImportant" style="float:none; position:relative; top:4px;"></div></div>
+		<div id="choice" style="color:rgb(116,116,116)">Match = <div class="important" style="float:none; position:relative; top:4px;"></div></div>
+		<span class="orange">Font Color</span><span style="position:relative; top:0px"> = Your Priority</span>
+		
+		<div id="choices" style="padding-top:15px; margin-top:5px;">
+
+<div id="choice">Cleanliness <div class="important"></div></div>
 <div id="choice">Smoking <div class="notImportant"></div></div>
 <div id="choice">Partying <div class="important"></div></div>
-<div id="choice">Loudness<div class="semiImportant"></div></div>
+<div id="choice">Loudness<div class="important"></div></div>
 <div id="choice">Cleanliness <div class="important"></div></div>
-<div id="choice">Smoking <div class="dealBreaker"></div></div>
+<div id="choice">Smoking <div class="notImportant"></div></div>
 <div id="choice">Outgoingness <div class="important"></div></div>
+<div id="choice"><span class="orange">Smoking </span><div class="notImportant"></div></div>
 <div id="choice">Smoking <div class="notImportant"></div></div>
-<div id="choice">Smoking <div class="notImportant"></div></div>
-<div id="choice">Partying <div class="dealBreaker"></div></div>
+<div id="choice">Partying <div class="important"></div></div>
 <div id="choice">Sleep Schedule <div class="notImportant"></div></div>
-<div id="choice">Cleanliness <div class="semiImportant"></div></div>
-<div id="choice">Smoking <div class="dealBreaker"></div></div>
-<div id="choice">Outgoingness <div class="important"></div></div>
+<div id="choice">Cleanliness <div class="notImportant"></div></div>
+<div id="choice">Smoking <div class="important"></div></div>
+<div id="choice"><span class="orange">Outgoingness</span> <div class="important"></div></div>
 <div id="choice">Smoking <div class="notImportant"></div></div>
 <div id="choice">Smoking <div class="notImportant"></div></div>
-<div id="choice">Partying <div class="dealBreaker"></div></div>
-<div id="choice">Sleep Schedule <div class="notImportant"></div></div>
-<div id="choice">Cleanliness <div class="semiImportant"></div></div>
+<div id="choice">Partying <div class="important"></div></div>
+<div id="choice"><span class="orange">Sleep Schedule </span><div class="notImportant"></div></div>
+<div id="choice">Cleanliness <div class="important"></div></div>
 
 
 
@@ -111,12 +215,11 @@ Click on circles to change importance.
 
 
 </div>
-
 </div>
+</div>
+
 
 <div id="matches">
-
-
 <div id="matchInfo">
 
 <h3>Towers</h3> <span class="compatibility">98% Compatibility</span>
@@ -167,6 +270,36 @@ Click on circles to change importance.
 			
 		</div>
 
+		
+		<div id="video"></div>
+		<div id="compatibility">
+		<h3>Matching Compatibility</h3> <div id="choice" style="color:rgb(116,116,116); margin-left:20px">Don't Match = <div class="notImportant" style="float:none; position:relative; top:4px;"></div></div>
+		<div id="choice" style="color:rgb(116,116,116)">Match = <div class="important" style="float:none; position:relative; top:4px;"></div></div>
+		<span class="orange">Font Color</span> <span style="position:relative; top:0px"> = Your Priority</span>
+		
+		<div id="choices" style="padding-top:15px; margin-top:5px;">
+
+<div id="choice">Cleanliness <div class="important"></div></div>
+<div id="choice">Smoking <div class="notImportant"></div></div>
+<div id="choice">Partying <div class="important"></div></div>
+<div id="choice">Loudness<div class="important"></div></div>
+<div id="choice">Cleanliness <div class="important"></div></div>
+<div id="choice">Smoking <div class="notImportant"></div></div>
+<div id="choice">Outgoingness <div class="important"></div></div>
+<div id="choice"><span class="orange">Smoking </span><div class="notImportant"></div></div>
+<div id="choice">Smoking <div class="notImportant"></div></div>
+<div id="choice">Partying <div class="important"></div></div>
+<div id="choice">Sleep Schedule <div class="notImportant"></div></div>
+<div id="choice">Cleanliness <div class="notImportant"></div></div>
+<div id="choice">Smoking <div class="important"></div></div>
+<div id="choice"><span class="orange">Outgoingness</span> <div class="important"></div></div>
+<div id="choice">Smoking <div class="notImportant"></div></div>
+<div id="choice">Smoking <div class="notImportant"></div></div>
+<div id="choice">Partying <div class="important"></div></div>
+<div id="choice"><span class="orange">Sleep Schedule </span><div class="notImportant"></div></div>
+<div id="choice">Cleanliness <div class="important"></div></div>
+
+</div></div>
 </div>
 
 
@@ -186,3 +319,37 @@ Click on circles to change importance.
 </div>
 </body>
 </html>
+
+<script type='text/javascript'>
+
+	
+function radio(x){
+	if(document.getElementById(x).className=='notImportant'){
+		document.getElementById(x).className = 'semiImportant';
+	}
+	
+	else if(document.getElementById(x).className=='semiImportant'){
+		document.getElementById(x).className = 'important';
+	}
+	
+	else if(document.getElementById(x).className=='important'){
+		document.getElementById(x).className = 'dealBreaker';
+	}
+	
+	else if(document.getElementById(x).className=='dealBreaker'){
+		document.getElementById(x).className = 'notImportant';
+	}
+
+}
+
+function prefFunc(){
+	if(document.getElementById('preferences').style.display=='none'){
+		document.getElementById('preferences').style.display='block';
+	}
+	else {
+	document.getElementById('preferences').style.display='none';
+
+	}
+}
+
+</script>

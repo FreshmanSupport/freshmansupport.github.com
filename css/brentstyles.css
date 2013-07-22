@@ -6,6 +6,10 @@
 	font-family: "HNB";
 	src: url(../font/helveticaneue-boldcond.otf);
 }
+.orange{
+	color: rgb(220, 134, 39);
+
+}
 
 
 .bold{
@@ -123,16 +127,16 @@ body {
 }
 
 /
-/*=========housing matcher===============*/
+/*=========housing matcher results ===============*/
 
-#housingContainer {
+#housingResultsContainer {
 	width: 90%;
 	float: none;
 	margin: auto;
 	text-align:center;
 	}
 	
-.button {
+#housingResultsContainer .button {
 	background-color: rgb(230, 229, 228);
 	color: rgb(51, 62, 106);
 	font-size: 14px;
@@ -147,18 +151,63 @@ body {
 	width: 16px;
 	height: 10px;
 }
-#housingContainer #preferences {
+
+ .arrow_box {
+        top:25px;
+        position: relative;
+        background: white;
+        border: 1px solid rgb(116, 116, 116);
+		margin-bottom:15px;
+        
+
+    }
+    .arrow_box:after, 
+    .arrow_box:before {
+        bottom: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+    }
+    
+    .arrow_box:after {
+        border-color: rgba(116, 116, 116,0);
+        border-bottom-color: white;
+        border-width: 22px;
+        left: 100px;
+        margin-left: -22px;
+    }
+    .arrow_box:before {
+        border-color: rgba(116, 116, 116,0);
+        border-bottom-color: rgb(116,116, 116);
+        border-width: 23px;
+        left: 100px;
+        margin-left: -23px;
+    }
+	
+.hidden{
+	display:none;
+}
+
+.show{
+	display:inline;
+}
+	
+#housingResultsContainer #preferences {
 	width:1100px;
 	max-width:100%;
 	margin:auto;
-	min-height: 200px;
+	margin-top:3px;
+	min-height: 170px;
 	background-color: white;
-	border: 1px solid rgb(51,62,106);
+	padding-top:20px;
 	padding-left:20px;
-	padding-top:10px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 12px;
 	color: rgb(116,116,116);
+display:none;
+vertical-align:top;
 }
 #listWrap {
 	margin-top: 10px;
@@ -172,20 +221,18 @@ body {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 12px;
 	text-align: left;
+		color: rgb(51,62,106);
+
 }
-#preferences p1 {
-	color: rgb(51,62,106);
-}
-#housingContainer #choices{
+#housingResultsContainer #choices{
 	border-top: 1px solid rgb(116,116,116);
 	width:98%;
 	margin:auto;
 	margin-left:0px;
 	padding-top:10px;
 }
-#housingContainer #choice{
+#housingResultsContainer #choice{
 	width:140px;
-
 }
 #choices {
 	margin-left: auto;
@@ -265,6 +312,7 @@ ol li {
 	font-size: 12px;
 	color: rgb(116,116,116);
 	text-align:center;
+	margin-top:10px;
 }
 #matches h3 {
 	font-size: 18px;
@@ -277,6 +325,7 @@ font-family: HNB;
 }
 #matchInfo {
 	width: 397px;
+	max-width:100%;
 	display: inline-block;
 	margin-top:20px;
 	text-align:left;
@@ -299,13 +348,10 @@ font-family: HNB;
 	color: rgb(51,62,106);
 	display: inline;
 	margin-right: 5px;
+	vertical-align:top;
+
 }
 
-#matchInfo .date {
-	color: rgb(220, 134, 39);
-	font-size:14px;
-	display: inline;
-}
 
 .date{
 	color:rgb(220, 134, 39);
@@ -317,12 +363,15 @@ font-family: HNB;
 #matches #availability {
 	width: 710px;
 	max-width:100%;
+	min-height:170px;
 	border: 1px solid rgb(51,62,106);
 	display: inline-block;
 	padding-top: 5px;
 	padding-left: 10px;
 	text-align:left;
 	margin-top:20px;
+	vertical-align:top;
+
 }
 #matches #availability h3 {
 	font-size: 18px;
@@ -350,6 +399,44 @@ font-family: HNB;
 	width: 686px;
 	height: 75px;
 }
+
+#housingResultsContainer #video{
+	width: 297px;
+	max-width:100%;
+	min-height:175px;
+	display: inline-block;
+	margin-top:15px;
+	text-align:left;
+	vertical-align:top;
+	background-color:gray;
+	border-radius:5px;
+}
+
+#housingResultsContainer #compatibility{
+	min-height:168px;
+	width: 810px;
+	max-width:100%;
+	display: inline-block;
+	padding-left: 10px;
+	text-align:left;
+	margin-top:15px;
+	border:1px solid rgb(116,116,116);
+	background-color:rgb(230, 229, 228);
+	padding-top:5px;
+	vertical-align:top;
+
+}
+#housingResultsContainer #compatibility h3{
+	font-size: 18px;
+	font-family:HNL;
+	text-align: left;
+	color: rgb(51,62,106);
+	display: inline;
+	margin-right: 10px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
 /* ------------ housing matcher --------------*/
 #housingMatcherContainer{
 	width:100%;
@@ -1586,6 +1673,8 @@ padding-bottom:10px;
 	margin:5px 10px;
 }
 
+
+
 .optional{
 	font-family:HNL;
 	color: rgb(220, 134, 39);
@@ -1609,4 +1698,28 @@ padding-bottom:10px;
 	font-size:14px;
 }
 
+
+.dropDown{
+width: 200px;
+height: 20px;
+overflow: hidden;
+background: url('../img/dropDown.png') no-repeat right white;
+border: 1px solid #ccc;
+}
+.dropDown select, .dropDown .pref{
+background: transparent;
+width: 200px;
+font-size: 14px;
+border: 2px solid rgb(79,77,77);
+border-radius: 0;
+height: 20px;
+-webkit-appearance: none;	
+color:gray;
+font-family:Georgia, "Times New Roman", Times, serif;
+line-height: 14px;
+}
+.dropDown .pref{
+height:16px;
+padding-left:2px;
+}
 
