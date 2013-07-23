@@ -75,8 +75,8 @@ a {
 #visitFlip{background-image:url(../img/navBar/visit.png);}
 #scholarshipsFlip{background-image:url(../img/navBar/scholarship.png);}
 #deadlinesFlip{background-image:url(../img/navBar/deadlines.png);}
-
 #compareHousingFlip,#roommateMatchingFlip,#admissionsFlip,#financialFlip,#theRealLifeFlip,#visitFlip,#scholarshipsFlip,#deadlinesFlip{
 	background-repeat:no-repeat;
 	background-position:50% 50%;
-	}
+}
+

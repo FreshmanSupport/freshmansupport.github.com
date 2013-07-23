@@ -1,0 +1,91 @@
+@font-face {
+	font-family: "HNL";
+	src: url(../fonts/helveticaneue-light.otf);
+}
+@font-face {
+	font-family: "HNB";
+	src: url(../fonts/helveticaneue-boldcond.otf);
+}
+
+a {
+    color: #75941f;
+}
+
+#content {
+    width: 1000px;
+	height: 200px;
+    margin: 30px auto;
+	display:block;
+}
+
+.clear {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+.quickFlip {
+    height: 200px;
+    width: 300px;
+    float: left;
+	margin: 0 10px;
+}
+.quickFlip img{
+	width: 124px;
+	height: 100px;
+	margin: 0 auto
+	background-position: 20px 100px;
+}
+.panel1, .panel2, .panel3 {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    color: #FFF;
+    font-size: 18px;
+    font-family: HNB, Georgia, "Times New Roman", Times, serif;
+    line-height: 40px;
+}
+
+.panel1 {
+    background-color: white;
+    z-index: 10;
+	color: rgb(51, 62, 106);
+}
+
+.panel2 {
+    background-color: white;
+	color:gray;
+	text-align:center;
+	font-family:HNL, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height: 25px;
+}
+
+.addthis_toolbox {
+    width: 240px;
+    margin: 30px auto;
+}
+
+.addthis_toolbox a {
+    color: #000;
+}
+
+.footer {
+    font-size: .8em;
+}
+
+#publicDormFlip,#privateDormFlip,#apartmentsFlip{background-size: 100% 100%;}
+
+#nameBar{width: 1000px; display:block; margin:0 auto;margin-bottom: 50px;}
+.oneThird{
+	width: 32%; 
+	font-family:HNB; 
+	font-size:1.875em;
+	text-align:center; 
+	display:inline-block;
+	color:rgb( 51, 62, 106);
+	padding-right: 38px;
+}
+
