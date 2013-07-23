@@ -5,6 +5,18 @@
 <link type="text/css" rel="stylesheet" href="../css/headerStyle.css"/>
 <link type="text/css" rel="stylesheet" href="../css/bootstrap-responsive.css" />
 <script src="../js/swipe.js"></script>
+
+<link rel="stylesheet" href="../css/piechart.css" type="text/css" media="all" />
+<script type="text/javascript" src="../js/mootools-beta-1.2b2.js"></script> 
+
+<!--[if IE]>
+	<script type="text/javascript" src="scripts/moocanvas.js"></script>
+<![endif]-->
+	
+<script type="text/javascript" src="../js/piechart.js"></script> 	
+
+
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Admissions</title>
 </head>
@@ -112,7 +124,7 @@
         <hr />
         <h2>Data</h2>
         <h3>Average SAT Scores</h3>
-        <div id="ringContainer">
+        <!--<div id="ringContainer">
           <div class="ring">
             <div class='ringNumber'>800</div>
             <div class="HNL">Reading</div>
@@ -125,7 +137,18 @@
             <div class='ringNumber'>800</div>
             <div class="HNL">Writing</div>
           </div>
-        </div>
+        </div> -->
+        <table class="pieChart">
+    <tr><th>Language  </th> <th>Value</th></tr>
+    <tr><td>JavaScript</td> <td>100  </td></tr>
+    <tr><td>CSS       </td> <td>200  </td></tr>
+    <tr><td>HTML      </td> <td>180  </td></tr>
+    <tr><td>PHP       </td> <td>50   </td></tr>
+    <tr><td>MySQL     </td> <td>320  </td></tr>
+    <tr><td>Apache    </td> <td>90   </td></tr>
+    <tr><td>Linux     </td> <td>100   </td></tr>
+     <tr><td>Nooob     </td> <td>1000   </td></tr>
+</table>
         <a href="#" class="view" style="margin-top: 40px;"> View All Admission Data</a> </div>
       <div class="span05" style="text-align:right;">
         <hr style="width: 1px; height: 390px; display: block;">

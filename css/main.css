@@ -116,6 +116,19 @@
 	border-right: 7px solid transparent;
 	border-top: 8px solid rgb(220, 134, 39);	
 }
+/* ==Recently Answered== */
+.raHeader{
+	width:100%;
+}
+#recentlyAnswered h3{text-align:left;}
+#recentlyAnswered p{text-align:left;}
+#recentlyAnswered img{width:150px; height:150px; display:block; margin:0 auto;}
+#recentlyAnswered .profilePic p{text-align:center;}
+#recentlyAnswered a{font-size: 14px; color: rgb(51, 62, 106); text-decoration: none; font-family: Georgia, "Times New Roman", Times, serif;}
+
+#recentlyAnswered ul{list-style-type:none;}
+#recentlyAnswered li{margin:0; padding: 0; border-bottom: 1px solid gray;}
+
 /* ===Roomie Match=== */
 .rmTable {
 	margin: 0 auto;
@@ -183,7 +196,7 @@
 	padding:0;
 }
 #roomieSlider .rowLabel {
-	width: 21.5%;
+	width: 16.5%;
 	height: 50px;
 	text-align: right;
 	border-right: 2px solid gray;
@@ -198,17 +211,17 @@
 }
 
 #roomieSlider .rmLabel:first-child{
-	padding-left: 25%;
-	padding-right: 29%;
-	margin-bottom:-13px;
+	padding-left: 22%;
+	padding-right: 25%;
+	margin-bottom: -13px;
 }
 #roomieSlider .rmLabel:last-child{
-	padding-left: 28%;
-	padding-right: 30.5%;
+	padding-left: 24%;
+	padding-right: 26%;
 	margin-bottom: -13px;
 }
 #roomieSlider .rmLabel p:first-child {
-	color: rgb(182,197,220);
+	color: rgb(51,61,105);
 }
 #roomieSlider .rmLabel p:last-child {
 	color: rgb(51,61,105);
@@ -398,10 +411,10 @@
 }
 /* ===The Real Life==== */
 .realLifeNav {
-	width: 99%;
-	background-color: rgb(232, 229, 228);
+	width: 100%;
 	text-align: center;
-	border: 2px solid gray;
+	border-top: 2px solid gray;
+	border-bottom: 2px solid gray;
 	white-space: nowrap;
 	margin: 0 auto;
 	padding-top: 15px;
@@ -416,8 +429,8 @@
 	width: 100px;
 }
 .realLifeNav img {
-	width: 80px;
-	height: 80px;
+	width: 60px;
+	height: 60px;
 }
 .realLifeNav h3 {
 	color: rgb(51, 62,106);
@@ -435,28 +448,69 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+
 .realLifeNav p {
 	color: rgb(51, 62, 106);
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 14px;
 }
-.realLifeSub img {
-	margin: 0 auto;
-	display: block;
+.realLifeSquare{
+	width: 49%;
+	display:inline-block;
+}
+.realLifeSquare:nth-child(even){
+	border-left: 2px solid gray;
+}
+.realLifeSquare img{
+	width: 220px;
+	height: 220px;
+}
+/* =Portfolio= */
+.realLifeSub{
+	vertical-align:top;
 }
 .realLifeSub ul {
 	list-style: none;
 	margin: 0;
-	padding: 15px;
+	padding:0;	
+}
+.realLifeSub .profilePic {
+	display:inline-block;
+	width: 255px;
+}
+.realLifeSub .profilePic img{
+	width: 250px;
+	height: 250px;
+}
+.profilePic button{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	padding: 5px 0;
+	margin-top: 5px;
 }
 .realLifeSub li {
 	color: rgb(51,62,106);
-	font-size: 1.875em;
-	font-family: HNL;
+	font-size: 18px;
+	font-family: HNB;
+	margin-bottom: 28px;
+}
+.realLifeSub .iconBar{
+	width: 50px;
+	display:inline-block;
+	vertical-align:top;
+}
+.realLifeSub .nameBar{
+	padding-top: 11px; 
+	padding-left: 30px;
+	display:inline-block;
+	vertical-align:top;
+}
+.realLifeSub .iconBar li{
+	margin-bottom: 16px;
 }
 .realLifeSub li img {
-	height: 40px;
-	width: 40px;
+	height: 47px;
+	width: 47px;
 }
 .realLifeSub form {
 	border: 1px solid rgb( 51, 62, 106);
@@ -510,16 +564,40 @@
 	border-bottom: 1px solid rgb(51, 62, 106);
 	font-family: HNL;
 }
+.realLifeProfile li:last-child{border:none;}
+.blogList{
+	width:250px;
+	padding-right: 10px;
+	display:inline-block;
+	vertical-align:top;
+}
 .blogList li {
 	border: 0;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
+.blogEntries{
+	border-left: 2px solid gray;
+	padding-left:80px;
+}
+.blogEntries p{text-align:left;} 
 #maincontent .realLifeProfile h2 {
 	text-align: left;
 	margin-left: 0;
 }
 #maincontent .realLifeProfile p {
 	text-align: left;
+}
+.swipeProperty {
+	overflow: hidden;
+	visibility: hidden;
+	position: relative;
+	width: 85%;
+	display:inline-block;
+}
+
+#sWrap{
+	margin-right:auto;
+	margin-left:auto;
 }
 /* ============== Footer  ===================*/
 .footer {
@@ -607,6 +685,7 @@
 /* Select all of the column*/
 [class*='col-'] {
 	display:inline-block;
+	vertical-align:top;
 }
 /* 2-3 represent 2/3 of whole width */
 .col-2-3 {
@@ -619,13 +698,19 @@
 	width: 49%;
 }
 .col-1-8 {
-	width: 11.99%%;
+	width: 11.99%;
+}
+.col-5-8{
+	width:62.4%;
+}
+.col-6-8{
+	width:74%;
 }
 .col-7-8 {
 	width: 87%;
 }
 .col-1-4 {
-	width: 24%%;
+	width: 24%;
 }
 .col-3-4 {
 	width: 74%;
@@ -643,12 +728,7 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-[class*='col-'] {
- padding-right: 0px;
-}
-[class*='col-']:last-of-type {
-	padding-right: 0;
-}
+
 /* =============== Random Class ================= */
 .borderLeft {
 	border-left: 2px solid rgb(232, 229, 228);
@@ -662,13 +742,14 @@
 	margin: 0 auto;
 	padding: 30px 0;
 }
-#contentHead h2 {
+#contentHead h3 {
 	color: rgb(51, 62, 107);
-	font-size: 1.875em;
+	font-size: 18px;
 	font-weight: normal;
-	font-family: HNL;
+	font-family: HNB;
 	margin: 0;
-	text-align: center;
+	text-align: left;
+	padding-left:30px;
 }
 .footerSpace {
 	background: white;
@@ -733,6 +814,11 @@ button{
 	font-size: 18px;
 	padding:0 10px;
 	cursor:pointer;
+}
+.outOf{
+	color:rgb( 51, 62, 106);
+	font-size: 14px;
+	
 }
 /* ======  Scrollable  ======= */
 .scrollable {
@@ -1264,7 +1350,4 @@ bullets #position button {
 	background-color: transparent;
 	border: none;
 }
-#duke {
-	width: 100%;
-	background-color: rgb(232, 229, 228);
-}
+

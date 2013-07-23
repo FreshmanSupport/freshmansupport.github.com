@@ -6,7 +6,8 @@
 <link type="text/css" rel="stylesheet" href="../css/bootstrap-responsive.css" />
 <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
 <script src="../js/swipe.js"></script>
-<script type="text/javascript" src="../js/questionButton.js"></script>
+<script type="text/javascript" src="questionButton.js"></script>
+<script type="text/javascript" src="roomieMatchScript.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Roomie Match</title>
 </head>
@@ -52,7 +53,7 @@
 <div id="maincontent">
   <div class="container-fluid">
     <div class="row-fluid">
-      <div class="span7" style="overflow:hidden;">
+      <div class="span6 offset1" style="overflow:hidden;">
         <div id='roomieSlider' class='swipeRecent' style="margin:20px 0;">
           <div class='swipe-wrap'>
             <div>
@@ -169,6 +170,7 @@
         </div>
         <center id="answerNav">
           <button onClick="answerSlider.prev()"><img src=../img/arrowLeft.png width=10px/> prev</button>
+          <span class="outOf">1 out of #</span>
           <button onClick="answerSlider.next()"><span class="">next</span> <img src=../img/arrowRight.png width=10px /></button>
           <br />
           <br />
@@ -243,15 +245,3 @@
 <div class="footerSpace"></div>
 </body>
 </html>
-<script type='text/javascript'>
-window.answerSlider = new Swipe(document.getElementById('roomieSlider'), {
-  startSlide: 0,
-  speed: 400,
-  auto: 9000000000000,
-  continuous: true,
-  disableScroll: false,
-  stopPropagation: false,
-  callback: function(index, elem) {},
-  transitionEnd: function(index, elem) {}
-});
-</script>
