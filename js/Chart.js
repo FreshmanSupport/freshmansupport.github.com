@@ -38,7 +38,7 @@
 			chartData : [], 
 			chartMinSize : [-Infinity, -Infinity], 
 			chartMaxSize : [Infinity, Infinity], 
-			clearImgPath : "src/clear.gif", 
+			clearImgPath : "../img/clear.gif", 
 			onRegionEnter : this.nothing, 
 			onRegionExit : this.nothing
 		};
