@@ -1676,8 +1676,9 @@ padding-bottom:10px;
 	margin-top:10px;
 }
 #reviewsPage #left{
-	width:100%;
-	max-width: 620px;
+	max-width:100%;
+	width: 620px;
+	min-height:655px;
 	display: inline-block;
 	vertical-align:top;
 	text-align:left;
@@ -1736,6 +1737,8 @@ padding-bottom:10px;
 
 #reviewsPage #left  .review{
 	width:600px;
+		max-width:100%;
+
 	border-top:1px solid rgb(116,116,116);
 	padding-top:0px;
 }
@@ -1747,11 +1750,14 @@ padding-bottom:10px;
 #reviewsPage #left .propComment{
 	border-bottom:1px solid rgb(116,116,116);
 	width:500px;
+		max-width:100%;
+
 	margin:auto;
 
 }
 #reviewsPage  #left .propComment button{
 	width:229px;
+	max-width:100%;
 	margin-left:0px;
 	color:rgb(51,62,106);
 	background-color:white;
@@ -1797,6 +1803,13 @@ font-family:HNL;
 color:rgb(51,62,106);
 width:150px;
 margin:0;
+
+}
+
+
+#reviewsPage #right #checkAvail{
+	
+
 
 }
 
@@ -1848,6 +1861,8 @@ color:gray;
 font-family:Georgia, "Times New Roman", Times, serif;
 line-height: 14px;
 }
+
+
 .dropDown .pref{
 height:15px;
 padding-left:2px;
