@@ -466,21 +466,54 @@
 	width: 220px;
 	height: 220px;
 }
-.realLifeSquare .profilePic button:first-child{width:50px;}
-/* =Portfolio= */
-.realLifeSub{
+#maincontent .realLifeSquare .profilePic{width: 225px;}
+.realLifeSquare .profilePic button:nth-child(2){width:55px;margin-right:10px;}
+.realLifeSquare .profilePic button:last-child{width: 150px;}
+.realLifeSub .realLifeSquare li {
+	color: rgb(51,62,106);
+	font-size: 18px;
+	font-family: HNB;
+	margin-bottom: 21px;
+}
+.realLifeSub .realLifeSquare.iconBar{
+	width: 50px;
+	display:inline-block;
 	vertical-align:top;
 }
+.realLifeSub .realLifeSquare  li img {
+	height: 47px;
+	width: 47px;
+}
+.realLifeSub .realLifeSquare .nameBar{
+	padding-top: 11px; 
+	padding-left: 30px;
+	display:inline-block;
+	vertical-align:top;
+}
+.realLifeSub .realLifeSquare .iconBar li{
+	margin-bottom: 6px;
+}
+.realLifeSquare .guide img{
+	width:200px;
+	margin-bottom:50px;
+	height: 100px;
+}
+
+/* =Portfolio= */
+.realLifeSub{vertical-align:top;}
+#realLifeHead{display:block; margin-bottom: 50px;}
+#realLifeHead img{display:block; margin:0 auto;}
+#maincontent.realLifeSub{padding-left: 10%;}
 .realLifeSub ul {
 	list-style: none;
 	margin: 0;
 	padding:0;	
 }
-.realLifeSub .profilePic {Life
+.realLifeSub .profilePic {
 	display:inline-block;
 	width: 255px;
 }
-.realSub .profilePic img{
+.profilePic img{
 	width: 250px;
 	height: 250px;
 }
@@ -516,9 +549,6 @@
 	width: 47px;
 }
 
-.realLifeSub input[type=text] {
-	width: 70%;
-}
 .realLifeSub input[type=Submit] {
 	float: right;
 	margin-top: 12px;
@@ -563,6 +593,7 @@
 #maincontent .realLifeProfile p {
 	text-align: left;
 }
+#moreBlog h2{text-align:left; color:rgb(51, 62, 107);margin-left: 10%;}
 .swipeProperty {
 	overflow: hidden;
 	visibility: hidden;
@@ -772,7 +803,7 @@
 	font-size: 14px;
 }
 .more:after {
-	padding-left: 10px;
+	padding-left: 5px;
 	content: url(../img/arrowRight.png);
 }
 .HNL {
