@@ -143,7 +143,7 @@
       <div id="availability">
         <h2>Check Availability</h2>
         <div style="margin:auto; width:320px;">
-          <center>
+               <center>
             <textarea name="firstname" style="height:20px; width:150px; font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:.875em; resize:none; color:rgb(51,62,106); margin-bottom:10px; margin:auto;" placeholder="First Name"></textarea>
             <textarea name="lastname" style="height:20px; width:150px; font-family:Georgia, 'Times New Roman', Times, serif;
@@ -153,23 +153,34 @@
     font-size:.875em; resize:none; color:rgb(51,62,106); margin-bottom:10px; margin:auto;" placeholder="Email"></textarea>
             <br />
             <textarea name="phone" style="height:20px; width:310px; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:.875em; resize:none; color:rgb(51,62,106); margin-bottom:10px; margin:auto;" placeholder="Phone #"></textarea>
+    font-size:.875em; resize:none; color:rgb(51,62,106); margin-bottom:0px; margin:auto;" placeholder="Phone #"></textarea>
             <br />
-            <textarea name="movein" style="height:20px; width:310px; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:.875em; resize:none; color:rgb(51,62,106); margin-bottom:10px; margin:auto;" placeholder="Move In Semester"></textarea>
-            <br />
-            <textarea name="leasing" style="height:20px; width:310px; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:.875em; resize:none; color:rgb(51,62,106); margin-bottom:10px; margin:auto;" placeholder="Leasing Period"></textarea>
-            <br />
+           	<div class="dropDown" style="display:inline-block; width:315px; margin-left:-1px; margin-top:0px;">
+<select style="width:315px">
+<option>Move In Semester</option>
+<option>Fall</option>
+<option>Spring</option>
+<option>Summer</option>
+</select></div>   <br />
+            	<div class="dropDown" style="display:inline-block; width:315px; margin-left:-1px;">
+<select style="width:315px">
+<option >Leasing Period</option>
+<option>12 Month</option>
+<option>9 Month</option>
+<option>6 Month</option>
+<option>3 Month</option>
+
+</select></div>     <br />
             <textarea name="questions" style="height:100px; width:310px; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:.875em; resize:none; color:rgb(51,62,106); margin-bottom:10px; margin:auto;" placeholder="Questions"></textarea>
+    font-size:.875em; resize:none; color:rgb(51,62,106); margin-bottom:10px; margin:auto; margin-top:5px;" placeholder="Questions"></textarea>
             <br />
           </center>
           <button>Send</button>
+  
         </div>
       </div>
       <div id="upload">
-        <h2>Upload Pictures or Videos</h2>
+        <h2 style="margin-top:10px;">Upload Pictures or Videos</h2>
         <div style="max-width:450px; margin:auto;">
           <p>Submit your own video tour of your dorm and get paid 10 dollars or pizza for it. It can be shot with your phone. Or submit pictures of your dorm room.</p>
           <center>

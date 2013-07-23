@@ -1126,7 +1126,7 @@ display:inline-block;
 	}
 #property #left{
 	width:100%;
-	max-width:450px;
+	max-width:390px;
 	display:inline-block;
 	height:900px;
 	margin-top:15px;
@@ -1481,7 +1481,8 @@ margin:0;
 #availUpload{
 	width:100%;
 	text-align:center;
-	
+	vertical-align:top;
+
 }
 
 #availUpload #availability{
@@ -1507,6 +1508,7 @@ width:100%;
 		margin-top:10px;
 		height:100%;
 text-align:left;
+vertical-align:top;
 }
 
 #availUpload #upload #dragger{

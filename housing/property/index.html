@@ -81,28 +81,42 @@
         </div>
         
     
-    <div id="availability">
+    <div id="availability" style="height:335px">
     
     <h3 style="margin-bottom:-15px">Check Availability</h3>
-    <br /><br />
-    <textarea name="name" style="height:20px; width:150px; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:.875em; resize:none; color:rgb(51,62,106); margin-bottom:10px;" placeholder="Name"></textarea>
+       
+            <textarea name="firstname" style="height:20px; width:150px; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:.875em; resize:none; color:rgb(51,62,106); margin-bottom:10px; margin:auto; margin-top:30px;" placeholder="First Name"></textarea>
+            <textarea name="lastname" style="height:20px; width:150px; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:.875em; resize:none; color:rgb(51,62,106); margin-bottom:10px; margin:auto;" placeholder="Last Name"></textarea>
+            <br />
+            <textarea name="email" style="height:20px; width:310px; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:.875em; resize:none; color:rgb(51,62,106); margin-bottom:10px; margin:auto;" placeholder="Email"></textarea>
+            <br />
+            <textarea name="phone" style="height:20px; width:310px; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:.875em; resize:none; color:rgb(51,62,106); margin-bottom:0px; margin:auto;" placeholder="Phone #"></textarea>
+            <br />
+           	<div class="dropDown" style="display:inline-block; width:315px; margin-left:-1px; margin-top:0px;">
+<select style="width:315px">
+<option>Move In Semester</option>
+<option>Fall</option>
+<option>Spring</option>
+<option>Summer</option>
+</select></div>   <br />
+            	<div class="dropDown" style="display:inline-block; width:315px; margin-left:-1px;">
+<select style="width:315px">
+<option >Leasing Period</option>
+<option>12 Month</option>
+<option>9 Month</option>
+<option>6 Month</option>
+<option>3 Month</option>
+
+</select></div>     <br />
+            <textarea name="questions" style="height:100px; width:310px; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:.875em; resize:none; color:rgb(51,62,106); margin-bottom:10px; margin:auto; margin-top:5px;" placeholder="Questions"></textarea>
+     
     
-     <br />
-    <textarea name="email" placeholder="E-mail" style="height:20px; width:200px; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:.875em; resize:none; color:rgb(51,62,106); margin-bottom:10px;"></textarea>
-    
-    
-     <br />
-    <textarea name="phone" style="height:20px; width:150px; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:.875em; resize:none; color:rgb(51,62,106); margin-bottom:10px;" placeholder="Phone #"></textarea>
-    
-     <br />
-    <textarea name="question" style="height:75px; width:275px; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:.875em; resize:none; color:rgb(51,62,106);" placeholder="Questions"></textarea>
-    
-    
-    <br /><div onClick="availabilitySent();" style="cursor:pointer"><button>Send</button></div>
+    <br /><div onClick="availabilitySent();" style="cursor:pointer; margin-left:-2px"><button>Send</button></div>
 
     </div>
     
