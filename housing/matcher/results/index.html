@@ -65,12 +65,12 @@
 <div id="housingResultsContainer">
 
 
-<div class="dropDown" onClick="prefFunc()" style="display:inline-block; width:150px; margin-left:96px;">
+<div class="dropDown" style="display:inline-block; width:150px; margin-left:96px;" onClick="prefFunc()">
 
 <div class="pref">Edit Preferences</div>
 </div>  
 
-<div class="dropDown" style="display:inline-block; width:150px">
+<div class="dropDown" style="display:inline-block; width:150px; margin-right:5px">
 <select>
 <option>Sort By</option>
 </select></div>  
@@ -157,12 +157,14 @@ Click on circles to change importance.
 <div id="availability">
 <h3>Check Availability</h3>
 <div style="margin:10px">
+<span class="orange">*Optional</span>
+<br>
 			  <textarea name="name" style="height:20px; width:200px; font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="Name" ></textarea>
 			<textarea name="email" style="height:20px; width:240px; font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:.14px; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="E-Mail"></textarea>
 		<textarea name="phone" style="height:20px; width:200px; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%;" placeholder="Phone #*"></textarea>
+    font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%;" placeholder="*Phone #"></textarea>
 		
 		<textarea name="movein" style="height:20px; width:325px; font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="Move in Semester"></textarea>
@@ -248,20 +250,22 @@ Click on circles to change importance.
 <div id="availability">
 <h3>Check Availability</h3>
 <div style="margin:10px">
+<span class="orange">*Optional</span>
+<br>
 			  <textarea name="name" style="height:20px; width:200px; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:.875em; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="Name" ></textarea>
+    font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="Name" ></textarea>
 			<textarea name="email" style="height:20px; width:240px; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:.875em; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="E-Mail"></textarea>
+    font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="E-Mail"></textarea>
 		<textarea name="phone" style="height:20px; width:200px; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:.875em; resize:none; color:rgb(51,62,106); max-width:100%;" placeholder="Phone #*"></textarea>
+    font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%;" placeholder="*Phone #"></textarea>
 		
 		<textarea name="movein" style="height:20px; width:325px; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:.875em; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="Move in Semester"></textarea>
+    font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="Move in Semester"></textarea>
 				<textarea name="leasingperiod" style="height:20px; width:325px; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:.875em; resize:none; color:rgb(51,62,106); max-width:100%;" placeholder="Leasing Period"></textarea>
+    font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%;" placeholder="Leasing Period"></textarea>
 	
 			<textarea name="questions" style="height:40px; width:660px; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:.875em; resize:none; color:rgb(51,62,106); max-width:100%;" placeholder="*Questions"></textarea>
+    font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%;" placeholder="*Questions"></textarea>
 			</div>
 		<br><button style="margin:10px; margin-top:-20px;	">Send</button>
 			
@@ -322,6 +326,15 @@ Click on circles to change importance.
 
 <script type='text/javascript'>
 
+function prefFunc(){
+	if(document.getElementById('preferences').style.display=='none'){
+		document.getElementById('preferences').style.display='block';
+	}
+	else {
+	document.getElementById('preferences').style.display='none';
+
+	}
+}
 	
 function radio(x){
 	if(document.getElementById(x).className=='notImportant'){
@@ -342,14 +355,5 @@ function radio(x){
 
 }
 
-function prefFunc(){
-	if(document.getElementById('preferences').style.display=='none'){
-		document.getElementById('preferences').style.display='block';
-	}
-	else {
-	document.getElementById('preferences').style.display='none';
-
-	}
-}
 
 </script>
