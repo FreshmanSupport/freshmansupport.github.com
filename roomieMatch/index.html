@@ -7,7 +7,7 @@
 <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
 <script src="../js/swipe.js"></script>
 <script type="text/javascript" src="questionButton.js"></script>
-<script type="text/javascript" src="roomieMatchScript.js"></script>
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Roomie Match</title>
 </head>
@@ -245,3 +245,15 @@
 <div class="footerSpace"></div>
 </body>
 </html>
+<script>
+window.answerSlider = new Swipe(document.getElementById('roomieSlider'), {
+  startSlide: 0,
+  speed: 400,
+  //auto: 9000000000000,
+  continuous: true,
+  disableScroll: false,
+  stopPropagation: false,
+  callback: function(index, elem) {},
+  transitionEnd: function(index, elem) {}
+});
+</script>

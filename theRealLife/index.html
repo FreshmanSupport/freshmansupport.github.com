@@ -3,6 +3,7 @@
 <head>
 <link type="text/css" rel="stylesheet" href="../css/main.css"/>
 <link type="text/css" rel="stylesheet" href="../css/headerStyle.css"/>
+<script src="../js/swipe.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>The Real Life</title>
 </head>
@@ -27,19 +28,19 @@
       </form>
     </div>
   </div>
-  </div>
-  <div id="newNav">
-    <ul>
-      <li id="home"><a href="../home">HOME</a></li>
-      <li id="housing"><a href="../housing">COMPARE HOUSING</a></li>
-      <li id="roomie"><a href="../roomieMatch">ROOMIE MATCH</a></li>
-      <li id="admissions"><a href="../admissions" >ADMISSIONS</a> </li>
-      <li id="finances"><a href="../finances">FINANCES</a> </li>
-      <li id="theRealLifeSelected"><a href="../theRealLife">THE REAL LIFE</a> </li>
-      <li id="visit"><a href="../visit">VISIT</a> </li>
-      <li id="deadlines"><a href="../deadlines">DEADLINES</a> </li>
-    </ul>
-  </div>
+</div>
+<div id="newNav">
+  <ul>
+    <li id="home"><a href="../home">HOME</a></li>
+    <li id="housing"><a href="../housing">COMPARE HOUSING</a></li>
+    <li id="roomie"><a href="../roomieMatch">ROOMIE MATCH</a></li>
+    <li id="admissions"><a href="../admissions" >ADMISSIONS</a> </li>
+    <li id="finances"><a href="../finances">FINANCES</a> </li>
+    <li id="theRealLifeSelected"><a href="../theRealLife">THE REAL LIFE</a> </li>
+    <li id="visit"><a href="../visit">VISIT</a> </li>
+    <li id="deadlines"><a href="../deadlines">DEADLINES</a> </li>
+  </ul>
+</div>
 <div id="contentHead">
   <h3>Chat with college students from The University of Texas. Read their college guides. Get their advice. This is student life from the student voice.</h3>
 </div>
@@ -89,38 +90,277 @@
   </table>
 </div>
 <div id="maincontent" class="realLifeSub">
-    <div class="realLifeSquare">
-    	<div class="col-1-2">
-        <div class="profilePic">
-            <img src="../img/port.png" />
-            <button>Blog</button>
-            <button>Send a Message</button>
+  <div class="realLifeSquare">
+    <div class="col-3-4">
+      <div class="profilePic"> <img src="../img/port.png" />
+        <button>Blog</button>
+        <button>Send a Message</button>
+      </div>
+      <div class="iconBar">
+        <ul>
+          <li><img src="../img/realLife/b.png" /></li>
+          <li><img src="../img/realLife/greek.png" /></li>
+          <li><img src="../img/realLife/political.png" /></li>
+          <li><img src="../img/realLife/professional.png" /></li>
+        </ul>
+      </div>
+      <div class="nameBar">
+        <ul>
+          <li>Name</li>
+          <li>Classification</li>
+          <li>Major</li>
+          <li>Hometown</li>
+          <li>Dorm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-1-4">
+      <div class="guide"> <img src="../img/port.png" /> </div>
+      <div class="vid"></div>
+    </div>
+    <div id='slider1' class='swipeRecent' style="margin:20px 0;">
+      <div class='swipe-wrap'>
+        <div class="QA">
+          <h3>Recently Answered</h3>
+          <h3>Question:</h3>
+          <p>How important are admissions essays in getting accepted to UT?</p>
+          <h3>Answer:</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a magna neque. 
+            Pellentesque sit amet lectus tincidunt, suscipit justo nec, porta leo. Etiam commodo odio 
+            eros, in aliquam tortor egestas vitae. Sed et quam non enim adipiscing ornare. Sed 
+            sollicitudin rhoncus tortor sed elementum.</p>
         </div>
-    <div class="iconBar">
-      <ul>
-        <li><img src="../img/realLife/b.png" /></li>
-        <li><img src="../img/realLife/greek.png" /></li>
-        <li><img src="../img/realLife/political.png" /></li>
-        <li><img src="../img/realLife/professional.png" /></li>
-      </ul>
+        <div class="QA">
+          <h3>Recently Answered</h3>
+          <h3>Question:</h3>
+          <p>How NOT important are admissions essays in getting accepted to UT?</p>
+          <h3>Answer:</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a magna neque. 
+            Pellentesque sit amet lectus tincidunt, suscipit justo nec, porta leo. Etiam commodo odio 
+            eros, in aliquam tortor egestas vitae. Sed et quam non enim adipiscing ornare. Sed 
+            sollicitudin rhoncus tortor sed elementum.</p>
+        </div>
+      </div>
     </div>
-    
-    <div class="nameBar">
-      <ul>
-        <li>Name</li>
-        <li>Classification</li>
-        <li>Major</li>
-        <li>Hometown</li>
-        <li>Dorm</li>
-      </ul>
+    <div id="answerNav">
+      <button onClick="slider1.prev()"><img src=../img/arrowLeft.png width=10px/> prev</button>
+      <button onClick="slider1.next()"><span class="">next</span> <img src=../img/arrowRight.png width=10px /></button>
     </div>
+  </div>
+  <div class="realLifeSquare">
+    <div class="col-3-4">
+      <div class="profilePic"> <img src="../img/port.png" />
+        <button>Blog</button>
+        <button>Send a Message</button>
+      </div>
+      <div class="iconBar">
+        <ul>
+          <li><img src="../img/realLife/b.png" /></li>
+          <li><img src="../img/realLife/greek.png" /></li>
+          <li><img src="../img/realLife/political.png" /></li>
+          <li><img src="../img/realLife/professional.png" /></li>
+        </ul>
+      </div>
+      <div class="nameBar">
+        <ul>
+          <li>Name</li>
+          <li>Classification</li>
+          <li>Major</li>
+          <li>Hometown</li>
+          <li>Dorm</li>
+        </ul>
+      </div>
     </div>
-    <div class="col-1-2">
-    <div class="guide">
-    	<img src="../img/port.png" />
+    <div class="col-1-4">
+      <div class="guide"> <img src="../img/port.png" /> </div>
+      <div class="vid"></div>
     </div>
-    <img src="../img/port.png" style="width: 200px; height: 100px;" />
+    <div id='slider2' class='swipeRecent' style="margin:20px 0;">
+      <div class='swipe-wrap'>
+        <div class="QA">
+          <h3>Recently Answered</h3>
+          <h3>Question:</h3>
+          <p>How important are admissions essays in getting accepted to UT?</p>
+          <h3>Answer:</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a magna neque. 
+            Pellentesque sit amet lectus tincidunt, suscipit justo nec, porta leo. Etiam commodo odio 
+            eros, in aliquam tortor egestas vitae. Sed et quam non enim adipiscing ornare. Sed 
+            sollicitudin rhoncus tortor sed elementum.</p>
+        </div>
+        <div class="QA">
+          <h3>Recently Answered</h3>
+          <h3>Question:</h3>
+          <p>How NOT important are admissions essays in getting accepted to UT?</p>
+          <h3>Answer:</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a magna neque. 
+            Pellentesque sit amet lectus tincidunt, suscipit justo nec, porta leo. Etiam commodo odio 
+            eros, in aliquam tortor egestas vitae. Sed et quam non enim adipiscing ornare. Sed 
+            sollicitudin rhoncus tortor sed elementum.</p>
+        </div>
+      </div>
     </div>
+    <div id="answerNav">
+      <button onClick="slider2.prev()"><img src=../img/arrowLeft.png width=10px/> prev</button>
+      <button onClick="slider2.next()"><span class="">next</span> <img src=../img/arrowRight.png width=10px /></button>
     </div>
+  </div>
+<div class="realLifeSquare">
+    <div class="col-3-4">
+      <div class="profilePic"> <img src="../img/port.png" />
+        <button>Blog</button>
+        <button>Send a Message</button>
+      </div>
+      <div class="iconBar">
+        <ul>
+          <li><img src="../img/realLife/b.png" /></li>
+          <li><img src="../img/realLife/greek.png" /></li>
+          <li><img src="../img/realLife/political.png" /></li>
+          <li><img src="../img/realLife/professional.png" /></li>
+        </ul>
+      </div>
+      <div class="nameBar">
+        <ul>
+          <li>Name</li>
+          <li>Classification</li>
+          <li>Major</li>
+          <li>Hometown</li>
+          <li>Dorm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-1-4">
+      <div class="guide"> <img src="../img/port.png" /> </div>
+      <div class="vid"></div>
+    </div>
+    <div id='slider3' class='swipeRecent' style="margin:20px 0;">
+      <div class='swipe-wrap'>
+        <div class="QA">
+          <h3>Recently Answered</h3>
+          <h3>Question:</h3>
+          <p>How important are admissions essays in getting accepted to UT?</p>
+          <h3>Answer:</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a magna neque. 
+            Pellentesque sit amet lectus tincidunt, suscipit justo nec, porta leo. Etiam commodo odio 
+            eros, in aliquam tortor egestas vitae. Sed et quam non enim adipiscing ornare. Sed 
+            sollicitudin rhoncus tortor sed elementum.</p>
+        </div>
+        <div class="QA">
+          <h3>Recently Answered</h3>
+          <h3>Question:</h3>
+          <p>How NOT important are admissions essays in getting accepted to UT?</p>
+          <h3>Answer:</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a magna neque. 
+            Pellentesque sit amet lectus tincidunt, suscipit justo nec, porta leo. Etiam commodo odio 
+            eros, in aliquam tortor egestas vitae. Sed et quam non enim adipiscing ornare. Sed 
+            sollicitudin rhoncus tortor sed elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div id="answerNav">
+      <button onClick="slider3.prev()"><img src=../img/arrowLeft.png width=10px/> prev</button>
+      <button onClick="slider3.next()"><span class="">next</span> <img src=../img/arrowRight.png width=10px /></button>
+    </div>
+  </div>
+<div class="realLifeSquare">
+    <div class="col-3-4">
+      <div class="profilePic"> <img src="../img/port.png" />
+        <button>Blog</button>
+        <button>Send a Message</button>
+      </div>
+      <div class="iconBar">
+        <ul>
+          <li><img src="../img/realLife/b.png" /></li>
+          <li><img src="../img/realLife/greek.png" /></li>
+          <li><img src="../img/realLife/political.png" /></li>
+          <li><img src="../img/realLife/professional.png" /></li>
+        </ul>
+      </div>
+      <div class="nameBar">
+        <ul>
+          <li>Name</li>
+          <li>Classification</li>
+          <li>Major</li>
+          <li>Hometown</li>
+          <li>Dorm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-1-4">
+      <div class="guide"> <img src="../img/port.png" /> </div>
+      <div class="vid"></div>
+    </div>
+    <div id='slider4' class='swipeRecent' style="margin:20px 0;">
+      <div class='swipe-wrap'>
+        <div class="QA">
+          <h3>Recently Answered</h3>
+          <h3>Question:</h3>
+          <p>How important are admissions essays in getting accepted to UT?</p>
+          <h3>Answer:</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a magna neque. 
+            Pellentesque sit amet lectus tincidunt, suscipit justo nec, porta leo. Etiam commodo odio 
+            eros, in aliquam tortor egestas vitae. Sed et quam non enim adipiscing ornare. Sed 
+            sollicitudin rhoncus tortor sed elementum.</p>
+        </div>
+        <div class="QA">
+          <h3>Recently Answered</h3>
+          <h3>Question:</h3>
+          <p>How NOT important are admissions essays in getting accepted to UT?</p>
+          <h3>Answer:</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a magna neque. 
+            Pellentesque sit amet lectus tincidunt, suscipit justo nec, porta leo. Etiam commodo odio 
+            eros, in aliquam tortor egestas vitae. Sed et quam non enim adipiscing ornare. Sed 
+            sollicitudin rhoncus tortor sed elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div id="answerNav">
+      <button onClick="slider4.prev()"><img src=../img/arrowLeft.png width=10px/> prev</button>
+      <button onClick="slider4.next()"><span class="">next</span> <img src=../img/arrowRight.png width=10px /></button>
+    </div>
+  </div>
 </div>
+
 </body>
+<script>
+slider1 = new Swipe(document.getElementById('slider1'), {
+  startSlide: 0,
+  speed: 400,
+  //auto: 9000000000000,
+  continuous: true,
+  disableScroll: false,
+  stopPropagation: false,
+  callback: function(index, elem) {},
+  transitionEnd: function(index, elem) {}
+});
+
+slider2 = new Swipe(document.getElementById('slider2'), {
+  startSlide: 0,
+  speed: 400,
+  //auto: 9000000000000,
+  continuous: true,
+  disableScroll: false,
+  stopPropagation: false,
+  callback: function(index, elem) {},
+  transitionEnd: function(index, elem) {}
+});
+slider3 = new Swipe(document.getElementById('slider3'), {
+  startSlide: 0,
+  speed: 400,
+  //auto: 9000000000000,
+  continuous: true,
+  disableScroll: false,
+  stopPropagation: false,
+  callback: function(index, elem) {},
+  transitionEnd: function(index, elem) {}
+});
+slider4 = new Swipe(document.getElementById('slider4'), {
+  startSlide: 0,
+  speed: 400,
+  //auto: 9000000000000,
+  continuous: true,
+  disableScroll: false,
+  stopPropagation: false,
+  callback: function(index, elem) {},
+  transitionEnd: function(index, elem) {}
+});
+</script>
