@@ -4,8 +4,17 @@
 <link type="text/css" rel="stylesheet" href="../css/main.css"/>
 <link type="text/css" rel="stylesheet" href="../css/headerStyle.css"/>
 <link type="text/css" rel="stylesheet" href="../css/bootstrap-responsive.css" />
-<link href="../css/Chart.css" rel="stylesheet" type="text/css">
 <script src="../js/swipe.js"></script>
+
+<link rel="stylesheet" href="../css/piechart.css" type="text/css" media="all" />
+<script type="text/javascript" src="../js/mootools-beta-1.2b2.js"></script> 
+
+<!--[if IE]>
+	<script type="text/javascript" src="scripts/moocanvas.js"></script>
+<![endif]-->
+	
+<script type="text/javascript" src="../js/piechart.js"></script> 	
+
 
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -108,7 +117,7 @@
       <div class="span05" style="text-align:center;">
         <hr style="width: 1px; height: 390px; display: block;">
       </div>
-      <div class="span4">
+      <div class="span3">
         <h2>June 1, 2013</h2>
         <h3>Fall admission deadline</h3>
         <a href="#" class="view">View more Deadlines</a>
@@ -129,11 +138,17 @@
             <div class="HNL">Writing</div>
           </div>
         </div> -->
-        <div style="display:block; margin:0 auto; width: 360px;">
-<div id="chart1" style="position:relative;width:115px;height:115px; display:inline-block;"></div>
-<div id="chart2" style="position:relative;width:115px;height:115px; display:inline-block;"></div>
-<div id="chart3" style="position:relative;width:115px;height:115px; display:inline-block;"></div>
-</div>
+        <table class="pieChart">
+    <tr><th>Language  </th> <th>Value</th></tr>
+    <tr><td>JavaScript</td> <td>100  </td></tr>
+    <tr><td>CSS       </td> <td>200  </td></tr>
+    <tr><td>HTML      </td> <td>180  </td></tr>
+    <tr><td>PHP       </td> <td>50   </td></tr>
+    <tr><td>MySQL     </td> <td>320  </td></tr>
+    <tr><td>Apache    </td> <td>90   </td></tr>
+    <tr><td>Linux     </td> <td>100   </td></tr>
+     <tr><td>Nooob     </td> <td>1000   </td></tr>
+</table>
         <a href="#" class="view" style="margin-top: 40px;"> View All Admission Data</a> </div>
       <div class="span05" style="text-align:right;">
         <hr style="width: 1px; height: 390px; display: block;">
@@ -309,40 +324,6 @@ window.answerSlider = new Swipe(document.getElementById('answerSlider'), {
   callback: function(index, elem) {},
   transitionEnd: function(index, elem) {}
 });
-</script>
-<script src="../js/Chart.js"></script>
-<script>
-			new Chart.Pie("chart1", {
-  showTooltips : true, 
-  chartMinSize : [115, 115], 
-  chartMaxSize : [115, 115], 
-  chartData : [["Firefox", 39.20, "00:01:33", "#759ddf"], 
-               ["Internet Explorer", 30.58, "00:03:04", "#76df72"], 
-               ["Chrome", 22.91, "00:02:01", "#f1d94b"], 
-               ["Safari", 3.63, "00:01:03", "#f1994a"], 
-               ["Opera", 2.28, "00:00:48", "#f15f5f"], 
-               ["Other", 1.40, "00:00:14", "#aa7be5"]]
-});
-			new Chart.Pie("chart2", {
-  showTooltips : true, 
-  chartMinSize : [115, 115], 
-  chartMaxSize : [115, 115], 
-  chartData : [["Firefox", 39.20, "00:01:33", "#759ddf"], 
-               ["Internet Explorer", 30.58, "00:03:04", "#76df72"], 
-               ["Chrome", 22.91, "00:02:01", "#f1d94b"], 
-               ["Safari", 3.63, "00:01:03", "#f1994a"], 
-               ["Opera", 2.28, "00:00:48", "#f15f5f"], 
-               ["Other", 1.40, "00:00:14", "#aa7be5"]]
-});
-			new Chart.Pie("chart3", {
-  showTooltips : true, 
-  chartMinSize : [115, 115], 
-  chartMaxSize : [115, 115], 
-  chartData : [["Firefox", 39.20, "00:01:33", "#759ddf"], 
-               ["Internet Explorer", 30.58, "00:03:04", "#76df72"], 
-               ["Chrome", 22.91, "00:02:01", "#f1d94b"], 
-               ["Safari", 3.63, "00:01:03", "#f1994a"], 
-               ["Opera", 2.28, "00:00:48", "#f15f5f"], 
-               ["Other", 1.40, "00:00:14", "#aa7be5"]]
-});
+
+
 </script>
