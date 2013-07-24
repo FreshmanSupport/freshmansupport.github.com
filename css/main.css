@@ -455,10 +455,14 @@
 	font-size: 14px;
 }
 /* =Index Remake=*/
+#mainContent.realLifeSub{
+	padding-top: 0;
+}
 .realLifeSquare{
 	width: 49%;
 	display:inline-block;
-	padding:0 10px;
+	padding:30px 20px;
+	border-bottom:2px solid gray;
 }
 .realLifeSquare:nth-child(even){
 	border-left: 2px solid gray;
@@ -504,10 +508,13 @@
 	height: 100px;
 	background-color:gray;
 }
+.realLifeSquare #answerNav{
+	margin-left: -8px;
+	margin-top: -25px;
+}
 #maincontent .realLifeSquare .QA h3{text-align:left; margin-bottom:0;} 
 #maincontent .realLifeSquare .QA h3:first-child{font-family:HNB;}
 #maincontent .realLifeSquare .QA p{text-align:left;margin-top:0;}
-
 
 /* =Portfolio= */
 .realLifeSub{vertical-align:top;}
