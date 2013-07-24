@@ -1677,14 +1677,14 @@ padding-bottom:10px;
 #reviewsPage{
 	text-align:center;
 	margin-top:10px;
-	width:970px;
+	width:950px;
 	max-width:100%;
 	margin:auto;
 	
 }
 #reviewsPage #left{
 	max-width:100%;
-	width: 600px;
+	width: 580px;
 	min-height:655px;
 	display: inline-block;
 	vertical-align:top;
@@ -1727,7 +1727,7 @@ padding-bottom:10px;
 	display:inline;
 	font-family:Georgia;
 	font-size:14px;
-	margin-left:220px;
+	margin-left:200px;
 }
 
 #reviewsPage .votes .number{
@@ -1743,7 +1743,7 @@ padding-bottom:10px;
 }
 
 #reviewsPage #left  .review{
-	width:580px;
+	width:560px;
 		max-width:100%;
 
 	border-top:1px solid rgb(116,116,116);
