@@ -16,6 +16,7 @@ a {
 	height: 200px;
     margin: 30px auto;
 	display:block;
+text-align:center;
 }
 
 .clear {
@@ -27,14 +28,21 @@ a {
 .quickFlip {
     height: 200px;
     width: 300px;
-    float: left;
-	margin: 0 10px;
+    display:inline-block;
+    text-align:center;
 }
 .quickFlip img{
 	width: 124px;
 	height: 100px;
 	margin: 0 auto
 	background-position: 20px 100px;
+	
+}
+#flipWrap{
+	display:inline-block;
+	text-align:center;
+	vertical-align:top;
+	
 }
 .panel1, .panel2, .panel3 {
     height: 200px;
@@ -78,14 +86,16 @@ a {
 
 #publicDormFlip,#privateDormFlip,#apartmentsFlip{background-size: 100% 100%;}
 
-#nameBar{width: 1000px; display:block; margin:0 auto;margin-bottom: 50px;}
+#nameBar{width: 1000px; display:block; margin:0 auto;margin-bottom: 50px; text-align:center; background-color:gray;}
 .oneThird{
-	width: 32%; 
+	margin-top:0px;
+	vertical-align:top;
 	font-family:HNB; 
-	font-size:1.875em;
+	font-size:18px;
 	text-align:center; 
 	display:inline-block;
 	color:rgb( 51, 62, 106);
-	padding-right: 38px;
+	border:2px solid red;
+	
 }
 

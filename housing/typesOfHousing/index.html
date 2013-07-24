@@ -1,11 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link type="text/css" rel="stylesheet" href="../../css/main.css"/>
+<link type="text/css" rel="stylesheet" href="../../css/brentstyles.css"/>
 <link type="text/css" rel="stylesheet" href="../../css/headerStyle.css"/>
 <script src="../../js/jquery-1.9.1.js" type="text/javascript"></script>
 <script src="../../js/jquery.quickflip.min.js" type="text/javascript"></script>
-<link rel="stylesheet" type="text/css" href="../../css/housingFlip.css" />
 <style>
 /*Use this to change the background image of the flips */
 
@@ -13,7 +12,7 @@
 	background-image: url(../../img/property/place1.png);
 }
 #privateDormFlip {
-	background-image: url(../../img/property/place2.png);
+	background-image: url(../../img/property/place1.png);
 }
 #apartmentsFlip {
 	background-image: url(../../img/property/place3.png);
@@ -86,38 +85,406 @@ $(function() {
   </div>
 </div>
 <div id="maincontent">
-  <div>
+  <div style="width:1000px; margin:auto; max-width:100%; min-height:300px;"">
     <h2>Types of Housing</h2>
     <div id="content">
-      <div class="quickFlip">
+      <div id="flipWrap">
+	  <div class="quickFlip">
         <div id="publicDormFlip" class="panel1"></div>
         <div class="panel2">Dorm range form old to remodeled to new. San 
           Jacinto or Duren dorms are by far the newest and nicest dorms, 
           and you probably won't actually live there because of their high demand. 
           If you think you might want ot live on campus, it is important to
           see your prospective home, so be sure to take a tour of Jester, 
-          San Jacinto, and an honors dorm such as Andrews.</div>
-      </div>
+          San Jacinto, and an honors dorm such as Andrews. </div>
+      </div><br>
+	  <div class="oneThird">Public Dorm</div></div>
+	  <div id="flipWrap">
       <div class="quickFlip">
         <div id="privateDormFlip" class="panel1"></div>
         <div class="panel2">Well you know they are private, no question asked</div>
       </div>
+	  	  <br><div class="oneThird" style="margin-top:-5px;">Private Dorms</div>
+</div>
+<div id="flipWrap">
       <div class="quickFlip">
         <div id="apartmentsFlip" class="panel1"></div>
         <div class="panel2">The ghetto slump if you're real broke.</div>
-      </div>
+      </div><br>
+	  	  <div class="oneThird">Apartments</div>
+</div>
     </div>
   </div>
-  <div id="nameBar">
-  	<div class="oneThird">Public Dorms</div>
-    <div class="oneThird">Private Dorms</div>
-    <div class="oneThird">Aparments</div>
+  
+  
+  <div id="compareTypes">
+  <h2>Compare Types of Housing</h2>
+  <div class="dropDown" style="display:inline-block;">
+<select name="sort" id="sort" onchange="sortChanged(this);">
+<option value="byPrice">Price</option>
+<option value="byAmenities">Unit Amenities</option>
+<option value="byComAmenities">Community Amenities</option>
+<option value="byLocation">Location</option>
+<option value="byFood">Food</option>
+<option value="bySafety">Safety Features</option>
+
+</select></div> 
+  <center>
+  <table id="byPrice">
+  <tr>
+  <th></th>
+  <th style="padding:0 0px 0 50px;">Public Dorms</th>
+  <th style="padding:0 0px 0 50px;">Private Dorms</th>
+  <th style="padding:0 0px 0 50px;">Apartments</th>
+  </tr>
+  <tr><th>Price/Month Per Bedroom</th>
+  <td>$$$$</td>
+  <td>$$$$</td>
+  <td>$$$$</td>
+  </tr>
+  
+    <tr><th>Bedroom Choices</th>
+  <td>$$$$</td>
+  <td>$$$$</td>
+  <td>$$$$</td>
+  </tr>
+  
+    <tr><th>Utilities Included in Rent</th>
+  <td>$$$$</td>
+  <td>$$$$</td>
+  <td>$$$$</td>
+  </tr>
+  
+    <tr><th>Accepts Financial Aid</th>
+  <td>$$$$</td>
+  <td>$$$$</td>
+  <td>$$$$</td>
+  </tr>
+  </table>
+  </center>
+  
+  <center>
+  <table id="byAmenities" style="display:none">
+  <tr>
+  <th></th>
+  <th style="padding:0 0px 0 50px;">Public Dorms</th>
+  <th style="padding:0 0px 0 50px;">Private Dorms</th>
+  <th style="padding:0 0px 0 50px;">Apartments</th>
+  </tr>
+  <tr><th>Bed</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+  <tr><th>Kitchen</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+   <tr><th>En Suit Bathroom</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+  <tr><th>Living Room</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+    <tr><th>Balcony</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+    <tr><th>Walk-in Closet</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+    <tr><th>Washer/Dryer</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+    <tr><th>Housekeeping</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+  
+  </table>
+  <center>
+  
+  
+  
+    
+  <center>
+  <table id="byComAmenities"  style="display:none">
+  <tr>
+  <th></th>
+  <th style="padding:0 0px 0 50px;">Public Dorms</th>
+  <th style="padding:0 0px 0 50px;">Private Dorms</th>
+  <th style="padding:0 0px 0 50px;">Apartments</th>
+  </tr>
+  <tr><th>Computer Room</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+  <tr><th>Study Room</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+   <tr><th>Fitness Room</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+  <tr><th>Game Room</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+    <tr><th>Swimming Pool</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+    <tr><th>Elevator</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+
+  
+  </table>
+  </center>
+  
+  
+  
+    
+  <center>
+  <table id="byLocation"  style="display:none">
+  <tr>
+  <th></th>
+  <th style="padding:0 0px 0 50px;">Public Dorms</th>
+  <th style="padding:0 0px 0 50px;">Private Dorms</th>
+  <th style="padding:0 0px 0 50px;">Apartments</th>
+  </tr>
+  <tr><th>Nearby Bus Access</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+  <tr><th>Close to Campus</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+   <tr><th>Parking Garage Nearby</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+   
+  </table>
+  </center>
+  
+    
+  <center>
+  <table id="byFood"  style="display:none">
+  <tr>
+  <th></th>
+  <th style="padding:0 0px 0 50px;">Public Dorms</th>
+  <th style="padding:0 0px 0 50px;">Private Dorms</th>
+  <th style="padding:0 0px 0 50px;">Apartments</th>
+  </tr>
+  <tr><th>Meal Plan</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+  <tr><th>Cafeteria</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+   <tr><th>Convenience Store</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+  <tr><th>Restaurants Nearby</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+  
+  </table>
+  </center>
+  
+    
+  <center>
+  <table id="bySafety"  style="display:none">
+  <tr>
+  <th></th>
+  <th style="padding:0 0px 0 50px;">Public Dorms</th>
+  <th style="padding:0 0px 0 50px;">Private Dorms</th>
+  <th style="padding:0 0px 0 50px;">Apartments</th>
+  </tr>
+  <tr><th>Security Desk</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+  <tr><th>Video Surveillance</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+   <tr><th>Resident Assistant on Floor</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+  <tr><th>Gated Entry</th>
+  <td>yes</td>
+  <td>yes</td>
+  <td>no</td>
+  </tr>
+  
+  </table>
+  </center>
+  
+  
+  
+  
   </div>
-  <div style="border-top:2px solid gray">
-    <h2>Compare Types of Housing</h2>
+
+  <br>
+    <div id="recommendedHousingFooter">
+    <h2>Recommended Housing</h2>
+    <br>
+	<center>
+	<div id="item">
+		<h3>Towers</h3>
+		<div style="width:250px; height:130px; border-radius:5px; background-color:grey;"></div>
+		<p>Recommended Application Date</p>
+		<span class="appDate">8-10-13</span>
+    </div>
+	
+	
+	<div id="item">
+		<h3>Towers</h3>
+		<div style="width:250px; height:130px; border-radius:5px; background-color:grey;"></div>
+		<p>Recommended Application Date</p>
+		<span class="appDate">8-10-13</span>
+    </div>
+	
+		
+	<div id="item">
+		<h3>Towers</h3>
+		<div style="width:250px; height:130px; border-radius:5px; background-color:grey;"></div>
+		<p>Recommended Application Date</p>
+		<span class="appDate">8-10-13</span>
+    </div>
+	</center>
+	
   </div>
-  <div style="border-top:2px solid gray">
-    <h2> Recommended Housing</h2>
-  </div>
+
 </div>
 </body>
+</html>
+<script>
+
+function sortChanged(x){
+        window["sortChanged" + x.options[x.selectedIndex].value]();
+
+}
+
+function sortChangedbyAmenities(){
+	document.getElementById('byAmenities').style.display='table';
+	document.getElementById('byPrice').style.display='none';
+	document.getElementById('byComAmenities').style.display='none';
+	document.getElementById('byLocation').style.display='none';
+	document.getElementById('byFood').style.display='none';
+	document.getElementById('bySafety').style.display='none';
+}
+
+
+function sortChangedbyPrice(){
+	document.getElementById('byPrice').style.display='table';
+
+	document.getElementById('byAmenities').style.display='none';
+	document.getElementById('byComAmenities').style.display='none';
+	document.getElementById('byLocation').style.display='none';
+	document.getElementById('byFood').style.display='none';
+	document.getElementById('bySafety').style.display='none';
+}
+
+
+function sortChangedbyComAmenities(){
+	document.getElementById('byComAmenities').style.display='table';
+
+	document.getElementById('byAmenities').style.display='none';
+	document.getElementById('byPrice').style.display='none';
+	document.getElementById('byLocation').style.display='none';
+	document.getElementById('byFood').style.display='none';
+	document.getElementById('bySafety').style.display='none';
+}
+
+
+function sortChangedbyLocation(){
+	document.getElementById('byLocation').style.display='table';
+
+	document.getElementById('byAmenities').style.display='none';
+	document.getElementById('byPrice').style.display='none';
+	document.getElementById('byComAmenities').style.display='none';
+	document.getElementById('byFood').style.display='none';
+	document.getElementById('bySafety').style.display='none';
+}
+
+
+function sortChangedbyFood(){
+	document.getElementById('byFood').style.display='table';
+	document.getElementById('byAmenities').style.display='none';
+	document.getElementById('byPrice').style.display='none';
+	document.getElementById('byComAmenities').style.display='none';
+	document.getElementById('byLocation').style.display='none';
+	document.getElementById('bySafety').style.display='none';
+}
+
+function sortChangedbySafety(){
+	document.getElementById('bySafety').style.display='table';
+	document.getElementById('byAmenities').style.display='none';	
+	document.getElementById('byPrice').style.display='none';
+	document.getElementById('byComAmenities').style.display='none';
+	document.getElementById('byLocation').style.display='none';
+	document.getElementById('byFood').style.display='none';
+}
+
+</script>
