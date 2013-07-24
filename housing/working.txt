@@ -1,0 +1,21 @@
+//general housing
+
+add to roomie match buttons
+embedded video players
+check availability functionality
+
+
+
+// housing/property/reviews + housing/reviews
+
+owl rating functionality
+sort by functions
+submit reviews functionality
+upvote/downvote functionality
+
+
+
+// housing/property/media
+
+drag and drop upload form
+click pictures/videos to show on big gray div
