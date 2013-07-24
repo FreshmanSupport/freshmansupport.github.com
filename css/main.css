@@ -155,18 +155,7 @@
 	text-align: left;
 	border-right: none;
 }
-.ring p {
-	margin: 0;
-}
-.ring p:first-child {
-	margin-top: 20px;
-}
-.ringNumber {
-	font-family: HNL;
-	font-size: 30px;
-	margin-top: 20px;
-	color: gray;
-}
+
 /* ==Roomie Slider== */
 #roomieSlider ul {
 	list-style: none;
@@ -196,7 +185,7 @@
 	padding:0;
 }
 #roomieSlider .rowLabel {
-	width: 16.5%;
+	width: 90px;
 	height: 50px;
 	text-align: right;
 	border-right: 2px solid gray;
@@ -209,23 +198,25 @@
 	padding-right: 5px;
 	line-height:65px;
 }
+#roomieSlider .fakeLb{display:inline-block; width: 90px; height:1px;}
+#roomieSlider .rmLabel{display:inline-block;}
 
-#roomieSlider .rmLabel:first-child{
-	padding-left: 22%;
-	padding-right: 25%;
-	margin-bottom: -13px;
+#roomieSlider .topRmLabel{display:inline-block;}
+#roomieSlider .botRmLabel{display:inline-block;}
+#roomieSlider .topRmLabel p:first-child {
+	color: rgb(51,61,105);
+	margin-left: 15px;
 }
-#roomieSlider .rmLabel:last-child{
-	padding-left: 24%;
-	padding-right: 26%;
-	margin-bottom: -13px;
-}
-#roomieSlider .rmLabel p:first-child {
+#roomieSlider .topRmLabel p:last-child {
 	color: rgb(51,61,105);
 }
-#roomieSlider .rmLabel p:last-child {
+#roomieSlider .botRmLabel p:first-child {
 	color: rgb(51,61,105);
-	float: right;
+	margin-left: 40px;
+}
+#roomieSlider .botRmLabel p:last-child {
+	color: rgb(51,61,105);
+	margin-left: 210px;
 }
 #roomieSlider div form ul li:nth-child(2) {margin-bottom: 17px;}
 
@@ -257,6 +248,10 @@
 #roomieSlider .initialColor label:nth-child(11){
 	background-color:rgb(51,61,105);
 }
+#roomieSlider .disclaimerContainer{width: 500px; display:block; margin: 0 auto;}
+#roomieSlider .disclaimerContainer h2{color:gray;}
+#roomieSlider .disclaimerContainer .checkContainer{margin-top: 25px; margin-left: 94px; color:rgb(51, 62, 107);}
+#roomieSlider .disclaimerContainer .checkContainer p{color:rgb(51, 62, 107);}
 /* ==Student Profiles== */
 #spHeader{
 	width:100%;
