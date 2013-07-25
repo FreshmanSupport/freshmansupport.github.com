@@ -48,7 +48,7 @@
     <li><a>Budget Planner</a></li>
   </ul>
 </div>
-<div id="maincontent">
+<div id="maincontent" class="finances">
 <div id="recentAnswers" class="col-1-3" style="overflow:hidden;">
   <h2>Recently Answered</h2>
   <div id='answerSlider' class='swipeRecent' style="margin:20px 0;">
@@ -110,13 +110,13 @@
     <div class="view"><a>View All Data</a></div>
   </div>
 </div>
-<div class="col-1-3">
+<div id="fafsa" class="col-1-3">
   <h2>June 30, 2013</h2>
   <p>2013-2014 Financial Aid Deadline</p>
-  <div class="view"><a href="#">View</a>
+  <div class="view"><a href="#">View More Deadlines</a></div>
     <hr />
     <h2>Complete the FAFSA now</h2>
-    <a class="go" href="http://www.fafsa.ed.gov/">GO</a> </div>
+    <a class="go" href="http://www.fafsa.ed.gov/">GO</a>
 </div>
 <div id="budgetPlanner">
 	<h2>Budget Planner</h2>
@@ -126,16 +126,21 @@
     </div>
     <div class="col-1-3">
     	<h3>First Semester Attending?</h3>
-       	<input id="summer" type="radio" name="you" value="summer">
-        <label for="summer"></label>
-        <input id="sleepYou1" type="radio" name="you" value="1">
-        <label for="sleepYou1"></label>
-        <input id="sleepYou1" type="radio" name="you" value="1">
-        <label for="sleepYou1"></label>
+        <form>
+            <input id="summer" type="radio" name="semester" value="summer">
+            <label for="summer">SUMMER</label>
+            <input id="fall" type="radio" name="semester" value="fall">
+            <label for="fall">FALL</label>
+            <input id="spring" type="radio" name="semester" value="spring">
+            <label for="spring">SPRING</label>
+        </form>
     </div>
     
     <div class="col-1-3">
-    
+    <h2>Total Estimated Cost</h2>
+    <h2>$0</h2>
+    <a href="#">Next</a>
+    <div class="triangle"></div>
     </div>
 </div>
 

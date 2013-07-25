@@ -6,8 +6,8 @@
 	font-family: "HNB";
 	src: url(../fonts/helveticaneue-boldcond.otf);
 }
-#roommate{}
-/* === MAIN CONTENT ===*/
+
+/* ==================== MAIN CONTENT =====================*/
 #maincontent {
 	background: white;
 	width: 97.5%;
@@ -34,10 +34,10 @@
 #maincontent p {
 	color: gray;
 	text-align: center;
-	font-size: .875em;
+	font-size: 14px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
-/* ===Admission=== */
+/* ======================= Admission =================== */
 .essay img {
 	display: block;
 	margin: 0 auto;
@@ -116,7 +116,7 @@
 	border-right: 7px solid transparent;
 	border-top: 8px solid rgb(220, 134, 39);	
 }
-/* ==Recently Answered== */
+/* ============= Recently Answered =============== */
 .raHeader{
 	width:100%;
 }
@@ -129,7 +129,7 @@
 #recentlyAnswered ul{list-style-type:none;}
 #recentlyAnswered li{margin:0; padding: 0; border-bottom: 1px solid gray;}
 
-/* ===Roomie Match=== */
+/* ============ Roomie Match ================= */
 .rmTable {
 	margin: 0 auto;
 	margin-bottom: 25px;
@@ -156,7 +156,7 @@
 	border-right: none;
 }
 
-/* ==Roomie Slider== */
+/* ================== Roomie Slide ================= */
 #roomieSlider ul {
 	list-style: none;
 	width: 80%;
@@ -232,7 +232,8 @@
 	margin-right: 5px;
 }
 #roomieSlider input[type=radio]:checked + label{background-color: rgb(51,61,105);}
-/* =Initial color for buttons = */
+
+/* ====== Initial color for buttons =========== */
 #roomieSlider .initialColor label:nth-child(3){
 	background-color:rgb(182,197,220);
 }
@@ -252,7 +253,9 @@
 #roomieSlider .disclaimerContainer h2{color:gray;}
 #roomieSlider .disclaimerContainer .checkContainer{margin-top: 25px; margin-left: 94px; color:rgb(51, 62, 107);}
 #roomieSlider .disclaimerContainer .checkContainer p{color:rgb(51, 62, 107);}
-/* ==Student Profiles== */
+
+/* =========== Student Profiles =============== */
+
 #spHeader{
 	width:100%;
 	margin-bottom: 30px;
@@ -310,14 +313,14 @@
 	margin: 0 auto;
 	display:block;
 }
-/* ==Edit Preference== */
+/* ================= Edit Preference =================== */
 .editNav{list-style-type:none;display:block; text-align:center;}
 .editNav li{display: inline-block; border-right:1px solid navy;padding: 0 5px;}
 .editNav li:last-child{border: none;}
 .editNav a {text-decoration: none; color:gray;}
 .editnav a:visited{color:gray;}
 
-/* =Match Details= */
+/* =============== Match Details ==================== */
 .matchDetails{
 	background-color:rgb(232, 229, 228);
 	width: 100%;
@@ -370,14 +373,15 @@
 }
 .matchDetails .list div:first-child{text-align:right;}
 .matchDetails .list div:last-child{padding-left: 10px;}
-/* =You= */
+
+/* ================ You =================== */
 .editButtonList{
 	display:block;
 	width: 100%;
 	list-style-type:none;
 	margin:0 auto;	
 }
-/* = RMEdit = */
+/* ================ RMEdit ================ */
 #rmEdit input[type="radio"] {display:none;}
 #rmEdit label{
 	display:inline-block;
@@ -405,7 +409,8 @@
 	width: 144px;
 	display:inline-block;
 }
-/* ===The Real Life==== */
+
+/* ================= The Real Life =================== */
 .realLifeNav {
 	width: 100%;
 	text-align: center;
@@ -450,7 +455,8 @@
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 14px;
 }
-/* =Index Remake=*/
+
+/* ================== Index Remake ==================== */
 #mainContent.realLifeSub{
 	padding-top: 0;
 }
@@ -512,7 +518,7 @@
 #maincontent .realLifeSquare .QA h3:first-child{font-family:HNB;}
 #maincontent .realLifeSquare .QA p{text-align:left;margin-top:0;}
 
-/* =Portfolio= */
+/* =================== Portfolio ========================== */
 .realLifeSub{vertical-align:top;}
 #realLifeHead{display:block; margin-bottom: 50px;}
 #realLifeHead img{display:block; margin:0 auto;}
@@ -617,6 +623,51 @@
 #sWrap{
 	margin-right:auto;
 	margin-left:auto;
+}
+
+/* ============= Fianance ===================== */
+.finances #recentAnswers{
+	border-bottom: 2px solid gray;
+}
+.finances #data{
+	border-bottom: 2px solid gray;
+	border-left: 2px solid gray;
+}
+.finances #fafsa{
+	border-bottom: 2px solid gray;
+	border-left: 2px solid gray;
+}
+.finances #budgetPlanner input[type=radio]{
+	display:none;
+}
+.finances #budgetPlanner label{
+	color:white; 
+	background-color:rgb(51, 62, 107); 
+	width: 150px; 
+	height:40px; 
+	text-align:center; 
+	text-decoration:none;
+	padding-top: 5px;
+	font-size: 24px;
+	font-family:HNB, Arial, Helvetica, sans-serif;
+	margin:0 auto;
+	margin-top: 20px;
+	padding: 5px 10px;
+}
+.cost{color:rgb(51, 62, 107); font-size: 34px; font-family:HBL; text-align:center;}
+.go{
+	display:block; 
+	color:white; 
+	background-color:rgb(51, 62, 107); 
+	width: 125px; 
+	height:40px; 
+	text-align:center; 
+	text-decoration:none;
+	padding-top: 5px;
+	font-size: 24px;
+	font-family:HNB, Arial, Helvetica, sans-serif;
+	margin:0 auto;
+	margin-top: 20px;
 }
 /* ============== Footer  ===================*/
 .footer {
@@ -781,33 +832,13 @@
 }
 .view {
 	text-align: center;
-	font-size: .875em;
+	font-size: 14px;
 	color: rgb(51, 62, 106);
 	display: block;
 	text-decoration: none;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
-#ringContainer {
-	width: 370px;
-	margin: 0 auto;
-	display:block;
-}
-.ring {
-	background-image: url(../img/orangeRing.png);
-	background-size: 100% 100%;
-	text-align: center;
-	color: rgb(51, 62, 106);
-	height: 100px;
-	width: 100px;
-	float: left;
-	margin: 0 10px;
-}
-.textAlignRight {
-	text-align: right;
-}
-.textAlignLeft {
-	text-align: left;
-}
+
 .more {
 	text-align: right;
 	margin-right: 5px;
@@ -842,16 +873,11 @@ button{
 .swipeRecent{
 	overflow:hidden;
 }
-/* ======  Scrollable  ======= */
-.scrollable {
-	position: relative;
-	overflow: hidden;
-	width: 660px;
-	height: 90px;
-}
-.scrollable .items {
-	width: 2000em;
-	position: absolute;
+hr{
+	width:80%;
+	color:rgb(232, 229, 228);
+	background-color:rgb(232, 229, 228);
+	height: 2px;
 }
 .dropDown{
  	width: 200px;
@@ -873,12 +899,34 @@ button{
    line-height: 14px;
 }
 
-hr{
-	width:80%;
-	color:rgb(232, 229, 228);
-	background-color:rgb(232, 229, 228);
-	height: 2px;
+/* ============ Slider JS CSS ================== */
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
 }
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+/* ================  Scrollable  ================= */
+.scrollable {
+	position: relative;
+	overflow: hidden;
+	width: 660px;
+	height: 90px;
+}
+.scrollable .items {
+	width: 2000em;
+	position: absolute;
+}
+
+
 /* ============== NULLIFY =======================*/
 
 html, body {
@@ -898,7 +946,6 @@ body {
 #container {
 	margin: 0 auto;
 }
-/* ======================== EXPERIMENTAL STUFF ======================= */
 
 
 /* ========== Messing with Boot Strap ============= */
@@ -914,462 +961,6 @@ body {
 	border-left: 1px dashed #333;
 	height: 200px;
 }
-/*=========housing matcher===============*/
 
-#matcherBottomWrap {
-	margin-top: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	display: inline-block;
-}
-#nextCount {
-	display: inline-block;
-	width: 170px;
-	height: 100px;
-}
-#nextCount p {
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: .875em;
-	color: rgb(116,116,116);
-	font-weight: normal;
-	text-align: center;
-	font-style: italic;
-}
-#housingContainer {
-	width: 87%;
-	float: none;
-	margin: auto;
-}
-.button {
-	background-color: rgb(230, 229, 228);
-	color: rgb(51, 62, 106);
-	font-size: 14px;
-	border: 1px solid rgb(51,62,106);
-	padding-right: 5px;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	margin-right: 10px;
-}
-.button img {
-	margin-left: 2px;
-	margin-right: 1px;
-	width: 16px;
-	height: 10px;
-}
-#preferences {
-	width: 100%;
-	min-height: 200px;
-	background-color: white;
-	border: 1px solid rgb(51,62,106);
-	padding-top: 30px;
-	padding-left: 20px;
-	padding-right: 20px;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 12px;
-	color: rgb(116,116,116);
-}
-#listWrap {
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-#preferences ul, #preferences li {
-	margin-left: -20px;
-	margin-right: 30px;
-	display: inline;
-	list-style-type: circle;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 12px;
-	text-align: left;
-}
-#preferences p1 {
-	color: rgb(51,62,106);
-}
-#choices {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 15px;
-	margin-bottom: 10px;
-}
-#choice {
-	width: 155px;
-	margin-bottom: 10px;
-	margin-right: 10px;
-	display: inline-block;
-	color: rgb(51,62,106);
-}
-#choice #important, #choice #notImportant, #choice #dealBreaker, #choice #semiImportant {
-	float: left;
-}
-#notImportant {
-	background-color: white;
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	border: 1px solid rgb(51,62,106);
-	display: inline-block;
-	margin: auto;
-	margin-left: 2px;
-	margin-right: 7px;
-}
-#semiImportant {
-	background-color: rgb(140,146,162);
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	border: 1px solid rgb(51,62,106);
-	display: inline-block;
-	margin-left: 2px;
-	margin-right: 7px;
-}
-#important {
-	background-color: rgb(51, 62, 106);
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	border: 1px solid rgb(51,62,106);
-	display: inline-block;
-	margin-left: 2px;
-	margin-right: 7px;
-}
-#dealBreaker {
-	background-color: rgb(220, 134, 39);
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	border: 1px solid rgb(51,62,106);
-	display: inline-block;
-	margin-left: 2px;
-	margin-right: 7px;
-}
-ol li {
-	display: block;
-	margin-top: 25px;
-}
-#matches {
-	width: 100%;
-	min-height: 200px;
-	background-color: white;
-	border: 1px solid rgb(51,62,106);
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 12px;
-	color: rgb(116,116,116);
-}
-#matchInfo {
-	width: 250px;
-	height: 250px;
-	display: inline-block;
-	margin-top: 5px;
-	margin-right: 5px;
-}
-#matchInfo .compatibility {
-	font-style: italic;
-	color: rgb(220, 134, 39);
-	font-size: 12px;
-	display: inline;
-}
-#matchInfo .interests {
-	font-weight: bold;
-	font-size: 14px;
-	color: rgb(51,62,106);
-}
-#matchInfo .interests {
-	font-weight: bold;
-	font-size: 14px;
-	color: rgb(51,62,106);
-	padding-top: 15px;
-}
-#matchInfo .reco {
-	font-size: 12px;
-	color: rgb(51,62,106);
-	display: inline;
-	margin-right: 5px;
-}
-#matchInfo .date {
-	color: rgb(220, 134, 39);
-	font-size: 12px;
-	display: inline;
-}
-.date {
-	color: rgb(220, 134, 39);
-	font-size: 12px;
-	display: inline;
-	margin-left: 5px;
-}
-#availability {
-	width: 760px;
-	height: 165px;
-	border: 1px solid rgb(51,62,106);
-	display: inline-block;
-	padding-top: 5px;
-	padding-left: 10px;
-}
-#availability h3 {
-	font-size: 18px;
-	font-weight: none;
-	text-align: left;
-	color: rgb(51,62,106);
-	display: inline;
-	margin-right: 10px;
-	font-weight: normal;
-	margin-bottom: 20px;
-}
-#name, #phone {
-	width: 165px;
-	height: 25px;
-	margin-top: 10px;
-	display: inline-block;
-}
-#email {
-	width: 350px;
-	height: 25px;
-	margin-top: 5px;
-	display: inline-block;
-}
-#question {
-	width: 686px;
-	height: 75px;
-}
-/* ------------ housing matcher --------------*/
 
-#housingMatcherLeft {
-	width: 64%;
-	display: inline-block;
-	height: 100%;
-}
-#housingMatcherRight {
-	width: 35%;
-	float: right;
-	display: inline-block;
-	margin-top: 0px;
-	border-left: 2px solid rgb(51,62,106);
-}
-.swipe {
-	overflow: hidden;
-	visibility: hidden;
-	position: relative;
-	width: 99%;
-	margin-left: auto;
-	margin-right: auto;
-}
-.swipe-wrap {
-	overflow: hidden;
-	position: relative;
-}
-.swipe-wrap > div {
-	float: left;
-	width: 100%;
-	min-height: 100%;
-	position: relative;
-}
-#housingQ {
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: .875em;
-	color: rgb(116,116,116);
-	font-weight: normal;
-	text-align: center;
-	margin-top: 0px;
-	font-style: italic;
-}
-#housingQ h3 {
-	font-family: HNL;
-	font-size: 1.875em;
-	color: rgb(140,146,162);
-	font-weight: normal;
-	text-align: center;
-	margin-top: 0px;
-	margin-bottom: 5px;
-	margin: auto;
-	font-style: normal;
-}
-#matcherBottomWrap {
-	width: 100%;
-	margin-top: 25px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	color: red;
-}
-.prev {
-	background-color: transparent;
-	border: none;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: .875em;
-	color: rgb(51,62,106);
-	font-weight: normal;
-	margin-right: auto;
-	margin-left: auto;
-}
-.next {
-	background-color: transparent;
-	border: none;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: .875em;
-	color: rgb(51,62,106);
-	font-weight: normal;
-	margin-right: auto;
-	margin-left: auto;
-}
-#matcherImportance {
-	background-color: rgb(230, 229, 228);
-	border-width: 1px;
-	border-color: rgb(51, 62, 106);
-	border-style: solid;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: .875em;
-	width: 45%;
-	margin-left: auto;
-	margin-right: auto;
-	display: inline-block;
-	display: inline-block;
-	margin-top: -25px;
-}
-#matcherImportance #choice {
-	width: 43%;
-}
-#recommended {
-	width: 100%;
-	font-size: .875em;
-	display: inline-block;
-	margin-left: 15px;
-}
-#recommendedWrap {
-	margin-top: 30px;
-}
-#recommended h2 {
-	font-family: HNB;
-	font-size: 1.875em;
-	color: rgb(51, 62, 106);
-	text-align: left;
-	margin-top: 0px;
-	margin-bottom: -18px;
-	padding-bottom: 0px;
-}
-#recommended .compare {
-	font-family: HNL;
-	color: rgb(116,116,116);
-	font-size: .875em;
-	margin-left: 3px;
-	position: relative;
-	top: 2px;
-}
-#recommended #compareDiv {
-	margin-top: 5px;
-	height: 10px;
-	margin-bottom: -5px;
-}
-#recommended #compareDiv img {
-	vertical-align: middle;
-}
-#recommended .interests {
-	font-family: HNB;
-	font-size: .875em;
-	color: rgb(140,146,162);
-}
-.appDate {
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: .875em;
-	color: rgb(51,62,106);
-	margin-left: 15px;
-}
-#housingVideo {
-	width: 105px;
-	height: 95px;
-	float: left;
-	display: inline-block;
-	background-color: rgb(51, 62, 106);
-	border-radius: 5px;
-	margin-right: 15px;
-	margin-bottom: 10px;
-}
-/* ------- homepage ----------*/
-#homeSwipe {
-	background-color: rgb(230, 229, 228);
-	border: 2px solid rgb(116,116,116);
-}
-#homeSwipeLeft {
-	width: 49.5%;
-	height: 300px;
-	display: inline-block;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-#homeSwipeRight {
-	width: 50%;
-	display: inline-block;
-	height: 300px;
-	padding-right: 10px;
-	float: right;
-	padding-top: 5px;
-}
-#getAdvice {
-	background-color: rgb(51,62,106);
-	color: white;
-	font-family: HNB;
-	font-size: 1.875em;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	padding-left: 5px;
-}
-.adviceName {
-	font-family: HNL;
-}
-#homeSwipeLeftRight {
-	display: inline-block;
-	width: 280px;
-	text-align: center;
-	font-family: HNB;
-	font-size: 1.875em;
-	color: rgb(51,62,106);
-	height: 250px;
-	margin-right: 5px;
-}
-#homeSwipeLeftRight a:link {
-	font-size: .875em;
-	font-family: Georgia, "Times New Roman", Times, serif;
-}
-#homeSwipeLeftRight .swipeLink {
-	font-size: .875em;
-	padding-bottom: 5px;
-}
-#homeSwipeVideo {
-	width: 100%;
-	height: 98%;
-	background-color: white;
-}
-#bulletsWrap {
-	margin-top: 15px;
-	margin-bottom: 15px;
-}
-bullets {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-bullets ul, nav ol {
-	list-style: none;
-	list-style-image: none;
-	margin: 0;
-	padding: 0;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
-bullets #position li {
-	display: inline-block;
-	width: 12px;
-	height: 12px;
-	border-radius: 10px;
-	background: white;
-	border: 2px solid rgb(116,116,116);
-	margin: 0 5px;
-}
-bullets #position li.on {
-	background-color: rgb(220, 134, 39);
-}
-bullets #position button {
-	background-color: transparent;
-	border: none;
-}
-
+/* ======================== EXPERIMENTAL STUFF ======================= */
