@@ -325,15 +325,16 @@
 	padding-left: 50px;
 	padding-top:20px;
 	padding-bottom:20px;
+	position:relative;
+	margin-top:-20px;
 }
-.matchDetails:before {
-    content:"";
-    display: block;
+.matchDetails .triangle{
+	position:absolute;
     border: 12px solid transparent;
     border-bottom-color: rgb(232, 229, 228);
     position: absolute;
-    left: 1px;
-    margin-left:0;
+    left: 216px;
+   	top:-24px;
 }
 
 .mdCircle{
