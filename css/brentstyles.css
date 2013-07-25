@@ -197,6 +197,7 @@ body {
 	width:940px;
 	margin:auto;
 	margin-top:3px;
+	margin-bottom:10px;
 	min-height: 170px;
 	background-color: white;
 	padding-top:20px;
@@ -1597,7 +1598,7 @@ margin:auto;
 
 #housingMain #left #item h3{
 	font-family:HNB;
-	font-size:18px;
+	font-size:24px;
 	margin-bottom:5px;
 }
 
