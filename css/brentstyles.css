@@ -31,7 +31,8 @@ a:active {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Time
 /* ============== MAIN CONTENT ====================*/
 #maincontent {
 	background: white;
-	width: 97.5%;
+	width: 1000px;
+	max-width:100%;
 	margin: 0 auto;
 	
 }
@@ -130,10 +131,8 @@ body {
 /*=========housing matcher results ===============*/
 
 #housingResultsContainer {
-	width: 90%;
-	float: none;
-	margin: auto;
-	text-align:center;
+	width:1000px;
+	max-width:100%;
 	}
 	
 #housingResultsContainer .button {
@@ -195,8 +194,7 @@ body {
 }
 	
 #housingResultsContainer #preferences {
-	width:1100px;
-	max-width:100%;
+	width:940px;
 	margin:auto;
 	margin-top:3px;
 	min-height: 170px;
@@ -306,13 +304,14 @@ ol li {
 	margin-top: 25px;
 }
 #matches {
-	width: 100%;
+	width: 1000px;
+	max-width:100%;
 	background-color: white;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 12px;
 	color: rgb(116,116,116);
 	text-align:center;
-	margin-top:10px;
+	margin-top:20px;
 }
 #matches h3 {
 	font-size: 18px;
@@ -324,7 +323,7 @@ font-family: HNB;
 	margin-right: 10px;
 }
 #matchInfo {
-	width: 397px;
+	width: 270px;
 	max-width:100%;
 	display: inline-block;
 	margin-top:20px;
@@ -336,6 +335,7 @@ font-family: HNB;
 	color: rgb(220, 134, 39);
 	font-size: 12px;
 	display: inline;
+	
 }
 
 #matchInfo .interests{
@@ -352,7 +352,7 @@ font-family: HNB;
 
 }
 
-re
+
 .date{
 	color:rgb(220, 134, 39);
 	font-size:14px;
@@ -361,7 +361,7 @@ re
 	margin-left:5px;
 }
 #matches #availability {
-	width: 710px;
+	width: 680px;
 	max-width:100%;
 	min-height:170px;
 	border: 1px solid rgb(51,62,106);
@@ -401,7 +401,7 @@ re
 }
 
 #housingResultsContainer #video{
-	width: 297px;
+	width: 270px;
 	max-width:100%;
 	min-height:175px;
 	display: inline-block;
@@ -414,7 +414,7 @@ re
 
 #housingResultsContainer #compatibility{
 	min-height:168px;
-	width: 810px;
+	width: 680px;
 	max-width:100%;
 	display: inline-block;
 	padding-left: 10px;
@@ -439,30 +439,30 @@ re
 
 /* ------------ housing matcher --------------*/
 #housingMatcherContainer{
-	width:100%;
+	width:1000px;
+	max-width:100%;
+	margin-top:20px;
 	margin:auto;
-	margin-top:10px;
 	text-align:center;
-}
+	}
 #housingMatcherContainer #housingMatcherLeft {
-	width:100%;
-	max-width: 620px;
+	width:610px;
+	max-width: 100%;
 	display: inline-block;
-	height:100%;
 	vertical-align:top;
-	text-align:left;	
+	margin-top:10px;
 }
 
 
 #housingMatcherContainer #housingMatcherRight {
-	width:100%;
-	max-width:350px;
+	width:350px;
+	max-width:100%;	
 	display: inline-block;
 	margin-top: 0px;
-		border-left: 2px solid rgb(51,62,106);
-		text-align:left;
-			width:100%;
-	padding-left:20px;
+	border-left: 2px solid rgb(51,62,106);
+	text-align:left;
+	padding-left:10px;
+		margin-top:10px;
 }
 
 
@@ -533,6 +533,7 @@ re
 	text-align: center;
 	margin-top: 0px;
 	font-style: italic;
+	width:100%;
 }
 #housingQ h3 {
 	font-family: HNL;
@@ -548,17 +549,26 @@ re
 
 
 #matcherBottomWrap {
+			margin:auto;
+
 	margin-top: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
 	display: inline-block;
+		text-align: center;
+}
+#matcherBottomWrap #matcherImportance {
+	margin:auto;
+	vertical-align:top;
 }
 
-#nextCount{
+#matcherBottomWrap #nextCount{
 	display: inline-block;
-	width:170px;
+	width:150px;
 	height:100px;
+	margin:auto;
+		vertical-align:top;
+		padding-top:10px;
+		padding-left:20px;
+
 }
 
 #nextCount p{
@@ -593,22 +603,22 @@ re
 	
 }
 #matcherImportance {
+	display: inline-block;
 	background-color: rgb(230, 229, 228);
 	border-width: 1px;
 	border-color: rgb(51, 62, 106);
 	border-style: solid;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 14px;
-	display: inline-block;
-	width:45%;
+	width:400px;
 	padding-bottom:10px;
-	margin-right:auto;
-	margin-left:auto;
+	
 }
 
 
 #recommended{
-	width:100%;
+	width:300px;
+	max-width:100%;
 	font-size:14px;
 	display:inline-block;
 	margin-left:15px;
@@ -1120,13 +1130,14 @@ display:inline-block;
 
 
 #property{
-	width:100%;
+	width:1000px;
+	max-width:100%;
 	margin:auto;
 	text-align:center;
 	}
 #property #left{
 	width:100%;
-	max-width:390px;
+	max-width:350px;
 	display:inline-block;
 	height:900px;
 	margin-top:15px;
@@ -1265,7 +1276,7 @@ margin:0;
 
 #property #right{
 	width:100%;
-	max-width:665px;
+	max-width:550px;
 	display:inline-block;
 	background-color:white;
 	border-left:2px solid rgb(51,62,106);
@@ -1286,7 +1297,7 @@ margin:0;
 
 #property #right #dormTour #video{
 	height:260px;
-	width:500px;
+	width:385px;
 	border-radius:5px;
 	background-color:gray;
 	display:inline-block;	
@@ -1299,7 +1310,6 @@ margin:0;
 }
 
 #property #right #dormTour #pics{
-	float:right;
 	margin-top:15px;
 	display:inline-block;
 }
@@ -1388,9 +1398,8 @@ margin:0;
 
 #property #right #pricing #wrap #col{
 	display:inline-block;
-	margin-right:30px;
-	max-width:130px;
-	min-width:117px;
+	margin-right:10px;
+	width:117px;
 }
 
 #property #right #pricing #wrap #col ul li{
@@ -1409,7 +1418,8 @@ margin:0;
 /* property media page*/
 
 #picsAndVids{
-	width:90%;
+	width:1000px;
+	max-width:100%;
 	border-bottom:2px solid rgb(51,62,106);
 	text-align:center;
 }
@@ -1423,14 +1433,13 @@ margin:0;
 
 #picsAndVids #videoWrap{
 	width:100%;
-	max-width:520px;
+	max-width:420px;
 	vertical-align:top;
 	display:inline-block;
 	text-align:left;
 	margin-right:20px;
 }
 #picsAndVids #picsWrap{
-	width:100%;
 	max-width:520px;
 	display:inline-block;
 	text-align:left;
@@ -1479,7 +1488,8 @@ margin:0;
 }
 
 #availUpload{
-	width:100%;
+	width:1000px;
+	max-width:100%;
 	text-align:center;
 	vertical-align:top;
 
@@ -1488,7 +1498,7 @@ margin:0;
 #availUpload #availability{
 	border:none;
 	width:100%;
-	max-width:500px;
+	max-width:400px;
 	display:inline-block;
 	height:485px;
 	text-align:left;
@@ -1570,14 +1580,16 @@ button{
 
 
 #housingMain{
-width:100%;
+width:1000px;
+max-width:100%;
 text-align:center;
+margin:auto;
 }
 
 #housingMain #left{
 	margin-top:20px;
 	width:100%;
-	max-width:630px;
+	max-width:600px;
 	display:inline-block;
 	text-align:left;
 	border-right:2px solid rgb(51,62,106);
@@ -1593,7 +1605,7 @@ text-align:center;
 	max-width:100%;
 	width:340px;
 	display:inline-block;
-	text-align:left;
+	text-align:center;
 	vertical-align:top;
 	padding-left:10px;
 	margin-top:20px;
@@ -2012,7 +2024,7 @@ padding-top:1px;
 
 
 
-@media (max-width:1020px) { 
+@media (max-width:1000px) { 
 	#housingMain #left{
 	border:none;
 	
@@ -2025,7 +2037,10 @@ padding-top:5px;
 #housingMain #right{
 	width:90%;
 }
-
+#housingMain #housingQ{
+	
+	
+}
 #matcherBottomWrap {
 	width:100%;
 	margin:auto;
@@ -2035,7 +2050,7 @@ padding-top:5px;
 	border:none;
 		border-top: 2px solid rgb(51,62,106);
 
-}
+}	
 
 
 }
