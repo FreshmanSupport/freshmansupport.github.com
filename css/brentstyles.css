@@ -331,10 +331,14 @@ font-family: HNB;
 	text-align:left;
 	vertical-align:top;
 }
+#matchInfo h3{
+	font-size:24px;
+	
+}
 #matchInfo .compatibility {
 	font-style: italic;
 	color: rgb(220, 134, 39);
-	font-size: 12px;
+	font-size: 14px;
 	display: inline;
 	
 }
@@ -1307,7 +1311,7 @@ margin:0;
 
 #property #right #dormTour #video{
 	height:260px;
-	width:385px;
+	width:365px;
 	border-radius:5px;
 	background-color:gray;
 	display:inline-block;	
@@ -1977,7 +1981,47 @@ margin-bottom:20px;
 
 }
 
+#pdf{
+text-align:left;
+color:rgb(51,62,106);
+font-size:14px;
+}
+#pdf p{
+	font-size:14px;
+	margin-top:0;
+	color:rgb(116,116,116);
+	font-family:Georgia;
+}
+#pdf .matchess .info{
+	margin-top:50px;
+	width:220px;
+	display:inline-block;
+	vertical-align:top;
+}
+#pdf .matchess{
+margin-left:5px;
+}
+#pdf .matchess .compatibility{
+	display:inline-block;
+	vertical-align:top;
+	margin-top:50px;
+	padding-top:15px;
+		width:800px;
+	
+}
+#pdf .matchess .info h3{
+text-align:left;
+font-size:24px;
+color:rgb(51,62,106);
+font-family:HNB;
+margin-bottom:0;
+margin-top:0;
+}
 
+
+#pdf .matchess{
+	width:100%;
+}
 
 /* generic */
 
