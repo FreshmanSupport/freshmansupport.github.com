@@ -202,6 +202,7 @@
 #roomieSlider .rmLabel{display:inline-block;}
 
 #roomieSlider .topRmLabel{display:inline-block;}
+#roomieSlider .topRmLabel p{color:rgb(51,62,106);}
 #roomieSlider .botRmLabel{display:inline-block;}
 #roomieSlider .topRmLabel p:first-child {
 	color: rgb(51,61,105);
@@ -232,7 +233,10 @@
 	margin-right: 5px;
 }
 #roomieSlider input[type=radio]:checked + label{background-color: rgb(51,61,105);}
-
+#roomieSlider .hogwartsRow label{
+	margin-right: 30px;
+}
+#roomieSlider input[type='text']{width: 375px;}
 /* ====== Initial color for buttons =========== */
 #roomieSlider .initialColor label:nth-child(3){
 	background-color:rgb(182,197,220);
@@ -249,6 +253,28 @@
 #roomieSlider .initialColor label:nth-child(11){
 	background-color:rgb(51,61,105);
 }
+/* =============== Hogwart Color ========== */
+#roomieSlider .initialColor.hogwartsRow label:nth-child(3){
+	background-color:rgb(152,53,31);
+}
+#roomieSlider .initialColor.hogwartsRow label:nth-child(5){
+	background-color:rgb(50,102,153);
+}
+#roomieSlider .initialColor.hogwartsRow label:nth-child(7){
+	background-color:rgb(247,236,55);
+}
+#roomieSlider .initialColor.hogwartsRow label:nth-child(9){
+	background-color:rgb(1,102,53);
+}
+#roomieSlider .initialColor.hogwartsRow label:nth-child(11){
+	background-color:gray;
+}
+#roomieSlider .hogwartsRow input[type=radio]:checked + label:nth-child(3){background-color:rgb(152,53,31);}
+#roomieSlider .hogwartsRow input[type=radio]:checked + label:nth-child(5){background-color:rgb(50,102,153);}
+#roomieSlider .hogwartsRow input[type=radio]:checked + label:nth-child(7){background-color:rgb(247,236,55);}
+#roomieSlider .hogwartsRow input[type=radio]:checked + label:nth-child(9){background-color:rgb(1,102,53);}
+#roomieSlider .hogwartsRow input[type=radio]:checked + label:nth-child(11){background-color: gray;}
+
 #roomieSlider .disclaimerContainer{width: 500px; display:block; margin: 0 auto;}
 #roomieSlider .disclaimerContainer h2{color:gray;}
 #roomieSlider .disclaimerContainer .checkContainer{margin-top: 25px; margin-left: 94px; color:rgb(51, 62, 107);}
@@ -637,13 +663,31 @@
 	border-bottom: 2px solid gray;
 	border-left: 2px solid gray;
 }
+.finances .stateWrap{display:block; margin:0 auto; width: 145px;}
+.finances .stateTextWrap{display:block; margin:0 auto; width: 155px; margin-bottom: 10px;}
+.finances .stateWrap label{
+	display:inline-block;
+	vertical-align:top;
+	width: 35px;
+	height: 35px;
+	background-color: white;
+	border: 1px solid rgb(51,61,105);
+	border-radius:50%;
+	margin-right: 5px;
+}
+.finances .stateWrap input[type=radio]:checked + label{background-color:rgb(51,61,105);}
+
+.finances .semesterWrap{display:block; margin:0 auto; width: 325px;}
 .finances #budgetPlanner input[type=radio]{
 	display:none;
 }
-.finances #budgetPlanner label{
+.finances .stateWrap.initialColor label:nth-child(2){background-color:rgb(51,61,105);}
+.finances .stateWrap.initialColor label:nth-child(4){background-color:rgb(182,197,220);margin-left:60px;}
+.finances .semesterWrap label{
+	display:inline-block;
 	color:white; 
 	background-color:rgb(51, 62, 107); 
-	width: 150px; 
+	width: 100px; 
 	height:40px; 
 	text-align:center; 
 	text-decoration:none;
@@ -653,7 +697,20 @@
 	margin:0 auto;
 	margin-top: 20px;
 	padding: 5px 10px;
+	cursor:pointer;
 }
+.inS{color:rgb(51, 62, 107);}
+.outS{color:rgb(182,197,220);}
+.finances .next{
+	border: 0;
+	background-color: transparent;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: rgb(51, 62, 107);
+	text-decoration:none;
+	float:right;
+}
+.finances .semesterWrap input[type=radio]:checked + label{background-color:rgb(220, 134, 39);}
 .cost{color:rgb(51, 62, 107); font-size: 34px; font-family:HBL; text-align:center;}
 .go{
 	display:block; 
@@ -704,12 +761,14 @@
 .footer p:last-child {
 	margin-bottom: 25px;
 }
-.footer img {
-	margin: 0 auto;
-	width: 50px;
-	height: 50px;
-	display: block;
-	margin-top: 10px;
+
+.footer .pic{
+	vertical-align:top;
+	width: 45px;
+	height: 45px;
+	background-color: gray;
+	border-radius:50%;
+	margin-right: 5px;
 }
 .footer form {
 	margin: auto;
