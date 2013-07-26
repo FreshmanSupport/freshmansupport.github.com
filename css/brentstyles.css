@@ -407,9 +407,23 @@ font-family: HNB;
 
 #housingResultsContainer #video{
 	width: 270px;
+	
 	max-width:100%;
 	min-height:175px;
 	display: inline-block;
+	margin-top:15px;
+	text-align:left;
+	vertical-align:top;
+	background-color:gray;
+	border-radius:5px;
+	
+}
+#housingResultsContainer #videoResp{
+	width: 270px;
+	margin-left:140px;
+	max-width:100%;
+	min-height:175px;
+	display: none;
 	margin-top:15px;
 	text-align:left;
 	vertical-align:top;
@@ -625,8 +639,7 @@ font-family: HNB;
 
 
 #recommended{
-	width:300px;
-	max-width:100%;
+	width:100%;
 	font-size:14px;
 	display:inline-block;
 	margin-left:15px;
@@ -1259,6 +1272,10 @@ margin:0;
 	max-width:100%;
 	margin:auto;
 	font-size:24px;
+}
+
+#leasingPro img{
+	width:950px;
 }
 
 #property #left #information #selector button, #leasingPro button{
@@ -2098,6 +2115,11 @@ padding-top:5px;
 	
 	
 }
+#recommended{
+	margin:auto;
+	width:50%;
+	display:inline-block;
+}
 #matcherBottomWrap {
 	width:100%;
 	margin:auto;
@@ -2106,17 +2128,37 @@ padding-top:5px;
 #housingMatcherContainer #housingMatcherRight {
 	border:none;
 		border-top: 2px solid rgb(51,62,106);
-
+	width:80%;
 }	
 
 
+#housingMatcherContainer #housingMatcherLeft {
+	width:80%;
+	margin-bottom:10px;
+}	
 
+#picsAndVids{
+	max-width:80%;
 
+	margin-bottom:10px;
+	padding-bottom:15px;
+}
+
+#matches #videoResp{
+	display:inline-block;
+}
+
+#matches #video{
+	display:none;
+}
 }
 
 
 
 @media (max-width:950px) { 
+
+
+
 
 /*types of housing */
 #wrap{
@@ -2131,7 +2173,7 @@ height:500px;
 	#reviewsPage #left{
 	border:none;
 	border-bottom:2px solid rgb(51,62,106);
-	
+	min-height:0px;
 
 }
 
@@ -2142,13 +2184,37 @@ height:500px;
 
 }
 
-.propReviews #left{
-	min-height:none;
+#leasingPro img{
+	width:600px;
 }
+
 	
+	#availUpload{
+		width:100%;
+		max-width:100%;
+	}
+#availUpload #upload {
+	height:auto;
+	width:80%;
+	max-width:80%;
+	border:none;
+		border-top:2px solid rgb(51,62,106);
+}
+
+#availUpload #availability{
+	height:auto;
+	width:80%;
+	max-width:80%;
+	
+}
+.mediapage #recommendedHousingFooter {
+	width:80%;
+	margin-top:10px;
+}
 
 
 }
+
 
 @media (max-width:650px) { 
 
@@ -2166,6 +2232,11 @@ height:1000px;
 	
 #recommendedHousingFooter #item{
 	margin-top:0px;
+}
+
+
+#leasingPro img{
+	width:400px;
 }
 
 
