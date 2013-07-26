@@ -1723,8 +1723,8 @@ padding-bottom:10px;
 }
 
 #reviewsPage #right{
-	width:100%;
-	max-width: 350px;
+	max-width:100%;
+	width: 350px;
 	display: inline-block;
 	vertical-align:top;
 	text-align:left;
@@ -1889,6 +1889,7 @@ font-family:Georgia;
 	display:inline-block;
 	text-align:center;
 	vertical-align:top;
+	margin-top:-15px;
 	
 }
 .panel1, .panel2, .panel3 {
@@ -1956,7 +1957,7 @@ font-family:Georgia;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:10px;
-
+	
 }
 #compareTypes table{
 font-size:14px;
@@ -2107,6 +2108,66 @@ padding-top:5px;
 		border-top: 2px solid rgb(51,62,106);
 
 }	
+
+
+
+
+}
+
+
+
+@media (max-width:950px) { 
+
+/*types of housing */
+#wrap{
+height:500px;
+	}
+	#compareTypes{
+		margin-top:270px;
+	}
+	#flipWrap{
+	margin-top:0px;
+	}
+	#reviewsPage #left{
+	border:none;
+	border-bottom:2px solid rgb(51,62,106);
+	
+
+}
+
+	#reviewsPage #right{
+	width:580px;
+	max-width:100%;
+	margin-top:0px;
+
+}
+
+.propReviews #left{
+	min-height:none;
+}
+	
+
+
+}
+
+@media (max-width:650px) { 
+
+/*types of housing */
+#wrap{
+height:1000px;
+	}
+	#compareTypes{
+		margin-top:510px;
+		}
+	#flipWrap{
+	margin-top:0px;
+	}
+	
+	
+#recommendedHousingFooter #item{
+	margin-top:0px;
+}
+
 
 
 }
