@@ -652,19 +652,27 @@
 }
 
 /* ============= Fianance ===================== */
+
+.finances #topFinances{
+	border-bottom: 2px solid gray;
+}
 .finances #recentAnswers{
-	border-bottom: 2px solid gray;
 }
-.finances #data{
-	border-bottom: 2px solid gray;
-	border-left: 2px solid gray;
-}
+
+.finances #data{border-left: 2px solid gray;}
+
+.finances #data p{margin-bottom: 0;}
+.finances #data .view{margin-top: 35px;}
 .finances #fafsa{
-	border-bottom: 2px solid gray;
 	border-left: 2px solid gray;
 }
+.finances #fafsa .goContain{margin-top: 58px; margin-bottom:70px;}
+
+.finances #budgetPlanner{margin-top:10px; margin-bottom:30px;}
+
+.finances #state{margin-top:20px;} 
 .finances .stateWrap{display:block; margin:0 auto; width: 145px;}
-.finances .stateTextWrap{display:block; margin:0 auto; width: 155px; margin-bottom: 10px;}
+.finances .stateTextWrap{display:block; margin:0 auto; width: 180px;; margin-bottom: 10px; font-size: 18px;}
 .finances .stateWrap label{
 	display:inline-block;
 	vertical-align:top;
@@ -677,7 +685,8 @@
 }
 .finances .stateWrap input[type=radio]:checked + label{background-color:rgb(51,61,105);}
 
-.finances .semesterWrap{display:block; margin:0 auto; width: 325px;}
+.finances .semesterWrap{display:block; margin:0 auto; width: 385px;}
+.finances #budgetPlanner h3{color:gray; margin-bottom: 0;}
 .finances #budgetPlanner input[type=radio]{
 	display:none;
 }
@@ -687,16 +696,15 @@
 	display:inline-block;
 	color:white; 
 	background-color:rgb(51, 62, 107); 
-	width: 100px; 
+	width: 125px; 
 	height:40px; 
 	text-align:center; 
-	text-decoration:none;
-	padding-top: 5px;
-	font-size: 24px;
+	text-decoration:none;;
+	font-size: 18px;
 	font-family:HNB, Arial, Helvetica, sans-serif;
 	margin:0 auto;
-	margin-top: 20px;
-	padding: 5px 10px;
+	margin-top: 10px;
+	padding-top:8px;
 	cursor:pointer;
 }
 .inS{color:rgb(51, 62, 107);}
@@ -809,6 +817,12 @@
 	text-align: left;
 	background-position: 46px 2px;
 }
+.footer #officers{
+	width: 49%; 
+	margin:0 auto; 
+	display:inline-block;
+}
+
 /* ============== COLUMN  ===================*/
 
 /* Select all of the column*/

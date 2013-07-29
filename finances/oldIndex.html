@@ -6,6 +6,52 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>University of Texas at Austin | Freshman Support</title>
 <script src="../js/swipe.js"></script>
+<style>
+span{
+	position: absolute;
+	right: 0;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	padding: 3px;
+	color: #FFF;
+	text-align: center;
+	background: #c06f59;
+	border-radius: 50%;
+}
+ 
+span:after{
+	content: "no"; /*if CSS are disbled span elements are not displayed*/
+}
+ 
+input{
+	position: absolute;
+	right: 0;
+	margin: 0;
+	width: 31px;
+	height: 31px;
+	/*hide the radio button*/
+	filter:alpha(opacity=0);
+	-moz-opacity:0;
+	-khtml-opacity: 0;
+	opacity: 0;
+        cursor: pointer;
+}
+ 
+input[type="radio"] + span{ /*the span element that immediately follow the radio button */
+	visibility: hidden; /*temporarily hide the "YES" label*/
+	background: #6EB558;
+}
+ 
+input[type="radio"] + span:after{
+	content: "yes"; /*if CSS are disbled span elements are not displayed*/
+}
+ 
+ 
+input[type="radio"]:checked + span{
+	visibility: visible; /*show the "YES" label only if the radio button is checked*/
+}
+</style>
 </head>
 
 <body>
@@ -170,45 +216,13 @@
   </div>
 </div>
 </div>
-<div class="footer">
-  <h2>Ask a Financial Advisor</h2>
-  <p style="text-align:center">Select who you would like to message</p>
-  <div id="leftWrap">
-    <div id="advisorWrap">
-      <div id="pic"></div>
-      <div id="info">
-        <p>Lindsay Bluth</p>
-        <p>Salesperson</p>
-        <p>Hot Topic</p>
-      </div>
-    </div>
-    <div id="advisorWrap">
-      <div id="pic"></div>
-      <div id="info">
-        <p>Lindsay Bluth</p>
-        <p>Salesperson</p>
-        <p>Hot Topic</p>
-      </div>
-    </div>
-    <br />
-    <div id="advisorWrap">
-      <div id="pic"></div>
-      <div id="info">
-        <p>Lindsay Bluth</p>
-        <p>Salesperson</p>
-        <p>Hot Topic</p>
-      </div>
-    </div>
-    <div id="advisorWrap">
-      <div id="pic"></div>
-      <div id="info">
-        <p>Lindsay Bluth</p>
-        <p>Salesperson</p>
-        <p>Hot Topic</p>
-      </div>
-    </div>
-  </div>
-  <div id="rightWrap">slkdfj</div>
+<div class="footer" style="margin-top: 700px;">
+ <ul>
+    <li><label for="radio1">label 1</label><span></span><input type="radio" id="radio1" name="myRadio" checked="checked"/><span></span></li>
+    <li><label for="radio2">label 2</label><span></span><input type="radio" id="radio2" name="myRadio" /><span></span></li>
+    <li><label for="radio3">label 3</label><span></span><input type="radio" id="radio3" name="myRadio" /><span></span></li>
+    <li><label for="radio4">label 4</label><span></span><input type="radio" id="radio4" name="myRadio" /><span></span></li>
+  </ul>
 </div>
 
 </body>
