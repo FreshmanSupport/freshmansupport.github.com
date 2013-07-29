@@ -660,6 +660,7 @@ margin-top:23px;
 	margin-top:-5px;
 	margin-bottom:-18px;
 	padding-bottom:0px;
+	margin-left:0px;
 }
 
 
@@ -667,13 +668,14 @@ margin-top:23px;
 #recommended .compare{
 	font-family: HNL;
 	color:rgb(116,116,116);
-	margin-left:3px;
+	margin-left:0px;
 	position:relative;
 	top:2px	;
 }
 
 #recommended #compareDiv{
 	margin-top:0px;
+	
 	height:10px;
 }
 
@@ -700,7 +702,7 @@ line-height:20px;
 	width:120px;
 	height:98px;
 	float:left;
-	display:inline-block;	
+	display:block;	
 	background-color:rgb(51, 62, 106);
 	border-radius:5px;
 	margin-right:15px;
@@ -1773,7 +1775,7 @@ padding-bottom:10px;
 }
 
 #reviewsPage h3{
-	font-size:18px;
+	font-size:24px;
 	font-family:HNB;
 	text-align:center;
 	margin-bottom:5px;
@@ -2305,6 +2307,11 @@ height:500px;
 	margin-left:0px;
 }
 
+	#reviewsPage #left  .votes{
+margin-left:100px;
+	}
+
+
 /*types of housing */
 #wrap{
 height:1000px;
@@ -2335,6 +2342,9 @@ height:1000px;
 width:1200px;
 
 }
+#content {
+	width:1200px;
+}
 
 #housingMain #left{
 width:750px;
@@ -2359,9 +2369,96 @@ width:400px;
 	margin-left:301px;
 }
 
+#housingMatcherContainer{
+	width:1200px;
+	
+	}
+
+	#housingMatcherContainer #housingMatcherLeft{
+	width:750px;
+	}
+	#housingMatcherContainer #housingMatcherRight{
+		width: 400px;
+		max-width:100%;
+	}
+
+	#reviewsPage{
+	width:1200px;
+	
+}
+#reviewsPage #left{
+width:750px;
+}
+
+#reviewsPage #right{
+width:400px;
+}
+#reviewsPage #left  .review{
+
+		width:730px;
+	}
+	
+	#reviewsPage #left  .votes{
+margin-left:370px;
+	}
+}
 
 
+
+
+@media (min-width:1580px){
+#housingMain{
+width:1500px;
 
 }
+
+#housingMain #left{
+width:900px;
+
+}
+
+#housingMain #right{
+width:500px;
+}
+#maincontent {
+	background: white;
+	width: 1500px;
+	max-width:100%;
+	margin: 0 auto;
+	
+}
+#housingMain #left .compareWrap{
+	margin-left:167px;
+}
+#searchwrapper{
+	border:1px solid rgb(51,62,106);
+	margin-left:301px;
+}
+
+#housingMatcherContainer{
+	width:1500px;
+	
+	}
+
+	#housingMatcherContainer #housingMatcherLeft{
+	width:900px;
+	}
+	#housingMatcherContainer #housingMatcherRight{
+		width: 500px;
+		max-width:100%;
+	}
+	#reviewsPage #left  .review{
+
+		width:830px;
+	}
+	
+	#reviewsPage #left  .votes{
+margin-left:670px;
+	}
+
+	
+	
+}
+
 
 
