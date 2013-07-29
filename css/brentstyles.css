@@ -60,6 +60,7 @@ a:active {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Time
 	font-size: 14px;
 }
 
+
 /* ============== Footer  ===================*/
 .footer {
 	width: 99%;
@@ -475,7 +476,7 @@ font-family: HNB;
 }
 
 
-#housingMatcherContainer #housingMatcherRight {
+ #housingMatcherRight {
 	width:350px;
 	max-width:100%;	
 	display: inline-block;
@@ -484,6 +485,7 @@ font-family: HNB;
 	text-align:left;
 	padding-left:10px;
 		margin-top:10px;
+		vertical-align:top;
 }
 
 
@@ -1279,10 +1281,17 @@ margin:0;
 }
 
 #leasingPro img{
-	width:950px;
+	width:90%;
+	display:inline-block;
 }
+#leasingPro .top{
+	width:100%;
+}
+	#leasingPro  #housingMatcherRight {
+display:none;
+	}
 
-#property #left #information #selector button, #leasingPro button{
+#property #left #information #selector button, #leasingPro .top button{
 	color:rgb(51,62,106);
 	background-color:white;
 		font-size:inherit;
@@ -2331,6 +2340,7 @@ height:1000px;
 
 #leasingPro img{
 	width:400px;
+	
 }
 
 
@@ -2338,6 +2348,11 @@ height:1000px;
 }
 
 @media (min-width:1300px){
+
+
+
+
+
 #housingMain{
 width:1200px;
 
@@ -2401,12 +2416,37 @@ width:400px;
 	#reviewsPage #left  .votes{
 margin-left:370px;
 	}
+	#leasingPro {
+		width:1200px;
+	}
+	
+	#leasingPro  #housingMatcherRight {
+	display:inline-block;
+	width:350px;
+	border:none;
+
+	}
+	#recommendedHousingFooter{
+	display:none;
+	}
+	#leasingPro .top{
+		margin:auto;
+text-align:center;
+	padding-right:20px;
+	border-right:2px solid rgb(116,116,116);
+	margin-top:10px;
+	max-width:800px;
+	
+}
+
 }
 
 
 
 
 @media (min-width:1580px){
+
+
 #housingMain{
 width:1500px;
 
