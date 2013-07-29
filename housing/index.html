@@ -50,17 +50,210 @@
   </div>
   <div id="subNav">
     <ul>
-      <li><a href="matcher">Matching Questionnaire</a></li>
-      <li><a>Student Profiles</a></li>
-      <li><a href="matcher/results">Search Matches</a></li>
+      <li><a href="propertyListing">Property Listing</a></li>
+      <li><a href="matcher">Housing Matcher</a></li>
+      <li><a href="reviews">Reviews</a></li>
+	        <li><a href="compare">Compare Housing</a></li>
+
+	        <li><a href="typesOfHousing">Types of Housing</a></li>
+			      <li><a href="leasingProcess">Leasing Process</a></li>
+
+
     </ul>
   </div>
 </div>
   <div id="maincontent">
   <div id="housingMain">
+<div id="squeezeTop">
+<div id="squeezeLeft">
+
+   <div id="deadlinesDiv">
+  <h2>June 18, 2013</h2>
+  <p>Fall Admissions Deadline</p>
+  <a href="">View More Deadlines</a>
+  
+  
+  </div>
+  
+  	  <div class="listOfReviews">
+ <h2>List of Properties</h2>
+  <div class="dropDown"  >
+<select>
+<option>Sort By</option>
+
+</select></div>  
+  
+  <div class="list">
+  <div class="item"><a href="">Dorm Name</a></div>
+   <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+
+  
+  </div>
+</div>
+  
+  
+  </div>  <!--end left-->
+
+  
+  <div id="squeezeRight">
+  
+    
+  <div id="matcher" >
+  
+  <div id="housingMatcherLeft" >
+	<h2 style="margin-bottom:0px">Housing Matcher</h2>
+    	<br>
+        <div id='sliderSqueeze' class='swipe'>
+  <div class='swipe-wrap'>
+    <div id="housingQ" >
+    <!---question 1-->
+    <h3 style="text-align:center; margin-bottom:5px; font-size:18px;">What Amenities are Important?</h3>
+    Click circles to rank amenities
+    
+    <div id="choices">
+    	
+       <div id="choice"><div id="lease" onClick=radio('lease') class="dealBreaker"></div>Individual Leases</div>
+        <div id="choice"><div id="internet" onClick=radio('internet') class="important"></div>Wireless Internet</div>
+      <div id="choice"><div id="cable" onClick=radio('cable') class="semiImportant"></div>Free Cable</div>
+   		<div id="choice"><div id="gated" onClick=radio('gated') class="notImportant"></div>Gated Community</div>
+
+		<div id="choice"><div id="parking" onClick=radio('parking') class="dealBreaker"></div>Parking</div>
+        <div id="choice"><div id="furnished" onClick=radio('furnished') class="notImportant"></div>Furnished</div>
+      	<div id="choice"><div id="pool" onClick=radio('pool') class="important"></div>Swimming Pool</div>
+   		<div id="choice"><div id="fitness" onClick=radio('fitness') class="dealBreaker"></div>Fitness Center</div>
+        
+        <div id="choice"><div id="balcony" onClick=radio('balcony')  class="dealBreaker"></div>Balcony</div>
+        <div id="choice"><div id="garage" onClick=radio('garage') class="important"></div>Parking Garage</div>
+      	<div id="choice"><div id="busroute" onClick=radio('busroute') class="notImportant"></div>Near Bus Route</div>
+   		<div id="choice"><div id="studyroom" onClick=radio('studyroom') class="dealBreaker"></div>Study Room</div>
+
+
+        
+        
+    
+    </div>
+    
+    
+    </div>
+    <div id="housingQ">
+    next
+    
+    </div>
+    <div id="housingQ">    	
+    next
+    
+</div>
+<div id="housingQ">    	
+    
+    
+    
+</div>
+<div id="housingQ">    	
+    
+    
+    
+</div>
+<div id="housingQ">    	
+    
+    
+    
+</div>
+<div id="housingQ">    	
+    
+    
+    
+</div>
+<div id="housingQ">    	
+    
+    
+    
+</div>
+<div id="housingQ">    	
+    
+    
+    
+</div>
+<div id="housingQ">    	
+    
+    
+    
+</div>
+<div id="housingQ">    	
+    
+    
+    
+</div>
+
+
+
+  </div>
+  
+</div>
+ 
+   
+    <div id="matcherBottomWrap">
+		
+    	
+
+	<div id="nextCount" style="margin-top:-40px">
+
+<p><font family="Georgia" style="italic">Question # of 11</font>
+<br />
+<button class='prev' onclick='mySwipeSqueeze.prev()'>< prev</button>
+
+    <button class='next' onclick='mySwipeSqueeze.next()'>next ></button></p>
+    </div>
+	<br>
+      <div id="matcherImportance" style="width:100%; max-width:400px; margin:auto; padding-left:10px; height:70px; margin-top:-10px;">
+   
+   <div id="choices" style="margin-top:17px">
+    	
+ 
+       <div id="choice" style="width:119px"><div id="important" class="notImportant"></div>Not Important</div>
+       <div id="choice" style="width:127px"><div id="important" class="semiImportant"></div>Semi-Important</div>
+       <div id="choice" style="width:93px"><div id="important" class="important"></div>Important</div>
+   	   <div id="choice" style="width:110px"><div id="important" class="dealBreaker"></div>Deal Breaker</div>
+
+</div></div></div></div></div>
+ 
+
+    
+  </div>
+  <!--end right-->
+  
+  </div>
+
   <div id="left">
 	<h2>Student Housing</h2>
-  
+    <div class="dropDown" style="display:inline-block;">
+<select>
+<option>Sort By</option>
+
+</select></div>  
+
+<div id="searchwrapper" style="display:inline-block;"><form action="">
+<input type="text" class="searchbox" name="s" value="" placeHolder="Search" style="border:none; margin-left:2px;"/>
+<img src="../img/magnifyingglass.png"/>
+</form>
+</div>
+
+<br><br>
   
 	<div id="item">
 		<div style="display:inline-block;">
@@ -84,11 +277,10 @@
 		<p>801 West 24th Street</p>
 		<p>$800-$1500</p>
 		</div>
-		<div id="inBetween" style="width:10px; height:20px;  max-width:20%; display:inline-block;"></div>
-		
+<div class="compareWrap">		
 		<div style="display:inline-block; text-align:right;  vertical-align:bottom;">
 			<a href=""> <div id="compareDiv" style="margin-bottom:28px">
-        <img src="../img/comparestar.gif" /><span class="compare">Compare</span>
+        <span class="compare">Compare</span>
         
         </div></a>
 
@@ -96,37 +288,36 @@
 			<br>
 			<button>Add to Roomie Match</button>
 		
-		
+		</div>
 		</div>
 		
-		<div style="display:inline-block; vertical-align:top; text-align:right; width:160px; height:120px; background-color:gray; border-radius:5px;  margin-right:15px;">
-		
-		</div>	
+<div class="video"></div>		
 		</div><br>
 				<span class="appDate">Recommended Application Date</span><span class="date">8-10-13</span>
 		<div id="checkAvailability">
+		
 			<h2>Check Availability</h2>
 			<span class="optional" style="margin-left:10px;">*Optional</span>
 			  <br>
 			  <div style="margin:10px">
-			  <textarea name="name" style="height:20px; width:155px; font-family:Georgia, 'Times New Roman', Times, serif;
+			 <center> <textarea name="name" style="height:20px; width:20%; font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:.875em; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="Name" ></textarea>
-			<textarea name="email" style="height:20px; width:230px; font-family:Georgia, 'Times New Roman', Times, serif;
+			<textarea name="email" style="height:20px; width:47%; font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:.875em; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="E-Mail"></textarea>
-		<textarea name="phone" style="height:20px; width:155px; font-family:Georgia, 'Times New Roman', Times, serif;
+		<textarea name="phone" style="height:20px; width:20%; font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:.875em; resize:none; color:rgb(51,62,106); max-width:100%;" placeholder="Phone #*"></textarea>
 		
 	
 	
-	<div class="dropDown" style="display:inline-block; width:280px; margin-left:-1px; margin-top:0px;">
-<select style="width:280px">
+	<div class="dropDown" style="display:inline-block; width:45%; margin-left:-1px; margin-top:0px;">
+<select style="width:100%">
 <option>Move In Semester</option>
 <option>Fall</option>
 <option>Spring</option>
 <option>Summer</option>
 </select></div>   
-            	<div class="dropDown" style="display:inline-block; width:281px; margin-left:-1px;">
-<select style="width:281px">
+            	<div class="dropDown" style="display:inline-block; width:45%; margin-left:-1px;">
+<select style="width:100%">
 <option >Leasing Period</option>
 <option>12 Month</option>
 <option>9 Month</option>
@@ -135,9 +326,9 @@
 
 </select></div> 
 	
-			<textarea name="questions" style="height:40px; width:560px; font-family:Georgia, 'Times New Roman', Times, serif;
+			<textarea name="questions" style="height:40px; width:90%; font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:.875em; resize:none; color:rgb(51,62,106); max-width:100%; margin-top:5px;" placeholder="*Questions"></textarea>
-			</div>
+			</div></center>
 		<br><button style="margin:10px; margin-top:-20px;	">Send</button>
 			
 			
@@ -170,11 +361,11 @@
 		<p>801 West 24th Street</p>
 		<p>$800-$1500</p>
 		</div>
-		<div id="inBetween" style="width:10px; height:20px;  max-width:20%; display:inline-block;"></div>
 		
+<div class="compareWrap">		
 		<div style="display:inline-block; text-align:right;  vertical-align:bottom;">
 			<a href=""> <div id="compareDiv" style="margin-bottom:28px">
-        <img src="../img/comparestar.gif" /><span class="compare">Compare</span>
+    <span class="compare">Compare</span>
         
         </div></a>
 
@@ -182,37 +373,34 @@
 			<br>
 			<button>Add to Roomie Match</button>
 		
-		
+		</div>
 		</div>
 		
-		<div style="display:inline-block; vertical-align:top; text-align:right; width:160px; height:120px; background-color:gray; border-radius:5px; margin-right:15px;">
-		
-		
-		</div><br><br>
+<div class="video"></div><br><br>
 				<span class="appDate">Recommended Application Date</span><span class="date">8-10-13</span>
 		<div id="checkAvailability">
 <h2>Check Availability</h2>
 			<span class="optional" style="margin-left:10px;">*Optional</span>
 			  <br>
 			  <div style="margin:10px">
-			  <textarea name="name" style="height:20px; width:155px; font-family:Georgia, 'Times New Roman', Times, serif;
+			 <center> <textarea name="name" style="height:20px; width:20%; font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:.875em; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="Name" ></textarea>
-			<textarea name="email" style="height:20px; width:230px; font-family:Georgia, 'Times New Roman', Times, serif;
+			<textarea name="email" style="height:20px; width:47%; font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:.875em; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="E-Mail"></textarea>
-		<textarea name="phone" style="height:20px; width:155px; font-family:Georgia, 'Times New Roman', Times, serif;
+		<textarea name="phone" style="height:20px; width:20%; font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:.875em; resize:none; color:rgb(51,62,106); max-width:100%;" placeholder="Phone #*"></textarea>
 		
 	
 	
-	<div class="dropDown" style="display:inline-block; width:280px; margin-left:-1px; margin-top:0px;">
-<select style="width:280px">
+	<div class="dropDown" style="display:inline-block; width:45%; margin-left:-1px; margin-top:0px;">
+<select style="width:100%">
 <option>Move In Semester</option>
 <option>Fall</option>
 <option>Spring</option>
 <option>Summer</option>
 </select></div>   
-            	<div class="dropDown" style="display:inline-block; width:281px; margin-left:-1px;">
-<select style="width:281px">
+            	<div class="dropDown" style="display:inline-block; width:45%; margin-left:-1px;">
+<select style="width:100%">
 <option >Leasing Period</option>
 <option>12 Month</option>
 <option>9 Month</option>
@@ -221,10 +409,10 @@
 
 </select></div> 
 	
-			<textarea name="questions" style="height:40px; width:560px; font-family:Georgia, 'Times New Roman', Times, serif;
+			<textarea name="questions" style="height:40px; width:90%; font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:.875em; resize:none; color:rgb(51,62,106); max-width:100%; margin-top:5px;" placeholder="*Questions"></textarea>
-			</div>
-		<br><button style="margin:10px; margin-top:-20px;" onClick="availSent(availSent2);">Send</button>
+			</div></center>
+		<br><button style="margin:10px; margin-top:-20px;	">Send</button>
 			
 		  	
   </div>
@@ -365,7 +553,7 @@
 	<br>
       <div id="matcherImportance" style="width:100%; max-width:400px; margin:auto; padding-left:10px; height:70px; margin-top:-10px;">
    
-   <div id="choices" style="margin-top:17px">
+   <div id="choices" style="margin-top:17px;">
     	
  
        <div id="choice" ><div id="important" class="notImportant"></div>Not Important</div>
@@ -376,9 +564,39 @@
 </div>
  
 
-    
     </div>
 	
+		  <div class="listOfReviews">
+ <h2>List of Properties</h2>
+  <div class="dropDown"  >
+<select>
+<option>Sort By</option>
+
+</select></div>  
+  
+  <div class="list">
+  <div class="item"><a href="">Dorm Name</a></div>
+   <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+  <div class="item"><a href="">Dorm Name</a></div>
+
+  
+  </div>
+
     
     
     </div>
@@ -408,6 +626,18 @@ mySwipe = new Swipe(document.getElementById('slider'), {
   callback: function(index, elem) {},
   transitionEnd: function(index, elem) {}
 });
+
+mySwipeSqueeze = new Swipe(document.getElementById('sliderSqueeze'), {
+  startSlide: 0,
+  speed: 400,
+  auto: 30000000,
+  continuous: true,
+  disableScroll: false,
+  stopPropagation: false,
+  callback: function(index, elem) {},
+  transitionEnd: function(index, elem) {}
+});
+
 
 </script>
 
