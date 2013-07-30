@@ -71,7 +71,7 @@
 .info {
 	display: inline-block;
 }
-.disclaimer{font-size:.875em; display:block;}
+.disclaimer{font-size:.875em; display:block; color:gray; margin-bottom: 50px;}
 #answerNav button {
 	border: 0;
 	background-color: transparent;
@@ -489,11 +489,18 @@
 .realLifeSquare{
 	width: 49%;
 	display:inline-block;
-	padding:30px 20px;
+	padding-top:30px;
+	padding-bottom:30px;
 	border-bottom:2px solid gray;
+	mragin-bottom: 10px;
+}
+.realLifeSquare:nth-child(odd){
+	padding-right: 20px;
+	padding-left: 14px;
 }
 .realLifeSquare:nth-child(even){
 	border-left: 2px solid gray;
+	padding-left: 20px;
 }
 .realLifeSquare .profilePic img{
 	width: 220px;
@@ -741,7 +748,6 @@
 	background-color: rgb(232, 229, 228);
 	text-align: center;
 	border: 2px solid gray;
-	white-space: nowrap;
 	margin: 0 auto;
 	display:block;
 }
@@ -823,8 +829,13 @@
 	display:inline-block;
 }
 
-#officers .officersLabel{display:inline-block; width: 49%;}
-
+#officers .officersLabel{display:inline-block; width: 49%; white-space:nowrap; padding-bottom:20px;}
+#officers .icon{width: 50px; display:inline-block;}
+#officers .info{width: 220px; display:inline-block; text-align:left;}
+#officers .info p{text-align:left; margin:0; padding:0;}
+#officers input[type=radio]{display:none;}
+#officers input[type=radio]:checked + label .pic{ border: 2px solid orange;}
+#officers input[type=radio]:checked + label p{ color: orange;}
 /* ============== COLUMN  ===================*/
 
 /* Select all of the column*/
@@ -894,7 +905,7 @@
 	font-family: HNB;
 	margin: 0;
 	text-align: left;
-	padding-left:30px;
+	padding-left: 12px;
 }
 .footerSpace {
 	background: white;
