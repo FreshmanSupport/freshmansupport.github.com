@@ -6,7 +6,6 @@
 	font-family: "HNB";
 	src: url(../fonts/helveticaneue-boldcond.otf);
 }
-
 /* ==================== MAIN CONTENT =====================*/
 #maincontent {
 	background: white;
@@ -38,6 +37,11 @@
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 /* ======================= Admission =================== */
+.admissions {
+}
+.admissions #recentlyAnswered{}
+.admissions #data{border-left: 2px solid gray;}
+.admissions #essay{border-left: 2px solid gray; padding-bottom: 80px;}
 .essay img {
 	display: block;
 	margin: 0 auto;
@@ -71,13 +75,18 @@
 .info {
 	display: inline-block;
 }
-.disclaimer{font-size:.875em; display:block; color:gray; margin-bottom: 50px;}
+.disclaimer {
+	font-size: .875em;
+	display: block;
+	color: gray;
+	margin-bottom: 50px;
+}
 #answerNav button {
 	border: 0;
 	background-color: transparent;
-	font-family:Georgia, "Times New Roman", Times, serif;
+	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 0.875em;
-	color:rgb(51, 62, 107);
+	color: rgb(51, 62, 107);
 }
 .answerPic {
 	height: 45px;
@@ -85,50 +94,70 @@
 	display: inline-block;
 	margin-left: 10px;
 }
-.voteContainer{
-	margin:0 auto;
-	display:block;
+.voteContainer {
+	margin: 0 auto;
+	display: block;
 }
-.upOne, .downOne, .upVote, .downVote{
+.upOne, .downOne, .upVote, .downVote {
 	width: 25%;
 	display: inline-block;
 }
-.upOne{
-	color:rgb(51, 62, 107);
-	display:inline-block;
-	text-align:right;
+.upOne {
+	color: rgb(51, 62, 107);
+	display: inline-block;
+	text-align: right;
 }
-.downOne{
-	display:inline-block;
+.downOne {
+	display: inline-block;
 	color: rgb(220, 134, 39);
 }
-.upVote{
-	width: 0; 
-	height: 0; 
+.upVote {
+	width: 0;
+	height: 0;
 	border-left: 7px solid transparent;
 	border-right: 7px solid transparent;
 	border-bottom: 8px solid rgb(51, 62, 107);
 }
-.downVote{
-	width: 0; 
-	height: 0; 
+.downVote {
+	width: 0;
+	height: 0;
 	border-left: 7px solid transparent;
 	border-right: 7px solid transparent;
-	border-top: 8px solid rgb(220, 134, 39);	
+	border-top: 8px solid rgb(220, 134, 39);
 }
 /* ============= Recently Answered =============== */
-.raHeader{
-	width:100%;
+.raHeader {
+	width: 100%;
 }
-#recentlyAnswered h3{text-align:left;}
-#recentlyAnswered p{text-align:left;}
-#recentlyAnswered img{width:150px; height:150px; display:block; margin:0 auto;}
-#recentlyAnswered .profilePic p{text-align:center;}
-#recentlyAnswered a{font-size: 14px; color: rgb(51, 62, 106); text-decoration: none; font-family: Georgia, "Times New Roman", Times, serif;}
-
-#recentlyAnswered ul{list-style-type:none;}
-#recentlyAnswered li{margin:0; padding: 0; border-bottom: 1px solid gray;}
-
+#recentlyAnswered h3 {
+	text-align: left;
+}
+#recentlyAnswered p {
+	text-align: left;
+}
+#recentlyAnswered img {
+	width: 150px;
+	height: 150px;
+	display: block;
+	margin: 0 auto;
+}
+#recentlyAnswered .profilePic p {
+	text-align: center;
+}
+#recentlyAnswered a {
+	font-size: 14px;
+	color: rgb(51, 62, 106);
+	text-decoration: none;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#recentlyAnswered ul {
+	list-style-type: none;
+}
+#recentlyAnswered li {
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid gray;
+}
 /* ============ Roomie Match ================= */
 .rmTable {
 	margin: 0 auto;
@@ -155,7 +184,6 @@
 	text-align: left;
 	border-right: none;
 }
-
 /* ================== Roomie Slide ================= */
 #roomieSlider ul {
 	list-style: none;
@@ -165,24 +193,24 @@
 #roomieSlider ul li {
 	width: 100%;
 	line-height: 53px;
-	white-space:nowrap;
+	white-space: nowrap;
 }
-.rowLabel>span{
+.rowLabel>span {
 	display: inline-block;
-    line-height: 0;
-    vertical-align: middle;	
+	line-height: 0;
+	vertical-align: middle;
 }
-#roomieSlider ul li:last-child{
+#roomieSlider ul li:last-child {
 	line-height: 30px;
-	white-space:normal;
+	white-space: normal;
 }
-#roomieSlider .twoLine{
-	line-height:30px;
+#roomieSlider .twoLine {
+	line-height: 30px;
 }
 #roomieSlider p {
 	display: inline-block;
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 }
 #roomieSlider .rowLabel {
 	width: 90px;
@@ -193,17 +221,28 @@
 	font-size: 14px;
 	color: gray;
 	display: inline-block;
-	vertical-align:top;
+	vertical-align: top;
 	margin-right: 25px;
 	padding-right: 5px;
-	line-height:65px;
+	line-height: 65px;
 }
-#roomieSlider .fakeLb{display:inline-block; width: 90px; height:1px;}
-#roomieSlider .rmLabel{display:inline-block;}
-
-#roomieSlider .topRmLabel{display:inline-block;}
-#roomieSlider .topRmLabel p{color:rgb(51,62,106);}
-#roomieSlider .botRmLabel{display:inline-block;}
+#roomieSlider .fakeLb {
+	display: inline-block;
+	width: 90px;
+	height: 1px;
+}
+#roomieSlider .rmLabel {
+	display: inline-block;
+}
+#roomieSlider .topRmLabel {
+	display: inline-block;
+}
+#roomieSlider .topRmLabel p {
+	color: rgb(51,62,106);
+}
+#roomieSlider .botRmLabel {
+	display: inline-block;
+}
 #roomieSlider .topRmLabel p:first-child {
 	color: rgb(51,61,105);
 	margin-left: 15px;
@@ -219,94 +258,129 @@
 	color: rgb(51,61,105);
 	margin-left: 210px;
 }
-#roomieSlider div form ul li:nth-child(2) {margin-bottom: 17px;}
-
-#roomieSlider input[type="radio"] {display:none;}
-#roomieSlider label{
-	display:inline-block;
-	vertical-align:top;
+#roomieSlider div form ul li:nth-child(2) {
+	margin-bottom: 17px;
+}
+#roomieSlider input[type="radio"] {
+	display: none;
+}
+#roomieSlider label {
+	display: inline-block;
+	vertical-align: top;
 	width: 50px;
 	height: 50px;
 	background-color: white;
 	border: 1px solid rgb(51,61,105);
-	border-radius:50%;
+	border-radius: 50%;
 	margin-right: 5px;
 }
-#roomieSlider input[type=radio]:checked + label{background-color: rgb(51,61,105);}
-#roomieSlider .hogwartsRow label{
+#roomieSlider input[type=radio]:checked + label {
+	background-color: rgb(51,61,105);
+}
+#roomieSlider .hogwartsRow label {
 	margin-right: 30px;
 }
-#roomieSlider input[type='text']{width: 375px;}
+#roomieSlider input[type='text'] {
+	width: 375px;
+}
 /* ====== Initial color for buttons =========== */
-#roomieSlider .initialColor label:nth-child(3){
-	background-color:rgb(182,197,220);
+#roomieSlider .initialColor label:nth-child(3) {
+	background-color: rgb(182,197,220);
 }
-#roomieSlider .initialColor label:nth-child(5){
-	background-color:rgb(145,165,195);
+#roomieSlider .initialColor label:nth-child(5) {
+	background-color: rgb(145,165,195);
 }
-#roomieSlider .initialColor label:nth-child(7){
-	background-color:rgb(89,107,158);
+#roomieSlider .initialColor label:nth-child(7) {
+	background-color: rgb(89,107,158);
 }
-#roomieSlider .initialColor label:nth-child(9){
-	background-color:rgb(68,86,127);
+#roomieSlider .initialColor label:nth-child(9) {
+	background-color: rgb(68,86,127);
 }
-#roomieSlider .initialColor label:nth-child(11){
-	background-color:rgb(51,61,105);
+#roomieSlider .initialColor label:nth-child(11) {
+	background-color: rgb(51,61,105);
 }
 /* =============== Hogwart Color ========== */
-#roomieSlider .initialColor.hogwartsRow label:nth-child(3){
-	background-color:rgb(152,53,31);
+#roomieSlider .initialColor.hogwartsRow label:nth-child(3) {
+	background-color: rgb(152,53,31);
 }
-#roomieSlider .initialColor.hogwartsRow label:nth-child(5){
-	background-color:rgb(50,102,153);
+#roomieSlider .initialColor.hogwartsRow label:nth-child(5) {
+	background-color: rgb(50,102,153);
 }
-#roomieSlider .initialColor.hogwartsRow label:nth-child(7){
-	background-color:rgb(247,236,55);
+#roomieSlider .initialColor.hogwartsRow label:nth-child(7) {
+	background-color: rgb(247,236,55);
 }
-#roomieSlider .initialColor.hogwartsRow label:nth-child(9){
-	background-color:rgb(1,102,53);
+#roomieSlider .initialColor.hogwartsRow label:nth-child(9) {
+	background-color: rgb(1,102,53);
 }
-#roomieSlider .initialColor.hogwartsRow label:nth-child(11){
-	background-color:gray;
+#roomieSlider .initialColor.hogwartsRow label:nth-child(11) {
+	background-color: gray;
 }
-#roomieSlider .hogwartsRow input[type=radio]:checked + label:nth-child(3){background-color:rgb(152,53,31);}
-#roomieSlider .hogwartsRow input[type=radio]:checked + label:nth-child(5){background-color:rgb(50,102,153);}
-#roomieSlider .hogwartsRow input[type=radio]:checked + label:nth-child(7){background-color:rgb(247,236,55);}
-#roomieSlider .hogwartsRow input[type=radio]:checked + label:nth-child(9){background-color:rgb(1,102,53);}
-#roomieSlider .hogwartsRow input[type=radio]:checked + label:nth-child(11){background-color: gray;}
-
-#roomieSlider .disclaimerContainer{width: 500px; display:block; margin: 0 auto;}
-#roomieSlider .disclaimerContainer h2{color:gray;}
-#roomieSlider .disclaimerContainer .checkContainer{margin-top: 25px; margin-left: 94px; color:rgb(51, 62, 107);}
-#roomieSlider .disclaimerContainer .checkContainer p{color:rgb(51, 62, 107);}
-
+#roomieSlider .hogwartsRow input[type=radio]:checked + label:nth-child(3) {
+	background-color: rgb(152,53,31);
+}
+#roomieSlider .hogwartsRow input[type=radio]:checked + label:nth-child(5) {
+	background-color: rgb(50,102,153);
+}
+#roomieSlider .hogwartsRow input[type=radio]:checked + label:nth-child(7) {
+	background-color: rgb(247,236,55);
+}
+#roomieSlider .hogwartsRow input[type=radio]:checked + label:nth-child(9) {
+	background-color: rgb(1,102,53);
+}
+#roomieSlider .hogwartsRow input[type=radio]:checked + label:nth-child(11) {
+	background-color: gray;
+}
+#roomieSlider .disclaimerContainer {
+	width: 500px;
+	display: block;
+	margin: 0 auto;
+}
+#roomieSlider .disclaimerContainer h2 {
+	color: gray;
+}
+#roomieSlider .disclaimerContainer .checkContainer {
+	margin-top: 25px;
+	margin-left: 94px;
+	color: rgb(51, 62, 107);
+}
+#roomieSlider .disclaimerContainer .checkContainer p {
+	color: rgb(51, 62, 107);
+}
 /* =========== Student Profiles =============== */
 
-#spHeader{
-	width:100%;
+#spHeader {
+	width: 100%;
 	margin-bottom: 30px;
 }
-#studentProfile #spHeader h2{
+#studentProfile #spHeader h2 {
 	text-align: center;
 	font-family: HNL;
 	font-size: 30px;
 }
-#spHeader .dropDown{
-	float:left;
+#spHeader .dropDown {
+	float: left;
 }
 #studentProfile ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
-#studentProfile > ul > li{padding-bottom: 30px;}
-.profileSubBar ul li{display:inline-block; border-right: 2px solid navy; padding-right: 5px;}
-.profileSubBar ul li:last-child{border: none;}
-#studentProfile ul li a{
-	text-decoration:none;
+#studentProfile > ul > li {
+	padding-bottom: 30px;
+}
+.profileSubBar ul li {
+	display: inline-block;
+	border-right: 2px solid navy;
+	padding-right: 5px;
+}
+.profileSubBar ul li:last-child {
+	border: none;
+}
+#studentProfile ul li a {
+	text-decoration: none;
 	color: gray;
 }
-#studentProfile ul li a:visited{
+#studentProfile ul li a:visited {
 	color: gray;
 }
 #studentProfile h2 {
@@ -314,128 +388,147 @@
 	font-family: HNB;
 	font-size: 18px;
 }
-#studentProfile h3, #studentProfile p{
+#studentProfile h3, #studentProfile p {
 	font-size: 0.875em;
 	color: gray;
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	font-family:Georgia, "Times New Roman", Times, serif;
+	font-family: Georgia, "Times New Roman", Times, serif;
 }
 #studentProfile ul li div h3:nth-child(3) {
 	color: rgb(220, 134, 39);
 }
-#studentProfile .legend{
-	color:rgb(220, 134, 39);
-	font-family:Georgia, "Times New Roman", Times, serif;
+#studentProfile .legend {
+	color: rgb(220, 134, 39);
+	font-family: Georgia, "Times New Roman", Times, serif;
 	font-family: 14px;
 	margin-left: 10px;
-	white-space:nowrap;
-	vertical-align:top;
+	white-space: nowrap;
+	vertical-align: top;
 }
-#studentProfile .profilePic img{
+#studentProfile .profilePic img {
 	height: 150px;
 	width: 150px;
 	margin: 0 auto;
-	display:block;
+	display: block;
 }
 /* ================= Edit Preference =================== */
-.editNav{list-style-type:none;display:block; text-align:center;}
-.editNav li{display: inline-block; border-right:1px solid navy;padding: 0 5px;}
-.editNav li:last-child{border: none;}
-.editNav a {text-decoration: none; color:gray;}
-.editnav a:visited{color:gray;}
-
+.editNav {
+	list-style-type: none;
+	display: block;
+	text-align: center;
+}
+.editNav li {
+	display: inline-block;
+	border-right: 1px solid navy;
+	padding: 0 5px;
+}
+.editNav li:last-child {
+	border: none;
+}
+.editNav a {
+	text-decoration: none;
+	color: gray;
+}
+.editnav a:visited {
+	color: gray;
+}
 /* =============== Match Details ==================== */
-.matchDetails{
-	background-color:rgb(232, 229, 228);
+.matchDetails {
+	background-color: rgb(232, 229, 228);
 	width: 100%;
 	height-min: 10px;
 	padding-left: 50px;
-	padding-top:20px;
-	padding-bottom:20px;
-	position:relative;
-	margin-top:-20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: relative;
+	margin-top: -20px;
 }
-.matchDetails .triangle{
-	position:absolute;
-    border: 12px solid transparent;
-    border-bottom-color: rgb(232, 229, 228);
-    position: absolute;
-    left: 216px;
-   	top:-24px;
+.matchDetails .triangle {
+	position: absolute;
+	border: 12px solid transparent;
+	border-bottom-color: rgb(232, 229, 228);
+	position: absolute;
+	left: 216px;
+	top: -24px;
 }
-
-.mdCircle{
-	display:inline-block;
-	vertical-align:top;
+.mdCircle {
+	display: inline-block;
+	vertical-align: top;
 	width: 15px;
 	height: 15px;
 	background-color: rgb(232, 229, 228);
 	border: 1px solid rgb(51,61,105);
-	border-radius:50%;
+	border-radius: 50%;
 }
-.matchDetails .youSelect{
+.matchDetails .youSelect {
 	border: 1px solid rgb(220, 134, 39);
 }
-.matchDetails .roommateSelect{
-	background-color: rgb(51, 62, 107);	
+.matchDetails .roommateSelect {
+	background-color: rgb(51, 62, 107);
 }
-.fuzzy{
-	background-color:rgb(89,107,158);
+.fuzzy {
+	background-color: rgb(89,107,158);
 }
-#roomieSlider .fuzzy{
-		background-color:rgb(89,107,158);
+#roomieSlider .fuzzy {
+	background-color: rgb(89,107,158);
 }
-.matchDetails .mdDrop{
-	color:gray;
+.matchDetails .mdDrop {
+	color: gray;
 }
-.matchDetails .list{
-	width:300px;
-	display:inline-block;
+.matchDetails .list {
+	width: 300px;
+	display: inline-block;
 	font-size: 14px;
-	font-family:Georgia, "Times New Roman", Times, serif;
-	color:rgb(51, 62, 107);
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: rgb(51, 62, 107);
 }
-.matchDetails .list div:first-child{text-align:right;}
-.matchDetails .list div:last-child{padding-left: 10px;}
-
+.matchDetails .list div:first-child {
+	text-align: right;
+}
+.matchDetails .list div:last-child {
+	padding-left: 10px;
+}
 /* ================ You =================== */
-.editButtonList{
-	display:block;
+.editButtonList {
+	display: block;
 	width: 100%;
-	list-style-type:none;
-	margin:0 auto;	
+	list-style-type: none;
+	margin: 0 auto;
 }
 /* ================ RMEdit ================ */
-#rmEdit input[type="radio"] {display:none;}
-#rmEdit label{
-	display:inline-block;
-	vertical-align:top;
+#rmEdit input[type="radio"] {
+	display: none;
+}
+#rmEdit label {
+	display: inline-block;
+	vertical-align: top;
 	width: 25px;
 	height: 25px;
 	background-color: rgb(232, 229, 228);
 	border: 1px solid rgb(51,61,105);
-	border-radius:50%;
+	border-radius: 50%;
 }
-#rmEdit input[type=radio]:checked + label{background-color: rgb(220, 134, 39);}
-#rmEdit .rowLabel{
+#rmEdit input[type=radio]:checked + label {
+	background-color: rgb(220, 134, 39);
+}
+#rmEdit .rowLabel {
 	width: 31%;
 	text-align: right;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 14px;
 	color: gray;
 	display: inline-block;
-	vertical-align:top;
+	vertical-align: top;
 	margin-right: 10px;
-	line-height:30px;
-	white-space:nowrap;
-}	
-#rmEdit select, #rmEdit .dropDown{
-	width: 144px;
-	display:inline-block;
+	line-height: 30px;
+	white-space: nowrap;
 }
-
+#rmEdit select, #rmEdit .dropDown {
+	width: 144px;
+	display: inline-block;
+}
 /* ================= The Real Life =================== */
 .realLifeNav {
 	width: 100%;
@@ -475,101 +568,121 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-
 .realLifeNav p {
 	color: rgb(51, 62, 106);
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 14px;
 }
-
 /* ================== Index Remake ==================== */
-#mainContent.realLifeSub{
+#mainContent.realLifeSub {
 	padding-top: 0;
 }
-.realLifeSquare{
+.realLifeSquare {
 	width: 49%;
-	display:inline-block;
-	padding-top:30px;
-	padding-bottom:30px;
-	border-bottom:2px solid gray;
+	display: inline-block;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 2px solid gray;
 	mragin-bottom: 10px;
 }
-.realLifeSquare:nth-child(odd){
+.realLifeSquare:nth-child(odd) {
 	padding-right: 20px;
 	padding-left: 14px;
 }
-.realLifeSquare:nth-child(even){
+.realLifeSquare:nth-child(even) {
 	border-left: 2px solid gray;
 	padding-left: 20px;
 }
-.realLifeSquare .profilePic img{
+.realLifeSquare .profilePic img {
 	width: 220px;
 	height: 220px;
 }
-#maincontent .realLifeSquare .profilePic{width: 225px;}
-.realLifeSquare .profilePic button:nth-child(2){width:55px;margin-right:10px;}
-.realLifeSquare .profilePic button:last-child{width: 150px;}
+#maincontent .realLifeSquare .profilePic {
+	width: 225px;
+}
+.realLifeSquare .profilePic button:nth-child(2) {
+	width: 55px;
+	margin-right: 10px;
+}
+.realLifeSquare .profilePic button:last-child {
+	width: 150px;
+}
 .realLifeSub .realLifeSquare li {
 	color: rgb(51,62,106);
 	font-size: 18px;
 	font-family: HNB;
 	margin-bottom: 21px;
 }
-.realLifeSub .realLifeSquare.iconBar{
+.realLifeSub .realLifeSquare.iconBar {
 	width: 50px;
-	display:inline-block;
-	vertical-align:top;
+	display: inline-block;
+	vertical-align: top;
 }
-.realLifeSub .realLifeSquare  li img {
+.realLifeSub .realLifeSquare li img {
 	height: 47px;
 	width: 47px;
 }
-.realLifeSub .realLifeSquare .nameBar{
-	padding-top: 11px; 
+.realLifeSub .realLifeSquare .nameBar {
+	padding-top: 11px;
 	padding-left: 30px;
-	display:inline-block;
-	vertical-align:top;
+	display: inline-block;
+	vertical-align: top;
 }
-.realLifeSub .realLifeSquare .iconBar li{
+.realLifeSub .realLifeSquare .iconBar li {
 	margin-bottom: 6px;
 }
-.realLifeSquare .guide img{
-	width:180px;
-	margin-bottom:50px;
+.realLifeSquare .guide img {
+	width: 180px;
+	margin-bottom: 50px;
 	height: 100px;
 }
-.realLifeSquare .vid{	
-	width:180px;
+.realLifeSquare .vid {
+	width: 180px;
 	height: 100px;
-	background-color:gray;
+	background-color: gray;
 }
-.realLifeSquare #answerNav{
+.realLifeSquare #answerNav {
 	margin-left: -8px;
 	margin-top: -25px;
 }
-#maincontent .realLifeSquare .QA h3{text-align:left; margin-bottom:0;} 
-#maincontent .realLifeSquare .QA h3:first-child{font-family:HNB;}
-#maincontent .realLifeSquare .QA p{text-align:left;margin-top:0;}
-
+#maincontent .realLifeSquare .QA h3 {
+	text-align: left;
+	margin-bottom: 0;
+}
+#maincontent .realLifeSquare .QA h3:first-child {
+	font-family: HNB;
+}
+#maincontent .realLifeSquare .QA p {
+	text-align: left;
+	margin-top: 0;
+}
 /* =================== Portfolio ========================== */
-.realLifeSub{vertical-align:top;}
-#realLifeHead{display:block; margin-bottom: 50px;}
-#realLifeHead img{display:block; margin:0 auto;}
+.realLifeSub {
+	vertical-align: top;
+}
+#realLifeHead {
+	display: block;
+	margin-bottom: 50px;
+}
+#realLifeHead img {
+	display: block;
+	margin: 0 auto;
+}
 .realLifeSub ul {
 	list-style: none;
 	margin: 0;
-	padding:0;	
+	padding: 0;
 }
 .realLifeSub .profilePic {
-	display:inline-block;
+	display: inline-block;
 	width: 255px;
 }
-.profilePic img{
+.profilePic img {
 	width: 250px;
 	height: 250px;
 }
-.profilePic button{
-	font-family:Georgia, "Times New Roman", Times, serif;
+.profilePic button {
+	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 14px;
 	padding: 5px 0;
 	margin-top: 5px;
@@ -581,25 +694,24 @@
 	font-family: HNB;
 	margin-bottom: 28px;
 }
-.realLifeSub .iconBar{
+.realLifeSub .iconBar {
 	width: 50px;
-	display:inline-block;
-	vertical-align:top;
+	display: inline-block;
+	vertical-align: top;
 }
-.realLifeSub .nameBar{
-	padding-top: 11px; 
+.realLifeSub .nameBar {
+	padding-top: 11px;
 	padding-left: 30px;
-	display:inline-block;
-	vertical-align:top;
+	display: inline-block;
+	vertical-align: top;
 }
-.realLifeSub .iconBar li{
+.realLifeSub .iconBar li {
 	margin-bottom: 16px;
 }
 .realLifeSub li img {
 	height: 47px;
 	width: 47px;
 }
-
 .realLifeSub input[type=Submit] {
 	float: right;
 	margin-top: 12px;
@@ -609,7 +721,6 @@
 	color: rgb(51, 62, 106);
 	background-color: rgb(232, 229, 228);
 }
-
 .realLifeProfile li {
 	text-align: right;
 	list-style-type: none;
@@ -618,25 +729,31 @@
 	border-bottom: 1px solid rgb(51, 62, 106);
 	font-family: HNL;
 }
-.realLifeProfile li:last-child{border:none;}
-.blogList{
-	width:250px;
+.realLifeProfile li:last-child {
+	border: none;
+}
+.blogList {
+	width: 250px;
 	padding-right: 10px;
-	display:inline-block;
-	vertical-align:top;
+	display: inline-block;
+	vertical-align: top;
 }
 .blogList li {
 	border: 0;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 14px;
-	text-align:right;
+	text-align: right;
 }
-.blogEntries{
+.blogEntries {
 	border-left: 2px solid gray;
-	padding-left:80px;
+	padding-left: 80px;
 }
-#maincontent .blogEntries p{text-align:left;} 
-#maincontent .blogEntries h2{text-align:left;}
+#maincontent .blogEntries p {
+	text-align: left;
+}
+#maincontent .blogEntries h2 {
+	text-align: left;
+}
 #maincontent .realLifeProfile h2 {
 	text-align: left;
 	margin-left: 0;
@@ -644,101 +761,149 @@
 #maincontent .realLifeProfile p {
 	text-align: left;
 }
-#moreBlog h2{text-align:left; color:rgb(51, 62, 107);margin-left: 10%;}
+#moreBlog h2 {
+	text-align: left;
+	color: rgb(51, 62, 107);
+	margin-left: 10%;
+}
 .swipeProperty {
 	overflow: hidden;
 	visibility: hidden;
 	position: relative;
 	width: 85%;
-	display:inline-block;
+	display: inline-block;
 }
-
-#sWrap{
-	margin-right:auto;
-	margin-left:auto;
+#sWrap {
+	margin-right: auto;
+	margin-left: auto;
 }
-
 /* ============= Fianance ===================== */
 
-.finances #topFinances{
+.finances #topFinances {
 	border-bottom: 2px solid gray;
 }
-.finances #recentAnswers{
+.finances #recentAnswers {
 }
-
-.finances #data{border-left: 2px solid gray;}
-
-.finances #data p{margin-bottom: 0;}
-.finances #data .view{margin-top: 35px;}
-.finances #fafsa{
+.finances #data {
 	border-left: 2px solid gray;
 }
-.finances #fafsa .goContain{margin-top: 58px; margin-bottom:70px;}
-
-.finances #budgetPlanner{margin-top:10px; margin-bottom:30px;}
-
-.finances #state{margin-top:20px;} 
-.finances .stateWrap{display:block; margin:0 auto; width: 145px;}
-.finances .stateTextWrap{display:block; margin:0 auto; width: 180px;; margin-bottom: 10px; font-size: 18px;}
-.finances .stateWrap label{
-	display:inline-block;
-	vertical-align:top;
+.finances #data p {
+	margin-bottom: 0;
+}
+.finances #data .view {
+	margin-top: 35px;
+}
+.finances #fafsa {
+	border-left: 2px solid gray;
+}
+.finances #fafsa .goContain {
+	margin-top: 58px;
+	margin-bottom: 70px;
+}
+.finances #budgetPlanner {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.finances #state {
+	margin-top: 20px;
+}
+.finances .stateWrap {
+	display: block;
+	margin: 0 auto;
+	width: 145px;
+}
+.finances .stateTextWrap {
+	display: block;
+	margin: 0 auto;
+	width: 180px;
+	;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+.finances .stateWrap label {
+	display: inline-block;
+	vertical-align: top;
 	width: 35px;
 	height: 35px;
 	background-color: white;
 	border: 1px solid rgb(51,61,105);
-	border-radius:50%;
+	border-radius: 50%;
 	margin-right: 5px;
 }
-.finances .stateWrap input[type=radio]:checked + label{background-color:rgb(51,61,105);}
-
-.finances .semesterWrap{display:block; margin:0 auto; width: 385px;}
-.finances #budgetPlanner h3{color:gray; margin-bottom: 0;}
-.finances #budgetPlanner input[type=radio]{
-	display:none;
+.finances .stateWrap input[type=radio]:checked + label {
+	background-color: rgb(51,61,105);
 }
-.finances .stateWrap.initialColor label:nth-child(2){background-color:rgb(51,61,105);}
-.finances .stateWrap.initialColor label:nth-child(4){background-color:rgb(182,197,220);margin-left:60px;}
-.finances .semesterWrap label{
-	display:inline-block;
-	color:white; 
-	background-color:rgb(51, 62, 107); 
-	width: 125px; 
-	height:40px; 
-	text-align:center; 
-	text-decoration:none;;
+.finances .semesterWrap {
+	display: block;
+	margin: 0 auto;
+	width: 385px;
+}
+.finances #budgetPlanner h3 {
+	color: gray;
+	margin-bottom: 0;
+}
+.finances #budgetPlanner input[type=radio] {
+	display: none;
+}
+.finances .stateWrap.initialColor label:nth-child(2) {
+	background-color: rgb(51,61,105);
+}
+.finances .stateWrap.initialColor label:nth-child(4) {
+	background-color: rgb(182,197,220);
+	margin-left: 60px;
+}
+.finances .semesterWrap label {
+	display: inline-block;
+	color: white;
+	background-color: rgb(51, 62, 107);
+	width: 125px;
+	height: 40px;
+	text-align: center;
+	text-decoration: none;
+	;
 	font-size: 18px;
-	font-family:HNB, Arial, Helvetica, sans-serif;
-	margin:0 auto;
+	font-family: HNB, Arial, Helvetica, sans-serif;
+	margin: 0 auto;
 	margin-top: 10px;
-	padding-top:8px;
-	cursor:pointer;
+	padding-top: 8px;
+	cursor: pointer;
 }
-.inS{color:rgb(51, 62, 107);}
-.outS{color:rgb(182,197,220);}
-.finances .next{
+.inS {
+	color: rgb(51, 62, 107);
+}
+.outS {
+	color: rgb(182,197,220);
+}
+.finances .next {
 	border: 0;
 	background-color: transparent;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 14px;
 	color: rgb(51, 62, 107);
-	text-decoration:none;
-	float:right;
+	text-decoration: none;
+	float: right;
 }
-.finances .semesterWrap input[type=radio]:checked + label{background-color:rgb(220, 134, 39);}
-.cost{color:rgb(51, 62, 107); font-size: 34px; font-family:HBL; text-align:center;}
-.go{
-	display:block; 
-	color:white; 
-	background-color:rgb(51, 62, 107); 
-	width: 125px; 
-	height:40px; 
-	text-align:center; 
-	text-decoration:none;
+.finances .semesterWrap input[type=radio]:checked + label {
+	background-color: rgb(220, 134, 39);
+}
+.cost {
+	color: rgb(51, 62, 107);
+	font-size: 34px;
+	font-family: HBL;
+	text-align: center;
+}
+.go {
+	display: block;
+	color: white;
+	background-color: rgb(51, 62, 107);
+	width: 125px;
+	height: 40px;
+	text-align: center;
+	text-decoration: none;
 	padding-top: 5px;
 	font-size: 24px;
-	font-family:HNB, Arial, Helvetica, sans-serif;
-	margin:0 auto;
+	font-family: HNB, Arial, Helvetica, sans-serif;
+	margin: 0 auto;
 	margin-top: 20px;
 }
 /* ============== Footer  ===================*/
@@ -749,7 +914,7 @@
 	text-align: center;
 	border: 2px solid gray;
 	margin: 0 auto;
-	display:block;
+	display: block;
 }
 .footer h2 {
 	font-family: HNL, Arial, Helvetica, sans-serif;
@@ -775,13 +940,12 @@
 .footer p:last-child {
 	margin-bottom: 25px;
 }
-
-.footer .pic{
-	vertical-align:top;
+.footer .pic {
+	vertical-align: top;
 	width: 45px;
 	height: 45px;
 	background-color: gray;
-	border-radius:50%;
+	border-radius: 50%;
 	margin-right: 5px;
 }
 .footer form {
@@ -802,7 +966,7 @@
 .footer .video img {
 	width: 200px;
 	height: 150px;
-	margin-top:0;
+	margin-top: 0;
 	border-radius: 0;
 }
 .footer .video p {
@@ -823,25 +987,46 @@
 	text-align: left;
 	background-position: 46px 2px;
 }
-.footer #officers{
-	width: 49%; 
-	margin:0 auto; 
-	display:inline-block;
+.footer #officers {
+	width: 49%;
+	margin: 0 auto;
+	display: inline-block;
 }
-
-#officers .officersLabel{display:inline-block; width: 49%; white-space:nowrap; padding-bottom:20px;}
-#officers .icon{width: 50px; display:inline-block;}
-#officers .info{width: 220px; display:inline-block; text-align:left;}
-#officers .info p{text-align:left; margin:0; padding:0;}
-#officers input[type=radio]{display:none;}
-#officers input[type=radio]:checked + label .pic{ border: 2px solid orange;}
-#officers input[type=radio]:checked + label p{ color: orange;}
+#officers .officersLabel {
+	display: inline-block;
+	width: 49%;
+	white-space: nowrap;
+	padding-bottom: 20px;
+}
+#officers .icon {
+	width: 50px;
+	display: inline-block;
+}
+#officers .info {
+	width: 220px;
+	display: inline-block;
+	text-align: left;
+}
+#officers .info p {
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+#officers input[type=radio] {
+	display: none;
+}
+#officers input[type=radio]:checked + label .pic {
+	border: 2px solid orange;
+}
+#officers input[type=radio]:checked + label p {
+	color: orange;
+}
 /* ============== COLUMN  ===================*/
 
 /* Select all of the column*/
 [class*='col-'] {
-	display:inline-block;
-	vertical-align:top;
+ display:inline-block;
+ vertical-align:top;
 }
 /* 2-3 represent 2/3 of whole width */
 .col-2-3 {
@@ -856,11 +1041,11 @@
 .col-1-8 {
 	width: 11.99%;
 }
-.col-5-8{
-	width:62.4%;
+.col-5-8 {
+	width: 62.4%;
 }
-.col-6-8{
-	width:74%;
+.col-6-8 {
+	width: 74%;
 }
 .col-7-8 {
 	width: 87%;
@@ -884,7 +1069,6 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
 /* =============== Random Class ================= */
 .borderLeft {
 	border-left: 2px solid rgb(232, 229, 228);
@@ -924,7 +1108,6 @@
 	text-decoration: none;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
-
 .more {
 	text-align: right;
 	margin-right: 5px;
@@ -942,63 +1125,61 @@
 	display: block;
 	text-align: center;
 }
-button{
-	border:none;
+button {
+	border: none;
 	background-color: rgb(220, 134, 39);
-	color:white;
-	font-family:Georgia, "Times New Roman", Times, serif;
+	color: white;
+	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 18px;
-	padding:0 10px;
-	cursor:pointer;
+	padding: 0 10px;
+	cursor: pointer;
 }
-.outOf{
-	color:rgb( 51, 62, 106);
+.outOf {
+	color: rgb( 51, 62, 106);
 	font-size: 14px;
-	
 }
-.swipeRecent{
-	overflow:hidden;
+.swipeRecent {
+	overflow: hidden;
 }
-hr{
-	width:80%;
-	color:rgb(232, 229, 228);
-	background-color:rgb(232, 229, 228);
+hr {
+	width: 80%;
+	color: rgb(232, 229, 228);
+	background-color: rgb(232, 229, 228);
 	height: 2px;
 }
-.dropDown{
- 	width: 200px;
-   	height: 20px;
-   	overflow: hidden;
-   	background: url(../img/dropDown.png) no-repeat right white;
-   	border: 1px solid #ccc;
+.dropDown {
+	width: 200px;
+	height: 20px;
+	overflow: hidden;
+	background: url(../img/dropDown.png) no-repeat right white;
+	border: 1px solid #ccc;
 }
-.dropDown select{
+.dropDown select {
 	background: transparent;
-   width: 200px;
-   font-size: 14px;
-   border: 2px solid rgb(79,77,77);
-   border-radius: 0;
-   height: 20px;
-   -webkit-appearance: none;	
-   color:gray;
-   font-family:Georgia, "Times New Roman", Times, serif;
-   line-height: 14px;
+	width: 200px;
+	font-size: 14px;
+	border: 2px solid rgb(79,77,77);
+	border-radius: 0;
+	height: 20px;
+	-webkit-appearance: none;
+	color: gray;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	line-height: 14px;
 }
-
 /* ============ Slider JS CSS ================== */
 .swipe {
-  overflow: hidden;
-  visibility: hidden;
-  position: relative;
+	overflow: hidden;
+	visibility: hidden;
+	position: relative;
 }
 .swipe-wrap {
-  overflow: hidden;
-  position: relative;
+	overflow: hidden;
+	position: relative;
 }
 .swipe-wrap > div {
-  float:left;
-  width:100%;
-  position: relative;
+	float: left;
+	width: 100%;
+	position: relative;
 }
 /* ================  Scrollable  ================= */
 .scrollable {
@@ -1011,8 +1192,6 @@ hr{
 	width: 2000em;
 	position: absolute;
 }
-
-
 /* ============== NULLIFY =======================*/
 
 html, body {
@@ -1032,8 +1211,6 @@ body {
 #container {
 	margin: 0 auto;
 }
-
-
 /* ========== Messing with Boot Strap ============= */
 [class*="span"] .span6 {
 	display: inline-block;

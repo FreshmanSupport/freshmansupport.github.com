@@ -3,7 +3,6 @@
 <head>
 <link type="text/css" rel="stylesheet" href="../css/main.css"/>
 <link type="text/css" rel="stylesheet" href="../css/headerStyle.css"/>
-<link type="text/css" rel="stylesheet" href="../css/bootstrap-responsive.css" />
 <link href="../css/Chart.css" rel="stylesheet" type="text/css">
 <script src="../js/swipe.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -50,224 +49,226 @@
     </ul>
   </div>
 </div>
-<div class="container-fluid">
-  <div id="maincontent">
-    <div class="row-fluid">
-      <div id="recentAnswers" class="span4" style="overflow:hidden;">
-        <h2>Recently Answered</h2>
-        <div id='answerSlider' class='swipeRecent' style="margin:20px 0;">
-          <div class='swipe-wrap'>
-            <div>
-              <div class="question">
-                <h3>Question:</h3>
-                <p>What do I do with other scholarship awards?</p>
-              </div>
-              <div class="answer">
-                <h3>Answer:</h3>
-                <p>Any scholarships awarded by an institution separate from the university...</p>
-                <a href="#" class="view" style="margin-top:-13px;">View More</a> </div>
-              <div class="answeredBy">
-                <div class="info">
-                  <p>Answered by Lindsay Bluth,<br />
-                    Salesperson<br />
-                    Some Store in the Mall</p>
-                </div>
-                <img src="../img/BUT/rb5.png" / class="answerPic"> </div>
+<div id="maincontent" class="admissions">
+  <div id="recentAnswers" class="col-1-3" style="overflow:hidden;">
+    <h2>Recently Answered</h2>
+    <div id='answerSlider' class='swipeRecent' style="margin:20px 0;">
+      <div class='swipe-wrap'>
+        <div>
+          <div class="question">
+            <h3>Question:</h3>
+            <p>What do I do with other scholarship awards?</p>
+          </div>
+          <div class="answer">
+            <h3>Answer:</h3>
+            <p>Any scholarships awarded by an institution separate from the university...</p>
+            <a href="#" class="view" style="margin-top:-13px;">View More</a> </div>
+          <div class="answeredBy">
+            <div class="info">
+              <p>Answered by Lindsay Bluth,<br />
+                Salesperson<br />
+                Some Store in the Mall</p>
             </div>
-            <div>
-              <div class="question">
-                <h3>Question:</h3>
-                <p>What is the answer to life?</p>
-              </div>
-              <div class="answer">
-                <h3>Answer:</h3>
-                <p>The answer to life is 42, you won't...</p>
-                <a href="#" class="view" style="margin-top:-13px;">View More</a> </div>
-              <div class="answeredBy">
-                <div class="info">
-                  <p>Answered by Lindsay Bluth,<br />
-                    Salesperson<br />
-                    Some Store in the Mall</p>
-                </div>
-                <img src="../img/BUT/rb5.png" / class="answerPic"> </div>
+            <img src="../img/BUT/rb5.png" / class="answerPic"> </div>
+        </div>
+        <div>
+          <div class="question">
+            <h3>Question:</h3>
+            <p>What is the answer to life?</p>
+          </div>
+          <div class="answer">
+            <h3>Answer:</h3>
+            <p>The answer to life is 42, you won't...</p>
+            <a href="#" class="view" style="margin-top:-13px;">View More</a> </div>
+          <div class="answeredBy">
+            <div class="info">
+              <p>Answered by Lindsay Bluth,<br />
+                Salesperson<br />
+                Some Store in the Mall</p>
             </div>
-          </div>
-        </div>
-        <center id="answerNav">
-          <button onClick="answerSlider.prev()"><img src=../img/arrowLeft.png width=10px/> Prev</button>
-          <button onClick="answerSlider.next()">Next <img src=../img/arrowRight.png width=10px /></button>
-          <br />
-          <br />
-          <a href="" class="view">View All Questions</a>
-        </center>
-      </div>
-      <div class="span05" style="text-align:center;">
-        <hr style="width: 1px; height: 390px; display: block;">
-      </div>
-      <div class="span4">
-        <h2>June 1, 2013</h2>
-        <h3>Fall admission deadline</h3>
-        <a href="#" class="view">View more Deadlines</a>
-        <hr />
-        <h2>Data</h2>
-        <h3>Average SAT Scores</h3>
-        <div style="display:block; margin:0 auto; width: 360px;">
-          <div id="chart1" style="position:relative;width:115px;height:115px; display:inline-block;"></div>
-          <div id="chart2" style="position:relative;width:115px;height:115px; display:inline-block;"></div>
-          <div id="chart3" style="position:relative;width:115px;height:115px; display:inline-block;"></div>
-        </div>
-        <a href="#" class="view" style="margin-top: 40px;"> View All Admission Data</a> </div>
-      <div class="span05" style="text-align:right;">
-        <hr style="width: 1px; height: 390px; display: block;">
-      </div>
-      <div class="span4 essay">
-        <h2>Accepted Student Essays</h2>
-        <p>Click on essay to view profile</p>
-        <div class="row-fluid">
-          <div class="span3"> <img src="../img/essay.png"/>
-            <p>Rate Essay</p>
-            <div class="voteContainer"> <span class="upOne">69</span>
-              <div class="upVote"></div>
-              <div class="downVote"></div>
-              <span class="downOne">911</span> </div>
-            <p>San Diego,CA<br />
-              GPA: 3.9<br />
-              SAT:1900<br  />
-              Rank:9/259</p>
-          </div>
-          <div class="span3"> <img src="../img/essay.png"/>
-            <p>Rate Essay</p>
-            <div class="voteContainer"> <span class="upOne">69</span>
-              <div class="upVote"></div>
-              <div class="downVote"></div>
-              <span class="downOne">911</span> </div>
-            <p>San Diego,CA<br />
-              GPA: 3.9<br />
-              SAT:1900<br  />
-              Rank:9/259</p>
-          </div>
-          <div class="span3"> <img src="../img/essay.png"/>
-            <p>Rate Essay</p>
-            <div class="voteContainer"> <span class="upOne">1</span>
-              <div class="upVote"></div>
-              <div class="downVote"></div>
-              <span class="downOne">77</span> </div>
-            <p>San Diego,CA<br />
-              GPA: 3.9<br />
-              SAT:1900<br  />
-              Rank:9/259</p>
-          </div>
-          <div class="span3"> <img src="../img/essay.png"/>
-            <p>Rate Essay</p>
-            <div class="voteContainer"> <span class="upOne">1000</span>
-              <div class="upVote"></div>
-              <div class="downVote"></div>
-              <span class="downOne">800</span> </div>
-            <p>San Diego,CA<br />
-              GPA: 3.9<br />
-              SAT:1900<br  />
-              Rank:9/259</p>
-          </div>
+            <img src="../img/BUT/rb5.png" / class="answerPic"> </div>
         </div>
       </div>
     </div>
+    <center id="answerNav">
+      <button onClick="answerSlider.prev()"><img src=../img/arrowLeft.png width=10px/> Prev</button>
+      <button onClick="answerSlider.next()">Next <img src=../img/arrowRight.png width=10px /></button>
+      <br />
+      <br />
+      <a href="" class="view">View All Questions</a>
+    </center>
   </div>
-  <div class="footer"><!--ADD THIS TO CSSS FILE FOR ALL THE WITTLE THINGIDK OK-->
+  <div id="data" class="col-1-3">
+    <h2>June 1, 2013</h2>
+    <h3>Fall admission deadline</h3>
+    <a href="#" class="view">View more Deadlines</a>
+    <hr />
+    <h2>Data</h2>
+    <h3>Average SAT Scores</h3>
+    <div style="display:block; margin:0 auto; width: 360px;">
+      <div id="chart1" style="position:relative;width:115px;height:115px; display:inline-block;"></div>
+      <div id="chart2" style="position:relative;width:115px;height:115px; display:inline-block;"></div>
+      <div id="chart3" style="position:relative;width:115px;height:115px; display:inline-block;"></div>
+    </div>
+    <a href="#" class="view" style="margin-top: 40px;"> View All Admission Data</a> </div>
+  <div id="essay" class="col-1-3 essay">
+    <h2>Accepted Student Essays</h2>
+    <p>Click on essay to view profile</p>
+    <div class="col-1-4"> <img src="../img/essay.png"/>
+      <p>Rate Essay</p>
+      <div class="voteContainer"> <span class="upOne">69</span>
+        <div class="upVote"></div>
+        <div class="downVote"></div>
+        <span class="downOne">911</span> </div>
+      <p>San Diego,CA<br />
+        GPA: 3.9<br />
+        SAT:1900<br  />
+        Rank:9/259</p>
+    </div>
+    <div class="col-1-4"> <img src="../img/essay.png"/>
+      <p>Rate Essay</p>
+      <div class="voteContainer"> <span class="upOne">69</span>
+        <div class="upVote"></div>
+        <div class="downVote"></div>
+        <span class="downOne">911</span> </div>
+      <p>San Diego,CA<br />
+        GPA: 3.9<br />
+        SAT:1900<br  />
+        Rank:9/259</p>
+    </div>
+    <div class="col-1-4"> <img src="../img/essay.png"/>
+      <p>Rate Essay</p>
+      <div class="voteContainer"> <span class="upOne">1</span>
+        <div class="upVote"></div>
+        <div class="downVote"></div>
+        <span class="downOne">77</span> </div>
+      <p>San Diego,CA<br />
+        GPA: 3.9<br />
+        SAT:1900<br  />
+        Rank:9/259</p>
+    </div>
+    <div class="col-1-4"> <img src="../img/essay.png"/>
+      <p>Rate Essay</p>
+      <div class="voteContainer"> <span class="upOne">1000</span>
+        <div class="upVote"></div>
+        <div class="downVote"></div>
+        <span class="downOne">800</span> </div>
+      <p>San Diego,CA<br />
+        GPA: 3.9<br />
+        SAT:1900<br  />
+        Rank:9/259</p>
+    </div>
+  </div>
+</div>
+<div class="footer">
     <h2>Ask an Admissions</h2>
     <h3>Select who you would like to message.</h3>
-    <span class="disclaimer">Our admissions officers have a set limit of questions that can be sent each day.</span> <span class="disclaimer">If an admissions officer is unavailable, please try the following day, or <a href="#" class="view" style="display:inline;">view previously answered questions</a>.</span>
-    <div class="row-fluid" style="margin-top: 25px;">
-      <div class="span6">
-        <div class="row-fluid">
-          <div class="span6">
-            <div class="row-fluid">
-              <div class="span3"><img src="../img/BUT/rb3.png" /></div>
-              <div class="span9">
-                <p>Debie Skultz</p>
-                <p>Academic Conselor</p>
-                <p>The University of Texas of Austin</p>
-              </div>
-            </div>
+    <span class="disclaimer">Our admissions officers have a set limit of questions that can be 
+    sent each day.<br />If an admissions officer is unavailable, 
+    please try the following day, or <a href="#" class="view" style="display:inline;">view 
+    previously answered questions</a>.</span>
+    <div id="officers">
+      <form>
+        <div class="officersLabel">
+          <input id="officer1" type="radio" name="officer" value="" checked="checked">
+          <label for="officer1">
+          <div class="icon">
+            <div class="pic"></div>
           </div>
-          <div class="span6">
-            <div class="row-fluid">
-              <div class="span3"><img src="../img/BUT/rb3.png" /></div>
-              <div class="span9">
-                <p>Debie Skultz</p>
-                <p>Academic Conselor</p>
-                <p>The University of Texas of Austin</p>
-              </div>
-            </div>
+          <div class="info">
+            <p>Debie Skultz</p>
+            <p>Academic Conselor</p>
+            <p>The University of Texas of Austin</p>
+          </div>
+          </label>
+        </div>
+        
+         <div class="officersLabel">
+          <input id="officer2" type="radio" name="officer" value="">
+          <label for="officer2">
+          <div class="icon">
+            <div class="pic"></div>
+          </div>
+          <div class="info">
+            <p>Debie Skultz</p>
+            <p>Academic Conselor</p>
+            <p>The University of Texas of Austin</p>
+          </div>
+          </label>
+        </div>
+        <div class="officersLabel">
+          <input id="officer3" type="radio" name="officer" value="">
+          <label for="officer3">
+          <div class="icon">
+            <div class="pic"></div>
+          </div>
+          <div class="info">
+            <p>Debie Skultz</p>
+            <p>Academic Conselor</p>
+            <p>The University of Texas of Austin</p>
+          </div>
+          </label>
+        </div>
+        <div class="officersLabel">
+          <input id="officer4" type="radio" name="officer" value="">
+          <label for="officer4">
+          <div class="icon">
+            <div class="pic"></div>
+          </div>
+          <div class="info">
+            <p>Debie Skultz</p>
+            <p>Academic Conselor</p>
+            <p>The University of Texas of Austin</p>
+          </div>
+          </label>
+        </div>
+        <div class="officersLabel">
+          <input id="officer5" type="radio" name="officer" value="">
+          <label for="officer5">
+          <div class="icon">
+            <div class="pic"></div>
+          </div>
+          <div class="info">
+            <p>Debie Skultz</p>
+            <p>Academic Conselor</p>
+            <p>The University of Texas of Austin</p>
+          </div>
+          </label>
+        </div>
+        <div class="officersLabel">
+          <input id="officer6" type="radio" name="officer" value="">
+          <label for="officer6">
+          <div class="icon">
+            <div class="pic"></div>
+          </div>
+          <div class="info">
+            <p>Debie Skultz</p>
+            <p>Academic Conselor</p>
+            <p>The University of Texas of Austin</p>
+          </div>
+          </label>
+        </div>
+      </form>
+    </div>
+    <div class="col-1-2">
+      <form>
+        <textarea name="question" placeholder="Enter your question here."></textarea>
+        <div class="col-1-2">
+          <div class="dropDown">
+            <select>
+              <option>Select a Category</option>
+              <option>Tanner Issue</option>
+              <option>Tanner Design</option>
+              <option>Getting tanner</option>
+            </select>
           </div>
         </div>
-        <!-- let try -->
-        <div class="row-fluid">
-          <div class="span6">
-            <div class="row-fluid">
-              <div class="span3"><img src="../img/BUT/rb3.png" /></div>
-              <div class="span9">
-                <p>Debie Skultz</p>
-                <p>Academic Conselor</p>
-                <p>The University of Texas of Austin</p>
-              </div>
-            </div>
-          </div>
-          <div class="span6">
-            <div class="row-fluid">
-              <div class="span3"><img src="../img/BUT/rb3.png" /></div>
-              <div class="span9">
-                <p>Debie Skultz</p>
-                <p>Academic Conselor</p>
-                <p>The University of Texas of Austin</p>
-              </div>
-            </div>
-          </div>
+        <div class="col-1-2">
+          <button style="float:right;">Send Question</button>
         </div>
-        <div class="row-fluid">
-          <div class="span6">
-            <div class="row-fluid">
-              <div class="span3"><img src="../img/BUT/rb3.png" /></div>
-              <div class="span9">
-                <p>Debie Skultz</p>
-                <p>Academic Conselor</p>
-                <p>The University of Texas of Austin</p>
-              </div>
-            </div>
-          </div>
-          <div class="span6">
-            <div class="row-fluid">
-              <div class="span3"><img src="../img/BUT/rb3.png" /></div>
-              <div class="span9">
-                <p>Debie Skultz</p>
-                <p>Academic Conselor</p>
-                <p>The University of Texas of Austin</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="span6">
-        <form>
-          <textarea name="question" placeholder="Enter your question here."></textarea>
-          <div class="col-1-2">
-            <div class="dropDown">
-              <select>
-                <option>Select a Category</option>
-                <option>Tanner Issue</option>
-                <option>Tanner Design</option>
-                <option>Getting tanner</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-1-2">
-            <button style="float:right;">Send Question</button>
-          </div>
-        </form>
-      </div>
+      </form>
     </div>
   </div>
-  <div class="footerSpace"></div>
-</div>
 </body>
 </html>
 <script type='text/javascript'>
