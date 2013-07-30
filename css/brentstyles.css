@@ -381,6 +381,7 @@ font-family: HNB;
 	vertical-align:top;
 
 }
+
 #matches #availability h3 {
 	font-size: 18px;
 	font-family:HNL;
@@ -1585,7 +1586,10 @@ button{
 	
 }
 
-#recommendedHousingFooter{
+#recommendedHousingFooterSqueeze{
+display:none;
+}
+#recommendedHousingFooter, #recommendedHousingFooterSqueeze{
 	width:1000px;
 	max-width:100%;
 	border-top:2px solid rgb(116,116,116);
@@ -1594,7 +1598,7 @@ button{
 	margin-left:auto;
 }
 
-#recommendedHousingFooter #item{
+#recommendedHousingFooter #item, #recommendedHousingFooterSqueeze #item{
 	display:inline-block;
 	margin-right:20px;
 	margin-left:20px;
@@ -1602,21 +1606,21 @@ button{
 	
 }
 
-#recommendedHousingFooter h3{
+#recommendedHousingFooter h3, #recommendedHousingFooterSqueeze h3 {
 	color:rgb(51,62,106);
 	font-family:HNB;
 	margin-bottom:0;
 	margin-top:0px;
 }
 
-#recommendedHousingFooter #item p{
+#recommendedHousingFooter #item p, #recommendedHousingFooterSqueeze #item p{
 	font-family:HNL;
 	font-size:14px;
 	color:rgb(51,62,106);
 	margin-bottom:0px;
 }
 
-#recommendedHousingFooter #item .appDate{
+#recommended .appDate{
 	color:rgb(220, 134, 39);
 	font-family:Georgia;
 	font-size:14px;
@@ -2153,6 +2157,11 @@ padding-top:1px;
 
 
 @media (max-width:1000px) { 
+	
+
+
+	
+	
 	#housingMain #left{
 	border:none;
 	}
@@ -2183,6 +2192,11 @@ padding-top:5px;
 		border-top: 2px solid rgb(116,116,116);
 	width:80%;
 }	
+#housingMatcherRight #item p{
+	color:rgb(51,62,106);
+	font-family:HNL;
+	font-size:14px;
+}
 #housingMain #right{
 display:none;
 }
@@ -2239,6 +2253,14 @@ margin-left:10%;
 #housingResultsContainer #preferences {
 	width:80%;
 }
+	
+		#recommendedHousingFooterSqueeze{
+	display:block;
+	}
+	#housingMatcherRight{ 
+display:none;
+}
+
 }
 
 
@@ -2247,7 +2269,12 @@ margin-left:10%;
 @media (max-width:950px) { 
 
 
-
+		#recommendedHousingFooterSqueeze{
+	display:block;
+	}
+	#housingMatcherRight{ 
+display:none;
+}
 
 /*types of housing */
 #wrap{
@@ -2305,6 +2332,12 @@ height:500px;
 }
 
 @media (max-width:775px){
+		#recommendedHousingFooterSqueeze{
+	display:block;
+	}
+	#housingMatcherRight{ 
+display:none;
+}
 #matches #videoResp{
 	margin-left:10%;
 }
@@ -2312,6 +2345,13 @@ height:500px;
 
 
 @media (max-width:650px) { 
+		#recommendedHousingFooterSqueeze{
+	display:block;
+	}
+	#housingMatcherRight{ 
+display:none;
+}
+
 #matches #videoResp{
 	margin-left:0px;
 }
@@ -2333,7 +2373,7 @@ height:1000px;
 	}
 	
 	
-#recommendedHousingFooter #item{
+#recommendedHousingFooter #item, #recommendedHousingFooterSqueeze #item{
 	margin-top:0px;
 }
 
@@ -2349,8 +2389,14 @@ height:1000px;
 
 @media (min-width:1300px){
 
+	#recommendedHousingFooterSqueeze{
+	display:none;
 
+	}
+	#housingMatcherRight{ 
+display:inline-block;
 
+}
 
 
 #housingMain{
@@ -2426,9 +2472,10 @@ margin-left:370px;
 	border:none;
 
 	}
-	#recommendedHousingFooter{
+	#leasingPro #recommendedHousingFooter{
 	display:none;
 	}
+
 	#leasingPro .top{
 		margin:auto;
 text-align:center;
@@ -2439,12 +2486,39 @@ text-align:center;
 	
 }
 
+#matches {
+	width:1200px;
+	
+}
+#matches #availability{
+	width:900px;
+}
+#matches #compatibility{
+	width:900px;
+}
 }
 
 
 
 
 @media (min-width:1580px){
+#matches {
+	width:1500px;
+	
+}
+#matches #availability{
+	width:1200px;
+}
+#matches #compatibility{
+	width:1200px;
+}
+
+			#recommendedHousingFooterSqueeze{
+	display:none;
+	}
+	#housingMatcherRight{ 
+display:inline-block;
+}
 
 
 #housingMain{
