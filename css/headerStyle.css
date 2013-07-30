@@ -21,12 +21,12 @@
 	font-weight: normal;
 }
 #logoContainer img {
-	width: 76px;
-	height: 76px;
+	width: 75px;
+	height: 75px;
 	background-size: 100% 100%;
 	position: absolute;
-	margin-top: -18px;
-	margin-left: -20px;
+	margin-top: -19px;
+	margin-left: -28px;
 }
 #loginBar {
 	width: 100%;

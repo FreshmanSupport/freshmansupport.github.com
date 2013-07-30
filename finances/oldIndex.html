@@ -8,11 +8,12 @@
 <script src="../js/swipe.js"></script>
 <style>
 span{
-	position: absolute;
-	right: 0;
+	
+	position:absolute;
+	left:10px;
 	width: 25px;
 	height: 25px;
-	line-height: 25px;
+	line-height: 2px;
 	padding: 3px;
 	color: #FFF;
 	text-align: center;
@@ -21,7 +22,7 @@ span{
 }
  
 span:after{
-	content: "no"; /*if CSS are disbled span elements are not displayed*/
+	content: ""; /*if CSS are disbled span elements are not displayed*/
 }
  
 input{
@@ -44,13 +45,14 @@ input[type="radio"] + span{ /*the span element that immediately follow the radio
 }
  
 input[type="radio"] + span:after{
-	content: "yes"; /*if CSS are disbled span elements are not displayed*/
+	content: ""; /*if CSS are disbled span elements are not displayed*/
 }
  
  
 input[type="radio"]:checked + span{
 	visibility: visible; /*show the "YES" label only if the radio button is checked*/
 }
+li{height: 100px;}
 </style>
 </head>
 
@@ -219,7 +221,7 @@ input[type="radio"]:checked + span{
 <div class="footer" style="margin-top: 700px;">
  <ul>
     <li><label for="radio1">label 1</label><span></span><input type="radio" id="radio1" name="myRadio" checked="checked"/><span></span></li>
-    <li><label for="radio2">label 2</label><span></span><input type="radio" id="radio2" name="myRadio" /><span></span></li>
+    <li><span></span><input type="radio" id="radio2" name="myRadio" /><span></span>	<label for="radio2">label 2</label></li>
     <li><label for="radio3">label 3</label><span></span><input type="radio" id="radio3" name="myRadio" /><span></span></li>
     <li><label for="radio4">label 4</label><span></span><input type="radio" id="radio4" name="myRadio" /><span></span></li>
   </ul>
