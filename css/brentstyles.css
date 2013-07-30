@@ -6,6 +6,11 @@
 	font-family: "HNB";
 	src: url(../font/helveticaneue-boldcond.otf);
 }
+.blue{
+	color:rgb(51,62,106);
+	font-family:Georgia;
+	font-size:14px;
+}
 .orange{
 	color: rgb(220, 134, 39);
 
@@ -1602,7 +1607,6 @@ display:none;
 	display:inline-block;
 	margin-right:20px;
 	margin-left:20px;
-	margin-top:-25px;
 	
 }
 
@@ -2162,14 +2166,21 @@ padding-top:1px;
 
 
 @media (max-width:1000px) { 
-	
-
 
 	
 	
 	#housingMain #left{
 	border:none;
+	width:700px;
 	}
+	#housingMain #left .compareWrap{
+	margin-left:115px;
+	}
+	
+	#housingMain #left #searchwrapper{
+		margin-left:250px;
+	}
+	
 	#housingMain #right #deadlinesDiv{
 border-top:2px solid rgb(116,116,116);
 padding-top:5px;
@@ -2273,7 +2284,6 @@ display:none;
 
 @media (max-width:950px) { 
 
-
 		#recommendedHousingFooterSqueeze{
 	display:block;
 	}
@@ -2351,10 +2361,23 @@ display:none;
 #matches #videoResp{
 	margin-left:10%;
 }
+	
 }
 
 
 @media (max-width:650px) { 
+
+#housingMain #left{
+	border:none;
+	width:90%;
+	}
+	#housingMain #left .compareWrap{
+	margin-left:0px;
+	}
+	
+	#housingMain #left #searchwrapper{
+		margin-left:0px;
+	}
 		#recommendedHousingFooterSqueeze{
 	display:block;
 	}
