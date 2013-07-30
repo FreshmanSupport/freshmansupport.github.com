@@ -300,3 +300,6 @@ h1 {
 	display: block;
 	margin: 0 auto;
 }
+@media (max-width: 940px) {
+#newNav span{display:none;}
+}
