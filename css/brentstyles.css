@@ -2528,6 +2528,9 @@ width:1000px;
 #recommendedHousingFooter{
 	width:1200px;
 }
+#housingResultsContainer #preferences {
+width:1160px;
+}
 }
 
 
@@ -2535,6 +2538,9 @@ width:1000px;
 
 
 @media (min-width:1580px){
+#housingResultsContainer #preferences {
+width:1450px;
+}
 #recommendedHousingFooter{
 	width:1500px;
 }
