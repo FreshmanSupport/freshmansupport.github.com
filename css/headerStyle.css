@@ -133,11 +133,10 @@
 /* ===Sub Nav=== */
 #subNav {
 	text-align: center;
-	white-space: nowrap;
 	background-color: transparent;
 	width: 75%;
 	z-index: 2;
-	height: 25px;
+	min-height: 35px;
 	border-top: 4px solid rgb(116,116,116);
 	margin: 0 auto;
 	padding-top: 2px;
@@ -301,5 +300,5 @@ h1 {
 	margin: 0 auto;
 }
 @media (max-width: 940px) {
-#newNav span{display:none;}
+	#newNav span{display:none;}
 }

@@ -823,55 +823,7 @@
 	display:inline-block;
 }
 
-#officers span{
-	
-	position:absolute;
-	left:10px;
-	width: 25px;
-	height: 25px;
-	line-height: 2px;
-	padding: 3px;
-	color: #FFF;
-	text-align: center;
-	background: #c06f59;
-	border-radius: 50%;
-}
- 
-#officers span:after{
-	content: ""; /*if CSS are disbled span elements are not displayed*/
-}
- 
-#officers input{
-	position: absolute;
-	right: 0;
-	margin: 0;
-	width: 31px;
-	height: 31px;
-	/*hide the radio button*/
-	filter:alpha(opacity=0);
-	-moz-opacity:0;
-	-khtml-opacity: 0;
-	opacity: 0;
-        cursor: pointer;
-}
- 
-#officers input[type="radio"] + span{ /*the span element that immediately follow the radio button */
-	visibility: hidden; /*temporarily hide the "YES" label*/
-	background: #6EB558;
-}
- 
-#officers input[type="radio"] + span:after{
-	content: ""; /*if CSS are disbled span elements are not displayed*/
-}
- 
- 
-#officers input[type="radio"]:checked + span{
-	visibility: visible; /*show the "YES" label only if the radio button is checked*/
-}
-
-
-
-
+#officers .officersLabel{display:inline-block; width: 49%;}
 
 /* ============== COLUMN  ===================*/
 
