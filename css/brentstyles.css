@@ -1625,6 +1625,11 @@ display:none;
 	font-family:Georgia;
 	font-size:14px;
 }
+.appDate{
+	color:rgb(220, 134, 39);
+	font-family:Georgia;
+	font-size:14px;
+}
 
 
 
@@ -2281,7 +2286,11 @@ display:none;
 height:500px;
 	}
 	#compareTypes{
-		margin-top:270px;
+		margin-top:290px;
+		width:80%;
+	}
+	#recommendedHousingFooter{
+	width:80%;
 	}
 	#flipWrap{
 	margin-top:0px;
@@ -2306,8 +2315,9 @@ height:500px;
 
 	
 	#availUpload{
-		width:100%;
-		max-width:100%;
+			width:100%;
+
+		margin:auto;
 	}
 #availUpload #upload {
 	height:auto;
@@ -2382,13 +2392,19 @@ height:1000px;
 	width:400px;
 	
 }
+#flippers{
+width:1000px; margin:auto; max-width:100%; min-height:300px;
+}
 
 
 
 }
 
 @media (min-width:1300px){
-
+#availUpload{
+	width:100%;
+	
+}
 	#recommendedHousingFooterSqueeze{
 	display:none;
 
@@ -2496,12 +2512,46 @@ text-align:center;
 #matches #compatibility{
 	width:900px;
 }
+ #flippers{
+ width:1200px;
+}
+#flipWrap{
+	margin-left:35px;
+	margin-right:35px;
+}
+#compareTypes{
+	width:1200px;
+}
+#compareTypes table{
+width:1000px;
+}
+#recommendedHousingFooter{
+	width:1200px;
+}
 }
 
 
 
 
+
 @media (min-width:1580px){
+#recommendedHousingFooter{
+	width:1500px;
+}
+#compareTypes{
+	width:1500px;
+}
+#compareTypes table{
+width:1200px;
+}
+ #flippers{
+ width:1500px;
+}
+#flipWrap{
+	margin-left:55px;
+	margin-right:55px;
+}
+
 #matches {
 	width:1500px;
 	
