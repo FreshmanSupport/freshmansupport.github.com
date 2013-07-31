@@ -25,7 +25,7 @@
        // width: 300,
         height: null,
         background: "#eee",
-        selectText: "",
+        selectText: "Select the Admissions Officer you would like to message.",
         defaultSelectedIndex: null,
         truncateDescription: true,
         imagePosition: "left",
