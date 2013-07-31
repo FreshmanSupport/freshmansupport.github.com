@@ -22,7 +22,7 @@
     defaults = {
         data: [],
         keepJSONItemsOnTop: false,
-        width: 300,
+       // width: 300,
         height: null,
         background: "#eee",
         selectText: "",

@@ -7,7 +7,7 @@
 <script type="text/javascript" src="../../js/jquery.ddslick.js"></script>
 <script>
 $(document).ready(function(){
-$('#demo-htmlselect').ddslick({
+$('#officersSelect').ddslick({
     onSelected: function(selectedData){
         //callback function: do something with selectedData;
     }   
@@ -59,7 +59,7 @@ $('#demo-htmlselect').ddslick({
   </div>
 </div>
 <div id="maincontent">
-<div id="recentlyAnswered" class="col-3-4">
+<div id="recentlyAnswered" class="col-5-8">
   <div id="raHeader">
     <h2>Admissions Q&A</h2>
     <div class="dropDown">
@@ -91,20 +91,40 @@ $('#demo-htmlselect').ddslick({
           Some Store in The Mall</p>
       </div>
     </li>
+    
+        <li>
+      <div class="col-3-4">
+        <h3>Question:</h3>
+        <p>How important are admissions essays in getting accepted to UT?</p>
+        <h3>Answer:</h3>
+        <p>Admissions essay are used to determine many different things: acceptance into The University of Texas, and acceptance to
+          the specific College in which you are applying to. Make sure all submitted essays are clear and concise and fit the
+          assigned topics. Avoid any grammatical mistakes. The deadlines for UT's application for incoming freshman is May1st. 
+          Make sure to have your essays proofread, edited, and submitted before this date.</p>
+      </div>
+      <div class="col-1-4 profilePic"> <img src="../../img/port.png"/>
+        <p>Answered by:<br />
+          <a href="#">Lindsay Bluth</a><br />
+          Salesperson<br />
+          Some Store in The Mall</p>
+      </div>
+    </li>
   </ul>
 </div>
-<div class="col-1-4 admissionsAsk">
+<div class="col-3-8 admissionsAsk">
   <h2>Ask an Admissions Officer</h2>
   <p><i>Our admissions officers have a est limit of question that can be sent each day. If an admissions officer
     is unavailable, please try again the following day, or view previously answered questions.</i></p>
-  <select id="demo-htmlselect">
-    <option value="0" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/facebook-icon-32.png"
+  <select id="officersSelect">
+      <option value="0" 
+            data-description="Select the Admissions Officer you would like to message."></option>
+    <option value="1" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/facebook-icon-32.png"
             data-description="Salesperson<br /> Some Store In The Mall">Lindsay Bluth</option>
-    <option value="1" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/twitter-icon-32.png"
+    <option value="2" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/twitter-icon-32.png"
             data-description="Description with Twitter">Twitter</option>
-    <option value="2" selected="selected" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/linkedin-icon-32.png"
+    <option value="3" selected="selected" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/linkedin-icon-32.png"
             data-description="Description with LinkedIn">LinkedIn</option>
-    <option value="3" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/foursquare-icon-32.png"
+    <option value="4" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/foursquare-icon-32.png"
             data-description="Description with Foursquare">Foursquare</option>
   </select>
 
@@ -124,6 +144,6 @@ $('#demo-htmlselect').ddslick({
         <button style="float:right;">Send Question</button>
       </div>
   </form>
-
+<p>*By submitting a question to one of Freshman Support's Admissions<br /> Officers, you agree to our <a>Terms & Conditions.</a></p>
 </div>
 </body>

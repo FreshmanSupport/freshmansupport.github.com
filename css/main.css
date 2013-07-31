@@ -130,7 +130,7 @@
 	width: 100%;
 	position:relative;
 }
-#raHeader .dropDown{position:absolute; top:0; right:67px;}
+#raHeader .dropDown{position:absolute; top:0; right:46px;}
 #recentlyAnswered h3 {
 	text-align: left;
 }
@@ -154,19 +154,24 @@
 }
 #recentlyAnswered ul {
 	list-style-type: none;
+	margin:0;
+	padding:0;
 }
 #recentlyAnswered li {
 	margin: 0;
 	padding: 0;
 	border-bottom: 1px solid gray;
+	margin-top: 20px;
 }
 #dropList{}
 #dropDown{width:300px; border: 1px solid gray;}
 .dropOption div{width: 300px; height: 50px; background-color: rgb(232, 229, 228); border:2px solid gray;}
 
-.admissionsAsk{}
-.admissionsAsk textarea{width: 300px; height: 100px;}
+.admissionsAsk{border-left: 2px solid gray; padding-left: 50px; padding-bottom: 300px;}
+.admissionsAsk textarea{width: 500px; height: 100px; margin-top: 20px; margin-bottom: 20px;}
 .admissionsAsk .dropDown,.admissionsAsk .dropDown select{width: 150px;}
+#officersSelect{width: 500px;}
+#officersSelect li{width:500px;}
 /* ============ Roomie Match ================= */
 .rmTable {
 	margin: 0 auto;
