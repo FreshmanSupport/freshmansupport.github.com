@@ -6,10 +6,12 @@
 <script src="../../js/jquery-1.9.1.js" type="text/javascript"></script>
 <script type="text/javascript" src="../../js/jquery.ddslick.js"></script>
 <script>
+$(document).ready(function(){
 $('#demo-htmlselect').ddslick({
     onSelected: function(selectedData){
         //callback function: do something with selectedData;
     }   
+});
 });
 </script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -40,8 +42,8 @@ $('#demo-htmlselect').ddslick({
     <ul>
       <li id="home"><a href="../../home">HOME</a></li>
       <li id="housing"><a href="../../housing">COMPARE HOUSING</a></li>
-      <li id="roomieSelected"><a href="../../roomieMatch">ROOMIE MATCH</a></li>
-      <li id="admissions"><a href="../../admissions" >ADMISSIONS</a> </li>
+      <li id="roomie"><a href="../../roomieMatch">ROOMIE MATCH</a></li>
+      <li id="admissionsSelected"><a href="../../admissions" >ADMISSIONS</a> </li>
       <li id="finances"><a href="../../finances">FINANCES</a> </li>
       <li id="theRealLife"><a href="../../theRealLife">THE REAL LIFE</a> </li>
       <li id="visit"><a href="../../visit">VISIT</a> </li>
@@ -50,9 +52,9 @@ $('#demo-htmlselect').ddslick({
   </div>
   <div id="subNav">
     <ul>
-    	<li class="selected">Recently Answered</li>
-        <li>Data</li>
-        <li>Accepted Student Profiles</li>
+      <li class="selected">Recently Answered</li>
+      <li>Data</li>
+      <li>Accepted Student Profiles</li>
     </ul>
   </div>
 </div>
@@ -78,34 +80,50 @@ $('#demo-htmlselect').ddslick({
         <p>How important are admissions essays in getting accepted to UT?</p>
         <h3>Answer:</h3>
         <p>Admissions essay are used to determine many different things: acceptance into The University of Texas, and acceptance to
-        the specific College in which you are applying to. Make sure all submitted essays are clear and concise and fit the
-         assigned topics. Avoid any grammatical mistakes. The deadlines for UT's application for incoming freshman is May1st. 
-         Make sure to have your essays proofread, edited, and submitted before this date.</p>
+          the specific College in which you are applying to. Make sure all submitted essays are clear and concise and fit the
+          assigned topics. Avoid any grammatical mistakes. The deadlines for UT's application for incoming freshman is May1st. 
+          Make sure to have your essays proofread, edited, and submitted before this date.</p>
       </div>
-      <div class="col-1-4 profilePic"> 
-      	<img src="../../img/port.png"/> 
-		<p>Answered by:<br /><a href="#">Lindsay Bluth</a><br />Salesperson<br />Some Store in The Mall</p>
+      <div class="col-1-4 profilePic"> <img src="../../img/port.png"/>
+        <p>Answered by:<br />
+          <a href="#">Lindsay Bluth</a><br />
+          Salesperson<br />
+          Some Store in The Mall</p>
       </div>
     </li>
   </ul>
 </div>
-<div class="col-1-4" style="border-left: 1px solid navy;">
-	<h2>Ask an Admissions Officer</h2>
-    <p><i>Our admissions officers have a est limit of question that can be sent each day. If an admissions officer
+<div class="col-1-4 admissionsAsk">
+  <h2>Ask an Admissions Officer</h2>
+  <p><i>Our admissions officers have a est limit of question that can be sent each day. If an admissions officer
     is unavailable, please try again the following day, or view previously answered questions.</i></p>
-    
-     <select id="demo-htmlselect">
-        <option value="0" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/facebook-icon-32.png"
-            data-description="Description with Facebook">Facebook</option>
-        <option value="1" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/twitter-icon-32.png"
+  <select id="demo-htmlselect">
+    <option value="0" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/facebook-icon-32.png"
+            data-description="Salesperson<br /> Some Store In The Mall">Lindsay Bluth</option>
+    <option value="1" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/twitter-icon-32.png"
             data-description="Description with Twitter">Twitter</option>
-        <option value="2" selected="selected" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/linkedin-icon-32.png"
+    <option value="2" selected="selected" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/linkedin-icon-32.png"
             data-description="Description with LinkedIn">LinkedIn</option>
-        <option value="3" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/foursquare-icon-32.png"
+    <option value="3" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/foursquare-icon-32.png"
             data-description="Description with Foursquare">Foursquare</option>
-    </select>
-    
+  </select>
+
+    <form>
+      <textarea name="question" placeholder="Enter your question here."></textarea>
+      <div class="col-1-2">
+        <div class="dropDown">
+          <select>
+            <option>Select a Category</option>
+            <option>Tanner Issue</option>
+            <option>Tanner Design</option>
+            <option>Getting tanner</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-1-2">
+        <button style="float:right;">Send Question</button>
+      </div>
+    </form>
+
 </div>
-
-
 </body>
