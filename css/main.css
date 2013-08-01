@@ -197,8 +197,13 @@
 	font-size: 2em;
 	text-align: left;
 	border-right: none;
+	padding-left: 20px;
 }
 /* ================== Roomie Slide ================= */
+#roomieSlider{
+margin: 20px auto;
+width: 750px;
+}
 #roomieSlider ul {
 	list-style: none;
 	width: 80%;
@@ -219,7 +224,9 @@
 	white-space: normal;
 }
 #roomieSlider .twoLine {
-	line-height: 30px;
+	line-height: 15px;
+display: block;
+padding-top: 9px;
 }
 #roomieSlider p {
 	display: inline-block;
@@ -237,8 +244,8 @@
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 25px;
-	padding-right: 5px;
-	line-height: 65px;
+	padding-right: 20px;
+	line-height: 46px;
 }
 #roomieSlider .fakeLb {
 	display: inline-block;
@@ -371,6 +378,7 @@
 	font-family: HNL;
 	font-size: 30px;
 }
+
 #spHeader .dropDown {
 	float: left;
 }
@@ -453,9 +461,7 @@
 /* =============== Match Details ==================== */
 .matchDetails {
 	background-color: rgb(232, 229, 228);
-	width: 100%;
-	height-min: 10px;
-	padding-left: 50px;
+	width: 94%;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	position: relative;
@@ -494,7 +500,7 @@
 	color: gray;
 }
 .matchDetails .list {
-	width: 300px;
+	width: 290px;
 	display: inline-block;
 	font-size: 14px;
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -925,7 +931,7 @@
 /* ============== Footer  ===================*/
 .footer {
 	padding-top: 10px;
-	width: 1200px;
+	width: 80%;
 	background-color: rgb(232, 229, 228);
 	text-align: center;
 	border: 2px solid gray;

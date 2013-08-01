@@ -1,7 +1,8 @@
 $(document).ready(function () {
        $('.mdLink').click(function() {
-		   
-           $('.matchDetails').toggle();
+		   var id = event.target.id;
+		   id = id.replace('Click', '');
+           $('#'+id).toggle();
            return false;
        });
 	   
