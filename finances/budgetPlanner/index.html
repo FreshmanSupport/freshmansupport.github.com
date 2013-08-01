@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link type="text/css" rel="stylesheet" href="../../css/main.css"/>
+<link type="text/css" rel="stylesheet" href="../../css/headerStyle.css"/>
+<script type="text/javascript" src="../../js/jquery-1.9.1.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Budget Planner</title>
+<script src="../../js/swipe.js"></script>
+<script type="text/javascript">
+
+	   $('.stateWrap').click(function() {
+		  	
+		   $('input:checked').parent().removeClass("initialColor");
+		  
+       });
+
+</script>
+</head>
+
+<body>
+<div id="header">
+  <div id="loginBar">
+    <div id="loginBarContainer"> <a href="#">Login |</a> <a href="#"> Register</a> </div>
+  </div>
+  <div id="searchBar">
+    <div id="collegeSearchContainer">
+      <form id="collegeSearchbox" action="">
+        <input id="submit" type="submit" value="Search" name="submit"class="collegeSearchButton">
+        <input id="search" type="text" name="collegeSearch" placeholder="The University of Texas at Austin" class="collegeSearchBox">
+      </form>
+    </div>
+    <div id="logoContainer"><a href="/"><img src="../../img/logo.png" /></a></div>
+    <div id="siteSearchContainer">
+      <form id="searchbox" action="">
+        <div id="magnify"></div>
+        <input id="search" type="text" placeholder="Search The University of North Texas" class="siteSearchSkin">
+      </form>
+    </div>
+  </div>
+  <div id="newNav">
+    <ul>
+      <li id="home"><a href="../../home">HOME</a></li>
+      <li id="housing"><a href="../../housing"><span>COMPARE </span>HOUSING</a></li>
+      <li id="roomie"><a href="../../roomieMatch">ROOMIE<span> MATCH</span></a></li>
+      <li id="admissions"><a href="../../admissions" >ADMISSIONS</a> </li>
+      <li id="financesSelected"><a href="../../finances">FINANCES</a> </li>
+      <li id="theRealLife"><a href="../../theRealLife"><span>THE </span>REAL LIFE</a> </li>
+      <li id="visit"><a href="../../visit">VISIT</a> </li>
+      <li id="deadlines"><a href="../../deadlines">DEADLINES</a> </li>
+    </ul>
+  </div>
+  <div id="subNav">
+    <ul>
+      <li><a>Data</a></li>
+      <li><a>Recently Answered</a></li>
+      <li><a>Financial Aid</a></li>
+      <li><a>Budget Planner</a></li>
+    </ul>
+  </div>
+</div>
+<div id="maincontent" class="budgetPlanner">
+<div id="budgetPlanner" class="col-5-8" style="overflow:hidden;">
+  <h2>Budget Planner</h2>
+  <div id='answerSlider' class='swipeRecent' style="margin:20px 0;">
+    <div class='swipe-wrap'>
+      <div>
+        <h2>Tuition</h2>
+        <div class="stateTextWrap"> <span class="inS">In-State or</span><span class="outS"> Out-Of-State</span> </div>
+        <div class="initialColor stateWrap">
+          <form>
+            <input id="inState" type="radio" name="state" value="inState">
+            <label for="inState"></label>
+            <input id="outOfState" type="radio" name="state" value="outOfState">
+            <label for="outOfState"></label>
+          </form>
+          <h2>First Semester Attending?</h2>
+          <div class="semesterWrap">
+            <form>
+              <input id="summer" type="radio" name="semester" value="summer">
+              <label for="summer">SUMMER</label>
+              <input id="fall" type="radio" name="semester" value="fall">
+              <label for="fall">FALL</label>
+              <input id="spring" type="radio" name="semester" value="spring">
+              <label for="spring">SPRING</label>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div> 
+      <h2>Housing</h2>
+      <h3>Where do you plan to live?</h3>
+       </div>
+    </div>
+    <center id="answerNav">
+      <button onClick="answerSlider.prev()"><img src=../../img/arrowLeft.png width=10px/> Prev</button>
+      <span>1 of 8</span>
+      <button onClick="answerSlider.next()">Next <img src=../../img/arrowRight.png width=10px /></button>
+    </center>
+  </div>
+  
+</div>
+<div id="results" class="col-3-8">
+    <h2>Result</h2>
+	<ul>
+    	<li>Tuition Costs <span class="cost">$0</span></li>
+        <li>Housing Costs <span class="cost">$0</span></li>
+        <li>Housing Item Costs <span class="cost">$0</span></li>
+        <li>Food Costs <span class="cost">$0</span></li>
+        <li>Academic Costs <span class="cost">$0</span></li>
+        <li>Transportation Costs <span class="cost">$0</span></li>
+        <li>Personal Costs <span class="cost">$0</span></li>
+        <li>Fun Funds <span class="cost">$0</span></li>
+    </ul> 
+ </div>
+</body>
+</html>
+</script>
+<script type='text/javascript'>
+window.answerSlider = new Swipe(document.getElementById('answerSlider'), {
+  startSlide: 0,
+  speed: 400,
+  auto: 30000,
+  continuous: true,
+  disableScroll: false,
+  stopPropagation: false,
+  callback: function(index, elem) {},
+  transitionEnd: function(index, elem) {}
+});
+</script>

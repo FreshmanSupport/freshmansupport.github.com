@@ -448,6 +448,8 @@
 .editnav a:visited {
 	color: gray;
 }
+.editNav span{cursor:pointer; color: gray; font-family:Georgia, "Times New Roman", Times, serif;}
+.editNav .select{font-weight:bold;}
 /* =============== Match Details ==================== */
 .matchDetails {
 	background-color: rgb(232, 229, 228);
