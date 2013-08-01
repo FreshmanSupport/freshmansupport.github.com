@@ -820,15 +820,15 @@
 	margin-top: 10px;
 	margin-bottom: 30px;
 }
-.finances #state {
+ #state {
 	margin-top: 20px;
 }
-.finances .stateWrap {
+ .stateWrap {
 	display: block;
 	margin: 0 auto;
 	width: 145px;
 }
-.finances .stateTextWrap {
+ .stateTextWrap {
 	display: block;
 	margin: 0 auto;
 	width: 180px;
@@ -836,7 +836,7 @@
 	margin-bottom: 10px;
 	font-size: 18px;
 }
-.finances .stateWrap label {
+ .stateWrap label {
 	display: inline-block;
 	vertical-align: top;
 	width: 35px;

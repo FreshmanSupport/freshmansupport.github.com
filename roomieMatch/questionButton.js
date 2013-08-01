@@ -7,6 +7,7 @@ $(document).ready(function () {
        }); 
 	 $('.roommate input').click(function(){
 	 	 var index = $(this).index();
+		 var id = event.target.id;
 			clear();
 			var before = index;
 			var after = index + 4;
@@ -20,7 +21,8 @@ $(document).ready(function () {
 			}
 			
 			function clear(){
-				$('.roommate input').parent().children().removeClass("fuzzy");
+				 
+				$('#'+id).parent().children().removeClass("fuzzy");
 			}
 	 })
 })
