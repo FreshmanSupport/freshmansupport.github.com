@@ -8,11 +8,7 @@
 <script type="text/javascript" src="roomieMatchProfileScript.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Roomie Profile</title>
-<script>
-$(document).ready(function(){
 
-});
-</script>
 </head>
 
 <body>
@@ -54,7 +50,7 @@ $(document).ready(function(){
 </div>
 <div id="maincontent">
 <div class="row-fluid">
-<div id="studentProfile" class="span8">
+<div id="studentProfile" class="span8" style="border-right: 2px solid gray">
   <div id="spHeader">
     <div class="dropDown">
       <select>
@@ -85,12 +81,24 @@ $(document).ready(function(){
         <div class="profileSubBar">
           <ul>
             <li><a href="#">View Profile</a></li>
-            <li><a href="#">Send Message</a></li>
-            <li  class="mdLink"><a id="mdClick1" href="#">Match Details</a></li>
+            <li class="smLink"><a id="smClick1" href="#">Send Message</a></li>
+            <li class="mdLink"><a id="mdClick1" href="#">Match Details</a></li>
           </ul>
         </div>
       </div>
       <div class="col-1-4 profilePic"> <img src="../../img/port.png"/> </div>
+    </li>
+    <li>
+    	<div id="sm1" class="sendMessages">
+        <div class="triangle"></div>
+        <form>
+        	<ul>
+                <li><input type="text" placeholder="Subject"/></li>
+                <li><textarea placeholder="Message"></textarea></li>
+                <li><button>Send</button></li>
+            </ul>
+        </form>
+        </div>
     </li>
     <li>
       <div id="md1" class="matchDetails">
@@ -246,12 +254,24 @@ $(document).ready(function(){
         <div class="profileSubBar">
           <ul>
             <li><a href="#">View Profile</a></li>
-            <li><a href="#">Send Message</a></li>
+            <li class="smLink"><a id="smClick2" href="#">Send Message</a></li>
             <li  class="mdLink"><a id="mdClick2" href="#">Match Details</a></li>
           </ul>
         </div>
       </div>
       <div class="col-1-4 profilePic"> <img src="../../img/port.png"/> </div>
+    </li>
+    <li>
+    	<div id="sm2" class="sendMessages">
+        <div class="triangle"></div>
+        <form>
+        	<ul>
+                <li><input type="text" placeholder="Subject"/></li>
+                <li><textarea placeholder="Message"></textarea></li>
+                <li><button>Send</button></li>
+            </ul>
+        </form>
+        </div>
     </li>
     <li>
       <div id="md2" class="matchDetails">
@@ -393,10 +413,10 @@ $(document).ready(function(){
     </li>
   </ul>
 </div>
-<div class="span4" style="border-left: 1px solid navy;">
+<div class="span4">
   <h2>July 14, 2013</h2>
   <h3 style="color: gray;">UT Roommate Application Deadline</h3>
-  <a href="#" class="view">View More Deadlines</a>
+  <a href="#" class="view" style="margin-bottom: 20px;">View More Deadlines</a>
   <hr />
   <div id="rmEdit">
     <h2>Edit Preferences</h2>

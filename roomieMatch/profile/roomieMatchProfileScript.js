@@ -1,11 +1,21 @@
 $(document).ready(function () {
-       $('.mdLink').click(function() {
+	   //Initliaze all the sm and md to be hidden
+	   $('.sendMessages').hide();
+	   $('.matchDetails').hide();
+	   
+	   $('.mdLink').click(function() {
 		   var id = event.target.id;
 		   id = id.replace('Click', '');
            $('#'+id).toggle();
            return false;
        });
-	   
+	   $('.smLink').click(function(){
+		 	var id = event.target.id;
+		   id = id.replace('Click', '');
+           $('#'+id).toggle();
+           return false;
+		 });
+		 
 	var you = $('#you');
 	var roommate = $('#roommate');
 	var importance =$('#importance');
@@ -19,9 +29,12 @@ $(document).ready(function () {
 	  hideRemove();
 	  $('#'+event.target.id).addClass('select');
 	  $('#'+name).toggle();
-	  //$(par).slideToggle('slow');
       e.preventDefault();
-  });
+  	});
+  
+  
+  
+  
   function hideRemove()
   {
 	$('.editNav span').removeClass('select');
