@@ -848,7 +848,6 @@ padding-top: 9px;
 	display: block;
 	margin: 0 auto;
 	width: 180px;
-	;
 	margin-bottom: 10px;
 	font-size: 18px;
 }
@@ -862,7 +861,7 @@ padding-top: 9px;
 	border-radius: 50%;
 	margin-right: 5px;
 }
-.finances .stateWrap input[type=radio]:checked + label {
+.stateWrap input[type=radio]:checked + label {
 	background-color: rgb(51,61,105);
 }
 .finances .semesterWrap {
@@ -874,17 +873,13 @@ padding-top: 9px;
 	color: gray;
 	margin-bottom: 0;
 }
-.finances #budgetPlanner input[type=radio] {
+#budgetPlanner input[type=radio] {
 	display: none;
 }
-.finances .stateWrap.initialColor label:nth-child(2) {
-	background-color: rgb(51,61,105);
-}
-.finances .stateWrap.initialColor label:nth-child(4) {
-	background-color: rgb(182,197,220);
-	margin-left: 60px;
-}
-.finances .semesterWrap label {
+.stateWrap label:nth-child(4){margin-left: 60px;}
+.stateWrap.initialColor label:nth-child(2) {background-color: rgb(51,61,105);}
+.stateWrap.initialColor label:nth-child(4) {background-color: rgb(182,197,220);}
+.semesterWrap label {
 	display: inline-block;
 	color: white;
 	background-color: rgb(51, 62, 107);
@@ -892,7 +887,6 @@ padding-top: 9px;
 	height: 40px;
 	text-align: center;
 	text-decoration: none;
-	;
 	font-size: 18px;
 	font-family: HNB, Arial, Helvetica, sans-serif;
 	margin: 0 auto;
@@ -915,7 +909,7 @@ padding-top: 9px;
 	text-decoration: none;
 	float: right;
 }
-.finances .semesterWrap input[type=radio]:checked + label {
+.semesterWrap input[type=radio]:checked + label {
 	background-color: rgb(220, 134, 39);
 }
 .cost {
@@ -938,6 +932,30 @@ padding-top: 9px;
 	margin: 0 auto;
 	margin-top: 20px;
 }
+/* ========== Budget Planner ===================== */
+.budgetPlanner .semesterWrap{display:block; width: 130px; margin: 0 auto;}
+.budgetPlanner .twoLine{padding-top:2px; line-height: 18px;}
+#budgetPlanner ul, #results ul{list-style-type:none; padding:0;}
+.checkContainer{width: 400px;display: block;margin: 0 auto;}
+#budgetPlanner .checkContainer p{text-align:left;}
+.checkContainer .circle{
+	display: inline-block;
+	vertical-align: top;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border: 1px solid rgb(51,61,105);
+	border-radius: 50%;
+	margin-right: 28px;
+}
+.checkContainer input[type=checkbox]{display:none;}
+.checkContainer input[type="checkbox"]:checked + label .circle {
+	background-color: rgb(51,61,105);
+}
+.checkContainer li{display:inline-block; width:170px;}
+
+
+
 /* ============== Footer  ===================*/
 .footer {
 	padding-top: 10px;

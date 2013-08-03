@@ -7,15 +7,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Budget Planner</title>
 <script src="../../js/swipe.js"></script>
-<script type="text/javascript">
-
-	   $('.stateWrap').click(function() {
-		  	
-		   $('input:checked').parent().removeClass("initialColor");
-		  
-       });
-
-</script>
 </head>
 
 <body>
@@ -52,29 +43,31 @@
   </div>
   <div id="subNav">
     <ul>
-      <li><a>Data</a></li>
-      <li><a>Recently Answered</a></li>
-      <li><a>Financial Aid</a></li>
-      <li><a>Budget Planner</a></li>
+      <li><a href="../data">Data</a></li>
+      <li><a href="../recentlyAnswered">Recently Answered</a></li>
+      <li><a href="../financialAid">Financial Aid</a></li>
+      <li><a href="" class="selected">Budget Planner</a></li>
     </ul>
   </div>
 </div>
 <div id="maincontent" class="budgetPlanner">
-<div id="budgetPlanner" class="col-5-8" style="overflow:hidden;">
-  <h2>Budget Planner</h2>
-  <div id='answerSlider' class='swipeRecent' style="margin:20px 0;">
-    <div class='swipe-wrap'>
-      <div>
+  <div id="budgetPlanner" class="col-5-8" style="overflow:hidden;">
+    <h2>Budget Planner</h2>
+    <div id='budgetSlider' class='swipeRecent' style="margin:20px 0;">
+      <div class='swipe-wrap'>
+        <div>
         <h2>Tuition</h2>
-        <div class="stateTextWrap"> <span class="inS">In-State or</span><span class="outS"> Out-Of-State</span> </div>
-        <div class="initialColor stateWrap">
-          <form>
-            <input id="inState" type="radio" name="state" value="inState">
-            <label for="inState"></label>
-            <input id="outOfState" type="radio" name="state" value="outOfState">
-            <label for="outOfState"></label>
-          </form>
-          <h2>First Semester Attending?</h2>
+          <div class="stateTextWrap"> <span class="inS">In-State or</span><span class="outS"> Out-Of-State</span> </div>
+          <div class="initialColor stateWrap">
+            
+            <form>
+              <input id="inState" type="radio" name="state" value="inState">
+              <label for="inState"></label>
+              <input id="outOfState" type="radio" name="state" value="outOfState">
+              <label for="outOfState"></label>
+            </form>
+          </div>
+          <h3>First Semester Attending?</h3>
           <div class="semesterWrap">
             <form>
               <input id="summer" type="radio" name="semester" value="summer">
@@ -86,38 +79,171 @@
             </form>
           </div>
         </div>
-      </div>
-      <div> 
-      <h2>Housing</h2>
-      <h3>Where do you plan to live?</h3>
+        <div>
+          <h2>Housing</h2>
+          <h3>Where do you plan to live?</h3>
+          <div class="semesterWrap">
+            <form>
+              <input id="public" type="radio" name="housing" value="public">
+              <label for="public" class="twoLine">PUBLIC<br />
+                DORM</label>
+              <input id="private" type="radio" name="housing" value="private">
+              <label for="private" class="twoLine">PRIVATE<br />
+                DORM</label>
+              <input id="apartment" type="radio" name="housing" value="apartment">
+              <label for="apartment">APARTMENT</label>
+            </form>
+          </div>
+        </div>
+        <div>
+          <h2>Housing Items</h2>
+          <div>
+          	<form>
+            	<ul class="checkContainer">
+                	<li>
+                    <input type="checkbox" id="bedding" name="housingItem" />
+					<label for="bedding">
+                   	 <div class="checkBoxTop">
+                     	<div class="circle"></div> Bedding
+                     </div>	
+                        
+                     </label>
+                        <p>pillows, blankets, sheets, comforter, etc</p>
+                    </li>
+                    
+                    <li>
+                    <input type="checkbox" id="kitchenware" name="housingItem" />
+					<label for="kitchenware">
+                   	 <div class="checkBoxTop">
+                     	<div class="circle"></div> Kitchenware
+                     </div>	
+                     </label>
+                        <p>plates, silverware, cups, cookware, pots, pans, etc.</p>
+                    </li>
+                    <li>
+                    <input type="checkbox" id="bedroom" name="housingItem" />
+					<label for="bedroom">
+                   	 <div class="checkBoxTop">
+                     	<div class="circle"></div> Bedroom
+                     </div>	
+                     </label>
+                        <p>bed, desk, nightstand, dresser, etc.</p>
+                    </li>
+                    
+                    <li>
+                    <input type="checkbox" id="livingroom" name="housingItem" />
+					<label for="livingroom">
+                   	 <div class="checkBoxTop">
+                     	<div class="circle"></div> Living Room
+                     </div>	
+                     </label>
+                        <p>sofa, coffee table, television, stand, etc.</p>
+                    </li>
+                   <li>
+                    <input type="checkbox" id="Bathroom" name="housingItem" />
+					<label for="Bathroom">
+                   	 <div class="checkBoxTop">
+                     	<div class="circle"></div> Bathroom
+                     </div>	
+                     </label>
+                        <p>shower supplies, towerls, toiletries, etc.</p>
+                    </li>
+                    
+                   <li>
+                    <input type="checkbox" id="miscellaneous" name="housingItem" />
+					<label for="miscellaneous">
+                   	 <div class="checkBoxTop">
+                     	<div class="circle"></div> Miscellaneous
+                     </div>	
+                     </label>
+                        <p>lamp, alarm clock, detegerent, garbage can, etc.</p>
+                    </li>
+                    
+                </ul>
+            </form>
+          </div>
+        </div>
+        <div>
+          <h2>Food</h2>
+          <p>The average student spends $15 a day on food. Many dorms have meal
+            plans that you can pay for that will be included in housing cost, but 
+            be sure to budget for eatting out!</p>
+          <div class="semesterWrap">
+            <form>
+              <input id="mealPlan" type="radio" name="food" value="mealPlan">
+              <label for="mealPlan">PRIVATE<br />
+                DORM</label>
+              <input id="homeCook" type="radio" name="food" value="home">
+              <label for="homeCook">COOKING AT HOME</label>
+            </form>
+          </div>
+          <h3>How often do you plan to eat out?</h3>
+          THree Radio Button
+          Steal Brent color changer </div>
+       <div>
+       	<h2>Academics</h2>
        </div>
+       
+       <div>
+       	<h2>Transportation</h2>
+        <h3>What transportation do you plan on using?</h3>
+               <div class="semesterWrap">
+            <form>
+              <input id="car" type="radio" name="transportation" value="car">
+              <label for="car">CAR</label>
+              <input id="bike" type="radio" name="transportation" value="bike">
+              <label for="bike">BIKE</label>
+              <input id="public" type="radio" name="transportation" value="public">
+              <label for="public">PUBLIC<br /> TRANSPORT</label>
+            </form>
+          </div>
+        <h3>Do you need to buy parking?</h3>
+        Three button
+       </div>
+       
+        <div>
+          <h2>Personal</h2>
+          What is this? three buttons? </div>
+        <div>
+          <h2>Fun Funds</h2>
+          <h3>How often are you planning to:</h3>
+          <p>Click circles to choose activities</p>
+          5 block style button with  brent codee </div>
+      </div>
     </div>
     <center id="answerNav">
-      <button onClick="answerSlider.prev()"><img src=../../img/arrowLeft.png width=10px/> Prev</button>
+      <button onClick="budgetSlider.prev()"><img src=../../img/arrowLeft.png width=10px/> Prev</button>
       <span>1 of 8</span>
-      <button onClick="answerSlider.next()">Next <img src=../../img/arrowRight.png width=10px /></button>
+      <button onClick="budgetSlider.next()">Next <img src=../../img/arrowRight.png width=10px /></button>
     </center>
   </div>
-  
+  <div id="results" class="col-3-8">
+  <h2>Results</h2>
+  <ul>
+    <li>Tuition Costs <span class="cost">$0</span></li>
+    <li>Housing Costs <span class="cost">$0</span></li>
+    <li>Housing Item Costs <span class="cost">$0</span></li>
+    <li>Food Costs <span class="cost">$0</span></li>
+    <li>Academic Costs <span class="cost">$0</span></li>
+    <li>Transportation Costs <span class="cost">$0</span></li>
+    <li>Personal Costs <span class="cost">$0</span></li>
+    <li>Fun Funds <span class="cost">$0</span></li>
+    <li>
+        <h2>Total Estimated Cost</h2>
+        <h2>$0</h2>
+    </li>
+    <li>
+    	<p>Note:This amount is only an estimate based on average cost. This is not a guranteed cost of college</p>
+    </li>
+    
+  </ul>
 </div>
-<div id="results" class="col-3-8">
-    <h2>Result</h2>
-	<ul>
-    	<li>Tuition Costs <span class="cost">$0</span></li>
-        <li>Housing Costs <span class="cost">$0</span></li>
-        <li>Housing Item Costs <span class="cost">$0</span></li>
-        <li>Food Costs <span class="cost">$0</span></li>
-        <li>Academic Costs <span class="cost">$0</span></li>
-        <li>Transportation Costs <span class="cost">$0</span></li>
-        <li>Personal Costs <span class="cost">$0</span></li>
-        <li>Fun Funds <span class="cost">$0</span></li>
-    </ul> 
- </div>
+</div>
+
 </body>
 </html>
-</script>
 <script type='text/javascript'>
-window.answerSlider = new Swipe(document.getElementById('answerSlider'), {
+budgetSlider = new Swipe(document.getElementById('budgetSlider'), {
   startSlide: 0,
   speed: 400,
   auto: 30000,
@@ -127,4 +253,10 @@ window.answerSlider = new Swipe(document.getElementById('answerSlider'), {
   callback: function(index, elem) {},
   transitionEnd: function(index, elem) {}
 });
+</script>
+<script type="text/javascript">
+	   $('.stateWrap input').click(function(){
+		   $('input:checked').parent().parent().removeClass("initialColor");
+		  
+       });
 </script>
