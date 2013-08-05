@@ -675,7 +675,7 @@ margin-top:23px;
 
 #recommended .compare{
 	font-family: HNL;
-	color:rgb(116,116,116);
+	color:rgb(220, 134, 39);
 	margin-left:0px;
 	position:relative;
 	top:2px	;
@@ -1168,8 +1168,8 @@ display:inline-block;
 	text-align:center;
 	}
 #property #left{
-	width:100%;
-	max-width:350px;
+	width:350px;
+	max-width:100%;
 	display:inline-block;
 	height:900px;
 	margin-top:15px;
@@ -1208,7 +1208,7 @@ display:inline-block;
 line-height:50px;}
 #generalInfo .compare{
 	font-family: HNL;
-	color:rgb(116,116,116);
+	color:rgb(220, 134, 39);
 	margin-left:3px;
 	position:relative;
 	top:2px	;
@@ -1287,7 +1287,7 @@ margin:0;
 }
 
 #leasingPro img{
-	width:90%;
+	width:100%;
 	display:inline-block;
 }
 #leasingPro .top{
@@ -1325,8 +1325,8 @@ display:none;
 }
 
 #property #right{
-	width:100%;
-	max-width:550px;
+	width:550px;
+	max-width:100%;
 	display:inline-block;
 	background-color:white;
 	border-left:2px solid rgb(116,116,116);
@@ -1465,8 +1465,71 @@ display:none;
 }
 
 
-/* property media page*/
 
+
+/*property listing page*/
+#propListing{
+width:1000px;
+max-width:100%;
+margin:auto;
+}
+#propListing h2{
+font-family:HNL;
+color:rgb(51,62,106);
+font-size:30px;
+font-weight:normal;
+text-align:center;
+}
+
+#propListing h3{
+	font-size:18px;
+	color:rgb(116,116,116);
+	margin-bottom:10px;
+	text-align:center;
+	font-weight:normal;
+
+}
+#propListing #top #left{
+	width:350px;
+	color:rgb(116,116,116);
+	font-size:14px;
+	font-family:HNL;
+	display:inline-block;
+	text-align:center;
+	vertical-align:top;
+	border-right:2px solid rgb(116,116,116);
+
+}
+
+#propListing #top #right{
+	width:600px;
+		color:rgb(116,116,116);
+font-size:14px;
+font-family:HNL;
+display:inline-block;
+text-align:center;
+vertical-align:top;
+}
+#propListing #top .item{
+	width:150px;
+	color:rgb(51,62,106);
+	display:inline-block;
+	margin:auto;
+}
+#propListing #bottom{
+border-top:2px solid rgb(116,116,116);
+margin-top:10px;
+}
+#propListing #top, #propListing #bottom{
+width:100%;
+
+}
+
+
+/* property media page*/
+.mediapage #housingMatcherRight{
+display:none;
+}
 #picsAndVids{
 	width:1000px;
 	max-width:100%;
@@ -1480,19 +1543,20 @@ display:none;
 #upload h2{
 	margin:25px auto;
 }
-
+#picsAndVids #videoWrap p{
+	text-align:center;
+}
 #picsAndVids #videoWrap{
-	width:100%;
-	max-width:420px;
+	max-width:100%;
 	vertical-align:top;
 	display:inline-block;
-	text-align:left;
+	text-align:center;
 	margin-right:20px;
 }
 #picsAndVids #picsWrap{
 	max-width:520px;
 	display:inline-block;
-	text-align:left;
+	text-align:center;
 	
 }
 #picsAndVids #picsWrap img{
@@ -1547,8 +1611,8 @@ display:none;
 
 #availUpload #availability{
 	border:none;
-	width:100%;
-	max-width:400px;
+	width:400px;
+	max-width:100%;
 	display:inline-block;
 	height:485px;
 	text-align:left;
@@ -1561,8 +1625,8 @@ margin:20px;
 
 
 #availUpload #upload {
-width:100%;
-	max-width:500px;
+width:500px;
+	max-width:100%;
 	display:inline-block;
 		border-left:2px solid rgb(116,116,116);
 		margin-top:10px;
@@ -1713,11 +1777,15 @@ border-bottom:2px solid rgb(116,116,116);
 padding-bottom:10px;
 }
 
+.compare{
+	color:rgb(220, 134, 39);
 
+}
 
 #housingMain .compare{
 	font-family: HNL;
-	color:rgb(116,116,116);
+	color:rgb(220, 134, 39);
+
 	margin-left:3px;
 	position:relative;
 	top:2px	;
@@ -2156,7 +2224,7 @@ line-height: 14px;
 
 
 .dropDown .pref{
-height:15px;
+height:17px;
 padding-left:2px;
 padding-top:1px;
 }
@@ -2275,11 +2343,7 @@ margin-left:10%;
 	#housingMatcherRight{ 
 display:none;
 }
-
 }
-
-
-
 
 @media (max-width:950px) { 
 
@@ -2423,10 +2487,7 @@ width:1000px; margin:auto; max-width:100%; min-height:300px;
 }
 
 @media (min-width:1300px){
-#availUpload{
-	width:100%;
-	
-}
+
 	#recommendedHousingFooterSqueeze{
 	display:none;
 
@@ -2529,30 +2590,100 @@ text-align:center;
 	
 }
 #matches #availability{
-	width:900px;
+	width:1000px;
 }
 #matches #compatibility{
-	width:900px;
+	width:1000px;
 }
  #flippers{
  width:1300px;
 }
 #flipWrap{
-	margin-left:35px;
-	margin-right:35px;
+	margin-left:50px;
+	margin-right:50px;
 }
 #compareTypes{
-	width:1200px;
+	width:1300px;
 }
 #compareTypes table{
-width:1000px;
+width:1200px;
 }
 #recommendedHousingFooter{
-	width:1200px;
+	width:1300px;
 }
 #housingResultsContainer #preferences {
-width:1160px;
+width:1260px;
 }
+
+#property{
+	width:1300px;
+}
+#property #right{
+width:850px;
+}
+#property #left{
+width:400px;
+display:inline-block;
+}
+.mediapage{
+width:1300px;
+text-align:center;
+margin:auto;
+}
+.mediapage #left{
+margin-top:10px;
+	width:915px;
+	vertical-align:top;
+	display:inline-block;
+text-align:center;
+padding-right:10px;
+border-right:2px solid rgb(116,116,116);
+}
+.mediapage #left h2{
+margin-top:10px;
+}
+.mediapage #recommendedHousingFooter{
+	display:none;
+	vertical-align:top;
+	margin:0;
+	height:100%;
+}
+.mediapage #housingMatcherRight{
+vertical-align:top;
+display:inline-block;
+width:350px;
+border:none;
+}
+.mediapage p{
+text-align:center;}
+
+.mediapage #left #picsAndVids{
+	width:100%;
+}
+/*
+#picsAndVids{
+width:1300px;
+}
+#picsAndVids #picsWrap{
+	margin-left:50px;
+	margin-right:50px;
+}
+#picsAndVids #videoWrap{
+margin-left:50px;
+	margin-right:50px;
+}
+
+#availUpload{
+	width:1300px;
+}
+
+#availUpload #availability{
+	width:600px;
+}
+
+#availUpload #upload{
+width:600px;
+}*/
 }
 
 
