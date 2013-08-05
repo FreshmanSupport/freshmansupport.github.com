@@ -363,9 +363,25 @@ padding-top: 9px;
 #maincontent.roommate .span05{
 	margin-left:-8px;
 }
-@media 1200px{
+#maincontent.roommate{
+	margin-left:-35px;
+}
+@media (max-width:1200px){
 #maincontent.roommate .span05{
 	display:none;
+}
+#maincontent.roommate{
+	margin-left:0px;
+}
+#maincontent.roommate #rmSlide{
+	border-bottom:2px solid gray;
+	padding-bottom: 50px;
+	margin-bottom: 30px;
+}
+}
+@media(max-width:700px){
+#roomieSlider{
+	margin-left:-37px;
 }
 }
 /* =========== Student Profiles =============== */
