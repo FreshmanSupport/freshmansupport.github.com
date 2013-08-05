@@ -238,7 +238,7 @@
         <div>
           <h2>Transportation</h2>
           <h3>What transportation do you plan on using?</h3>
-          <div class="semesterWrap">
+          <div class="transWrap">
             <form>
               <input id="car" type="radio" name="transportation" value="car">
               <label for="car">CAR</label>
@@ -361,23 +361,20 @@ budgetSlider = new Swipe(document.getElementById('budgetSlider'), {
        });
 	   
 //Function to loop colors
-	$('.loopingColorContainer > div').click(function(){
-		alert("LoL you die. Lol Lol you die");
+	$('.loopingColorContainer  .circle').click(function(){
+		if( $(this).hasClass('initial') ) {
+			$(this).removeClass('initial').addClass('rarely');
+		}
+		else if( $(this).hasClass('rarely') ) {
+			$(this).removeClass('rarely').addClass('sometime');
+		}
+		else if( $(this).hasClass('sometime') ) {
+			$(this).removeClass('sometime').addClass('frequently');
+		}
+		else{
+			$(this).removeClass('frequently').addClass('initial');
+		}
 	});
-	/*   function radio(x){
-	if(document.getElementById(x).className=='notImportant'){
-		document.getElementById(x).className = 'semiImportant';
-	}
-	
-	else if(document.getElementById(x).className=='semiImportant'){
-		document.getElementById(x).className = 'important';
-	}
-	
-	else if(document.getElementById(x).className=='important'){
-		document.getElementById(x).className = 'dealBreaker';
-	}
-	
-	else if(document.getElementById(x).className=='dealBreaker'){
-		document.getElementById(x).className = 'notImportant';
-	}*/   
+
+	  
 </script>
