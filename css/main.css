@@ -356,6 +356,18 @@ padding-top: 9px;
 #roomieSlider .disclaimerContainer .checkContainer p {
 	color: rgb(51, 62, 107);
 }
+.disclaimerCheckContainer
+{
+	margin-left:40px;
+}
+#maincontent.roommate .span05{
+	margin-left:-8px;
+}
+@media 1200px{
+#maincontent.roommate .span05{
+	display:none;
+}
+}
 /* =========== Student Profiles =============== */
 
 #spHeader {
@@ -952,10 +964,25 @@ padding-top: 9px;
 .checkContainer input[type="checkbox"]:checked + label .circle {
 	background-color: rgb(51,61,105);
 }
-.checkContainer li{display:inline-block; width:170px;}
+.checkContainer li{display:inline-block; width:185px;}
 
+.legend{border:1px solid rgb(51,61,105); width: 450px; padding: 25px 20px; margin:0 auto; margin-top: 20px;}
+.initial{background-color:white;}
+.rarely{background-color:rgb(182,197,220);}
+.sometime{background-color:rgb(89,107,158);}
+.frequently{background-color:rgb(51,61,105);}
 
-
+.loopingColorContainer {width:400px; margin:0 auto;}
+.loopingColorContainer .circle, .legend .circle{
+	display: block;
+	vertical-align: top;
+	width: 20px;
+	height: 20px;
+	border: 1px solid rgb(51,61,105);
+	border-radius: 50%;
+	margin-right: 28px;
+}
+.loop-1-3{width:130px; display:inline-block;}
 /* ============== Footer  ===================*/
 .footer {
 	padding-top: 10px;
@@ -1073,6 +1100,8 @@ padding-top: 9px;
 #officers input[type=radio]:checked + label p {
 	color: orange;
 }
+.rmSpan{margin-bottom:27px;}
+
 /* ============== COLUMN  ===================*/
 
 /* Select all of the column*/
