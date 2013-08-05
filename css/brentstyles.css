@@ -1728,7 +1728,6 @@ padding-bottom:10px;
 	height:10px;
 	margin-bottom:10px;
 	margin-right:3px;
-	
 }
 
 #housingMain #compareDiv img{
@@ -2146,7 +2145,7 @@ border: 1px solid #ccc;
 background: transparent;
 width: 200px;
 font-size: 14px;
-border: 2px solid rgb(79,77,77);
+border: 1px solid rgb(79,77,77);
 border-radius: 0;
 height: 20px;
 -webkit-appearance: none;	
@@ -2439,15 +2438,15 @@ display:inline-block;
 
 
 #housingMain{
-width:1200px;
+width:1300px;
 
 }
 #content {
-	width:1200px;
+	width:1300px;
 }
 
 #housingMain #left{
-width:750px;
+width:850px;
 
 }
 
@@ -2456,13 +2455,13 @@ width:400px;
 }
 #maincontent {
 	background: white;
-	width: 1200px;
+	width: 1300px;
 	max-width:100%;
 	margin: 0 auto;
 	
 }
 #housingMain #left .compareWrap{
-	margin-left:167px;
+	margin-left:267px;
 }
 #searchwrapper{
 	border:1px solid rgb(51,62,106);
@@ -2470,12 +2469,12 @@ width:400px;
 }
 
 #housingMatcherContainer{
-	width:1200px;
+	width:1300px;
 	
 	}
 
 	#housingMatcherContainer #housingMatcherLeft{
-	width:750px;
+	width:850px;
 	}
 	#housingMatcherContainer #housingMatcherRight{
 		width: 400px;
@@ -2483,11 +2482,11 @@ width:400px;
 	}
 
 	#reviewsPage{
-	width:1200px;
+	width:1300px;
 	
 }
 #reviewsPage #left{
-width:750px;
+width:850px;
 }
 
 #reviewsPage #right{
@@ -2495,14 +2494,14 @@ width:400px;
 }
 #reviewsPage #left  .review{
 
-		width:730px;
+		width:830px;
 	}
 	
 	#reviewsPage #left  .votes{
-margin-left:370px;
+margin-left:470px;
 	}
 	#leasingPro {
-		width:1200px;
+		width:1300px;
 	}
 	
 	#leasingPro  #housingMatcherRight {
@@ -2521,12 +2520,12 @@ text-align:center;
 	padding-right:20px;
 	border-right:2px solid rgb(116,116,116);
 	margin-top:10px;
-	max-width:800px;
+	max-width:900px;
 	
 }
 
 #matches {
-	width:1200px;
+	width:1300px;
 	
 }
 #matches #availability{
@@ -2536,7 +2535,7 @@ text-align:center;
 	width:900px;
 }
  #flippers{
- width:1200px;
+ width:1300px;
 }
 #flipWrap{
 	margin-left:35px;
