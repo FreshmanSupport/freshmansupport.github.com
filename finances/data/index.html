@@ -3,7 +3,10 @@
 <head>
 <link type="text/css" rel="stylesheet" href="../../css/main.css"/>
 <link type="text/css" rel="stylesheet" href="../../css/headerStyle.css"/>
+<link href="../../css/Chart.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="../../js/jquery-1.9.1.js"></script>
+<script src="../../js/Chart.js"></script>
+<script src="../js/Chart.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Financial Aid</title>
 </head>
@@ -49,48 +52,111 @@
     </ul>
   </div>
 </div>
-<div id="maincontent">
- <div class="col-1-4">
- 	<h2>Financial Aid</h2>
-    <h3>1 dolla</h3>
-    <p>The Average Aid package for full-time freshman</p>
-    
-    <h3>30%</h3>
-    <p>Of student receieving financial aid participate in work-study</p>
-    
-    <h3>$.02</h3>
-    <p>Amount of need-based scholar/grant awkawrd in 2011</p>
-    
-    <h3>$.04</h3>
-    <p>Amount of non-need-based scholar/grant awkawrd in 2011</p>
-    
-    <h3>$2.00 to 4.00 dolalrs</h3>
-    <p>Inidivual Loan package award for freshman</p>
-    
-    <h3>$3.00</h3>
-    <p>Neede-based self-help awarded in 2011</p>
-    
- </div>
- <div class="col-3-4">
- 	<div id="schoolCost">
-    	Two javascript table idk mannnn
+<div id="maincontent" class="data">
+  <h2>Data</h2>
+  <div id="finAid" class="col-1-4">
+    <div class="textWrap">
+      <h2>Financial Aid</h2>
+      <h3>1 dolla</h3>
+      <p>The Average Aid package for full-time freshman</p>
+      <h3>30%</h3>
+      <p>Of student receieving financial aid participate in work-study</p>
+      <h3>$.02</h3>
+      <p>Amount of need-based scholar/grant awkawrd in 2011</p>
+      <h3>$.04</h3>
+      <p>Amount of non-need-based scholar/grant awkawrd in 2011</p>
+      <h3>$340 to $30,000</h3>
+      <p>Inidivual Loan package award for freshman</p>
+      <h3>$3.00</h3>
+      <p>Neede-based self-help awarded in 2011</p>
     </div>
-    <div id="studentEmployment">
-    	<div class="col-1-2">
-        	<h3>$%</h3>
-            <p>Of full-time ungraduate work on campus during the school year</p>
-            
-            <h3>$7,230</h3>
-            <p>The amount the student may expect to earn an average of per year</p>
+  </div>
+  <div class="col-3-4">
+    <div id="schoolCosts">
+      <h2>School Costs</h2>
+      <div id="inState" class="col-1-2">
+        <ul class="legend">
+          <li>
+            <div class="square c1"></div>
+            Tution</li>
+          <li>
+            <div class="square c2"></div>
+            Required Fees</li>
+          <li>
+            <div class="square c3"></div>
+            Room and Board</li>
+          <li>
+            <div class="square c4"></div>
+            Books and Other</li>
+        </ul>
+        <div class="chartContainer">
+          <div id="chart1" style="position:relative;width:200px;height:200px; display:inline-block;"></div>
         </div>
-        <div class="col-1-2">
-        	<h2>Off campu part-time employment rated:</h2>
-            <h2>FABULOUS</h2>
-            
+        <h2>In-State</h2>
+      </div>
+      <div id="inState" class="col-1-2">
+        <ul class="legend">
+          <li>
+            <div class="square c1"></div>
+            Tution</li>
+          <li>
+            <div class="square c2"></div>
+            Required Fees</li>
+          <li>
+            <div class="square c3"></div>
+            Room and Board</li>
+          <li>
+            <div class="square c4"></div>
+            Books and Other</li>
+        </ul>
+        <div class="chartContainer">
+          <div id="chart2" style="position:relative;width:200px;height:200px; display:inline-block;"></div>
         </div>
-    
+        <h2>Out-Of-State</h2>
+      </div>
     </div>
+      <div id="studentEmployment">
+    <h2>Student Employment</h2>
+    <div class="col-1-2">
+      <h3>7%</h3>
+      <p>Of full-time ungraduates<br />
+        work on campus during the <br />
+        school year</p>
+      <h3>$7,230</h3>
+      <p>The amount the student may<br />
+        expect to earn an average of <br />
+        per year<br />
+      </p>
     </div>
- </div>
+    <div class="col-1-2">
+      <h2 style="margin-top:65px;">Off campus part-time employment rated:</h2>
+      <h3>FABULOUS</h3>
+    </div>
+  </div>
+  </div>
+
+</div>
+</div>
 </body>
 </html>
+<script>
+new Chart.Pie("chart1", {
+  showTooltips : true, 
+  chartMinSize : [200, 200], 
+  chartMaxSize : [200, 200], 
+  chartData : [["Tuition", 39.20, "00:01:33", "#333D69"], 
+               ["Required Fees", 30.58, "00:03:04", "#44567F"], 
+               ["Room and Board", 22.91, "00:02:01", "#596B9E"], 
+               ["Book and Other", 3.63, "00:01:03", "#91A5C3"]]
+});
+new Chart.Pie("chart2", {
+  showTooltips : true, 
+  chartMinSize : [200, 200], 
+  chartMaxSize : [200, 200], 
+  chartData : [["Tuition", 31.20, "00:01:33", "#333D69"], 
+               ["Required Fees", 30.58, "00:03:04", "#44567F"], 
+               ["Room and Board", 22.91, "00:02:01", "#596B9E"], 
+               ["Book and Other", 8.63, "00:01:03", "#91A5C3"]]
+});
+
+</script>

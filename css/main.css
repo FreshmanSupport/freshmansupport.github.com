@@ -177,6 +177,12 @@
 .admissionsAsk .dropDown,.admissionsAsk .dropDown select{width: 150px;}
 #officersSelect{width: 500px;}
 #officersSelect li{width:500px;}
+#officerPic{display:inline-block; width:150px; height:150px;}
+#officerDesc{display:inline-block; width-min:150px; height:150px;}
+#officerPic, #officerDesc{margin-bottom: 30px;vertical-align:top;margin-left:10px;}
+#maincontent #officerDesc h2{margin: 0;}
+#maincontent #officerDesc p:nth-child(2){margin-top:-2px;}
+
 /* ======= Accepted Essays ============= */
 #maincontent.essays .info .infoLeft,#maincontent.essays #acceptedEssays p, #maincontent.essays h3 {text-align:left;}
 #acceptedEssays{border-right:2px solid gray;}
@@ -907,8 +913,7 @@ padding-top: 9px;
 .stateWrap label:nth-child(4){margin-left: 60px;}
 .stateWrap.initialColor label:nth-child(2) {background-color: rgb(51,61,105);}
 .stateWrap.initialColor label:nth-child(4) {background-color: rgb(182,197,220);}
-.semesterWrap label {
-	display: inline-block;
+.semesterWrap label, .transWrap label {
 	color: white;
 	background-color: rgb(51, 62, 107);
 	width: 125px;
@@ -922,6 +927,8 @@ padding-top: 9px;
 	padding-top: 8px;
 	cursor: pointer;
 }
+.semesterWrap label	{display:inline-block;}
+.transWrap
 .inS {
 	color: rgb(51, 62, 107);
 }
@@ -937,7 +944,7 @@ padding-top: 9px;
 	text-decoration: none;
 	float: right;
 }
-.semesterWrap input[type=radio]:checked + label {
+.semesterWrap input[type=radio]:checked + label,.transWrap input[type=radio]:checked + label {
 	background-color: rgb(220, 134, 39);
 }
 .cost {
@@ -981,14 +988,23 @@ padding-top: 9px;
 .checkContainer input[type="checkbox"]:checked + label .circle {
 	background-color: rgb(51,61,105);
 }
-
-
+/* THese are radio butotn bad coding here */
+.checkContainer input[type=radio]{display:none;}
+.checkContainer input[type="radio"]:checked + label .circle {
+	background-color: rgb(51,61,105);
+}
 .legend{
 	border:1px solid rgb(51,61,105); 
 	width: 450px; 
 	padding: 25px 0;
 	margin:0 auto; 
 	margin-top: 20px;
+
+	text-align:center;
+	color:gray;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+
 }
 .initial{background-color:white;}
 .rarely{background-color:rgb(182,197,220);}
@@ -1010,12 +1026,7 @@ padding-top: 9px;
 	margin: 0;
 }
 .legend .circle{margin:0 auto;}
-.legend{
-	text-align:center;
-	color:gray;
-	font-family:Georgia, "Times New Roman", Times, serif;
-	font-family: 14px;
-}
+
 .loop-1-3{
 	width:130px; 
 	display:inline-block; 
@@ -1024,6 +1035,69 @@ padding-top: 9px;
 	font-size:14px;
 	white-space:nowrap;
 }
+#academics .checkContainer li, {
+	width:120px;
+	margin-right:15px;
+}
+#parking.checkContainer li{
+	width:120px;
+	margin:0;
+}
+#parking.checkContainer li p{text-align:center;}
+#academics .checkContainer li:last-child, #parking .checkContainer li:last-child{margin:0;}
+#academics .circle{margin:0;}
+#parking .circle{margin:0 auto; display:block;}
+.transWrap{width: 400px; display:block; margin:0 auto;}
+.transWrap label{display:inline-block; vertical-align:top;}
+#fun{width:170px; font-family:Georgia, "Times New Roman", Times, serif; font-size: 14px; color:gray; white-space:nowrap;}
+#fun > div{margin-bottom: 10px;	}
+.budgetPlanner #results li{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:18px;
+	color:rgb(51, 62, 107);
+	margin-bottom: 10px;
+}
+.budgetPlanner #results .left{
+	display:inline-block;
+	color:rgb(51, 62, 107);
+	font-size:18px;
+	border-bottom:1px solid gray;
+	width:80%;
+	font-family:HNL;
+}
+.budgetPlanner #results .right{display:inline-block; text-align:right; color:rgb(51, 62, 107); font-size:28px; text-align:right;width:19%;}
+#results{border-left: 2px solid gray; padding-left: 20px;}
+/* ==================== Data ====================== */
+#maincontent.data h3{color:rgb(220, 134, 39);font-size:28px; margin: 20px 0 0 0; white-space:nowrap;}
+#finAid{border-right: 2px solid gray;}
+#finAid .textWrap{width:200px; display:block; margin:0 auto;}
+#schoolCosts{border-bottom:2px gray solid;}
+#schoolCosts .square{width:20px; height:20px; margin:0; display:inline-block; margin-right: 10px;}
+#schoolCosts ul{width:400px;}
+#schoolCosts li{
+	width: 180px; 
+	font-family:Georgia, "Times New Roman", Times, serif; 
+	font-size: 14px;
+	color:gray;
+	display:inline-block;
+	text-align:left;
+	margin-bottom: 10px;
+}
+.c1{background-color:#333D69;}
+.c2{background-color:#44567F;}
+.c3{background-color:#596B9E;}
+.c4{background-color:#91A5C3;}
+#schoolCosts .legend{border:0;}
+.chartContainer{width: 210px; display:block; margin:0 auto;}
+
+/* ================= Financial Aid ================= */
+.financialAid{}
+.financialAid img{display:block; margin:0 auto;}
+.financialAid h1{font-size:34px; font-family:HNL; font-weight:normal; text-align:center;color:rgb(51, 62, 107);}
+.financialAid a{display:block; text-decoration:none; color:rgb(51, 62, 107);font-family:Georgia, "Times New Roman", Times, serif; margin-bottom:10px;}
+#grant, #loan, #workStudy{padding: 10px; margin-bottom: 20px;}
+#loan{border-left:2px solid gray;border-right:2px solid gray;}
+	
 /* ============== Footer  ===================*/
 .footer {
 	padding-top: 10px;

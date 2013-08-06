@@ -46,7 +46,7 @@
       <li><a href="../data">Data</a></li>
       <li><a href="../recentlyAnswered">Recently Answered</a></li>
       <li><a href="../financialAid">Financial Aid</a></li>
-      <li><a href="" class="selected">Budget Planner</a></li>
+      <li><a href="../budgetPlanner" class="selected">Budget Planner</a></li>
     </ul>
   </div>
 </div>
@@ -201,7 +201,7 @@
                   Frequently </div>
               </div>
         </div>
-        <div>
+        <div id="academics">
           <h2>Academics</h2>
           <form>
               <ul class="checkContainer">
@@ -250,7 +250,40 @@
             </form>
           </div>
           <h3>Do you need to buy parking?</h3>
-          Three button </div>
+          <form>
+          <ul id="parking" class="checkContainer">
+                
+                <li>
+                  <input type="radio" id="onCampus" name="parking" />
+                  <label for="onCampus">
+                  <div class="checkBoxTop">
+                    <div class="circle"></div>
+                     </div>
+                  </label>
+                  <p>On-Campus</p>
+                </li>
+                   <li>
+                  <input type="radio" id="offCampus" name="parking" />
+                  <label for="offCampus">
+                  <div class="checkBoxTop">
+                    <div class="circle"></div>
+                     </div>
+                  </label>
+                  <p>Off-Campus</p>
+                </li>
+                   <li>
+                  <input type="radio" id="both" name="parking" />
+                  <label for="both">
+                  <div class="checkBoxTop">
+                    <div class="circle"></div>
+                    </div>
+                  </label>
+                  <p>Both</p>
+                </li>
+             </ul>
+             </form>
+          
+           </div>
         <div>
           <h2>Personal</h2>
           
@@ -289,28 +322,42 @@
           <h2>Fun Funds</h2>
           <h3>How often are you planning to:</h3>
           <p>Click circles to choose activities</p>
-          <ul class="checkContainer">
-                <li>
-                  <input type="checkbox" id="bedding" name="personal" />
-                  <label for="bedding">
-                  <div class="checkBoxTop">
-                    <div class="circle"></div>
-                    Bedding </div>
-                  </label>
-                  <p>pillows, blankets, sheets, comforter, etc</p>
-                </li>
-                <li>
-                  <input type="checkbox" id="kitchenware" name="persona
-                  " />
-                  <label for="kitchenware">
-                  <div class="checkBoxTop">
-                    <div class="circle"></div>
-                    Kitchenware </div>
-                  </label>
-                  <p>plates, silverware, cups, cookware, pots, pans, etc.</p>
-                </li>
-                </ul>
-                </div> 
+			
+            <div id="fun" class="loopingColorContainer">
+            <div id="sportEvent" >
+              <div class="circle initial">  </div>
+              Sports Events
+              </div>
+              <div id="shows" >
+                <div class="circle initial"> </div>
+                 Shows
+              </div>
+              <div id="recreationalActivities" >
+                <div class="circle initial"> </div>
+                Recreational Activities
+              </div>  
+               <div id="concerts" >
+                <div class="circle initial"> </div>
+                Concerts
+              </div> 
+               <div id="festivals" >
+                <div class="circle initial"> </div>
+                Festivals
+              </div> 
+          </div>
+          <div class="legend">
+                <div class="loop-1-3">
+                  <div class="circle rarely"> </div>
+                  Rarely </div>
+                <div class="loop-1-3">
+                  <div class="circle sometime"> </div>
+                  Sometimes </div>
+                <div class="loop-1-3">
+                  <div class="circle frequently"> </div>
+                  Frequently </div>
+              </div>
+                   
+         </div> 
       </div>
     </div>
     <center id="answerNav">
@@ -322,14 +369,14 @@
   <div id="results" class="col-3-8">
     <h2>Results</h2>
     <ul>
-      <li>Tuition Costs <span class="cost">$0</span></li>
-      <li>Housing Costs <span class="cost">$0</span></li>
-      <li>Housing Item Costs <span class="cost">$0</span></li>
-      <li>Food Costs <span class="cost">$0</span></li>
-      <li>Academic Costs <span class="cost">$0</span></li>
-      <li>Transportation Costs <span class="cost">$0</span></li>
-      <li>Personal Costs <span class="cost">$0</span></li>
-      <li>Fun Funds <span class="cost">$0</span></li>
+      <li><div class="left">Tuition Costs </div><div class="right">$0</div></li>
+      <li><div class="left">Housing Costs </div><div class="right">$0</div></li>
+      <li><div class="left">Housing Item Costs </div><div class="right">$0</div></li>
+      <li><div class="left">Food Costs </div><div class="right">$0</div></li>
+      <li><div class="left">Academic Costs </div><div class="right">$0</div></li>
+      <li><div class="left">Transportation Costs </div><div class="right">$0</div></li>
+      <li><div class="left">Personal Costs </div><div class="right">$0</div></li>
+      <li><div class="left">Fun Funds </div><div class="right">$1000</div></li>
       <li>
         <h2>Total Estimated Cost</h2>
         <h2>$0</h2>
