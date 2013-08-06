@@ -1473,6 +1473,9 @@ width:1000px;
 max-width:100%;
 margin:auto;
 }
+#propListing #housingMain .compareWrap{
+}
+
 #propListing h2{
 font-family:HNL;
 color:rgb(51,62,106);
@@ -1505,7 +1508,7 @@ margin-left:475px;
 	display:inline-block;
 	text-align:center;
 	vertical-align:top;
-	border-right:2px solid rgb(116,116,116);
+	border-right:1px solid rgb(116,116,116);
 
 }
 
@@ -1536,6 +1539,41 @@ width:100%;
 }
 
 
+#comparePage{
+	width:1000px;
+	max-width:100%;
+	margin:auto;
+	font-size:14px;
+	color:rgb(116,116,116);
+	font-family:HNL;
+}
+
+#comparePage h2{
+	font-family:HNL;
+	font-weight:normal;
+	font-size:30px;
+	color:rgb(51,62,106);
+	text-align:center;
+}
+#comparePage table{
+margin:auto;
+}
+#comparePage table td{
+	width:250px;
+	height:20px;
+}
+#comparePage .video{
+	background-color:gray;
+	width:150px;
+	height:120px;
+	border-radius:5px;
+	margin-top:20px;
+}
+#comparePage th{
+	height:30px;
+	font-weight:normal;
+
+}
 /* property media page*/
 .mediapage #housingMatcherRight{
 display:none;
@@ -2217,13 +2255,12 @@ width: 200px;
 height: 20px;
 overflow: hidden;
 background: url('../img/dropDown.png') no-repeat right white;
-border: 1px solid #ccc;
 }
 .dropDown select, .dropDown .pref{
 background: transparent;
 width: 200px;
 font-size: 14px;
-border: 1px solid rgb(79,77,77);
+border: 1px solid rgb(116,116,116);
 border-radius: 0;
 height: 20px;
 -webkit-appearance: none;	
@@ -2697,6 +2734,7 @@ max-width:100%;
 margin:auto;
 }
 
+
 #propListing #housingMain #left .compareWrap{
 margin-left:315px;
 }
@@ -2714,6 +2752,13 @@ margin-left:315px;
 margin-left:10px;
 margin-right:10px;
 }
+#comparePage{
+width:1300px;
+}
+#comparePage table td{
+	width:320px;
+}
+
 }
 
 
