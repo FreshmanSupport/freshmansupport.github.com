@@ -9,10 +9,19 @@
 /* ==================== MAIN CONTENT =====================*/
 #maincontent {
 	background: white;
-	width: 97.5%;
+	width: 1300px;
 	margin: 0 auto;
 	padding-top: 25px;
 	padding-bottom: 30px;
+}
+@media (max-width:1000px){
+#maincontent {
+	background: white;
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 25px;
+	padding-bottom: 30px;
+}
 }
 #maincontent h2 {
 	color: rgb(51, 62, 107);
