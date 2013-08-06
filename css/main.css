@@ -7,7 +7,7 @@
 	src: url(../fonts/helveticaneue-boldcond.otf);
 }
 /* ==================== MAIN CONTENT =====================*/
-@media (min-width:1580){
+@media (min-width:1580px){
 #maincontent {
 	background: white;
 	width: 1580px;
