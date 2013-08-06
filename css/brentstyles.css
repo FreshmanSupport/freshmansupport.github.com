@@ -16,7 +16,9 @@
 
 }
 
-
+.hide{
+	display:none;
+}
 .bold{
 	font-weight:bold;
 }
@@ -1469,7 +1471,9 @@ display:none;
 
 /*property listing page*/
 
-
+#propListing #squeezeTop1{
+display:none;
+}
 
 #propListing h2{
 font-family:HNL;
@@ -1501,7 +1505,13 @@ margin-left:0px;
 	margin:auto;
 
 }
+#propListing #squeezeTop1 .item{
+	width:150px;
+	color:rgb(51,62,106);
+	display:inline-block;
+	margin:auto;
 
+}
 #propListing{
 width:1000px;
 max-width:100%;
@@ -1530,7 +1540,7 @@ margin-left:115px;
 #propListing #name{
 	margin-left:2px;
 	margin-right:2px;
-	margin-bottom:-2px;
+margin-top:0px;	
 }
 #propListing #checkAvailability button{
 	margin-left:603px;
@@ -1801,6 +1811,7 @@ vertical-align:bottom;
 	font-size:24px;
 	margin-bottom:5px;
 }
+
 
 #housingMain #right{
 	max-width:100%;
@@ -2291,6 +2302,39 @@ padding-top:1px;
 
 @media (max-width:1000px) { 
 
+#propListing #top{
+	display:none;
+	
+}
+#propListing #housingMain{
+border:none;
+margin:auto;
+width:700px;
+border-top:2px solid rgb(116,116,116);
+margin-top:10px;
+}
+		#propListing #squeezeTop1{
+			display:block;
+			width:700px;
+			text-align:center;
+			padding-bottom:10px;
+		}
+		
+		#propListing #squeezeTop1 #left{
+		width:250px;
+		display:inline-block;
+		vertical-align:top;
+		}
+		#propListing #squeezeTop1 #right{
+		width:350px;
+		display:inline-block;
+				border-left:1px solid rgb(116,116,116);
+	vertical-align:top;
+		}
+
+		#propListing #squeezeTop1 .item{
+		width:100px;
+		}
 	
 	#housingMain #left{
 	border:none;
@@ -2441,9 +2485,7 @@ height:500px;
 	min-height:0px;
 
 }
-	#propListing #housingMain #left .compareWrap{
-		margin-left:115px;
-}
+
 
 	#reviewsPage #right{
 	width:580px;
@@ -2480,17 +2522,13 @@ height:500px;
 	width:80%;
 	margin-top:10px;
 }
-
-
 }
 
-@media (max-width:900px){
-	#propListing #housingMain #left .compareWrap{
-		margin-left:100px;
-}
-}
+
 
 @media (max-width:775px){
+
+		
 		#recommendedHousingFooterSqueeze{
 	display:block;
 	}
@@ -2500,9 +2538,7 @@ display:none;
 #matches #videoResp{
 	margin-left:10%;
 }
-	#propListing #housingMain #left .compareWrap{
-		margin-left:0px;
-		}
+
 	
 }
 
@@ -2513,10 +2549,7 @@ display:none;
 	border:none;
 	width:90%;
 	}
-	#propListing #housingMain .compareWrap, #housingMain #left .compareWrap{
-	margin-left:0px;
-	}
-	
+
 	#housingMain #left #searchwrapper{
 		margin-left:0px;
 	}
@@ -2765,7 +2798,6 @@ margin-left:315px;
 #propListing #name{
 	margin-left:2px;
 	margin-right:2px;
-	margin-bottom:-2px;
 }
 #propListing #checkAvailability button{
 	margin-left:787px;
