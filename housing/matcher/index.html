@@ -66,7 +66,7 @@
     <div id="housingQ">
     <!---question 1-->
     <h3 >Price Range</h3>
-    <h4>Housing Matcher</h4>
+    <h4>What is your price range?</h4>
 		
     
 
@@ -74,12 +74,12 @@
     </div>
     <div id="housingQ">
     <h3>Distance to Campus</h3>
-	<h4>Housing Matcher</h4>
+	<h4>How close to campus do you hope to live?</h4>
     <br><br>
-    <div class="item"><img src="../../img/housingMatcher/onCampus.png" width="32px"><br>On Campus</div>
-	    <div class="item"><img src="../../img/housingMatcher/Walking.png" width="35px"><br>Walking</div>
-    <div class="item"><img src="../../img/housingMatcher/Biking.png" width="57px"><br>Biking</div>
-    <div class="item"><img src="../../img/housingMatcher/Driving.png" width="65px"><br>Driving</div>
+    <div class="item" id="onCampus" ><img src="../../img/housingMatcher/onCampus.png" width="32px"><br>On Campus</div>
+	    <div class="item" id="walking"><img src="../../img/housingMatcher/Walking.png" width="35px"><br>Walking</div>
+    <div class="item" id="biking"><img src="../../img/housingMatcher/Biking.png" width="57px"><br>Biking</div>
+    <div class="item" id="driving"><img src="../../img/housingMatcher/Driving.png" width="65px"><br>Driving</div>
 
 	
 
@@ -87,7 +87,7 @@
     <div id="housingQ">    	
     
 	    <h3>Gender Restrictions</h3>
-	<h4>Housing Matcher</h4>
+	<h4>Who do you prefer to live with?</h4>
     <br><br>
     <div class="item"><img src="../../img/housingMatcher/maleOnly.png" width="65px"><br>Male Only</div>
 	    <div class="item"><img src="../../img/housingMatcher/femalOnly.png" width="60px"><br>Female Only</div>
@@ -101,7 +101,7 @@
 </div>
 <div id="housingQ">    	
     	    <h3>School Classification</h3>
-	<h4>Housing Matcher</h4>
+	<h4>What</h4>
     <br><br>
     <div class="item"><img src="../../img/housingMatcher/Freshman.png" width="65px"><br>Freshman</div>
 	    <div class="item"><img src="../../img/housingMatcher/Sophomore.png" width="85px"><br>Sophomore</div>
@@ -117,8 +117,8 @@
 </div>
 <div id="housingQ">    	
     
-        	    <h3>Exterior</h3>
-	<h4>Housing Matcher</h4>
+        	    <h3>Interior</h3>
+	<h4>Choose</h4>
     <div class="item1"><div class="importance1"><span class="orange">importance</div></div>
 	<div class="item1"><div class="importance"><span class="orange">importance</div></div>
 
@@ -231,8 +231,8 @@
     
 </div>
 <div id="housingQ">    	
-      <h3>Interior</h3>
-	<h4>Housing Matcher</h4>
+      <h3>Exterior</h3>
+	<h4>Chooose</h4>
     
 	
 
@@ -477,7 +477,6 @@ mySwipe = new Swipe(document.getElementById('slider'), {
 		document.getElementById('qNum').innerHTML= x;
 
 	}
-	
 	
 
 </script>

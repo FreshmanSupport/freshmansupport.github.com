@@ -646,6 +646,8 @@ margin:0;
 font-family:Georgia;
 	display: inline-block;
 		text-align: center;
+		margin-top:-20px;
+
 }
 
 #matcherBottomWrap img{
@@ -1784,7 +1786,7 @@ display:none;
 }
 #recommendedHousingFooter, #recommendedHousingFooterSqueeze{
 	width:1000px;
-	max-width:90%;
+	max-width:100%;
 	border-top:2px solid rgb(116,116,116);
 	margin-right:auto;
 
@@ -1793,8 +1795,8 @@ display:none;
 
 #recommendedHousingFooter #item, #recommendedHousingFooterSqueeze #item{
 	display:inline-block;
-	margin-right:20px;
-	margin-left:20px;
+	margin-right:40px;
+	margin-left:40px;
 	
 }
 
@@ -2475,9 +2477,11 @@ margin-left:10px;
 padding-left:10px;
 }
 
-
+#housingMatcherContainer{
+width:80%;
+}
 #housingMatcherContainer #housingMatcherLeft {
-	width:80%;
+	width:100%;
 	margin-bottom:10px;
 }	
 
@@ -2659,7 +2663,10 @@ width:1000px; margin:auto; max-width:100%; min-height:300px;
 }
 
 @media (min-width:1300px){
+#dropMove{
+margin-left:50px;
 
+}
 	#recommendedHousingFooterSqueeze{
 	display:none;
 
@@ -2873,7 +2880,7 @@ width:1300px;
 	width:320px;
 }
 #comparePage .category{
-	margin-left:-100px;
+	margin-left:-60px;
 }
 }
 
@@ -2882,6 +2889,49 @@ width:1300px;
 
 
 @media (min-width:1580px){
+
+
+
+	
+	
+	
+	
+
+	#leasingPro {
+		width:1500px;
+	}
+	
+	#leasingPro  #housingMatcherRight {
+	display:inline-block;
+	width:400px;
+	border:none;
+
+	}
+	#leasingPro .top{
+		margin:auto;
+text-align:center;
+	padding-right:20px;
+	border-right:2px solid rgb(116,116,116);
+	margin-top:10px;
+	max-width:1100px;
+	width:1050px;
+	
+}
+#leasingPro img{
+	width:100%;
+}
+	
+#comparePage{
+width:1500px;
+}
+#comparePage table td{
+	width:420px;
+}
+#comparePage .category{
+	margin-left:-60px;
+}
+
+
 #housingResultsContainer #preferences {
 width:1450px;
 }
@@ -2953,17 +3003,35 @@ width:500px;
 	width:1500px;
 	
 	}
-
+#housingQ .item1{
+width:400px;
+margin-right:50px;
+}
+#housingQ .option{
+	margin-right:110px;
+}
 	#housingMatcherContainer #housingMatcherLeft{
-	width:900px;
+	width:1000px;
 	}
 	#housingMatcherContainer #housingMatcherRight{
-		width: 500px;
+		width: 480px;
 		max-width:100%;
 	}
+	
+	#reviewsPage{
+	width:1500px;
+	
+}
+#reviewsPage #left{
+width:1050px;
+}
+
+#reviewsPage #right{
+width:400px;
+}
 	#reviewsPage #left  .review{
 
-		width:830px;
+		width:1030px;
 	}
 	
 	#reviewsPage #left  .votes{

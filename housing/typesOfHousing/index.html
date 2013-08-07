@@ -120,7 +120,7 @@ $(function() {
   
   <div id="compareTypes">
   <h2>Compare Types of Housing</h2>
-  <div class="dropDown" style="display:inline-block;">
+  <div class="dropDown" style="display:inline-block; " id="dropMove">
 <select name="sort" id="sort" onchange="sortChanged(this);">
 <option value="byPrice">Price</option>
 <option value="byAmenities">Unit Amenities</option>
@@ -132,8 +132,9 @@ $(function() {
 </select></div> 
   <center>
   <table id="byPrice">
-  <tr>
-  <th></th>
+  <tr >
+  <th>
+ </th>
   <th style="padding:0 0px 0 50px;">Public Dorms</th>
   <th style="padding:0 0px 0 50px;">Private Dorms</th>
   <th style="padding:0 0px 0 50px;">Apartments</th>
