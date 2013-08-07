@@ -355,8 +355,10 @@ h1 {
 }
 .registerPic{display:inline-block; vertical-align:top;}
 .registerPic img{border:2px solid #eee9e9;}
-.registerPic label{display:inline-block; width:70px; height: 70px; vertical-align:top; background-repeat:no-repeat;}
-
+#register .registerPic label{display:inline-block; width:70px; height: 70px; vertical-align:top; background-repeat:no-repeat; border: 1px solid rgb(116,116,116);}
+.registerPic input[type="radio"]{display:none;}
+#register .registerPic input[type="radio"]:checked + label{border: 1px solid rgb(220, 134, 39);}
+.textBot{text-align:center; white-space:nowrap; padding-top: 50px;}
 #loginRegisterContainer input{border:2px solid #eee9e9;}
 #loginRegisterContainer h2{
 	color: rgb(51, 62, 107);
@@ -376,8 +378,8 @@ h1 {
 	text-align:center;
 }
 #register .disclaimer{padding-left: 160px;}
-.male{background-image:url(../img/profile/male.png);}
-.female{background-image:url(../img/profile/female.png);}
+.male{background-image:url(../img/profile/male.png); background-size: 37px 43px; background-position:15px 2px;}
+.female{background-image:url(../img/profile/female.png); background-size: 37px 43px; background-position:15px 2px;}
 
 /* ================ Search Result ============= */
 #maincontent.searchResults {border-left:2px solid rgb(116,166,166);border-right:2px solid rgb(116,166,166); padding: 0 10px 20px 10px;}
