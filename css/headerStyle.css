@@ -357,8 +357,10 @@ h1 {
 .registerPic img{border:2px solid #eee9e9;}
 #register .registerPic label{display:inline-block; width:70px; height: 70px; vertical-align:top; background-repeat:no-repeat; border: 1px solid rgb(116,116,116);}
 .registerPic input[type="radio"]{display:none;}
-#register .registerPic input[type="radio"]:checked + label{border: 1px solid rgb(220, 134, 39);}
+#register .registerPic input[type="radio"]:checked + label{border: 2px solid rgb(220, 134, 39); color:rgb(220, 134, 39);}
 .textBot{text-align:center; white-space:nowrap; padding-top: 50px;}
+.registerPic input[type="radio"]:checked +label .textBot{color:rgb(220, 134, 39);}
+
 #loginRegisterContainer input{border:2px solid #eee9e9;}
 #loginRegisterContainer h2{
 	color: rgb(51, 62, 107);
@@ -372,15 +374,25 @@ h1 {
 .logWidth{width:240px;}
 .schoolBox{
 	width: 200px; 
+	height: 50px;
 	padding: 5px 10px; 
 	border: 2px solid #eee9e9; 
 	display:inline-block; 
 	text-align:center;
 }
 #register .disclaimer{padding-left: 160px;}
-.male{background-image:url(../img/profile/male.png); background-size: 37px 43px; background-position:15px 2px;}
-.female{background-image:url(../img/profile/female.png); background-size: 37px 43px; background-position:15px 2px;}
+.male{background-image:url(../img/profile/male.png);}
+.female{background-image:url(../img/profile/female.png); }
+.male, .female{background-size: 37px 43px; background-position:15px 2px;}
 
+.student{background-image:url(../img/profile/student.png);}
+.family{background-image:url(../img/profile/family.png); }
+.counselor{background-image:url(../img/profile/counselor.png);}
+.student,.family,.counselor{ background-size: 45px 51px; background-position:12px 2px;}
+
+#register .dropDown{display:inline-block; border:1px solid #eee9e9;}
+#register .dropDown select{border:1px solid #eee9e9;}
+.plus{font-size:28px; color:orange;}
 /* ================ Search Result ============= */
 #maincontent.searchResults {border-left:2px solid rgb(116,166,166);border-right:2px solid rgb(116,166,166); padding: 0 10px 20px 10px;}
 #maincontent.searchResults #resultSearch{width: 250px;margin-right: 5px;}

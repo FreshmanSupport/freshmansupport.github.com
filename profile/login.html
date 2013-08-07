@@ -63,16 +63,30 @@
                     <li><label>Password:</label><input id="registerPassword" type="password" class="logWidth"/></li>
                     <li><label>Re-confirm Password:</label><input id="reenterPassword" type="password" class="logWidth"/></li>
                     <li><label>Type of User:</label>
-                    <div class="registerPic"><img src="../img/profile/student.png" />Student <img src="../img/profile/family.png" />Family
-                    <img src="../img/profile/counselor.png" />Counselor</div></li>
+                   <div class="registerPic">
+                        	<input id="student" type="radio" name="typeOfUser"/><label for="student" class="student"><div class="textBot">Student</div></label> 
+                            <input id="family" type="radio" name="typeOfUser"/><label for="family" class="family"><div class="textBot">Family</div></label>
+                            <input id="counselor" type="radio" name="typeOfUser"/><label for="counselor" class="counselor"><div class="textBot">Counselor</div></label>  
+                        </div>
+                    </li>
                     <li><label>Planned First Semester:</label>
+                    <div class="dropDown">
                     <select>
                     	<option>Fall</option>
                         <option>Spring</option>
                         <option>Summer</option>
                     </select>
+                    </div>
                     </li>
-                    <li><label>School:</label><div class="schoolBox">University of Texas</div><div class="schoolBox">Add School</div></li>
+                    <li><label>School:</label>
+                    <div class="schoolBox">
+                    	<select>
+                        	<option>Add School</option>
+                        	<option selected>University of Texas</option>
+                            
+						</select>                    
+                    </div>
+                    <div class="schoolBox">Add School</div></li>
                     <li><label>Recieve Updates:</label><input id="recieveUpdate" type="checkbox" /></li>
                     <li><div class="disclaimer">By clicking the Register button, you agree to our <a href="#">Terms of Use</a>
                     	and <a href="#">Privacy Policy</a></div></li>
