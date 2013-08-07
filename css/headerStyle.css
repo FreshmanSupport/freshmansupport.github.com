@@ -327,7 +327,7 @@ h1 {
 #topBar{width:100%; background-color:rgb(51, 62, 106); height: 25px;}
 #xClose{color:white; font-weight:bold;float:right; cursor:pointer; padding-right: 5px;}
 #logIn{width:350px; display:inline-block; vertical-align:top; overflow:hidden;}
-#logIn button{float:right; margin-right:53px;}
+#logIn button{float:right; margin-right:42px;}
 #logIn label{
 	width: 100px; 
 	text-align:right; 
@@ -355,6 +355,8 @@ h1 {
 }
 .registerPic{display:inline-block; vertical-align:top;}
 .registerPic img{border:2px solid #eee9e9;}
+.registerPic label{display:inline-block; width:70px; height: 70px; vertical-align:top; background-repeat:no-repeat;}
+
 #loginRegisterContainer input{border:2px solid #eee9e9;}
 #loginRegisterContainer h2{
 	color: rgb(51, 62, 107);
@@ -374,6 +376,9 @@ h1 {
 	text-align:center;
 }
 #register .disclaimer{padding-left: 160px;}
+.male{background-image:url(../img/profile/male.png);}
+.female{background-image:url(../img/profile/female.png);}
+
 /* ================ Search Result ============= */
 #maincontent.searchResults {border-left:2px solid rgb(116,166,166);border-right:2px solid rgb(116,166,166); padding: 0 10px 20px 10px;}
 #maincontent.searchResults #resultSearch{width: 250px;margin-right: 5px;}
@@ -393,7 +398,7 @@ h1 {
 .searchResults .textWrap{width: 600px;}
 
 /* ============== Messages ============= */
-.messages #buttonContainer{padding-left: 220px;}
+.messages #buttonContainer{padding-left: 220px; width: 1000px; overflow:hidden;}
 .messages ul{padding:0; list-style-type:none; color:rgb(51,62,106);}
 #yourContact{display:inline-block; width: 200px;}
 #contactScroller, #messageScroller{overflow-y:scroll;height:200px; border-top: 1px solid rgb(116,116,116);}
@@ -403,6 +408,30 @@ h1 {
 .msgTime{color:rgb(220, 134, 39);font-family:Georgia, "Times New Roman", Times, serif; font-size:14px;}
 .at{color:rgb(116, 116, 116);font-family:Georgia, "Times New Roman", Times, serif; font-size:14px;}
 #messageBox textarea{width: 600px; height: 75px;}
+#maincontent #messageContainer p{text-align:left;}
+.inboxHeader{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:rgb(116, 116, 116);
+	font-style:italic;
+	border-bottom:2px solid rgb(116,116,116);
+}
+#inboxContainer{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:rgb(51,62,106);
+	font-style:italic;
+	border-left:2px solid rgb(116,116,116);
+}
+#inboxScrollable{	overflow-y:scroll;
+	height:200px;}
+.inboxHeader tr td:first-child,#inboxContainer tr td:first-child{width: 25px;}
+.inboxHeader tr td:nth-child(2),#inboxContainer tr td:nth-child(2){width: 200px;}
+.inboxHeader tr td:nth-child(3),#inboxContainer tr td:nth-child(3){width: 350px;}
+.inboxHeader tr td:last-child,#inboxContainer tr td:last-child{width: 150px;}
+
+#inboxContainer input[type="checkbox"]{display:none;}
+#inboxContainer label{width: 13px;height:13px; border:1px solid rgb(116,166,166); display:block;}
+#inboxContainer input[type="checkbox"]:checked + label{background-color:rgb(220, 134, 39);}
+
 
 .messages ::-webkit-scrollbar {
     width: 12px;
@@ -412,9 +441,29 @@ h1 {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 	background-color:rgb(51,62,106);  
 }
-
+#messagesSearchContainer{
+	margin-top: 9px;
+	margin-right: 25px;
+	width: 200px;
+	height: 25px;
+	border: 2px solid rgb(51, 62, 106);
+	border-radius: 20px;
+	float: right;
+	background: white;
+	overflow: hidden;
+}
+.messageSearchSkin{
+	width: 170px;
+	border: 0;
+	height: 18px;
+	margin: 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 0.875em;
+	color: rgb(51, 62, 106);	
+}
 /* ========= Notifications ============ */
 .notifications{border-left:2px solid rgb(116,166,166);border-right:2px solid rgb(116,166,166); padding: 0 10px 20px 10px;}
+.notifications a{text-decoration:none; color:inherit;}
 .notifications ul{padding:0; list-style-type:none;}
 #maincontent.notifications h3{border-bottom: 1px solid rgb(116,116,116);font-family:HNB; font-size:28px;text-align:left;}
 #maincontent.notifications p {text-align:left;}

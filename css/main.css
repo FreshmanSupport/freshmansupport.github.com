@@ -1386,6 +1386,9 @@ hr {
 }
 .buttonContainer{display:block: width:100%; overflow:hidden;}
 .tab{ text-indent:40px;}
+
+
+
 /* ============ Slider JS CSS ================== */
 .swipe {
 	overflow: hidden;

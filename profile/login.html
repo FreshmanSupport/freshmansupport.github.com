@@ -53,7 +53,12 @@
                         <label style="width:85px;">Last Name:</label><input id="lastName" type="text" />
                     </li>
                     <li><label >Email:</label><input id="email" type="text" class="email"/></li>
-                    <li><label>Gender:</label><div class="registerPic"><img src="../img/profile/male.png" />Male <img src="../img/profile/female.png" />Female</div></li>
+                    <li><label>Gender:</label>
+                    	<div class="registerPic">
+                        	<label for="male" class="male">Male</label> <input id="male" type="radio" name="gender"/>
+                            <label for="female" class="female">Female</label> <input id="female" type="radio" name="gender"/>
+                        </div>
+                    </li>
                     <li><label>User Name:</label><input id="registerUserName" type="text" class="logWidth"/></li>
                     <li><label>Password:</label><input id="registerPassword" type="password" class="logWidth"/></li>
                     <li><label>Re-confirm Password:</label><input id="reenterPassword" type="password" class="logWidth"/></li>
