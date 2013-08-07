@@ -7,16 +7,16 @@
 	src: url(../fonts/helveticaneue-boldcond.otf);
 }
 /* ==================== MAIN CONTENT =====================*/
-@media (min-width:1580px){
+@media (min-width:1500px){
 #maincontent {
 	background: white;
-	width: 1580px;
+	width: 1500px;
 	margin: 0 auto;
 	padding-top: 25px;
 	padding-bottom: 30px;
 }
 }
-@media(max-width: 1579){
+@media(max-width: 1499px){
 #maincontent {
 	background: white;
 	width: 1300px;
