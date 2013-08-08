@@ -550,6 +550,8 @@ resize:none;  max-width:100%; " placeholder="E-Mail"></textarea>
 		
 <div class="video"></div><br><br>
 				<span class="blue">Recommended Application Date</span><span class="date">8-10-13</span>
+								<span class="viewMoreRight"><a href="property/media">View more pictures and videos</a></span>
+
 		<div id="checkAvailability">
 <h2>Check Availability <img src="../img/triangle.png" width=14px style="margin-left:1px; cursor:pointer; "onClick="checkAvail('avail2')"></h2>
 			
@@ -996,6 +998,8 @@ mySwipeSqueeze = new Swipe(document.getElementById('sliderSqueeze'), {
 		mySwipe.next();
 		questionNum();
 		}
+				else window.location.href = 'matcher/results';
+
 	}
 	function prev(){
 		if(mySwipe.getPos()>0){
@@ -1020,6 +1024,8 @@ mySwipeSqueeze = new Swipe(document.getElementById('sliderSqueeze'), {
 		mySwipeSqueeze.next();
 		squestionNum();
 		}
+				else window.location.href = 'matcher/results';
+
 	}
 	function squeezeprev(){
 		if(mySwipeSqueeze.getPos()>0){
