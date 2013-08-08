@@ -1434,7 +1434,7 @@ hr {
 
 /* Stop shrinking it warning to user*/
 @media(max-width:300px){
-#maincontent, #header, #footer{display:none;}
+#maincontent, #header, #footer, .footer{display:none;}
 body:before{
 	content:"";
 	position:absolute; 

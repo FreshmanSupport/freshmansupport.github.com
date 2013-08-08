@@ -3,7 +3,7 @@
 <head>
 <link type="text/css" rel="stylesheet" href="../css/headerStyle.css"/>
 <link type="text/css" rel="stylesheet" href="../css/main.css"/>
-<link type="text/css" rel="stylesheet" href="../css/bootstrap-responsive.css" />
+<script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Messages</title>
 </head>
@@ -43,163 +43,177 @@
   <div id="subNav"> </div>
 </div>
 <div id="maincontent" class="messages">
-  <h2>Messages</h2>
-  <div id="buttonContainer">
-    <button>Back</button>
-    <button>Delete</button>
-     <div id="messagesSearchContainer">
-      <form id="searchbox" action="">
-        <div id="magnify"></div>
-        <input id="search" type="text" class="messageSearchSkin">
-      </form>
-    </div>
-  </div>
-  <div id="yourContact">
-    <h3>People You've<br />
-      Contacted</h3>
-    <div id="contactScroller">
-      <ul>
-        <li>Brad Smith</li>
-        <li>Sarah Bartowski</li>
-        <li>Michael Jordan</li>
-        <li>Brad Smith</li>
-        <li>Sarah Bartowski</li>
-        <li>Michael Jordan</li>
-        <li>Brad Smith</li>
-        <li>Sarah Bartowski</li>
-        <li>Michael Jordan</li>
-        <li>Brad Smith</li>
-        <li>Sarah Bartowski</li>
-        <li>Michael Jordan</li>
-      </ul>
-    </div>
-  </div>
-  <div id="messageContainer">
-    <h3>George Michael</h3>
-    <div id="messageScroller">
-      <ul>
-        <li> <span class="msgName">George Michael</span> <span class="at">at</span> <span class="msgTime">Jul. 25, 5:06Am</span>
-          <p>Hello There, this is a test sentence of a message</p>
-        </li>
-        <li><span class="msgName">You</span> <span class="at">at</span> <span class="msgTime">Jul. 25, 5:08Am</span>
-          <p>Hello There, this is a test sentence of a message Hello There, this is a test sentence of a message
-            Hello There, this is a test sentence of a messageHello There, this is a test sentence of a message
-            Hello There, this is a test sentence of a messageHello There, this is a test sentence of a message </p>
-        </li>
-        <li> <span class="msgName">George Michael</span> <span class="at">at</span> <span class="msgTime">Jul. 25, 5:06Am</span>
-          <p>Hello There, this is a test sentence of a message</p>
-        </li>
-        <li><span class="msgName">You</span> <span class="at">at</span> <span class="msgTime">Jul. 25, 5:08Am</span>
-          <p>Hello There, this is a test sentence of a message Hello There, this is a test sentence of a message
-            Hello There, this is a test sentence of a messageHello There, this is a test sentence of a message
-            Hello There, this is a test sentence of a messageHello There, this is a test sentence of a message </p>
-        </li>
-        <li> <span class="msgName">George Michael</span> <span class="at">at</span> <span class="msgTime">Jul. 25, 5:06Am</span>
-          <p>Hello There, this is a test sentence of a message</p>
-        </li>
-        <li><span class="msgName">You</span> <span class="at">at</span> <span class="msgTime">Jul. 25, 5:08Am</span>
-          <p>Hello There, this is a test sentence of a message Hello There, this is a test sentence of a message
-            Hello There, this is a test sentence of a messageHello There, this is a test sentence of a message
-            Hello There, this is a test sentence of a messageHello There, this is a test sentence of a message </p>
-        </li>
-      </ul>
-    </div>
-    <div id="messageBox">
-      <textarea placeholder="Type Here..."></textarea>
-      <button>Send</button>
-    </div>
-  </div>
-  <div id="inboxContainer" style="margin-left:214px"><!-- Take out Margin in real layout, margin only used to show sample -->
-        <div class="inboxHeader">
-      <table>
-      <tr>
-        <td></td>
-        <td>Sender</td>
-        <td>Conversation</td>
-        <td>Last Sent Message</td>
-      </tr>
-      </table>
+
+  <div id="overallContainer">
+    <h2>Messages</h2>
+    <div id="buttonContainer">
+      <button>Back</button>
+      <button>Delete</button>
+      <div id="messagesSearchContainer">
+        <form id="searchbox" action="">
+          <div id="magnify"></div>
+          <input id="search" type="text" class="messageSearchSkin">
+        </form>
       </div>
-    <div id="inboxScrollable">
-    <table>
- 
-      <tr>
-        <td><input type="checkbox" id="inboxCheck1" />
-          <label for="inboxCheck1"></label></td>
-        <td>Michael Jordan</td>
-        <td>hello my name is....</td>
-        <td>Jul 7</td>
-      </tr>
-       <tr>
-        <td><input type="checkbox" id="inboxCheck2" />
-          <label for="inboxCheck2"></label></td>
-        <td>Michael Jordan</td>
-        <td>hello my name is....</td>
-        <td>Jul 7</td>
-      </tr>
-       <tr>
-        <td><input type="checkbox" id="inboxCheck3" />
-          <label for="inboxCheck3"></label></td>
-        <td>Michael Jordan</td>
-        <td>hello my name is....</td>
-        <td>Jul 7</td>
-      </tr>
-       <tr>
-        <td><input type="checkbox" id="inboxCheck4" />
-          <label for="inboxCheck4"></label></td>
-        <td>Michael Jordan</td>
-        <td>hello my name is....</td>
-        <td>Jul 7</td>
-      </tr>
-       <tr>
-        <td><input type="checkbox" id="inboxCheck5" />
-          <label for="inboxCheck5"></label></td>
-        <td>Michael Jordan</td>
-        <td>hello my name is....</td>
-        <td>Jul 7</td>
-      </tr>
-       <tr>
-        <td><input type="checkbox" id="inboxCheck6" />
-          <label for="inboxCheck6"></label></td>
-        <td>DA Jor HOlladan</td>
-        <td>hello my name is....</td>
-        <td>Jul 7</td>
-      </tr>
-       <tr>
-        <td><input type="checkbox" id="inboxCheck7" />
-          <label for="inboxCheck7"></label></td>
-        <td>Michael Jordan</td>
-        <td>hello my name is....</td>
-        <td>Jul 7</td>
-      </tr>
-       <tr>
-        <td><input type="checkbox" id="inboxCheck8" />
-          <label for="inboxCheck8"></label></td>
-        <td>Michael Jordan</td>
-        <td>hello my name is....</td>
-        <td>Jul 7</td>
-      </tr>
-       <tr>
-        <td><input type="checkbox" id="inboxCheck9" />
-          <label for="inboxCheck9"></label></td>
-        <td>Michael Jordan</td>
-        <td>hello my name is....</td>
-        <td>Jul 7</td>
-      </tr> <tr>
-        <td><input type="checkbox" id="inboxCheck10" />
-          <label for="inboxCheck10"></label></td>
-        <td>Michael Jordan</td>
-        <td>hello my name is....</td>
-        <td>Jul 7</td>
-      </tr> <tr>
-        <td><input type="checkbox" id="inboxCheck11" />
-          <label for="inboxCheck11"></label></td>
-        <td>Michael Jordan</td>
-        <td>hello my name is....</td>
-        <td>Jul 7</td>
-      </tr>
-    </table>
+    </div>
+    <div id="yourContact">
+      <h3>People You've<br />
+        Contacted</h3>
+      <div id="contactScroller">
+        <ul>
+          <li>Brad Smith</li>
+          <li>Sarah Bartowski</li>
+          <li>Michael Jordan</li>
+          <li>Brad Smith</li>
+          <li>Sarah Bartowski</li>
+          <li>Michael Jordan</li>
+          <li>Brad Smith</li>
+          <li>Sarah Bartowski</li>
+          <li>Michael Jordan</li>
+          <li>Brad Smith</li>
+          <li>Sarah Bartowski</li>
+          <li>Michael Jordan</li>
+        </ul>
+      </div>
+    </div>
+    <div id="messageContainer" style="display:none">
+      <h3>George Michael</h3>
+      <div id="messageScroller">
+        <ul>
+          <li> <span class="msgName">George Michael</span> <span class="at">at</span> <span class="msgTime">Jul. 25, 5:06Am</span>
+            <p>Hello There, this is a test sentence of a message</p>
+          </li>
+          <li><span class="msgName">You</span> <span class="at">at</span> <span class="msgTime">Jul. 25, 5:08Am</span>
+            <p>Hello There, this is a test sentence of a message Hello There, this is a test sentence of a message
+              Hello There, this is a test sentence of a messageHello There, this is a test sentence of a message
+              Hello There, this is a test sentence of a messageHello There, this is a test sentence of a message </p>
+          </li>
+          <li> <span class="msgName">George Michael</span> <span class="at">at</span> <span class="msgTime">Jul. 25, 5:06Am</span>
+            <p>Hello There, this is a test sentence of a message</p>
+          </li>
+          <li><span class="msgName">You</span> <span class="at">at</span> <span class="msgTime">Jul. 25, 5:08Am</span>
+            <p>Hello There, this is a test sentence of a message Hello There, this is a test sentence of a message
+              Hello There, this is a test sentence of a messageHello There, this is a test sentence of a message
+              Hello There, this is a test sentence of a messageHello There, this is a test sentence of a message </p>
+          </li>
+          <li> <span class="msgName">George Michael</span> <span class="at">at</span> <span class="msgTime">Jul. 25, 5:06Am</span>
+            <p>Hello There, this is a test sentence of a message</p>
+          </li>
+          <li><span class="msgName">You</span> <span class="at">at</span> <span class="msgTime">Jul. 25, 5:08Am</span>
+            <p>Hello There, this is a test sentence of a message Hello There, this is a test sentence of a message
+              Hello There, this is a test sentence of a messageHello There, this is a test sentence of a message
+              Hello There, this is a test sentence of a messageHello There, this is a test sentence of a message </p>
+          </li>
+        </ul>
+      </div>
+      <div id="messageBox">
+        <textarea placeholder="Type Here..."></textarea>
+        <button id="send" style="margin-bottom:5px; vertical-align:bottom;">Send</button>
+      </div>
+    </div>
+    <div id="inboxContainer"><!-- Take out Margin in real layout, margin only used to show sample -->
+      <div class="inboxHeader">
+        <table>
+          <tr>
+            <td></td>
+            <td>Sender</td>
+            <td>Conversation</td>
+            <td>Last Sent Message</td>
+          </tr>
+        </table>
+      </div>
+      <div id="inboxScrollable">
+        <table>
+          <tr>
+            <td><input type="checkbox" id="inboxCheck1" />
+              <label for="inboxCheck1"></label></td>
+            <td>Michael Jordan</td>
+            <td><a href="#">hello my name is....</a></td>
+            <td>Jul 7</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="inboxCheck2" />
+              <label for="inboxCheck2"></label></td>
+            <td>Michael Jordan</td>
+            <td><a href="#">hello my name is....</a></td>
+            <td>Jul 7</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="inboxCheck3" />
+              <label for="inboxCheck3"></label></td>
+            <td>Michael Jordan</td>
+            <td><a href="#">hello my name is....</a></td>
+            <td>Jul 7</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="inboxCheck4" />
+              <label for="inboxCheck4"></label></td>
+            <td>Michael Jordan</td>
+            <td><a href="#">hello my name is....</a></td>
+            <td>Jul 7</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="inboxCheck5" />
+              <label for="inboxCheck5"></label></td>
+            <td>Michael Jordan</td>
+            <td><a href="#">hello my name is....</a></td>
+            <td>Jul 7</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="inboxCheck6" />
+              <label for="inboxCheck6"></label></td>
+            <td>DA Jor HOlladan</td>
+            <td><a href="#">hello my name is....</a></td>
+            <td>Jul 7</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="inboxCheck7" />
+              <label for="inboxCheck7"></label></td>
+            <td>Michael Jordan</td>
+            <td><a href="#">hello my name is....</a></td>
+            <td>Jul 7</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="inboxCheck8" />
+              <label for="inboxCheck8"></label></td>
+            <td>Michael Jordan</td>
+            <td><a href="#">hello my name is....</a></td>
+            <td>Jul 7</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="inboxCheck9" />
+              <label for="inboxCheck9"></label></td>
+            <td>Michael Jordan</td>
+            <td><a href="#">hello my name is....</a></td>
+            <td>Jul 7</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="inboxCheck10" />
+              <label for="inboxCheck10"></label></td>
+            <td>Michael Jordan</td>
+            <td><a href="#">hello my name is....</a></td>
+            <td>Jul 7</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="inboxCheck11" />
+              <label for="inboxCheck11"></label></td>
+            <td>Michael Jordan</td>
+            <td><a href="#">hello my name is....</a></td>
+            <td>Jul 7</td>
+          </tr>
+        </table>
+      </div>
     </div>
   </div>
 </div>
 </body>
+<script>
+$( "td > a" ).click(function() {
+	$("#inboxContainer").toggle();
+	$("#messageContainer").toggle();
+});
+$( "#send" ).click(function() {
+	$("#inboxContainer").toggle();
+	$("#messageContainer").toggle();
+});
+</script>
