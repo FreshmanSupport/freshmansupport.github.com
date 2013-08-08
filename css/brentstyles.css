@@ -486,7 +486,7 @@ font-family: HNB;
 	max-width:100%;	
 	display: inline-block;
 	margin-top: 0px;
-	border-left: 2px solid rgb(116,116,116);
+	border-left: 1px solid  rgb(116,116,116);
 	text-align:left;
 	padding-left:10px;
 		margin-top:10px;
@@ -770,6 +770,7 @@ margin-top:23px;
 }
 
 #recommended #interests{
+	font-size:14px;
 	font-family:HNB;
 	color:rgb(140,146,162);
 	margin-top:10px;
@@ -792,13 +793,18 @@ line-height:20px;
 	border-radius:5px;
 	margin-right:15px;
 	margin-bottom:10px;
+
+	}
+	
+		.viewMoreRight{
+	text-align:right;
+	margin-left:145px;
+	font-size:14px;
 }
-
-
 /* ------- homepage ----------*/
 #homeSwipe{
 		background-color: rgb(230, 229, 228);
-		border: 2px solid rgb(116,116,116);
+		border: 1px solid rgb(116,116,116);
 		height:305px;		
 }	
 
@@ -873,7 +879,7 @@ bullets{
 	
 }
 bullets ul,nav ol{list-style:none;list-style-image:none;margin:0;padding:0; margin-left:auto; margin-right:auto; text-align:center;}
-bullets #position li{display:inline-block;width:12px;height:12px;border-radius:10px;background:white; border: 2px solid rgb(116,116,116);
+bullets #position li{display:inline-block;width:12px;height:12px;border-radius:10px;background:white; border: 1px solid rgb(116,116,116);
 margin:0 5px;}
 bullets #position li.on{background-color:rgb(220, 134, 39);}
 bullets #position button{
@@ -898,7 +904,7 @@ bullets #position button{
 	vertical-align:top;
 	height:360px;
 	display:inline-block;
-	border-right:2px solid rgb(116,116,116);
+	border-right:1px solid  rgb(116,116,116);
 	text-align:center;
 }
 
@@ -931,7 +937,7 @@ bullets #position button{
 	float:none;
 	min-height:120px;
 	padding:0 5px;
-	border-right: 2px solid rgb(116,116,116);
+	border-right: 1px solid  rgb(116,116,116);
 	vertical-align:top;
 	
 }
@@ -973,7 +979,7 @@ bullets #position button{
 	width:100%;
 	float:none;
 	height:250px;
-	border-top:2px solid rgb(116,116,116);
+	border-top:1px solid  rgb(116,116,116);
 }
 #financeContainer #data p{
 	margin-top:10px;
@@ -985,7 +991,7 @@ bullets #position button{
 	height:360px;
 	display:inline-block;
 	vertical-align:top;	
-	border-left: 2px solid rgb(116,116,116);
+	border-left: 1px solid  rgb(116,116,116);
 
 }
 
@@ -993,7 +999,7 @@ bullets #position button{
 	background-color:white;
 	display:inline-block;
 	width:100%;
-	border-top:2px solid rgb(116,116,116);
+	border-top:1px solid  rgb(116,116,116);
 	
 }
 
@@ -1260,7 +1266,7 @@ display:inline-block;
 	height:240px;
 	background-color:white;
 	margin-top:0px;
-	border-bottom:2px solid rgb(116,116,116);
+	border-bottom:1px solid  rgb(116,116,116);
 	font-family:Georgia, "Times New Roman", Times, serif;
 	color:rgb(116,116,116);
 }
@@ -1279,12 +1285,13 @@ display:inline-block;
 	text-align:center;
 	margin-top:20px;
 	margin-bottom:10px;
-}
+	}
 
 #generalInfo .review{
 line-height:50px;}
  .compare{
 	font-family: HNL;
+	font-size:18px;
 	color:rgb(220, 134, 39);
 	margin-left:3px;
 	position:relative;
@@ -1318,7 +1325,7 @@ line-height:50px;}
 	height:300px;
 	width:100%;
 	border:none;
-	border-bottom:2px solid rgb(116,116,116);
+	border-bottom:1px solid  rgb(116,116,116);
 	text-align:left;
 	background-color:white;
 	padding-left:0px;
@@ -1373,6 +1380,9 @@ margin:0;
 	#leasingPro  #housingMatcherRight {
 display:none;
 	}
+	#housingMatcherRight #compareDiv{
+		margin-bottom:0px;
+	}
 
 #property #left #information #selector button, #leasingPro .top button{
 	color:rgb(51,62,106);
@@ -1406,7 +1416,7 @@ display:none;
 	max-width:100%;
 	display:inline-block;
 	background-color:white;
-	border-left:2px solid rgb(116,116,116);
+	border-left:1px solid  rgb(116,116,116);
 	padding-right:30px;
 	margin-top:15px;
 	vertical-align:top;
@@ -1418,7 +1428,7 @@ display:none;
 #property #right #dormTour{
 	height:340px;
 	background-color:white;
-	border-bottom:2px solid rgb(116,116,116);
+	border-bottom:1px solid  rgb(116,116,116);
 	margin-left:20px;
 }
 
@@ -1463,7 +1473,7 @@ display:none;
 
 #property #right #desc{
 	background-color:white;
-	border-bottom:2px solid rgb(116,116,116);
+	border-bottom:1px solid  rgb(116,116,116);
 	margin-left:20px;
 	padding-bottom:5px;
 	
@@ -1472,7 +1482,7 @@ display:none;
 #property #right #pricing{
 	background-color:white;
 	margin-left:20px;
-	border-bottom:2px solid rgb(116,116,116);
+	border-bottom:1px solid  rgb(116,116,116);
 	max-height:260px;
 }
 #property #right #reviews{
@@ -1607,7 +1617,7 @@ margin:auto;
 	width:700px;
 	display:inline-block;
 		vertical-align:top;
-	border-right:2px solid rgb(116,116,116);
+	border-right:1px solid  rgb(116,116,116);
 	padding-right:10px;
 }
 #propListing #top {
@@ -1686,7 +1696,7 @@ display:none;
 #picsAndVids{
 	width:1000px;
 	max-width:100%;
-	border-bottom:2px solid rgb(116,116,116);
+	border-bottom:1px solid  rgb(116,116,116);
 	text-align:center;
 }
 
@@ -1781,7 +1791,7 @@ margin:20px;
 width:500px;
 	max-width:100%;
 	display:inline-block;
-		border-left:2px solid rgb(116,116,116);
+		border-left:1px solid  rgb(116,116,116);
 		margin-top:10px;
 		height:100%;
 text-align:left;
@@ -1789,7 +1799,7 @@ vertical-align:top;
 }
 
 #availUpload #upload #dragger{
-	border:2px solid rgb(116,116,116);
+	border: 1px solid  rgb(116,116,116);
 	width:50px;
 	height:30px;
 	background-color:white;
@@ -1814,7 +1824,7 @@ display:none;
 #recommendedHousingFooter, #recommendedHousingFooterSqueeze{
 	width:1000px;
 	max-width:100%;
-	border-top:2px solid rgb(116,116,116);
+	border-top:1px solid  rgb(116,116,116);
 	margin-right:auto;
 
 	margin-left:auto;
@@ -1865,11 +1875,13 @@ display:none;
 }
 #housingMain #left{
 	margin-top:20px;
-	width:570px;
+		min-height:900px;
+
+	width:610px;
 	max-width:100%;
 	display:inline-block;
 	text-align:left;
-	border-right:2px solid rgb(116,116,116);
+	border-right:1px solid  rgb(116,116,116);
 }
 
 
@@ -1885,7 +1897,7 @@ margin-right:15px;
 }
 
 #housingMain #left .compareWrap{
-	margin-left:-13px;
+	margin-left:21px;
 	display:inline-block;
 vertical-align:bottom;
 }
@@ -1899,7 +1911,7 @@ vertical-align:bottom;
 
 #housingMain #right{
 	max-width:100%;
-	width:385px;
+	width:375px;
 	display:inline-block;
 	text-align:center;
 	vertical-align:top;
@@ -1928,7 +1940,7 @@ vertical-align:bottom;
 
 #housingMain #right #deadlinesDiv{
 text-align:center;
-border-bottom:2px solid rgb(116,116,116);
+border-bottom:1px solid  rgb(116,116,116);
 padding-bottom:10px;
 }
 
@@ -1938,14 +1950,14 @@ margin-bottom:20px;
 }
 .compare{
 	color:rgb(220, 134, 39);
-	font-size:14px;
+	font-size:18px;
 	font-family:HNL;
 }
 
 #housingMain .compare{
 	font-family: HNL;
 	color:rgb(220, 134, 39);
-font-size:14px;
+font-size:18px;
 	margin-left:3px;
 	position:relative;
 	top:2px	;
@@ -1969,8 +1981,8 @@ font-size:14px;
 
 }
 #housingMain .housingType{
-	font-family:HNL;
-	font-size:14px;
+	font-family:Georgia;
+	font-size:18px;
 	color:rgb(116,116,116);
 }
 
@@ -2003,7 +2015,7 @@ font-size:14px;
 	display: inline-block;
 	vertical-align:top;
 	text-align:left;
-		border-right:2px solid rgb(116,116,116);
+		border-right:1px solid  rgb(116,116,116);
 			margin-top:10px;
 
 
@@ -2110,7 +2122,7 @@ font-size:14px;
 }
 
 #reviewsPage #right .submit{
-	border-bottom:2px solid rgb(116,116,116);
+	border-bottom:1px solid  rgb(116,116,116);
 	padding-bottom:10px;
 }
 #housingMain .list, #reviewsPage #right .list{
@@ -2118,7 +2130,7 @@ font-size:14px;
 	margin-top:20px;
 }
 #housingMain .listOfReviews{
-	border-top:2px solid rgb(116,116,116);
+	border-top:1px solid  rgb(116,116,116);
 	margin-top:10px;
 	padding-top:0px;
 	
@@ -2216,7 +2228,7 @@ font-family:Georgia;
     background-color: white;
     z-index: 10;
 	color: rgb(51, 62, 106);
-	border: 2px solid rgb(116,116,116);
+	border: 1px solid rgb(116,116,116);
 }
 
 .panel2 {
@@ -2226,7 +2238,7 @@ font-family:Georgia;
 	font-family:Georgia;
 	font-size:14px;
 	line-height: 16px;
-		border: 2px solid rgb(116,116,116);
+		border: 1px solid rgb(116,116,116);
 
 }
 
@@ -2261,7 +2273,7 @@ font-family:Georgia;
 #compareTypes{
 	width:1000px;
 	max-width:100%;
-	border-top:2px solid rgb(116,116,116);
+	border-top:1px solid  rgb(116,116,116);
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:10px;
@@ -2339,11 +2351,35 @@ margin-top:0;
 	color: rgb(220, 134, 39);
 }
 
+#checkAvailability button{
+margin-left:775px;
+margin-bottom:10px;
+width:200px;
+}
+#nameBox, #phoneBox{
+	width:130px;
+	margin-bottom:0px;
+}
+#emailBox{
+width:200px;
+margin-bottom:0px;
+}
+#semDrop, #leaseDrop{
+width:250px;
+}
+#qBox{
+width:492px;
+height:40px;
+margin-top:10px;
+}
 
 
 #fiveOwls{
+margin-top:-5px;
+margin-left:-3px;
 	width:145px;
 	display:inline-block;
+	
 }
 
 #fiveOwls img{
@@ -2354,24 +2390,28 @@ margin-top:0;
 .interests{
 	color:rgb(51,62,106);
 	font-family:HNB;
-	font-size:14px;
+	font-size:18px;
 	margin-top:0px;
 }
 
 
 .dropDown{
 width: 200px;
-height: 20px;
+height: 25px;
 overflow: hidden;
 background: url('../img/dropDown.png') no-repeat right white;
+background-size:14px auto;
+background-position:98% 50%;
+
 }
+
 .dropDown select, .dropDown .pref{
 background: transparent;
 width: 200px;
 font-size: 14px;
 border: 1px solid rgb(116,116,116);
 border-radius: 0;
-height: 20px;
+height: 25px;
 -webkit-appearance: none;	
 color:rgb(116,116,116);
 font-family:Georgia, "Times New Roman", Times, serif;
@@ -2381,11 +2421,21 @@ padding-left:2px;
 
 
 .dropDown .pref{
-height:17px;
+height:18px;
 padding-left:2px;
-padding-top:1px;
+padding-top:5px;
 }
+textarea{
+border:1px solid rgb(116,116,116);
+color:rgb(116,116,116);
+padding:5px;
+height:15px;
+resize:none;
+overflow:hidden;
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-size:14px;
 
+}
 
 @media (max-width:1000px) { 
 
@@ -2397,7 +2447,7 @@ padding-top:1px;
 border:none;
 margin:auto;
 width:700px;
-border-top:2px solid rgb(116,116,116);
+border-top:1px solid  rgb(116,116,116);
 margin-top:10px;
 }
 		#propListing #squeezeTop1{
@@ -2427,7 +2477,7 @@ margin-top:10px;
 	border:none;
 	width:700px;
 	}
-	
+
 	#housingMain #left .compareWrap{
 	margin-left:115px;
 	
@@ -2447,7 +2497,7 @@ margin-top:10px;
 	}
 	
 	#housingMain #right #deadlinesDiv{
-border-top:2px solid rgb(116,116,116);
+border-top:1px solid  rgb(116,116,116);
 padding-top:5px;
 }
 
@@ -2470,7 +2520,7 @@ padding-top:5px;
 
 #housingMatcherContainer #housingMatcherRight {
 	border:none;
-		border-top: 2px solid rgb(116,116,116);
+		border-top: 1px solid  rgb(116,116,116);
 	width:80%;
 }	
 #housingMatcherRight #item p{
@@ -2484,7 +2534,7 @@ display:none;
 #housingMain #squeezeTop{
 display:block;
 text-align:center;
-border-bottom:2px solid rgb(116,116,116);
+border-bottom:1px solid  rgb(116,116,116);
 padding-bottom:10px;
 width:95%;
 margin:auto;
@@ -2505,7 +2555,7 @@ margin-top:10px;
 	display:inline-block;
 	width:45%;
 		vertical-align:top;
-				border-left:2px solid rgb(116,116,116);
+				border-left:1px solid  rgb(116,116,116);
 margin-left:10px;
 padding-left:10px;
 }
@@ -2562,7 +2612,7 @@ margin:auto;
 }
 
 #property #left #information{
-border-bottom:2px solid rgb(116,116,116);
+border-bottom:1px solid  rgb(116,116,116);
 height:auto;}
 }
 
@@ -2591,7 +2641,7 @@ height:500px;
 	}
 	#reviewsPage #left{
 	border:none;
-	border-bottom:2px solid rgb(116,116,116);
+	border-bottom:1px solid  rgb(116,116,116);
 	min-height:0px;
 
 }
@@ -2619,7 +2669,7 @@ height:500px;
 	width:80%;
 	max-width:80%;
 	border:none;
-		border-top:2px solid rgb(116,116,116);
+		border-top:1px solid  rgb(116,116,116);
 }
 
 #availUpload #availability{
@@ -2752,7 +2802,7 @@ width:430px;
 	
 }
 #housingMain #left .compareWrap{
-	margin-left:267px;
+	margin-left:257px;
 }
 #searchwrapper{
 	border:1px solid rgb(51,62,106);
@@ -2809,7 +2859,7 @@ margin-left:470px;
 		margin:auto;
 text-align:center;
 	padding-right:20px;
-	border-right:2px solid rgb(116,116,116);
+	border-right:1px solid  rgb(116,116,116);
 	margin-top:10px;
 	max-width:900px;
 	
@@ -2877,7 +2927,7 @@ margin-top:10px;
 	display:inline-block;
 text-align:center;
 padding-right:10px;
-border-right:2px solid rgb(116,116,116);
+border-right:1px solid  rgb(116,116,116);
 }
 .mediapage #left h2{
 margin-top:10px;
@@ -2912,7 +2962,7 @@ margin:auto;
 	width:900px;
 	display:inline-block;
 		vertical-align:top;
-	border-right:2px solid rgb(116,116,116);
+	border-right:1px solid  rgb(116,116,116);
 	padding-right:10px;
 }
 #propListing #top {
@@ -2921,7 +2971,7 @@ margin:auto;
 	vertical-align:top;
 }
 #propListing #housingMain #left .compareWrap{
-margin-left:315px;
+margin-left:285px;
 }
 #propListing #name{
 	margin-left:2px;
@@ -2943,6 +2993,36 @@ width:1300px;
 #comparePage .category{
 	margin-left:-60px;
 }
+.viewMoreRight{
+	text-align:right;
+	margin-left:380px;
+	font-size:14px;
+}
+
+
+#checkAvailability button{
+margin-left:688px;
+margin-bottom:10px;
+width:130px;
+height:25px;
+}
+#nameBox, #phoneBox{
+	width:230px;
+	margin-bottom:0px;
+}
+#emailBox{
+width:300px;
+margin-bottom:0px;
+}
+#semDrop, #leaseDrop{
+width:400px;
+}
+#qBox{
+width:792px;
+height:40px;
+margin-top:10px;
+}
+
 }
 
 
@@ -2972,7 +3052,7 @@ width:1300px;
 		margin:auto;
 text-align:center;
 	padding-right:20px;
-	border-right:2px solid rgb(116,116,116);
+	border-right:1px solid  rgb(116,116,116);
 	margin-top:10px;
 	max-width:1100px;
 	width:1050px;
@@ -3140,7 +3220,7 @@ margin:auto;
 	width:950px;
 	display:inline-block;
 		vertical-align:top;
-	border-right:2px solid rgb(116,116,116);
+	border-right:1px solid  rgb(116,116,116);
 	padding-right:10px;
 }
 #propListing #top {
