@@ -142,67 +142,21 @@ Click on circles to change importance.
 
 
 		</div>
+		    <a href=""> <div id="compareDiv">
+    <span class="compare">Compare</span>
+        
+        </div></a>
 
-<br>
-<br>
-<br>
+
 <span class="interests" style="margin-left:4px">855 Roomie Interests</span>
-  <br><button>Add to Roomie Match</button>
+  <br><button style="margin-bottom:5px;">Add to Roomie Match</button>
 <br><br>
-<br />
 <span class="blue" style="margin-left:4px">Recommended Application Date </span><span class="date">8.10.13</span>
 
 </div>
 		<div id="videoResp" ></div>
 
-
-<div id="availability">
-
-<h3>Check Availability</h3>
-<div style="margin:10px">
-			<span class="optional" style="margin-left:10px; font-size:14px;">*Optional</span>
-			  <br>
-			  <div style="margin:10px"><center>
-			  <textarea name="name" style="height:20px; width:25%; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="Name" ></textarea>
-			<textarea name="email" style="height:20px; width:46%; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="E-Mail"></textarea>
-		<textarea name="phone" style="height:20px; width:25%; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%;" placeholder="Phone #*"></textarea>
-		
-	
-	
-	<div class="dropDown" style="display:inline-block; width:49%; margin-left:-1px; margin-top:0px;">
-<select style="width:100%;">
-<option>Move In Semester</option>
-<option>Fall</option>
-<option>Spring</option>
-<option>Summer</option>
-</select></div>   
-            	<div class="dropDown" style="display:inline-block; width:49.5%; margin-left:-1px;">
-<select style="width:100%">
-<option >Leasing Period</option>
-<option>12 Month</option>
-<option>9 Month</option>
-<option>6 Month</option>
-<option>3 Month</option>
-
-</select></div> 
-	
-			<textarea name="questions" style="height:40px; width:98.5%; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%; margin-top:5px;" placeholder="*Questions"></textarea>
-			</div></center>
-		<br><button style="margin:10px; margin-top:-20px;	">Send</button>
-			
-			</div>
-			
-
-			
-		</div>
-
-		
-		<div id="video"></div>
-		<div id="compatibility">
+	<div id="compatibility">
 		<h3>Matching Compatibility</h3> <div id="choice" style="color:rgb(116,116,116); margin-left:20px">Don't Match = <div class="notImportant" style="float:none; position:relative; top:4px;"></div></div>
 		<div id="choice" style="color:rgb(116,116,116)">Match = <div class="important" style="float:none; position:relative; top:4px;"></div></div>
 		<span class="orange">Font Color</span><span style="position:relative; top:0px"> = Your Priority</span>
@@ -234,13 +188,62 @@ Click on circles to change importance.
 
 </div>
 </div>
-</div>
+
+			
+		
+
+		
+		<div id="video"></div>
+	<div id="availability">
+
+<h3>Check Availability <img src="../../../img/triangle.png" width=14px style="margin-left:1px; cursor:pointer; "onClick="checkAvail('avail1')"></h3>
+<div style="margin:10px">
+			<div id="avail1" class="hide">
+			<span class="optional" style="margin-left:10px;">*Optional</span>
+			  <br>
+			  <div style="margin:10px">
+			 <center> <textarea name="name" id="name" style="height:20px; width:20%; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:.875em; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="Name" ></textarea>
+			<textarea name="email" style="height:20px; width:47%; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:.875em; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="E-Mail"></textarea>
+		<textarea name="phone" id="name" style="height:20px; width:20%; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:.875em; resize:none; color:rgb(51,62,106); max-width:100%;" placeholder="Phone #*"></textarea>
+		
+	
+	
+	<div class="dropDown" style="display:inline-block; width:45%; margin-left:-1px; margin-top:0px;">
+<select style="width:100%">
+<option>Move In Semester</option>
+<option>Fall</option>
+<option>Spring</option>
+<option>Summer</option>
+</select></div>   
+            	<div class="dropDown" style="display:inline-block; width:45%; margin-left:-1px;">
+<select style="width:100%">
+<option >Leasing Period</option>
+<option>12 Month</option>
+<option>9 Month</option>
+<option>6 Month</option>
+<option>3 Month</option>
+
+</select></div> 
+	
+			<textarea name="questions" style="height:40px; width:90%; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:.875em; resize:none; color:rgb(51,62,106); max-width:100%; margin-top:5px;" placeholder="*Questions"></textarea>
+			</center></div>
+		<br><button >Send</button>
+			
+			</div>
+			
+ </div>
+</div></div><br><br>
+
+<div id="matches" style="margin-top:0px;">
 
 
-<div id="matches">
-<div id="matchInfo">
+<div id="matchInfo" >
 
-<h3>Towers</h3> <span class="compatibility">98% Compatibility</span>
+<h3>Quarters</h3> <span class="compatibility">98% Compatibility</span>
 	<br>
 	<div id="fiveOwls">
 			<img src="../../../img/Owl-Full-Vector.png">
@@ -251,68 +254,24 @@ Click on circles to change importance.
 
 
 		</div>
+      <a href=""> <div id="compareDiv">
+    <span class="compare">Compare</span>
+        
+        </div></a>
 
-<br>
-<br>
-<br>
-<span class="interests" style="margin-left:4px">855 Roomie Interests</span>
-  <br><button>Add to Roomie Match</button>
+<span class="interests" style="margin-left:4px;">855 Roomie Interests</span>
+  <br><button style="margin-bottom:5px;">Add to Roomie Match</button>
 <br><br>
-<br />
-<span class="blue" style="margin-left:4px">Recommended Application Date </span><span class="date">8.10.13</span>
+
+<span class="blue" style="margin-left:4px; ">Recommended Application Date </span><span class="date">8.10.13</span>
 
 </div>
 		<div id="videoResp" ></div>
 
-
-<div id="availability">
-<h3>Check Availability</h3>
-<div style="margin:10px">
-			<span class="optional" style="margin-left:10px; font-size:14px;">*Optional</span>
-			  <br>
-			  <div style="margin:10px"><center>
-			  <textarea name="name" style="height:20px; width:25%; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="Name" ></textarea>
-			<textarea name="email" style="height:20px; width:46%; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="E-Mail"></textarea>
-		<textarea name="phone" style="height:20px; width:25%; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%;" placeholder="Phone #*"></textarea>
-		
-	
-	
-	<div class="dropDown" style="display:inline-block; width:49%; margin-left:-1px; margin-top:0px;">
-<select style="width:100%;">
-<option>Move In Semester</option>
-<option>Fall</option>
-<option>Spring</option>
-<option>Summer</option>
-</select></div>   
-            	<div class="dropDown" style="display:inline-block; width:49.5%; margin-left:-1px;">
-<select style="width:100%">
-<option >Leasing Period</option>
-<option>12 Month</option>
-<option>9 Month</option>
-<option>6 Month</option>
-<option>3 Month</option>
-
-</select></div> 
-	
-			<textarea name="questions" style="height:40px; width:98.5%; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:14px; resize:none; color:rgb(51,62,106); max-width:100%; margin-top:5px;" placeholder="*Questions"></textarea>
-			</div></center>
-		<br><button style="margin:10px; margin-top:-20px;	">Send</button>
-			</div>
-			
-
-			
-		</div>
-
-		
-		<div id="video"></div>
-		<div id="compatibility">
+	<div id="compatibility">
 		<h3>Matching Compatibility</h3> <div id="choice" style="color:rgb(116,116,116); margin-left:20px">Don't Match = <div class="notImportant" style="float:none; position:relative; top:4px;"></div></div>
 		<div id="choice" style="color:rgb(116,116,116)">Match = <div class="important" style="float:none; position:relative; top:4px;"></div></div>
-		<span class="orange">Font Color</span> <span style="position:relative; top:0px"> = Your Priority</span>
+		<span class="orange">Font Color</span><span style="position:relative; top:0px"> = Your Priority</span>
 		
 		<div id="choices" style="padding-top:15px; margin-top:5px;">
 
@@ -334,18 +293,62 @@ Click on circles to change importance.
 <div id="choice">Smoking <div class="notImportant"></div></div>
 
 
+
+
+
+
+
+</div>
+</div>
+
+			
+		
+
+		
+		<div id="video"></div>
+	<div id="availability">
+
+<h3>Check Availability <img src="../../../img/triangle.png" width=14px style="margin-left:1px; cursor:pointer; "onClick="checkAvail('avail2')"></h3>
+<div style="margin:10px">
+			<div id="avail2" class="hide">
+			<span class="optional" style="margin-left:10px;">*Optional</span>
+			  <br>
+			  <div style="margin:10px">
+			 <center> <textarea name="name" id="name" style="height:20px; width:20%; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:.875em; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="Name" ></textarea>
+			<textarea name="email" style="height:20px; width:47%; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:.875em; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="E-Mail"></textarea>
+		<textarea name="phone" id="name" style="height:20px; width:20%; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:.875em; resize:none; color:rgb(51,62,106); max-width:100%;" placeholder="Phone #*"></textarea>
+		
+	
+	
+	<div class="dropDown" style="display:inline-block; width:45%; margin-left:-1px; margin-top:0px;">
+<select style="width:100%">
+<option>Move In Semester</option>
+<option>Fall</option>
+<option>Spring</option>
+<option>Summer</option>
+</select></div>   
+            	<div class="dropDown" style="display:inline-block; width:45%; margin-left:-1px;">
+<select style="width:100%">
+<option >Leasing Period</option>
+<option>12 Month</option>
+<option>9 Month</option>
+<option>6 Month</option>
+<option>3 Month</option>
+
+</select></div> 
+	
+			<textarea name="questions" style="height:40px; width:90%; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:.875em; resize:none; color:rgb(51,62,106); max-width:100%; margin-top:5px;" placeholder="*Questions"></textarea>
+			</center></div>
+		<br><button >Send</button>
+			
+			</div>
+			
+ </div>
 </div></div>
-</div>
-
-
-
-
-
-
-
-
-
-</div>
 
 
 
@@ -385,6 +388,16 @@ function radio(x){
 	}
 
 }
+
+
+function checkAvail(x){
+		if(document.getElementById(x).style.display=='none'){
+			document.getElementById(x).style.display='block';
+		} else 	document.getElementById(x).style.display='none';
+	
+}
+
+
 
 
 </script>

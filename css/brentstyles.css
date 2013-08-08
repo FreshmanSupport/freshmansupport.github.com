@@ -1,5 +1,4 @@
-@font-face {
-	font-family: "HNL";
+	/* font-family: "HNL"; */
 	src: url(../fonts/helveticaneue-light.otf);
 }
 @font-face {
@@ -378,15 +377,13 @@ font-family: HNB;
 #matches #availability {
 	width: 680px;
 	max-width:80%;
-	min-height:170px;
 	border: 1px solid rgb(116,116,116);
 	display: inline-block;
 	padding-top: 5px;
 	padding-left: 10px;
 	text-align:left;
-	margin-top:20px;
 	vertical-align:top;
-
+	margin-top:15px;
 }
 
 #matches #availability h3 {
@@ -575,7 +572,7 @@ font-family: Georgia, "Times New Roman", Times, serif;
 	
 
 }
-#housingQ h3 {
+#housingQ h3, #housingMain #housingQ h3 {
 	font-family: HNL;
 	font-size: 18px;
 	color: rgb(51,62,106);
@@ -604,8 +601,22 @@ display:inline-block;
 width:300px;
 text-align:left;
 margin-right:10px;
-margin-bottom:1px;
+margin-bottom:3px;
+margin-top:3px;
 }
+#housingMain #housingQ .item1{
+width:175px;
+}
+
+#housingMain #housingQ .option{
+width:105px;
+}
+#housingMain .rank1empty{
+	margin-left:0px;
+}
+
+
+
 #housingQ .importance, #housingQ .importance1{
 	text-align:right;
 	margin-bottom:10px;
@@ -638,6 +649,13 @@ margin:0;
 .rank3empty{
 	height:20px;
 }
+.hidetil13{
+display:none !important;
+}
+.hidetil15{
+display:none !important;
+}
+
 
 
 
@@ -1265,7 +1283,7 @@ display:inline-block;
 
 #generalInfo .review{
 line-height:50px;}
-#generalInfo .compare{
+ .compare{
 	font-family: HNL;
 	color:rgb(220, 134, 39);
 	margin-left:3px;
@@ -1541,6 +1559,15 @@ text-align:center;
 }
 
 #propListing h3{
+	font-size:18px;
+	color:rgb(51,62,106);
+	margin-bottom:10px;
+	text-align:center;
+	font-weight:normal;
+
+}
+
+#propListing #top h3, #propListing #squeezeTop1 h3{
 	font-size:18px;
 	color:rgb(116,116,116);
 	margin-bottom:10px;
@@ -1838,7 +1865,7 @@ display:none;
 }
 #housingMain #left{
 	margin-top:20px;
-	width:600px;
+	width:570px;
 	max-width:100%;
 	display:inline-block;
 	text-align:left;
@@ -1858,7 +1885,7 @@ margin-right:15px;
 }
 
 #housingMain #left .compareWrap{
-	margin-left:17px;
+	margin-left:-13px;
 	display:inline-block;
 vertical-align:bottom;
 }
@@ -1872,7 +1899,7 @@ vertical-align:bottom;
 
 #housingMain #right{
 	max-width:100%;
-	width:340px;
+	width:385px;
 	display:inline-block;
 	text-align:center;
 	vertical-align:top;
@@ -1892,6 +1919,7 @@ vertical-align:bottom;
 
 #housingMain #right #matcher{
 	margin-top:-10px;
+	width:100%;
 }
 
 #housingMain #right #matcher h2{
@@ -1904,15 +1932,20 @@ border-bottom:2px solid rgb(116,116,116);
 padding-bottom:10px;
 }
 
+#compareDiv{
+margin-top:0px;
+margin-bottom:20px;
+}
 .compare{
 	color:rgb(220, 134, 39);
-
+	font-size:14px;
+	font-family:HNL;
 }
 
 #housingMain .compare{
 	font-family: HNL;
 	color:rgb(220, 134, 39);
-
+font-size:14px;
 	margin-left:3px;
 	position:relative;
 	top:2px	;
@@ -1925,10 +1958,7 @@ padding-bottom:10px;
 	margin-right:3px;
 }
 
-#housingMain #compareDiv img{
-	vertical-align:middle;
-	width:20px;
-}
+
 
 #housingMain .appDate{
 	margin-left:0;
@@ -2461,6 +2491,9 @@ margin:auto;
 margin-top:10px;
 
 }
+
+
+
 #housingMain #squeezeTop #squeezeLeft{
 	display:inline-block;
 	width:45%;
@@ -2513,6 +2546,24 @@ margin-left:10%;
 	#housingMatcherRight{ 
 display:none;
 }
+#property{
+	width:80%;
+}
+#property #right{
+border:none;
+width:100%;
+margin:auto;
+margin-top:130px;
+}
+#property #left{
+width:95%;
+border:none;
+margin:auto;
+}
+
+#property #left #information{
+border-bottom:2px solid rgb(116,116,116);
+height:auto;}
 }
 
 @media (max-width:950px) { 
@@ -2798,12 +2849,22 @@ width:1260px;
 	width:1300px;
 }
 #property #right{
-width:850px;
+width:750px;
 }
 #property #left{
-width:400px;
+width:500px;
 display:inline-block;
 }
+#property #right #pricing #wrap #col{
+width:160px;
+
+}
+
+.hidetil13{
+display:inline-block !important;
+margin-right:13px;
+}
+
 .mediapage{
 width:1300px;
 text-align:center;
@@ -2933,7 +2994,7 @@ width:1500px;
 
 
 #housingResultsContainer #preferences {
-width:1450px;
+width:1460px;
 }
 #recommendedHousingFooter{
 	width:1500px;
@@ -2948,8 +3009,14 @@ width:1200px;
  width:1500px;
 }
 #flipWrap{
-	margin-left:55px;
-	margin-right:55px;
+	margin-left:50px;
+	margin-right:50px;
+}
+#compareTypes table{
+width:95%;
+}
+#dropMove{
+	margin-left:40px;
 }
 
 #matches {
@@ -2977,12 +3044,12 @@ width:1500px;
 }
 
 #housingMain #left{
-width:900px;
+width:950px;
 
 }
 
 #housingMain #right{
-width:500px;
+width:530px;
 }
 #maincontent {
 	background: white;
@@ -2992,7 +3059,7 @@ width:500px;
 	
 }
 #housingMain #left .compareWrap{
-	margin-left:167px;
+	margin-left:365px;
 }
 #searchwrapper{
 	border:1px solid rgb(51,62,106);
@@ -3007,6 +3074,7 @@ width:500px;
 width:400px;
 margin-right:50px;
 }
+
 #housingQ .option{
 	margin-right:110px;
 }
@@ -3037,10 +3105,100 @@ width:400px;
 	#reviewsPage #left  .votes{
 margin-left:670px;
 	}
+	.mediapage{
+	
+	width:1500px;
+	}
 
+	.mediapage #housingMatcherRight{
+vertical-align:top;
+display:inline-block;
+width:420px;
+border:none;
+}
+.mediapage #left{
+width:1050px;
+} 
+.mediapage #picsWrap{
+margin-left:50px;
+}
+.mediapage #upload{
+margin-left:40px;
+padding-left:30px;
+}
 	
 	
+	
+#propListing{
+width:1500px;
+max-width:100%;
+margin:auto;
 }
 
+
+#propListing #housingMain {
+	width:950px;
+	display:inline-block;
+		vertical-align:top;
+	border-right:2px solid rgb(116,116,116);
+	padding-right:10px;
+}
+#propListing #top {
+	display:inline-block;
+	width:500px;	
+	vertical-align:top;
+}
+#propListing #housingMain #left .compareWrap{
+margin-left:365px;
+}
+#propListing #name{
+	margin-left:2px;
+	margin-right:2px;
+}
+#propListing #checkAvailability button{
+	margin-left:834px;
+	margin-top:-25px;
+margin-bottom:20px;}
+
+
+
+#property{
+	width:1500px;
+}
+#property #right{
+width:950px;
+}
+#property #left{
+width:500px;
+display:inline-block;
+}
+
+#property #right #pricing #wrap #col{
+width:160px;
+
+}
+.hidetil13{
+	margin-right:15px;
+}
+.hidetil15{
+display:inline-block !important;
+	margin-right:15px;
+	}
+	
+#housingMain #housingQ .item1{
+width:210px;
+}
+
+#housingMain #housingQ .option{
+width:117px;
+margin-right:0px;
+}
+#housingMain .rank1empty{
+	display:inline-block;
+	margin-left:35px;
+}
+
+	
+}
 
 
