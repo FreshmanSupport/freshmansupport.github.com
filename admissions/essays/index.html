@@ -64,11 +64,7 @@
                 Rank:9/259 </p>
             </div>
             <div class="infoRight">
-              <div class="rate">Rate Essay:</div>
-              <div class="voteContainer"> <span class="upOne">2</span>
-                <div class="upVote"></div>
-                <div class="downVote"></div>
-                <span class="downOne">90</span> </div>
+              
             </div>
             <div class="addEssay">
              
@@ -80,7 +76,16 @@
             </div>
           </div>
           <div class="essayContainer">
+            <div class="col-1-2">
             <h3>Essay:</h3>
+            </div>
+            <div class="col-1-2" style="padding-left:322px;padding-top:13px">
+            <div class="rate">Rate Essay</div>
+              <div class="voteContainer"> <span class="upOne">2</span>
+                <div class="upVote"></div>
+                <div class="downVote"></div>
+                <span class="downOne">90</span> </div>
+                </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
               In a elit sapien. Ut eleifend pellentesque neque. Aliquam bibendum purus leo. 
               Suspendisse sit amet purus in tortor facilisis aliquet nec id tortor. 
@@ -164,10 +169,31 @@
       <button onClick="essaySlider.prev()"><img src=../../img/arrowLeft.png width=10px/> Prev</button>
       <button onClick="essaySlider.next()">Next <img src=../../img/arrowRight.png width=10px /></button>
     </center>
+    <div id="uploadEssayForm">
+    	<p>Hey your essay is going to be private like just trust us anonymous complete. It's straight</p>
+        <form>
+        	<ul>
+            	
+                <li><label>Hometown</label><input type="text" id="hometown" /></li>
+                <li><label>GPA</label><input type="text" id="gpa" /></li>
+                <li><label>Class Rank</label><input type="text" id="classRank" /></li>
+                <li><label>SAT Score</label><input type="text" id="sat" /></li>
+                <li><label for="yes">Yes</label><input id="yes" type="radio" name="accepted" />
+                	<label for="no">No</label><input id="no" type="radio" name="accepted"/></li>
+                <li><label>Major</label><input type="text" id="major " /></li>
+                <li><button>Upload</button></li>
+                <li><textarea></textarea>
+                <input type="checkbox" placeholder="Copy and Paste"/>Agree to bblah
+                <button>Submit</button>
+                </li>
+                <li><label>email</label><input type="text" id="email" /> <p>To Notify you if you won!</li>
+            </ul>
+        </form>
+    </div>
   </div>
   <div id="essay" class="col-3-8 essay">
     <h2>Select an Essay</h2>
-    <div class="selectContainer dropDown">
+    <div class="selectContainer dropDown" style="margin-top:40px;">
       <select>
         <option>Sort by Rank</option>
         <option>Sort by Date</option>

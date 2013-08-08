@@ -75,7 +75,7 @@
 	float: none;
 	min-height: 120px;
 	padding: 0 5px;
-	border-right: 2px solid rgb(116,116,116);
+
 	vertical-align: top;
 }
 .answer {
@@ -88,10 +88,11 @@
 	margin: auto;
 	padding: 0 5px;
 	vertical-align: top;
+		border-left: 2px solid rgb(116,116,116);
 }
-.answeredBy {
-	text-align: center;
-}
+.answeredBy{width: 305px; margin:0 auto;}
+.answeredBy img{display:inline-block; height: 45px; width: 45px; margin-right: 5px;}
+.answeredByInfo{display:inline-block;}
 .info {
 	display: inline-block;
 }
@@ -151,7 +152,8 @@
 	border-right: 7px solid transparent;
 	border-top: 8px solid rgb(220, 134, 39);
 }
-
+.essay center img{display:inline-block;}
+#recentAnswers, #data, #essay{height: 430px;}
 /* ============= Recently Answered =============== */
 #raHeader {
 	width: 100%;
@@ -1177,7 +1179,7 @@ padding-top: 9px;
 .footer input, .footer textarea {
 	width: 100%;
 	display: block;
-	border: 1px solid rgb(51, 62, 106);
+	border: 2px solid rgb(116, 116, 116);
 	margin-bottom: 5px;
 }
 .footer textarea {
@@ -1375,13 +1377,14 @@ hr {
 	height: 25px;
 	overflow: hidden;
 	background: url(../img/dropDown.png) no-repeat right white;
+	background-size: 25px 25px;
 	
 }
 .dropDown select {
 	background: transparent;
 	width: 150px;
 	font-size: 14px;
-	border: 1px solid rgb(79,77,77);
+	border: 2px solid rgb(79,77,77);
 	border-radius: 0;
 	height: 25px;
 	-webkit-appearance: none;
@@ -1392,7 +1395,7 @@ hr {
 }
 .buttonContainer{display:block: width:100%; overflow:hidden;}
 .tab{ text-indent:40px;}
-
+.hr{height:1px; border-bottom: 2px solid rgb(116,116,116); width: 90%; margin:0 auto;}
 
 
 /* ============ Slider JS CSS ================== */
@@ -1440,6 +1443,7 @@ body {
 #container {
 	margin: 0 auto;
 }
+ul{padding:0; list-style-type:none;}
 /* ========== Messing with Boot Strap ============= */
 [class*="span"] .span6 {
 	display: inline-block;
