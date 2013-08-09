@@ -75,9 +75,9 @@
 	float: none;
 	min-height: 120px;
 	padding: 0 5px;
-
 	vertical-align: top;
 }
+.question h3,.answer h3{margin-top:0;}
 .answer {
 	color: rgb(51,62,106);
 	font-family: HNL;
@@ -903,7 +903,6 @@ padding-top: 9px;
 /* ============= Fianance ===================== */
 
 .finances #topFinances {
-	border-bottom: 1px solid rgb(116,116,116);
 }
 .finances #recentAnswers {
 }
@@ -929,7 +928,7 @@ padding-top: 9px;
 	margin-bottom: 30px;
 }
  #state {
-	margin-top: 20px;
+	margin-top: 64px;
 }
  .stateWrap {
 	display: block;
@@ -965,7 +964,6 @@ padding-top: 9px;
 }
 
 .finances #budgetPlanner h3 {
-	color: rgb(116,116,116);
 	margin-bottom: 0;
 }
 #budgetPlanner input[type=radio] {
@@ -998,8 +996,9 @@ padding-top: 9px;
 	color: rgb(51, 62, 107);
 	text-decoration: none;
 	text-align:center;
+	margin-top:50px;
 }
-.finances #nextContainer{width:480px;padding-left:143px; margin:0 auto;margin-top:159px;}
+.finances #nextContainer{width:480px;padding-left:143px; margin:0 auto;margin-top:78px;}
 .semesterWrap input[type=radio]:checked + label,.transWrap input[type=radio]:checked + label {
 	background-color: rgb(220, 134, 39);
 }
@@ -1444,11 +1443,7 @@ padding-top: 9px;
 	content: url(../img/arrowRight.png);
 }
 .HNL {
-	font-family: HNL;
-	font-size: 0.875em;
-	color: rgb(116,116,116);
-	display: block;
-	text-align: center;
+	font-family: HNL;!important
 }
 button {
 	border: none;
