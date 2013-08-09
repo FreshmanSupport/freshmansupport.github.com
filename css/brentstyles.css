@@ -344,6 +344,8 @@ font-family: HNB;
 	margin-top:20px;
 	text-align:left;
 	vertical-align:top;
+	font-size:14px;
+	font-color:rgb(116,116,116);
 }
 #matchInfo h3{
 	font-size:24px;
@@ -354,7 +356,7 @@ font-family: HNB;
 	color: rgb(220, 134, 39);
 	font-size: 14px;
 	display: inline;
-	
+	margin-top:20px;
 }
 
 #matchInfo .interests{
@@ -388,8 +390,7 @@ font-family: HNB;
 	padding-left: 10px;
 	text-align:left;
 	vertical-align:top;
-	margin-top:15px;
-}
+margin-top:-40px;}
 
 #matches #availability h3 {
 	font-size: 18px;
@@ -496,6 +497,19 @@ font-family: HNB;
 	padding-left:10px;
 		margin-top:10px;
 		vertical-align:top;
+}
+#housingMatcherRight .compare, #housingMatcherRight .interests{
+font-size:14px;
+}
+#housingMatcherRight #compareDiv{
+margin-bottom:-5px;
+}
+#housingMatcherRight .interests{
+margin-left:2px;
+margin-top:-15px;
+}
+#housingMatcherRight button{
+	margin-top:-11px;
 }
 
 
@@ -787,6 +801,7 @@ margin-top:23px;
 	vertical-align:middle;
 	width:20px;
 }
+
 
 #recommended #interests{
 	font-size:14px;
@@ -1298,12 +1313,12 @@ display:inline-block;
 }
 
 #generalInfo #interests {
-	font-family:HNB;
+	font-family:Georgia;
 	width:100%;
-	color: rgb(51,62,106);
+	color: rgb(116,116,116);
 	text-align:center;
 	margin-top:20px;
-	margin-bottom:10px;
+	margin-bottom:20px;
 	}
 
 #generalInfo .review{
@@ -1335,22 +1350,42 @@ line-height:50px;}
 }
 
 #generalInfo .date {
-	color: rgb(220, 134, 39);
+	color: rgb(51,62,106);
 		font-family:Georgia, "Times New Roman", Times, serif;
 
 }
 
 #left #availability, #left #availSent{
-	height:300px;
 	width:100%;
 	border:none;
-	border-bottom:1px solid  rgb(116,116,116);
 	text-align:left;
 	background-color:white;
 	padding-left:0px;
 	padding-top:10px;
-
 }
+
+
+#left #availability button{
+margin-bottom:10px;
+margin-left:291px;
+margin-top:5px;
+}
+#left #availability #firstName{
+width:44%;
+}
+
+#left #availability #lastName{
+	width:45%;
+}
+#left #availability #mailPhone{
+	width:93.8%;
+}
+#left #availability .dropDown{
+width:97%;
+}
+
+
+
 #left p{
 	font-size:14px;
 	font-family:Georgia, "Times New Roman", Times, serif;
@@ -1368,7 +1403,8 @@ margin:0;
 
 #left #information{
 	width:100%;
-	height:600px;
+	margin-top:30px;
+	border-top:1px solid rgb(116,116,116);
 }
 
 #property #left #information #selector{
@@ -1381,6 +1417,7 @@ margin:0;
 	margin-top:10px;
 	padding-top:2px;
 	margin-bottom:30px;
+	
 }
 #leasingPro{
 	width:1000px;
@@ -1648,7 +1685,10 @@ margin:auto;
 	text-align:center;
 }
 #propListing #housingMain #left .compareWrap{
-margin-left:115px;
+margin-left:85px;
+}
+#propListing #housingMain #left .viewMoreRight{
+	margin-left:235px;
 }
 #propListing #name{
 	margin-left:2px;
@@ -1897,7 +1937,7 @@ display:none;
 }
 #housingMain #left{
 	margin-top:20px;
-		min-height:900px;
+		min-height:650px;
 
 	width:610px;
 	max-width:100%;
@@ -2069,9 +2109,10 @@ font-size:18px;
 }
 
 #reviewsPage #left .title{
-	margin-left:30px;
+	margin-left:5px;
+	margin-right:20px;
 	color:rgb(51,62,106);
-	font-family:HNL;
+	font-family:Georgia;
 	font-size:14px;
 	display:inline;
 	position:relative;
@@ -2139,8 +2180,8 @@ font-size:18px;
 #reviewsPage #left .hiddenComment{
 	width:500px;
 	display:none;
-		padding-left:50px;
-	margin-top:-10px;
+		padding-left:30px;
+	margin-top:-5px;
 	
 }
 
@@ -2428,6 +2469,32 @@ font-size:14px;
 
 @media (max-width:1000px) { 
 
+
+
+#left #availability button{
+margin-left:auto;
+margin-right:auto;
+text-align:center;
+}
+#left #availability #firstName{
+width:200px;
+}
+
+#left #availability #lastName{
+	width:200px;
+}
+#left #availability #mailPhone{
+	width:416px;
+}
+#left #availability .dropDown{
+width:428px;
+}
+
+
+#matches #availability{
+margin-top:5px;
+}
+
 #propListing #top{
 	display:none;
 	
@@ -2602,8 +2669,11 @@ margin:auto;
 }
 
 #property #left #information{
-border-bottom:1px solid  rgb(116,116,116);
 height:auto;}
+#property #right #dormTour{
+border-top:1px solid rgb(116,116,116);
+margin-top:10px;
+}
 }
 
 @media (max-width:950px) { 
@@ -2861,7 +2931,7 @@ text-align:center;
 }
 #matches #availability{
 	width:1000px;
-	margin-left:270px;
+	margin-left:273px;
 }
 #matches #compatibility{
 	width:727px;
@@ -2968,7 +3038,7 @@ margin-left:430px;
 	vertical-align:top;
 }
 #propListing #housingMain #left .compareWrap{
-margin-left:285px;
+margin-left:210px;
 }
 #propListing #name{
 	margin-left:2px;
@@ -3025,6 +3095,28 @@ margin-top:10px;
 }
 #housingResultsContainer #emailBox{
 	width:301px;
+}
+
+#left #availability button{
+margin-bottom:10px;
+margin-left:433px;
+margin-top:5px;
+}
+#left #availability #firstName{
+width:44%;
+}
+
+#left #availability #lastName{
+	width:45%;
+}
+#left #availability #mailPhone{
+	width:92.2%;
+}
+#left #availability .dropDown{
+width:94.6%;
+}
+#propListing #housingMain #left .viewMoreRight{
+	margin-left:430px;
 }
 
 }
@@ -3231,7 +3323,7 @@ margin:auto;
 	vertical-align:top;
 }
 #propListing #housingMain #left .compareWrap{
-margin-left:365px;
+margin-left:305px;
 }
 #propListing #name{
 	margin-left:2px;
