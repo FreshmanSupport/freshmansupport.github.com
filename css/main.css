@@ -999,7 +999,7 @@ padding-top: 9px;
 	text-decoration: none;
 	text-align:center;
 }
-.finances #nextContainer{width:480px;padding-left:143px; margin:0 auto;}
+.finances #nextContainer{width:480px;padding-left:143px; margin:0 auto;margin-top:159px;}
 .semesterWrap input[type=radio]:checked + label,.transWrap input[type=radio]:checked + label {
 	background-color: rgb(220, 134, 39);
 }
