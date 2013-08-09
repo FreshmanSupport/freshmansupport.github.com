@@ -1500,7 +1500,7 @@ hr {
 .tab{ text-indent:40px;}
 .hr{height:1px; border-bottom: 1px solid rgb(116,116,116); width: 90%; margin:0 auto;}
 
-/* Stop shrinking it warning to user*/
+/* Easter Egg for small resolution*/
 @media(max-width:360px){
 #maincontent, #header, #footer, .footer{display:none;}
 body:before{
@@ -1508,8 +1508,8 @@ body:before{
 	position:absolute; 
 	width:100%; 
 	background-image:url(../img/easter.png); 
-	background-size:100% 100%; 
-	background-position:00px 60px;
+	background-size:100% 300px; 
+	background-position:0px 100px;
 	background-repeat:no-repeat;
 	height:300px;
 	top:100px;
@@ -1520,7 +1520,12 @@ body:before{
 	z-index:1000000000;
 }
 body:after{
-
+	content:"Please increase your browsers size in order to enjoy the whole site the way it is intended to be! Thank You!";
+	position:absolute;
+	margin-top:410px;
+		color:rgb(51, 62, 107);
+	font-family:Georgia, "Times New Roman", Times, serif;
+	text-align:center;
 }
 
 /* ============ Slider JS CSS ================== */
