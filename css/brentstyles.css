@@ -2008,8 +2008,12 @@ color:rgb(116,116,116);
 text-align:center;
 border-bottom:1px solid  rgb(116,116,116);
 padding-bottom:10px;
+
 }
 
+#housingMain #right #deadlinesDiv p{
+font-size:18px;
+}
 #compareDiv{
 margin-top:0px;
 margin-bottom:20px;
@@ -2151,10 +2155,14 @@ font-size:18px;
 }
 
 #reviewsPage #left .propComment{
-	border-bottom:1px solid rgb(116,116,116);
-	width:500px;
 		max-width:100%;
-
+		border:1px solid rgb(116,116,116);
+		width:663px;
+		padding:5px;
+		margin-left:140px;
+		background-color:rgb(232,229,228);
+		padding-right:20px;
+		padding-bottom:10px;
 
 }
 #reviewsPage  #left .propComment button{
@@ -2178,10 +2186,10 @@ font-size:18px;
 }
 
 #reviewsPage #left .hiddenComment{
-	width:500px;
-	display:none;
+	width:97%;
 		padding-left:30px;
 	margin-top:-5px;
+
 	
 }
 
@@ -2888,6 +2896,9 @@ width:430px;
 }
 #reviewsPage #left{
 width:850px;
+}
+#reviewsPage #right button{
+margin-left:342px;
 }
 
 #reviewsPage #right{
