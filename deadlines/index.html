@@ -1,0 +1,853 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link type="text/css" rel="stylesheet" href="../css/main.css"/>
+<link type="text/css" rel="stylesheet" href="../css/headerStyle.css"/>
+<script src="../js/swipe.js"></script>
+<script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Deadlines</title>
+</head>
+
+<body>
+<div id="header">
+  <div id="loginBar">
+    <div id="loginBarContainer"> <a href="#">Login |</a> <a href="#"> Register</a> </div>
+  </div>
+  <div id="searchBar">
+    <div id="collegeSearchContainer">
+      <form id="collegeSearchbox" action="">
+        <input id="submit" type="submit" value="Search" name="submit"class="collegeSearchButton">
+        <input id="search" type="text" name="collegeSearch" placeholder="The University of Texas at Austin" class="collegeSearchBox">
+      </form>
+    </div>
+    <div id="logoContainer"><a href="/"> <img src="../img/logo.png" /></a> </div>
+    <div id="siteSearchContainer">
+      <form id="searchbox" action="">
+        <div id="magnify"></div>
+        <input id="search" type="text" placeholder="Search The University of North Texas" class="siteSearchSkin">
+      </form>
+    </div>
+  </div>
+  <div id="newNav">
+    <ul>
+      <li id="home"><a href="../home">HOME</a></li>
+      <li id="housing"><a href="../housing"><span>COMPARE </span>HOUSING</a></li>
+      <li id="roomie"><a href="../roomieMatching">ROOMIE<span> MATCHING</span></a></li>
+      <li id="admissions"><a href="../admissions" >ADMISSIONS</a> </li>
+      <li id="finances"><a href="../finances">FINANCES</a> </li>
+      <li id="theRealLife"><a href="../theRealLife"><span>THE </span>REAL LIFE</a> </li>
+      <li id="visit"><a href="../visit">VISIT</a> </li>
+      <li id="deadlinesSelected"><a href="../deadlines">DEADLINES</a> </li>
+    </ul>
+  </div>
+  <div id="subNav"> </div>
+</div>
+<div id="maincontent" class="calendar">
+<!-- Side Calendar -->
+<div id="sideCalendar">
+  <div class="smallCalendar">
+    <div class="title">January </div>
+    <table>
+      <tbody>
+        <tr>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">1</span></td>
+          <td><span class="date">2</span></td>
+          <td><span class="date">3</span></td>
+          <td><span class="date">4</span></td>
+          <td><span class="date">5</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">6</span></td>
+          <td><span class="date">7</span></td>
+          <td><span class="date">8</span></td>
+          <td><span class="date">9</span></td>
+          <td><span class="date">10</span></td>
+          <td><span class="date">11</span></td>
+          <td><span class="date">12</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">13</span></td>
+          <td><span class="date">14</span></td>
+          <td><span class="date">15</span></td>
+          <td><span class="date">16</span></td>
+          <td><span class="date">17</span></td>
+          <td><span class="date">18</span></td>
+          <td><span class="date">19</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">20</span></td>
+          <td><span class="date">21</span></td>
+          <td><span class="date">22</span></td>
+          <td><span class="date">23</span></td>
+          <td><span class="date">24</span></td>
+          <td><span class="date">25</span></td>
+          <td><span class="date">26</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">27</span></td>
+          <td><span class="date">28</span></td>
+          <td><span class="date">29</span></td>
+          <td><span class="date">30</span></td>
+          <td><span class="date">31</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="smallCalendar">
+    <div class="title">February </div>
+    <table>
+      <tbody>
+        <tr>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">1</span></td>
+          <td><span class="date">2</span></td>
+          <td><span class="date">3</span></td>
+          <td><span class="date">4</span></td>
+          <td><span class="date">5</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">6</span></td>
+          <td><span class="date">7</span></td>
+          <td><span class="date">8</span></td>
+          <td><span class="date">9</span></td>
+          <td><span class="date">10</span></td>
+          <td><span class="date">11</span></td>
+          <td><span class="date">12</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">13</span></td>
+          <td><span class="date">14</span></td>
+          <td><span class="date">15</span></td>
+          <td><span class="date">16</span></td>
+          <td><span class="date">17</span></td>
+          <td><span class="date">18</span></td>
+          <td><span class="date">19</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">20</span></td>
+          <td><span class="date">21</span></td>
+          <td><span class="date">22</span></td>
+          <td><span class="date">23</span></td>
+          <td><span class="date">24</span></td>
+          <td><span class="date">25</span></td>
+          <td><span class="date">26</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">27</span></td>
+          <td><span class="date">28</span></td>
+          <td><span class="date">29</span></td>
+          <td><span class="date">30</span></td>
+          <td><span class="date">31</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="smallCalendar">
+    <div class="title">March </div>
+    <table>
+      <tbody>
+        <tr>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">1</span></td>
+          <td><span class="date">2</span></td>
+          <td><span class="date">3</span></td>
+          <td><span class="date">4</span></td>
+          <td><span class="date">5</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">6</span></td>
+          <td><span class="date">7</span></td>
+          <td><span class="date">8</span></td>
+          <td><span class="date">9</span></td>
+          <td><span class="date">10</span></td>
+          <td><span class="date">11</span></td>
+          <td><span class="date">12</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">13</span></td>
+          <td><span class="date">14</span></td>
+          <td><span class="date">15</span></td>
+          <td><span class="date">16</span></td>
+          <td><span class="date">17</span></td>
+          <td><span class="date">18</span></td>
+          <td><span class="date">19</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">20</span></td>
+          <td><span class="date">21</span></td>
+          <td><span class="date">22</span></td>
+          <td><span class="date">23</span></td>
+          <td><span class="date">24</span></td>
+          <td><span class="date">25</span></td>
+          <td><span class="date">26</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">27</span></td>
+          <td><span class="date">28</span></td>
+          <td><span class="date">29</span></td>
+          <td><span class="date">30</span></td>
+          <td><span class="date">31</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="smallCalendar">
+    <div class="title">April </div>
+    <table>
+      <tbody>
+        <tr>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">1</span></td>
+          <td><span class="date">2</span></td>
+          <td><span class="date">3</span></td>
+          <td><span class="date">4</span></td>
+          <td><span class="date">5</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">6</span></td>
+          <td><span class="date">7</span></td>
+          <td><span class="date">8</span></td>
+          <td><span class="date">9</span></td>
+          <td><span class="date">10</span></td>
+          <td><span class="date">11</span></td>
+          <td><span class="date">12</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">13</span></td>
+          <td><span class="date">14</span></td>
+          <td><span class="date">15</span></td>
+          <td><span class="date">16</span></td>
+          <td><span class="date">17</span></td>
+          <td><span class="date">18</span></td>
+          <td><span class="date">19</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">20</span></td>
+          <td><span class="date">21</span></td>
+          <td><span class="date">22</span></td>
+          <td><span class="date">23</span></td>
+          <td><span class="date">24</span></td>
+          <td><span class="date">25</span></td>
+          <td><span class="date">26</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">27</span></td>
+          <td><span class="date">28</span></td>
+          <td><span class="date">29</span></td>
+          <td><span class="date">30</span></td>
+          <td><span class="date">31</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="smallCalendar">
+    <div class="title">May </div>
+    <table>
+      <tbody>
+        <tr>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">1</span></td>
+          <td><span class="date">2</span></td>
+          <td><span class="date">3</span></td>
+          <td><span class="date">4</span></td>
+          <td><span class="date">5</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">6</span></td>
+          <td><span class="date">7</span></td>
+          <td><span class="date">8</span></td>
+          <td><span class="date">9</span></td>
+          <td><span class="date">10</span></td>
+          <td><span class="date">11</span></td>
+          <td><span class="date">12</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">13</span></td>
+          <td><span class="date">14</span></td>
+          <td><span class="date">15</span></td>
+          <td><span class="date">16</span></td>
+          <td><span class="date">17</span></td>
+          <td><span class="date">18</span></td>
+          <td><span class="date">19</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">20</span></td>
+          <td><span class="date">21</span></td>
+          <td><span class="date">22</span></td>
+          <td><span class="date">23</span></td>
+          <td><span class="date">24</span></td>
+          <td><span class="date">25</span></td>
+          <td><span class="date">26</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">27</span></td>
+          <td><span class="date">28</span></td>
+          <td><span class="date">29</span></td>
+          <td><span class="date">30</span></td>
+          <td><span class="date">31</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="smallCalendar">
+    <div class="title">June </div>
+    <table>
+      <tbody>
+        <tr>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">1</span></td>
+          <td><span class="date">2</span></td>
+          <td><span class="date">3</span></td>
+          <td><span class="date">4</span></td>
+          <td><span class="date">5</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">6</span></td>
+          <td><span class="date">7</span></td>
+          <td><span class="date">8</span></td>
+          <td><span class="date">9</span></td>
+          <td><span class="date">10</span></td>
+          <td><span class="date">11</span></td>
+          <td><span class="date">12</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">13</span></td>
+          <td><span class="date">14</span></td>
+          <td><span class="date">15</span></td>
+          <td><span class="date">16</span></td>
+          <td><span class="date">17</span></td>
+          <td><span class="date">18</span></td>
+          <td><span class="date">19</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">20</span></td>
+          <td><span class="date">21</span></td>
+          <td><span class="date">22</span></td>
+          <td><span class="date">23</span></td>
+          <td><span class="date">24</span></td>
+          <td><span class="date">25</span></td>
+          <td><span class="date">26</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">27</span></td>
+          <td><span class="date">28</span></td>
+          <td><span class="date">29</span></td>
+          <td><span class="date">30</span></td>
+          <td><span class="date">31</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="smallCalendar">
+    <div class="title">July </div>
+    <table>
+      <tbody>
+        <tr>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">1</span></td>
+          <td><span class="date">2</span></td>
+          <td><span class="date">3</span></td>
+          <td><span class="date">4</span></td>
+          <td><span class="date">5</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">6</span></td>
+          <td><span class="date">7</span></td>
+          <td><span class="date">8</span></td>
+          <td><span class="date">9</span></td>
+          <td><span class="date">10</span></td>
+          <td><span class="date">11</span></td>
+          <td><span class="date">12</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">13</span></td>
+          <td><span class="date">14</span></td>
+          <td><span class="date">15</span></td>
+          <td><span class="date">16</span></td>
+          <td><span class="date">17</span></td>
+          <td><span class="date">18</span></td>
+          <td><span class="date">19</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">20</span></td>
+          <td><span class="date">21</span></td>
+          <td><span class="date">22</span></td>
+          <td><span class="date">23</span></td>
+          <td><span class="date">24</span></td>
+          <td><span class="date">25</span></td>
+          <td><span class="date">26</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">27</span></td>
+          <td><span class="date">28</span></td>
+          <td><span class="date">29</span></td>
+          <td><span class="date">30</span></td>
+          <td><span class="date">31</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="smallCalendar">
+    <div class="title">August </div>
+    <table>
+      <tbody>
+        <tr>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">1</span></td>
+          <td><span class="date">2</span></td>
+          <td><span class="date">3</span></td>
+          <td><span class="date">4</span></td>
+          <td><span class="date">5</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">6</span></td>
+          <td><span class="date">7</span></td>
+          <td><span class="date">8</span></td>
+          <td><span class="date">9</span></td>
+          <td><span class="date">10</span></td>
+          <td><span class="date">11</span></td>
+          <td><span class="date">12</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">13</span></td>
+          <td><span class="date">14</span></td>
+          <td><span class="date">15</span></td>
+          <td><span class="date">16</span></td>
+          <td><span class="date">17</span></td>
+          <td><span class="date">18</span></td>
+          <td><span class="date">19</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">20</span></td>
+          <td><span class="date">21</span></td>
+          <td><span class="date">22</span></td>
+          <td><span class="date">23</span></td>
+          <td><span class="date">24</span></td>
+          <td><span class="date">25</span></td>
+          <td><span class="date">26</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">27</span></td>
+          <td><span class="date">28</span></td>
+          <td><span class="date">29</span></td>
+          <td><span class="date">30</span></td>
+          <td><span class="date">31</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="smallCalendar">
+    <div class="title">September </div>
+    <table>
+      <tbody>
+        <tr>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">1</span></td>
+          <td><span class="date">2</span></td>
+          <td><span class="date">3</span></td>
+          <td><span class="date">4</span></td>
+          <td><span class="date">5</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">6</span></td>
+          <td><span class="date">7</span></td>
+          <td><span class="date">8</span></td>
+          <td><span class="date">9</span></td>
+          <td><span class="date">10</span></td>
+          <td><span class="date">11</span></td>
+          <td><span class="date">12</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">13</span></td>
+          <td><span class="date">14</span></td>
+          <td><span class="date">15</span></td>
+          <td><span class="date">16</span></td>
+          <td><span class="date">17</span></td>
+          <td><span class="date">18</span></td>
+          <td><span class="date">19</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">20</span></td>
+          <td><span class="date">21</span></td>
+          <td><span class="date">22</span></td>
+          <td><span class="date">23</span></td>
+          <td><span class="date">24</span></td>
+          <td><span class="date">25</span></td>
+          <td><span class="date">26</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">27</span></td>
+          <td><span class="date">28</span></td>
+          <td><span class="date">29</span></td>
+          <td><span class="date">30</span></td>
+          <td><span class="date">31</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="smallCalendar">
+    <div class="title">October </div>
+    <table>
+      <tbody>
+        <tr>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">1</span></td>
+          <td><span class="date">2</span></td>
+          <td><span class="date">3</span></td>
+          <td><span class="date">4</span></td>
+          <td><span class="date">5</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">6</span></td>
+          <td><span class="date">7</span></td>
+          <td><span class="date">8</span></td>
+          <td><span class="date">9</span></td>
+          <td><span class="date">10</span></td>
+          <td><span class="date">11</span></td>
+          <td><span class="date">12</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">13</span></td>
+          <td><span class="date">14</span></td>
+          <td><span class="date">15</span></td>
+          <td><span class="date">16</span></td>
+          <td><span class="date">17</span></td>
+          <td><span class="date">18</span></td>
+          <td><span class="date">19</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">20</span></td>
+          <td><span class="date">21</span></td>
+          <td><span class="date">22</span></td>
+          <td><span class="date">23</span></td>
+          <td><span class="date">24</span></td>
+          <td><span class="date">25</span></td>
+          <td><span class="date">26</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">27</span></td>
+          <td><span class="date">28</span></td>
+          <td><span class="date">29</span></td>
+          <td><span class="date">30</span></td>
+          <td><span class="date">31</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="smallCalendar">
+    <div class="title">November </div>
+    <table>
+      <tbody>
+        <tr>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">1</span></td>
+          <td><span class="date">2</span></td>
+          <td><span class="date">3</span></td>
+          <td><span class="date">4</span></td>
+          <td><span class="date">5</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">6</span></td>
+          <td><span class="date">7</span></td>
+          <td><span class="date">8</span></td>
+          <td><span class="date">9</span></td>
+          <td><span class="date">10</span></td>
+          <td><span class="date">11</span></td>
+          <td><span class="date">12</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">13</span></td>
+          <td><span class="date">14</span></td>
+          <td><span class="date">15</span></td>
+          <td><span class="date">16</span></td>
+          <td><span class="date">17</span></td>
+          <td><span class="date">18</span></td>
+          <td><span class="date">19</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">20</span></td>
+          <td><span class="date">21</span></td>
+          <td><span class="date">22</span></td>
+          <td><span class="date">23</span></td>
+          <td><span class="date">24</span></td>
+          <td><span class="date">25</span></td>
+          <td><span class="date">26</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">27</span></td>
+          <td><span class="date">28</span></td>
+          <td><span class="date">29</span></td>
+          <td><span class="date">30</span></td>
+          <td><span class="date">31</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="smallCalendar">
+    <div class="title">December </div>
+    <table>
+      <tbody>
+        <tr>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">1</span></td>
+          <td><span class="date">2</span></td>
+          <td><span class="date">3</span></td>
+          <td><span class="date">4</span></td>
+          <td><span class="date">5</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">6</span></td>
+          <td><span class="date">7</span></td>
+          <td><span class="date">8</span></td>
+          <td><span class="date">9</span></td>
+          <td><span class="date">10</span></td>
+          <td><span class="date">11</span></td>
+          <td><span class="date">12</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">13</span></td>
+          <td><span class="date">14</span></td>
+          <td><span class="date">15</span></td>
+          <td><span class="date">16</span></td>
+          <td><span class="date">17</span></td>
+          <td><span class="date">18</span></td>
+          <td><span class="date">19</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">20</span></td>
+          <td><span class="date">21</span></td>
+          <td><span class="date">22</span></td>
+          <td><span class="date">23</span></td>
+          <td><span class="date">24</span></td>
+          <td><span class="date">25</span></td>
+          <td><span class="date">26</span></td>
+        </tr>
+        <tr>
+          <td><span class="date">27</span></td>
+          <td><span class="date">28</span></td>
+          <td><span class="date">29</span></td>
+          <td><span class="date">30</span></td>
+          <td><span class="date">31</span></td>
+          <td><span class="date">&nbsp;</span></td>
+          <td><span class="date">&nbsp;</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div id="mainCalendar">
+<center id="answerNav">
+        <button onClick="calendarSlider.prev()"><img src=../img/arrowLeft.png width=25px height=25px/> </button>
+        <h2 style="display:inline-block;">October 2013</h2>
+        <button onClick="calendarSlider.next()"> <img src=../img/arrowRight.png width=25px height=25px /></button>
+</center>
+<p>UT Calendar</p>
+<div id='calendarSlider' class='swipe'>
+  <div class='swipe-wrap'>
+  <div>
+  <table>
+    <tbody><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>
+      <tr>
+        <td><span class="date">&nbsp;</span></td>
+        <td><span class="date">&nbsp;</span></td>
+        <td><span class="date">1</span></td>
+        <td><span class="date">2</span></td>
+        <td><span class="date">3</span></td>
+        <td><span class="date">4</span></td>
+        <td><span class="date">5</span></td>
+      </tr>
+      <tr>
+        <td><span class="date">6</span></td>
+        <td><span class="date">7</span></td>
+        <td><span class="date">8</span></td>
+        <td><span class="date">9</span></td>
+        <td><span class="date">10</span></td>
+        <td><span class="date">11</span></td>
+        <td><span class="date">12</span></td>
+      </tr>
+      <tr>
+        <td><span class="date">13</span></td>
+        <td><span class="date">14</span></td>
+        <td><span class="date">15</span></td>
+        <td><span class="date">16</span></td>
+        <td><span class="date">17</span></td>
+        <td><span class="date">18</span></td>
+        <td><span class="date">19</span></td>
+      </tr>
+      <tr>
+        <td><span class="date">20</span></td>
+        <td><span class="date">21</span></td>
+        <td><span class="date">22</span></td>
+        <td><span class="date">23</span></td>
+        <td><span class="date">24</span></td>
+        <td><span class="date">25</span></td>
+        <td><span class="date">26</span></td>
+      </tr>
+      <tr>
+        <td><span class="date">27</span></td>
+        <td><span class="date">28</span></td>
+        <td><span class="date">29</span></td>
+        <td><span class="date">30</span></td>
+        <td><span class="date">31</span></td>
+        <td><span class="date">&nbsp;</span></td>
+        <td><span class="date">&nbsp;</span></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  
+  <div>
+  <table>
+    <tbody><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>
+      <tr>
+        <td><span class="date">&nbsp;</span></td>
+        <td><span class="date">&nbsp;</span></td>
+        <td><span class="date">1</span></td>
+        <td><span class="date">2</span></td>
+        <td><span class="date">3</span></td>
+        <td><span class="date">4</span></td>
+        <td><span class="date">5</span></td>
+      </tr>
+      <tr>
+        <td><span class="date">6</span></td>
+        <td><span class="date">7</span></td>
+        <td><span class="date">8</span></td>
+        <td><span class="date">9</span></td>
+        <td><span class="date">10</span></td>
+        <td><span class="date">11</span></td>
+        <td><span class="date">12</span></td>
+      </tr>
+      <tr>
+        <td><span class="date">13</span></td>
+        <td><span class="date">14</span></td>
+        <td><span class="date">15</span></td>
+        <td><span class="date">16</span></td>
+        <td><span class="date">17</span></td>
+        <td><span class="date">18</span></td>
+        <td><span class="date">19</span></td>
+      </tr>
+      <tr>
+        <td><span class="date">20</span></td>
+        <td><span class="date">21</span></td>
+        <td><span class="date">22</span></td>
+        <td><span class="date">23</span></td>
+        <td><span class="date">24</span></td>
+        <td><span class="date">25</span></td>
+        <td><span class="date">26</span></td>
+      </tr>
+      <tr>
+        <td><span class="date">27</span></td>
+        <td><span class="date">28</span></td>
+        <td><span class="date">29</span></td>
+        <td><span class="date">30</span></td>
+        <td><span class="date">31</span></td>
+        <td><span class="date">&nbsp;</span></td>
+        <td><span class="date">&nbsp;</span></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  
+  </div>
+  </div>
+  <div id="infoBox">
+    <h2>October 30</h2>
+    <div class="infoLabel">Housing:</div>
+    <div class="infoContent">Lopem I mean something should happen here cause you know it
+      like bro ya oklolol k ok jk kfkakjsjakljfdajkfajl;sfaj;f</div>
+  </div>
+</div>
+<div id="deadlineNotification">
+<h2>Receive Deadline<br />
+  Notifications</h2>
+<div class="specialIcon">
+<ul>
+<li>
+  <div class="icon"></div>
+  <div class="iconInfo">Sync selected reminders</div>
+</li>
+<li>
+  <div class="icon"></div>
+  <div class="iconInfo">Receive texts of selected reminders</div>
+</li>
+<li>
+  <div class="icon"></div>
+  <div class="iconInfo">receive emails of selected reminders</div>
+</li>
+</div>
+<div class="deadlineLegend">
+  <ul>
+    <li>
+      <div class="circle"></div>
+      <div class="legendText">Admissions</div>
+    </li>
+    <li>
+      <div class="circle"></div>
+      <div class="legendText">Fiancial</div>
+    </li>
+    <li>
+      <div class="circle"></div>
+      <div class="legendText">Academic</div>
+    </li>
+    <li>
+      <div class="circle"></div>
+      <div class="legendText">Housing</div>
+    </li>
+    <li>
+      <div class="circle"></div>
+      <div class="legendText">Other</div>
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+<script>
+calendarSlider = new Swipe(document.getElementById('calendarSlider'), {
+  startSlide: 0,
+  speed: 400,
+  auto: 30000,
+  continuous: true,
+  disableScroll: false,
+  stopPropagation: false,
+  callback: function(index, elem) {},
+  transitionEnd: function(index, elem) {}
+});
+</script>

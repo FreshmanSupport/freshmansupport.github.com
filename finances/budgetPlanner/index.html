@@ -51,14 +51,14 @@
   </div>
 </div>
 <div id="maincontent" class="budgetPlanner">
-  <div id="budgetPlanner" class="col-1-2" style="overflow:hidden;">
+  <div id="budgetPlanner" class="col-1-2">
     <h2>Budget Planner</h2>
     <div id='budgetSlider' class='swipeRecent' style="margin:20px 0;">
       <div class='swipe-wrap'>
         <div>
           <h2>Tuition</h2>
-          <div class="stateTextWrap"> <span class="inS">In-State or</span><span class="outS"> Out-Of-State</span> </div>
-          <div class="initialColor stateWrap">
+          <div class="stateTextWrap">In-State or Out-Of-State </div>
+          <div class="stateWrap" style="margin-bottom:37px">
             <form>
               <input id="inState" type="radio" name="state" value="inState">
               <label for="inState"></label>
@@ -80,7 +80,7 @@
         </div>
         <div>
           <h2>Housing</h2>
-          <h3>Where do you plan to live?</h3>
+          <h3 style="margin-bottom:0;">Where do you plan to live?</h3>
           <div class="semesterWrap">
             <form>
               <input id="public" type="radio" name="housing" value="public">
@@ -159,81 +159,79 @@
         </div>
         <div>
           <h2>Food</h2>
-          <p>The average student spends $15 a day on food. Many dorms <br />
+          <p style="font-style:italic;">The average student spends $15 a day on food. Many dorms <br />
             have meal
             plans that you can pay for that will be included in <br />
             housing cost, but 
             be sure to budget for eatting out!</p>
           <div class="semesterWrap">
-            <form>
-              <input id="mealPlan" type="radio" name="food" value="mealPlan">
-              <label for="mealPlan">MEAL PLAN</label>
-              <input id="homeCook" type="radio" name="food" value="home">
-              <label for="homeCook" class="twoLine">COOKING AT <br />
-                HOME</label>
-            </form>
+            <div class="foodWrap">
+              <form>
+                <input id="mealPlan" type="radio" name="food" value="mealPlan">
+                <label for="mealPlan">MEAL PLAN</label>
+                <input id="homeCook" type="radio" name="food" value="home">
+                <label for="homeCook" class="twoLine">COOKING AT <br />
+                  HOME</label>
+              </form>
+            </div>
           </div>
           <h3>How often do you plan to eat out?</h3>
-          
           <div class="loopingColorContainer">
-            <div id="cheap" class="loop-1-3">
-              <div class="circle initial">  </div>
-              Cheap
-              </div>
-              <div id="mid" class="loop-1-3">
-                <div class="circle initial"> </div>
-                 Mid-Range
-              </div>
-              <div id="expensive" class="loop-1-3">
-                <div class="circle initial"> </div>
-                Expensive
-              </div>  
+            <div id="cheap" class="col-1-3">
+              <div class="circle initial"> </div>
+              Cheap </div>
+            <div id="mid" class="col-1-3">
+              <div class="circle initial"> </div>
+              Mid-Range </div>
+            <div id="expensive" class="col-1-3">
+              <div class="circle initial"> </div>
+              Expensive </div>
           </div>
           <div class="legend">
-                <div class="loop-1-3">
-                  <div class="circle rarely"> </div>
-                  Rarely </div>
-                <div class="loop-1-3">
-                  <div class="circle sometime"> </div>
-                  Sometimes </div>
-                <div class="loop-1-3">
-                  <div class="circle frequently"> </div>
-                  Frequently </div>
-              </div>
+            <div class="loop-1-3">
+              <div class="circle rarely"> </div>
+              Rarely </div>
+            <div class="loop-1-3">
+              <div class="circle sometime"> </div>
+              Sometimes </div>
+            <div class="loop-1-3">
+              <div class="circle frequently"> </div>
+              Frequently </div>
+          </div>
         </div>
         <div id="academics">
           <h2>Academics</h2>
           <form>
-              <ul class="checkContainer">
-                <li>
-                  <input type="checkbox" id="books" name="academic" />
-                  <label for="books">
-                  <div class="checkBoxTop">
-                    <div class="circle"></div>
-                    Books </div>
-                  </label>
-                  <p>Books can be rented bought new or used</p>
-                </li>
-                   <li>
-                  <input type="checkbox" id="supplies" name="academic" />
-                  <label for="supplies">
-                  <div class="checkBoxTop">
-                    <div class="circle"></div>
-                    Supplies </div>
-                  </label>
-                  <p>This can include basic school supplies, or special kits required for certain classes.</p>
-                </li>
-                   <li>
-                  <input type="checkbox" id="lab" name="academic" />
-                  <label for="lab">
-                  <div class="checkBoxTop">
-                    <div class="circle"></div>
-                    Lab-Fees </div>
-                  </label>
-                  <p>Some classes have extra fees such as labs or art classes.</p>
-                </li>
-             </ul>
-         </form>
+            <ul class="checkContainer smaller">
+              <li>
+                <input type="checkbox" id="books" name="academic" />
+                <label for="books">
+                <div class="checkBoxTop">
+                  <div class="circle"></div>
+                  Books </div>
+                </label>
+                <p>Books can be rented bought new or used</p>
+              </li>
+              <li>
+                <input type="checkbox" id="supplies" name="academic" />
+                <label for="supplies">
+                <div class="checkBoxTop">
+                  <div class="circle"></div>
+                  Supplies </div>
+                </label>
+                <p>This can include basic school supplies, or special kits required for certain classes.</p>
+              </li>
+              <li>
+                <input type="checkbox" id="lab" name="academic" />
+                <label for="lab">
+                <div class="checkBoxTop">
+                  <div class="circle"></div>
+                  Lab-Fees </div>
+                </label>
+                <p>Some classes have extra fees such as labs or art classes.</p>
+              </li>
+            </ul>
+          </form>
         </div>
         <div>
           <h2>Transportation</h2>
@@ -251,113 +249,118 @@
           </div>
           <h3>Do you need to buy parking?</h3>
           <form>
-          <ul id="parking" class="checkContainer">
-                
-                <li>
-                  <input type="radio" id="onCampus" name="parking" />
-                  <label for="onCampus">
-                  <div class="checkBoxTop">
-                    <div class="circle"></div>
-                     </div>
-                  </label>
-                  <p>On-Campus</p>
-                </li>
-                   <li>
-                  <input type="radio" id="offCampus" name="parking" />
-                  <label for="offCampus">
-                  <div class="checkBoxTop">
-                    <div class="circle"></div>
-                     </div>
-                  </label>
-                  <p>Off-Campus</p>
-                </li>
-                   <li>
-                  <input type="radio" id="both" name="parking" />
-                  <label for="both">
-                  <div class="checkBoxTop">
-                    <div class="circle"></div>
-                    </div>
-                  </label>
-                  <p>Both</p>
-                </li>
-             </ul>
-             </form>
-          
-           </div>
+            <ul id="parking" class="checkContainer parkingContainer">
+              <li>
+                <input type="radio" id="onCampus" name="parking" />
+                <label for="onCampus">
+                <div class="checkBoxTop">
+                  <div class="circle"></div>
+                </div>
+                </label>
+                <p>On-Campus</p>
+              </li>
+              <li>
+                <input type="radio" id="offCampus" name="parking" />
+                <label for="offCampus">
+                <div class="checkBoxTop">
+                  <div class="circle"></div>
+                </div>
+                </label>
+                <p>Off-Campus</p>
+              </li>
+              <li>
+                <input type="radio" id="both" name="parking" />
+                <label for="both">
+                <div class="checkBoxTop">
+                  <div class="circle"></div>
+                </div>
+                </label>
+                <p>Both</p>
+              </li>
+            </ul>
+          </form>
+        </div>
         <div>
           <h2>Personal</h2>
-          
-          <ul class="checkContainer">
-                <li>
-                  <input type="checkbox" id="bedding" name="personal" />
-                  <label for="bedding">
-                  <div class="checkBoxTop">
-                    <div class="circle"></div>
-                    Bedding </div>
-                  </label>
-                  <p>pillows, blankets, sheets, comforter, etc</p>
-                </li>
-                <li>
-                  <input type="checkbox" id="bedding" name="personal" />
-                  <label for="bedding">
-                  <div class="checkBoxTop">
-                    <div class="circle"></div>
-                    Bedding </div>
-                  </label>
-                  <p>pillows, blankets, sheets, comforter, etc</p>
-                </li>
-                <li>
-                  <input type="checkbox" id="bedding" name="personal" />
-                  <label for="bedding">
-                  <div class="checkBoxTop">
-                    <div class="circle"></div>
-                    Bedding </div>
-                  </label>
-                  <p>pillows, blankets, sheets, comforter, etc</p>
-                </li>
+          <ul class="checkContainer smaller">
+            <li>
+              <input type="checkbox" id="bedding" name="personal" />
+              <label for="bedding">
+              <div class="checkBoxTop">
+                <div class="circle"></div>
+                Bedding </div>
+              </label>
+              <p>pillows, blankets, sheets, comforter, etc</p>
+            </li>
+            <li>
+              <input type="checkbox" id="bedding" name="personal" />
+              <label for="bedding">
+              <div class="checkBoxTop">
+                <div class="circle"></div>
+                Bedding </div>
+              </label>
+              <p>pillows, blankets, sheets, comforter, etc</p>
+            </li>
+            <li>
+              <input type="checkbox" id="bedding" name="personal" />
+              <label for="bedding">
+              <div class="checkBoxTop">
+                <div class="circle"></div>
+                Bedding </div>
+              </label>
+              <p>pillows, blankets, sheets, comforter, etc</p>
+            </li>
           </ul>
-           
-          </div>
+        </div>
         <div>
           <h2>Fun Funds</h2>
           <h3>How often are you planning to:</h3>
-          <p>Click circles to choose activities</p>
-			
-            <div id="fun" class="loopingColorContainer">
+          <p style="font-style:italic;">Click circles to choose activities</p>
+          <div id="fun" class="loopingColorContainer">
             <div id="sportEvent" >
-              <div class="circle initial">  </div>
-              Sports Events
-              </div>
-              <div id="shows" >
-                <div class="circle initial"> </div>
-                 Shows
-              </div>
-              <div id="recreationalActivities" >
-                <div class="circle initial"> </div>
-                Recreational Activities
-              </div>  
-               <div id="concerts" >
-                <div class="circle initial"> </div>
-                Concerts
-              </div> 
-               <div id="festivals" >
-                <div class="circle initial"> </div>
-                Festivals
-              </div> 
+              <div class="circle initial"> </div>
+              Sports Events </div>
+            <div id="shows" >
+              <div class="circle initial"> </div>
+              Shows </div>
+            <div id="recreationalActivities" >
+              <div class="circle initial"> </div>
+              Recreational Activities </div>
+            <div id="concerts" >
+              <div class="circle initial"> </div>
+              Concerts </div>
+            <div id="festivals" >
+              <div class="circle initial"> </div>
+              Festivals </div>
           </div>
           <div class="legend">
-                <div class="loop-1-3">
-                  <div class="circle rarely"> </div>
-                  Rarely </div>
-                <div class="loop-1-3">
-                  <div class="circle sometime"> </div>
-                  Sometimes </div>
-                <div class="loop-1-3">
-                  <div class="circle frequently"> </div>
-                  Frequently </div>
-              </div>
-                   
-         </div> 
+            <div class="loop-1-3">
+              <div class="circle rarely"> </div>
+              Rarely </div>
+            <div class="loop-1-3">
+              <div class="circle sometime"> </div>
+              Sometimes </div>
+            <div class="loop-1-3">
+              <div class="circle frequently"> </div>
+              Frequently </div>
+          </div>
+        </div>
+        <div>
+        	<div class="finale">
+        	<p>Your total estimated cost is:</p>
+            <h2>$0</h2>
+            <p>The stimated cost of attendance:</p>
+            <h2>30 px $25,394</h2>
+            <p style="font-size:18px">These totals could be changed by clicking 
+            on the titles of the sections to the right. THese are estimates, but 
+            it is important to plan ahead when taking out loans, and only take 
+            out the amount needed.</p>
+            </p>
+            <div id="legend">
+            	<strong>Advice from a Student:</strong>It's imporant ot have a good idea of how much things will cost. I ended up with over a thoudsand dollars in extra loans my freshman year, and while I used this for expenses over a few semester, they were still accumulating interest over that time.</div>
+                <p>*These totals are taken from collegeboard.org</p>
+            </div>
+            </div>
       </div>
     </div>
     <center id="answerNav">
@@ -369,20 +372,44 @@
   <div id="results" class="col-1-2">
     <h2>Results</h2>
     <ul>
-      <li><div class="left">Tuition Costs </div><div class="right">$0</div></li>
-      <li><div class="left">Housing Costs </div><div class="right">$0</div></li>
-      <li><div class="left">Housing Item Costs </div><div class="right">$0</div></li>
-      <li><div class="left">Food Costs </div><div class="right">$0</div></li>
-      <li><div class="left">Academic Costs </div><div class="right">$0</div></li>
-      <li><div class="left">Transportation Costs </div><div class="right">$0</div></li>
-      <li><div class="left">Personal Costs </div><div class="right">$0</div></li>
-      <li><div class="left">Fun Funds </div><div class="right">$1000</div></li>
       <li>
-        <h2>Total Estimated Cost</h2>
-        <h2>$0</h2>
+        <div class="left">Tuition Costs </div>
+        <div class="right">$0</div>
       </li>
       <li>
-        <p>Note:This amount is only an estimate based on average cost. This is not a guranteed cost of college</p>
+        <div class="left">Housing Costs </div>
+        <div class="right">$0</div>
+      </li>
+      <li>
+        <div class="left">Housing Item Costs </div>
+        <div class="right">$0</div>
+      </li>
+      <li>
+        <div class="left">Food Costs </div>
+        <div class="right">$0</div>
+      </li>
+      <li>
+        <div class="left">Academic Costs </div>
+        <div class="right">$0</div>
+      </li>
+      <li>
+        <div class="left">Transportation Costs </div>
+        <div class="right">$0</div>
+      </li>
+      <li>
+        <div class="left">Personal Costs </div>
+        <div class="right">$0</div>
+      </li>
+      <li>
+        <div class="left">Fun Funds </div>
+        <div class="right">$0</div>
+      </li>
+      <li>
+        <h3 style="margin-bottom:0">Total Estimated Cost</h3>
+        <h3 style="margin-top:0">$0</h3>
+      </li>
+      <li>
+        <p style="font-style:italic">Note:This amount is only an estimate based on average cost. This is not a guranteed cost of college</p>
       </li>
     </ul>
   </div>
@@ -393,7 +420,7 @@
 budgetSlider = new Swipe(document.getElementById('budgetSlider'), {
   startSlide: 0,
   speed: 400,
-  auto: 30000,
+  auto: 999999999,
   continuous: true,
   disableScroll: false,
   stopPropagation: false,
