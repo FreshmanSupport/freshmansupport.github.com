@@ -36,14 +36,14 @@
 }
 #maincontent h2 {
 	color: rgb(51, 62, 107);
-	font-size: 1.875em;
+	font-size: 30px;
 	font-weight: normal;
 	font-family: HNL;
 	margin: 0;
 }
 #maincontent h3 {
 	font-family: HNL;
-	font-size: 1.125em;
+	font-size: 18px;
 	color: rgb(116, 116, 116);
 	font-weight: normal;
 }
@@ -97,7 +97,7 @@
 	display: inline-block;
 }
 .disclaimer {
-	font-size: .875em;
+	font-size: 14px;
 	display: block;
 	color: rgb(116,116,116);
 	margin-bottom: 50px;
@@ -108,7 +108,7 @@
 	border: 0;
 	background-color: transparent;
 	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 0.875em;
+	font-size: 14px;
 	color: rgb(51, 62, 107);
 }
 .answerPic {
@@ -492,7 +492,7 @@ padding-top: 9px;
 	font-size: 18px;
 }
 #studentProfile h3, #studentProfile p {
-	font-size: 0.875em;
+	font-size: 14px;
 	color: rgb(116,116,116);
 	margin: 0;
 	padding: 0;
@@ -685,7 +685,7 @@ padding-top: 9px;
 .realLifeNav .head {
 	color: rgb(51, 62,106);
 	text-align: left;
-	font-size: 0.875em;
+	font-size: 14px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	padding-left: 35px;
 	padding-top: 10px;
@@ -1236,14 +1236,14 @@ padding-top: 9px;
 }
 .footer h2 {
 	font-family: HNL, Arial, Helvetica, sans-serif;
-	font-size: 1.875em;
+	font-size: 30px;
 	color: rgb( 51, 62, 106);
 	font-weight: normal;
 	margin: 0;
 }
 .footer h3 {
 	font-family: HNL;
-	font-size: 1.125em;
+	font-size: 18px;
 	color: rgb(51 , 62, 106);
 	font-weight: normal;
 	margin: 0;
@@ -1251,7 +1251,7 @@ padding-top: 9px;
 .footer p {
 	color: rgb(118,116,116);
 	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: .875em;
+	font-size: 14px;
 	text-align: left;
 	margin: 5px;
 }
