@@ -314,7 +314,7 @@ h1 {
 	background-color:rgba(255,255,255,0.7);
 	z-index:10;
 }
-#loginRegisterContainer{
+#loginRegisterContainer,#videoPlayerContainer{
 	border:2px solid rgb( 51, 62, 106);
 	width:1190px;
 	min-height: 300px;
@@ -322,9 +322,10 @@ h1 {
 	margin:0 auto;
 	margin-top: 100px;
 }
+.fakeVideo{width:90%; height:500px; background-color:gray; border:2px solid rgb(51, 62, 106); margin:0 auto;}
 #loginRegisterContainer ul{list-style-type:none; padding: 0;}
 #loginRegisterContainer li{margin-bottom: 10px;}
-#topBar{width:100%; background-color:rgb(51, 62, 106); height: 25px;}
+#topBar{width:100%; background-color:rgb(51, 62, 106); height: 25px; margin-bottom:20px;}
 #xClose{color:white; font-weight:bold;float:right; cursor:pointer; padding-right: 5px;}
 #logIn{width:350px; display:inline-block; vertical-align:top; overflow:hidden;}
 #logIn button{float:right; margin-right:42px;}
@@ -509,3 +510,18 @@ h1 {
 #maincontent.notifications p {text-align:left;}
 .notifName{color:rgb(220, 134, 39);}
 .space{display:inline-block; width:50px;}
+
+/* ============ Video Player ========== */
+#videoPlayerText{width:90%; margin:0 auto;}
+#videoPlayerText h3{
+	color:rgb(51, 62, 106);
+	font-weight:normal;
+	font-size:18px;
+	font-family:HNL;
+}
+#videoPlayerText p{
+	color:rgb(116,116,116);
+	font-weight:normal;
+	font-size:14px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
