@@ -925,8 +925,8 @@ padding-top: 9px;
 	margin-bottom: 70px;
 }
 .finances #budgetPlanner {
-	margin-top: 10px;
 	margin-bottom: 30px;
+	vertical-align:top;
 }
  #state {
 	margin-top: 64px;
