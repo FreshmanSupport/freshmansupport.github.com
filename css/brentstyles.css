@@ -14,6 +14,11 @@
 	color: rgb(220, 134, 39);
 
 }
+.gray{
+color:rgb(116,116,116);
+font-family:Georgia;
+font-size:14px;
+}
 
 .hide{
 	display:none;
@@ -368,7 +373,7 @@ font-family: HNB;
 
 
 .date{
-	color:rgb(220, 134, 39);
+	color:rgb(51, 62, 106);
 	font-size:14px;
 	font-family:Georgia;
 	display:inline;
@@ -620,8 +625,17 @@ width:105px;
 	margin-left:0px;
 }
 
+#housingMain .picWrapper{
+	display:inline-block;
+	width:70px;
+	margin-left:-10px;
+}
 
+#housingMain .picWrapper img{
+	width:65px;
+	height:59px;
 
+}
 #housingQ .importance, #housingQ .importance1{
 	text-align:right;
 	margin-bottom:10px;
@@ -1653,6 +1667,12 @@ margin-top:0px;
 	font-family:HNL;
 }
 
+#comparePage .category{
+	color:rgb(51,62,106);
+	font-size:18px;
+	font-family:HNL;
+	text-align:left;
+}
 #comparePage h2{
 	font-family:HNL;
 	font-weight:normal;
@@ -1847,9 +1867,9 @@ display:none;
 }
 
 #recommendedHousingFooter #item p, #recommendedHousingFooterSqueeze #item p{
-	font-family:HNL;
+	font-family:Georgia;
 	font-size:14px;
-	color:rgb(51,62,106);
+	color:rgb(116,116,116);
 	margin-bottom:0px;
 }
 
@@ -1902,7 +1922,11 @@ margin-right:15px;
 	margin-left:21px;
 	display:inline-block;
 vertical-align:bottom;
+font-family:Georgia;
+font-size:14px;
+color:rgb(116,116,116);
 }
+
 
 #housingMain #left #item h3{
 	font-family:HNB;
@@ -2090,7 +2114,6 @@ font-size:18px;
 	width:500px;
 		max-width:100%;
 
-	margin:auto;
 
 }
 #reviewsPage  #left .propComment button{
@@ -2116,9 +2139,8 @@ font-size:18px;
 #reviewsPage #left .hiddenComment{
 	width:500px;
 	display:none;
-	margin:auto;
 		padding-left:50px;
-	margin-top:-5px;
+	margin-top:-10px;
 	
 }
 
@@ -2223,7 +2245,7 @@ font-family:Georgia;
     position: absolute;
     overflow: hidden;
     text-align: center;
-    color: #FFF;
+    color: rgb(116,116,116);
  	font-family:Georgia;
 	font-size:14px;
 	line-height: 16px;
@@ -2233,7 +2255,6 @@ font-family:Georgia;
     background-color: white;
     z-index: 10;
 	color: rgb(51, 62, 106);
-	border: 1px solid rgb(116,116,116);
 }
 
 .panel2 {
@@ -2243,7 +2264,6 @@ font-family:Georgia;
 	font-family:Georgia;
 	font-size:14px;
 	line-height: 16px;
-		border: 1px solid rgb(116,116,116);
 
 }
 
@@ -2289,15 +2309,16 @@ font-size:14px;
 border:none;
 margin:auto;
 margin-bottom:20px;
+color:rgb(116,116,116);
+font-family:Georgia;
 }
 
 
 
 #compareTypes table th{
 	text-align:left;
-	color:rgb(51,62,106);
+	color:rgb(116,116,116);
 	width:170px;
-	font-style:italic;
 }
 
 #compareTypes table td{
@@ -2307,47 +2328,6 @@ margin-bottom:20px;
 
 }
 
-#pdf{
-text-align:left;
-color:rgb(51,62,106);
-font-size:14px;
-}
-#pdf p{
-	font-size:14px;
-	margin-top:0;
-	color:rgb(116,116,116);
-	font-family:Georgia;
-}
-#pdf .matchess .info{
-	margin-top:50px;
-	width:220px;
-	display:inline-block;
-	vertical-align:top;
-}
-#pdf .matchess{
-margin-left:5px;
-}
-#pdf .matchess .compatibility{
-	display:inline-block;
-	vertical-align:top;
-	margin-top:50px;
-	padding-top:15px;
-		width:800px;
-	
-}
-#pdf .matchess .info h3{
-text-align:left;
-font-size:24px;
-color:rgb(51,62,106);
-font-family:HNB;
-margin-bottom:0;
-margin-top:0;
-}
-
-
-#pdf .matchess{
-	width:100%;
-}
 
 /* generic */
 
@@ -2812,7 +2792,7 @@ width:430px;
 	
 }
 #housingMain #left .compareWrap{
-	margin-left:257px;
+	margin-left:181px;
 }
 #searchwrapper{
 	border:1px solid rgb(51,62,106);
@@ -3004,9 +2984,7 @@ width:1300px;
 #comparePage table td{
 	width:320px;
 }
-#comparePage .category{
-	margin-left:-60px;
-}
+
 .viewMoreRight{
 	text-align:right;
 	margin-left:380px;
@@ -3094,9 +3072,7 @@ width:1500px;
 #comparePage table td{
 	width:420px;
 }
-#comparePage .category{
-	margin-left:-60px;
-}
+
 
 
 #housingResultsContainer #preferences {
