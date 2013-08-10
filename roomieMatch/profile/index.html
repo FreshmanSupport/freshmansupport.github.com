@@ -3,12 +3,10 @@
 <head>
 <link type="text/css" rel="stylesheet" href="../../css/main.css"/>
 <link type="text/css" rel="stylesheet" href="../../css/headerStyle.css"/>
-<link type="text/css" rel="stylesheet" href="../../css/bootstrap-responsive.css" />
 <script type="text/javascript" src="../../js/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="roomieMatchProfileScript.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Roomie Profile</title>
-
 </head>
 
 <body>
@@ -49,874 +47,886 @@
   </div>
 </div>
 <div id="maincontent">
-<div class="row-fluid">
-<div id="studentProfile" class="span8" style="border-right: 2px solid gray">
-  <div id="spHeader">
-    <div class="dropDown">
-      <select>
-        <option>Sort by...</option>
-        <option>Name</option>
-        <option>Compability</option>
-        <option>Gender</option>
-        <option>Major</option>
-        <option>Class</option>
-      </select>
+  <div id="studentProfile" class="col-3-4">
+    <div id="spHeader">
+      <div class="dropDown">
+        <select>
+          <option>Sort by...</option>
+          <option>Name</option>
+          <option>Compability</option>
+          <option>Gender</option>
+          <option>Major</option>
+          <option>Class</option>
+        </select>
+      </div>
+      <h2>Student Profiles</h2>
     </div>
-    <h2>Student Profiles</h2>
-  </div>
-  <ul>
-    <li>
-      <div class="col-3-4">
-        <h2>User Name</h2>
-        <h3>Gender/Class/Major</h3>
-        <h3>%Compatible, %Completed Profile</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna 
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          Duis aute irure dolor in reprehenderit in voluptate velit 
-          esse cillum dolore eu fugiat nulla pariatur. Excepteur 
-          sint occaecat cupidatat non proident, sunt in culpa qui 
-          officia deserunt mollit anim id est laborum.</p>
-        <div class="profileSubBar">
-          <ul>
-            <li><a href="#">View Profile</a></li>
-            <li class="smLink"><a id="smClick1" href="#">Send Message</a></li>
-            <li class="mdLink"><a id="mdClick1" href="#">Match Details</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-1-4 profilePic"> <img src="../../img/port.png"/> </div>
-    </li>
-    <li>
-    	<div id="sm1" class="sendMessages">
-        <div class="triangle"></div>
-        <form>
-        	<ul>
-                <li><input type="text" placeholder="Subject"/></li>
-                <li><textarea placeholder="Message"></textarea></li>
-                <li><button>Send</button></li>
+    <ul>
+      <li>
+        <div class="col-3-4">
+          <h2>User Name</h2>
+          <h3>Gender/Class/Major</h3>
+          <h3>%Compatible, %Completed Profile</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna 
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit 
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+            sint occaecat cupidatat non proident, sunt in culpa qui 
+            officia deserunt mollit anim id est laborum.</p>
+          <div class="profileSubBar">
+            <ul>
+              <li><a href="#">View Profile</a></li>
+              <li class="smLink"><a id="smClick1" href="#">Send Message</a></li>
+              <li class="mdLink"><a id="mdClick1" href="#">Match Details</a></li>
             </ul>
-        </form>
-        </div>
-    </li>
-    <li>
-      <div id="md1" class="matchDetails">
-        <div class="triangle"></div>
-        <div class="list">
-          <div class="col-1-2">Cleanliness</div>
-          <div class="col-1-2">
-            <div class="mdCircle"></div>
-            <div class="mdCircle"></div>
-            <div class="mdCircle roommateSelect"></div>
-            <div class="mdCircle youSelect"></div>
-            <div class="mdCircle"></div>
           </div>
         </div>
-        <div class="list">
-          <div class="col-1-2">Loudness</div>
-          <div class="col-1-2">
-            <div class="mdCircle"></div>
-            <div class="mdCircle fuzzy"></div>
-            <div class="mdCircle roommateSelect"></div>
-            <div class="mdCircle youSelect fuzzy"></div>
-            <div class="mdCircle"></div>
-          </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Smoking</div>
-          <div class="col-1-2">
-            <div class="mdCircle"></div>
-            <div class="mdCircle"></div>
-            <div class="mdCircle roommateSelect"></div>
-            <div class="mdCircle youSelect"></div>
-            <div class="mdCircle"></div>
-          </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Sleep Schedule</div>
-          <div class="col-1-2">
-            <div class="mdCircle"></div>
-            <div class="mdCircle"></div>
-            <div class="mdCircle roommateSelect"></div>
-            <div class="mdCircle youSelect"></div>
-            <div class="mdCircle"></div>
-          </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Partying</div>
-          <div class="col-1-2">
-            <div class="mdCircle"></div>
-            <div class="mdCircle"></div>
-            <div class="mdCircle roommateSelect"></div>
-            <div class="mdCircle youSelect"></div>
-            <div class="mdCircle"></div>
-          </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Outgoingness</div>
-          <div class="col-1-2">
-            <div class="mdCircle"></div>
-            <div class="mdCircle"></div>
-            <div class="mdCircle roommateSelect"></div>
-            <div class="mdCircle youSelect"></div>
-            <div class="mdCircle"></div>
-          </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Hours of TV</div>
-          <div class="col-1-2">
-            <div class="mdCircle"></div>
-            <div class="mdCircle"></div>
-            <div class="mdCircle roommateSelect"></div>
-            <div class="mdCircle youSelect"></div>
-            <div class="mdCircle"></div>
-          </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Hours in Room</div>
-          <div class="col-1-2">
-            <div class="mdCircle"></div>
-            <div class="mdCircle"></div>
-            <div class="mdCircle roommateSelect"></div>
-            <div class="mdCircle youSelect"></div>
-            <div class="mdCircle"></div>
-          </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Share a Room</div>
-          <div class="col-1-2">
-            <div class="mdCircle"></div>
-            <div class="mdCircle"></div>
-            <div class="mdCircle roommateSelect"></div>
-            <div class="mdCircle youSelect"></div>
-            <div class="mdCircle"></div>
-          </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Guests</div>
-          <div class="col-1-2">
-            <div class="mdCircle"></div>
-            <div class="mdCircle"></div>
-            <div class="mdCircle roommateSelect"></div>
-            <div class="mdCircle youSelect"></div>
-            <div class="mdCircle"></div>
-          </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Sexuality</div>
-          <div class="col-1-2"> <span class="mdDrop">Straight</span> </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Ethnicity</div>
-          <div class="col-1-2"> <span class="mdDrop">White</span> </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Political Beliefs</div>
-          <div class="col-1-2"> <span class="mdDrop">Moderate</span> </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Religion</div>
-          <div class="col-1-2"> <span class="mdDrop">Christian</span> </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Haryy Potter House</div>
-          <div class="col-1-2"> <span class="mdDrop">Hufflepuff</span> </div>
-        </div>
-        <div class="list"></div>
-        <div class="list">
-          <div class="col-1-2"> <span class="legend">User Response</span> </div>
-          <div class="col-1-2">
-            <div class="mdCircle youSelect"></div>
-          </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2"><span class="legend">Your Ideal Roommate</span></div>
-          <div class="col-1-2">
-            <div class="mdCircle roommateSelect"></div>
-          </div>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="col-3-4">
-        <h2>User Name</h2>
-        <h3>Gender/Class/Major</h3>
-        <h3>%Compatible, %Completed Profile</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna 
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          Duis aute irure dolor in reprehenderit in voluptate velit 
-          esse cillum dolore eu fugiat nulla pariatur. Excepteur 
-          sint occaecat cupidatat non proident, sunt in culpa qui 
-          officia deserunt mollit anim id est laborum.</p>
-        <div class="profileSubBar">
-          <ul>
-            <li><a href="#">View Profile</a></li>
-            <li class="smLink"><a id="smClick2" href="#">Send Message</a></li>
-            <li  class="mdLink"><a id="mdClick2" href="#">Match Details</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-1-4 profilePic"> <img src="../../img/port.png"/> </div>
-    </li>
-    <li>
-    	<div id="sm2" class="sendMessages">
-        <div class="triangle"></div>
-        <form>
-        	<ul>
-                <li><input type="text" placeholder="Subject"/></li>
-                <li><textarea placeholder="Message"></textarea></li>
-                <li><button>Send</button></li>
+        <div class="col-1-4 profilePic"> <img src="../../img/port.png"/> </div>
+      </li>
+      <li>
+        <div id="sm1" class="sendMessages">
+          <div class="triangle"></div>
+          <form>
+            <ul>
+              <li>
+                <input type="text" placeholder="Subject"/>
+              </li>
+              <li>
+                <textarea placeholder="Message"></textarea>
+              </li>
+              <li>
+                <button>Send</button>
+              </li>
             </ul>
-        </form>
+          </form>
         </div>
-    </li>
-    <li>
-      <div id="md2" class="matchDetails">
-        <div class="triangle"></div>
-        <div class="list">
-          <div class="col-1-2">Cleanliness</div>
-          <div class="col-1-2">
-            <div class="mdCircle"></div>
-            <div class="mdCircle"></div>
-            <div class="mdCircle roommateSelect"></div>
-            <div class="mdCircle youSelect"></div>
-            <div class="mdCircle"></div>
+      </li>
+      <li>
+        <div id="md1" class="matchDetails">
+          <div class="triangle"></div>
+          <div class="list">
+            <div class="col-1-2">Cleanliness</div>
+            <div class="col-1-2">
+              <div class="mdCircle"></div>
+              <div class="mdCircle"></div>
+              <div class="mdCircle roommateSelect"></div>
+              <div class="mdCircle youSelect"></div>
+              <div class="mdCircle"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Loudness</div>
+            <div class="col-1-2">
+              <div class="mdCircle"></div>
+              <div class="mdCircle fuzzy"></div>
+              <div class="mdCircle roommateSelect"></div>
+              <div class="mdCircle youSelect fuzzy"></div>
+              <div class="mdCircle"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Smoking</div>
+            <div class="col-1-2">
+              <div class="mdCircle"></div>
+              <div class="mdCircle"></div>
+              <div class="mdCircle roommateSelect"></div>
+              <div class="mdCircle youSelect"></div>
+              <div class="mdCircle"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Sleep Schedule</div>
+            <div class="col-1-2">
+              <div class="mdCircle"></div>
+              <div class="mdCircle"></div>
+              <div class="mdCircle roommateSelect"></div>
+              <div class="mdCircle youSelect"></div>
+              <div class="mdCircle"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Partying</div>
+            <div class="col-1-2">
+              <div class="mdCircle"></div>
+              <div class="mdCircle"></div>
+              <div class="mdCircle roommateSelect"></div>
+              <div class="mdCircle youSelect"></div>
+              <div class="mdCircle"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Outgoingness</div>
+            <div class="col-1-2">
+              <div class="mdCircle"></div>
+              <div class="mdCircle"></div>
+              <div class="mdCircle roommateSelect"></div>
+              <div class="mdCircle youSelect"></div>
+              <div class="mdCircle"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Hours of TV</div>
+            <div class="col-1-2">
+              <div class="mdCircle"></div>
+              <div class="mdCircle"></div>
+              <div class="mdCircle roommateSelect"></div>
+              <div class="mdCircle youSelect"></div>
+              <div class="mdCircle"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Hours in Room</div>
+            <div class="col-1-2">
+              <div class="mdCircle"></div>
+              <div class="mdCircle"></div>
+              <div class="mdCircle roommateSelect"></div>
+              <div class="mdCircle youSelect"></div>
+              <div class="mdCircle"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Share a Room</div>
+            <div class="col-1-2">
+              <div class="mdCircle"></div>
+              <div class="mdCircle"></div>
+              <div class="mdCircle roommateSelect"></div>
+              <div class="mdCircle youSelect"></div>
+              <div class="mdCircle"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Guests</div>
+            <div class="col-1-2">
+              <div class="mdCircle"></div>
+              <div class="mdCircle"></div>
+              <div class="mdCircle roommateSelect"></div>
+              <div class="mdCircle youSelect"></div>
+              <div class="mdCircle"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Sexuality</div>
+            <div class="col-1-2"> <span class="mdDrop">Straight</span> </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Ethnicity</div>
+            <div class="col-1-2"> <span class="mdDrop">White</span> </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Political Beliefs</div>
+            <div class="col-1-2"> <span class="mdDrop">Moderate</span> </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Religion</div>
+            <div class="col-1-2"> <span class="mdDrop">Christian</span> </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Haryy Potter House</div>
+            <div class="col-1-2"> <span class="mdDrop">Hufflepuff</span> </div>
+          </div>
+          <div class="list"></div>
+          <div class="list">
+            <div class="col-1-2"> <span class="legend">User Response</span> </div>
+            <div class="col-1-2">
+              <div class="mdCircle youSelect"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2"><span class="legend">Your Ideal Roommate</span></div>
+            <div class="col-1-2">
+              <div class="mdCircle roommateSelect"></div>
+            </div>
           </div>
         </div>
-        <div class="list">
-          <div class="col-1-2">Loudness</div>
-          <div class="col-1-2">
-            <div class="mdCircle"></div>
-            <div class="mdCircle fuzzy"></div>
-            <div class="mdCircle roommateSelect"></div>
-            <div class="mdCircle youSelect fuzzy"></div>
-            <div class="mdCircle"></div>
+      </li>
+      <li>
+        <div class="col-3-4">
+          <h2>User Name</h2>
+          <h3>Gender/Class/Major</h3>
+          <h3>%Compatible, %Completed Profile</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna 
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit 
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+            sint occaecat cupidatat non proident, sunt in culpa qui 
+            officia deserunt mollit anim id est laborum.</p>
+          <div class="profileSubBar">
+            <ul>
+              <li><a href="#">View Profile</a></li>
+              <li class="smLink"><a id="smClick2" href="#">Send Message</a></li>
+              <li  class="mdLink"><a id="mdClick2" href="#">Match Details</a></li>
+            </ul>
           </div>
         </div>
-        <div class="list">
-          <div class="col-1-2">Smoking</div>
-          <div class="col-1-2">
-            <div class="mdCircle"></div>
-            <div class="mdCircle"></div>
-            <div class="mdCircle roommateSelect"></div>
-            <div class="mdCircle youSelect"></div>
-            <div class="mdCircle"></div>
+        <div class="col-1-4 profilePic"> <img src="../../img/port.png"/> </div>
+      </li>
+      <li>
+        <div id="sm2" class="sendMessages">
+          <div class="triangle"></div>
+          <form>
+            <ul>
+              <li>
+                <input type="text" placeholder="Subject"/>
+              </li>
+              <li>
+                <textarea placeholder="Message"></textarea>
+              </li>
+              <li>
+                <button>Send</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </li>
+      <li>
+        <div id="md2" class="matchDetails">
+          <div class="triangle"></div>
+          <div class="list">
+            <div class="col-1-2">Cleanliness</div>
+            <div class="col-1-2">
+              <div class="mdCircle"></div>
+              <div class="mdCircle"></div>
+              <div class="mdCircle roommateSelect"></div>
+              <div class="mdCircle youSelect"></div>
+              <div class="mdCircle"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Loudness</div>
+            <div class="col-1-2">
+              <div class="mdCircle"></div>
+              <div class="mdCircle fuzzy"></div>
+              <div class="mdCircle roommateSelect"></div>
+              <div class="mdCircle youSelect fuzzy"></div>
+              <div class="mdCircle"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Smoking</div>
+            <div class="col-1-2">
+              <div class="mdCircle"></div>
+              <div class="mdCircle"></div>
+              <div class="mdCircle roommateSelect"></div>
+              <div class="mdCircle youSelect"></div>
+              <div class="mdCircle"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Sleep Schedule</div>
+            <div class="col-1-2">
+              <div class="mdCircle"></div>
+              <div class="mdCircle"></div>
+              <div class="mdCircle roommateSelect"></div>
+              <div class="mdCircle youSelect"></div>
+              <div class="mdCircle"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Partying</div>
+            <div class="col-1-2">
+              <div class="mdCircle"></div>
+              <div class="mdCircle"></div>
+              <div class="mdCircle roommateSelect"></div>
+              <div class="mdCircle youSelect"></div>
+              <div class="mdCircle"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Outgoingness</div>
+            <div class="col-1-2">
+              <div class="mdCircle"></div>
+              <div class="mdCircle"></div>
+              <div class="mdCircle roommateSelect"></div>
+              <div class="mdCircle youSelect"></div>
+              <div class="mdCircle"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Hours of TV</div>
+            <div class="col-1-2">
+              <div class="mdCircle"></div>
+              <div class="mdCircle"></div>
+              <div class="mdCircle roommateSelect"></div>
+              <div class="mdCircle youSelect"></div>
+              <div class="mdCircle"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Hours in Room</div>
+            <div class="col-1-2">
+              <div class="mdCircle"></div>
+              <div class="mdCircle"></div>
+              <div class="mdCircle roommateSelect"></div>
+              <div class="mdCircle youSelect"></div>
+              <div class="mdCircle"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Share a Room</div>
+            <div class="col-1-2">
+              <div class="mdCircle"></div>
+              <div class="mdCircle"></div>
+              <div class="mdCircle roommateSelect"></div>
+              <div class="mdCircle youSelect"></div>
+              <div class="mdCircle"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Guests</div>
+            <div class="col-1-2">
+              <div class="mdCircle"></div>
+              <div class="mdCircle"></div>
+              <div class="mdCircle roommateSelect"></div>
+              <div class="mdCircle youSelect"></div>
+              <div class="mdCircle"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Sexuality</div>
+            <div class="col-1-2"> <span class="mdDrop">Straight</span> </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Ethnicity</div>
+            <div class="col-1-2"> <span class="mdDrop">White</span> </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Political Beliefs</div>
+            <div class="col-1-2"> <span class="mdDrop">Moderate</span> </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Religion</div>
+            <div class="col-1-2"> <span class="mdDrop">Christian</span> </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2">Haryy Potter House</div>
+            <div class="col-1-2"> <span class="mdDrop">Hufflepuff</span> </div>
+          </div>
+          <div class="list"></div>
+          <div class="list">
+            <div class="col-1-2"> <span class="legend">User Response</span> </div>
+            <div class="col-1-2">
+              <div class="mdCircle youSelect"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="col-1-2"><span class="legend">Your Ideal Roommate</span></div>
+            <div class="col-1-2">
+              <div class="mdCircle roommateSelect"></div>
+            </div>
           </div>
         </div>
-        <div class="list">
-          <div class="col-1-2">Sleep Schedule</div>
-          <div class="col-1-2">
-            <div class="mdCircle"></div>
-            <div class="mdCircle"></div>
-            <div class="mdCircle roommateSelect"></div>
-            <div class="mdCircle youSelect"></div>
-            <div class="mdCircle"></div>
-          </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Partying</div>
-          <div class="col-1-2">
-            <div class="mdCircle"></div>
-            <div class="mdCircle"></div>
-            <div class="mdCircle roommateSelect"></div>
-            <div class="mdCircle youSelect"></div>
-            <div class="mdCircle"></div>
-          </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Outgoingness</div>
-          <div class="col-1-2">
-            <div class="mdCircle"></div>
-            <div class="mdCircle"></div>
-            <div class="mdCircle roommateSelect"></div>
-            <div class="mdCircle youSelect"></div>
-            <div class="mdCircle"></div>
-          </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Hours of TV</div>
-          <div class="col-1-2">
-            <div class="mdCircle"></div>
-            <div class="mdCircle"></div>
-            <div class="mdCircle roommateSelect"></div>
-            <div class="mdCircle youSelect"></div>
-            <div class="mdCircle"></div>
-          </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Hours in Room</div>
-          <div class="col-1-2">
-            <div class="mdCircle"></div>
-            <div class="mdCircle"></div>
-            <div class="mdCircle roommateSelect"></div>
-            <div class="mdCircle youSelect"></div>
-            <div class="mdCircle"></div>
-          </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Share a Room</div>
-          <div class="col-1-2">
-            <div class="mdCircle"></div>
-            <div class="mdCircle"></div>
-            <div class="mdCircle roommateSelect"></div>
-            <div class="mdCircle youSelect"></div>
-            <div class="mdCircle"></div>
-          </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Guests</div>
-          <div class="col-1-2">
-            <div class="mdCircle"></div>
-            <div class="mdCircle"></div>
-            <div class="mdCircle roommateSelect"></div>
-            <div class="mdCircle youSelect"></div>
-            <div class="mdCircle"></div>
-          </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Sexuality</div>
-          <div class="col-1-2"> <span class="mdDrop">Straight</span> </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Ethnicity</div>
-          <div class="col-1-2"> <span class="mdDrop">White</span> </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Political Beliefs</div>
-          <div class="col-1-2"> <span class="mdDrop">Moderate</span> </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Religion</div>
-          <div class="col-1-2"> <span class="mdDrop">Christian</span> </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2">Haryy Potter House</div>
-          <div class="col-1-2"> <span class="mdDrop">Hufflepuff</span> </div>
-        </div>
-        <div class="list"></div>
-        <div class="list">
-          <div class="col-1-2"> <span class="legend">User Response</span> </div>
-          <div class="col-1-2">
-            <div class="mdCircle youSelect"></div>
-          </div>
-        </div>
-        <div class="list">
-          <div class="col-1-2"><span class="legend">Your Ideal Roommate</span></div>
-          <div class="col-1-2">
-            <div class="mdCircle roommateSelect"></div>
-          </div>
-        </div>
-      </div>
-    </li>
-  </ul>
-</div>
-<div class="span4">
-  <h2>July 14, 2013</h2>
-  <h3 style="color: gray;">UT Roommate Application Deadline</h3>
-  <a href="#" class="view" style="margin-bottom: 20px;">View More Deadlines</a>
-  <hr />
-  <div id="rmEdit">
-    <h2>Edit Preferences</h2>
-    <ul class="editNav">
-      <li><span id="youClick" class="select">You</span></li>
-      <li><span id="roommateClick">Ideal Roommate</span></li>
-      <li><span id="importanceClick">Question Importance</span></li>
+      </li>
     </ul>
-    <div id="toggleContainer">
-      <div id="you">
-        <ul class="editButtonList">
-          <li>
-            <div class="rowLabel">Cleaniness</div>
-            <input type="radio" id="youClean1" name="youClean" value="1">
-            <label for="youClean1"></label>
-            <input type="radio" id="youClean2" name="youClean" value="1">
-            <label for="youClean2"></label>
-            <input type="radio" id="youClean3" name="youClean" value="1">
-            <label for="youClean3"></label>
-            <input type="radio" id="youClean4" name="youClean" value="1">
-            <label for="youClean4"></label>
-            <input type="radio" id="youClean5" name="youClean" value="1">
-            <label for="youClean5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Loudness</div>
-            <input type="radio" id="youLoud1" name="youLoud" value="1">
-            <label for="youLoud1"></label>
-            <input type="radio" id="youLoud2" name="youLoud" value="1">
-            <label for="youLoud2"></label>
-            <input type="radio" id="youLoud3" name="youLoud" value="1">
-            <label for="youLoud3"></label>
-            <input type="radio" id="youLoud4" name="youLoud" value="1">
-            <label for="youLoud4"></label>
-            <input type="radio" id="youLoud5" name="youLoud" value="1">
-            <label for="youLoud5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Smoking</div>
-            <input type="radio" id="youSmoke1" name="youSmoke" value="1">
-            <label for="youSmoke1"></label>
-            <input type="radio" id="youSmoke2" name="youSmoke" value="1">
-            <label for="youSmoke2"></label>
-            <input type="radio" id="youSmoke3" name="youSmoke" value="1">
-            <label for="youSmoke3"></label>
-            <input type="radio" id="youSmoke4" name="youSmoke" value="1">
-            <label for="youSmoke4"></label>
-            <input type="radio" id="youSmoke5" name="youSmoke" value="1">
-            <label for="youSmoke5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Sleep</div>
-            <input type="radio" id="youSleep1" name="youSleep" value="1">
-            <label for="youSleep1"></label>
-            <input type="radio" id="youSleep2" name="youSleep" value="1">
-            <label for="youSleep2"></label>
-            <input type="radio" id="youSleep3" name="youSleep" value="1">
-            <label for="youSleep3"></label>
-            <input type="radio" id="youSleep4" name="youSleep" value="1">
-            <label for="youSleep4"></label>
-            <input type="radio" id="youSleep5" name="youSleep" value="1">
-            <label for="youSleep5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Partying</div>
-            <input type="radio" id="youPartying1" name="youPartying" value="1">
-            <label for="youPartying1"></label>
-            <input type="radio" id="youPartying2" name="youPartying" value="1">
-            <label for="youPartying2"></label>
-            <input type="radio" id="youPartying3" name="youPartying" value="1">
-            <label for="youPartying3"></label>
-            <input type="radio" id="youPartying4" name="youPartying" value="1">
-            <label for="youPartying4"></label>
-            <input type="radio" id="youPartying5" name="youPartying" value="1">
-            <label for="youPartying5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Outgoingness</div>
-            <input type="radio" id="youOutgoing1" name="youOutgoing" value="1">
-            <label for="youOutgoing1"></label>
-            <input type="radio" id="youOutgoing2" name="youOutgoing" value="1">
-            <label for="youOutgoing2"></label>
-            <input type="radio" id="youOutgoing3" name="youOutgoing" value="1">
-            <label for="youOutgoing3"></label>
-            <input type="radio" id="youOutgoing4" name="youOutgoing" value="1">
-            <label for="youOutgoing4"></label>
-            <input type="radio" id="youOutgoing5" name="youOutgoing" value="1">
-            <label for="youOutgoing5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Hours in Room</div>
-            <input type="radio" id="youHoursInRoom1" name="youHoursInRoom" value="1">
-            <label for="youHoursInRoom1"></label>
-            <input type="radio" id="youHoursInRoom2" name="youHoursInRoom" value="1">
-            <label for="youHoursInRoom2"></label>
-            <input type="radio" id="youHoursInRoom3" name="youHoursInRoom" value="1">
-            <label for="youHoursInRoom3"></label>
-            <input type="radio" id="youHoursInRoom4" name="youHoursInRoom" value="1">
-            <label for="youHoursInRoom4"></label>
-            <input type="radio" id="youHoursInRoom5" name="youHoursInRoom" value="1">
-            <label for="youHoursInRoom5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Share a Room</div>
-            <input type="radio" id="youRoomeShare1" name="youRoomeShare" value="1">
-            <label for="youRoomeShare1"></label>
-            <input type="radio" id="youRoomeShare2" name="youRoomeShare" value="1">
-            <label for="youRoomeShare2"></label>
-            <input type="radio" id="youRoomeShare3" name="youRoomeShare" value="1">
-            <label for="youRoomeShare3"></label>
-            <input type="radio" id="youRoomeShare4" name="youRoomeShare" value="1">
-            <label for="youRoomeShare4"></label>
-            <input type="radio" id="youRoomeShare5" name="youRoomeShare" value="1">
-            <label for="youRoomeShare5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Guests</div>
-            <input type="radio" id="youGuests1" name="youGuests" value="1">
-            <label for="youGuests1"></label>
-            <input type="radio" id="youGuests2" name="youGuests" value="1">
-            <label for="youGuests2"></label>
-            <input type="radio" id="youGuests3" name="youGuests" value="1">
-            <label for="youGuests3"></label>
-            <input type="radio" id="youGuests4" name="youGuests" value="1">
-            <label for="youGuests4"></label>
-            <input type="radio" id="youGuests5" name="youGuests" value="1">
-            <label for="youGuests5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Sexuality</div>
-            <div class="dropDown">
-              <select>
-                <option>Straight</option>
-                <option>Bi-sexual</option>
-                <option>Unknown</option>
-              </select>
-            </div>
-          </li>
-          <li>
-            <div class="rowLabel">Ethnicity</div>
-            <div class="dropDown">
-              <select>
-                <option>White</option>
-                <option>Black POWA</option>
-                <option>Yellow</option>
-                <option>Blue</option>
-              </select>
-            </div>
-          </li>
-          <li>
-            <div class="rowLabel">Political Beliefs</div>
-            <div class="dropDown">
-              <select>
-                <option>Moderate</option>
-                <option>Anarchy</option>
-                <option>Communism</option>
-              </select>
-            </div>
-          </li>
-          <li>
-            <div class="rowLabel">Harry Potter House</div>
-            <div class="dropDown">
-              <select>
-                <option>Hufflepuff</option>
-                <option>Herminoe</option>
-                <option>Slllll snake</option>
-                <option>Bird Feet</option>
-                <option>What's Harry Pooter?</option>
-              </select>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div id="roommate">
-        <ul class="editButtonList">
-          <li>
-            <div class="rowLabel">Cleaniness</div>
-            <input type="radio" id="roommateClean1" name="roommateClean" value="1">
-            <label for="roommateClean1"></label>
-            <input type="radio" id="roommateClean2" name="roommateClean" value="1">
-            <label for="roommateClean2"></label>
-            <input type="radio" id="roommateClean3" name="roommateClean" value="1">
-            <label for="roommateClean3"></label>
-            <input type="radio" id="roommateClean4" name="roommateClean" value="1">
-            <label for="roommateClean4"></label>
-            <input type="radio" id="roommateClean5" name="roommateClean" value="1">
-            <label for="roommateClean5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Loudness</div>
-            <input type="radio" id="roommateLoud1" name="roommateLoud" value="1">
-            <label for="roommateLoud1"></label>
-            <input type="radio" id="roommateLoud2" name="roommateLoud" value="1">
-            <label for="roommateLoud2"></label>
-            <input type="radio" id="roommateLoud3" name="roommateLoud" value="1">
-            <label for="roommateLoud3"></label>
-            <input type="radio" id="roommateLoud4" name="roommateLoud" value="1">
-            <label for="roommateLoud4"></label>
-            <input type="radio" id="roommateLoud5" name="roommateLoud" value="1">
-            <label for="roommateLoud5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Smoking</div>
-            <input type="radio" id="roommateSmoke1" name="roommateSmoke" value="1">
-            <label for="roommateSmoke1"></label>
-            <input type="radio" id="roommateSmoke2" name="roommateSmoke" value="1">
-            <label for="roommateSmoke2"></label>
-            <input type="radio" id="roommateSmoke3" name="roommateSmoke" value="1">
-            <label for="roommateSmoke3"></label>
-            <input type="radio" id="roommateSmoke4" name="roommateSmoke" value="1">
-            <label for="roommateSmoke4"></label>
-            <input type="radio" id="roommateSmoke5" name="roommateSmoke" value="1">
-            <label for="roommateSmoke5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Sleep</div>
-            <input type="radio" id="roommateSleep1" name="roommateSleep" value="1">
-            <label for="roommateSleep1"></label>
-            <input type="radio" id="roommateSleep2" name="roommateSleep" value="1">
-            <label for="roommateSleep2"></label>
-            <input type="radio" id="roommateSleep3" name="roommateSleep" value="1">
-            <label for="roommateSleep3"></label>
-            <input type="radio" id="roommateSleep4" name="roommateSleep" value="1">
-            <label for="roommateSleep4"></label>
-            <input type="radio" id="roommateSleep5" name="roommateSleep" value="1">
-            <label for="roommateSleep5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Partying</div>
-            <input type="radio" id="roommatePartying1" name="roommatePartying" value="1">
-            <label for="roommatePartying1"></label>
-            <input type="radio" id="roommatePartying2" name="roommatePartying" value="1">
-            <label for="roommatePartying2"></label>
-            <input type="radio" id="roommatePartying3" name="roommatePartying" value="1">
-            <label for="roommatePartying3"></label>
-            <input type="radio" id="roommatePartying4" name="roommatePartying" value="1">
-            <label for="roommatePartying4"></label>
-            <input type="radio" id="roommatePartying5" name="roommatePartying" value="1">
-            <label for="roommatePartying5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Outgoingness</div>
-            <input type="radio" id="roommateOutgoing1" name="roommateOutgoing" value="1">
-            <label for="roommateOutgoing1"></label>
-            <input type="radio" id="roommateOutgoing2" name="roommateOutgoing" value="1">
-            <label for="roommateOutgoing2"></label>
-            <input type="radio" id="roommateOutgoing3" name="roommateOutgoing" value="1">
-            <label for="roommateOutgoing3"></label>
-            <input type="radio" id="roommateOutgoing4" name="roommateOutgoing" value="1">
-            <label for="roommateOutgoing4"></label>
-            <input type="radio" id="roommateOutgoing5" name="roommateOutgoing" value="1">
-            <label for="roommateOutgoing5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Hours in Room</div>
-            <input type="radio" id="roommateHoursInRoom1" name="roommateHoursInRoom" value="1">
-            <label for="roommateHoursInRoom1"></label>
-            <input type="radio" id="roommateHoursInRoom2" name="roommateHoursInRoom" value="1">
-            <label for="roommateHoursInRoom2"></label>
-            <input type="radio" id="roommateHoursInRoom3" name="roommateHoursInRoom" value="1">
-            <label for="roommateHoursInRoom3"></label>
-            <input type="radio" id="roommateHoursInRoom4" name="roommateHoursInRoom" value="1">
-            <label for="roommateHoursInRoom4"></label>
-            <input type="radio" id="roommateHoursInRoom5" name="roommateHoursInRoom" value="1">
-            <label for="roommateHoursInRoom5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Share a Room</div>
-            <input type="radio" id="roommateRoomeShare1" name="roommateRoomeShare" value="1">
-            <label for="roommateRoomeShare1"></label>
-            <input type="radio" id="roommateRoomeShare2" name="roommateRoomeShare" value="1">
-            <label for="roommateRoomeShare2"></label>
-            <input type="radio" id="roommateRoomeShare3" name="roommateRoomeShare" value="1">
-            <label for="roommateRoomeShare3"></label>
-            <input type="radio" id="roommateRoomeShare4" name="roommateRoomeShare" value="1">
-            <label for="roommateRoomeShare4"></label>
-            <input type="radio" id="roommateRoomeShare5" name="roommateRoomeShare" value="1">
-            <label for="roommateRoomeShare5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Guests</div>
-            <input type="radio" id="roommateGuests1" name="roommateGuests" value="1">
-            <label for="roommateGuests1"></label>
-            <input type="radio" id="roommateGuests2" name="roommateGuests" value="1">
-            <label for="roommateGuests2"></label>
-            <input type="radio" id="roommateGuests3" name="roommateGuests" value="1">
-            <label for="roommateGuests3"></label>
-            <input type="radio" id="roommateGuests4" name="roommateGuests" value="1">
-            <label for="roommateGuests4"></label>
-            <input type="radio" id="roommateGuests5" name="roommateGuests" value="1">
-            <label for="roommateGuests5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Sexuality</div>
-            <div class="dropDown">
-              <select>
-                <option>Straight</option>
-                <option>Bi-sexual</option>
-                <option>Unknown</option>
-              </select>
-            </div>
-          </li>
-          <li>
-            <div class="rowLabel">Ethnicity</div>
-            <div class="dropDown">
-              <select>
-                <option>White</option>
-                <option>Black POWA</option>
-                <option>Yellow</option>
-                <option>Blue</option>
-              </select>
-            </div>
-          </li>
-          <li>
-            <div class="rowLabel">Political Beliefs</div>
-            <div class="dropDown">
-              <select>
-                <option>Moderate</option>
-                <option>Anarchy</option>
-                <option>Communism</option>
-              </select>
-            </div>
-          </li>
-          <li>
-            <div class="rowLabel">Harry Potter House</div>
-            <div class="dropDown">
-              <select>
-                <option>Hufflepuff</option>
-                <option>Herminoe</option>
-                <option>Slllll snake</option>
-                <option>Bird Feet</option>
-                <option>What's Harry Pooter?</option>
-              </select>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div id="importance">
-        <ul class="editButtonList">
-          <li>
-            <div class="rowLabel">Cleaniness</div>
-            <input type="radio" id="importanceClean1" name="importanceClean" value="1">
-            <label for="importanceClean1"></label>
-            <input type="radio" id="importanceClean2" name="importanceClean" value="1">
-            <label for="importanceClean2"></label>
-            <input type="radio" id="importanceClean3" name="importanceClean" value="1">
-            <label for="importanceClean3"></label>
-            <input type="radio" id="importanceClean4" name="importanceClean" value="1">
-            <label for="importanceClean4"></label>
-            <input type="radio" id="importanceClean5" name="importanceClean" value="1">
-            <label for="importanceClean5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Loudness</div>
-            <input type="radio" id="importanceLoud1" name="importanceLoud" value="1">
-            <label for="importanceLoud1"></label>
-            <input type="radio" id="importanceLoud2" name="importanceLoud" value="1">
-            <label for="importanceLoud2"></label>
-            <input type="radio" id="importanceLoud3" name="importanceLoud" value="1">
-            <label for="importanceLoud3"></label>
-            <input type="radio" id="importanceLoud4" name="importanceLoud" value="1">
-            <label for="importanceLoud4"></label>
-            <input type="radio" id="importanceLoud5" name="importanceLoud" value="1">
-            <label for="importanceLoud5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Smoking</div>
-            <input type="radio" id="importanceSmoke1" name="importanceSmoke" value="1">
-            <label for="importanceSmoke1"></label>
-            <input type="radio" id="importanceSmoke2" name="importanceSmoke" value="1">
-            <label for="importanceSmoke2"></label>
-            <input type="radio" id="importanceSmoke3" name="importanceSmoke" value="1">
-            <label for="importanceSmoke3"></label>
-            <input type="radio" id="importanceSmoke4" name="importanceSmoke" value="1">
-            <label for="importanceSmoke4"></label>
-            <input type="radio" id="importanceSmoke5" name="importanceSmoke" value="1">
-            <label for="importanceSmoke5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Sleep</div>
-            <input type="radio" id="importanceSleep1" name="importanceSleep" value="1">
-            <label for="importanceSleep1"></label>
-            <input type="radio" id="importanceSleep2" name="importanceSleep" value="1">
-            <label for="importanceSleep2"></label>
-            <input type="radio" id="importanceSleep3" name="importanceSleep" value="1">
-            <label for="importanceSleep3"></label>
-            <input type="radio" id="importanceSleep4" name="importanceSleep" value="1">
-            <label for="importanceSleep4"></label>
-            <input type="radio" id="importanceSleep5" name="importanceSleep" value="1">
-            <label for="importanceSleep5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Partying</div>
-            <input type="radio" id="importancePartying1" name="importancePartying" value="1">
-            <label for="importancePartying1"></label>
-            <input type="radio" id="importancePartying2" name="importancePartying" value="1">
-            <label for="importancePartying2"></label>
-            <input type="radio" id="importancePartying3" name="importancePartying" value="1">
-            <label for="importancePartying3"></label>
-            <input type="radio" id="importancePartying4" name="importancePartying" value="1">
-            <label for="importancePartying4"></label>
-            <input type="radio" id="importancePartying5" name="importancePartying" value="1">
-            <label for="importancePartying5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Outgoingness</div>
-            <input type="radio" id="importanceOutgoing1" name="importanceOutgoing" value="1">
-            <label for="importanceOutgoing1"></label>
-            <input type="radio" id="importanceOutgoing2" name="importanceOutgoing" value="1">
-            <label for="importanceOutgoing2"></label>
-            <input type="radio" id="importanceOutgoing3" name="importanceOutgoing" value="1">
-            <label for="importanceOutgoing3"></label>
-            <input type="radio" id="importanceOutgoing4" name="importanceOutgoing" value="1">
-            <label for="importanceOutgoing4"></label>
-            <input type="radio" id="importanceOutgoing5" name="importanceOutgoing" value="1">
-            <label for="importanceOutgoing5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Hours in Room</div>
-            <input type="radio" id="importanceHoursInRoom1" name="importanceHoursInRoom" value="1">
-            <label for="importanceHoursInRoom1"></label>
-            <input type="radio" id="importanceHoursInRoom2" name="importanceHoursInRoom" value="1">
-            <label for="importanceHoursInRoom2"></label>
-            <input type="radio" id="importanceHoursInRoom3" name="importanceHoursInRoom" value="1">
-            <label for="importanceHoursInRoom3"></label>
-            <input type="radio" id="importanceHoursInRoom4" name="importanceHoursInRoom" value="1">
-            <label for="importanceHoursInRoom4"></label>
-            <input type="radio" id="importanceHoursInRoom5" name="importanceHoursInRoom" value="1">
-            <label for="importanceHoursInRoom5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Share a Room</div>
-            <input type="radio" id="importanceRoomeShare1" name="importanceRoomeShare" value="1">
-            <label for="importanceRoomeShare1"></label>
-            <input type="radio" id="importanceRoomeShare2" name="importanceRoomeShare" value="1">
-            <label for="importanceRoomeShare2"></label>
-            <input type="radio" id="importanceRoomeShare3" name="importanceRoomeShare" value="1">
-            <label for="importanceRoomeShare3"></label>
-            <input type="radio" id="importanceRoomeShare4" name="importanceRoomeShare" value="1">
-            <label for="importanceRoomeShare4"></label>
-            <input type="radio" id="importanceRoomeShare5" name="importanceRoomeShare" value="1">
-            <label for="importanceRoomeShare5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Guests</div>
-            <input type="radio" id="importanceGuests1" name="importanceGuests" value="1">
-            <label for="importanceGuests1"></label>
-            <input type="radio" id="importanceGuests2" name="importanceGuests" value="1">
-            <label for="importanceGuests2"></label>
-            <input type="radio" id="importanceGuests3" name="importanceGuests" value="1">
-            <label for="importanceGuests3"></label>
-            <input type="radio" id="importanceGuests4" name="importanceGuests" value="1">
-            <label for="importanceGuests4"></label>
-            <input type="radio" id="importanceGuests5" name="importanceGuests" value="1">
-            <label for="importanceGuests5"></label>
-          </li>
-          <li>
-            <div class="rowLabel">Sexuality</div>
-            <div class="dropDown">
-              <select>
-                <option>Straight</option>
-                <option>Bi-sexual</option>
-                <option>Unknown</option>
-              </select>
-            </div>
-          </li>
-          <li>
-            <div class="rowLabel">Ethnicity</div>
-            <div class="dropDown">
-              <select>
-                <option>White</option>
-                <option>Black POWA</option>
-                <option>Yellow</option>
-                <option>Blue</option>
-              </select>
-            </div>
-          </li>
-          <li>
-            <div class="rowLabel">Political Beliefs</div>
-            <div class="dropDown">
-              <select>
-                <option>Moderate</option>
-                <option>Anarchy</option>
-                <option>Communism</option>
-              </select>
-            </div>
-          </li>
-          <li>
-            <div class="rowLabel">Harry Potter House</div>
-            <div class="dropDown">
-              <select>
-                <option>Hufflepuff</option>
-                <option>Herminoe</option>
-                <option>Slllll snake</option>
-                <option>Bird Feet</option>
-                <option>What's Harry Pooter?</option>
-              </select>
-            </div>
-          </li>
-        </ul>
+  </div>
+  <div class="col-1-4">
+    <h2>July 14, 2013</h2>
+    <h3 style="color: gray;">UT Roommate Application Deadline</h3>
+    <a href="#" class="view" style="margin-bottom: 20px;">View More Deadlines</a>
+    <hr />
+    <div id="rmEdit">
+      <h2>Edit Preferences</h2>
+      <ul class="editNav">
+        <li><span id="youClick" class="select">You</span></li>
+        <li><span id="roommateClick">Ideal Roommate</span></li>
+        <li><span id="importanceClick">Question Importance</span></li>
+      </ul>
+      <div id="toggleContainer">
+        <div id="you">
+          <ul class="editButtonList">
+            <li>
+              <div class="rowLabel">Cleaniness</div>
+              <input type="radio" id="youClean1" name="youClean" value="1">
+              <label for="youClean1"></label>
+              <input type="radio" id="youClean2" name="youClean" value="1">
+              <label for="youClean2"></label>
+              <input type="radio" id="youClean3" name="youClean" value="1">
+              <label for="youClean3"></label>
+              <input type="radio" id="youClean4" name="youClean" value="1">
+              <label for="youClean4"></label>
+              <input type="radio" id="youClean5" name="youClean" value="1">
+              <label for="youClean5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Loudness</div>
+              <input type="radio" id="youLoud1" name="youLoud" value="1">
+              <label for="youLoud1"></label>
+              <input type="radio" id="youLoud2" name="youLoud" value="1">
+              <label for="youLoud2"></label>
+              <input type="radio" id="youLoud3" name="youLoud" value="1">
+              <label for="youLoud3"></label>
+              <input type="radio" id="youLoud4" name="youLoud" value="1">
+              <label for="youLoud4"></label>
+              <input type="radio" id="youLoud5" name="youLoud" value="1">
+              <label for="youLoud5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Smoking</div>
+              <input type="radio" id="youSmoke1" name="youSmoke" value="1">
+              <label for="youSmoke1"></label>
+              <input type="radio" id="youSmoke2" name="youSmoke" value="1">
+              <label for="youSmoke2"></label>
+              <input type="radio" id="youSmoke3" name="youSmoke" value="1">
+              <label for="youSmoke3"></label>
+              <input type="radio" id="youSmoke4" name="youSmoke" value="1">
+              <label for="youSmoke4"></label>
+              <input type="radio" id="youSmoke5" name="youSmoke" value="1">
+              <label for="youSmoke5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Sleep</div>
+              <input type="radio" id="youSleep1" name="youSleep" value="1">
+              <label for="youSleep1"></label>
+              <input type="radio" id="youSleep2" name="youSleep" value="1">
+              <label for="youSleep2"></label>
+              <input type="radio" id="youSleep3" name="youSleep" value="1">
+              <label for="youSleep3"></label>
+              <input type="radio" id="youSleep4" name="youSleep" value="1">
+              <label for="youSleep4"></label>
+              <input type="radio" id="youSleep5" name="youSleep" value="1">
+              <label for="youSleep5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Partying</div>
+              <input type="radio" id="youPartying1" name="youPartying" value="1">
+              <label for="youPartying1"></label>
+              <input type="radio" id="youPartying2" name="youPartying" value="1">
+              <label for="youPartying2"></label>
+              <input type="radio" id="youPartying3" name="youPartying" value="1">
+              <label for="youPartying3"></label>
+              <input type="radio" id="youPartying4" name="youPartying" value="1">
+              <label for="youPartying4"></label>
+              <input type="radio" id="youPartying5" name="youPartying" value="1">
+              <label for="youPartying5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Outgoingness</div>
+              <input type="radio" id="youOutgoing1" name="youOutgoing" value="1">
+              <label for="youOutgoing1"></label>
+              <input type="radio" id="youOutgoing2" name="youOutgoing" value="1">
+              <label for="youOutgoing2"></label>
+              <input type="radio" id="youOutgoing3" name="youOutgoing" value="1">
+              <label for="youOutgoing3"></label>
+              <input type="radio" id="youOutgoing4" name="youOutgoing" value="1">
+              <label for="youOutgoing4"></label>
+              <input type="radio" id="youOutgoing5" name="youOutgoing" value="1">
+              <label for="youOutgoing5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Hours in Room</div>
+              <input type="radio" id="youHoursInRoom1" name="youHoursInRoom" value="1">
+              <label for="youHoursInRoom1"></label>
+              <input type="radio" id="youHoursInRoom2" name="youHoursInRoom" value="1">
+              <label for="youHoursInRoom2"></label>
+              <input type="radio" id="youHoursInRoom3" name="youHoursInRoom" value="1">
+              <label for="youHoursInRoom3"></label>
+              <input type="radio" id="youHoursInRoom4" name="youHoursInRoom" value="1">
+              <label for="youHoursInRoom4"></label>
+              <input type="radio" id="youHoursInRoom5" name="youHoursInRoom" value="1">
+              <label for="youHoursInRoom5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Share a Room</div>
+              <input type="radio" id="youRoomeShare1" name="youRoomeShare" value="1">
+              <label for="youRoomeShare1"></label>
+              <input type="radio" id="youRoomeShare2" name="youRoomeShare" value="1">
+              <label for="youRoomeShare2"></label>
+              <input type="radio" id="youRoomeShare3" name="youRoomeShare" value="1">
+              <label for="youRoomeShare3"></label>
+              <input type="radio" id="youRoomeShare4" name="youRoomeShare" value="1">
+              <label for="youRoomeShare4"></label>
+              <input type="radio" id="youRoomeShare5" name="youRoomeShare" value="1">
+              <label for="youRoomeShare5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Guests</div>
+              <input type="radio" id="youGuests1" name="youGuests" value="1">
+              <label for="youGuests1"></label>
+              <input type="radio" id="youGuests2" name="youGuests" value="1">
+              <label for="youGuests2"></label>
+              <input type="radio" id="youGuests3" name="youGuests" value="1">
+              <label for="youGuests3"></label>
+              <input type="radio" id="youGuests4" name="youGuests" value="1">
+              <label for="youGuests4"></label>
+              <input type="radio" id="youGuests5" name="youGuests" value="1">
+              <label for="youGuests5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Sexuality</div>
+              <div class="dropDown">
+                <select>
+                  <option>Straight</option>
+                  <option>Bi-sexual</option>
+                  <option>Unknown</option>
+                </select>
+              </div>
+            </li>
+            <li>
+              <div class="rowLabel">Ethnicity</div>
+              <div class="dropDown">
+                <select>
+                  <option>White</option>
+                  <option>Black POWA</option>
+                  <option>Yellow</option>
+                  <option>Blue</option>
+                </select>
+              </div>
+            </li>
+            <li>
+              <div class="rowLabel">Political Beliefs</div>
+              <div class="dropDown">
+                <select>
+                  <option>Moderate</option>
+                  <option>Anarchy</option>
+                  <option>Communism</option>
+                </select>
+              </div>
+            </li>
+            <li>
+              <div class="rowLabel">Harry Potter House</div>
+              <div class="dropDown">
+                <select>
+                  <option>Hufflepuff</option>
+                  <option>Herminoe</option>
+                  <option>Slllll snake</option>
+                  <option>Bird Feet</option>
+                  <option>What's Harry Pooter?</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="roommate">
+          <ul class="editButtonList">
+            <li>
+              <div class="rowLabel">Cleaniness</div>
+              <input type="radio" id="roommateClean1" name="roommateClean" value="1">
+              <label for="roommateClean1"></label>
+              <input type="radio" id="roommateClean2" name="roommateClean" value="1">
+              <label for="roommateClean2"></label>
+              <input type="radio" id="roommateClean3" name="roommateClean" value="1">
+              <label for="roommateClean3"></label>
+              <input type="radio" id="roommateClean4" name="roommateClean" value="1">
+              <label for="roommateClean4"></label>
+              <input type="radio" id="roommateClean5" name="roommateClean" value="1">
+              <label for="roommateClean5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Loudness</div>
+              <input type="radio" id="roommateLoud1" name="roommateLoud" value="1">
+              <label for="roommateLoud1"></label>
+              <input type="radio" id="roommateLoud2" name="roommateLoud" value="1">
+              <label for="roommateLoud2"></label>
+              <input type="radio" id="roommateLoud3" name="roommateLoud" value="1">
+              <label for="roommateLoud3"></label>
+              <input type="radio" id="roommateLoud4" name="roommateLoud" value="1">
+              <label for="roommateLoud4"></label>
+              <input type="radio" id="roommateLoud5" name="roommateLoud" value="1">
+              <label for="roommateLoud5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Smoking</div>
+              <input type="radio" id="roommateSmoke1" name="roommateSmoke" value="1">
+              <label for="roommateSmoke1"></label>
+              <input type="radio" id="roommateSmoke2" name="roommateSmoke" value="1">
+              <label for="roommateSmoke2"></label>
+              <input type="radio" id="roommateSmoke3" name="roommateSmoke" value="1">
+              <label for="roommateSmoke3"></label>
+              <input type="radio" id="roommateSmoke4" name="roommateSmoke" value="1">
+              <label for="roommateSmoke4"></label>
+              <input type="radio" id="roommateSmoke5" name="roommateSmoke" value="1">
+              <label for="roommateSmoke5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Sleep</div>
+              <input type="radio" id="roommateSleep1" name="roommateSleep" value="1">
+              <label for="roommateSleep1"></label>
+              <input type="radio" id="roommateSleep2" name="roommateSleep" value="1">
+              <label for="roommateSleep2"></label>
+              <input type="radio" id="roommateSleep3" name="roommateSleep" value="1">
+              <label for="roommateSleep3"></label>
+              <input type="radio" id="roommateSleep4" name="roommateSleep" value="1">
+              <label for="roommateSleep4"></label>
+              <input type="radio" id="roommateSleep5" name="roommateSleep" value="1">
+              <label for="roommateSleep5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Partying</div>
+              <input type="radio" id="roommatePartying1" name="roommatePartying" value="1">
+              <label for="roommatePartying1"></label>
+              <input type="radio" id="roommatePartying2" name="roommatePartying" value="1">
+              <label for="roommatePartying2"></label>
+              <input type="radio" id="roommatePartying3" name="roommatePartying" value="1">
+              <label for="roommatePartying3"></label>
+              <input type="radio" id="roommatePartying4" name="roommatePartying" value="1">
+              <label for="roommatePartying4"></label>
+              <input type="radio" id="roommatePartying5" name="roommatePartying" value="1">
+              <label for="roommatePartying5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Outgoingness</div>
+              <input type="radio" id="roommateOutgoing1" name="roommateOutgoing" value="1">
+              <label for="roommateOutgoing1"></label>
+              <input type="radio" id="roommateOutgoing2" name="roommateOutgoing" value="1">
+              <label for="roommateOutgoing2"></label>
+              <input type="radio" id="roommateOutgoing3" name="roommateOutgoing" value="1">
+              <label for="roommateOutgoing3"></label>
+              <input type="radio" id="roommateOutgoing4" name="roommateOutgoing" value="1">
+              <label for="roommateOutgoing4"></label>
+              <input type="radio" id="roommateOutgoing5" name="roommateOutgoing" value="1">
+              <label for="roommateOutgoing5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Hours in Room</div>
+              <input type="radio" id="roommateHoursInRoom1" name="roommateHoursInRoom" value="1">
+              <label for="roommateHoursInRoom1"></label>
+              <input type="radio" id="roommateHoursInRoom2" name="roommateHoursInRoom" value="1">
+              <label for="roommateHoursInRoom2"></label>
+              <input type="radio" id="roommateHoursInRoom3" name="roommateHoursInRoom" value="1">
+              <label for="roommateHoursInRoom3"></label>
+              <input type="radio" id="roommateHoursInRoom4" name="roommateHoursInRoom" value="1">
+              <label for="roommateHoursInRoom4"></label>
+              <input type="radio" id="roommateHoursInRoom5" name="roommateHoursInRoom" value="1">
+              <label for="roommateHoursInRoom5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Share a Room</div>
+              <input type="radio" id="roommateRoomeShare1" name="roommateRoomeShare" value="1">
+              <label for="roommateRoomeShare1"></label>
+              <input type="radio" id="roommateRoomeShare2" name="roommateRoomeShare" value="1">
+              <label for="roommateRoomeShare2"></label>
+              <input type="radio" id="roommateRoomeShare3" name="roommateRoomeShare" value="1">
+              <label for="roommateRoomeShare3"></label>
+              <input type="radio" id="roommateRoomeShare4" name="roommateRoomeShare" value="1">
+              <label for="roommateRoomeShare4"></label>
+              <input type="radio" id="roommateRoomeShare5" name="roommateRoomeShare" value="1">
+              <label for="roommateRoomeShare5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Guests</div>
+              <input type="radio" id="roommateGuests1" name="roommateGuests" value="1">
+              <label for="roommateGuests1"></label>
+              <input type="radio" id="roommateGuests2" name="roommateGuests" value="1">
+              <label for="roommateGuests2"></label>
+              <input type="radio" id="roommateGuests3" name="roommateGuests" value="1">
+              <label for="roommateGuests3"></label>
+              <input type="radio" id="roommateGuests4" name="roommateGuests" value="1">
+              <label for="roommateGuests4"></label>
+              <input type="radio" id="roommateGuests5" name="roommateGuests" value="1">
+              <label for="roommateGuests5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Sexuality</div>
+              <div class="dropDown">
+                <select>
+                  <option>Straight</option>
+                  <option>Bi-sexual</option>
+                  <option>Unknown</option>
+                </select>
+              </div>
+            </li>
+            <li>
+              <div class="rowLabel">Ethnicity</div>
+              <div class="dropDown">
+                <select>
+                  <option>White</option>
+                  <option>Black POWA</option>
+                  <option>Yellow</option>
+                  <option>Blue</option>
+                </select>
+              </div>
+            </li>
+            <li>
+              <div class="rowLabel">Political Beliefs</div>
+              <div class="dropDown">
+                <select>
+                  <option>Moderate</option>
+                  <option>Anarchy</option>
+                  <option>Communism</option>
+                </select>
+              </div>
+            </li>
+            <li>
+              <div class="rowLabel">Harry Potter House</div>
+              <div class="dropDown">
+                <select>
+                  <option>Hufflepuff</option>
+                  <option>Herminoe</option>
+                  <option>Slllll snake</option>
+                  <option>Bird Feet</option>
+                  <option>What's Harry Pooter?</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="importance">
+          <ul class="editButtonList">
+            <li>
+              <div class="rowLabel">Cleaniness</div>
+              <input type="radio" id="importanceClean1" name="importanceClean" value="1">
+              <label for="importanceClean1"></label>
+              <input type="radio" id="importanceClean2" name="importanceClean" value="1">
+              <label for="importanceClean2"></label>
+              <input type="radio" id="importanceClean3" name="importanceClean" value="1">
+              <label for="importanceClean3"></label>
+              <input type="radio" id="importanceClean4" name="importanceClean" value="1">
+              <label for="importanceClean4"></label>
+              <input type="radio" id="importanceClean5" name="importanceClean" value="1">
+              <label for="importanceClean5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Loudness</div>
+              <input type="radio" id="importanceLoud1" name="importanceLoud" value="1">
+              <label for="importanceLoud1"></label>
+              <input type="radio" id="importanceLoud2" name="importanceLoud" value="1">
+              <label for="importanceLoud2"></label>
+              <input type="radio" id="importanceLoud3" name="importanceLoud" value="1">
+              <label for="importanceLoud3"></label>
+              <input type="radio" id="importanceLoud4" name="importanceLoud" value="1">
+              <label for="importanceLoud4"></label>
+              <input type="radio" id="importanceLoud5" name="importanceLoud" value="1">
+              <label for="importanceLoud5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Smoking</div>
+              <input type="radio" id="importanceSmoke1" name="importanceSmoke" value="1">
+              <label for="importanceSmoke1"></label>
+              <input type="radio" id="importanceSmoke2" name="importanceSmoke" value="1">
+              <label for="importanceSmoke2"></label>
+              <input type="radio" id="importanceSmoke3" name="importanceSmoke" value="1">
+              <label for="importanceSmoke3"></label>
+              <input type="radio" id="importanceSmoke4" name="importanceSmoke" value="1">
+              <label for="importanceSmoke4"></label>
+              <input type="radio" id="importanceSmoke5" name="importanceSmoke" value="1">
+              <label for="importanceSmoke5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Sleep</div>
+              <input type="radio" id="importanceSleep1" name="importanceSleep" value="1">
+              <label for="importanceSleep1"></label>
+              <input type="radio" id="importanceSleep2" name="importanceSleep" value="1">
+              <label for="importanceSleep2"></label>
+              <input type="radio" id="importanceSleep3" name="importanceSleep" value="1">
+              <label for="importanceSleep3"></label>
+              <input type="radio" id="importanceSleep4" name="importanceSleep" value="1">
+              <label for="importanceSleep4"></label>
+              <input type="radio" id="importanceSleep5" name="importanceSleep" value="1">
+              <label for="importanceSleep5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Partying</div>
+              <input type="radio" id="importancePartying1" name="importancePartying" value="1">
+              <label for="importancePartying1"></label>
+              <input type="radio" id="importancePartying2" name="importancePartying" value="1">
+              <label for="importancePartying2"></label>
+              <input type="radio" id="importancePartying3" name="importancePartying" value="1">
+              <label for="importancePartying3"></label>
+              <input type="radio" id="importancePartying4" name="importancePartying" value="1">
+              <label for="importancePartying4"></label>
+              <input type="radio" id="importancePartying5" name="importancePartying" value="1">
+              <label for="importancePartying5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Outgoingness</div>
+              <input type="radio" id="importanceOutgoing1" name="importanceOutgoing" value="1">
+              <label for="importanceOutgoing1"></label>
+              <input type="radio" id="importanceOutgoing2" name="importanceOutgoing" value="1">
+              <label for="importanceOutgoing2"></label>
+              <input type="radio" id="importanceOutgoing3" name="importanceOutgoing" value="1">
+              <label for="importanceOutgoing3"></label>
+              <input type="radio" id="importanceOutgoing4" name="importanceOutgoing" value="1">
+              <label for="importanceOutgoing4"></label>
+              <input type="radio" id="importanceOutgoing5" name="importanceOutgoing" value="1">
+              <label for="importanceOutgoing5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Hours in Room</div>
+              <input type="radio" id="importanceHoursInRoom1" name="importanceHoursInRoom" value="1">
+              <label for="importanceHoursInRoom1"></label>
+              <input type="radio" id="importanceHoursInRoom2" name="importanceHoursInRoom" value="1">
+              <label for="importanceHoursInRoom2"></label>
+              <input type="radio" id="importanceHoursInRoom3" name="importanceHoursInRoom" value="1">
+              <label for="importanceHoursInRoom3"></label>
+              <input type="radio" id="importanceHoursInRoom4" name="importanceHoursInRoom" value="1">
+              <label for="importanceHoursInRoom4"></label>
+              <input type="radio" id="importanceHoursInRoom5" name="importanceHoursInRoom" value="1">
+              <label for="importanceHoursInRoom5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Share a Room</div>
+              <input type="radio" id="importanceRoomeShare1" name="importanceRoomeShare" value="1">
+              <label for="importanceRoomeShare1"></label>
+              <input type="radio" id="importanceRoomeShare2" name="importanceRoomeShare" value="1">
+              <label for="importanceRoomeShare2"></label>
+              <input type="radio" id="importanceRoomeShare3" name="importanceRoomeShare" value="1">
+              <label for="importanceRoomeShare3"></label>
+              <input type="radio" id="importanceRoomeShare4" name="importanceRoomeShare" value="1">
+              <label for="importanceRoomeShare4"></label>
+              <input type="radio" id="importanceRoomeShare5" name="importanceRoomeShare" value="1">
+              <label for="importanceRoomeShare5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Guests</div>
+              <input type="radio" id="importanceGuests1" name="importanceGuests" value="1">
+              <label for="importanceGuests1"></label>
+              <input type="radio" id="importanceGuests2" name="importanceGuests" value="1">
+              <label for="importanceGuests2"></label>
+              <input type="radio" id="importanceGuests3" name="importanceGuests" value="1">
+              <label for="importanceGuests3"></label>
+              <input type="radio" id="importanceGuests4" name="importanceGuests" value="1">
+              <label for="importanceGuests4"></label>
+              <input type="radio" id="importanceGuests5" name="importanceGuests" value="1">
+              <label for="importanceGuests5"></label>
+            </li>
+            <li>
+              <div class="rowLabel">Sexuality</div>
+              <div class="dropDown">
+                <select>
+                  <option>Straight</option>
+                  <option>Bi-sexual</option>
+                  <option>Unknown</option>
+                </select>
+              </div>
+            </li>
+            <li>
+              <div class="rowLabel">Ethnicity</div>
+              <div class="dropDown">
+                <select>
+                  <option>White</option>
+                  <option>Black POWA</option>
+                  <option>Yellow</option>
+                  <option>Blue</option>
+                </select>
+              </div>
+            </li>
+            <li>
+              <div class="rowLabel">Political Beliefs</div>
+              <div class="dropDown">
+                <select>
+                  <option>Moderate</option>
+                  <option>Anarchy</option>
+                  <option>Communism</option>
+                </select>
+              </div>
+            </li>
+            <li>
+              <div class="rowLabel">Harry Potter House</div>
+              <div class="dropDown">
+                <select>
+                  <option>Hufflepuff</option>
+                  <option>Herminoe</option>
+                  <option>Slllll snake</option>
+                  <option>Bird Feet</option>
+                  <option>What's Harry Pooter?</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

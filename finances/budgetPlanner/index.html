@@ -433,8 +433,7 @@ budgetSlider = new Swipe(document.getElementById('budgetSlider'), {
   transitionEnd: function(index, elem) {}
 });
 
-	  function next(){
-
+	function next(){
 		if(budgetSlider.getPos()<8){
 		budgetSlider.next();
 		questionNum();
@@ -442,7 +441,6 @@ budgetSlider = new Swipe(document.getElementById('budgetSlider'), {
 	}
 	
 	function prev(){
-
 		if(budgetSlider.getPos()>0){
 		budgetSlider.prev();
 		questionNum();
