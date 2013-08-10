@@ -167,12 +167,16 @@
 #maincontent #essay p{margin-top:0;}
 .essay center img{display:inline-block;}
 #recentAnswers, #data, #essay{height: 444px;}
-#recentAnswers .view, #maincontent.admissions #essay{margin-top: 14px;}
+
 #recentAnswer .answer .view{margin-top: -10px;}
+
+#maincontent.admissions #data .view{margin-top:42px;}
+#maincontent.admissions #essay .view{margin-top:30px;}
+#recentAnswers .view{margin-top: 17px;}
 @media(max-width:1499px){
-	#recentAnswers .view{margin-top: -1px;} 
-	#maincontent.admissions #essay .view{margin-top: -1px;}
-	#maincontent.admissions #data .view{margin-top:27px;}
+	#recentAnswers .view{margin-top: 3px;} 
+	#maincontent.admissions #essay .view{margin-top: 16px;}
+	#maincontent.admissions #data .view{margin-top:44px;}
 }
 @media(max-width:1320px)
 {
@@ -195,6 +199,7 @@
 	width:100%;
 }
 #maincontent.admissions #inputArea{padding:0 50px;}
+#recentAnswers .view{margin-top: 16px;} 
 }
 @media(max-width:1000px)
 {
@@ -215,6 +220,12 @@
 	border-left:0;
 	padding-top:20px;
 }
+
+#recentAnswers .view{margin-top: 3px;} 
+#maincontent.admissions #essay .view{margin-top: 16px;}
+#maincontent.admissions #data .view{margin-top:26px;}
+
+
 }
 /* ============= Recently Answered =============== */
 #raHeader {
@@ -1554,7 +1565,7 @@ hr {
 @media(max-width:360px){
 #maincontent, #header, #footer, .footer{display:none;}
 body:before{
-	content:"The Programmers at Freshman Support would like to give you a friendly reminder that your";
+	content:"The Programmers at Freshman Support would like to give you a friendly reminder that";
 	position:absolute; 
 	width:100%; 
 	background-image:url(../img/easter.png); 
