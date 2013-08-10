@@ -143,8 +143,62 @@ body {
 #container {
 	margin: 0 auto;
 }
+#choice {
+	width: 145px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	display: inline-block;
+	color: rgb(51,62,106);
+}
 
-/
+#choice .important, #choice .notImportant, #choice .dealBreaker, #choice .semiImportant {
+	float: left;
+	cursor:pointer;
+}
+.notImportant{
+	background-color:white;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: 1px solid rgb(116,116,116);
+	display: inline-block;
+	margin: auto;
+	margin-left: 2px;
+	margin-right: 7px;
+}
+.semiImportant{
+	background-color: rgb(140,146,162);
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: 1px solid rgb(116,116,116);
+	display: inline-block;
+	margin: auto;
+	margin-left: 2px;
+	margin-right: 7px;
+}
+.important{
+	background-color:rgb(51,62,106);
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: 1px solid rgb(116,116,116);
+	display: inline-block;
+	margin: auto;
+	margin-left: 2px;
+	margin-right: 7px;
+}
+.dealBreaker{
+	background-color: rgb(220, 134, 39);
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: 1px solid rgb(116,116,116);
+	display: inline-block;
+	margin: auto;
+	margin-left: 2px;
+	margin-right: 7px;
+}
 /*=========housing matcher results ===============*/
 
 #housingResultsContainer {
@@ -599,6 +653,7 @@ width:105px;
 	display:inline-block;
 	width:70px;
 	margin-left:-10px;
+	
 }
 
 #housingMain .picWrapper img{
@@ -2028,7 +2083,10 @@ font-size:24px;
 #housingMain #checkAvailability h2{
 	font-size:14px;
 	text-align:left;
-	margin:5px 10px;
+	font-family:Georgia;
+	color:rgb(116,116,116);
+	margin:3px 10px;
+	margin-bottom:4px;
 }
 
 
