@@ -120,8 +120,15 @@
 	font-style:italic
 }
 #answerNav{
+	/*Makes it bottom Align */
 	position:absolute; bottom:30px; margin:0 auto;  min-width:1px;
-	display:block; padding:1%; text-align:center;position:absolute; width:99%;left:2.5%; right:2.5%;}
+	/* Makes it center align */
+	display:block; padding:1%; text-align:center;position:absolute; width:99%;left:2.5%; right:2.5%;
+	/*All credit goes to Kristen J Carson for finding this for the programmers*/
+	color:rgb(51, 62, 107);
+	font-size:14px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	}
 #answerNav img{display:inline-block;}
 #answerNav button {
 	border: 0;
@@ -1037,7 +1044,7 @@ padding-top: 9px;
 .stateTextWrap div:first-child{display:inline-block;}
 .stateTextWrap div:nth-child(2){display:inline-block;padding-left:57px;}
 .stateTextWrap div:last-child{display:inline-block;padding-left:35px;}
-#budgetPlanner h3{color:rgb(116,116,116);}
+#budgetPlanner h3{color:rgb(116,116,116); margin-top:0; font-family:HNL; font-size:18px; font-weight:normal;}
  .stateWrap label {
 	display: inline-block;
 	vertical-align: top;
@@ -1116,7 +1123,7 @@ padding-top: 9px;
 	margin-top: 20px;
 }
 /* ========== Budget Planner ===================== */
-.budgetPlanner #budgetPlanner{border-right:2px solid rgb(116,116,116); padding-bottom:20px;}
+.budgetPlanner #budgetPlanner{border-right:2px solid rgb(116,116,116); padding-bottom:20px;position:relative;}
 .budgetPlanner .semesterWrap{display:block; width: 130px; margin: 0 auto;}
 .budgetPlanner .twoLine{padding-top:1px; line-height: 18px;}
 #budgetPlanner ul, #results ul{list-style-type:none; padding:0;}
@@ -1227,10 +1234,12 @@ padding-top: 9px;
 	border-bottom:1px solid rgb(116,116,116);
 	width:80%;
 	font-family:HNL;
+	cursor:pointer;
 }
 .budgetPlanner #results .right{display:inline-block; text-align:right; color:rgb(116, 116, 116); font-size:18px; text-align:right;width:19%; white-space:nowrap;}
 #results{padding: 0 50px;}
 #maincontent.budgetPlanner .finale h2{color:rgb(220, 134, 39);}
+#currentNumber{display:inline-block;}
 /* ==================== Data ====================== */
 #maincontent.data h3{color:rgb(220, 134, 39);font-size:28px; margin: 20px 0 0 0; white-space:nowrap;}
 #finAid{border-right: 1px solid rgb(116,116,116);}
@@ -1239,7 +1248,7 @@ padding-top: 9px;
 #schoolCosts .square{width:20px; height:20px; margin:0; display:inline-block; margin-right: 10px;}
 #schoolCosts ul{width:400px;}
 #schoolCosts li{
-	width: 180px; 
+	width: 150px; 
 	font-family:Georgia, "Times New Roman", Times, serif; 
 	font-size: 14px;
 	color:rgb(116,116,116);
@@ -1247,12 +1256,13 @@ padding-top: 9px;
 	text-align:left;
 	margin-bottom: 10px;
 }
+#finDataMid{border-right:1px solid rgb(116,116,116);}
 .c1{background-color:#333D69;}
 .c2{background-color:#44567F;}
 .c3{background-color:#596B9E;}
 .c4{background-color:#91A5C3;}
 #schoolCosts .legend{border:0;}
-.chartContainer{width: 210px; display:block; margin:0 auto;}
+.chartContainer{width: 115px; display:block; margin:0 auto;}
 #studentEmployment{margin-top: 30px;}
 .pFlush{height: 120px;}
 #maincontent.financialAid .pFlush p{text-align:left;}

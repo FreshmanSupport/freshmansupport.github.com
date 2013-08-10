@@ -53,9 +53,9 @@
   </div>
 </div>
 <div id="maincontent" class="data">
-  <div id="finAid" class="col-1-4">
+  <div id="finAid" class="col-1-3">
     <div class="textWrap">
-      <h2>Financial Aid</h2>
+      <h2 style="white-space:nowrap">Paying for college</h2>
       <h3>1 dolla</h3>
       <p>The Average Aid package for full-time freshman</p>
       <h3>30%</h3>
@@ -70,67 +70,64 @@
       <p>Neede-based self-help awarded in 2011</p>
     </div>
   </div>
-  <div class="col-3-4">
+  <div id="finDataMid" class="col-1-3">
     <div id="schoolCosts">
       <h2>School Costs</h2>
       <ul class="legend">
-          <li>
-            <div class="square c1"></div>
-            Tution</li>
-          <li>
-            <div class="square c2"></div>
-            Required Fees</li>
-          <li>
-            <div class="square c3"></div>
-            Room and Board</li>
-          <li>
-            <div class="square c4"></div>
-            Books and Other</li>
-        </ul>
+        <li>
+          <div class="square c1"></div>
+          Tution</li>
+        <li>
+          <div class="square c2"></div>
+          Required Fees</li>
+        <li>
+          <div class="square c3"></div>
+          Room and Board</li>
+        <li>
+          <div class="square c4"></div>
+          Books and Other</li>
+      </ul>
       <div id="inState" class="col-1-2">
-        
         <div class="chartContainer">
-          <div id="chart1" style="position:relative;width:200px;height:200px; display:inline-block;"></div>
+          <div id="chart1" style="position:relative;width:115px;height:115px; display:inline-block;"></div>
         </div>
         <h2>In-State</h2>
       </div>
       <div id="inState" class="col-1-2">
-        
         <div class="chartContainer">
-          <div id="chart2" style="position:relative;width:200px;height:200px; display:inline-block;"></div>
+          <div id="chart2" style="position:relative;width:115px;height:115px; display:inline-block;"></div>
         </div>
         <h2>Out-Of-State</h2>
       </div>
     </div>
-      <div id="studentEmployment">
-    <h2>Student Employment</h2>
-    <div class="col-1-2">
-      <h3>7%</h3>
-      <p>Of full-time ungraduates<br />
-        work on campus during the <br />
-        school year</p>
-      <h3>$7,230</h3>
-      <p>The amount the student may<br />
-        expect to earn an average of <br />
-        per year<br />
-      </p>
-    </div>
-    <div class="col-1-2">
-      <h2 style="margin-top:65px;">Off campus part-time employment rated:</h2>
-      <h3>FABULOUS</h3>
+    <div id="studentEmployment">
+      <h2>FAFSA</h2>
+      <div class="col-1-2">
+        <h3>7%</h3>
+        <p>Of full-time ungraduates<br />
+          work on campus during the <br />
+          school year</p>
+        <h3>$7,230</h3>
+        <p>The amount the student may<br />
+          expect to earn an average of <br />
+          per year<br />
+        </p>
+      </div>
+      <div class="col-1-2">
+        <h2 style="margin-top:65px;">Off campus part-time employment rated:</h2>
+        <h3>FABULOUS</h3>
+      </div>
     </div>
   </div>
-  </div>
-
-</div>
+  <div id="financialAid" class="col-1-3"> </div>
 </div>
 </body>
 </html>
 <script>
 new Chart.Pie("chart1", {
   showTooltips : true, 
-  chartMinSize : [200, 200], 
-  chartMaxSize : [200, 200], 
+  chartMinSize : [115, 115], 
+  chartMaxSize : [115, 115], 
   chartData : [["Tuition", 39.20, "00:01:33", "#333D69"], 
                ["Required Fees", 30.58, "00:03:04", "#44567F"], 
                ["Room and Board", 22.91, "00:02:01", "#596B9E"], 
@@ -138,8 +135,8 @@ new Chart.Pie("chart1", {
 });
 new Chart.Pie("chart2", {
   showTooltips : true, 
-  chartMinSize : [200, 200], 
-  chartMaxSize : [200, 200], 
+  chartMinSize : [115, 115], 
+  chartMaxSize : [115, 115], 
   chartData : [["Tuition", 31.20, "00:01:33", "#333D69"], 
                ["Required Fees", 30.58, "00:03:04", "#44567F"], 
                ["Room and Board", 22.91, "00:02:01", "#596B9E"], 

@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Budget Planner</title>
 <script src="../../js/swipe.js"></script>
+<script src="budgetPlannerScript.js"></script>
 </head>
 
 <body>
@@ -53,11 +54,15 @@
 <div id="maincontent" class="budgetPlanner">
   <div id="budgetPlanner" class="col-1-2">
     <h2>Budget Planner</h2>
-    <div id='budgetSlider' class='swipeRecent' style="margin:20px 0;">
+    <div id='budgetSlider' class='swipeRecent'>
       <div class='swipe-wrap'>
         <div>
-          <h2>Tuition</h2>
-          <div class="stateTextWrap">In-State or Out-Of-State </div>
+          <h3>Tuition</h3>
+          <div class="stateTextWrap">
+        <div> In-State</div>
+        <div> or</div>
+        <div> Out-Of-State</div>
+        </div>
           <div class="stateWrap" style="margin-bottom:37px">
             <form>
               <input id="inState" type="radio" name="state" value="inState">
@@ -79,8 +84,8 @@
           </div>
         </div>
         <div>
-          <h2>Housing</h2>
-          <h3 style="margin-bottom:0;">Where do you plan to live?</h3>
+          <h3>Housing</h3>
+          <h3 style="margin-top:40px;">Where do you plan to live?</h3>
           <div class="semesterWrap">
             <form>
               <input id="public" type="radio" name="housing" value="public">
@@ -95,7 +100,7 @@
           </div>
         </div>
         <div>
-          <h2>Housing Items</h2>
+          <h3>Housing Items</h3>
           <div>
             <form>
               <ul class="checkContainer">
@@ -158,7 +163,7 @@
           </div>
         </div>
         <div>
-          <h2>Food</h2>
+          <h3>Food</h3>
           <p style="font-style:italic;">The average student spends $15 a day on food. Many dorms <br />
             have meal
             plans that you can pay for that will be included in <br />
@@ -200,7 +205,7 @@
           </div>
         </div>
         <div id="academics">
-          <h2>Academics</h2>
+          <h3>Academics</h3>
           <form>
             <ul class="checkContainer smaller">
               <li>
@@ -234,7 +239,7 @@
           </form>
         </div>
         <div>
-          <h2>Transportation</h2>
+          <h3>Transportation</h3>
           <h3>What transportation do you plan on using?</h3>
           <div class="transWrap">
             <form>
@@ -281,7 +286,7 @@
           </form>
         </div>
         <div>
-          <h2>Personal</h2>
+          <h3>Personal</h3>
           <ul class="checkContainer smaller">
             <li>
               <input type="checkbox" id="bedding" name="personal" />
@@ -313,7 +318,7 @@
           </ul>
         </div>
         <div>
-          <h2>Fun Funds</h2>
+          <h3>Fun Funds</h3>
           <h3>How often are you planning to:</h3>
           <p style="font-style:italic;">Click circles to choose activities</p>
           <div id="fun" class="loopingColorContainer">
@@ -348,9 +353,9 @@
         <div>
         	<div class="finale">
         	<p>Your total estimated cost is:</p>
-            <h2>$0</h2>
+            <h3>$0</h3>
             <p>The stimated cost of attendance:</p>
-            <h2>30 px $25,394</h2>
+            <h3>30 px $25,394</h3>
             <p style="font-size:18px">These totals could be changed by clicking 
             on the titles of the sections to the right. THese are estimates, but 
             it is important to plan ahead when taking out loans, and only take 
@@ -364,44 +369,44 @@
       </div>
     </div>
     <center id="answerNav">
-      <button onClick="budgetSlider.prev()"><img src=../../img/arrowLeft.png width=10px/> Prev</button>
-      <span>1 of 8</span>
-      <button onClick="budgetSlider.next()">Next <img src=../../img/arrowRight.png width=10px /></button>
+      <button onClick="prev()"><img src=../../img/arrowLeft.png width=10px/> Prev</button>
+      <span><div id="currentNumber">2</div> of 9</span>
+      <button onClick="next()">Next <img src=../../img/arrowRight.png width=10px /></button>
     </center>
   </div>
   <div id="results" class="col-1-2">
     <h2>Results</h2>
     <ul>
       <li>
-        <div class="left">Tuition Costs </div>
+        <div class="left" id="slideTo0">Tuition Costs </div>
         <div class="right">$0</div>
       </li>
       <li>
-        <div class="left">Housing Costs </div>
+        <div class="left" id="slideTo1">Housing Costs </div>
         <div class="right">$0</div>
       </li>
       <li>
-        <div class="left">Housing Item Costs </div>
+        <div class="left" id="slideTo2">Housing Item Costs </div>
         <div class="right">$0</div>
       </li>
       <li>
-        <div class="left">Food Costs </div>
+        <div class="left" id="slideTo3">Food Costs </div>
         <div class="right">$0</div>
       </li>
       <li>
-        <div class="left">Academic Costs </div>
+        <div class="left" id="slideTo4">Academic Costs </div>
         <div class="right">$0</div>
       </li>
       <li>
-        <div class="left">Transportation Costs </div>
+        <div class="left" id="slideTo5">Transportation Costs </div>
+        <div class="right" id="slideTo7">$0</div>
+      </li>
+      <li>
+        <div class="left"id="slideTo6">Personal Costs </div>
         <div class="right">$0</div>
       </li>
       <li>
-        <div class="left">Personal Costs </div>
-        <div class="right">$0</div>
-      </li>
-      <li>
-        <div class="left">Fun Funds </div>
+        <div class="left" id="slideTo7">Fun Funds </div>
         <div class="right">$0</div>
       </li>
       <li>
@@ -427,28 +432,25 @@ budgetSlider = new Swipe(document.getElementById('budgetSlider'), {
   callback: function(index, elem) {},
   transitionEnd: function(index, elem) {}
 });
-</script>
-<script type="text/javascript">
-	   $('.stateWrap input').click(function(){
-		   $('input:checked').parent().parent().removeClass("initialColor");
-		  
-       });
-	   
-//Function to loop colors
-	$('.loopingColorContainer  .circle').click(function(){
-		if( $(this).hasClass('initial') ) {
-			$(this).removeClass('initial').addClass('rarely');
-		}
-		else if( $(this).hasClass('rarely') ) {
-			$(this).removeClass('rarely').addClass('sometime');
-		}
-		else if( $(this).hasClass('sometime') ) {
-			$(this).removeClass('sometime').addClass('frequently');
-		}
-		else{
-			$(this).removeClass('frequently').addClass('initial');
-		}
-	});
 
-	  
+	  function next(){
+
+		if(budgetSlider.getPos()<8){
+		budgetSlider.next();
+		questionNum();
+		}
+	}
+	
+	function prev(){
+
+		if(budgetSlider.getPos()>0){
+		budgetSlider.prev();
+		questionNum();
+		}
+	}
+
+	function questionNum(){
+		var x= budgetSlider.getPos() + 1;
+		document.getElementById('currentNumber').innerHTML= x;
+	}
 </script>
