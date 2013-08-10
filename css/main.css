@@ -166,13 +166,15 @@
 }
 #maincontent #essay p{margin-top:0;}
 .essay center img{display:inline-block;}
-#recentAnswers, #data, #essay{height: 444px;}
+#recentAnswers, #data, #essay{height: 444px; position:relative;}
 
 #recentAnswer .answer .view{margin-top: -10px;}
 
-#maincontent.admissions #data .view{margin-top:42px;}
+/*#maincontent.admissions #data .view{margin-top:42px;}
 #maincontent.admissions #essay .view{margin-top:30px;}
-#recentAnswers .view{margin-top: 17px;}
+#recentAnswers .view{margin-top: 17px;position:absolute; left: 150px; bottom:0; width:200px; } */
+
+.viewBottom{position:absolute; bottom:0; margin:0 auto; display:block; min-width:1px; }
 @media(max-width:1499px){
 	#recentAnswers .view{margin-top: 3px;} 
 	#maincontent.admissions #essay .view{margin-top: 16px;}
@@ -1635,6 +1637,7 @@ body {
 	margin: 0 auto;
 }
 ul{padding:0; list-style-type:none;}
+a img{border:0;}
 /* ========== Messing with Boot Strap ============= */
 [class*="span"] .span6 {
 	display: inline-block;
