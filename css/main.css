@@ -129,16 +129,20 @@
 	display: inline-block;
 	margin-left: 10px;
 }
+.voteContainer.grayOut .upVote{cursor:default; border-bottom-color:rgb(116,116,116);}
+.voteContainer.grayOut .downVote{cursor:default; border-top-color:rgb(116,116,116)}
+.voteContainer.grayOut .upOne, .voteContainer.grayOut .downOne{color:rgba(116,116,116, 0.5);}
+.voteCotnainer.uP
 .voteContainer {
 	margin: 10px auto;
 	display: block;
 	width: 100px;
 	white-space:nowrap;
-	
 }
 .upVote, .downVote {
 	width: 15px;
 	display: inline-block;
+	cursor:pointer;
 }
 .upOne, .downOne{
 	width:35px;	
@@ -147,12 +151,10 @@
 .upOne {
 	color: rgb(51, 62, 107);
 	text-align: right;
-	cursor:pointer;
 }
 .downOne {
 	display: inline-block;
 	color: rgb(220, 134, 39);
-	cursor:pointer;
 }
 .upVote {
 	width: 0;
