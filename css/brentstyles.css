@@ -674,6 +674,8 @@ width:105px;
 	display:inline-block;
 	width:70px;
 	margin-left:-10px;
+	position:relative;
+	top:-2px;
 	
 }
 
@@ -2493,7 +2495,7 @@ height: 25px;
 color:rgb(116,116,116);
 font-family:Georgia, "Times New Roman", Times, serif;
 line-height: 14px;
-padding-left:2px;
+padding-left:4px;
 }
 
 
@@ -2936,7 +2938,10 @@ width:430px;
 }
 #housingMain #left .compareWrap{
 	margin-left:215px;
+	margin-bottom:5px;
+
 }
+
 #housingMain #checkAvailability{
 	border: 1px solid rgb(116,116,116);
 	width:830px;
