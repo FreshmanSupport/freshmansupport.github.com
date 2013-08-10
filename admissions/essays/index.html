@@ -54,6 +54,7 @@
   <div id="acceptedEssays" class="col-5-8">
     <h2>Accepted Student Essays</h2>
     <div id="acceptedEssayContainer">
+      <div id="essay1">
       <div class="info">
         <div class="infoLeft">
           <h3>Information</h3>
@@ -67,7 +68,7 @@
           <h3 style="text-align:right; color:rgb(51, 62, 107);">Enter to win $500 by uploading your essay!</h3>
           <h3 style="text-align:right"></h3>
           <div class="buttonContainer" style="margin-top:-15px;">
-            <button id="upload">Upload Essay</button>
+            <button class="uploadButton">Upload Essay</button>
           </div>
         </div>
       </div>
@@ -107,6 +108,62 @@
           cursus porttitor erat. Pellentesque tincidunt magna id nisl lacinia, at dapibus tellus ornare. 
           Pellentesque sollicitudin justo at dolor porttitor, sit amet fermentum tortor malesuada. </p>
       </div>
+    </div>
+    <div id="essay2" style="display:none;">
+      <div class="info">
+        <div class="infoLeft">
+          <h3>Information</h3>
+          <p>San Diego, California<br />
+            GPA:3.9<br />
+            SAT:1900<br />
+            Rank:9/259 </p>
+        </div>
+        <div class="infoRight"> </div>
+        <div class="addEssay">
+          <h3 style="text-align:right; color:rgb(51, 62, 107);">Enter to win $500 by uploading your essay!</h3>
+          <h3 style="text-align:right"></h3>
+          <div class="buttonContainer" style="margin-top:-15px;">
+            <button id="upload">Upload Essay</button>
+          </div>
+        </div>
+      </div>
+      <div class="essayContainer">
+        <div class="col-1-2">
+          <h3>Essay:</h3>
+        </div>
+        <div class="col-1-2">
+          <div class="voteContainer" style="float:right;"> <span class="upOne">39</span>
+            <div class="upVote"></div>
+            <div class="downVote"></div>
+            <span class="downOne">500</span> </div>
+          <div class="rateEssay">Rate the Essay</div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          In a elit sapien. Ut eleifend pellentesque neque. Aliquam bibendum purus leo. 
+          Suspendisse sit amet purus in tortor facilisis aliquet nec id tortor. 
+          Duis eget massa tincidunt, venenatis est at, ultrices lorem. Morbi eu odio magna. 
+          Aliquam vel lorem in metus ultrices luctus sed ac enim. Vivamus egestas aliquam neque. 
+          Donec pulvinar sem ut sagittis porttitor. Sed tellus lectus, ultrices vel nisl bibendum, 
+          cursus porttitor erat. Pellentesque tincidunt magna id nisl lacinia, at dapibus tellus ornare. 
+          Pellentesque sollicitudin justo at dolor porttitor, sit amet fermentum tortor malesuada. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          In a elit sapien. Ut eleifend pellentesque neque. Aliquam bibendum purus leo. 
+          Suspendisse sit amet purus in tortor facilisis aliquet nec id tortor. 
+          Duis eget massa tincidunt, venenatis est at, ultrices lorem. Morbi eu odio magna. 
+          Aliquam vel lorem in metus ultrices luctus sed ac enim. Vivamus egestas aliquam neque. 
+          Donec pulvinar sem ut sagittis porttitor. Sed tellus lectus, ultrices vel nisl bibendum, 
+          cursus porttitor erat. Pellentesque tincidunt magna id nisl lacinia, at dapibus tellus ornare. 
+          Pellentesque sollicitudin justo at dolor porttitor, sit amet fermentum tortor malesuada. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          In a elit sapien. Ut eleifend pellentesque neque. Aliquam bibendum purus leo. 
+          Suspendisse sit amet purus in tortor facilisis aliquet nec id tortor. 
+          Duis eget massa tincidunt, venenatis est at, ultrices lorem. Morbi eu odio magna. 
+          Aliquam vel lorem in metus ultrices luctus sed ac enim. Vivamus egestas aliquam neque. 
+          Donec pulvinar sem ut sagittis porttitor. Sed tellus lectus, ultrices vel nisl bibendum, 
+          cursus porttitor erat. Pellentesque tincidunt magna id nisl lacinia, at dapibus tellus ornare. 
+          Pellentesque sollicitudin justo at dolor porttitor, sit amet fermentum tortor malesuada. </p>
+      </div>
+    </div>
     </div>
     <div id="uploadEssayForm" style="display:none">
       <p>Hey your essay is going to be private like just trust us anonymous complete. It's straight</p>
@@ -184,8 +241,8 @@
         <div>
           <div class="sideEssayContainer">
             <div class="topEssay">
-              <div class="esssayTitle"><a href="#">Title of Essay</a></div>
-              <div class="voteContainer"> <span class="upOne">100</span>
+              <div class="esssayTitle"><a href="#" id="essayPreview1">Title of Essay</a></div>
+              <div class="voteContainer grayOut"> <span class="upOne">100</span>
                 <div class="upVote"></div>
                 <div class="downVote"></div>
                 <span class="downOne">2</span> </div>
@@ -202,7 +259,7 @@
           </div>
           <div class="sideEssayContainer">
             <div class="topEssay">
-              <div class="esssayTitle"><a href="#">Title of Essay</a></div>
+              <div class="esssayTitle"><a href="#" id="essayPreview2">Title of Essay</a></div>
               <div class="voteContainer grayOut"> <span class="upOne">39</span>
                 <div class="upVote"></div>
                 <div class="downVote"></div>
@@ -221,7 +278,7 @@
           <div class="sideEssayContainer">
             <div class="topEssay">
               <div class="esssayTitle"><a href="#">Title of Essay</a></div>
-              <div class="voteContainer"> <span class="upOne">100</span>
+              <div class="voteContainer grayOut"> <span class="upOne">100</span>
                 <div class="upVote"></div>
                 <div class="downVote"></div>
                 <span class="downOne">2</span> </div>
@@ -259,7 +316,7 @@
           <div class="sideEssayContainer">
             <div class="topEssay">
               <div class="esssayTitle"><a href="#">Title of Essay</a></div>
-              <div class="voteContainer"> <span class="upOne">100</span>
+              <div class="voteContainer grayOut"> <span class="upOne">100</span>
                 <div class="upVote"></div>
                 <div class="downVote"></div>
                 <span class="downOne">2</span> </div>
@@ -277,7 +334,7 @@
           <div class="sideEssayContainer">
             <div class="topEssay">
               <div class="esssayTitle"><a href="#">Title of Essay</a></div>
-              <div class="voteContainer"> <span class="upOne">100</span>
+              <div class="voteContainer grayOut"> <span class="upOne">100</span>
                 <div class="upVote"></div>
                 <div class="downVote"></div>
                 <span class="downOne">2</span> </div>
@@ -295,7 +352,7 @@
           <div class="sideEssayContainer">
             <div class="topEssay">
               <div class="esssayTitle"><a href="#">Title of Essay</a></div>
-              <div class="voteContainer"> <span class="upOne">100</span>
+              <div class="voteContainer grayOut"> <span class="upOne">100</span>
                 <div class="upVote"></div>
                 <div class="downVote"></div>
                 <span class="downOne">2</span> </div>
@@ -313,7 +370,7 @@
           <div class="sideEssayContainer">
             <div class="topEssay">
               <div class="esssayTitle"><a href="#">Title of Essay</a></div>
-              <div class="voteContainer"> <span class="upOne">100</span>
+              <div class="voteContainer grayOut"> <span class="upOne">100</span>
                 <div class="upVote"></div>
                 <div class="downVote"></div>
                 <span class="downOne">2</span> </div>
@@ -352,14 +409,27 @@ essaySlider = new Swipe(document.getElementById('essaySlider'), {
 });
 </script>
 <script>
-$( "#upload" ).click(function() {
+$( ".uploadButton" ).click(function() {
   $('#uploadEssayForm').animate({width: 'toggle'});
-
-	$('#acceptedEssayContainer').toggle();
+	$('#acceptedEssayContainer').animate({width: 'toggle'});
 });
 $( "#submit" ).click(function() {
+		$('#uploadEssayForm').animate({width: 'toggle'});
   $('#acceptedEssayContainer').animate({width: 'toggle'});
 
-	$('#uploadEssayForm').toggle();
 });
+//Toggle Essay, if an essay is open toggle that essay and open the new one(have not build that function)
+//There is a bug when you click onUpload essay and click on title of essay (perhap check if acceptedEssayContainer is hidden?
+$( "#essayPreview1" ).click(function() {
+	$('#essay1').animate({width: 'toggle'});
+	$('#essay2').hide();
+	})
+	
+$( "#essayPreview2" ).click(function() {
+	$('#essay2').animate({width: 'toggle'});
+	$('#essay1').hide();
+
+})
+
+
 </script>

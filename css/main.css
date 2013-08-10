@@ -129,10 +129,9 @@
 	display: inline-block;
 	margin-left: 10px;
 }
-.voteContainer.grayOut .upVote{cursor:default; border-bottom-color:rgb(116,116,116);}
-.voteContainer.grayOut .downVote{cursor:default; border-top-color:rgb(116,116,116)}
+.voteContainer.grayOut .upVote{cursor:default; border-bottom-color:rgba(116,116,116,0.5);}
+.voteContainer.grayOut .downVote{cursor:default; border-top-color:rgba(116,116,116,0.5);}
 .voteContainer.grayOut .upOne, .voteContainer.grayOut .downOne{color:rgba(116,116,116, 0.5);}
-.voteCotnainer.uP
 .voteContainer {
 	margin: 10px auto;
 	display: block;
