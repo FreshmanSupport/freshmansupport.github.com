@@ -67,7 +67,7 @@
 }
 /* ======================= Admission =================== */
 .admissions {}
-#QA{padding:0 50px;}
+#recentlyAnswered{padding:0 50px;}
 .admissions #data{border-left: 1px solid rgb(116,116,116);}
 .admissions #essay{border-left: 1px solid rgb(116,116,116);}
 .essay img {
@@ -243,34 +243,34 @@
 	width: 100%;
 	position:relative;
 }
-#QA h3 {
+#recentlyAnswered h3 {
 	text-align: left;
 }
-#QA.col-5-8{border-right:1px solid rgb(116,116,116);}
-#QA p {
+#recentlyAnswered.col-5-8{border-right:1px solid rgb(116,116,116);}
+#recentlyAnswered p {
 	text-align: left;
 }
-#QA img {
+#recentlyAnswered img {
 	width: 150px;
 	height: 150px;
 	display: block;
 	margin: 0 auto;
 }
-#QA .profilePic p {
+#recentlyAnswered .profilePic p {
 	text-align: center;
 }
-#QA a {
+#recentlyAnswered a {
 	font-size: 14px;
 	color: rgb(51, 62, 106);
 	text-decoration: none;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
-#QA ul {
+#recentlyAnswered ul {
 	list-style-type: none;
 	margin:0;
 	padding:0;
 }
-#QA li {
+#recentlyAnswered li {
 	margin: 0;
 	padding: 0;
 	border-bottom: 1px solid rgb(116,116,116);
@@ -1043,13 +1043,13 @@ padding-top: 9px;
 	vertical-align: top;
 	width: 50px;
 	height: 50px;
-	background-color: white;
-	border: 1px solid rgb(51,61,105);
+	background-color: rgb(51,61,105);
 	border-radius: 50%;
 	margin-right: 5px;
 }
 .stateWrap input[type=radio]:checked + label {
-	background-color: rgb(51,61,105);
+	background-color: rgb(220, 134, 39);
+	
 }
 .finances .semesterWrap{
 	display: block;
@@ -1062,9 +1062,9 @@ padding-top: 9px;
 #budgetPlanner input[type=radio] {
 	display: none;
 }
-.stateWrap label:nth-child(4){margin-left: 60px;}
+.stateWrap label:nth-child(2){margin-right:110px;}
 .stateWrap.initialColor label:nth-child(2) {background-color: rgb(51,61,105);}
-.stateWrap.initialColor label:nth-child(4) {background-color: rgb(51,61,105); margin-left:110px;}
+.stateWrap.initialColor label:nth-child(4) {background-color: rgb(51,61,105);}
 .semesterWrap label, .transWrap label {
 	color: white;
 	background-color: rgb(51, 62, 107);
