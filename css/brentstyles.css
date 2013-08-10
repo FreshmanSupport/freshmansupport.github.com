@@ -268,6 +268,12 @@ vertical-align:top;
 	margin-left:0px;
 	padding-top:10px;
 }
+#housingResultsContainer #availability button{
+	margin-left:465px;
+	margin-top:-5px;
+	margin-bottom:10px;
+
+}
 #housingResultsContainer #choice{
 	width:140px;
 }
@@ -417,13 +423,13 @@ font-family: HNB;
 	padding-left: 10px;
 	text-align:left;
 	vertical-align:top;
-margin-top:-30px;}
+margin-top:-25px;}
 
 #matches #availability h3 {
 	font-size: 14px;
 	font-family:HNL;
 	text-align: left;
-	color: rgb(51,62,106);
+	color: rgb(116,116,116);
 	display: inline;
 	margin-right: 10px;
 	font-weight: normal;
@@ -619,10 +625,13 @@ font-family: Georgia, "Times New Roman", Times, serif;
 	
 
 }
-#housingQ img{
-position:relative;
-top:4px;
-margin-left:-2	px;
+#housingQ .classif img{
+margin:10px;
+
+}
+#housingQ .classif{
+	margin-top:-15px;
+	margin-bottom:5px;
 }
 #housingQ h3, #housingMain #housingQ h3 {
 	font-family: HNL;
@@ -657,7 +666,7 @@ width:300px;
 text-align:left;
 margin-right:10px;
 margin-bottom:3px;
-margin-top:3px;
+margin-top:0px;
 }
 #housingMain #housingQ .item1{
 width:175px;
@@ -2500,10 +2509,11 @@ padding-left:4px;
 
 
 .dropDown .pref{
-width:97.9%;
-height:24px;
-padding-left:2px;
+border: 1px solid rgb(116,116,116);
+
+width:96%;
 padding-top:5px;
+height:18px;
 }
 textarea{
 border:1px solid rgb(116,116,116);
@@ -3175,7 +3185,7 @@ margin-top:10px;
 	width:791px;
 }
 #housingResultsContainer #availability button{
-	margin-left:765px;
+	margin-left:775px;
 	margin-top:-5px;
 
 }
