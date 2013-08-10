@@ -143,61 +143,25 @@ body {
 #container {
 	margin: 0 auto;
 }
-#choice {
-	width: 145px;
-	margin-bottom: 10px;
-	margin-right: 10px;
-	display: inline-block;
-	color: rgb(51,62,106);
-}
 
-#choice .important, #choice .notImportant, #choice .dealBreaker, #choice .semiImportant {
-	float: left;
-	cursor:pointer;
+
+
+
+
+
+ol li {
+	display: block;
+	margin-top: 25px;
 }
-.notImportant{
-	background-color:white;
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	border: 1px solid rgb(116,116,116);
-	display: inline-block;
-	margin: auto;
-	margin-left: 2px;
-	margin-right: 7px;
-}
-.semiImportant{
-	background-color: rgb(140,146,162);
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	border: 1px solid rgb(116,116,116);
-	display: inline-block;
-	margin: auto;
-	margin-left: 2px;
-	margin-right: 7px;
-}
-.important{
-	background-color:rgb(51,62,106);
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	border: 1px solid rgb(116,116,116);
-	display: inline-block;
-	margin: auto;
-	margin-left: 2px;
-	margin-right: 7px;
-}
-.dealBreaker{
-	background-color: rgb(220, 134, 39);
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	border: 1px solid rgb(116,116,116);
-	display: inline-block;
-	margin: auto;
-	margin-left: 2px;
-	margin-right: 7px;
+#matches {
+	width: 1000px;
+	max-width:100%;
+	background-color: white;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: rgb(116,116,116);
+	text-align:center;
+	margin-top:20px;
 }
 /*=========housing matcher results ===============*/
 
@@ -320,6 +284,57 @@ vertical-align:top;
 	color: rgb(51,62,106);
 }
 
+#choice .important, #choice .notImportant, #choice .dealBreaker, #choice .semiImportant {
+	float: left;
+	cursor:pointer;
+}
+.notImportant{
+	background-color:white;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: 1px solid rgb(116,116,116);
+	display: inline-block;
+	margin: auto;
+	margin-left: 2px;
+	margin-right: 7px;
+}
+
+.semiImportant{
+	background-color: rgb(140,146,162);
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: 1px solid rgb(116,116,116);
+	display: inline-block;
+	margin: auto;
+	margin-left: 2px;
+	margin-right: 7px;
+}
+
+.important{
+	background-color:rgb(51,62,106);
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: 1px solid rgb(116,116,116);
+	display: inline-block;
+	margin: auto;
+	margin-left: 2px;
+	margin-right: 7px;
+}
+
+.dealBreaker{
+	background-color: rgb(220, 134, 39);
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: 1px solid rgb(116,116,116);
+	display: inline-block;
+	margin: auto;
+	margin-left: 2px;
+	margin-right: 7px;
+}
 
 
 
@@ -806,7 +821,6 @@ margin-top:23px;
 
 #recommended #{
 	margin-top:0px;
-	
 	height:10px;
 }
 
@@ -2997,6 +3011,9 @@ text-align:center;
 width:1200px;
 }
 #recommendedHousingFooter{
+	width:1300px;
+}
+#housingResultsContainer{
 	width:1300px;
 }
 #housingResultsContainer #preferences {
