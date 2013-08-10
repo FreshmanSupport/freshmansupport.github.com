@@ -298,7 +298,7 @@
 #essay .dropDown,#essay .dropDown select, #essay .dropDown select option{width: 150px;}
 .selectContainer{margin-top:40px; margin-bottom:20px;}
 #acceptedEssays ,#maincontent.essays #essay{height: 650px;}
-#maincontent #answerNav{bottom:0;}
+#maincontent.essays #answerNav{bottom:0;}
 #uploadEssayForm label{
 	text-align:right; 
 	width: 100px; 
