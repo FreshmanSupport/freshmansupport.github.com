@@ -33,7 +33,7 @@ font-size:14px;
 .normal{
 	font-weight:normal;
 }
-a {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
+a {color:rgb(51,62,106); font-size:14px; text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
 
 a:link {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
 a:visited {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
@@ -284,7 +284,7 @@ ol li {
 	margin-top:20px;
 }
 #matches h3 {
-	font-size: 18px;
+	font-size: 24px;
 font-family: HNB;
 	text-align: left;
 	margin: auto;
@@ -348,7 +348,7 @@ font-family: HNB;
 margin-top:-40px;}
 
 #matches #availability h3 {
-	font-size: 18px;
+	font-size: 24px;
 	font-family:HNL;
 	text-align: left;
 	color: rgb(51,62,106);
@@ -413,7 +413,7 @@ margin-top:-40px;}
 
 }
 #housingResultsContainer #compatibility h3{
-	font-size: 18px;
+	font-size: 24px;
 	font-family:HNL;
 	text-align: left;
 	color: rgb(51,62,106);
@@ -551,7 +551,7 @@ margin-left:-2	px;
 }
 #housingQ h3, #housingMain #housingQ h3 {
 	font-family: HNL;
-	font-size: 18px;
+	font-size: 24px;
 	color: rgb(51,62,106);
 	font-weight: normal;
 	text-align: center;
@@ -602,8 +602,10 @@ width:105px;
 }
 
 #housingMain .picWrapper img{
-	width:65px;
-	height:59px;
+	width:75px;
+	height:69px;
+	margin-bottom:5px;
+	margin-top:0px;
 
 }
 #housingQ .importance, #housingQ .importance1{
@@ -727,12 +729,12 @@ margin-top:23px;
 
 
 #recommended h2{
-	font-family:HNB;
-	font-size:30px;
+	font-family:HNL;
+	font-size:24px;
 	color:rgb(51, 62, 106);
 	text-align:left;
 	margin-top:-5px;
-	margin-bottom:-18px;
+	margin-bottom:-24px;
 	padding-bottom:0px;
 	margin-left:0px;
 }
@@ -775,7 +777,7 @@ line-height:20px;
 }
 
 #housingVideo{
-	width:150px;
+	width:140px;
 	height:115px;
 	float:left;
 	display:block;	
@@ -783,6 +785,10 @@ line-height:20px;
 	margin-right:15px;
 	margin-bottom:10px;
 
+	}
+	#housingVideo img{
+	width:140px;
+	height:115px;
 	}
 	
 		.viewMoreRight{
@@ -1066,7 +1072,7 @@ height:20px;
 }
 
 #financeContainer #budgetPlanner #left #boxWrap{
-	width:318px;
+	width:324px;
 	margin:0 auto;
 }
 
@@ -1280,7 +1286,7 @@ display:inline-block;
 line-height:50px;}
  .compare{
 	font-family: HNL;
-	font-size:18px;
+	font-size:24px;
 	color:rgb(220, 134, 39);
 	margin-left:3px;
 	position:relative;
@@ -1578,7 +1584,7 @@ text-align:center;
 }
 
 #propListing h3{
-	font-size:18px;
+	font-size:24px;
 	color:rgb(51,62,106);
 	margin-bottom:10px;
 	text-align:center;
@@ -1587,7 +1593,7 @@ text-align:center;
 }
 
 #propListing #top h3, #propListing #squeezeTop1 h3{
-	font-size:18px;
+	font-size:24px;
 	color:rgb(116,116,116);
 	margin-bottom:10px;
 	text-align:center;
@@ -1638,7 +1644,7 @@ margin:auto;
 	text-align:center;
 }
 #propListing #housingMain #left .compareWrap{
-margin-left:85px;
+margin-left:82px;
 }
 #propListing #housingMain #left .viewMoreRight{
 	margin-left:235px;
@@ -1662,7 +1668,7 @@ margin-top:0px;
 
 #comparePage .category{
 	color:rgb(51,62,106);
-	font-size:18px;
+	font-size:24px;
 	font-family:HNL;
 	text-align:left;
 }
@@ -1760,7 +1766,7 @@ display:none;
 	float:right;
 }
 #picsAndVids #videoWrap h3{
-	font-size:18px;
+	font-size:24px;
 	margin:0;
 	padding:0;
 }
@@ -1844,16 +1850,17 @@ display:none;
 
 #recommendedHousingFooter #item, #recommendedHousingFooterSqueeze #item{
 	display:inline-block;
-	margin-right:40px;
-	margin-left:40px;
+	margin-right:10px;
+	margin-left:10px;
 	
 }
 
 #recommendedHousingFooter h3, #recommendedHousingFooterSqueeze h3 {
 	color:rgb(51,62,106);
-	font-family:HNB;
+	font-family:HNL;
 	margin-bottom:0;
 	margin-top:0px;
+	font-size:24px;
 }
 
 #recommendedHousingFooter #item p, #recommendedHousingFooterSqueeze #item p{
@@ -1908,12 +1915,13 @@ margin-right:15px;
 }
 
 #housingMain #left .compareWrap{
-	margin-left:18px;
+	margin-left:21px;
 	display:inline-block;
 vertical-align:bottom;
 font-family:Georgia;
 font-size:14px;
 color:rgb(116,116,116);
+
 }
 
 
@@ -1962,7 +1970,7 @@ position:relative;
 }
 
 #housingMain #right #deadlinesDiv p, #deadlinesDiv1{
-font-size:18px;
+font-size:24px;
 
 }
 #compareDiv{
@@ -1974,14 +1982,14 @@ margin-bottom:10px;
 }
 .compare{
 	color:rgb(220, 134, 39);
-	font-size:18px;
+	font-size:24px;
 	font-family:HNL;
 }
 
 #housingMain .compare{
 	font-family: HNL;
 	color:rgb(220, 134, 39);
-font-size:18px;
+font-size:24px;
 	margin-left:3px;
 	position:relative;
 	top:2px	;
@@ -2006,7 +2014,7 @@ font-size:18px;
 }
 #housingMain .housingType{
 	font-family:Georgia;
-	font-size:18px;
+	font-size:14px;
 	color:rgb(116,116,116);
 }
 
@@ -2018,7 +2026,7 @@ font-size:18px;
 
 }
 #housingMain #checkAvailability h2{
-	font-size:18px;
+	font-size:14px;
 	text-align:left;
 	margin:5px 10px;
 }
@@ -2288,7 +2296,7 @@ font-family:Georgia;
 	margin-top:0px;
 	vertical-align:top;
 	font-family:HNB; 
-	font-size:18px;
+	font-size:24px;
 	text-align:center; 
 	display:inline-block;
 	color:rgb( 51, 62, 106);
@@ -2363,23 +2371,27 @@ margin-top:10px;
 
 #fiveOwls{
 margin-top:-3px;
-margin-left:-3px;
-
+margin-left:0px;
 	width:145px;
 	display:inline-block;
 	
 }
-
+#housingMain #fiveOwls{
+	margin-top:-10px;
+}
+#housingMain .compareWrap{
+margin-top:40px;
+}
 
 #fiveOwls img{
 	display:inline;
-	width:23px;
+	width:18px;
 	
 }
 .interests{
 	color:rgb(51,62,106);
 	font-family:HNB;
-	font-size:18px;
+	font-size:24px;
 	margin-top:0px;
 }
 
@@ -2411,7 +2423,7 @@ padding-left:2px;
 
 .dropDown .pref{
 width:97.9%;
-height:18px;
+height:24px;
 padding-left:2px;
 padding-top:5px;
 }
@@ -2495,7 +2507,7 @@ margin-top:10px;
 	}
 
 	#housingMain #left .compareWrap{
-	margin-left:108px;
+	margin-left:105px;
 	
 	}
 	#housingMain #checkAvailability button{
@@ -2835,7 +2847,7 @@ width:430px;
 	
 }
 #housingMain #left .compareWrap{
-	margin-left:181px;
+	margin-left:215px;
 }
 #searchwrapper{
 	border:1px solid rgb(51,62,106);
@@ -3014,7 +3026,7 @@ margin-left:430px;
 	vertical-align:top;
 }
 #propListing #housingMain #left .compareWrap{
-margin-left:210px;
+margin-left:207px;
 }
 #propListing #name{
 	margin-left:2px;
@@ -3204,7 +3216,7 @@ width:530px;
 	
 }
 #housingMain #left .compareWrap{
-	margin-left:365px;
+	margin-left:362px;
 }
 #searchwrapper{
 	border:1px solid rgb(51,62,106);
