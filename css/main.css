@@ -1241,10 +1241,9 @@ padding-top: 9px;
 #maincontent.budgetPlanner .finale h2{color:rgb(220, 134, 39);}
 #currentNumber{display:inline-block;}
 /* ==================== Data ====================== */
-#maincontent.data h3{color:rgb(220, 134, 39);font-size:28px; margin: 20px 0 0 0; white-space:nowrap;}
-#finAid{border-right: 1px solid rgb(116,116,116);}
-#finAid .textWrap{width:200px; display:block; margin:0 auto;}
-#schoolCosts{border-bottom:1px rgb(116,116,116) solid;}
+#maincontent.data #payForCollege h3{font-family: HNL;font-size: 18px;color: rgb(116, 116, 116);font-weight: normal; margin-bottom:0;}
+#maincontent.data #payForCollege p{margin-top:0;}
+#payForCollege .textWrap{width:200px; display:block; margin:0 auto;}
 #schoolCosts .square{width:20px; height:20px; margin:0; display:inline-block; margin-right: 10px;}
 #schoolCosts ul{width:400px;}
 #schoolCosts li{
@@ -1256,7 +1255,7 @@ padding-top: 9px;
 	text-align:left;
 	margin-bottom: 10px;
 }
-#finDataMid{border-right:1px solid rgb(116,116,116);}
+#finDataMid{border-left:1px solid rgb(116,116,116);}
 .c1{background-color:#333D69;}
 .c2{background-color:#44567F;}
 .c3{background-color:#596B9E;}
@@ -1264,16 +1263,23 @@ padding-top: 9px;
 #schoolCosts .legend{border:0;}
 .chartContainer{width: 115px; display:block; margin:0 auto;}
 #studentEmployment{margin-top: 30px;}
-.pFlush{height: 120px;}
-#maincontent.financialAid .pFlush p{text-align:left;}
 #maincontent #data h3{margin-top:0;}
+#financialAid {border-left:1px solid rgb(116,116,116);}
+#financialAid a{
+	display:block; 
+	text-decoration:none; 
+	color:rgb(51, 62, 107);
+	font-family:Georgia, "Times New Roman", Times, serif; 
+	margin-bottom:10px;
+	padding-left:50px;
+}
 /* ================= Financial Aid ================= */
 .financialAid{}
 .financialAid img{display:block; margin:0 auto;}
 .financialAid h1{font-size:34px; font-family:HNL; font-weight:normal; text-align:center;color:rgb(51, 62, 107);}
 .financialAid a{display:block; text-decoration:none; color:rgb(51, 62, 107);font-family:Georgia, "Times New Roman", Times, serif; margin-bottom:10px;}
 #grant, #loan, #workStudy{padding: 10px; margin-bottom: 20px;}
-#loan{border-left:1px solid rgb(116,116,116);border-right:1px solid rgb(116,116,116);}
+
 .financialAid #recentAnswers .view{margin-top: 8px;}
 /* ============== Deadlines =================== */
 .smallCalendar{width: 400px;}
@@ -1607,6 +1613,7 @@ hr {
 }
 .ring:last-child{margin-right:0;}
 .ringContainer{padding-left:25px;}
+.pad50{padding:0 50px; !important}
 /* Easter Egg for small resolution*/
 @media(max-width:360px){
 #maincontent, #header, #footer, .footer{display:none;}
