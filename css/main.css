@@ -995,8 +995,8 @@ padding-top: 9px;
 .finances #data p {
 	margin-bottom: 0;
 }
-.finances #data .view {
-	margin-top: 35px;
+.finances #dataTop .view {
+	margin-bottom: 17px;
 }
 .finances #fafsa {
 	border-left: 1px solid rgb(116,116,116);
@@ -1006,33 +1006,36 @@ padding-top: 9px;
 	margin-bottom: 70px;
 }
 .finances #budgetPlanner {
-	margin-bottom: 30px;
 	vertical-align:top;
 	position:relative;
 	height:444px;
 }
  #state {
-	margin-top: 64px;
+	margin-top: 30px;
 }
  .stateWrap {
 	display: block;
 	margin: 0 auto;
-	width: 145px;
+	width: 225px;
 }
  .stateTextWrap {
 	display: block;
 	margin: 0 auto;
-	width: 180px;
 	margin-bottom: 10px;
-	font-size: 18px;
-	color:rgb(116,116,116);
+	font-size: 14px;
+	color:rgb(51, 62, 107);
+	white-space:nowrap;
+	width:225px;
 }
+.stateTextWrap div:first-child{display:inline-block;}
+.stateTextWrap div:nth-child(2){display:inline-block;padding-left:57px;}
+.stateTextWrap div:last-child{display:inline-block;padding-left:35px;}
 #budgetPlanner h3{color:rgb(116,116,116);}
  .stateWrap label {
 	display: inline-block;
 	vertical-align: top;
-	width: 35px;
-	height: 35px;
+	width: 50px;
+	height: 50px;
 	background-color: white;
 	border: 1px solid rgb(51,61,105);
 	border-radius: 50%;
@@ -1054,7 +1057,7 @@ padding-top: 9px;
 }
 .stateWrap label:nth-child(4){margin-left: 60px;}
 .stateWrap.initialColor label:nth-child(2) {background-color: rgb(51,61,105);}
-.stateWrap.initialColor label:nth-child(4) {background-color: rgb(182,197,220);}
+.stateWrap.initialColor label:nth-child(4) {background-color: rgb(51,61,105); margin-left:110px;}
 .semesterWrap label, .transWrap label {
 	color: white;
 	background-color: rgb(51, 62, 107);
@@ -1087,7 +1090,7 @@ padding-top: 9px;
 }
 .cost {
 	color: rgb(51, 62, 107);
-	font-size: 34px;
+	font-size: 24px;
 	font-family: HBL;
 	text-align: center;
 }
@@ -1246,7 +1249,7 @@ padding-top: 9px;
 #studentEmployment{margin-top: 30px;}
 .pFlush{height: 120px;}
 #maincontent.financialAid .pFlush p{text-align:left;}
-
+#maincontent #data h3{margin-top:0;}
 /* ================= Financial Aid ================= */
 .financialAid{}
 .financialAid img{display:block; margin:0 auto;}
@@ -1577,7 +1580,16 @@ hr {
 .buttonContainer{display:block; width:100%; overflow:hidden;}
 .tab{ text-indent:40px;}
 .hr{height:1px; border-bottom: 1px solid rgb(116,116,116); width: 90%; margin:0 auto;}
-
+.ring{
+	background-image:url(../img/orangeRing.png); 
+	background-size: 100% 100%; 
+	width:100px; height:100px; 
+	padding-top: 35px;
+	display:inline-block;
+	margin-right:55px;
+}
+.ring:last-child{margin-right:0;}
+.ringContainer{padding-left:25px;}
 /* Easter Egg for small resolution*/
 @media(max-width:360px){
 #maincontent, #header, #footer, .footer{display:none;}
