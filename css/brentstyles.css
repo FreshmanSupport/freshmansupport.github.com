@@ -598,7 +598,7 @@ margin-top:-15px;
 	position: relative;
 }
 #housingQ .gray{
-font-style:italic;
+	font-style:italic;
 }
 #housingQ {
 	font-family:HNL;
@@ -1718,9 +1718,7 @@ margin:auto;
 	font-size:14px;
 	text-align:center;
 }
-#propListing #housingMain #left .compareWrap{
-margin-left:82px;
-}
+
 #propListing #housingMain #left .viewMoreRight{
 	margin-left:235px;
 }
@@ -1990,15 +1988,15 @@ margin-right:15px;
 }
 
 #housingMain #left .compareWrap{
-	margin-left:21px;
+	margin-left:85px;
 	display:inline-block;
 vertical-align:bottom;
 font-family:Georgia;
 font-size:14px;
 color:rgb(116,116,116);
+margin-top:49px;
 
 }
-
 
 #housingMain #left #item h3{
 	font-family:HNL;
@@ -2095,8 +2093,8 @@ font-size:24px;
 
 #housingMain #checkAvailability{
 	border: 1px solid rgb(116,116,116);
-	width:98%;
-	margin-top:10px;
+	width:97%;
+	margin-top:17px;
 	
 
 }
@@ -2145,7 +2143,7 @@ font-size:24px;
 
 #reviewsPage h3{
 	font-size:24px;
-	font-family:HNB;
+	font-family:HNL;
 	text-align:center;
 	margin-bottom:5px;
 }
@@ -2195,7 +2193,7 @@ font-size:24px;
 #reviewsPage #left .propComment{
 		max-width:100%;
 		border:1px solid rgb(116,116,116);
-		width:663px;
+		width:383px;
 		padding:5px;
 		margin-left:140px;
 		background-color:rgb(232,229,228);
@@ -2585,7 +2583,7 @@ margin-top:10px;
 	}
 
 	#housingMain #left .compareWrap{
-	margin-left:105px;
+	margin-left:172px;
 	
 	}
 	#housingMain #checkAvailability button{
@@ -2594,6 +2592,7 @@ margin-top:10px;
 	#propListing #housingMain #left .compareWrap{
 		margin-left:115px;
 }
+
 	#propListing #top #left, #propListing #top #right{
 	display:block;
 	margin:auto;
@@ -2881,6 +2880,17 @@ width:1000px; margin:auto; max-width:100%; min-height:300px;
 }
 
 @media (min-width:1300px){
+#reviewsPage #left .propComment{
+		max-width:100%;
+		border:1px solid rgb(116,116,116);
+		width:663px;
+		padding:5px;
+		margin-left:140px;
+		background-color:rgb(232,229,228);
+		padding-right:20px;
+		padding-bottom:10px;
+
+}
 #housingMain #checkAvailability button{
 margin-left:688px;
 margin-bottom:10px;
@@ -2926,6 +2936,13 @@ width:430px;
 }
 #housingMain #left .compareWrap{
 	margin-left:215px;
+}
+#housingMain #checkAvailability{
+	border: 1px solid rgb(116,116,116);
+	width:830px;
+	margin-top:17px;
+	
+
 }
 #searchwrapper{
 	border:1px solid rgb(51,62,106);
