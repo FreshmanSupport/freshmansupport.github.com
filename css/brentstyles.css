@@ -417,10 +417,10 @@ font-family: HNB;
 	padding-left: 10px;
 	text-align:left;
 	vertical-align:top;
-margin-top:-40px;}
+margin-top:-30px;}
 
 #matches #availability h3 {
-	font-size: 24px;
+	font-size: 14px;
 	font-family:HNL;
 	text-align: left;
 	color: rgb(51,62,106);
@@ -865,7 +865,7 @@ line-height:20px;
 	}
 	#housingVideo img{
 	width:140px;
-	height:115px;
+	height:122px;
 	}
 	
 		.viewMoreRight{
