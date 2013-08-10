@@ -338,7 +338,7 @@
 .gray{color:rgb(116,116,116);}
 .rateEssay{float:right; color:rgb(116,116,116); display:inline-block;}
 .essayContainer .voteContainer{margin:0;}
-
+.floatWrap{margin-top:22px;}
 /* ============ Roomie Match ================= */
 .rmTable {
 	margin: 0 auto;
