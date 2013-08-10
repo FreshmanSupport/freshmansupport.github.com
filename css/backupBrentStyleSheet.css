@@ -1,0 +1,3386 @@
+	/* font-family: "HNL"; */
+	src: url(../fonts/helveticaneue-light.otf);
+}
+@font-face {
+	font-family: "HNB";
+	src: url(../font/helveticaneue-boldcond.otf);
+}
+.blue{
+	color:rgb(51,62,106);
+	font-family:Georgia;
+	font-size:14px;
+}
+.orange{
+	color: rgb(220, 134, 39);
+
+}
+.gray{
+color:rgb(116,116,116);
+font-family:Georgia;
+font-size:14px;
+}
+
+.hide{
+	display:none;
+}
+.bold{
+	font-weight:bold;
+}
+
+.hbold{
+	font-family:HNB;
+}
+.normal{
+	font-weight:normal;
+}
+a {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
+
+a:link {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
+a:visited {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
+a:hover {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
+a:active {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
+/* ============== MAIN CONTENT ====================*/
+#maincontent {
+	background: white;
+	width: 1000px;
+	max-width:100%;
+	margin: 0 auto;
+	
+}
+#maincontent h2 {
+	color: rgb(51, 62, 107);
+	font-size: 30px;
+	font-weight: normal;
+	font-family: HNL;
+	margin: 13px;
+}
+#maincontent h3 {
+	font-family: HNL;
+	font-size: 30px;
+	color: rgb(51,62,106);
+	font-weight: normal;
+	margin: 25px;
+}
+#maincontent h2, #maincontent h3 {
+	text-align: center;
+}
+#maincontent p {
+	color: gray;
+	text-align: center;
+	font-family: HNL;
+	font-size: 14px;
+}
+
+
+/* ============== Footer  ===================*/
+.footer {
+	width: 99%;
+	background-color: rgb(232, 229, 228);
+	text-align: center;
+	border: 4px solid gray;
+	white-space: nowrap;
+	margin: 0 auto;
+}
+.footer h2 {
+	font-family: HNL, Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	color: rgb( 51, 62, 106);
+	font-weight: normal;
+	margin: 10px 0;
+}
+.footer h3 {
+	font-family: HNL;
+	font-size: 14px;
+	color: rgb(116,116,116);
+	font-weight: normal;
+	margin: 0;
+}
+.footer p {
+	color: rgb(118,116,116);
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	text-align: left;
+	margin: 0;
+}
+.footer img {
+	margin: 0 auto;
+}
+.footer form {
+	margin: auto;
+	position: relative;
+	width: 100%;
+	height: 450px;
+}
+.footer input, .footer textarea {
+	width: 100%;
+	display: block;
+}
+.footer textarea {
+	height: 200px;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: white;
+
+}
+body {
+	background-color:white;
+	font-family: HBL;
+	width:100%;
+	height:100%;
+}
+#container {
+	margin: 0 auto;
+}
+
+/
+/*=========housing matcher results ===============*/
+
+#housingResultsContainer {
+	width:1000px;
+	max-width:100%;
+	}
+	
+#housingResultsContainer .button {
+	background-color: rgb(230, 229, 228);
+	color: rgb(51, 62, 106);
+	font-size: 14px;
+	border: 1px solid rgb(116,116,116);
+	padding-right: 5px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin-right: 10px;
+}
+.button img {
+	margin-left: 2px;
+	margin-right: 1px;
+	width: 16px;
+	height: 10px;
+}
+
+ .arrow_box {
+        top:25px;
+        position: relative;
+        background: white;
+        border: 1px solid rgb(116, 116, 116);
+		margin-bottom:15px;
+        
+
+    }
+    .arrow_box:after, 
+    .arrow_box:before {
+        bottom: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+    }
+    
+    .arrow_box:after {
+        border-color: rgba(116, 116, 116,0);
+        border-bottom-color: white;
+        border-width: 22px;
+        left: 100px;
+        margin-left: -22px;
+    }
+    .arrow_box:before {
+        border-color: rgba(116, 116, 116,0);
+        border-bottom-color: rgb(116,116, 116);
+        border-width: 23px;
+        left: 100px;
+        margin-left: -23px;
+    }
+	
+.hidden{
+	display:none;
+}
+
+.show{
+	display:inline;
+}
+	
+#housingResultsContainer #preferences {
+	width:940px;
+	margin:auto;
+	margin-top:3px;
+	margin-bottom:20px;
+	min-height: 170px;
+	background-color: white;
+	padding-top:20px;
+	padding-left:20px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: rgb(116,116,116);
+display:none;
+vertical-align:top;
+}
+#listWrap {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#preferences ul, #preferences li {
+	margin-left: -20px;
+	margin-right: 30px;
+	display: inline;
+	list-style-type: circle;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	text-align: left;
+		color: rgb(51,62,106);
+
+}
+#housingResultsContainer #choices{
+	border-top: 1px solid rgb(116,116,116);
+	width:98%;
+	margin:auto;
+	margin-left:0px;
+	padding-top:10px;
+}
+#housingResultsContainer #choice{
+	width:140px;
+}
+#choices {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	margin-bottom:10px;
+	
+	
+}
+#choice {
+	width: 145px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	display: inline-block;
+	color: rgb(51,62,106);
+}
+#choice .important, #choice .notImportant, #choice .dealBreaker, #choice .semiImportant {
+	float: left;
+	cursor:pointer;
+}
+.notImportant{
+	background-color:white;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: 1px solid rgb(116,116,116);
+	display: inline-block;
+	margin: auto;
+	margin-left: 2px;
+	margin-right: 7px;
+}
+
+.semiImportant{
+	background-color: rgb(140,146,162);
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: 1px solid rgb(116,116,116);
+	display: inline-block;
+	margin: auto;
+	margin-left: 2px;
+	margin-right: 7px;
+}
+
+.important{
+	background-color:rgb(51,62,106);
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: 1px solid rgb(116,116,116);
+	display: inline-block;
+	margin: auto;
+	margin-left: 2px;
+	margin-right: 7px;
+}
+
+.dealBreaker{
+	background-color: rgb(220, 134, 39);
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: 1px solid rgb(116,116,116);
+	display: inline-block;
+	margin: auto;
+	margin-left: 2px;
+	margin-right: 7px;
+}
+
+
+
+ol li {
+	display: block;
+	margin-top: 25px;
+}
+#matches {
+	width: 1000px;
+	max-width:100%;
+	background-color: white;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: rgb(116,116,116);
+	text-align:center;
+	margin-top:20px;
+}
+#matches h3 {
+	font-size: 24px;
+font-family: HNB;
+	text-align: left;
+	margin: auto;
+	color: rgb(51,62,106);
+	display: inline;
+	margin-right: 10px;
+}
+#matchInfo {
+	width: 270px;
+	max-width:100%;
+	display: inline-block;
+	margin-top:20px;
+	text-align:left;
+	vertical-align:top;
+	font-size:14px;
+	font-color:rgb(116,116,116);
+}
+#matchInfo h3{
+	font-size:24px;
+	margin-right:60px;
+}
+#matchInfo .compatibility {
+	font-style: italic;
+	color: rgb(220, 134, 39);
+	font-size: 14px;
+	display: inline;
+	margin-top:20px;
+}
+
+#matchInfo .interests{
+	font-family:HNB;
+	color:rgb(51,62,106);
+	padding-top:15px;
+}
+#matchInfo .reco {
+	font-size: 12px;
+	color: rgb(51,62,106);
+	display: inline;
+	margin-right: 5px;
+	vertical-align:top;
+
+}
+
+
+.date{
+	color:rgb(51, 62, 106);
+	font-size:14px;
+	font-family:Georgia;
+	display:inline;
+	margin-left:5px;
+}
+#matches #availability {
+	width: 680px;
+	max-width:80%;
+	border: 1px solid rgb(116,116,116);
+	display: inline-block;
+	padding-top: 5px;
+	padding-left: 10px;
+	text-align:left;
+	vertical-align:top;
+margin-top:-40px;}
+
+#matches #availability h3 {
+	font-size: 18px;
+	font-family:HNL;
+	text-align: left;
+	color: rgb(51,62,106);
+	display: inline;
+	margin-right: 10px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+#name, #phone {
+	width: 165px;
+	height: 25px;
+	margin-top: 10px;
+	display: inline-block;
+}
+#email {
+	width: 350px;
+	height: 25px;
+	margin-top: 5px;
+	display: inline-block;
+}
+#question {
+	width: 686px;
+	height: 75px;
+}
+
+#housingResultsContainer #video{
+	width: 270px;
+	
+	max-width:100%;
+	min-height:175px;
+	display: inline-block;
+	margin-top:15px;
+	text-align:left;
+	vertical-align:top;
+	background-color:gray;
+	border-radius:5px;
+	
+}
+#housingResultsContainer #videoResp{
+	width: 270px;
+	margin-left:15%;
+	max-width:100%;
+	min-height:175px;
+	display: none;
+	margin-top:15px;
+	text-align:left;
+	vertical-align:top;
+	background-color:gray;
+	border-radius:5px;
+}
+
+#housingResultsContainer #compatibility{
+	min-height:168px;
+	width: 680px;
+	max-width:80%;
+	display: inline-block;
+	padding-left: 10px;
+	text-align:left;
+	margin-top:15px;
+	border:1px solid rgb(116,116,116);
+	background-color:rgb(230, 229, 228);
+	padding-top:5px;
+	vertical-align:top;
+
+}
+#housingResultsContainer #compatibility h3{
+	font-size: 18px;
+	font-family:HNL;
+	text-align: left;
+	color: rgb(51,62,106);
+	display: inline;
+	margin-right: 10px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+/* ------------ housing matcher --------------*/
+#housingMatcherContainer{
+	width:1000px;
+	max-width:100%;
+	margin-top:20px;
+	margin:auto;
+	text-align:center;
+	}
+#housingMatcherContainer #housingMatcherLeft {
+	width:630px;
+	max-width: 100%;
+	display: inline-block;
+	vertical-align:top;
+	margin-top:10px;
+}
+
+
+ #housingMatcherRight {
+	width:350px;
+	max-width:100%;	
+	display: inline-block;
+	margin-top: 0px;
+	border-left: 1px solid  rgb(116,116,116);
+	text-align:left;
+	padding-left:10px;
+		margin-top:10px;
+		vertical-align:top;
+}
+#housingMatcherRight .compare, #housingMatcherRight .interests{
+font-size:14px;
+}
+#housingMatcherRight #compareDiv{
+margin-bottom:-5px;
+}
+#housingMatcherRight .interests{
+margin-left:2px;
+margin-top:-15px;
+}
+#housingMatcherRight button{
+	margin-top:-11px;
+}
+
+
+.swipeRecent {
+	overflow: hidden;
+	visibility: hidden;
+	position:relative;
+	margin:0 auto;
+	width: 100%;
+	display:inline-block;
+
+}
+
+.swipefinAid {
+	overflow: hidden;
+	visibility: hidden;
+	position: relative;
+	width: 100%;
+	display:inline-block;
+}
+
+.swipeBudget {
+	overflow: hidden;
+	visibility: hidden;
+	position: relative;
+	width: 100%;
+	display:inline-block;
+
+
+}
+
+.swipe {
+	overflow: hidden;
+	visibility: hidden;
+	position: relative;
+	width: 100%;
+	display:inline-block;
+
+
+}
+
+
+
+.swipeProperty {
+	overflow: hidden;
+	visibility: hidden;
+	position: relative;
+	width: 85%;
+	display:inline-block;
+
+
+}
+.swipe-wrap {
+	overflow: hidden;
+	position: relative;
+}
+.swipe-wrap > div {
+	float: left;
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+}
+#housingQ {
+	font-family:HNL;
+	margin-top: 0px;
+	color:rgb(51,62,106);
+	font-size:14px;
+	width:100%;
+	text-align:center;
+}
+
+#housingQ h4{
+font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: rgb(116,116,116);
+	font-weight: normal;
+	text-align: center;
+	margin-top:3px;
+	
+
+}
+#housingQ img{
+position:relative;
+top:4px;
+margin-left:-2	px;
+}
+#housingQ h3, #housingMain #housingQ h3 {
+	font-family: HNL;
+	font-size: 18px;
+	color: rgb(51,62,106);
+	font-weight: normal;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin: auto;
+	font-style: normal;
+}
+#housingQ .item{
+	display:inline-block;
+	margin-right:15px;
+	margin-left:15px;
+	cursor:pointer;
+}
+
+#housingQ .item img{
+
+	margin-bottom:5px;
+}
+
+
+#housingQ .item1{
+display:inline-block;
+width:300px;
+text-align:left;
+margin-right:10px;
+margin-bottom:3px;
+margin-top:3px;
+}
+#housingMain #housingQ .item1{
+width:175px;
+}
+
+#housingMain #housingQ .option{
+width:105px;
+}
+#housingMain .rank1empty{
+	margin-left:0px;
+}
+
+#housingMain .picWrapper{
+	display:inline-block;
+	width:70px;
+	margin-left:-10px;
+}
+
+#housingMain .picWrapper img{
+	width:65px;
+	height:59px;
+
+}
+#housingQ .importance, #housingQ .importance1{
+	text-align:right;
+	margin-bottom:10px;
+	font-family:HNL;
+
+}
+
+
+#housingQ p{
+	font-family:Georgia;
+	vertical-align:bottom;
+}
+#housingQ .option{
+width:150px;
+display:inline-block;
+margin:0;
+}
+.rank1empty,.rank2empty,.rank3empty{
+	border:1px solid rgb(51,62,106);
+	width:5px;
+	display:inline-block;
+}
+.rank1empty{
+	height:10px;
+	margin-left:85px;
+}
+.rank2empty{
+	height:15px;
+}
+.rank3empty{
+	height:20px;
+}
+.hidetil13{
+display:none !important;
+}
+.hidetil15{
+display:none !important;
+}
+
+
+
+
+#matcherBottomWrap {
+			margin:auto;
+font-family:Georgia;
+	display: inline-block;
+		text-align: center;
+		margin-top:-20px;
+
+}
+
+#matcherBottomWrap img{
+position:relative;
+top:2px;
+margin-left:3px;
+margin-right:3px;
+}
+
+
+#matcherBottomWrap button{
+	font-family:Georgia;
+cursor:pointer;
+}
+
+#matcherBottomWrap p{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: rgb(51,62,106);
+	font-weight: normal;
+	text-align: center;
+}
+
+.prev{
+	background-color:transparent;
+	border:none;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: rgb(51,62,106);
+	font-weight: normal;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.next{
+	background-color:transparent;
+	border:none;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: rgb(51,62,106);
+	font-weight: normal;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+#matcherImportance {
+	display: inline-block;
+	background-color: rgb(230, 229, 228);
+	border-width: 1px;
+	border-color: rgb(51, 62, 106);
+	border-style: solid;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	width:400px;
+	padding-bottom:10px;
+	
+}
+
+
+#recommended{
+	width:100%;
+	font-size:14px;
+	display:inline-block;
+	margin-left:15px;
+	margin-top:-10px;
+}
+#recommendedWrap{
+margin-top:23px;
+}
+
+
+#recommended h2{
+	font-family:HNB;
+	font-size:30px;
+	color:rgb(51, 62, 106);
+	text-align:left;
+	margin-top:-5px;
+	margin-bottom:-18px;
+	padding-bottom:0px;
+	margin-left:0px;
+}
+
+
+
+#recommended .compare{
+	font-family: HNL;
+	color:rgb(220, 134, 39);
+	margin-left:0px;
+	position:relative;
+	top:2px	;
+}
+
+#recommended #{
+	margin-top:0px;
+	
+	height:10px;
+}
+
+#recommended #compareDiv img{
+	vertical-align:middle;
+	width:20px;
+}
+
+
+#recommended #interests{
+	font-size:14px;
+	font-family:HNB;
+	color:rgb(140,146,162);
+	margin-top:10px;
+	margin-bottom:5px;	
+}
+.appDate{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	color:rgb(51,62,106);
+	margin-left:15px;
+line-height:20px;
+}
+
+#housingVideo{
+	width:120px;
+	height:98px;
+	float:left;
+	display:block;	
+	background-color:rgb(51, 62, 106);
+	border-radius:5px;
+	margin-right:15px;
+	margin-bottom:10px;
+
+	}
+	
+		.viewMoreRight{
+	text-align:right;
+	margin-left:145px;
+	font-size:14px;
+}
+/* ------- homepage ----------*/
+#homeSwipe{
+		background-color: rgb(230, 229, 228);
+		border: 1px solid rgb(116,116,116);
+		height:305px;		
+}	
+
+#homeSwipeLeft{
+	width:49.5%;
+	height:300px;
+	display:inline-block;
+	padding-left:10px;
+	padding-right:10px;
+}
+#homeSwipeRight{
+	width:50%;
+	display:inline-block;
+	height:300px;
+	padding-right:10px;
+	float:right;
+	padding-top:5px;
+}
+
+#getAdvice{
+	background-color:rgb(51,62,106);
+	color:white;
+	font-family:HNB;
+	font-size:30px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-left:5px;
+
+}
+.adviceName{
+	font-family:HNL;
+}
+
+#homeSwipeLeftRight{
+	display:inline-block;
+	width:280px;
+	text-align:center;
+	font-family:HNB;
+	font-size:30px;
+	color:rgb(51,62,106);
+	height:250px;
+	margin-right:5px;
+}
+
+#homeSwipeLeftRight a:link{font-size:14px; font-family:Georgia, "Times New Roman", Times, serif;}
+#homeSwipeLeftRight .swipeLink{
+	font-size:14px;
+	padding-bottom:5px;
+	
+	
+}
+#homeSwipeVideo{
+	width:100%;
+	height:98%;
+	background-color:white;
+	
+}
+
+#bulletsWrap{
+
+	margin-top:15px;
+	margin-bottom:15px;
+	
+}
+
+bullets{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+bullets ul,nav ol{list-style:none;list-style-image:none;margin:0;padding:0; margin-left:auto; margin-right:auto; text-align:center;}
+bullets #position li{display:inline-block;width:12px;height:12px;border-radius:10px;background:white; border: 1px solid rgb(116,116,116);
+margin:0 5px;}
+bullets #position li.on{background-color:rgb(220, 134, 39);}
+bullets #position button{
+	background-color:transparent;
+	border:none;
+}
+
+
+
+/* -------- financial page -------------*/
+#financeContainer{
+	width:100%;
+	float:left;
+}
+
+#financeContainer #recentAnswers, #financeContainer #deadlinesAndData, #financeContainer #finAid{
+	margin-top:10px;
+}
+
+#financeContainer #recentAnswers{
+	width:33%;
+	vertical-align:top;
+	height:360px;
+	display:inline-block;
+	border-right:1px solid  rgb(116,116,116);
+	text-align:center;
+}
+
+#financeContainer #recentAnswers #answeredBy{
+	text-align:center;
+	line-height:5px;
+	margin:15px;
+}
+
+#financeContainer #recentAnswers #answeredBy #info{
+	display:inline-block;
+}
+
+#pic{
+	background-color:rgb(116,116,116);
+	height:45px;
+	width:45px;
+	border-radius:50%;
+	border: 0px solid rgb(116,116,116);
+	display:inline-block;
+	margin-left:10px;
+}
+
+#financeContainer #recentAnswers #question{
+	color:rgb(51,62,106);
+	font-family:Georgia;
+	display:inline-block;
+	width:46%;
+	margin:auto;
+	float:none;
+	min-height:120px;
+	padding:0 5px;
+	border-right: 1px solid  rgb(116,116,116);
+	vertical-align:top;
+	
+}
+
+#financeContainer #recentAnswers #answers{
+	color:rgb(51,62,106);
+	font-family:HNL;
+	display:inline-block;
+	width:46%;
+	min-height:120px;
+	float:none;
+	margin:auto;
+	padding:0 5px;
+		vertical-align:top;
+
+	
+}
+#financeContainer button{
+	background-color:transparent;
+	border:none;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	color:rgb(51,62,106);
+}
+
+#financeContainer #deadlinesAndData{
+	vertical-align:top;
+		width:33%;
+	display:inline-block;
+}
+
+#financeContainer #deadlines{
+	width:100%;
+	float:none;
+	height:110px;
+}
+
+#financeContainer #data{
+	width:100%;
+	float:none;
+	height:250px;
+	border-top:1px solid  rgb(116,116,116);
+}
+#financeContainer #data p{
+	margin-top:10px;
+	margin-bottom:2px;
+}
+
+#financeContainer #finAid{
+	width:33%;
+	height:360px;
+	display:inline-block;
+	vertical-align:top;	
+	border-left: 1px solid  rgb(116,116,116);
+
+}
+
+#financeContainer #budgetPlanner{
+	background-color:white;
+	display:inline-block;
+	width:100%;
+	border-top:1px solid  rgb(116,116,116);
+	
+}
+
+#financeContainer #budgetPlanner #left{
+	width: 67%;
+	display:inline-block;
+	vertical-align:top;
+}
+
+#financeContainer #budgetPlanner #left .darkBlue{
+	color:rgb(51,62,106);
+}
+
+#financeContainer #budgetPlanner #left .lightBlue{
+		color:rgb(146,166,196);
+	
+}
+
+#financeContainer #budgetPlanner #left #blueButton1{
+	background-color:rgb(182,197,220);
+	 height: 15px;
+    width: 15px;
+    border-radius: 50%;
+	margin-right:7px;
+	display:inline-block;
+}
+
+#financeContainer #budgetPlanner #left #blueButton2{
+	background-color:rgb(145,165,195);
+	 height: 15px;
+    width: 15px;
+    border-radius: 50%;
+	margin-right:7px;}
+	
+#financeContainer #budgetPlanner #left #blueButton3{
+	background-color:rgb(89,107,158);
+	 height: 15px;
+    width: 15px;
+    border-radius: 50%;
+	margin-right:7px;
+}
+
+
+
+#financeContainer #budgetPlanner #left #blueButton4{
+	background-color:rgb(68,86,127);
+	 height: 15px;
+    width: 15px;
+    border-radius: 50%;
+	margin-right:7px;
+}
+
+#financeContainer #budgetPlanner #left #blueButton5{
+	background-color:rgb(51,61,105);
+	 height: 15px;
+    width: 15px;
+    border-radius: 50%;
+	margin-right:7px;
+	display:inline-block;
+}
+
+#financeContainer #budgetPlanner #left #stateWrap{
+	margin:0 auto;
+	width:200px;
+}
+#financeContainer #budgetPlanner #left #stateWrap #blueButton1{
+margin:0px 15px;
+width:20px;
+height:20px;
+}
+#financeContainer #budgetPlanner #left #stateWrap #blueButton5{
+margin:0px 45px;
+width:20px;
+height:20px;
+}
+
+#financeContainer #budgetPlanner #left #boxWrap{
+	width:318px;
+	margin:0 auto;
+}
+
+#financeContainer #budgetPlanner #left #blueBox1{
+	background-color:rgb(146,166,196);
+	color:white;
+	width:100px;
+	height:24px;
+	margin-right:5px;
+	padding-top:6px;
+	display:inline-block;
+			text-align:center;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+#financeContainer #budgetPlanner #left #blueBox2{
+	background-color:rgb(89,109,160);
+	color:white;
+	width:100px;
+	height:24px;
+	padding-top:6px;
+	margin-right:5px;
+	display:inline-block;
+			text-align:center;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+#financeContainer #budgetPlanner #left #blueBox3{
+	background-color:rgb(51,62,106);
+	color:white;
+	width:100px;
+	height:24px;
+	margin-right:0px;
+	padding-top:6px;
+	display:inline-block;
+			text-align:center;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	
+}
+
+
+
+
+#financeContainer #budgetPlanner #left p{
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+
+
+#financeContainer #budgetPlanner #right{
+	width:32.5%;
+	display:inline-block;
+}
+#financeContainer #budgetPlanner h2{
+	display:inline-block;
+	text-align:center;
+
+}
+#financeContainer #budgetPlanner #right #wrap{
+	text-align:center;
+	line-height:10px;
+	display:inline-block;
+	margin-top:75px;
+
+	margin-right:auto;
+	margin-left:auto;
+	width:89%;
+
+}
+#financeContainer #budgetPlanner #right h2{
+	color:rgb(116,116,116);
+	margin-bottom:25px;
+
+}
+
+#financeContainer #budgetPlanner #right img{
+	margin-top:80px;
+
+}
+
+#financeContainer #finAid #wrap{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	float:none;	
+	display:block;
+	width:85%;
+	padding-top:20px;
+}
+
+
+#financialRight h3, #financeContainer h3{
+	margin-top:0px;
+	padding-top:7px;
+	margin-bottom:5px;
+}
+
+
+
+#financeContainer .viewMore{
+	font-size:14px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+#financialRight p, #financeContainer p{
+	font-size:14px;
+	font-family:HNL;
+	margin-top:10px;
+	text-align:center;
+	margin-bottom:10px;
+}
+
+
+#financeContainer .cost{
+	
+	font-family:HNL;
+	font-size:30px;
+	text-align:center;
+	color:rgb(116,116,116);
+
+}
+
+#financeContainer .state{
+	
+	font-family:HNL;
+	font-size:14px;
+	color:rgb(116,116,116);
+	margin-left:5px;
+}
+
+
+.footer #leftWrap #advisorWrap{
+	width:40%;
+	display:inline-block;
+	margin:10px 0;
+}
+
+.footer #leftWrap{
+	display:inline-block;
+	width:54%;
+	height:100px;
+	vertical-align:top;
+	
+	}
+
+.footer #rightWrap{
+	display:inline-block;
+	width:44%;
+	height:100px;
+		vertical-align:top;
+}
+
+ .footer #advisorWrap #pic{
+display:inline-block;
+margin-right:10px;
+
+}
+
+ .footer #advisorWrap #info{
+display:inline-block;
+}
+
+
+/* ------ individual housing page ------- */
+
+
+#property{
+	width:1000px;
+	max-width:100%;
+	margin:auto;
+	text-align:center;
+	}
+#property #left{
+	width:350px;
+	max-width:100%;
+	display:inline-block;
+	height:900px;
+	margin-top:15px;
+	text-align:left;
+	margin-right:10px;
+
+}
+
+#property #left #generalInfo{
+	width:100%;
+	height:240px;
+	background-color:white;
+	margin-top:0px;
+	border-bottom:1px solid  rgb(116,116,116);
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:rgb(116,116,116);
+}
+
+#property #left #generalInfo h3{
+	font-family:HNB;
+	text-align:left;
+	margin:0 0;	
+	
+}
+
+#generalInfo #interests {
+	font-family:Georgia;
+	width:100%;
+	color: rgb(116,116,116);
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
+	}
+
+#generalInfo .review{
+line-height:50px;}
+ .compare{
+	font-family: HNL;
+	font-size:18px;
+	color:rgb(220, 134, 39);
+	margin-left:3px;
+	position:relative;
+	top:2px	;
+}
+
+#generalInfo #compareDiv{
+	margin-top:3px;
+	height:10px;
+	margin-bottom:0px;
+}
+
+#generalInfo #compareDiv img{
+	vertical-align:middle;
+	width:20px;
+}
+
+#generalInfo .reco {
+	color: rgb(51,62,106);
+	margin-right: 5px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+#generalInfo .date {
+	color: rgb(51,62,106);
+		font-family:Georgia, "Times New Roman", Times, serif;
+
+}
+
+#left #availability, #left #availSent{
+	width:100%;
+	border:none;
+	text-align:left;
+	background-color:white;
+	padding-left:0px;
+	padding-top:10px;
+}
+
+
+#left #availability button{
+margin-bottom:10px;
+margin-left:291px;
+margin-top:5px;
+}
+#left #availability #firstName{
+width:44%;
+}
+
+#left #availability #lastName{
+	width:45%;
+}
+#left #availability #mailPhone{
+	width:93.8%;
+}
+#left #availability .dropDown{
+width:97%;
+}
+
+
+
+#left p{
+	font-size:14px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:rgb(116,116,116);
+	text-align:left;
+}
+
+#left h3, #right h3{
+	font-size:30px;
+	font-family:HNL;
+	text-align:left;
+margin:0;
+
+}
+
+#left #information{
+	width:100%;
+	margin-top:30px;
+	border-top:1px solid rgb(116,116,116);
+}
+
+#property #left #information #selector{
+	width:100%;
+	height:45px;
+	color:rgb(51,62,106);
+	font-size:30px;
+	font-family:HNL;
+	text-align:center;
+	margin-top:10px;
+	padding-top:2px;
+	margin-bottom:30px;
+	
+}
+#leasingPro{
+	width:1000px;
+	max-width:100%;
+	margin:auto;
+	font-size:24px;
+}
+
+#leasingPro img{
+	width:100%;
+	display:inline-block;
+}
+#leasingPro .top{
+	width:100%;
+}
+	#leasingPro  #housingMatcherRight {
+display:none;
+	}
+	#housingMatcherRight #compareDiv{
+		margin-bottom:0px;
+	}
+
+#property #left #information #selector button, #leasingPro .top button{
+	color:rgb(51,62,106);
+	background-color:white;
+		font-size:inherit;
+	font-family:HNL;
+	border:none;
+	font-size:24px;
+
+}
+
+#property #left #information #unit, #property #left #information #community, #property #left #information #map{
+
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	color:rgb(116,116,116);
+	width:100%;
+	font-style:italic;
+	margin-top:-15px;
+}
+
+
+#property #left #information #unit ul li, #property #left #information #community ul li, #property #left #information #map ul li{
+	list-style-type:none;
+	padding:0;
+	margin-left:-30px;
+}
+
+#property #right{
+	width:550px;
+	max-width:100%;
+	display:inline-block;
+	background-color:white;
+	border-left:1px solid  rgb(116,116,116);
+	padding-right:30px;
+	margin-top:15px;
+	vertical-align:top;
+	text-align:left;
+}
+
+
+
+#property #right #dormTour{
+	height:340px;
+	background-color:white;
+	border-bottom:1px solid  rgb(116,116,116);
+	margin-left:20px;
+}
+
+#property #right #dormTour #video{
+	height:260px;
+	width:365px;
+	border-radius:5px;
+	background-color:gray;
+	display:inline-block;	
+	margin-top:15px;
+	margin-right:0;
+	margin-left:0;
+}
+#property #right #dormTour #videoWrap{
+	display:inline-block;	
+}
+
+#property #right #dormTour #pics{
+	margin-top:15px;
+	display:inline-block;
+}
+#property #right #dormTour ul li{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+
+#property #right #dormTour ul{
+	margin:0;
+	padding:0;
+	margin-right:30px;
+}
+
+#property #right #dormTour #pics ul{
+	margin-right:10px;
+}
+
+#property #right #dormTour #pics img{
+	width:83px;
+	border-radius:5px;	
+}
+
+#property #right #desc{
+	background-color:white;
+	border-bottom:1px solid  rgb(116,116,116);
+	margin-left:20px;
+	padding-bottom:5px;
+	
+}
+
+#property #right #pricing{
+	background-color:white;
+	margin-left:20px;
+	border-bottom:1px solid  rgb(116,116,116);
+	max-height:260px;
+}
+#property #right #reviews{
+	background-color:white;
+	margin-left:20px;
+	
+}
+
+#property #right #reviews #item{
+	background-color:white;
+		margin:auto;
+
+	margin-top:10px;
+	border-bottom:1px solid rgb(116,116,116);
+	
+	
+}
+
+#property #right #reviews p{
+	text-align:left;
+	margin-top:0px;
+}
+
+#property #right #pricing{
+	height:340px;
+	background-color:white;
+	margin-left:20px;
+	
+}
+
+#property #right #pricing h3, #property #right #desc h3, #property #right #reviews h3{
+	margin-top:10px;
+}
+
+#property #right #pricing p, #property #right #desc p{
+	text-align:left;
+}
+
+#property #right #pricing #wrap{
+	display:inline-block;
+	margin-bottom:15px;
+}
+
+
+
+#property #right #pricing  p{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:rgb(116,116,116);
+}
+
+#property #right #pricing #wrap #col{
+	display:inline-block;
+	margin-right:10px;
+	width:117px;
+}
+
+#property #right #pricing #wrap #col ul li{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:rgb(51,62,106);
+	list-style-type:none;	
+}
+
+#property #right #pricing #wrap #col ul{
+	margin:0;
+	padding:0;
+	vertical-align:top;
+}
+
+
+
+
+/*property listing page*/
+
+#propListing #squeezeTop1{
+display:none;
+}
+
+#propListing h2{
+font-family:HNL;
+color:rgb(51,62,106);
+font-size:30px;
+font-weight:normal;
+text-align:center;
+}
+
+#propListing h3{
+	font-size:18px;
+	color:rgb(51,62,106);
+	margin-bottom:10px;
+	text-align:center;
+	font-weight:normal;
+
+}
+
+#propListing #top h3, #propListing #squeezeTop1 h3{
+	font-size:18px;
+	color:rgb(116,116,116);
+	margin-bottom:10px;
+	text-align:center;
+	font-weight:normal;
+
+}
+#propListing #housingMain #left h3{
+text-align:left;
+margin-left:0px;
+}
+
+
+
+#propListing #top .item{
+	width:150px;
+	color:rgb(51,62,106);
+	display:inline-block;
+	margin:auto;
+
+}
+#propListing #squeezeTop1 .item{
+	width:150px;
+	color:rgb(51,62,106);
+	display:inline-block;
+	margin:auto;
+
+}
+#propListing{
+width:1000px;
+max-width:100%;
+margin:auto;
+}
+
+
+#propListing #housingMain {
+	width:700px;
+	display:inline-block;
+		vertical-align:top;
+	border-right:1px solid  rgb(116,116,116);
+	padding-right:10px;
+}
+#propListing #top {
+	display:inline-block;
+	width:250px;	
+	vertical-align:top;
+	font-family:HNL;
+	font-size:14px;
+	text-align:center;
+}
+#propListing #housingMain #left .compareWrap{
+margin-left:85px;
+}
+#propListing #housingMain #left .viewMoreRight{
+	margin-left:235px;
+}
+#propListing #name{
+	margin-left:2px;
+	margin-right:2px;
+margin-top:0px;	
+}
+
+
+
+#comparePage{
+	width:1000px;
+	max-width:100%;
+	margin:auto;
+	font-size:14px;
+	color:rgb(116,116,116);
+	font-family:HNL;
+}
+
+#comparePage .category{
+	color:rgb(51,62,106);
+	font-size:18px;
+	font-family:HNL;
+	text-align:left;
+}
+#comparePage h2{
+	font-family:HNL;
+	font-weight:normal;
+	font-size:30px;
+	color:rgb(51,62,106);
+	text-align:center;
+}
+#comparePage table{
+margin:auto;
+}
+#comparePage table td{
+	width:250px;
+	height:20px;
+}
+#comparePage .video{
+	background-color:gray;
+	width:197px;
+	height:130px;
+	border-radius:5px;
+	margin-top:20px;
+}
+#comparePage .picture{
+	background-color:rgb(51,62,106);
+	width:60px;
+	height:45px;
+	border-radius:2px;
+	margin-top:20px;
+	margin-right:5px;
+	display:inline-block;
+}
+
+#comparePage th{
+	height:30px;
+	font-weight:normal;
+	
+}
+
+/* property media page*/
+.mediapage #housingMatcherRight{
+display:none;
+}
+#picsAndVids{
+	width:1000px;
+	max-width:100%;
+	border-bottom:1px solid  rgb(116,116,116);
+	text-align:center;
+}
+
+#picsAndVids h2{
+	margin:25px auto;
+}
+#upload h2{
+	margin:25px auto;
+}
+#picsAndVids #videoWrap p{
+	text-align:center;
+}
+#picsAndVids #videoWrap{
+	max-width:100%;
+	vertical-align:top;
+	display:inline-block;
+	text-align:center;
+	margin-right:20px;
+}
+#picsAndVids #picsWrap{
+	max-width:520px;
+	display:inline-block;
+	text-align:center;
+	
+}
+#picsAndVids #picsWrap img{
+	height:50px;
+	width:55px;
+	border-radius:10px;
+}
+
+#picsAndVids #picsWrap #sWrap #arrow{
+	position:relative;
+	top:-15px;
+
+}
+#picsAndVids #picsWrap #sWrap{
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#picsAndVids #picsWrap #sWrap h3{
+	margin-bottom:10px;
+}
+
+#picsAndVids #picsWrap #sWrap #arrow img{
+	width:20px; 
+	height:20px; 
+	border-radius:0px; 
+	float:right;
+}
+#picsAndVids #videoWrap h3{
+	font-size:18px;
+	margin:0;
+	padding:0;
+}
+#picsAndVids #videoWrap p{
+	margin-top:10px;
+}
+#picsAndVids #picsWrap h3{
+	font-size:14px;
+	margin:0;
+	padding:0;
+	text-align:left;
+	margin-left:43px;
+}
+
+#availUpload{
+	width:1000px;
+	max-width:100%;
+	text-align:center;
+	vertical-align:top;
+
+}
+
+#availUpload #availability{
+	border:none;
+	width:400px;
+	max-width:100%;
+	display:inline-block;
+	height:485px;
+	text-align:left;
+	vertical-align:top;
+}
+
+#availUpload h2{
+margin:20px;
+}
+
+
+#availUpload #upload {
+width:500px;
+	max-width:100%;
+	display:inline-block;
+		border-left:1px solid  rgb(116,116,116);
+		margin-top:10px;
+		height:100%;
+text-align:left;
+vertical-align:top;
+}
+
+#availUpload #upload #dragger{
+	border: 1px solid  rgb(116,116,116);
+	width:50px;
+	height:30px;
+	background-color:white;
+	display:inline-block;
+	margin:10px 8px;
+
+}
+
+
+button{
+	border:none;
+		background-color: rgb(220, 134, 39);
+	color:white;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	height:25px;
+	
+}
+
+#recommendedHousingFooterSqueeze{
+display:none;
+}
+#recommendedHousingFooter, #recommendedHousingFooterSqueeze{
+	width:1000px;
+	max-width:100%;
+	border-top:1px solid  rgb(116,116,116);
+	margin-right:auto;
+
+	margin-left:auto;
+}
+
+#recommendedHousingFooter #item, #recommendedHousingFooterSqueeze #item{
+	display:inline-block;
+	margin-right:40px;
+	margin-left:40px;
+	
+}
+
+#recommendedHousingFooter h3, #recommendedHousingFooterSqueeze h3 {
+	color:rgb(51,62,106);
+	font-family:HNB;
+	margin-bottom:0;
+	margin-top:0px;
+}
+
+#recommendedHousingFooter #item p, #recommendedHousingFooterSqueeze #item p{
+	font-family:Georgia;
+	font-size:14px;
+	color:rgb(116,116,116);
+	margin-bottom:0px;
+}
+
+#recommended .appDate{
+	color:rgb(220, 134, 39);
+	font-family:Georgia;
+	font-size:14px;
+}
+.appDate{
+	color:rgb(220, 134, 39);
+	font-family:Georgia;
+	font-size:14px;
+}
+
+
+
+#housingMain{
+width:1000px;
+max-width:100%;
+text-align:center;
+margin:auto;
+}
+#housingMain #squeezeTop{
+display:none;
+}
+#housingMain #left{
+	margin-top:20px;
+		min-height:650px;
+
+	width:610px;
+	max-width:100%;
+	display:inline-block;
+	text-align:left;
+	border-right:1px solid  rgb(116,116,116);
+}
+
+
+#housingMain #left .video{
+display:inline-block;
+ vertical-align:top; 
+ text-align:right;
+width:160px; 
+height:120px; 
+background-color:gray; 
+border-radius:5px;  
+margin-right:15px;
+}
+
+#housingMain #left .compareWrap{
+	margin-left:21px;
+	display:inline-block;
+vertical-align:bottom;
+font-family:Georgia;
+font-size:14px;
+color:rgb(116,116,116);
+}
+
+
+#housingMain #left #item h3{
+	font-family:HNB;
+	font-size:24px;
+	margin-bottom:5px;
+}
+
+
+#housingMain #right{
+	max-width:100%;
+	width:375px;
+	display:inline-block;
+	text-align:center;
+	vertical-align:top;
+	padding-left:10px;
+	margin-top:20px;
+}
+
+#housingMain #right h2, #housingMain #left h2{
+	margin-top:0px;
+}
+
+#housingMain #left p{
+	font-size:14px;
+	margin:0;
+	padding:0;
+}
+
+#housingMain #right #matcher{
+	margin-top:-10px;
+	width:100%;
+}
+
+#housingMain #right #matcher h2{
+	margin-top:25px;
+}
+
+#housingMain #right #deadlinesDiv{
+text-align:center;
+border-bottom:1px solid  rgb(116,116,116);
+padding-bottom:10px;
+
+}
+
+#housingMain #right #deadlinesDiv p{
+font-size:18px;
+}
+#compareDiv{
+margin-top:0px;
+margin-bottom:20px;
+}
+#housingResultsContainer #compareDiv{
+margin-bottom:10px;
+}
+.compare{
+	color:rgb(220, 134, 39);
+	font-size:18px;
+	font-family:HNL;
+}
+
+#housingMain .compare{
+	font-family: HNL;
+	color:rgb(220, 134, 39);
+font-size:18px;
+	margin-left:3px;
+	position:relative;
+	top:2px	;
+}
+
+#housingMain #compareDiv{
+	margin-top:3px;
+	height:10px;
+	margin-bottom:10px;
+	margin-right:3px;
+}
+
+
+
+#housingMain .appDate{
+	margin-left:0;
+	font-family:Georgia;
+}
+#housingMain .date{
+		font-family:Georgia;
+
+}
+#housingMain .housingType{
+	font-family:Georgia;
+	font-size:18px;
+	color:rgb(116,116,116);
+}
+
+#housingMain #checkAvailability{
+	border: 1px solid rgb(116,116,116);
+	width:98%;
+	margin-top:10px;
+	
+
+}
+#housingMain #checkAvailability h2{
+	font-size:18px;
+	text-align:left;
+	margin:5px 10px;
+}
+
+/* reviews */
+#reviewsPage{
+	text-align:center;
+	margin-top:10px;
+	width:950px;
+	max-width:100%;
+	margin:auto;
+	
+}
+#reviewsPage #left{
+	max-width:100%;
+	width: 580px;
+	min-height:655px;
+	display: inline-block;
+	vertical-align:top;
+	text-align:left;
+		border-right:1px solid  rgb(116,116,116);
+			margin-top:10px;
+
+
+}
+
+#reviewsPage #right{
+	max-width:100%;
+	width: 350px;
+	display: inline-block;
+	vertical-align:top;
+	text-align:left;
+		margin-top:10px;
+		margin-left:10px;
+
+}
+
+#reviewsPage h3{
+	font-size:24px;
+	font-family:HNB;
+	text-align:center;
+	margin-bottom:5px;
+}
+
+#reviewsPage #left .title{
+	margin-left:5px;
+	margin-right:20px;
+	color:rgb(51,62,106);
+	font-family:Georgia;
+	font-size:14px;
+	display:inline;
+	position:relative;
+	top:-5px;
+}
+	
+#reviewsPage #left  .votes{
+	display:inline;
+	font-family:Georgia;
+	font-size:14px;
+	margin-left:200px;
+}
+
+#reviewsPage .votes .number{
+	position:relative;
+	top:-3px;
+	display:inline-block;
+	color:rgb(51,62,106);
+	margin-left:5px;
+	margin-right:5px;
+}
+#reviewsPage .item{
+	margin-top:25px;
+}
+
+#reviewsPage #left  .review{
+	width:560px;
+		max-width:100%;
+
+	border-top:1px solid rgb(116,116,116);
+	padding-top:0px;
+}
+
+#reviewsPage #left  .review .year{
+	color: rgb(51,62,106);
+}
+
+#reviewsPage #left .propComment{
+		max-width:100%;
+		border:1px solid rgb(116,116,116);
+		width:663px;
+		padding:5px;
+		margin-left:140px;
+		background-color:rgb(232,229,228);
+		padding-right:20px;
+		padding-bottom:10px;
+
+}
+#reviewsPage  #left .propComment button{
+	width:229px;
+	max-width:100%;
+	margin-left:0px;
+	color:rgb(51,62,106);
+	background-color:white;
+	font-family:Georgia;
+	font-style:italic;
+	cursor:pointer;
+
+}
+
+#reviewsPage #left  .propComment p{
+	display:inline;
+	color:rgb(51,62,106);
+	position:relative;
+	top:-3px;
+	margin-right:2px;
+}
+
+#reviewsPage #left .hiddenComment{
+	width:97%;
+		padding-left:30px;
+	margin-top:-5px;
+
+	
+}
+
+#reviewsPage #left .item .itemReview{
+	margin-bottom:30px;
+}
+
+#reviewsPage #right .submit{
+	border-bottom:1px solid  rgb(116,116,116);
+	padding-bottom:10px;
+}
+#housingMain .list, #reviewsPage #right .list{
+	text-align:center;
+	margin-top:20px;
+}
+#housingMain .listOfReviews{
+	border-top:1px solid  rgb(116,116,116);
+	margin-top:10px;
+	padding-top:0px;
+	
+}
+
+#housingMain .list .item, #reviewsPage #right .list .item{
+display:inline-block;
+font-family:HNL;
+color:rgb(51,62,106);
+width:150px;
+margin:0;
+
+}
+#searchwrapper img{
+	position:relative;
+	top:3px;
+	padding-right:2px;
+}
+#searchwrapper{
+	border:1px solid rgb(51,62,106);
+	margin-left:152px;
+}
+
+#searchwrapper .searchbox{
+	width:200px;
+	color:rgb(116,116,116);
+	font-size:14px;
+	font-family:Georgia;
+	height:15px;
+}
+#reviewsPage #right #checkAvail{
+	
+
+
+}
+
+#housingMain .dropDown, #reviewsPage .dropDown{
+	margin-top:5px;
+}
+
+
+/* -- types of housing page --*/
+#content {
+    width: 1000px;
+		max-width:100%;
+	height: 200px;
+    margin: 30px auto;
+	display:block;
+text-align:center;
+}
+
+.clear {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+.quickFlip {
+    height: 200px;
+    width: 300px;
+    display:inline-block;
+    text-align:center;
+margin:10px;
+font-size:14px;
+font-family:Georgia;
+
+}
+.quickFlip img{
+	width: 124px;
+	height: 100px;
+	margin: 0 auto
+	background-position: 20px 100px;
+	
+}
+#flipWrap{
+	display:inline-block;
+	text-align:center;
+	vertical-align:top;
+	margin-top:-15px;
+	
+}
+.panel1, .panel2, .panel3 {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    color: rgb(116,116,116);
+ 	font-family:Georgia;
+	font-size:14px;
+	line-height: 16px;
+}
+
+.panel1 {
+    background-color: white;
+    z-index: 10;
+	color: rgb(51, 62, 106);
+}
+
+.panel2 {
+    background-color: white;
+	color:gray;
+	text-align:center;
+	font-family:Georgia;
+	font-size:14px;
+	line-height: 16px;
+
+}
+
+.addthis_toolbox {
+    width: 240px;
+    margin: 30px auto;
+}
+
+.addthis_toolbox a {
+    color: #000;
+}
+
+.footer {
+    font-size: .8em;
+}
+
+#publicDormFlip,#privateDormFlip,#apartmentsFlip{background-size: 100% 100%;}
+
+#nameBar{width: 1000px; display:block; margin:0 auto;margin-bottom: 50px; text-align:center; background-color:gray;}
+.oneThird{
+	margin-top:0px;
+	vertical-align:top;
+	font-family:HNB; 
+	font-size:18px;
+	text-align:center; 
+	display:inline-block;
+	color:rgb( 51, 62, 106);
+	
+}
+
+
+#compareTypes{
+	width:1000px;
+	max-width:100%;
+	border-top:1px solid  rgb(116,116,116);
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+}
+
+#compareTypes table{
+font-size:14px;
+border:none;
+margin:auto;
+margin-bottom:20px;
+color:rgb(116,116,116);
+font-family:Georgia;
+}
+
+
+
+#compareTypes table th{
+	text-align:left;
+	color:rgb(116,116,116);
+	width:170px;
+}
+
+#compareTypes table td{
+	text-align:left;
+	color:rgb(116,116,116);
+		padding:0 50px 0 50px;
+
+}
+
+
+/* generic */
+
+.optional{
+font-size:14px;
+	font-family:HNL;
+	color: rgb(220, 134, 39);
+}
+
+#checkAvailability button{
+margin-left:775px;
+margin-bottom:10px;
+width:200px;
+}
+#nameBox, #phoneBox{
+	width:130px;
+	margin-bottom:0px;
+}
+#emailBox{
+width:200px;
+margin-bottom:0px;
+}
+#semDrop, #leaseDrop{
+width:250px;
+}
+#qBox{
+width:492px;
+height:40px;
+margin-top:10px;
+}
+
+
+#fiveOwls{
+margin-top:-3px;
+margin-left:-3px;
+
+	width:145px;
+	display:inline-block;
+	
+}
+
+
+#fiveOwls img{
+	display:inline;
+	width:23px;
+	
+}
+.interests{
+	color:rgb(51,62,106);
+	font-family:HNB;
+	font-size:18px;
+	margin-top:0px;
+}
+
+
+.dropDown{
+width: 200px;
+height: 25px;
+overflow: hidden;
+background: url('../img/dropDown.png') no-repeat right white;
+background-size:14px auto;
+background-position:98% 50%;
+
+}
+
+.dropDown select, .dropDown .pref{
+background: transparent;
+width: 100%;
+font-size: 14px;
+border: 1px solid rgb(116,116,116);
+border-radius: 0;
+height: 25px;
+-webkit-appearance: none;	
+color:rgb(116,116,116);
+font-family:Georgia, "Times New Roman", Times, serif;
+line-height: 14px;
+padding-left:2px;
+}
+
+
+.dropDown .pref{
+width:97.9%;
+height:18px;
+padding-left:2px;
+padding-top:5px;
+}
+textarea{
+border:1px solid rgb(116,116,116);
+color:rgb(116,116,116);
+padding:5px;
+height:15px;
+resize:none;
+overflow:hidden;
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-size:14px;
+
+}
+
+@media (max-width:1000px) { 
+
+
+
+#left #availability button{
+margin-left:auto;
+margin-right:auto;
+text-align:center;
+}
+#left #availability #firstName{
+width:200px;
+}
+
+#left #availability #lastName{
+	width:200px;
+}
+#left #availability #mailPhone{
+	width:416px;
+}
+#left #availability .dropDown{
+width:428px;
+}
+
+
+#matches #availability{
+margin-top:5px;
+}
+
+#propListing #top{
+	display:none;
+	
+}
+#propListing #housingMain{
+border:none;
+margin:auto;
+width:700px;
+border-top:1px solid  rgb(116,116,116);
+margin-top:10px;
+}
+		#propListing #squeezeTop1{
+			display:block;
+			width:700px;
+			text-align:center;
+			padding-bottom:10px;
+		}
+		
+		#propListing #squeezeTop1 #left{
+		width:250px;
+		display:inline-block;
+		vertical-align:top;
+		}
+		#propListing #squeezeTop1 #right{
+		width:350px;
+		display:inline-block;
+				border-left:1px solid rgb(116,116,116);
+	vertical-align:top;
+		}
+
+		#propListing #squeezeTop1 .item{
+		width:100px;
+		}
+	
+	#housingMain #left{
+	border:none;
+	width:700px;
+	}
+
+	#housingMain #left .compareWrap{
+	margin-left:115px;
+	
+	}
+	#propListing #housingMain #left .compareWrap{
+		margin-left:115px;
+}
+	#propListing #top #left, #propListing #top #right{
+	display:block;
+	margin:auto;
+	border:none;
+	margin-bottom:20px;
+	}
+	
+	#housingMain #left #searchwrapper{
+		margin-left:250px;
+	}
+	
+	#housingMain #right #deadlinesDiv{
+border-top:1px solid  rgb(116,116,116);
+padding-top:5px;
+}
+
+#housingMain #right{
+	width:90%;
+}
+#housingMain #housingQ{
+	
+	
+}
+
+#recommended{
+	margin:auto;
+	width:50%;
+	display:inline-block;
+}
+#matcherBottomWrap {
+	width:100%;
+	margin:auto;
+}
+
+#housingMatcherContainer #housingMatcherRight {
+	border:none;
+		border-top: 1px solid  rgb(116,116,116);
+	width:80%;
+}	
+#housingMatcherRight #item p{
+	color:rgb(51,62,106);
+	font-family:HNL;
+	font-size:14px;
+}
+#housingMain #right{
+display:none;
+}
+#housingMain #squeezeTop{
+display:block;
+text-align:center;
+border-bottom:1px solid  rgb(116,116,116);
+padding-bottom:10px;
+width:95%;
+margin:auto;
+margin-top:10px;
+
+}
+
+
+
+#housingMain #squeezeTop #squeezeLeft{
+	display:inline-block;
+	width:45%;
+		vertical-align:top;
+
+}
+
+#housingMain #squeezeTop #squeezeRight{
+	display:inline-block;
+	width:45%;
+		vertical-align:top;
+				border-left:1px solid  rgb(116,116,116);
+margin-left:10px;
+padding-left:10px;
+}
+
+#housingMatcherContainer{
+width:80%;
+}
+#housingMatcherContainer #housingMatcherLeft {
+	width:100%;
+	margin-bottom:10px;
+}	
+
+#picsAndVids{
+	max-width:80%;
+
+	margin-bottom:10px;
+	padding-bottom:15px;
+}
+
+#matches #videoResp{
+	display:inline-block;
+}
+
+#matches #video{
+	display:none;
+}
+#housingResultsContainer #menu{
+margin-left:10%;
+}
+
+#housingResultsContainer #preferences {
+	width:80%;
+}
+	
+		#recommendedHousingFooterSqueeze{
+	display:block;
+	}
+	#housingMatcherRight{ 
+display:none;
+}
+#property{
+	width:80%;
+}
+#property #right{
+border:none;
+width:100%;
+margin:auto;
+margin-top:130px;
+}
+#property #left{
+width:95%;
+border:none;
+margin:auto;
+}
+
+#property #left #information{
+height:auto;}
+#property #right #dormTour{
+border-top:1px solid rgb(116,116,116);
+margin-top:10px;
+}
+}
+
+@media (max-width:950px) { 
+
+		#recommendedHousingFooterSqueeze{
+	display:block;
+	}
+	#housingMatcherRight{ 
+display:none;
+}
+
+/*types of housing */
+#wrap{
+height:500px;
+	}
+	#compareTypes{
+		margin-top:290px;
+		width:80%;
+	}
+	#recommendedHousingFooter{
+	width:80%;
+	}
+	#flipWrap{
+	margin-top:0px;
+	}
+	#reviewsPage #left{
+	border:none;
+	border-bottom:1px solid  rgb(116,116,116);
+	min-height:0px;
+
+}
+
+
+	#reviewsPage #right{
+	width:580px;
+	max-width:100%;
+	margin-top:0px;
+
+}
+
+#leasingPro img{
+	width:600px;
+}
+
+	
+	#availUpload{
+			width:100%;
+
+		margin:auto;
+	}
+#availUpload #upload {
+	height:auto;
+	width:80%;
+	max-width:80%;
+	border:none;
+		border-top:1px solid  rgb(116,116,116);
+}
+
+#availUpload #availability{
+	height:auto;
+	width:80%;
+	max-width:80%;
+	
+}
+.mediapage #recommendedHousingFooter {
+	width:80%;
+	margin-top:10px;
+}
+}
+
+
+
+@media (max-width:775px){
+
+		
+		#recommendedHousingFooterSqueeze{
+	display:block;
+	}
+	#housingMatcherRight{ 
+display:none;
+}
+#matches #videoResp{
+	margin-left:10%;
+}
+
+	
+}
+
+@media (max-width:780px){
+#housingQ .importance1{
+	display:none;
+	}
+}
+@media (max-width:650px) { 
+
+
+#housingMain #left{
+	border:none;
+	width:90%;
+	}
+
+	#housingMain #left #searchwrapper{
+		margin-left:0px;
+	}
+		#recommendedHousingFooterSqueeze{
+	display:block;
+	}
+	#housingMatcherRight{ 
+display:none;
+}
+
+#matches #videoResp{
+	margin-left:0px;
+}
+
+	#reviewsPage #left  .votes{
+margin-left:100px;
+	}
+
+
+/*types of housing */
+#wrap{
+height:1000px;
+	}
+	#compareTypes{
+		margin-top:510px;
+		}
+	#flipWrap{
+	margin-top:0px;
+	}
+	
+	
+#recommendedHousingFooter #item, #recommendedHousingFooterSqueeze #item{
+	margin-top:0px;
+}
+
+
+#leasingPro img{
+	width:400px;
+	
+}
+#flippers{
+width:1000px; margin:auto; max-width:100%; min-height:300px;
+}
+
+
+
+}
+
+@media (min-width:1300px){
+#dropMove{
+margin-left:50px;
+
+}
+	#recommendedHousingFooterSqueeze{
+	display:none;
+
+	}
+	#housingMatcherRight{ 
+display:inline-block;
+
+}
+
+
+#housingMain{
+width:1300px;
+
+}
+#content {
+	width:1300px;
+}
+
+#housingMain #left{
+width:850px;
+
+}
+
+#housingMain #right{
+width:430px;
+}
+#maincontent {
+	background: white;
+	width: 1300px;
+	max-width:100%;
+	margin: 0 auto;
+	
+}
+#housingMain #left .compareWrap{
+	margin-left:181px;
+}
+#searchwrapper{
+	border:1px solid rgb(51,62,106);
+	margin-left:301px;
+}
+
+#housingMatcherContainer{
+	width:1300px;
+	
+	}
+
+	#housingMatcherContainer #housingMatcherLeft{
+	width:850px;
+	}
+	#housingMatcherContainer #housingMatcherRight{
+		width: 400px;
+		max-width:100%;
+	}
+
+	#reviewsPage{
+	width:1300px;
+	
+}
+#reviewsPage #left{
+width:850px;
+}
+#reviewsPage #right button{
+margin-left:342px;
+}
+
+#reviewsPage #right{
+width:400px;
+}
+#reviewsPage #left  .review{
+
+		width:830px;
+	}
+	
+	#reviewsPage #left  .votes{
+margin-left:470px;
+	}
+	#leasingPro {
+		width:1300px;
+	}
+	
+	#leasingPro  #housingMatcherRight {
+	display:inline-block;
+	width:350px;
+	border:none;
+
+	}
+	#leasingPro #recommendedHousingFooter{
+	display:none;
+	}
+
+	#leasingPro .top{
+		margin:auto;
+text-align:center;
+	padding-right:20px;
+	border-right:1px solid  rgb(116,116,116);
+	margin-top:10px;
+	max-width:900px;
+	
+}
+
+#matches {
+	width:1300px;
+	
+}
+#matches #availability{
+	width:1000px;
+	margin-left:273px;
+}
+#matches #compatibility{
+	width:727px;
+}
+
+ #flippers{
+ width:1300px;
+}
+#flipWrap{
+	margin-left:50px;
+	margin-right:50px;
+}
+#compareTypes{
+	width:1300px;
+}
+#compareTypes table{
+width:1200px;
+}
+#recommendedHousingFooter{
+	width:1300px;
+}
+#housingResultsContainer #preferences {
+width:1260px;
+}
+
+#property{
+	width:1300px;
+}
+#property #right{
+width:750px;
+}
+#property #left{
+width:500px;
+display:inline-block;
+}
+#property #right #pricing #wrap #col{
+width:160px;
+
+}
+
+.hidetil13{
+display:inline-block !important;
+margin-right:13px;
+}
+
+.mediapage{
+width:1300px;
+text-align:center;
+margin:auto;
+}
+.mediapage #left{
+margin-top:10px;
+	width:915px;
+	vertical-align:top;
+	display:inline-block;
+text-align:center;
+padding-right:10px;
+border-right:1px solid  rgb(116,116,116);
+}
+.mediapage #left h2{
+margin-top:10px;
+}
+.mediapage #recommendedHousingFooter{
+	display:none;
+	vertical-align:top;
+	margin:0;
+	height:100%;
+}
+.mediapage #housingMatcherRight{
+vertical-align:top;
+display:inline-block;
+width:350px;
+border:none;
+}
+.mediapage p{
+text-align:center;}
+
+.mediapage #left #picsAndVids{
+	width:100%;
+}
+
+#propListing{
+width:1300px;
+max-width:100%;
+margin:auto;
+}
+#propListing #checkAvailability button{
+margin-left:713px;
+}
+#propListing .viewMoreRight{
+margin-left:430px;
+}
+
+#propListing #housingMain {
+	width:900px;
+	display:inline-block;
+		vertical-align:top;
+	border-right:1px solid  rgb(116,116,116);
+	padding-right:10px;
+}
+#propListing #top {
+	display:inline-block;
+	width:380px;	
+	vertical-align:top;
+}
+#propListing #housingMain #left .compareWrap{
+margin-left:210px;
+}
+#propListing #name{
+	margin-left:2px;
+	margin-right:2px;
+}
+
+
+
+
+#comparePage{
+width:1300px;
+}
+#comparePage table td{
+	width:320px;
+}
+
+.viewMoreRight{
+	text-align:right;
+	margin-left:380px;
+	font-size:14px;
+}
+
+
+#checkAvailability button{
+margin-left:688px;
+margin-bottom:10px;
+width:130px;
+height:25px;
+}
+#nameBox, #phoneBox{
+	width:230px;
+	margin-bottom:0px;
+}
+#emailBox{
+width:300px;
+margin-bottom:0px;
+}
+#semDrop, #leaseDrop{
+width:400px;
+}
+#qBox{
+width:792px;
+height:40px;
+margin-top:10px;
+}
+#housingResultsContainer #qBox{
+	margin-top:3px;
+	width:791px;
+}
+#housingResultsContainer #availability button{
+	margin-left:765px;
+	margin-top:-5px;
+
+}
+#housingResultsContainer #emailBox{
+	width:301px;
+}
+
+#left #availability button{
+margin-bottom:10px;
+margin-left:433px;
+margin-top:5px;
+}
+#left #availability #firstName{
+width:44%;
+}
+
+#left #availability #lastName{
+	width:45%;
+}
+#left #availability #mailPhone{
+	width:92.2%;
+}
+#left #availability .dropDown{
+width:94.6%;
+}
+#propListing #housingMain #left .viewMoreRight{
+	margin-left:430px;
+}
+
+}
+
+
+
+
+
+@media (min-width:1580px){
+
+
+
+	
+	
+	
+	
+
+	#leasingPro {
+		width:1500px;
+	}
+	
+	#leasingPro  #housingMatcherRight {
+	display:inline-block;
+	width:400px;
+	border:none;
+
+	}
+	#leasingPro .top{
+		margin:auto;
+text-align:center;
+	padding-right:20px;
+	border-right:1px solid  rgb(116,116,116);
+	margin-top:10px;
+	max-width:1100px;
+	width:1050px;
+	
+}
+#leasingPro img{
+	width:100%;
+}
+	
+#comparePage{
+width:1500px;
+}
+#comparePage table td{
+	width:420px;
+}
+
+
+
+#housingResultsContainer #preferences {
+width:1460px;
+}
+#recommendedHousingFooter{
+	width:1500px;
+}
+#compareTypes{
+	width:1500px;
+}
+#compareTypes table{
+width:1200px;
+}
+ #flippers{
+ width:1500px;
+}
+#flipWrap{
+	margin-left:50px;
+	margin-right:50px;
+}
+#compareTypes table{
+width:95%;
+}
+#dropMove{
+	margin-left:40px;
+}
+
+#matches {
+	width:1500px;
+	
+}
+#matches #availability{
+	width:1200px;
+}
+#matches #compatibility{
+	width:1200px;
+}
+
+			#recommendedHousingFooterSqueeze{
+	display:none;
+	}
+	#housingMatcherRight{ 
+display:inline-block;
+}
+
+
+#housingMain{
+width:1500px;
+
+}
+
+#housingMain #left{
+width:950px;
+
+}
+
+#housingMain #right{
+width:530px;
+}
+#maincontent {
+	background: white;
+	width: 1500px;
+	max-width:100%;
+	margin: 0 auto;
+	
+}
+#housingMain #left .compareWrap{
+	margin-left:365px;
+}
+#searchwrapper{
+	border:1px solid rgb(51,62,106);
+	margin-left:301px;
+}
+
+#housingMatcherContainer{
+	width:1500px;
+	
+	}
+#housingQ .item1{
+width:400px;
+margin-right:50px;
+}
+
+#housingQ .option{
+	margin-right:110px;
+}
+	#housingMatcherContainer #housingMatcherLeft{
+	width:1000px;
+	}
+	#housingMatcherContainer #housingMatcherRight{
+		width: 480px;
+		max-width:100%;
+	}
+	
+	#reviewsPage{
+	width:1500px;
+	
+}
+#reviewsPage #left{
+width:1050px;
+}
+
+#reviewsPage #right{
+width:400px;
+}
+	#reviewsPage #left  .review{
+
+		width:1030px;
+	}
+	
+	#reviewsPage #left  .votes{
+margin-left:670px;
+	}
+	.mediapage{
+	
+	width:1500px;
+	}
+
+	.mediapage #housingMatcherRight{
+vertical-align:top;
+display:inline-block;
+width:420px;
+border:none;
+}
+.mediapage #left{
+width:1050px;
+} 
+.mediapage #picsWrap{
+margin-left:50px;
+}
+.mediapage #upload{
+margin-left:40px;
+padding-left:30px;
+}
+	
+	
+	
+#propListing{
+width:1500px;
+max-width:100%;
+margin:auto;
+}
+
+
+#propListing #housingMain {
+	width:950px;
+	display:inline-block;
+		vertical-align:top;
+	border-right:1px solid  rgb(116,116,116);
+	padding-right:10px;
+}
+#propListing #top {
+	display:inline-block;
+	width:500px;	
+	vertical-align:top;
+}
+#propListing #housingMain #left .compareWrap{
+margin-left:305px;
+}
+#propListing #name{
+	margin-left:2px;
+	margin-right:2px;
+}
+
+
+
+
+#property{
+	width:1500px;
+}
+#property #right{
+width:950px;
+}
+#property #left{
+width:500px;
+display:inline-block;
+}
+
+#property #right #pricing #wrap #col{
+width:160px;
+
+}
+.hidetil13{
+	margin-right:15px;
+}
+.hidetil15{
+display:inline-block !important;
+	margin-right:15px;
+	}
+	
+#housingMain #housingQ .item1{
+width:210px;
+}
+
+#housingMain #housingQ .option{
+width:117px;
+margin-right:0px;
+}
+#housingMain .rank1empty{
+	display:inline-block;
+	margin-left:35px;
+}
+
+	
+}
+
+
