@@ -382,20 +382,23 @@
 	padding-left: 20px;
 }
 /* ================== Roomie Slide ================= */
-#roomieSlider{
-margin: 20px auto;
-width: 750px;
+#rmSlide{
+	position:relative;
+	height:500px;
+	border-right:1px solid rgb(116,116,116);
 }
 #roomieSlider ul {
 	list-style: none;
-	width: 80%;
-	margin: 0 auto;
+	width:410px;
+	margin:0 auto;
 }
 #roomieSlider ul li {
 	width: 100%;
 	line-height: 53px;
 	white-space: nowrap;
+	margin-left:-56px;
 }
+#roomieSlider ul li.hogwartsRow{width:520px;}
 .rowLabel>span {
 	display: inline-block;
 	line-height: 0;
@@ -523,12 +526,7 @@ padding-top: 9px;
 {
 	margin-left:40px;
 }
-#maincontent.roommate .span05{
-	margin-left:-8px;
-}
-#maincontent.roommate{
-	margin-left:-35px;
-}
+
 @media (max-width:1200px){
 #maincontent.roommate .span05{
 	display:none;
@@ -553,6 +551,7 @@ padding-top: 9px;
 	width: 100%;
 	margin-bottom: 30px;
 }
+#studentProfile{border-right: 1px solid rgb(116,116,116); padding:0 50px;}
 #studentProfile #spHeader h2 {
 	text-align: center;
 	font-family: HNL;
@@ -1240,7 +1239,7 @@ padding-top: 9px;
 .budgetPlanner #results .right{display:inline-block; text-align:right; color:rgb(116, 116, 116); font-size:24px; text-align:right;width:19%; white-space:nowrap;}
 #results{padding: 0 50px;}
 #maincontent.budgetPlanner .finale h2{color:rgb(220, 134, 39);}
-#currentNumber{display:inline-block;}
+#currentNumber{display:inline-block; width:5px; text-align:center;}
 /* ==================== Data ====================== */
 #maincontent.data #payForCollege h3{font-family: HNL;font-size: 24px;color: rgb(116, 116, 116);font-weight: normal; margin-bottom:0;}
 #maincontent.data #payForCollege p{margin:0;  font-style:italic;}
