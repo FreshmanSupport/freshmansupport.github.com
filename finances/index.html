@@ -44,7 +44,7 @@
   <div id="subNav">
     <ul>
       <li><a href="data">Data</a></li>
-      <li><a href="recentlyAnswered">Financial Q&A</a></li>
+      <li><a href="QA">Financial Q&A</a></li>
       <li><a href="financialAid">Financial Aid</a></li>
       <li><a href="budgetPlanner">Budget Planner</a></li>
     </ul>
@@ -192,112 +192,121 @@
   </div>
   <div class="footer">
   <h2>Ask an Financial Advisors</h2>
-  <h3>Select who you would like to message.</h3>
-  <span class="disclaimer">Our admissions officers have a set limit of questions that can be 
-  sent each day.<br />
-  If an admissions officer is unavailable, 
-  please try the following day, or <a href="#" class="view" style="display:inline;">view 
-  previously answered questions</a>.</span>
+  <span class="disclaimer">Select the advisor you'd like to ask the question to below, and type your admissions <br />
+    question into the text box.  They will respond within a few days,<br /> and you will receive 
+    notification of their response via email.</span>
   <div id="officers">
-    <form>
-      <div class="officersLabel">
-        <input id="officer1" type="radio" name="officer" value="" checked="checked">
-        <label for="officer1">
-        <div class="icon">
-          <div class="pic"></div>
+      <form>
+        <div class="officersLabel">
+          <input id="officer1" type="radio" name="officer" value="" checked="checked">
+          <label for="officer1">
+          <div class="icon">
+            <div class="pic"></div>
+          </div>
+          <div class="info">
+            <p>Debie Skultz</p>
+            <p>Academic Conselor</p>
+            <p>The University of Texas of Austin</p>
+            <p><a href="#" class="view" style="text-align:left;">View Profile</a></p>
+          </div>
+          </label>
         </div>
-        <div class="info">
-          <p>Debie Skultz</p>
-          <p>Academic Conselor</p>
-          <p>The University of Texas of Austin</p>
+        <div class="officersLabel" >
+          <input id="officer2" type="radio" name="officer" value="">
+          <label for="officer2">
+          <div class="icon">
+            <div class="pic"></div>
+          </div>
+          <div class="info">
+            <p>Debie Skultz</p>
+            <p>Academic Conselor</p>
+            <p>The University of Texas of Austin</p>
+            <p><a href="#" class="view" style="text-align:left;">View Profile</a></p>
+          </div>
+          </label>
         </div>
-        </label>
-      </div>
-      <div class="officersLabel">
-        <input id="officer2" type="radio" name="officer" value="">
-        <label for="officer2">
-        <div class="icon">
-          <div class="pic"></div>
+        <div class="officersLabel">
+          <input id="officer3" type="radio" name="officer" value="">
+          <label for="officer3">
+          <div class="icon">
+            <div class="pic"></div>
+          </div>
+          <div class="info">
+            <p>Debie Skultz</p>
+            <p>Academic Conselor</p>
+            <p>The University of Texas of Austin</p>
+            <p><a href="#" class="view" style="text-align:left;">View Profile</a></p>
+          </div>
+          </label>
         </div>
-        <div class="info">
-          <p>Debie Skultz</p>
-          <p>Academic Conselor</p>
-          <p>The University of Texas of Austin</p>
+        <div class="officersLabel">
+          <input id="officer4" type="radio" name="officer" value="">
+          <label for="officer4">
+          <div class="icon">
+            <div class="pic"></div>
+          </div>
+          <div class="info">
+            <p>Debie Skultz</p>
+            <p>Academic Conselor</p>
+            <p>The University of Texas of Austin</p>
+            <p><a href="#" class="view" style="text-align:left;">View Profile</a></p>
+          </div>
+          </label>
         </div>
-        </label>
-      </div>
-      <div class="officersLabel">
-        <input id="officer3" type="radio" name="officer" value="">
-        <label for="officer3">
-        <div class="icon">
-          <div class="pic"></div>
+        <div class="officersLabel">
+          <input id="officer5" type="radio" name="officer" value="">
+          <label for="officer5">
+          <div class="icon">
+            <div class="pic"></div>
+          </div>
+          <div class="info">
+            <p>Debie Skultz</p>
+            <p>Academic Conselor</p>
+            <p>The University of Texas of Austin</p>
+            <p><a href="#" class="view" style="text-align:left;">View Profile</a></p>
+          </div>
+          </label>
         </div>
-        <div class="info">
-          <p>Debie Skultz</p>
-          <p>Academic Conselor</p>
-          <p>The University of Texas of Austin</p>
+        <div class="officersLabel">
+          <input id="officer6" type="radio" name="officer" value="">
+          <label for="officer6">
+          <div class="icon">
+            <div class="pic"></div>
+          </div>
+          <div class="info">
+            <p>Debie Skultz</p>
+            <p>Academic Conselor</p>
+            <p>The University of Texas of Austin</p>
+            <p><a href="#" class="view" style="text-align:left;">View Profile</a></p>
+          </div>
+          </label>
         </div>
-        </label>
-      </div>
-      <div class="officersLabel">
-        <input id="officer4" type="radio" name="officer" value="">
-        <label for="officer4">
-        <div class="icon">
-          <div class="pic"></div>
+      </form>
+    </div>
+  <div id="inputArea" class="col-1-2">
+     
+        <textarea name="question" placeholder="Enter your question here."></textarea>
+        <div class="col-1-2">
+          <div class="dropDown" style="margin-left:-4px">
+            <select>
+              <option>Select a Category</option>
+              <option>Admissions</option>
+              <option>Financial</option>
+              <option>Other</option>
+            </select>
+          </div>
         </div>
-        <div class="info">
-          <p>Debie Skultz</p>
-          <p>Academic Conselor</p>
-          <p>The University of Texas of Austin</p>
+        <div class="col-1-2">
+          <button id="sendButton" style="float:right; margin-right: -4px;">Send Question</button>
+          <!-- If you put <form> tag around this button and askAnother button, the javascript at the end of this page doesn't work -->
         </div>
-        </label>
-      </div>
-      <div class="officersLabel">
-        <input id="officer5" type="radio" name="officer" value="">
-        <label for="officer5">
-        <div class="icon">
-          <div class="pic"></div>
-        </div>
-        <div class="info">
-          <p>Debie Skultz</p>
-          <p>Academic Conselor</p>
-          <p>The University of Texas of Austin</p>
-        </div>
-        </label>
-      </div>
-      <div class="officersLabel">
-        <input id="officer6" type="radio" name="officer" value="">
-        <label for="officer6">
-        <div class="icon">
-          <div class="pic"></div>
-        </div>
-        <div class="info">
-          <p>Debie Skultz</p>
-          <p>Academic Conselor</p>
-          <p>The University of Texas of Austin</p>
-        </div>
-        </label>
-      </div>
-    </form>
-  </div>
-  <div class="col-1-2">
-    <form>
-      <textarea name="question" placeholder="Enter your question here."></textarea>
-      <div class="col-1-2">
-        <div class="dropDown">
-          <select>
-            <option>Select a Category</option>
-            <option>Tanner Issue</option>
-            <option>Tanner Design</option>
-            <option>Getting tanner</option>
-          </select>
-        </div>
-      </div>
-      <div class="col-1-2">
-        <button style="float:right;">Send Question</button>
-      </div>
-    </form>
-  </div>
+     	
+    </div>
+   <span class="bottomDisclaimer">Our admissions officers have a set limit of questions that can be 
+    sent each day.<br />
+    If an admissions officer is unavailable, 
+    please try the following day, or <a href="#" class="view" style="display:inline;">view 
+    previously answered questions</a>.</span>
 </div>
 </div>
 

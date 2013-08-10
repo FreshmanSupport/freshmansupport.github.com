@@ -67,7 +67,7 @@
 }
 /* ======================= Admission =================== */
 .admissions {}
-#recentlyAnswered{padding:0 50px;}
+#QA{padding:0 50px;}
 .admissions #data{border-left: 1px solid rgb(116,116,116);}
 .admissions #essay{border-left: 1px solid rgb(116,116,116);}
 .essay img {
@@ -108,9 +108,16 @@
 	font-size: 14px;
 	display: block;
 	color: rgb(116,116,116);
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-style:italic;
+}
+.bottomDisclaimer{
+		font-size: 14px;
+	display: block;
+	color: rgb(116,116,116);
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic
 }
 #answerNav{
 	position:absolute; bottom:30px; margin:0 auto;  min-width:1px;
@@ -231,39 +238,39 @@
 	padding-top:20px;
 }
 }
-/* ============= Recently Answered =============== */
+/* ============= Recently  Answered =============== */
 #raHeader {
 	width: 100%;
 	position:relative;
 }
-#recentlyAnswered h3 {
+#QA h3 {
 	text-align: left;
 }
-#recentlyAnswered.col-5-8{border-right:1px solid rgb(116,116,116);}
-#recentlyAnswered p {
+#QA.col-5-8{border-right:1px solid rgb(116,116,116);}
+#QA p {
 	text-align: left;
 }
-#recentlyAnswered img {
+#QA img {
 	width: 150px;
 	height: 150px;
 	display: block;
 	margin: 0 auto;
 }
-#recentlyAnswered .profilePic p {
+#QA .profilePic p {
 	text-align: center;
 }
-#recentlyAnswered a {
+#QA a {
 	font-size: 14px;
 	color: rgb(51, 62, 106);
 	text-decoration: none;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
-#recentlyAnswered ul {
+#QA ul {
 	list-style-type: none;
 	margin:0;
 	padding:0;
 }
-#recentlyAnswered li {
+#QA li {
 	margin: 0;
 	padding: 0;
 	border-bottom: 1px solid rgb(116,116,116);
