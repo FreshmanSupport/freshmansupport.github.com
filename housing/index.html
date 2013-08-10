@@ -50,7 +50,6 @@
   </div>
   <div id="subNav">
     <ul>
-      <li><a href="propertyListing">Property Listing</a></li>
       <li><a href="matcher">Housing Matcher</a></li>
       <li><a href="reviews">Reviews</a></li>
 	        <li><a href="compare">Compare Housing</a></li>
@@ -67,10 +66,10 @@
 <div id="squeezeTop">
 <div id="squeezeLeft">
 
-   <div id="deadlinesDiv">
-  <h2>June 18, 2013</h2>
-  <p style=" font-size:18px;">Fall Admissions Deadline</p>
-  <a href="" style="font-size:14px">View More Deadlines</a>
+    <div id="deadlinesDiv1" >
+  <h2 >June 18, 2013</h2>
+  <p style=" font-size:18px; margin-top:-15px;">Fall Admissions Deadline</p>
+  <div class="viewBottom"><a href="" style="font-size:14px">View More Deadlines</a></div>
   
   
   </div>
@@ -123,7 +122,7 @@
   <div class='swipe-wrap'>
     <div id="housingQ"><span class="gray">What is the housing matcher? What does the matcher do? What is the housing matcher? What does the matcher do?
 	What is the housing matcher? What does the matcher do?</span>
-	<br><br><br>f
+<br><br><br>
     <!---question 1-->
     <h3 >Price Range</h3>
     <h4>What is your price range?</h4>
@@ -402,7 +401,7 @@
 
 <button class='prev' onclick='squeezeprev(); ' ><img src="../img/arrowLeft.png" width="10px"> prev</button>
 
-    <button class='next' onclick='squeezenext();' >next <img src="../img/arrowRight.png" width="10px"></button></p>
+    <button class='next' onclick='squeezenext();' ><span id="nextSs">next</span> <img src="../img/arrowRight.png" width="10px"></button></p>
     
     
     </div>
@@ -459,7 +458,7 @@
 		</div>
 		</div>
 		
-<div class="video"><img src="../img/property/place3.png" width="100%"></div>
+<div class="video"><img src="../img/property/place2.png" width="100%" height="123px"></div>
 <span class="hidetil13">
 <div class="picWrapper">
 <img src="../img/property/place2.png">
@@ -549,7 +548,7 @@ resize:none;  max-width:100%; " placeholder="E-Mail"></textarea>
 		</div>
 		</div>
 		
-<div class="video"><img src="../img/property/place3.png" width="100%"></div>
+<div class="video"><img src="../img/property/place2.png" width="100%" height="123px"></div>
 <span class="hidetil13">
 <div class="picWrapper">
 <img src="../img/property/place2.png">
@@ -626,10 +625,10 @@ resize:none;  max-width:100%; " placeholder="E-Mail"></textarea>
   
   </div>
   <div id="right">
-  <div id="deadlinesDiv">
-  <h2>June 18, 2013</h2>
+  <div id="deadlinesDiv" >
+  <h2 >June 18, 2013</h2>
   <p style=" font-size:18px; margin-top:-15px;">Fall Admissions Deadline</p>
-  <a href="" style="font-size:14px">View More Deadlines</a>
+  <div class="viewBottom"><a href="" style="font-size:14px">View More Deadlines</a></div>
   
   
   </div>
@@ -922,7 +921,7 @@ resize:none;  max-width:100%; " placeholder="E-Mail"></textarea>
 
 <button class='prev' onclick='prev(); ' ><img src="../img/arrowLeft.png" width="10px"> prev</button>
 
-    <button class='next' onclick='next();' >next <img src="../img/arrowRight.png" width="10px"></button></p>
+    <button class='next' onclick='next();' ><span id="nextS">next</span> <img src="../img/arrowRight.png" width="10px"></button></p>
     
     
     </div>
@@ -977,6 +976,9 @@ mySwipeSqueeze = new Swipe(document.getElementById('sliderSqueeze'), {
 
 <script type='text/javascript'>
 	function next(){
+	if(mySwipe.getPos()==4){
+			document.getElementById('nextS').innerHTML = "continue to results";
+		}
 		if(mySwipe.getPos()<5){
 		mySwipe.next();
 		questionNum();
@@ -1003,6 +1005,9 @@ mySwipeSqueeze = new Swipe(document.getElementById('sliderSqueeze'), {
 	}
 	
 	function squeezenext(){
+	if(mySwipeSqueeze.getPos()==4){
+			document.getElementById('nextSs').innerHTML = "continue to results";
+		}
 		if(mySwipeSqueeze.getPos()<5){
 		mySwipeSqueeze.next();
 		squestionNum();

@@ -39,6 +39,11 @@ a:link {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times 
 a:visited {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
 a:hover {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
 a:active {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
+
+.viewBottom{
+	position:absolute; bottom:0; margin:0 auto;  min-width:1px; 
+		display:block; padding:1%; text-align:center; width:99%;left:2.5%; right:2.5%;
+}
 /* ============== MAIN CONTENT ====================*/
 #maincontent {
 	background: white;
@@ -260,57 +265,7 @@ vertical-align:top;
 	display: inline-block;
 	color: rgb(51,62,106);
 }
-#choice .important, #choice .notImportant, #choice .dealBreaker, #choice .semiImportant {
-	float: left;
-	cursor:pointer;
-}
-.notImportant{
-	background-color:white;
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	border: 1px solid rgb(116,116,116);
-	display: inline-block;
-	margin: auto;
-	margin-left: 2px;
-	margin-right: 7px;
-}
 
-.semiImportant{
-	background-color: rgb(140,146,162);
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	border: 1px solid rgb(116,116,116);
-	display: inline-block;
-	margin: auto;
-	margin-left: 2px;
-	margin-right: 7px;
-}
-
-.important{
-	background-color:rgb(51,62,106);
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	border: 1px solid rgb(116,116,116);
-	display: inline-block;
-	margin: auto;
-	margin-left: 2px;
-	margin-right: 7px;
-}
-
-.dealBreaker{
-	background-color: rgb(220, 134, 39);
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	border: 1px solid rgb(116,116,116);
-	display: inline-block;
-	margin: auto;
-	margin-left: 2px;
-	margin-right: 7px;
-}
 
 
 
@@ -429,7 +384,6 @@ margin-top:-40px;}
 	text-align:left;
 	vertical-align:top;
 	background-color:gray;
-	border-radius:5px;
 	
 }
 #housingResultsContainer #videoResp{
@@ -442,7 +396,6 @@ margin-top:-40px;}
 	text-align:left;
 	vertical-align:top;
 	background-color:gray;
-	border-radius:5px;
 }
 
 #housingResultsContainer #compatibility{
@@ -606,6 +559,9 @@ margin-left:-2	px;
 	margin-bottom: 10px;
 	margin: auto;
 	font-style: normal;
+}#housingMain #checkAvailability button{
+	margin-left:400px;
+	width:150px;
 }
 #housingQ .item{
 	display:inline-block;
@@ -819,12 +775,11 @@ line-height:20px;
 }
 
 #housingVideo{
-	width:120px;
-	height:98px;
+	width:150px;
+	height:115px;
 	float:left;
 	display:block;	
 	background-color:rgb(51, 62, 106);
-	border-radius:5px;
 	margin-right:15px;
 	margin-bottom:10px;
 
@@ -1491,7 +1446,6 @@ display:none;
 #property #right #dormTour #video{
 	height:260px;
 	width:365px;
-	border-radius:5px;
 	background-color:gray;
 	display:inline-block;	
 	margin-top:15px;
@@ -1524,7 +1478,6 @@ display:none;
 
 #property #right #dormTour #pics img{
 	width:83px;
-	border-radius:5px;	
 }
 
 #property #right #desc{
@@ -1731,14 +1684,12 @@ margin:auto;
 	background-color:gray;
 	width:197px;
 	height:130px;
-	border-radius:5px;
 	margin-top:20px;
 }
 #comparePage .picture{
 	background-color:rgb(51,62,106);
 	width:60px;
 	height:45px;
-	border-radius:2px;
 	margin-top:20px;
 	margin-right:5px;
 	display:inline-block;
@@ -1786,7 +1737,6 @@ display:none;
 #picsAndVids #picsWrap img{
 	height:50px;
 	width:55px;
-	border-radius:10px;
 }
 
 #picsAndVids #picsWrap #sWrap #arrow{
@@ -1954,12 +1904,11 @@ display:inline-block;
 width:160px; 
 height:120px; 
 background-color:gray; 
-border-radius:5px;  
 margin-right:15px;
 }
 
 #housingMain #left .compareWrap{
-	margin-left:21px;
+	margin-left:18px;
 	display:inline-block;
 vertical-align:bottom;
 font-family:Georgia;
@@ -1969,7 +1918,7 @@ color:rgb(116,116,116);
 
 
 #housingMain #left #item h3{
-	font-family:HNB;
+	font-family:HNL;
 	font-size:24px;
 	margin-bottom:5px;
 }
@@ -1996,23 +1945,25 @@ color:rgb(116,116,116);
 }
 
 #housingMain #right #matcher{
-	margin-top:-10px;
+	margin-top:10px;
 	width:100%;
+	border-top:1px solid rgb(116,116,116);
 }
 
 #housingMain #right #matcher h2{
-	margin-top:25px;
+	margin-top:15px;
+	
 }
 
-#housingMain #right #deadlinesDiv{
+#housingMain #right #deadlinesDiv, #deadlinesDiv1{
 text-align:center;
-border-bottom:1px solid  rgb(116,116,116);
 padding-bottom:10px;
-
+position:relative;
 }
 
-#housingMain #right #deadlinesDiv p{
+#housingMain #right #deadlinesDiv p, #deadlinesDiv1{
 font-size:18px;
+
 }
 #compareDiv{
 margin-top:0px;
@@ -2071,6 +2022,7 @@ font-size:18px;
 	text-align:left;
 	margin:5px 10px;
 }
+
 
 /* reviews */
 #reviewsPage{
@@ -2543,8 +2495,11 @@ margin-top:10px;
 	}
 
 	#housingMain #left .compareWrap{
-	margin-left:115px;
+	margin-left:108px;
 	
+	}
+	#housingMain #checkAvailability button{
+		margin-left:445px;
 	}
 	#propListing #housingMain #left .compareWrap{
 		margin-left:115px;
@@ -2560,9 +2515,13 @@ margin-top:10px;
 		margin-left:250px;
 	}
 	
-	#housingMain #right #deadlinesDiv{
-border-top:1px solid  rgb(116,116,116);
+	#housingMain #right #deadlinesDiv, #deadlinesDiv1{
 padding-top:5px;
+position:relative;
+
+}
+#deadlinesDiv1{
+border:none;
 }
 
 #housingMain #right{
@@ -2832,6 +2791,12 @@ width:1000px; margin:auto; max-width:100%; min-height:300px;
 }
 
 @media (min-width:1300px){
+#housingMain #checkAvailability button{
+margin-left:688px;
+margin-bottom:10px;
+width:130px;
+height:25px;
+}
 #dropMove{
 margin-left:50px;
 
@@ -3073,12 +3038,7 @@ width:1300px;
 }
 
 
-#checkAvailability button{
-margin-left:688px;
-margin-bottom:10px;
-width:130px;
-height:25px;
-}
+
 #nameBox, #phoneBox{
 	width:230px;
 	margin-bottom:0px;
