@@ -184,7 +184,7 @@
 	border-right: 7px solid transparent;
 	border-top: 8px solid rgb(220, 134, 39);
 }
-#maincontent #essay p{margin-top:0;}
+
 .essay center img{display:inline-block;}
 #recentAnswers, #data, #essay{height: 444px; position:relative;}
 
@@ -307,10 +307,9 @@
 #maincontent.essays .essayContainer p{text-indent:40px;}
 .info{width: 100%; display:block;}
 .infoLeft, .infoRight, .addEssay{vertical-align:top;}
-.infoLeft{width: 24%; display:inline-block;}
-.infoRight{width: 24%; display:inline-block;}
-.addEssay{width: 49%; display:inline-block;text-align:right;}
-.addEssay button{float: right; }
+.infoLeft{width: 19%; display:inline-block;}
+.infoRight{width: 79%; display:inline-block;text-align:right;}
+.infoRight button{float: right; }
 .rate{display:block; text-align:center;color:rgb(116,116,116); font-family:Georgia, "Times New Roman", Times, serif; font-size:14px;}
 #essay .dropDown,#essay .dropDown select, #essay .dropDown select option{width: 150px;}
 .selectContainer{margin-top:40px; margin-bottom:20px;}
@@ -1270,7 +1269,6 @@ padding-top: 9px;
 #schoolCosts .legend{border:0; overflow:hidden;padding: 0 50px; margin:0 auto;}
 .chartContainer{width: 115px; display:block; margin:0 auto;}
 #studentEmployment{margin-top: 30px;}
-#maincontent #data h3{margin-top:0;}
 #financialAid {border-left:1px solid rgb(116,116,116);}
 #finDataMid a{text-align:center; padding-left:50px; display:block;}
 #finDataMid a{
@@ -1633,9 +1631,8 @@ hr {
 .pad50{padding:0 50px; !important}
 .marginBot0{margin-bottom:0;}
 .marginTop0{margin-top:0;}
-.marginTop10{margin-top:10;}
+.marginTop10{margin-top:10px;}
 .marginBot17{margin-bottom:17px;}
-
 
 
 
