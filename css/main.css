@@ -297,7 +297,7 @@
 .rate{display:block; text-align:center;color:rgb(116,116,116); font-family:Georgia, "Times New Roman", Times, serif; font-size:14px;}
 #essay .dropDown,#essay .dropDown select, #essay .dropDown select option{width: 150px;}
 .selectContainer{margin-top:40px; margin-bottom:20px;}
-#acceptedEssays ,#maincontent.essays #essay{height: 650px;}
+#acceptedEssays ,#maincontent.essays #essay{height: 700px;}
 #maincontent.essays #answerNav{bottom:0;}
 #uploadEssayForm label{
 	text-align:right; 
@@ -326,6 +326,18 @@
 	font-size:14px;
 	display:inline-block;
 }
+.sideEssayContainer{margin-left:50px; margin-bottom: 20px;}
+.sideEssayContainer a{text-decoration:none; color:inherit;}
+#maincontent .sideEssayContainer p{text-align:left; margin-bottom:0;}
+#maincontent .sideEssayContainer .view{text-align:right;}
+.topEssay{border-bottom: 1px solid rgb(116,116,116); overflow:hidden;}
+.esssayTitle{display:inline-block;color:rgb(51, 62, 107); font-size:18px; font-family:HNL;}
+.topEssay .voteContainer{float:right; margin:0;}
+.bottomEssay{color:rgb(116,116,116);font-family:Georgia, "Times New Roman", Times, serif;}
+.gray{color:rgb(116,116,116);}
+.rateEssay{float:right; color:rgb(116,116,116); display:inline-block;}
+.essayContainer .voteContainer{margin:0;}
+
 /* ============ Roomie Match ================= */
 .rmTable {
 	margin: 0 auto;
