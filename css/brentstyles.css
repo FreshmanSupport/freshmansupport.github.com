@@ -739,7 +739,6 @@ width:105px;
 #housingMain .picWrapper img{
 	width:75px;
 	height:69px;
-	margin-top:0px;
 
 }
 #housingQ .importance, #housingQ .importance1{
@@ -2183,6 +2182,9 @@ font-size:24px;
 	margin:auto;
 	
 }
+#reviewsPage .viewMore{
+width:94.5%;
+}
 #reviewsPage #left{
 	max-width:100%;
 	width: 580px;
@@ -2301,7 +2303,13 @@ font-size:24px;
 
 #reviewsPage #right .submit{
 	border-bottom:1px solid  rgb(116,116,116);
-	padding-bottom:10px;
+	padding-bottom:35px;
+	position:relative;
+	
+}
+#reviewsPage  .submit button{
+position:absolute;
+right:4px;
 }
 #housingMain .list, #reviewsPage #right .list{
 	text-align:center;
@@ -2562,6 +2570,17 @@ line-height: 14px;
 padding-left:4px;
 }
 
+#reviewsPage #submitA{
+width:550px;
+margin:auto;
+text-align:left;
+position:relative;
+
+}
+#reviewsPage #submitA button{
+
+right:14px;
+}
 
 .dropDown .pref{
 border: 1px solid rgb(116,116,116);
@@ -2581,9 +2600,31 @@ font-family:Georgia, 'Times New Roman', Times, serif;
 font-size:14px;
 
 }
-
+#reviewsPage button{
+	display:none;
+}
 @media (max-width:1000px) { 
+#reviewsPage #right{
+display:none;
+}
+#reviewsPage #submitA, #reviewsPage #submitted{
+width:550px;
+margin:auto;
+text-align:left;
+position:relative;
 
+}
+#reviewsPage #submitA button, #reviewsPage #submitted button{
+
+right:14px;
+}
+
+#reviewsPage button{
+display:inline-block;
+}
+#reviewsPage #left{
+border:none;
+}
 #housingMain #left .picCompareWrap {
 margin-left:172px;
 }
@@ -2811,7 +2852,7 @@ display:none;
 height:500px;
 	}
 	#compareTypes{
-		margin-top:290px;
+		margin-top:310px;
 		width:80%;
 	}
 	#recommendedHousingFooter{
@@ -2920,7 +2961,7 @@ margin-left:100px;
 height:1000px;
 	}
 	#compareTypes{
-		margin-top:510px;
+		margin-top:520px;
 		}
 	#flipWrap{
 	margin-top:0px;
@@ -3009,7 +3050,7 @@ width:430px;
 
 
 #housingMain #left .picCompareWrap .compareWrap, #housingMain #left .picCompareWrap .video, #housingMain #left .picCompareWrap .picWrapper{
-	vertical-align:bottom;
+	vertical-align:bottom !important;
 	margin-bottom:0px;
 	
 	
@@ -3052,6 +3093,10 @@ right:15px;
 	width:1300px;
 	
 }
+#reviewsPage .viewMore{
+width:97.5%;
+}
+
 #reviewsPage #left{
 width:850px;
 }
