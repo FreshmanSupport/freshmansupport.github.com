@@ -6,12 +6,14 @@
 <script src="../../js/jquery-1.9.1.js" type="text/javascript"></script>
 <script type="text/javascript" src="../../js/jquery.ddslick.js"></script>
 <script>
+
 $(document).ready(function(){
-$('#officersSelect').ddslick({
-    onSelected: function(selectedData){
-        //callback function: do something with selectedData;
-    }   
-});
+	$('#officersSelect').ddslick({
+		
+    	imagePosition:"right",
+		width:420
+		   
+	});
 });
 </script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -62,7 +64,7 @@ $('#officersSelect').ddslick({
   <div id="recentlyAnswered" class="col-5-8">
     <div id="raHeader">
       <h2>Admissions Q&A </h2>
-      <div class="dropDown">
+      <div class="dropDown marginTop10">
         <select>
           <option>Sort by...</option>
           <option>Name</option>
@@ -112,7 +114,7 @@ $('#officersSelect').ddslick({
   </div>
   <div class="col-3-8 admissionsAsk">
     <h2>Ask a Admissions Officer</h2>
-    <p style="margin-top:0; margin-bottom:30px;"><i>Our admissions officers have a est limit of question that can be sent each day. If an admissions officer
+    <p class="marginTop10"><i>Our admissions officers have a est limit of question that can be sent each day. If an admissions officer
       is unavailable, please try again the following day, or view previously answered questions.</i></p>
     <select id="officersSelect">
       <option value="0"

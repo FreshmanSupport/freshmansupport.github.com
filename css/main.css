@@ -297,8 +297,6 @@
 .admissionsAsk{padding-left: 50px; padding-right: 50px;}
 .admissionsAsk textarea{width: 420px; height: 100px; margin-top: 20px; margin-bottom: 20px;}
 .admissionsAsk .dropDown,.admissionsAsk .dropDown select{width: 200px;}
-#officersSelect{width: 420px;}
-#officersSelect li{width:500px;}
 #officerPic{display:inline-block; width:150px; height:150px;}
 #officerDesc{display:inline-block; min-width:150px; height:150px;}
 #officerPic, #officerDesc{margin-bottom: 30px;vertical-align:top;margin-left:10px;}
@@ -385,6 +383,21 @@
 	text-align: left;
 	border-right: none;
 	padding-left: 20px;
+}
+#recommendedHousing{border-left:1px solid rgb(116,116,116);}
+.recommended{width:400px; margin:0 auto; margin-bottom:20px;}
+#maincontent .recommended h3{text-align:left; color:rgb(51, 62, 107); margin-top:-3px;}
+.recommended .left{display:inline-block; width: 150px; vertical-align:top;}
+.recommended .left img{width:140px; height:122px;}
+.recommended .right{display:inline-block; width: 195px; vertical-align:top;height:122px}
+.recommended button{width:100%; margin-top:11px;}
+#maincontent .recommended p{text-align:left; margin:0;}
+#maincontent .recommended .right a{
+	color: rgb(51,62,106);
+	text-decoration: none;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	display:block;
 }
 /* ================== Roomie Slide ================= */
 #rmSlide{
@@ -1781,31 +1794,7 @@ body {
 }
 ul{padding:0; list-style-type:none;}
 a img{border:0;}
-/* ========== Brent Stuff ============= */
-#housingMatcherRight {
-	width:350px;
-	max-width:100%;	
-	display: inline-block;
-	margin-top: 0px;
-	border-left: 1px solid  rgb(116,116,116);
-	text-align:left;
-	padding-left:10px;
-		margin-top:10px;
-		vertical-align:top;
-}
-#housingMatcherRight .compare, #housingMatcherRight .interests{
-font-size:14px;
-}
-#housingMatcherRight #compareDiv{
-margin-bottom:-5px;
-}
-#housingMatcherRight .interests{
-margin-left:2px;
-margin-top:-15px;
-}
-#housingMatcherRight button{
-	margin-top:-11px;
-}
-#housingVideo{display:inline-block;}
+/* ================= Warped Brent CSS ported Stuff ============= */
+
 
 /* ======================== EXPERIMENTAL STUFF ======================= */
