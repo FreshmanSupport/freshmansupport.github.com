@@ -47,11 +47,11 @@
 	color: rgb(51, 62, 107);
 	font-size: 30px;
 	font-weight: normal;
-	font-family: HNL;
+	font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 0;
 }
 #maincontent h3 {
-	font-family: HNL;
+	font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 24px;
 	color: rgb(116, 116, 116);
 	font-weight: normal;
@@ -66,6 +66,7 @@
 	font-size: 14px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
+a{font-family:Georgia, "Times New Roman", Times, serif; font-size:14px; text-decoration:none; color:rgb( 51, 62, 106);}
 /* ======================= Admission =================== */
 .admissions {}
 #recentlyAnswered{padding:0 50px;}
@@ -89,7 +90,7 @@
 .question h3,.answer h3{margin-top:0;}
 .answer {
 	color: rgb(51,62,106);
-	font-family: HNL;
+	font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	display: inline-block;
 	width: 46%;
 	min-height: 120px;
@@ -352,7 +353,7 @@
 #maincontent .sideEssayContainer p{text-align:left; margin-bottom:0;}
 #maincontent .sideEssayContainer .view{text-align:right;}
 .topEssay{border-bottom: 1px solid rgb(116,116,116); overflow:hidden;}
-.esssayTitle{display:inline-block;color:rgb(51, 62, 107); font-size:24px; font-family:HNL;}
+.esssayTitle{display:inline-block;color:rgb(51, 62, 107); font-size:24px; font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;}
 .topEssay .voteContainer{float:right; margin:0;}
 .bottomEssay{color:rgb(116,116,116);font-family:Georgia, "Times New Roman", Times, serif;}
 .gray{color:rgb(116,116,116);}
@@ -631,8 +632,7 @@ padding-top: 9px;
 }
 #studentProfile{border-right: 1px solid rgb(116,116,116); padding:0 50px; min-height:655px;}
 #studentProfile #spHeader h2 {
-	text-align: center;
-	font-family: HNL;
+	text-align: center;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 30px;
 }
 
@@ -859,8 +859,7 @@ padding-top: 9px;
 .realLifeNav h2 {
 	color: rgb(51, 62,106);
 	text-align: left;
-	font-weight: normal;
-	font-family: HNL;
+	font-weight: normal;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding-left: 10px;
 }
 .realLifeNav .head {
@@ -1030,8 +1029,7 @@ padding-top: 9px;
 	list-style-type: none;
 	color: rgb(51, 62, 106);
 	padding-bottom: 5px;
-	border-bottom: 1px solid rgb(51, 62, 106);
-	font-family: HNL;
+	border-bottom: 1px solid rgb(51, 62, 106);font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .realLifeProfile li:last-child {
 	border: none;
@@ -1127,7 +1125,7 @@ padding-top: 9px;
 .stateTextWrap div:first-child{display:inline-block;}
 .stateTextWrap div:nth-child(2){display:inline-block;padding-left:57px;}
 .stateTextWrap div:last-child{display:inline-block;padding-left:35px;}
-#budgetPlanner h3{color:rgb(116,116,116); margin-top:0; font-family:HNL; font-size:24px; font-weight:normal;}
+#budgetPlanner h3{color:rgb(116,116,116); margin-top:0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:24px; font-weight:normal;}
  .stateWrap label {
 	display: inline-block;
 	vertical-align: top;
@@ -1379,7 +1377,7 @@ padding-top: 9px;
 	font-size:24px;
 	border-bottom:1px solid rgb(116,116,116);
 	width:80%;
-	font-family:HNL;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	cursor:pointer;
 }
 .budgetPlanner #results .right{display:inline-block; text-align:right; color:rgb(116, 116, 116); font-size:24px; text-align:right;width:19%; white-space:nowrap;}
@@ -1387,7 +1385,7 @@ padding-top: 9px;
 #maincontent.budgetPlanner .finale h2{color:rgb(220, 134, 39);}
 #currentNumber{display:inline-block; width:5px; text-align:center;}
 /* ==================== Data ====================== */
-#maincontent.data #payForCollege h3{font-family: HNL;font-size: 24px;color: rgb(116, 116, 116);font-weight: normal; margin-bottom:0;}
+#maincontent.data #payForCollege h3{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 24px;color: rgb(116, 116, 116);font-weight: normal; margin-bottom:0;}
 #maincontent.data #payForCollege p{margin:0;  font-style:italic;}
 #payForCollege .textWrap{width:200px; display:block; margin:0 auto;}
 #maincontent.data #payForCollege, #maincontent.data #finDataMid, #maincontent.data #financialAid {
@@ -1445,7 +1443,7 @@ padding-top: 9px;
 /* ================= Financial Aid ================= */
 .financialAid{}
 .financialAid img{display:block; margin:0 auto;}
-.financialAid h1{font-size:34px; font-family:HNL; font-weight:normal; text-align:center;color:rgb(51, 62, 107);}
+.financialAid h1{font-size:34px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight:normal; text-align:center;color:rgb(51, 62, 107);}
 .financialAid a{display:block; text-decoration:none; color:rgb(51, 62, 107);font-family:Georgia, "Times New Roman", Times, serif; margin-bottom:10px;}
 #grant, #loan, #workStudy{}
 .financialAid #recentAnswers .view{margin-top: 8px;}
@@ -1486,7 +1484,7 @@ padding-top: 9px;
 	height:50px;
 	font-size:34px;
 	color: rgb(51,62,106);
-	font-family:HNL;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-align:center;;
 }
 #mainCalendar table{margin: 0 auto; width: 500px;}
@@ -1560,7 +1558,53 @@ padding-top: 9px;
 @media(max-width:1000){
 	#maincontent.calendar{width:100%; margin:0 auto;}
 }
+/* ============== User Profile ============= */
+.profileTopContainer .portrait{
+	display:inline-block;
+	vertical-align:top;
+}
+.profileTopContainer{
+	height:200px;
+}
+.profileInfo{
+	display:inline-block;
+	vertical-align:top;
+	background-color:rgb(232, 229, 228);
+	width:80%;;
+}
+.profileInfo ul{margin:0;}
+.profileInfo ul li:first-child(){
 
+}
+.profileTopContainer .portrait img{
+	width:200px; 
+	height:200px;
+}
+
+.profileList{
+	position:relative;
+	width:100%;
+	margin-bottom:20px;
+}
+#maincontent .profileList > h3{text-align:left; margin-bottom:0; color:rgb( 51, 62, 106);}
+#maincontent .profileList > p{text-align:left;margin-top:10px;}
+.profileList .grayOut{
+	position:absolute;
+	z-index: 1;
+}
+.profileSquare{
+	display:inline-block;
+	width: 24%;
+}
+.profileSquare img{
+	height:150px;
+	width:150px;
+	display:block;
+	margin:0 auto;
+}
+#maincontent .profileSquare p{text-align:center; margin:0;}
+.viewAllContainer{display:block; margin-top:10px;}
+.viewAllContainer a{float:right;}
 /* ============== Footer  ===================*/
 .footer {
 	padding-top: 10px;
@@ -1574,14 +1618,13 @@ padding-top: 9px;
 	margin-top:20px;
 }
 .footer h2 {
-	font-family: HNL, Arial, Helvetica, sans-serif;
+	font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 30px;
 	color: rgb( 51, 62, 106);
 	font-weight: normal;
 	margin: 0;
 }
-.footer h3 {
-	font-family: HNL;
+.footer h3 {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 24px;
 	color: rgb(51 , 62, 106);
 	font-weight: normal;
@@ -1787,9 +1830,7 @@ padding-top: 9px;
 	padding-left: 5px;
 	content: url(../img/arrowRight.png);
 }
-.HNL {
-	font-family: HNL;!important
-}
+
 button {
 	border: none;
 	background-color: rgb(220, 134, 39);
@@ -1930,7 +1971,6 @@ body {
 }
 ul{padding:0; list-style-type:none;}
 a img{border:0;}
-/* ================= Warped Brent CSS ported Stuff ============= */
 
 
 /* ======================== EXPERIMENTAL STUFF ======================= */
