@@ -134,7 +134,7 @@
 #subNav {
 	text-align: center;
 	background-color: transparent;
-	width: 75%;
+	width: 1179px;
 	z-index: 2;
 	min-height: 35px;
 	border-top: 3px solid rgb(116,116,116);
@@ -304,6 +304,7 @@ h1 {
 }
 @media (max-width:1179px){
 	#newNav{width:100%;}
+	#subNav{width:98%;}
 }
 @media (max-width:1000px){
 	#collegeSearchContainer span{display:none;}
@@ -314,14 +315,18 @@ h1 {
 }
 /* ====== Login and Register ========== */
 #overlay{
+	z-index:1001;	
+	position: absolute; 
+	right: 50%;
+}
+#overlayBackground{
 	height:100%;
 	width:100%;
 	position:absolute;
 	top:0;
 	left:0;
 	background-color:rgba(255,255,255,0.7);
-	z-index:11;
-}
+	z-index:1000;}
 #loginRegisterContainer,#videoPlayerContainer{
 	border:2px solid rgb( 51, 62, 106);
 	width:1190px;
@@ -330,6 +335,12 @@ h1 {
 	margin:0 auto;
 	margin-top: 100px;
 	z-index:14;
+	position: relative; left: 50%;
+}
+#loginRegisterContainer a,#videoPlayerContainer a{
+	text-decoration:none;
+	color:rgb( 51, 62, 106);
+	font-family:Georgia, "Times New Roman", Times, serif;
 }
 .fakeVideo{width:90%; height:500px; background-color:gray; border:2px solid rgb(51, 62, 106); margin:0 auto;}
 #loginRegisterContainer ul{list-style-type:none; padding: 0;}
@@ -395,7 +406,7 @@ h1 {
 	color:rgb(51, 62, 107);
 	margin-right: 20px;
 }
-.schoolBox select{
+.schoolBox input[type=text]{
 	background: transparent;
 	width: 150px;
 	font-size: 14px;
@@ -408,7 +419,6 @@ h1 {
 	line-height: 14px;
 	padding-left:1px;
 }
-.schoolBox select option{width: 150px;}
 #register .disclaimer{padding-left: 160px;}
 .male{background-image:url(../img/profile/male.png);}
 .female{background-image:url(../img/profile/female.png); }
@@ -422,6 +432,8 @@ h1 {
 #register .dropDown{display:inline-block; border:1px solid #eee9e9;}
 #register .dropDown select{border:1px solid #eee9e9;}
 .plus{font-size:28px; color:orange;}
+#registerThankYou{width: 100%; overflow:hidden;}
+#goToProfile{float:right;}
 /* ================ Search Result ============= */
 #maincontent.searchResults {border-left:2px solid rgb(116,166,166);border-right:2px solid rgb(116,166,166); padding: 0 10px 20px 10px;}
 #maincontent.searchResults #resultSearch{width: 250px;margin-right: 5px;}

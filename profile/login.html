@@ -5,31 +5,13 @@
 <link type="text/css" rel="stylesheet" href="../css/headerStyle.css"/>
 <link type="text/css" rel="stylesheet" href="../css/main.css"/>
 <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../js/loginScript.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Login</title>
 </head>
-
 <body>
-<div id="header">
-  <div id="loginBar">
-    <div id="loginBarContainer"> <a href="#">Login |</a> <a href="#"> Register</a> </div>
-  </div>
-  <div id="searchBar">
-    <div id="collegeSearchContainer">
-      <form id="collegeSearchbox" action="">
-        <input id="submit" type="submit" value="Search" name="submit"class="collegeSearchButton">
-        <input id="search" type="text" name="collegeSearch" placeholder="The University of Texas at Austin" class="collegeSearchBox">
-      </form>
-    </div>
-    <div id="logoContainer"><a href="/"> <img src="../img/logo.png" /></a> </div>
-    <div id="siteSearchContainer">
-      <form id="searchbox" action="">
-        <div id="magnify"></div>
-        <input id="search" type="text" placeholder="Search The University of North Texas" class="siteSearchSkin">
-      </form>
-    </div>
-  </div>
-  <div id="overlay">
+<div id="overlayBackground" style="display:none;"></div>	
+<div id="overlay" style="display:none;">
   	<div id="loginRegisterContainer">
     	<div id="topBar">
         	<div id="xClose">X</div>
@@ -80,31 +62,13 @@
                     </li>
                     <li><label>School:</label>
                     <div class="schoolBox">
-                    	<select>
-                        	<option>Add School</option>
-                        	<option selected>University of Texas</option>
-                            <option>Texas A & M</option>
-                            <option>Baylor</option>
-                            <option>Austin Community College</option>
-						</select>                    
+                   		<input type="text" placeholder="Add School"/>    
                     </div>
                       <div class="schoolBox">
-                    	<select>
-                        	<option>Add School</option>
-                        	<option>University of Texas</option>
-                            <option>Texas A & M</option>
-                            <option>Baylor</option>
-                            <option>Austin Community College</option>
-						</select>                    
+                    	<input type="text" placeholder="Add School"/>         
                     </div>
                       <div class="schoolBox">
-                    	<select>
-                        	<option>Add School</option>
-                        	<option>University of Texas</option>
-                            <option>Texas A & M</option>
-                            <option>Baylor</option>
-                            <option>Austin Community College</option>
-						</select>                    
+                   		<input type="text" placeholder="Add School"/>                 
                     </div>
                     
                     </li>
@@ -116,7 +80,33 @@
             </form>
         </div>
     </div>
+         <div id="registerThankYou">
+        	<h2>Thank you for register with us!</h2>
+            <h3 class="marginTop10">Would you like to...</h3>
+            <button id="return">Return to Current Page</button>
+            <button id="goToProfile">Go To Your Profile</button>
+        </div>
   </div>
+<div id="header">
+  <div id="loginBar">
+    <div id="loginBarContainer"> <a href="#">Login |</a> <a href="#"> Register</a> </div>
+  </div>
+  <div id="searchBar">
+    <div id="collegeSearchContainer">
+      <form id="collegeSearchbox" action="">
+        <input id="submit" type="submit" value="Search" name="submit"class="collegeSearchButton">
+        <input id="search" type="text" name="collegeSearch" placeholder="The University of Texas at Austin" class="collegeSearchBox">
+      </form>
+    </div>
+    <div id="logoContainer"><a href="/"> <img src="../img/logo.png" /></a> </div>
+    <div id="siteSearchContainer">
+      <form id="searchbox" action="">
+        <div id="magnify"></div>
+        <input id="search" type="text" placeholder="Search The University of North Texas" class="siteSearchSkin">
+      </form>
+    </div>
+  </div>
+  
   <div id="newNav">
     <ul>
       <li id="home"><a href="../home">HOME</a></li>
@@ -138,12 +128,7 @@
   </div>
 </div>
 <div id="maincontent"> </div>
+
+
 </body>
-<script>
-	$('#xClose').click(function(){
-			$('#overlay').hide();
-		});
-	  $('#loginBarContainer a').click(function(){
-	  		$('#overlay').show();
-	  });
-</script>
+

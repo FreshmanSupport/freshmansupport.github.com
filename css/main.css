@@ -207,6 +207,7 @@
 #maincontent.admissions #essay .col-1-5:last-child{
 	display:none;
 }
+#maincontent.admissions #essaySlider{margin-top:50px; margin-left:25px;}
 }
 @media(max-width:1320px)
 {
@@ -251,6 +252,7 @@
 	border-left:0;
 	padding-top:20px;
 }
+#maincontent.admissions #essaySlider{margin-top:10px;}
 }
 /* ============= Recently  Answered =============== */
 #raHeader {
@@ -357,6 +359,10 @@
 .rateEssay{float:right; color:rgb(116,116,116); display:inline-block;}
 .essayContainer .voteContainer{margin:0;}
 .floatWrap{margin-top:22px;}
+@media (max-width:1300px){
+#maincontent.essays #acceptedEssays{width:100%; border:0;}
+#maincontent.essays #essay{display:none;}
+}
 /* ============ Roomie Match ================= */
 .rmTable {
 	margin: 0 auto;
@@ -630,9 +636,6 @@ padding-top: 9px;
 	font-size: 30px;
 }
 
-#spHeader .dropDown {
-	float: left;
-}
 #studentProfile ul {
 	list-style: none;
 	padding: 0;
@@ -684,6 +687,13 @@ padding-top: 9px;
 	width: 150px;
 	margin: 0 auto;
 	display: block;
+}
+#studentProfile .legend{ border:0;}
+@media(max-width:1300px){
+#maincontent #studentProfile{width:100%; border:0;}
+#maincontent #studentProfile p{display:none;}
+#spRight #date{display:none;}
+#spRight{display:none;}
 }
 /* ================= Edit Preference =================== */
 .editNav {
@@ -1423,6 +1433,15 @@ padding-top: 9px;
 #financialAid ul{ display:block; list-style-type:disc; margin:0 115px;}
 #financialAid li{}
 #loan, #workStudy{margin-top:30px;} 
+
+#responsiveFin{display:inline;}
+@media(max-width:1300px){
+	#maincontent.data #financialAid{display:block; width:100%;}
+	#schoolCosts, #studentEmployment,#grant,#loan,#workStudy,#finDataMid{width:100%;}
+	#maincontent.data #finDataMid{height:476px; border-bottom:1px solid rgb(116,116,116);}
+	#responsiveFin, #payForCollege{display:inline-block; width:49%;}
+	
+}
 /* ================= Financial Aid ================= */
 .financialAid{}
 .financialAid img{display:block; margin:0 auto;}
@@ -1604,7 +1623,13 @@ padding-top: 9px;
 	color: orange;
 }
 .rmSpan{margin-bottom:27px;}
-
+.admissionsAsk #textareaBelow{width:420px; display:block;}
+.admissionsAsk #textareaBelow .dropDown{float:left;}
+.admissionsAsk #textareaBelow button{float:right;}
+@media(max-width:1318px){
+	.admissionsAsk.col-3-8{display:none;}
+	#maincontent.admissQA #recentlyAnswered{width:100%; border:0;}
+}
 /* ============== COLUMN  ===================*/
 
 /* Select all of the column*/
