@@ -356,7 +356,7 @@
 .topEssay .voteContainer{float:right; margin:0;}
 .bottomEssay{color:rgb(116,116,116);font-family:Georgia, "Times New Roman", Times, serif;}
 .gray{color:rgb(116,116,116);}
-.rateEssay{float:right; color:rgb(116,116,116); display:inline-block;}
+.rateEssay{float:right; color:rgb(116,116,116); display:inline-block; font-family:Georgia, "Times New Roman", Times, serif;}
 .essayContainer .voteContainer{margin:0;}
 .floatWrap{margin-top:22px;}
 @media (max-width:1300px){
@@ -1448,11 +1448,11 @@ padding-top: 9px;
 .financialAid h1{font-size:34px; font-family:HNL; font-weight:normal; text-align:center;color:rgb(51, 62, 107);}
 .financialAid a{display:block; text-decoration:none; color:rgb(51, 62, 107);font-family:Georgia, "Times New Roman", Times, serif; margin-bottom:10px;}
 #grant, #loan, #workStudy{}
-
 .financialAid #recentAnswers .view{margin-top: 8px;}
 /* ============== Deadlines =================== */
-.smallCalendar{width: 400px;}
-#sideCalendar{display:inline-block; width:200px; height: 500px;overflow-y:scroll;}
+
+.smallCalendar .title{}
+#sideCalendar{display:inline-block; width:300px; height: 555px ;overflow-y:scroll; 	padding-left:20px;}
 .calendar .smallCalendar table{}
 .smallCalendar{
 	text-align:center; 
@@ -1461,11 +1461,15 @@ padding-top: 9px;
 	font-size: 14px;
 	width:150px;
 	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	cursor:pointer;
 }
-#sideCalendar ::-webkit-scrollbar {
+
+#maincontent.calendar ::-webkit-scrollbar {
     width: 12px;
 }
-#sideCalendar ::-webkit-scrollbar-thumb {
+#maincontent.calendar ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 	background-color:rgb(51,62,106);  
@@ -1486,15 +1490,15 @@ padding-top: 9px;
 	text-align:center;;
 }
 #mainCalendar table{margin: 0 auto; width: 500px;}
-#mainCalendar #infoBox{background-color:rgb(232, 229, 228);}
-#mainCalendar #infoBox h2{color:rgb(221, 135, 39); font-family:HNL;}
-#mainCalendar th{color:rgb(116,116,116); font-family:HNL; text-align:center;;}
+#mainCalendar #infoBox{background-color:rgb(232, 229, 228); margin:40px 30px 0 30px; padding: 10px 30px 30px 20px; min-height: 10px;}
+#mainCalendar th{color:rgb(116,116,116); font-family:Georgia, "Times New Roman", Times, serif; text-align:center; font-size:14px; font-weight:normal;}
 #infoBox .infoLabel, #infoBox .infoContent{color:rgb(51,62,106); font-family:Georgia, "Times New Roman", Times, serif;font-size:14px;}
-#infoBox .infoLabel{display:inline-block; width: 50px; vertical-align:top;margin-right: 10px;}
-#infoBox .infoContent{display:inline-block; width: 600px;}
-
-#deadlineNotification{display:inline-block; width: 500px; padding: 0 50px; vertical-align:top;}
-.specialIcon .icon{width:30px; height:30px; background-color:orange; display:inline-block;}
+#infoBox .infoLabel{display:inline-block; width: 70px; vertical-align:top;margin-right: 10px;text-align:right;}
+#infoBox .infoContent{display:inline-block; width: 460px;}
+#infoBox li{margin-bottom:10px;}
+#deadlineNotification{display:inline-block; width: 300px; padding-left:35px; vertical-align:top;}
+.specialIcon{margin-top:18px;}
+.specialIcon .icon{width:30px; height:25px; background-color:orange; display:inline-block;}
 .specialIcon .iconInfo{
 	display:inline-block; 
 	width: 200px; 
@@ -1502,8 +1506,61 @@ padding-top: 9px;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:14px;
 	vertical-align:top;
+	padding-left:10px; 
+	white-space:nowrap;
+	margin-top:4px;
 }
-.deadlineLegend{color:rgb(51,62,106); font-family:Georgia, "Times New Roman", Times, serif;font-size:14px;}
+
+.deadlineLegend{color:rgb(51,62,106); font-family:Georgia, "Times New Roman", Times, serif;font-size:14px; margin-top: 30px;}
+
+.deadlineLegend .circle{
+	display: inline-block;
+	vertical-align: top;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+.legendText{display:inline-block; margin-left: 16px;margin-top: 6px;}
+.deadlineLegend li{margin-bottom: 5px;}
+.deadlineLegend li:first-child .circle{background-color:rgb(221, 135, 39);}
+.deadlineLegend li:nth-child(2) .circle{background-color:green;}
+.deadlineLegend li:nth-child(3) .circle{background-color:purple;}
+.deadlineLegend li:nth-child(4) .circle{background-color:lightblue;}
+.deadlineLegend li:last-child .circle{background-color:rgb(102, 0, 0);}
+
+
+
+#calendarHeader{margin:0 auto; width:330px; }
+#calendarHeader button{
+	border: 0;
+	background-color: transparent;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: rgb(51, 62, 107);
+	display: inline-block;
+}
+#calendarHeader h2{
+	display:inline-block;
+}
+#mainCalendar .circleOJ{
+	background-image:url(../img/BUT/orangeCircle.png);
+	background-size:69% 81%;
+	background-repeat:no-repeat;
+	background-position:10px 7px;
+	color:white;
+}
+#mainCalendar .circleNavy{
+	background-image:url(../img/BUT/navyCircle.png);
+	background-size:69% 81%;
+	background-repeat:no-repeat;
+	background-position:10px 7px;
+	color:white;
+}
+#calendarWrapper{width:1320px; margin: 0 auto; display:block; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+@media(max-width:1000){
+	#maincontent.calendar{width:100%; margin:0 auto;}
+}
+
 /* ============== Footer  ===================*/
 .footer {
 	padding-top: 10px;

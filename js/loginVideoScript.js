@@ -26,11 +26,12 @@ $(document).ready(function(e) {
 	
 	//Use onclick to trigger video
 	//Not sure how to trigger multiple video on pages
-	 showVideo()
-	{
+	
+	$('.clickableVideo').click(function(){	
 		$('.videoOverlay').show();
 		$('#overlayBackground').show();
-	}
+	});
+
 	//Switch to ThankYou Screen when clicking on Register
 	$('#registerButton').click(function(){
 		$('#loginRegisterContainer').hide();
