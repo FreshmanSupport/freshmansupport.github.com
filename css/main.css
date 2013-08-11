@@ -1475,8 +1475,8 @@ padding-top: 9px;
 #mainCalendar{
 	display:inline-block; 
 	width: 700px;
-	border-left:2px solid rgb(116, 116, 116);
-	border-right:2px solid rgb(116,116,116);
+	border-left:1px solid rgb(116, 116, 116);
+	border-right:1px solid rgb(116,116,116);
 	vertical-align:top;
 }
 #mainCalendar td{
