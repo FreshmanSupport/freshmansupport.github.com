@@ -275,7 +275,7 @@ vertical-align:top;
 
 }
 #housingResultsContainer #choice{
-	width:140px;
+	width:115px;
 }
 #choices {
 	margin-left: auto;
@@ -371,14 +371,21 @@ font-family: HNB;
 	margin-right: 10px;
 }
 #matchInfo {
-	width: 270px;
+	width: 300px;
+	height:217px;
 	max-width:100%;
 	display: inline-block;
-	margin-top:20px;
+	margin-top:15px;
 	text-align:left;
 	vertical-align:top;
 	font-size:14px;
-	font-color:rgb(116,116,116);
+	color:rgb(116,116,116);
+	vertical-align:top;
+	
+}
+#matchInfo img{
+	float:right;
+	vertical-align:top;
 }
 #matchInfo h3{
 	font-size:24px;
@@ -454,19 +461,40 @@ margin-top:-25px;}
 }
 
 #housingResultsContainer #video{
-	width: 270px;
-	
+	width: 290px;
+	border:1px solid rgb(116,116,116);
 	max-width:100%;
-	min-height:175px;
+	height:225px;
 	display: inline-block;
 	margin-top:15px;
 	text-align:left;
 	vertical-align:top;
-	background-color:gray;
+	padding-left:2px;
+
 	
 }
+#matches #video #matDrop{
+	width:94.5%;
+	margin:2px 0;
+}
+#matches #video .dropDown{
+width:98.5%;
+	margin:2px 0;
+
+}
+#matches #video button{
+margin-left:187px;
+width:130px;
+}
+
+#housingResultsContainer #video h2, #housingResultsContainer #videoResp h2{
+text-align:left;
+margin:0;
+margin-top:5px;
+margin-bottom:7px;
+}
 #housingResultsContainer #videoResp{
-	width: 270px;
+	width: 300px;
 	margin-left:15%;
 	max-width:100%;
 	min-height:175px;
@@ -475,10 +503,12 @@ margin-top:-25px;}
 	text-align:left;
 	vertical-align:top;
 	background-color:gray;
+	padding-left:2px;
+
 }
 
 #housingResultsContainer #compatibility{
-	min-height:168px;
+	height:220px;
 	width: 680px;
 	max-width:80%;
 	display: inline-block;
@@ -2474,6 +2504,7 @@ margin-top:40px;
 #fiveOwls img{
 	display:inline;
 	width:18px;
+	float:none;
 	
 }
 .interests{
@@ -3034,9 +3065,16 @@ text-align:center;
 	margin-left:273px;
 }
 #matches #compatibility{
-	width:727px;
+	width:625px;
+	margin-left:5px;
+	margin-right:5px;
 }
-
+#matchInfo{
+width:320px;
+}
+#matches #video{
+width:320px;
+}
  #flippers{
  width:1300px;
 }
@@ -3057,7 +3095,7 @@ width:1200px;
 	width:1300px;
 }
 #housingResultsContainer #preferences {
-width:1260px;
+width:1273px;
 }
 
 #property{
