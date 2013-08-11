@@ -389,7 +389,7 @@
 #maincontent .recommended h3{text-align:left; color:rgb(51, 62, 107); margin-top:-3px;}
 .recommended .left{display:inline-block; width: 150px; vertical-align:top;}
 .recommended .left img{width:140px; height:122px;}
-.recommended .right{display:inline-block; width: 195px; vertical-align:top;height:122px}
+.recommended .right{display:inline-block; width: 195px; vertical-align:top;height:122px;}
 .recommended button{width:100%; margin-top:11px;}
 #maincontent .recommended p{text-align:left; margin:0;}
 #maincontent .recommended .right a{
@@ -399,11 +399,67 @@
 	font-size:14px;
 	display:block;
 }
+#rmMid{
+	border-left:1px solid gray;	
+}
+#maincontent.roommate{margin-left:7%;}
+
+@media(max-width:1500px){
+#maincontent.roommate #rmSlide{
+	width:480px;
+}
+}
+@media(max-width:1320px)
+{
+#maincontent.roommate #essay.col-1-3.essay{
+	display:block;
+	width:100%;
+	padding:0 50px;
+	margin-top:10px;
+	border-top: 1px solid rgb(116,116,116);
+	border-left:0;
+	padding-top:20px;
+	height:372px;
+}
+
+#maincontent.roommate #data.col-1-3, #maincontent.roommate #recentAnswers.col-1-3{
+	display:inline-block;
+	width:49%;
+}
+#maincontent.roommate #officers, #maincontent.roommate #inputArea{
+	display:block;
+	width:100%;
+}
+#maincontent.roommate #inputArea{padding:0 50px;}
+
+}
+@media(max-width:1000px)
+{
+#maincontent.roommate #recentAnswers.col-1-3
+{
+	display:block;
+	width:100%;
+	padding:0 50px;
+	border:0;
+	padding-top:20px;
+}
+#maincontent.roommate #data.col-1-3,#maincontent.roommate #essay.col-1-3.essay{
+	display:block;
+	width:100%;
+	padding:0 50px;
+	margin-top:10px;
+	border-top: 1px solid rgb(116,116,116);
+	border-left:0;
+	padding-top:20px;
+}
+}
+
+
+
 /* ================== Roomie Slide ================= */
 #rmSlide{
 	position:relative;
 	height:500px;
-	border-right:1px solid rgb(116,116,116);
 }
 #roomieSlider ul {
 	list-style: none;
@@ -414,7 +470,7 @@
 	width: 100%;
 	line-height: 53px;
 	white-space: nowrap;
-	margin-left:-56px;
+	margin-left:-30px;
 }
 #roomieSlider ul li.hogwartsRow{width:520px;}
 .rowLabel>span {
@@ -469,7 +525,6 @@ padding-top: 9px;
 }
 #roomieSlider .topRmLabel p:first-child {
 	color: rgb(51,61,105);
-	margin-left: 15px;
 }
 #roomieSlider .topRmLabel p:last-child {
 	color: rgb(51,61,105);
@@ -501,11 +556,8 @@ padding-top: 9px;
 #roomieSlider input[type=radio]:checked + label {
 	background-color: rgb(51,61,105);
 }
-#roomieSlider .hogwartsRow label {
-	margin-right: 30px;
-}
 #roomieSlider input[type='text'] {
-	width: 375px;
+	width: 280px;
 }
 /* ====== Initial color for buttons =========== */
 #roomieSlider .initialColor label:nth-child(3) {
@@ -525,12 +577,14 @@ padding-top: 9px;
 }
 
 #roomieSlider .disclaimerContainer {
-	width: 500px;
+	width: 400px;
 	display: block;
 	margin: 0 auto;
+	font-style:italic;
 }
 #roomieSlider .disclaimerContainer h2 {
 	color: rgb(116,116,116);
+	font-style:normal;
 }
 #roomieSlider .disclaimerContainer .checkContainer {
 	margin-top: 25px;

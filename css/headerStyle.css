@@ -47,7 +47,7 @@
 
 #newNav {
 	margin: 0 auto;
-	width: 75%;
+	width: 1179px;
 	white-space: nowrap;
 	border-width: 3px;
 	border-color: rgb(51, 62, 106);
@@ -250,6 +250,7 @@
 	float: right;
 	background: white;
 	overflow: hidden;
+	white-space:nowrap;
 }
 .siteSearchSkin {
 	width: 90%;
@@ -301,8 +302,15 @@ h1 {
 	display: block;
 	margin: 0 auto;
 }
+@media (max-width:1179px){
+	#newNav{width:100%;}
+}
+@media (max-width:1000px){
+	#collegeSearchContainer span{display:none;}
+}
 @media (max-width: 940px) {
 	#newNav span{display:none;}
+	#siteSearchContainer{width:30%;}
 }
 /* ====== Login and Register ========== */
 #overlay{
