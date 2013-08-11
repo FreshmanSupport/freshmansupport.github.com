@@ -1527,8 +1527,16 @@ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 .deadlineLegend li:last-child .circle{background-color:rgb(102, 0, 0);}
 
 
-
-#calendarHeader{margin:0 auto; width:330px; }
+#monthContainer{
+	width:225px;
+	font-family:HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:30px;
+	color:rgb( 51, 62, 106);
+	display:inline-block;
+	text-align:center;
+	white-space:nowrap;
+}
+#calendarHeader{margin:0 auto; width:335px; }
 #calendarHeader button{
 	border: 0;
 	background-color: transparent;
@@ -1555,6 +1563,7 @@ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color:white;
 }
 #calendarWrapper{width:1320px; margin: 0 auto; display:block; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+#maincontent.calendar{width:100%; margin-left:59; margin-right:auto;}
 @media(max-width:1000){
 	#maincontent.calendar{width:100%; margin:0 auto;}
 }

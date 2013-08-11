@@ -118,7 +118,7 @@
 #home:hover a, #homeSelected a, #housing:hover a, #housingSelected a, 
 #roomie:hover a, #roomieSelected a, #admissions:hover a, #admissionsSelected a, 
 #finances:hover a, #financesSelected a, #theRealLife:hover a, 
-#theRealLifeSelected a, #visit:hover a, #visitSelected a, #deadlines:hover a, #deadlinesSelected {
+#theRealLifeSelected a, #visit:hover a, #visitSelected a, #deadlines:hover a, #deadlinesSelected a{
 	color: rgb(221, 135, 39);
 }
 /* =Positiong background image= */
