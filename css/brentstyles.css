@@ -2873,7 +2873,9 @@ width:850px;
 	#reviewsPage #left  .votes{
 margin-left:470px;
 	}
-
+#click{
+	margin-left:565px;
+}
 }
 
 @media (max-width:950px) { 
@@ -2944,7 +2946,135 @@ height:500px;
 }
 }
 
+@media (max-width:850px){
+#click{
+	margin-left:299px;
+}
+#reviewsPage{
+	text-align:center;
+	margin-top:10px;
+	width:950px;
+	max-width:100%;
+	margin:auto;
+	
+}
+#reviewsPage .viewMore{
+width:94.5%;
+}
+#reviewsPage #left{
+	max-width:100%;
+	width: 580px;
+	min-height:655px;
+	
 
+
+}
+
+#reviewsPage h3{
+	font-size:24px;
+	font-family:HNL;
+	text-align:center;
+	margin-bottom:5px;
+}
+
+#reviewsPage #left .title{
+	margin-left:5px;
+	margin-right:20px;
+	color:rgb(51,62,106);
+	font-family:Georgia;
+	font-size:14px;
+	display:inline;
+	position:relative;
+	top:-5px;
+}
+	
+#reviewsPage #left  .votes{
+	display:inline;
+	font-family:Georgia;
+	font-size:14px;
+	margin-left:200px;
+}
+
+#reviewsPage .votes .number{
+	position:relative;
+	top:-3px;
+	display:inline-block;
+	color:rgb(51,62,106);
+	margin-left:5px;
+	margin-right:5px;
+}
+#reviewsPage .item{
+	margin-top:25px;
+}
+
+#reviewsPage #left  .review{
+	width:560px;
+		max-width:100%;
+
+	border-top:1px solid rgb(116,116,116);
+	padding-top:0px;
+}
+
+#reviewsPage #left  .review .year{
+	color: rgb(51,62,106);
+}
+
+#reviewsPage #left .propComment{
+		max-width:100%;
+		border:1px solid rgb(116,116,116);
+		width:383px;
+		padding:5px;
+		margin-left:140px;
+		background-color:rgb(232,229,228);
+		padding-right:20px;
+		padding-bottom:10px;
+
+}
+#reviewsPage  #left .propComment button{
+	width:229px;
+	max-width:100%;
+	margin-left:0px;
+	color:rgb(51,62,106);
+	background-color:white;
+	font-family:Georgia;
+	font-style:italic;
+	cursor:pointer;
+
+}
+
+#reviewsPage #left  .propComment p{
+	display:inline;
+	color:rgb(51,62,106);
+	position:relative;
+	top:-3px;
+	margin-right:2px;
+}
+
+#reviewsPage #left .hiddenComment{
+	width:97%;
+		padding-left:30px;
+	margin-top:-5px;
+
+	
+}
+
+#reviewsPage #left .item .itemReview{
+	margin-bottom:30px;
+}
+
+#reviewsPage #right .submit{
+	border-bottom:1px solid  rgb(116,116,116);
+	padding-bottom:35px;
+	position:relative;
+	
+}
+#reviewsPage  .submit button{
+position:absolute;
+right:4px;
+}
+
+
+}
 
 @media (max-width:775px){
 
