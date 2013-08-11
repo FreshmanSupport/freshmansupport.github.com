@@ -674,7 +674,14 @@ margin:10px;
 	margin-bottom: 10px;
 	margin: auto;
 	font-style: normal;
-}#housingMain #checkAvailability button{
+}
+#housingMain .picCompareWrap{
+display:inline-block;
+height:150px;
+width:521px;
+position:relative;
+}
+#housingMain #checkAvailability button{
 	margin-left:400px;
 	width:150px;
 }
@@ -712,17 +719,14 @@ width:105px;
 
 #housingMain .picWrapper{
 	display:inline-block;
-	width:70px;
-	margin-left:-10px;
-	position:relative;
-	top:-2px;
+	width:75px;
+	vertical-align:bottom;
 	
 }
 
 #housingMain .picWrapper img{
 	width:75px;
 	height:69px;
-	margin-bottom:5px;
 	margin-top:0px;
 
 }
@@ -2022,12 +2026,15 @@ display:none;
 
 #housingMain #left .video{
 display:inline-block;
- vertical-align:top; 
- text-align:right;
-width:160px; 
-height:120px; 
-background-color:gray; 
-margin-right:15px;
+
+margin:0 5px;
+margin-left:0px;
+}
+
+#housingMain .picCompareWrap .picWrapper{
+vertical-align:bottom;
+position:absolute;
+bottom:0;
 }
 
 #housingMain #left .compareWrap{
@@ -2037,8 +2044,6 @@ vertical-align:bottom;
 font-family:Georgia;
 font-size:14px;
 color:rgb(116,116,116);
-margin-top:49px;
-
 }
 
 #housingMain #left #item h3{
@@ -2978,17 +2983,24 @@ width:430px;
 	max-width:100%;
 	margin: 0 auto;
 	
-}
+}/*
 #housingMain #left .compareWrap{
 	margin-left:215px;
 	margin-bottom:5px;
 
+}*/
+#housingMain #left .picCompareWrap .compareWrap, #housingMain #left .picCompareWrap .video, #housingMain #left .picCompareWrap .picWrapper{
+	vertical-align:bottom;
+	margin-bottom:0px;
+	
+	
 }
+
 
 #housingMain #checkAvailability{
 	border: 1px solid rgb(116,116,116);
 	width:830px;
-	margin-top:17px;
+	margin-top:10px;
 	
 
 }
@@ -3255,6 +3267,9 @@ width:94.6%;
 	margin-left:430px;
 }
 
+#housingMain .picCompareWrap{
+margin-left:129px;
+}
 }
 
 
