@@ -383,6 +383,7 @@ font-family: HNB;
 #matchInfo h3{
 	font-size:24px;
 	margin-right:60px;
+	font-family:HNL;
 }
 #matchInfo .compatibility {
 	font-style: italic;
@@ -716,6 +717,7 @@ margin:0;
 	border:1px solid rgb(51,62,106);
 	width:5px;
 	display:inline-block;
+	vertical-align:bottom;
 }
 .rank1empty{
 	height:10px;
@@ -2382,12 +2384,11 @@ font-family:Georgia;
 .oneThird{
 	margin-top:0px;
 	vertical-align:top;
-	font-family:HNB; 
+	font-family:HNL; 
 	font-size:24px;
 	text-align:center; 
 	display:inline-block;
 	color:rgb( 51, 62, 106);
-	
 }
 
 
@@ -2397,7 +2398,7 @@ font-family:Georgia;
 	border-top:1px solid  rgb(116,116,116);
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:10px;
+	margin-top:50px;
 }
 
 #compareTypes table{
@@ -2885,6 +2886,7 @@ height:1000px;
 }
 #flippers{
 width:1000px; margin:auto; max-width:100%; min-height:300px;
+
 }
 
 
@@ -2904,7 +2906,7 @@ width:1000px; margin:auto; max-width:100%; min-height:300px;
 
 }
 #housingMain #checkAvailability button{
-margin-left:688px;
+margin-left:687px;
 margin-bottom:10px;
 width:130px;
 height:25px;
