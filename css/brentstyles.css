@@ -2572,7 +2572,9 @@ font-size:14px;
 
 @media (max-width:1000px) { 
 
-
+#housingMain #left .picCompareWrap {
+margin-left:172px;
+}
 
 #left #availability button{
 margin-left:auto;
