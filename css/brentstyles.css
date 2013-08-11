@@ -2026,7 +2026,7 @@ display:none;
 
 #housingMain #left .video{
 display:inline-block;
-
+vertical-align:bottom !important;
 margin:0 5px;
 margin-left:0px;
 }
@@ -2134,8 +2134,8 @@ font-size:24px;
 
 }
 #housingMain .housingType{
-	font-family:Georgia;
-	font-size:14px;
+	font-family:HNL;
+	font-size:24px;
 	color:rgb(116,116,116);
 }
 
