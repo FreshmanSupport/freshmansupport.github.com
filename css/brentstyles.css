@@ -2600,7 +2600,7 @@ font-family:Georgia, 'Times New Roman', Times, serif;
 font-size:14px;
 
 }
-#reviewsPage button{
+#reviewsPage #left button{
 	display:none;
 }
 @media (max-width:1000px) { 
@@ -2619,7 +2619,7 @@ position:relative;
 right:14px;
 }
 
-#reviewsPage button{
+#reviewsPage #left button{
 display:inline-block;
 }
 #reviewsPage #left{

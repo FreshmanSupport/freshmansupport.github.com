@@ -5,7 +5,8 @@
 <head>
 <link type="text/css" rel="stylesheet" href="../../../css/brentstyles.css"/>
 <link type="text/css" rel="stylesheet" href="../../../css/headerStyle.css"/>
-<link type="text/css" rel="stylesheet" href="../../../css/bootstrap-responsive.css" />
+<script type="text/javascript" src="../../../js/jquery-1.9.1.js"></script>
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>University of Texas at Austin | Freshman Support</title>
 
@@ -20,7 +21,7 @@
 <body>
 <div id="header">
   <div id="loginBar">
-    <div id="loginBarContainer"> <a href="/">Login |</a> <a href="#"> Register</a> </div>
+    <div id="loginBarContainer"> <a href="../../">Login |</a> <a href="#"> Register</a> </div>
   </div>
   <div id="searchBar">
     <div id="collegeSearchContainer">
@@ -29,7 +30,7 @@
         <input id="search" type="text" name="collegeSearch" placeholder="The University of Texas at Austin" class="collegeSearchBox">
       </form>
     </div>
-	<div id="logoContainer"><a href="../../../"> <img src="../../../img/logo.png" /></a> </div>
+	<div id="logoContainer"><a href="/"> <img src="../../../img/logo.png" /></a> </div>
     <div id="siteSearchContainer">
       <form id="searchbox" action="">
         <div id="magnify"></div>
@@ -40,11 +41,11 @@
   <div id="newNav">
     <ul>
       <li id="home"><a href="../../../home">HOME</a></li>
-      <li id="housingSelected"><a href="../../../housing">COMPARE HOUSING</a></li>
-      <li id="roomie"><a href="../../../roomieMatch">ROOMIE MATCH</a></li>
+      <li id="housingSelected"><a href="../../../housing"><span>COMPARE</span> HOUSING</a></li>
+      <li id="roomie"><a href="../../../roomieMatch">ROOMIE <span>MATCH</span></a></li>
       <li id="admissions"><a href="../../../admissions" >ADMISSIONS</a> </li>
       <li id="finances"><a href="../../../finances">FINANCES</a> </li>
-      <li id="theRealLife"><a href="../../../theRealLife">THE REAL LIFE</a> </li>
+      <li id="theRealLife"><a href="../../../theRealLife"><span>THE</span> REAL LIFE</a> </li>
       <li id="visit"><a href="../../../visit">VISIT</a> </li>
       <li id="deadlines"><a href="../../../deadlines">DEADLINES</a> </li>
     </ul>
@@ -58,53 +59,20 @@
   </div>
 </div>
 <div id="maincontent">
-<div id="reviewsPage" class="propReviews">
+<div id="reviewsPage">
 <div id="left">
 	<h2>Reviews</h2>
-		<h3 style="margin-top:-10px;">(Quarters)</h3>
-
 	
-<div class="dropDown" style="display:inline-block; width:150px;">
+		<h3 style="margin-top:-5px">Quarters</h3>
+
+<div class="dropDown" style="display:inline-block; width:150px; margin-bottom:15px;">
 <select>
 <option>Sort By</option>
 </select></div>  
+<button id="click" style="margin-left:295px; position:relative; top:2px;" >Submit Review</button>
 	
 	<div class="item" style="margin-top:10px">
-			<div class="itemReview">
-
-	<div id="fiveOwls">
-			<img src="../../../img/Owl-Full-Vector.png">
-			<img src="../../../img/Owl-Full-Vector.png">
-			<img src="../../../img/Owl-Full-Vector.png">
-			<img src="../../../img/Owl-Full-Vector.png">
-			<img src="../../../img/Owl-Full-Vector.png">
-		</div>
-
-	<div class="title">Title of Review</div>
-	<div class="votes">
-		<span class="number"><span class="orange">12</span> </span>
-		<img src="../../../img/orangeTriangle.png" width=15px>
-		<img src="../../../img/triangle.png" width=15px>
-		<span class="number">12</span>
-	</div>
-	
-	<div class="review">
-		<p>On: <span class="year">Year</span></p>
-		<p>I lived in a dorm freshman year and I hated it. I shared a room with ROTC Nazi that woke up at 4:30 every morning. Dorms cramp my style.
-		I lived in a dorm freshman year and I hated it. I shared a room with ROTC Nazi that woke up at 4:30 every morning. Dorms cramp my style.
-		I lived in a dorm freshman year and I hated it. I shared a room with ROTC Nazi that woke up at 4:30 every morning. Dorms cramp my style.
-	</div>
-	
-<div class="propComment">
-		<p>Response from Property Management</p>  
-		
-	
-	<div class="hiddenComment" ><br>
-			<span class="gray">Dorms cramp your style. Dorms cramp your style. Dorms cramp your style.
-			spDorms cramp your style. Dorms cramp your style. Dorms cramp your style. Dorms cramp your style.</span>
-		
-		</div></div>
-		</div>
+			
 		<div class="itemReview">
 		
 			<div id="fiveOwls">
@@ -129,8 +97,7 @@
 		I lived in a dorm freshman year and I hated it. I shared a room with ROTC Nazi that woke up at 4:30 every morning. Dorms cramp my style.
 		I lived in a dorm freshman year and I hated it. I shared a room with ROTC Nazi that woke up at 4:30 every morning. Dorms cramp my style.
 	</div>
-	
-<div class="propComment">
+	<div class="propComment">
 		<p>Response from Property Management</p>  
 		
 	
@@ -139,37 +106,20 @@
 			spDorms cramp your style. Dorms cramp your style. Dorms cramp your style. Dorms cramp your style.</span>
 		
 		</div></div>
-				
 		
+		
+		
+		
+		
+		</div>
 		
 		
 		
 		</div>
 		
 		
-		
-		</div>
-		
-	
-		
-		
-		
-</div>
-
-
-<div id="right">
-	<div class="submit">
-	<h2>Submit a Review</h2>
-	<div class="dropDown" style="display:inline-block; width:150px;">
-<select>
-<option>Quarters</option>
-<option>Towers</option>
-<option>Quarters</option>
-<option>Dorm Name</option>
-</select></div>  
-	
-	  <textarea name="title" style="height:18px; width:97%; font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:14px; margin-top:5px; margin-bottom:10px; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="Title" ></textarea>
+			<div class="item" style="margin-top:0px">
+			<div class="itemReview">
 
 	<div id="fiveOwls">
 			<img src="../../../img/Owl-Full-Vector.png">
@@ -178,11 +128,103 @@
 			<img src="../../../img/Owl-Full-Vector.png">
 			<img src="../../../img/Owl-Full-Vector.png">
 		</div>
+	<div class="title">Title of Review</div>
+	<div class="votes">
+		<span class="number"><span class="orange">12</span> </span>
+		<img src="../../../img/orangeTriangle.png" width=15px>
+		<img src="../../../img/triangle.png" width=15px>
+		<span class="number">12</span>
+	</div>
+	
+	<div class="review">
+		<p>On: <span class="year">Year</span></p>
+		<p>I lived in a dorm freshman year and I hated it. I shared a room with ROTC Nazi that woke up at 4:30 every morning. Dorms cramp my style.
+		I lived in a dorm freshman year and I hated it. I shared a room with ROTC Nazi that woke up at 4:30 every morning. Dorms cramp my style.
+		I lived in a dorm freshman year and I hated it. I shared a room with ROTC Nazi that woke up at 4:30 every morning. Dorms cramp my style.
+	</div>
+		<div class="propComment">
+		<p>Response from Property Management</p>  
+		
+	<div class="hiddenComment" ><br>
+			<span class="gray">Dorms cramp your style. Dorms cramp your style. Dorms cramp your style.
+			spDorms cramp your style. Dorms cramp your style. Dorms cramp your style. Dorms cramp your style.</span>
+		
+		</div></div>
+	
+	
+		</div>
 		
 		
-	  <textarea name="review" style="height:100px; width:97%; font-family:Georgia, 'Times New Roman', Times, serif;
+		</div>
+		
+		
+		
+</div>
+
+<div class="submit" id="submitA" style="display:none"	>
+	<h2>Submit a Review</h2>
+	<div class="dropDown" style="display:inline-block; width:150px; margin-bottom:5px;">
+<select>
+<option>Quarters</option>
+<option>Towers</option>
+<option>Quarters</option>
+<option>Dorm Name</option>
+</select></div><br>
+	<div id="fiveOwls" style="position:relative; top:4px;">
+			<img src="../../../img/Owl-Full-Vector.png">
+			<img src="../../../img/Owl-Full-Vector.png">
+			<img src="../../../img/Owl-Full-Vector.png">
+			<img src="../../../img/Owl-Full-Vector.png">
+			<img src="../../../img/Owl-Full-Vector.png">
+		</div>
+	
+	  <textarea name="title" style="width:95%; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:14px; margin-top:5px;  margin-bottom:5px; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="Title" ></textarea>
+
+
+		
+		
+	  <textarea name="review" style="height:100px; width:95%; font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:14px; margin-top:5px; margin-bottom:5px; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="Type your review here" ></textarea>
-	<button>Submit</button>
+	<br><button id="submittedB">Submit</button>
+	</div>
+	
+	
+	<div class="submit" id="submitted" style="display:none"	>
+	<h2>Submit a Review</h2>
+	<p class="gray" style="font-family:Georgia"><i>Your review has been submitted!</i></p>
+	<br><button id="back">Back to Reviews</button>
+	</div>
+	
+	
+
+<div id="right">
+	<div class="submit" >
+	<h2>Submit a Review</h2>
+	<div class="dropDown" style="display:inline-block; width:150px;">
+<select>
+<option>Quarters</option>
+<option>Towers</option>
+<option>Quarters</option>
+<option>Dorm Name</option>
+</select></div><br> 
+	<div id="fiveOwls" style="margin-top:5px;">
+			<img src="../../../img/Owl-Full-Vector.png">
+			<img src="../../../img/Owl-Full-Vector.png">
+			<img src="../../../img/Owl-Full-Vector.png">
+			<img src="../../../img/Owl-Full-Vector.png">
+			<img src="../../../img/Owl-Full-Vector.png">
+		</div>
+	
+	  <textarea name="title" style="width:95%; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:14px; margin-top:5px; margin-bottom:5px; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="Title" ></textarea>
+
+
+		
+		
+	  <textarea name="review" style="height:100px; width:95%; font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:14px; margin-top:5px; margin-bottom:5px; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="Type your review here" ></textarea>
+	<br><button>Submit</button>
 	</div>
 	
 	
@@ -229,6 +271,7 @@
 
  
   </div>
+  </div>
 </div>
   
   
@@ -249,4 +292,20 @@
 			document.getElementById(x).style.display='block';
 		} else 	document.getElementById(x).style.display='none';
 	}
+	
+	$( "#click" ).click(function() {
+		  $('#left').animate({width: 'toggle'});
+		$('#submitA').animate({width: 'toggle'});
+
+});
+	$( "#submittedB" ).click(function() {
+		  $('#submitA').animate({width: 'toggle'});
+		$('#submitted').animate({width: 'toggle'});
+
+});
+$( "#back" ).click(function() {
+		  $('#left').animate({width: 'toggle'});
+		$('#submitted').animate({width: 'toggle'});
+
+});
 </script>
