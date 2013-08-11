@@ -724,7 +724,7 @@ width:105px;
 #housingMain .picWrapper{
 	display:inline-block;
 	width:75px;
-	vertical-align:bottom;
+	vertical-align:bottom !important;
 	
 }
 
@@ -2036,7 +2036,7 @@ margin-left:0px;
 }
 
 #housingMain .picCompareWrap .picWrapper{
-vertical-align:bottom;
+vertical-align:bottom !important;
 position:absolute;
 bottom:0;
 }
