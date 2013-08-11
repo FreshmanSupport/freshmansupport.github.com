@@ -314,7 +314,7 @@ h1 {
 	#siteSearchContainer{width:30%;}
 }
 /* ====== Login and Register ========== */
-#overlay{
+#overlay, .videoOverlay{
 	z-index:1001;	
 	position: absolute; 
 	right: 50%;
@@ -337,6 +337,35 @@ h1 {
 	z-index:14;
 	position: relative; left: 50%;
 }
+#registerThankYou{	
+	border:2px solid rgb( 51, 62, 106);
+	width:1190px;
+	min-height: 300px;
+	background-color:white;
+	margin:0 auto;
+	margin-top: 100px;
+	z-index:14;
+	position: relative; left: 50%;
+	overflow:hidden;
+	display:none;
+}
+#registerThankYou h2{	
+	color: rgb(51, 62, 107);
+	font-size: 30px;
+	font-weight: normal;
+	font-family: HNL;
+	text-align:center;
+}
+#registerThankYou h3{	
+	color: rgb(116,116,116);
+	font-size: 24px;
+	font-weight: normal;
+	font-family: HNL;
+	text-align:center;
+}
+#registerThankYou .buttonWrapper{width: 600px; margin: 0 auto; margin-top: 50px;}
+#registerThankYou button{width:165px;}
+
 #loginRegisterContainer a,#videoPlayerContainer a{
 	text-decoration:none;
 	color:rgb( 51, 62, 106);
@@ -345,8 +374,8 @@ h1 {
 .fakeVideo{width:90%; height:500px; background-color:gray; border:2px solid rgb(51, 62, 106); margin:0 auto;}
 #loginRegisterContainer ul{list-style-type:none; padding: 0;}
 #loginRegisterContainer li{margin-bottom: 10px;}
-#topBar{width:100%; background-color:rgb(51, 62, 106); height: 25px; margin-bottom:20px;}
-#xClose{color:white; font-weight:bold;float:right; cursor:pointer; padding-right: 5px;}
+.topBar{width:100%; background-color:rgb(51, 62, 106); height: 25px; margin-bottom:20px;}
+.xClose{color:white; font-weight:bold;float:right; cursor:pointer; padding-right: 5px;}
 #logIn{width:350px; display:inline-block; vertical-align:top; overflow:hidden;}
 #logIn button{float:right; margin-right:42px;}
 #logIn label{
@@ -432,7 +461,7 @@ h1 {
 #register .dropDown{display:inline-block; border:1px solid #eee9e9;}
 #register .dropDown select{border:1px solid #eee9e9;}
 .plus{font-size:28px; color:orange;}
-#registerThankYou{width: 100%; overflow:hidden;}
+
 #goToProfile{float:right;}
 /* ================ Search Result ============= */
 #maincontent.searchResults {border-left:2px solid rgb(116,166,166);border-right:2px solid rgb(116,166,166); padding: 0 10px 20px 10px;}

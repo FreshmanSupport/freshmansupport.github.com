@@ -5,7 +5,7 @@
 <link type="text/css" rel="stylesheet" href="../css/headerStyle.css"/>
 <link type="text/css" rel="stylesheet" href="../css/main.css"/>
 <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
-<script type="text/javascript" src="../js/loginScript.js"></script>
+<script type="text/javascript" src="../js/loginVideoScript.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Login</title>
 </head>
@@ -13,8 +13,8 @@
 <div id="overlayBackground" style="display:none;"></div>	
 <div id="overlay" style="display:none;">
   	<div id="loginRegisterContainer">
-    	<div id="topBar">
-        	<div id="xClose">X</div>
+    	<div class="topBar">
+        	<div class="xClose">X</div>
         </div>
         <div id="logIn">
         	<h2>Log In</h2>
@@ -28,7 +28,7 @@
         </div>
         <div id="register">
         	<h2>Register Account Information</h2>
-            <form>
+            
             	<ul>
             		<li>
                     	<label>First Name:</label><input id="firstName" type="text" />
@@ -77,14 +77,19 @@
                     	and <a href="#">Privacy Policy</a></div></li>
                      <li><center><button id="registerButton">Register</button></center></li>
             	</ul>
-            </form>
+            
         </div>
     </div>
          <div id="registerThankYou">
+         	<div class="topBar">
+        	<div class="xClose">X</div>
+        	</div>
         	<h2>Thank you for register with us!</h2>
             <h3 class="marginTop10">Would you like to...</h3>
+            <div class="buttonWrapper">
             <button id="return">Return to Current Page</button>
             <button id="goToProfile">Go To Your Profile</button>
+            </div>
         </div>
   </div>
 <div id="header">
