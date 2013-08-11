@@ -675,11 +675,19 @@ margin:10px;
 	margin: auto;
 	font-style: normal;
 }
+#housingMain #left #item{
+position:relative;
+}
+
+#housingMain #left .picCompareWrap{
+position:absolute;
+right:5px;
+
+}
 #housingMain .picCompareWrap{
 display:inline-block;
 height:150px;
 width:521px;
-position:relative;
 }
 #housingMain #checkAvailability button{
 	margin-left:400px;
@@ -2042,8 +2050,8 @@ bottom:0;
 }
 #housingMain .picCompareWrap{
 display:inline-block;
-margin-left:85px;
 width:340px;
+
 }
 
 #housingMain #left .compareWrap{
@@ -2998,15 +3006,22 @@ width:430px;
 	margin-bottom:5px;
 
 }*/
+
+
 #housingMain #left .picCompareWrap .compareWrap, #housingMain #left .picCompareWrap .video, #housingMain #left .picCompareWrap .picWrapper{
 	vertical-align:bottom;
 	margin-bottom:0px;
 	
 	
 }
-
+#housingMain #left #item{
+position:relative;
+}
 
 #housingMain #left .picCompareWrap{
+position:absolute;
+right:15px;
+
 }
 #housingMain #checkAvailability{
 	border: 1px solid rgb(116,116,116);
