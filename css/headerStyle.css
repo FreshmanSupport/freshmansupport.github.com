@@ -312,7 +312,7 @@ h1 {
 	top:0;
 	left:0;
 	background-color:rgba(255,255,255,0.7);
-	z-index:10;
+	z-index:11;
 }
 #loginRegisterContainer,#videoPlayerContainer{
 	border:2px solid rgb( 51, 62, 106);
@@ -321,6 +321,7 @@ h1 {
 	background-color:white;
 	margin:0 auto;
 	margin-top: 100px;
+	z-index:14;
 }
 .fakeVideo{width:90%; height:500px; background-color:gray; border:2px solid rgb(51, 62, 106); margin:0 auto;}
 #loginRegisterContainer ul{list-style-type:none; padding: 0;}

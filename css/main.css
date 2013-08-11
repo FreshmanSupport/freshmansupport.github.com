@@ -199,10 +199,14 @@
 		display:block; padding:1%; text-align:center; width:99%;left:2.5%; right:2.5%;
 }
 
-@media(max-width:1499px){
-/*	#recentAnswers .view{margin-top: 3px;} 
-	#maincontent.admissions #essay .view{margin-top: 16px;}
-	#maincontent.admissions #data .view{margin-top:44px;} */
+@media(min-width:1321px){
+#maincontent.admissions #essay .col-1-5{
+	width:32%;
+}
+#maincontent.admissions #essay div.col-1-5:nth-child(4),
+#maincontent.admissions #essay .col-1-5:last-child{
+	display:none;
+}
 }
 @media(max-width:1320px)
 {
@@ -211,9 +215,10 @@
 	width:100%;
 	padding:0 50px;
 	margin-top:10px;
-	border-top: 2px solid rgb(116,116,116);
+	border-top: 1px solid rgb(116,116,116);
 	border-left:0;
 	padding-top:20px;
+	height:372px;
 }
 
 #maincontent.admissions #data.col-1-3, #maincontent.admissions #recentAnswers.col-1-3{
@@ -242,7 +247,7 @@
 	width:100%;
 	padding:0 50px;
 	margin-top:10px;
-	border-top: 2px solid rgb(116,116,116);
+	border-top: 1px solid rgb(116,116,116);
 	border-left:0;
 	padding-top:20px;
 }
@@ -551,7 +556,7 @@ padding-top: 9px;
 	width: 100%;
 	margin-bottom: 30px;
 }
-#studentProfile{border-right: 1px solid rgb(116,116,116); padding:0 50px;}
+#studentProfile{border-right: 1px solid rgb(116,116,116); padding:0 50px; min-height:655px;}
 #studentProfile #spHeader h2 {
 	text-align: center;
 	font-family: HNL;
@@ -618,6 +623,7 @@ padding-top: 9px;
 	list-style-type: none;
 	display: block;
 	text-align: center;
+	white-space:nowrap;
 }
 .editNav li {
 	display: inline-block;
@@ -735,7 +741,7 @@ padding-top: 9px;
 	background-color: rgb(220, 134, 39);
 }
 #rmEdit .rowLabel {
-	width: 31%;
+	width: 145px;
 	text-align: right;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 14px;
@@ -1122,6 +1128,69 @@ padding-top: 9px;
 	margin: 0 auto;
 	margin-top: 20px;
 }
+@media(min-width:1500px){
+	.ring{margin-right:55px;}
+	#maincontent.finances #budgetPlanner h3
+{margin-top: 45px;}
+}
+@media(max-width:1499px){
+	.ring{margin-right:25px;}
+	#maincontent.finances #budgetPlanner h3
+{margin-top: 45px;}
+}
+@media(max-width:1320px)
+{
+#maincontent.finances #budgetPlanner.col-1-3{
+	display:block;
+	width:100%;
+	padding:0 50px;
+	margin-top:10px;
+	border-top: 1px solid rgb(116,116,116);
+	border-left:0;
+	padding-top:20px;
+	height:400px;
+}
+
+#maincontent.finances #data.col-1-3, #maincontent.finances #recentAnswers.col-1-3{
+	display:inline-block;
+	width:49%;
+}
+#maincontent.finances #data.col-1-3{
+	border-right:0;
+}
+#maincontent.finances #officers, #maincontent.finances #inputArea{
+	display:block;
+	width:100%;
+}
+#maincontent.finances #inputArea{padding:0 50px;}
+.ring{margin-left:25px;
+	margin-right:82px;}
+#maincontent.finances #budgetPlanner h3
+{margin-top: 10px;}
+}
+@media(max-width:1000px)
+{
+#maincontent.finances #recentAnswers.col-1-3
+{
+	display:block;
+	width:100%;
+	padding:0 50px;
+	border:0;
+	padding-top:20px;
+}
+#maincontent.finances #data.col-1-3,#maincontent.finances #budgetPlanner.col-1-3{
+	display:block;
+	width:100%;
+	padding:0 50px;
+	margin-top:10px;
+	border-top: 1px solid rgb(116,116,116);
+	border-left:0;
+	padding-top:20px;
+}
+}
+
+
+
 /* ========== Budget Planner ===================== */
 .budgetPlanner #budgetPlanner{border-right:2px solid rgb(116,116,116); padding-bottom:20px;position:relative;}
 .budgetPlanner .semesterWrap{display:block; width: 130px; margin: 0 auto;}
@@ -1486,6 +1555,9 @@ padding-top: 9px;
 .col-1-2 {
 	width: 49%;
 }
+.col-1-5{
+	width: 19%;
+}
 .col-1-8 {
 	width: 11.99%;
 }
@@ -1623,7 +1695,6 @@ hr {
 	width:100px; height:100px; 
 	padding-top: 35px;
 	display:inline-block;
-	margin-right:55px;
 }
 .ring:last-child{margin-right:0;}
 .ringContainer{padding-left:25px;}
@@ -1710,18 +1781,31 @@ body {
 }
 ul{padding:0; list-style-type:none;}
 a img{border:0;}
-/* ========== Messing with Boot Strap ============= */
-[class*="span"] .span6 {
+/* ========== Brent Stuff ============= */
+#housingMatcherRight {
+	width:350px;
+	max-width:100%;	
 	display: inline-block;
-	width: 48.61878453038674%
+	margin-top: 0px;
+	border-left: 1px solid  rgb(116,116,116);
+	text-align:left;
+	padding-left:10px;
+		margin-top:10px;
+		vertical-align:top;
 }
-.mycontent-left {
-	border-right: 1px dashed #333;
-	height: 200px;
+#housingMatcherRight .compare, #housingMatcherRight .interests{
+font-size:14px;
 }
-.mycontent-right {
-	border-left: 1px dashed #333;
-	height: 200px;
+#housingMatcherRight #compareDiv{
+margin-bottom:-5px;
 }
+#housingMatcherRight .interests{
+margin-left:2px;
+margin-top:-15px;
+}
+#housingMatcherRight button{
+	margin-top:-11px;
+}
+#housingVideo{display:inline-block;}
 
 /* ======================== EXPERIMENTAL STUFF ======================= */

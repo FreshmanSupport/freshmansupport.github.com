@@ -4,7 +4,7 @@
 
 <link type="text/css" rel="stylesheet" href="../css/headerStyle.css"/>
 <link type="text/css" rel="stylesheet" href="../css/main.css"/>
-<link type="text/css" rel="stylesheet" href="../css/bootstrap-responsive.css" />
+<script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Login</title>
 </head>
@@ -139,3 +139,11 @@
 </div>
 <div id="maincontent"> </div>
 </body>
+<script>
+	$('#xClose').click(function(){
+			$('#overlay').hide();
+		});
+	  $('#loginBarContainer a').click(function(){
+	  		$('#overlay').show();
+	  });
+</script>
