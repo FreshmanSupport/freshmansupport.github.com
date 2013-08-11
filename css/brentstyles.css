@@ -709,6 +709,10 @@ margin-top:0px;
 #housingMain #housingQ .item1{
 width:175px;
 }
+#housingQ .item1 img{
+position:relative;
+top:6px;
+}
 
 #housingMain #housingQ .option{
 width:105px;
