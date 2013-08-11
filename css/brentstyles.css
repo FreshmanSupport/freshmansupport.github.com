@@ -2036,9 +2036,14 @@ vertical-align:bottom;
 position:absolute;
 bottom:0;
 }
+#housingMain .picCompareWrap{
+display:inline-block;
+margin-left:85px;
+width:340px;
+}
 
 #housingMain #left .compareWrap{
-	margin-left:85px;
+margin-left:0px;
 	display:inline-block;
 vertical-align:bottom;
 font-family:Georgia;
@@ -2632,16 +2637,11 @@ margin-top:10px;
 	width:700px;
 	}
 
-	#housingMain #left .compareWrap{
-	margin-left:172px;
-	
-	}
+
 	#housingMain #checkAvailability button{
 		margin-left:445px;
 	}
-	#propListing #housingMain #left .compareWrap{
-		margin-left:115px;
-}
+
 
 	#propListing #top #left, #propListing #top #right{
 	display:block;
@@ -2780,6 +2780,7 @@ height:auto;}
 border-top:1px solid rgb(116,116,116);
 margin-top:10px;
 }
+
 }
 
 @media (max-width:950px) { 
@@ -2931,6 +2932,7 @@ width:1000px; margin:auto; max-width:100%; min-height:300px;
 }
 
 @media (min-width:1300px){
+
 #reviewsPage #left .propComment{
 		max-width:100%;
 		border:1px solid rgb(116,116,116);
@@ -2998,6 +3000,8 @@ width:430px;
 }
 
 
+#housingMain #left .picCompareWrap{
+}
 #housingMain #checkAvailability{
 	border: 1px solid rgb(116,116,116);
 	width:830px;
@@ -3267,10 +3271,12 @@ width:94.6%;
 #propListing #housingMain #left .viewMoreRight{
 	margin-left:430px;
 }
-
 #housingMain .picCompareWrap{
-margin-left:129px;
+display:inline-block;
+width:440px;
+margin-left:214px;
 }
+
 }
 
 
