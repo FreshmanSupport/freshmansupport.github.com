@@ -1373,7 +1373,12 @@ display:inline-block;
 #property h3{
 margin-bottom:10px;
 }
-
+#property #left #information h3{
+margin-top:10px;
+}
+#property #left #generalInfo .thumb{
+display:none;
+}
 #property{
 	width:1000px;
 	max-width:100%;
@@ -1460,13 +1465,15 @@ line-height:50px;}
 	background-color:white;
 	padding-left:0px;
 	padding-top:10px;
+	position:relative;
 }
 
 
 #left #availability button{
 margin-bottom:10px;
-margin-left:291px;
 margin-top:5px;
+position:absolute;
+right:1px;
 }
 #left #availability #firstName{
 width:44%;
@@ -1497,6 +1504,7 @@ width:97%;
 	text-align:left;
 margin:0;
 
+
 }
 
 #left #information{
@@ -1512,8 +1520,8 @@ margin:0;
 	font-size:24px;
 	font-family:HNL;
 	text-align:center;
-	padding-top:2px;
-	margin-bottom:30px;
+	margin-bottom:10px;
+	padding-top:4px;
 	
 }
 #leasingPro{
@@ -1545,6 +1553,8 @@ display:none;
 	border:none;
 	font-size:24px;
 	margin:0;
+	height:30px;
+	margin-top:2px;
 
 }
 
@@ -1563,6 +1573,11 @@ display:none;
 	list-style-type:none;
 	padding:0;
 	margin-left:-30px;
+	
+}
+#property #left #availability button{
+position:absolute;
+right:9px;
 }
 
 #property #right{
@@ -1585,7 +1600,7 @@ display:none;
 	border-bottom:1px solid  rgb(116,116,116);
 	margin-left:20px;
 	position:relative;
-	padding-bottom:10px;
+	padding-bottom:4px;
 }
 
 #property #right #dormTour #video{
@@ -1609,6 +1624,7 @@ display:none;
 	list-style-type:none;
 	padding:0;
 	margin:0;
+	
 }
 
 #property #right #dormTour ul{
@@ -1641,12 +1657,11 @@ margin-top:10px;
 	background-color:white;
 	margin-left:20px;
 	border-bottom:1px solid  rgb(116,116,116);
-	max-height:260px;
-}
+	max-height:250px;}
 #property #right #reviews{
 	background-color:white;
 	margin-left:20px;
-	
+		position:relative;
 }
 
 #property #right #reviews #item{
@@ -1683,6 +1698,7 @@ margin-top:10px;
 	display:inline-block;
 	margin-bottom:0px;
 	margin-top:-5px;
+	
 }
 
 
@@ -1690,22 +1706,27 @@ margin-top:10px;
 #property #right #pricing  p{
 	font-family:Georgia, "Times New Roman", Times, serif;
 	color:rgb(116,116,116);
+	text-align:center;
 }
 
 #property #right #pricing #wrap #col{
 	display:inline-block;
 	margin-right:10px;
 	width:117px;
+	text-align:center;
 }
 
 #property #right #pricing #wrap #col ul li{
 	font-family:Georgia, "Times New Roman", Times, serif;
-	color:rgb(51,62,106);
+	color:rgb(116,116,116);
 	list-style-type:none;	
+	text-align:center;
 }
 
 #property #right #pricing #wrap #col ul{
+	
 	margin:0;
+	margin-top:-10px;
 	padding:0;
 	vertical-align:top;
 }
@@ -2863,27 +2884,74 @@ margin-left:10%;
 display:none;
 }
 #property{
-	width:80%;
+	width:90%;
 }
 #property #right{
 border:none;
 width:100%;
 margin:auto;
-margin-top:130px;
+text-align:center;
+margin-top:-240px;
 }
 #property #left{
 width:95%;
+text-align:center;
+
 border:none;
 margin:auto;
 }
+#property #left #generalInfo{
+text-align:left;
 
+}
+#property #left #generalInfo .thumb{
+position:absolute;
+top:5px;
+right:0px;
+display:block;
+}
+#property #left #generalInfo .thumb img{
+width:140px;
+height:120px;
+}
 #property #left #information{
-height:auto;}
+height:auto;
+}
 #property #right #dormTour{
+display:none;
+}
+#property #right #desc{
 border-top:1px solid rgb(116,116,116);
+}
+#property #left #availability, #property #left #availSent, #property #left #information {
+width:45%;
+margin:auto;
+display:inline-block;
+padding:0 10px;
+vertical-align:top;
 margin-top:10px;
 }
+#property #left #information h3{
+margin-top:0px;
+}
 
+
+#property #left #availability #firstName, #property #left #availability  #lastName,  #property #left #availability #mailPhone{
+	width:94%;
+	margin-bottom:5px !important;
+}
+#property #left #availability .dropDown{
+width:97.4%;
+}
+
+#property #left #information{
+	border:none;
+	border-left:1px solid rgb(116,116,116);
+}
+#property #left #availability button{
+position:absolute;
+right:5%;
+}
 
 	#reviewsPage{
 	width:1300px;
@@ -3410,7 +3478,10 @@ display:inline-block;
 width:160px;
 
 }
-
+#property #left #availability button{
+position:absolute;
+right:0%;
+}
 .hidetil13{
 display:inline-block !important;
 margin-right:13px;
@@ -3533,21 +3604,21 @@ margin-top:10px;
 
 #left #availability button{
 margin-bottom:10px;
-margin-left:433px;
 margin-top:5px;
 }
 #left #availability #firstName{
-width:44%;
+width:47%;
 }
 
 #left #availability #lastName{
-	width:45%;
+	width:47%;
 }
 #left #availability #mailPhone{
-	width:92.2%;
+	width:97.2%;
+	margin-bottom:5px !important;
 }
 #left #availability .dropDown{
-width:94.6%;
+width:99.6%;
 }
 #propListing #housingMain #left .viewMoreRight{
 	margin-left:430px;
