@@ -163,6 +163,11 @@
           Pellentesque sollicitudin justo at dolor porttitor, sit amet fermentum tortor malesuada. </p>
       </div>
     </div>
+    <div id="answerNav">
+      <button><img src=../../img/arrowLeft.png width=10px/> Prev</button>
+      <div class="viewAns">View All Essay</div>
+      <button>Next <img src=../../img/arrowRight.png width=10px /></button>
+    </div>
     </div>
     <div id="uploadEssayForm" style="display:none">
       <p>Hey your essay is going to be private like just trust us anonymous complete. It's straight</p>
@@ -409,6 +414,9 @@ $( "#submit" ).click(function() {
   $('#acceptedEssayContainer').animate({width: 'toggle'});
 
 });
+
+
+
 //Toggle Essay, if an essay is open toggle that essay and open the new one(have not build that function)
 //There is a bug when you click onUpload essay and click on title of essay (perhap check if acceptedEssayContainer is hidden?
 $( "#essayPreview1" ).click(function() {

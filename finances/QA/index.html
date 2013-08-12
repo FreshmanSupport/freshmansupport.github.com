@@ -53,25 +53,27 @@ $('#officersSelect').ddslick({
   <div id="subNav">
     <ul>
       <li><a href="../data">Data</a></li>
-      <li><a href="../QA" class="selected">Financial Q&A</a></li>
-      <li><a href="../financialAid" >Financial Aid</a></li>
+      <li><a href="../QA" class="selected">Financial Q&A </a></li>
       <li><a href="../budgetPlanner" >Budget Planner</a></li>
     </ul>
   </div>
 </div>
-<div id="maincontent">
+<div id="maincontent" class="admissQA">
   <div id="recentlyAnswered" class="col-5-8">
     <div id="raHeader">
       <h2>Financial Q&A </h2>
-      <div class="dropDown">
-        <select>
-          <option>Sort by...</option>
-          <option>Name</option>
-          <option>Compability</option>
-          <option>Gender</option>
-          <option>Major</option>
-          <option>Class</option>
-        </select>
+      <div class="selectButtonContainer marginTop10">
+        <div class="dropDown ">
+          <select>
+            <option>Sort by...</option>
+            <option>Name</option>
+            <option>Compability</option>
+            <option>Gender</option>
+            <option>Major</option>
+            <option>Class</option>
+          </select>
+        </div>
+        <button>Ask a Officer</button>
       </div>
     </div>
     <ul>
@@ -113,7 +115,7 @@ $('#officersSelect').ddslick({
   </div>
   <div class="col-3-8 admissionsAsk">
     <h2>Ask a Admissions Officer</h2>
-    <p style="margin-top:0; margin-bottom:30px;"><i>Our admissions officers have a est limit of question that can be sent each day. If an admissions officer
+    <p class="marginTop10"><i>Our admissions officers have a est limit of question that can be sent each day. If an admissions officer
       is unavailable, please try again the following day, or view previously answered questions.</i></p>
     <select id="officersSelect">
       <option value="0"
@@ -130,6 +132,7 @@ $('#officersSelect').ddslick({
     <form>
       <textarea name="question" placeholder="Enter your question here."></textarea>
       <div class="col-1-2">
+      <div id="textareaBelow">
         <div class="dropDown">
           <select>
             <option>Select a Category</option>
@@ -138,13 +141,11 @@ $('#officersSelect').ddslick({
             <option>Other</option>
           </select>
         </div>
-      </div>
-      <div class="col-1-2">
-        <button style="float:right; margin-right: 27px;">Send Question</button>
+        <button style="float:right;">Send Question</button>
+        <p style="float:left;">*By submitting a question to one of Freshman Support's Admissions
+          Officers, you agree to our <a href="#">Terms & Conditions.</a></p>
       </div>
     </form>
-    <p>*By submitting a question to one of Freshman Support's Admissions<br />
-      Officers, you agree to our <a>Terms & Conditions.</a></p>
   </div>
 </div>
 </body>

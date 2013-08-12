@@ -64,15 +64,18 @@ $(document).ready(function(){
   <div id="recentlyAnswered" class="col-5-8">
     <div id="raHeader">
       <h2>Admissions Q&A </h2>
-      <div class="dropDown marginTop10">
-        <select>
-          <option>Sort by...</option>
-          <option>Name</option>
-          <option>Compability</option>
-          <option>Gender</option>
-          <option>Major</option>
-          <option>Class</option>
-        </select>
+      <div class="selectButtonContainer marginTop10">
+        <div class="dropDown ">
+          <select>
+            <option>Sort by...</option>
+            <option>Name</option>
+            <option>Compability</option>
+            <option>Gender</option>
+            <option>Major</option>
+            <option>Class</option>
+          </select>
+        </div>
+        <button>Ask a Officer</button>
       </div>
     </div>
     <ul>
@@ -131,20 +134,20 @@ $(document).ready(function(){
     <form>
       <textarea name="question" placeholder="Enter your question here."></textarea>
       <div class="col-1-2">
-        <div id="textareaBelow">
+      <div id="textareaBelow">
+        <div class="dropDown">
           <select>
             <option>Select a Category</option>
             <option>Admissions</option>
             <option>Financial</option>
             <option>Other</option>
           </select>
-
+        </div>
         <button style="float:right;">Send Question</button>
-    <p>*By submitting a question to one of Freshman Support's Admissions
-      Officers, you agree to our <a href="#">Terms & Conditions.</a></p>
-            </div>
+        <p style="float:left;">*By submitting a question to one of Freshman Support's Admissions
+          Officers, you agree to our <a href="#">Terms & Conditions.</a></p>
+      </div>
     </form>
-
   </div>
 </div>
 </body>

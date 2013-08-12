@@ -55,7 +55,6 @@ h2 {
 	font-size: 30px;
 	font-weight: normal;
 	font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
-
 }
 #maincontent h3 {
 	font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -128,7 +127,7 @@ a{font-family:Georgia, "Times New Roman", Times, serif; font-size:14px; text-dec
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-style:italic
 }
-#answerNav{
+#answerNav, .answerNav{
 	/*Makes it bottom Align */
 	position:absolute; bottom:30px; margin:0 auto;  min-width:1px;
 	/* Makes it center align */
@@ -138,8 +137,8 @@ a{font-family:Georgia, "Times New Roman", Times, serif; font-size:14px; text-dec
 	font-size:14px;
 	font-family:Georgia, "Times New Roman", Times, serif;
 }
-#answerNav img{display:inline-block;}
-#answerNav button {
+#answerNav img,.answerNav img{display:inline-block;}
+#answerNav button, .answerNav button {
 	border: 0;
 	background-color: transparent;
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -312,7 +311,15 @@ a{font-family:Georgia, "Times New Roman", Times, serif; font-size:14px; text-dec
 #officerPic, #officerDesc{margin-bottom: 30px;vertical-align:top;margin-left:10px;}
 #maincontent #officerDesc h2{margin: 0;}
 #maincontent #officerDesc p:nth-child(2){margin-top:-1px;}
-
+.selectButtonContainer{width:100%; overflow:hidden; display:block;}
+.selectButtonContainer .dropDown{float:left;}
+.selectButtonContainer button{float:right; display:none;}
+@media(max-width:1300px){
+	.selectButtonContainer button{float:right; display:block; margin-right:47px;}
+}
+@media(max-width:1000px){
+	.selectButtonContainer button{margin-right:0;}
+}
 /* ======= Accepted Essays ============= */
 #maincontent.essays .info .infoLeft,#maincontent.essays #acceptedEssays p, #maincontent.essays h3 {text-align:left;}
 #acceptedEssays{border-right:1px solid rgb(116,116,116);padding:0 50px; position:relative;}
@@ -367,9 +374,33 @@ a{font-family:Georgia, "Times New Roman", Times, serif; font-size:14px; text-dec
 .rateEssay{float:right; color:rgb(116,116,116); display:inline-block; font-family:Georgia, "Times New Roman", Times, serif;}
 .essayContainer .voteContainer{margin:0;}
 .floatWrap{margin-top:22px;}
+.viewAns{display:inline; cursor:pointer;}
 @media (max-width:1300px){
 #maincontent.essays #acceptedEssays{width:100%; border:0;}
-#maincontent.essays #essay{display:none;}
+#maincontent.essays #essay{display:none; width:100%;}
+}
+/* ========= Admission Data ============= */
+#yourInfo input[type="text"]{
+	width: 85px;
+	margin-top:0;
+	border: 1px solid rgb(116,116,116);
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	color:rgb(116,116,116);
+	text-align:center;
+	margin:0 10px;
+}
+.scoreTextBox{width:330px;margin: 0 auto;}
+.scoreText{width: 330px; margin:0 auto;}
+.scoreText span{
+	width: 85px;
+	margin-top:0;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	color:rgb(116,116,116);
+	text-align:center;
+	margin:0 10px;
+	display:inline-block;
 }
 /* ============ Roomie Match ================= */
 .rmTable {
@@ -725,7 +756,7 @@ padding-top: 9px;
 	color: rgb(116,116,116);
 }
 .editNav span{cursor:pointer; color: rgb(116,116,116); font-family:Georgia, "Times New Roman", Times, serif;}
-.editNav .select{font-weight:bold;}
+.editNav .select{color:rgb(220, 134, 39);}
 /* =============== Match Details ==================== */
 .matchDetails {
 	background-color: rgb(232, 229, 228);
@@ -1245,8 +1276,7 @@ padding-top: 9px;
 	width:100%;
 }
 #maincontent.finances #inputArea{padding:0 50px;}
-.ring{margin-left:25px;
-	margin-right:82px;}
+.ring{margin-right:58px;}
 #maincontent.finances #budgetPlanner h3
 {margin-top: 10px;}
 }
@@ -1269,6 +1299,8 @@ padding-top: 9px;
 	border-left:0;
 	padding-top:20px;
 }
+.ring{margin-right: 63px;
+margin-left: 25px;}
 }
 
 
@@ -1589,6 +1621,23 @@ padding-top: 9px;
 	border:1px solid rgb(51, 62, 106);
 	left:-50%;
 }
+
+.emailPopUp ::-webkit-input-placeholder {
+   padding-left:5px;
+}
+
+.emailPopUp :-moz-placeholder { /* Firefox 18- */
+   padding-left:5px; 
+}
+
+.emailPopUp ::-moz-placeholder {  /* Firefox 19+ */
+   padding-left:5px;  
+}
+
+.emailPopUp :-ms-input-placeholder {  
+   padding-left:5px; 
+}
+
 .emailPopUp .dropDown option, .emailPopUp .dropDown select, .emailPopUp .dropDown{
 	width: 400px;
 	margin-bottom: 10px;

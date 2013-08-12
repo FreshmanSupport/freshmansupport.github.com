@@ -3,7 +3,6 @@
 <head>
 <link type="text/css" rel="stylesheet" href="../../css/main.css"/>
 <link type="text/css" rel="stylesheet" href="../../css/headerStyle.css"/>
-<link href="../../css/Chart.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="../../js/jquery-1.9.1.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Admissions Data</title>
@@ -44,182 +43,71 @@
   <div id="subNav">
     <ul>
       <li><a href="../QA">Admissions Q&A</a></li>
-      <li><a href="../data">Data</a></li>
+      <li><a href="../data" class="selected">Data</a></li>
       <li><a href="../essays">Accepted Student Essays</a></li>
     </ul>
   </div>
 </div>
 <div id="maincontent" class="admissionData">
-  <div id="satScore" class="col-1-3" style="overflow:hidden;">
-    <div id="chart1" style="position:relative;width:115px;height:115px; display:inline-block;"></div>
-    <div id="chart2" style="position:relative;width:115px;height:115px; display:inline-block;"></div>
-    <table>
-      <tr>
-        <th> </th>
-        <th>Math %</th>
-        <th>Reading %</th>
-      </tr>
-      <tr>
-        <td>700-800</td>
-        <td>6</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>600-699</td>
-        <td>34</td>
-        <td>21</td>
-      </tr>
-      <tr>
-        <td>500-599</td>
-        <td>44</td>
-        <td>61</td>
-      </tr>
-      <tr>
-        <td>400-499</td>
-        <td>14</td>
-        <td>26</td>
-      </tr>
-      <tr>
-        <td>300-399</td>
-        <td>1</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>100%</td>
-        <td>100%</td>
-      </tr>
-    </table>
-  </div>
-  <div id="data" class="col-1-3">
-    <h2>June 1, 2013</h2>
-    <h3>Fall admission deadline</h3>
-    <a href="../../deadlines" class="view" style="margin-bottom:17px;">View more Deadlines</a>
-    <div class="hr"></div>
-    <h2>47% Acceptance Rate</h2>
-    <h3>26,500 Freshman Applied 12,800 Freshman Accepted</h3>
-    <h2>Available Majords</h2>
-    <div class="dropDown">
-      <select>
-        <option>College of Liberal Arts</option>
-        <option>College of Engineering</option>
-      </select>
+  <div id="yourInfo" class="col-1-3">
+  	<h2 class="marginBot0">Your Information</h2>
+    <p class="marginTop10"><i>Personalize your score to see your chance into college</i></p>
+    <h2>SAT</h2>
+    <div class="scoreText">
+    	<span>Math</span>
+        <span>Reading</span>
+        <span>Writing</span>
     </div>
-    <div id="listOfMajors">
-      <ul>
-        <li>Anthropoly</li>
-        <li>Asaisn Cultre and Lnague</li>
-        <li>Asiasn Studies</li>
-        <li>Clasiia ARacealogy</li>
-        <li>Economic art</li>
-        <li>Engrish</li>
-        <li>Ethnic Study</li>
-        <li>French</li>
-      </ul>
+    <div class="scoreTextBox">
+        <input type="text" value="601"/>
+        <input type="text" value="558"/>
+        <input type="text" value="652"/>
     </div>
+    <h2>ACT</h2>
+    <div class="scoreText">
+    	<span>Math</span>
+        <span>Reading</span>
+        <span>Writing</span>
+    </div>
+    <div class="scoreTextBox">
+    	<input type="text" value="601"/>
+        <input type="text" value="558"/>
+        <input type="text" value="652"/>
+    </div>
+    <h2>Class Rank(%)</h2>
+    <input type="text" value="10%" style="margin:0 auto; display:block"/>
+    <ul class="editNav">
+    	<li><span>In-State</span></li>
+        <li><span>Out-Of-Sate</span></li>
+    </ul>
+    <center><button>Recalculate</button></center>
   </div>
-  <div id="act" class="col-1-3"> Math
-    <div id="chart3" style="position:relative;width:115px;height:115px; display:inline-block;"></div>
-    Reading
-    <div id="chart4" style="position:relative;width:115px;height:115px; display:inline-block;"></div>
-    Writing
-    <div id="chart5" style="position:relative;width:115px;height:115px; display:inline-block;"></div>
+  <div id="importance" class="col-1-3">
+   	<h2 class="marginBot0">Importance</h2>
+    <p class="marginTop10"><i>This show your results</i></p>
+    The Lock and Unlcok chart goes here
+    <center><button>Recalculate</button></center>
   </div>
-  <table>
-    <tr>
-      <th> </th>
-      <th>English %</th>
-      <th>Math %</th>
-      <th>Composite %</th>
-    </tr>
-    <tr>
-      <td>30-36</td>
-      <td>6</td>
-      <td>3</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>24-29</td>
-      <td>34</td>
-      <td>21</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>18-23</td>
-      <td>44</td>
-      <td>61</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>12-17</td>
-      <td>14</td>
-      <td>26</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>6-11</td>
-      <td>1</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>100%</td>
-      <td>100%</td>
-      <td>100%</td>
-    </tr>
-  </table>
+  <div id="results" class="col-1-3"> 
+	<h2 class="marginBot0">Results</h2>
+    <p class="marginTop10"><i>Analysis your result and see if you can get into colelge</i></p>
+    <p>Your rank is ...</p>
+    The Total Result Slider here
+    <h2>Analysis</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it to make a type 
+    specimen book. It has survived not only five centuries, but also the leap into 
+    electronic typesetting, remaining essentially unchanged. It was popularised in 
+    the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+    and more recently with desktop publishing software like Aldus PageMaker including 
+    versions of Lorem Ipsum.</p>
+    <div class="legal">This is a legal notice that prevent lawsuit</div>
+	</div>
+  
 </div>
 </body>
 </html>
-<script src="../../js/Chart.js"></script>
-<script>
-			new Chart.Pie("chart1", {
-  showTooltips : true, 
-  chartMinSize : [115, 115], 
-  chartMaxSize : [115, 115], 
-  chartData : [["Tuition", 39.20, "00:01:33", "#333D69"], 
-               ["Required Fees", 30.58, "00:03:04", "#44567F"], 
-               ["Room and Board", 22.91, "00:02:01", "#596B9E"], 
-               ["Book and Other", 3.63, "00:01:03", "#91A5C3"]]
-});
-			new Chart.Pie("chart2", {
-  showTooltips : true, 
-  chartMinSize : [115, 115], 
-  chartMaxSize : [115, 115], 
-  chartData : [["Tuition", 39.20, "00:01:33", "#333D69"], 
-               ["Required Fees", 30.58, "00:03:04", "#44567F"], 
-               ["Room and Board", 22.91, "00:02:01", "#596B9E"], 
-               ["Book and Other", 3.63, "00:01:03", "#91A5C3"]]
-});
-			new Chart.Pie("chart3", {
-  showTooltips : true, 
-  chartMinSize : [115, 115], 
-  chartMaxSize : [115, 115], 
-  chartData : [["Tuition", 39.20, "00:01:33", "#333D69"], 
-               ["Required Fees", 30.58, "00:03:04", "#44567F"], 
-               ["Room and Board", 22.91, "00:02:01", "#596B9E"], 
-               ["Book and Other", 3.63, "00:01:03", "#91A5C3"]]
-});
-			new Chart.Pie("chart4", {
-  showTooltips : true, 
-  chartMinSize : [115, 115], 
-  chartMaxSize : [115, 115], 
-  chartData : [["Tuition", 39.20, "00:01:33", "#333D69"], 
-               ["Required Fees", 30.58, "00:03:04", "#44567F"], 
-               ["Room and Board", 22.91, "00:02:01", "#596B9E"], 
-               ["Book and Other", 3.63, "00:01:03", "#91A5C3"]]
-});
-			new Chart.Pie("chart5", {
-  showTooltips : true, 
-  chartMinSize : [115, 115], 
-  chartMaxSize : [115, 115], 
-  chartData : [["Tuition", 39.20, "00:01:33", "#333D69"], 
-               ["Required Fees", 30.58, "00:03:04", "#44567F"], 
-               ["Room and Board", 22.91, "00:02:01", "#596B9E"], 
-               ["Book and Other", 3.63, "00:01:03", "#91A5C3"]]
-});
-</script>
 <script>
 $("#askAnother").click(function() {
   $("#questionThannkYou").toggle();
@@ -232,4 +120,13 @@ $("#sendButton").click(function() {
   $("#inputArea").toggle();
   $("#officers").toggle();
 });
+
+$('.editNav span').click(function(e) {
+  var name = event.target.id;
+  name = name.replace('Click', '');
+  $('.editNav span').removeClass('select');
+  $(this).addClass('select');
+  e.preventDefault();
+});
+   
 </script>
