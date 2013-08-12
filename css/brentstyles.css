@@ -1558,6 +1558,7 @@ display:none;
 	margin:0;
 	height:30px;
 	margin-top:2px;
+	width:auto;
 
 }
 
@@ -2964,8 +2965,17 @@ border-top:1px solid rgb(116,116,116);
 margin-top:-10px;
 display:block;
 }
-#property #left #availability, #property #left #availSent, #property #left #information {
+#property #left #availability, #property #left #availSent {
 width:45%;
+margin:auto;
+display:inline-block;
+padding:0px 10px;
+vertical-align:top;
+margin-top:10px;
+border-right:1px solid rgb(116,116,116);
+}
+#property #left #information{
+width:48%;
 margin:auto;
 display:inline-block;
 padding:0px 10px;
