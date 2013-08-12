@@ -632,7 +632,7 @@ padding-top: 9px;
 }
 #studentProfile{border-right: 1px solid rgb(116,116,116); padding:0 50px; min-height:655px;}
 #studentProfile #spHeader h2 {
-	text-align: center;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 30px;
 }
 
@@ -859,7 +859,7 @@ padding-top: 9px;
 .realLifeNav h2 {
 	color: rgb(51, 62,106);
 	text-align: left;
-	font-weight: normal;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding-left: 10px;
 }
 .realLifeNav .head {
@@ -1029,7 +1029,7 @@ padding-top: 9px;
 	list-style-type: none;
 	color: rgb(51, 62, 106);
 	padding-bottom: 5px;
-	border-bottom: 1px solid rgb(51, 62, 106);font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	border-bottom: 1px solid rgb(51, 62, 106);font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .realLifeProfile li:last-child {
 	border: none;
@@ -1125,7 +1125,7 @@ padding-top: 9px;
 .stateTextWrap div:first-child{display:inline-block;}
 .stateTextWrap div:nth-child(2){display:inline-block;padding-left:57px;}
 .stateTextWrap div:last-child{display:inline-block;padding-left:35px;}
-#budgetPlanner h3{color:rgb(116,116,116); margin-top:0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:24px; font-weight:normal;}
+#budgetPlanner h3{color:rgb(116,116,116); margin-top:0; font-family: HNL "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:24px; font-weight:normal;}
  .stateWrap label {
 	display: inline-block;
 	vertical-align: top;
@@ -1161,7 +1161,7 @@ padding-top: 9px;
 	text-align: center;
 	text-decoration: none;
 	font-size: 24px;
-	font-family: HNB, Arial, Helvetica, sans-serif;
+	font-family: HNB, Helvetica, sans-serif;
 	margin: 0 auto;
 	margin-top: 10px;
 	padding-top: 8px;
@@ -1199,7 +1199,7 @@ padding-top: 9px;
 	text-decoration: none;
 	padding-top: 5px;
 	font-size: 24px;
-	font-family: HNB, Arial, Helvetica, sans-serif;
+	font-family: HNB, Helvetica, sans-serif;
 	margin: 0 auto;
 	margin-top: 20px;
 }
@@ -1377,7 +1377,7 @@ padding-top: 9px;
 	font-size:24px;
 	border-bottom:1px solid rgb(116,116,116);
 	width:80%;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	cursor:pointer;
 }
 .budgetPlanner #results .right{display:inline-block; text-align:right; color:rgb(116, 116, 116); font-size:24px; text-align:right;width:19%; white-space:nowrap;}
@@ -1385,7 +1385,7 @@ padding-top: 9px;
 #maincontent.budgetPlanner .finale h2{color:rgb(220, 134, 39);}
 #currentNumber{display:inline-block; width:5px; text-align:center;}
 /* ==================== Data ====================== */
-#maincontent.data #payForCollege h3{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 24px;color: rgb(116, 116, 116);font-weight: normal; margin-bottom:0;}
+#maincontent.data #payForCollege h3{font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 24px;color: rgb(116, 116, 116);font-weight: normal; margin-bottom:0;}
 #maincontent.data #payForCollege p{margin:0;  font-style:italic;}
 #payForCollege .textWrap{width:200px; display:block; margin:0 auto;}
 #maincontent.data #payForCollege, #maincontent.data #finDataMid, #maincontent.data #financialAid {
@@ -1443,14 +1443,14 @@ padding-top: 9px;
 /* ================= Financial Aid ================= */
 .financialAid{}
 .financialAid img{display:block; margin:0 auto;}
-.financialAid h1{font-size:34px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight:normal; text-align:center;color:rgb(51, 62, 107);}
+.financialAid h1{font-size:34px; font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight:normal; text-align:center;color:rgb(51, 62, 107);}
 .financialAid a{display:block; text-decoration:none; color:rgb(51, 62, 107);font-family:Georgia, "Times New Roman", Times, serif; margin-bottom:10px;}
 #grant, #loan, #workStudy{}
 .financialAid #recentAnswers .view{margin-top: 8px;}
 /* ============== Deadlines =================== */
 
 .smallCalendar .title{}
-#sideCalendar{display:inline-block; width:300px; height: 555px ;overflow-y:scroll; 	padding-left:20px;}
+#sideCalendar{display:inline-block; width:200px; height: 555px ;overflow-y:scroll; 	padding-left:20px;}
 .calendar .smallCalendar table{}
 .smallCalendar{
 	text-align:center; 
@@ -1459,8 +1459,6 @@ padding-top: 9px;
 	font-size: 14px;
 	width:150px;
 	margin-bottom: 20px;
-	margin-left: auto;
-	margin-right: auto;
 	cursor:pointer;
 }
 
@@ -1484,7 +1482,7 @@ padding-top: 9px;
 	height:50px;
 	font-size:34px;
 	color: rgb(51,62,106);
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-align:center;;
 }
 #mainCalendar table{margin: 0 auto; width: 500px;}
@@ -1493,40 +1491,46 @@ padding-top: 9px;
 #mainCalendar th{color:rgb(116,116,116); font-family:Georgia, "Times New Roman", Times, serif; text-align:center; font-size:14px; font-weight:normal;}
 #infoBox .infoLabel, #infoBox .infoContent{color:rgb(51,62,106); font-family:Georgia, "Times New Roman", Times, serif;font-size:14px;}
 #infoBox .infoLabel{display:inline-block; width: 70px; vertical-align:top;margin-right: 10px;text-align:right;}
-#infoBox .infoContent{display:inline-block; width: 460px; line-height:2em; color:rgb(116,116,116);margin-top: -4px;}
-#infoBox li{margin-bottom:10px;}
-#maincontent #infoBox h3{color:rgb( 51, 62, 106);}
-
-#deadlineNotification{display:inline-block; width: 300px; padding-left:35px; vertical-align:top;}
-.specialIcon{margin-top:18px;}
-.specialIcon .icon{width:30px; height:25px; background-color:orange; display:inline-block;}
-.specialIcon .iconInfo{
+#infoBox .infoContent{
 	display:inline-block; 
-	width: 200px; 
-	color:rgb(51,62,106); 
+	width: 460px; 
+	color:rgb(116,116,116);
+	
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:14px;
-	vertical-align:top;
-	padding-left:10px; 
-	white-space:nowrap;
-	margin-top:4px;
 }
+#infoBox li{margin-bottom:10px;}
+#maincontent #infoBox h3{}
 
+#deadlineNotification{display:inline-block; width: 500px; padding-left:30px; vertical-align:top;}
+.specialIcon{margin-top:18px;}
+.specialIcon .icon{width:20px; height:15px; background-color:rgb( 51, 62, 106); display:inline-block;margin-right:5px;}
+.specialIcon .iconInfo{
+	display:inline-block; 
+	width: 400px; 
+	color:rgb(51,62,106); 
+	font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:24px;
+	vertical-align:top;
+	margin-top:-5px;
+}
+#maincontent.calendar .specialIcon p{margin-top:10px; margin-bottom:20px; text-align:left; padding-left:30px;}
 .deadlineLegend{color:rgb(51,62,106); font-family:Georgia, "Times New Roman", Times, serif;font-size:14px; margin-top: 30px;}
 
 .deadlineLegend .circle{
 	display: inline-block;
 	vertical-align: top;
-	width: 30px;
-	height: 30px;
+	width: 25px;
+	height: 25px;
 	border-radius: 50%;
 }
-.legendText{display:inline-block; margin-left: 16px;margin-top: 6px;}
-.deadlineLegend li{margin-bottom: 5px;}
+.legendText{display:inline-block;margin-top:3px;}
+.deadlineLegend ul{padding-left:117px;}
+.deadlineLegend li{display:inline-block; margin-right:10px;}
 .deadlineLegend li:first-child .circle{background-color:rgb(221, 135, 39);}
 .deadlineLegend li:nth-child(2) .circle{background-color:green;}
 .deadlineLegend li:nth-child(3) .circle{background-color:purple;}
-.deadlineLegend li:nth-child(4) .circle{background-color:lightblue;}
+.deadlineLegend li:nth-child(4) .circle{background-color:rgb( 51, 62, 106);}
 .deadlineLegend li:last-child .circle{background-color:rgb(102, 0, 0);}
 
 
@@ -1565,7 +1569,7 @@ padding-top: 9px;
 	background-position:10px 7px;
 	color:white;
 }
-#calendarWrapper{width:1320px; margin: 0 auto; display:block; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+#calendarWrapper{width:1420px; margin: 0 auto; display:block; font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;}
 #maincontent.calendar{width:100%; margin-left:59; margin-right:auto;}
 @media(max-width:1000){
 	#maincontent.calendar{width:100%; margin:0 auto;}
@@ -1574,6 +1578,7 @@ padding-top: 9px;
 .profileTopContainer .portrait{
 	display:inline-block;
 	vertical-align:top;
+	margin-right: 10px;
 }
 .profileTopContainer{
 	height:200px;
@@ -1582,11 +1587,22 @@ padding-top: 9px;
 	display:inline-block;
 	vertical-align:top;
 	background-color:rgb(232, 229, 228);
-	width:80%;;
+	width:80%;
+	color:rgb( 51, 62, 106);
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	padding-left:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	position:relative;
 }
+.profileLeft
 .profileInfo ul{margin:0;}
-.profileInfo ul li:first-child(){
-
+.profileInfo ul > li:first-child{
+	margin-bottom:10px;
+}
+.profile li{
+	margin-bottom:3.4px;
 }
 .profileTopContainer .portrait img{
 	width:200px; 
@@ -1598,8 +1614,14 @@ padding-top: 9px;
 	width:100%;
 	margin-bottom:20px;
 }
+#viewEdit{position:absolute; bottom:5px; right:5px;}
 #maincontent .profileList > h3{text-align:left; margin-bottom:0; color:rgb( 51, 62, 106);}
-#maincontent .profileList > p{text-align:left;margin-top:10px;}
+#maincontent .profileList > p{text-align:left;margin-top:10px; margin-bottom:20px;}
+.memberSince{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	color:rgb( 51, 62, 106);
+}
 .profileList .grayOut{
 	position:absolute;
 	z-index: 1;
@@ -1636,7 +1658,7 @@ padding-top: 9px;
 	font-weight: normal;
 	margin: 0;
 }
-.footer h3 {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+.footer h3 {font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 24px;
 	color: rgb(51 , 62, 106);
 	font-weight: normal;
