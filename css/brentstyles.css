@@ -2024,6 +2024,7 @@ button{
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:14px;
 	height:25px;
+	cursor:pointer;
 	
 }
 
@@ -2373,8 +2374,17 @@ width:94.5%;
 	border-bottom:1px solid  rgb(116,116,116);
 	padding-bottom:35px;
 	position:relative;
-	
+	width:100%;
 }
+#submittedwide{
+padding-top:10px;
+max-height:0px;
+}
+#checked{
+margin-top:20px;
+
+}
+
 #reviewsPage #right .checkAvail{
 	position:relative;
 }
@@ -2708,7 +2718,6 @@ right:14px;
 		width:663px;
 		padding:5px;
 		margin-left:140px;
-		background-color:rgb(232,229,228);
 		padding-right:20px;
 		padding-bottom:10px;
 
@@ -3259,7 +3268,6 @@ width:94.5%;
 	border-bottom:1px solid  rgb(116,116,116);
 	padding-bottom:35px;
 	position:relative;
-	
 }
 #reviewsPage  .submit button{
 position:absolute;
@@ -3374,7 +3382,8 @@ right:10px;
 
 }
 #reviewsPage #right .submit button{
-margin-left:0px;
+position:absolute;
+right:5px;
 }
 
 #reviewsPage #left .propComment{

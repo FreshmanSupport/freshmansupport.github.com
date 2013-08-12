@@ -202,7 +202,7 @@
 	
 
 <div id="right">
-	<div class="submit" >
+	<div class="submit" id="rev">
 	<h2>Submit a Review</h2>
 	<div class="dropDown" style="display:inline-block; width:150px;">
 <select>
@@ -227,9 +227,14 @@
 		
 	  <textarea name="review" style="height:100px; width:95%; font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:14px; margin-top:5px; margin-bottom:5px; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="Type your review here" ></textarea>
-	<br><button>Submit</button>
+	<br><button onclick="submit();">Submit Review</button>
 	</div>
 	
+	<div class="submit" id="submittedwide" style="display:none">
+	<span class="gray" style="margin-top:0px; "><i>Your review has been submitted!</i></span>
+	
+	
+	</div>
 	
 	
 	
@@ -300,4 +305,9 @@ $( "#back" ).click(function() {
 		$('#submitted').animate({width: 'toggle'});
 
 });
+
+function submit(){
+document.getElementById('rev').style.display='none';
+document.getElementById('submittedwide').style.display='inline-block';
+}
 </script>

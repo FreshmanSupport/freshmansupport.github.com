@@ -199,7 +199,7 @@
 	
 
 <div id="right">
-	<div class="submit" >
+	<div class="submit" id="rev">
 	<h2>Submit a Review</h2>
 	<div class="dropDown" style="display:inline-block; width:150px;">
 <select>
@@ -224,13 +224,18 @@
 		
 	  <textarea name="review" style="height:100px; width:95%; font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:14px; margin-top:5px; margin-bottom:5px; resize:none; color:rgb(51,62,106); max-width:100%; " placeholder="Type your review here" ></textarea>
-	<br><button>Submit</button>
+	<br><button onclick="submit();">Submit Review</button>
+	</div>
+	
+	<div class="submit" id="submittedwide" style="display:none">
+	<span class="gray" style="margin-top:0px; "><i>Your review has been submitted!</i></span>
+	
+	
 	</div>
 	
 	
 	
-	
-	  <div class="checkAvail">
+	  <div class="checkAvail" id="check">
   <h2 style="margin-bottom:20px">Check Availability</h2>
  <div style="margin:auto; width:100%;">
           <center>
@@ -265,12 +270,19 @@
     font-size:.875em; resize:none; color:rgb(51,62,106); margin-bottom:10px; margin:auto; margin-top:5px;" placeholder="Questions"></textarea>
             <br />
           </center>
-          <button>Send</button>
+          <button onclick=checkAvail(); style="width:129px">Check Availability</button>
   
 
 
  
   </div>
+
+  
+  </div>
+    <div id="checked" style="display:none">
+  
+  	<span class="gray" style="margin-top:0px; "><i>Thank you for your request. The Towers should contact you</i></span>
+
   </div>
 </div>
   
@@ -308,4 +320,12 @@ $( "#back" ).click(function() {
 		$('#submitted').animate({width: 'toggle'});
 
 });
+function submit(){
+document.getElementById('rev').style.display='none';
+document.getElementById('submittedwide').style.display='inline-block';
+}
+function checkAvail(){
+document.getElementById('check').style.display='none';
+document.getElementById('checked').style.display='inline-block';
+}
 </script>
