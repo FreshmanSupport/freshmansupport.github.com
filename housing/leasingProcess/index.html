@@ -57,9 +57,9 @@
 </div>
   <div id="maincontent">
 	<div id="leasingPro"><div  class="top" style="display:inline-block; vertical-align:top;">
- <h2 style="margin-bottom:15px;"> Leasing Process </h2>
+ <h2 style="margin-bottom:10px;"> Leasing Process </h2>
   <center>
-      <button onClick="pubFunc();" ><span id="pubButton" class="hbold" style="cursor:pointer">Public Dorm</span></button> |
+      <button onClick="pubFunc();" ><span id="pubButton"  style="color:orange; cursor:pointer">Public Dorm</span></button> |
 	  <button onClick="privFunc();"><span  id="privButton" style="cursor:pointer">Private Dorm/Apartment</span></button> 
   
   
@@ -75,57 +75,50 @@
   </div>
 
     
-    <div id="housingMatcherRight">
-	<h2>Recommended Housing</h2>
+ <div id="housingMatcherRight">
+	<h2 style="margin-bottom:10px">Recommended Housing</h2>
 <br>
 
-	<div id="recommended">
-    <div id="housingVideo">
-    </div><div style="display:inline-block;">
+  <div id="recommended">
+    <div id="housingVideo"><img src="../../img/property/place2.png">
+     </div><div style="display:inline-block; margin-top:2px;">
     <h2>Towers</h2>
-    <br /><a href=""><div id="compareDiv"><span class="compare">Compare</span></div></a>
-    <br /><div class="interests" style="margin-top:-15px">855 Roomie Interests</div>
-    <br /><button>Add to Roomie Match</button>	
-    </div></div><br />
-	<span class="gray" style="margin-left:15px;">Recommended Application Date  <span class="date">8-10-13</span></span>
+    <br /><div class="interests" style="margin-top:10px"><a href="">855 People</a>
+	<br><span class="gray" >are looking for a roommate<br>at the Towers</span></div>
+    <br /><button style="margin-top:-7px">Add to <span class="hidetil13" style="margin:0;">Your</span> Roomie Match</button>	
+    </div></div><br >
     
     <div id="recommendedWrap">
     <div id="recommended">
-    <div id="housingVideo">
-    </div><div style="display:inline-block">
-    <h2>Quarters</h2>
-    <br /><a href=""><div id="compareDiv"><span class="compare">Compare</span></div></a>
-    <br /><div class="interests">855 Roomie Interests</div>
-    <br /><button>Add to Roomie Match</button>	
-    </div></div><br />
-	<span class="gray" style="margin-left:15px;">Recommended Application Date  <span class="date">8-10-13</span></span>
-    </div>
+    <div id="housingVideo"><img src="../../img/property/place2.png">
+     </div><div style="display:inline-block; margin-top:2px;">
+    <h2>Towers</h2>
+    <br /><div class="interests" style="margin-top:10px"><a href="">855 People</a>
+	<br><span class="gray" >are looking for a roommate<br>at the Towers</span></div>
+    <br /><button style="margin-top:-7px">Add to <span class="hidetil13" style="margin:0;">Your</span> Roomie Match</button>	
+    </div></div><br >
     
     
       <div id="recommendedWrap">
-    <div id="recommended">
-    <div id="housingVideo">
-    </div><div style="display:inline-block">
-    <h2>Quarters</h2>
-    <br /><a href=""><div id="compareDiv"><span class="compare">Compare</span></div></a>
-    <br /><div class="interests">855 Roomie Interests</div>
-    <br /><button>Add to Roomie Match</button>	
-    </div></div><br />
-	<span class="gray" style="margin-left:15px;">Recommended Application Date  <span class="date">8-10-13</span></span>
-    </div>
+   <div id="recommended">
+    <div id="housingVideo"><img src="../../img/property/place2.png">
+     </div><div style="display:inline-block; margin-top:2px;">
+    <h2>Towers</h2>
+    <br /><div class="interests" style="margin-top:10px"><a href="">855 People</a>
+	<br><span class="gray" >are looking for a roommate<br>at the Towers</span></div>
+    <br /><button style="margin-top:-7px">Add to <span class="hidetil13" style="margin:0;">Your</span> Roomie Match</button>	
+    </div></div><br >
     
     
      <div id="recommendedWrap">
-    <div id="recommended">
-    <div id="housingVideo">
-    </div><div style="display:inline-block">
-    <h2>Quarters</h2>
-    <br /><a href=""><div id="compareDiv"><span class="compare">Compare</span></div></a>
-    <br /><div class="interests">855 Roomie Interests</div>
-    <br /><button>Add to Roomie Match</button>	
-    </div></div><br />
-	<span class="gray" style="margin-left:15px;">Recommended Application Date  <span class="date">8-10-13</span></span>
-    </div>
+  <div id="recommended">
+    <div id="housingVideo"><img src="../../img/property/place2.png">
+     </div><div style="display:inline-block; margin-top:2px;">
+    <h2>Towers</h2>
+    <br /><div class="interests" style="margin-top:10px"><a href="">855 People</a>
+	<br><span class="gray" >are looking for a roommate<br>at the Towers</span></div>
+    <br /><button style="margin-top:-7px">Add to <span class="hidetil13" style="margin:0;">Your</span> Roomie Match</button>	
+    </div></div><br >
     
     
     
@@ -176,16 +169,16 @@
 document.getElementById('pub').style.display='block';
 document.getElementById('priv').style.display='none';
 	
-document.getElementById('pubButton').style.fontFamily='HNB';
-document.getElementById('privButton').style.fontFamily='HNL';
+document.getElementById('pubButton').style.color='orange';
+document.getElementById('privButton').style.color='grey';
 
 }
 function privFunc() { 
 document.getElementById('pub').style.display='none';
 document.getElementById('priv').style.display='block';
 	
-document.getElementById('pubButton').style.fontFamily='HNL';
-document.getElementById('privButton').style.fontFamily='HNB';
+document.getElementById('pubButton').style.color='grey';
+document.getElementById('privButton').style.color='orange';
 }
 
 </script>

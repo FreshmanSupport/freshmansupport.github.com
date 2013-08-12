@@ -1415,6 +1415,7 @@ display:none;
 	text-align:left;
 	margin:0 0;	
 	margin-bottom:10px;
+	margin-top:-3px;
 	
 }
 
@@ -1538,11 +1539,15 @@ margin:0;
 	width:100%;
 	display:inline-block;
 }
+
 #leasingPro .top{
 	width:100%;
 }
 	#leasingPro  #housingMatcherRight {
 display:none;
+	}
+	#housingMatcherRight h2{
+		margin-bottom:-20px;
 	}
 	#housingMatcherRight #compareDiv{
 		margin-bottom:0px;
@@ -2024,6 +2029,9 @@ button{
 
 #recommendedHousingFooterSqueeze{
 display:none;
+}
+#recommendedHousingFooterSqueeze img{
+margin:0 20px;
 }
 #recommendedHousingFooter, #recommendedHousingFooterSqueeze{
 	width:1000px;
