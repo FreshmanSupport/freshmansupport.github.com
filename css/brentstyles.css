@@ -1573,6 +1573,7 @@ display:none;
 	list-style-type:none;
 	padding:0;
 	margin-left:-30px;
+	text-align:left;
 	
 }
 #property #left #availability button{
@@ -1670,7 +1671,7 @@ margin-top:10px;
 
 	margin-top:10px;
 	border-bottom:1px solid rgb(116,116,116);
-	
+	text-align:left;
 	
 }
 
@@ -2904,6 +2905,7 @@ margin:auto;
 text-align:left;
 
 }
+
 #property #left #generalInfo .thumb{
 position:absolute;
 top:5px;
@@ -2922,6 +2924,7 @@ display:none;
 }
 #property #right #desc{
 border-top:1px solid rgb(116,116,116);
+margin-top:-10px;
 }
 #property #left #availability, #property #left #availSent, #property #left #information {
 width:45%;
@@ -2947,6 +2950,7 @@ width:97.4%;
 #property #left #information{
 	border:none;
 	border-left:1px solid rgb(116,116,116);
+	text-align:left;
 }
 #property #left #availability button{
 position:absolute;
