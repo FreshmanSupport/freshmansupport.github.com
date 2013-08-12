@@ -9,13 +9,13 @@
 /*Use this to change the background image of the flips */
 
 #publicDormFlip {
-	background-image: url(../../img/property/place1.png);
+	background-image: url(../../img/property/place2.png);
 }
 #privateDormFlip {
-	background-image: url(../../img/property/place1.png);
+	background-image: url(../../img/property/place2.png);
 }
 #apartmentsFlip {
-	background-image: url(../../img/property/place3.png);
+	background-image: url(../../img/property/place2.png);
 }
 </style>
 <script type="text/javascript">
@@ -135,9 +135,9 @@ $(function() {
   <tr >
   <th>
  </th>
-  <th style="padding:0 0px 0 50px;">Public Dorms</th>
-  <th style="padding:0 0px 0 50px;">Private Dorms</th>
-  <th style="padding:0 0px 0 50px;">Apartments</th>
+  <th class="top">Public Dorms</th>
+  <th class="top">Private Dorms</th>
+  <th class="top">Apartments</th>
   </tr>
   <tr><th>Price/Month Per Bedroom</th>
   <td>$$$$</td>
@@ -169,9 +169,9 @@ $(function() {
   <table id="byAmenities" style="display:none">
   <tr>
   <th></th>
-  <th style="padding:0 0px 0 50px;">Public Dorms</th>
-  <th style="padding:0 0px 0 50px;">Private Dorms</th>
-  <th style="padding:0 0px 0 50px;">Apartments</th>
+  <th class="top">Public Dorms</th>
+  <th class="top">Private Dorms</th>
+  <th class="top">Apartments</th>
   </tr>
   <tr><th>Bed</th>
   <td>yes</td>
@@ -232,9 +232,9 @@ $(function() {
   <table id="byComAmenities"  style="display:none">
   <tr>
   <th></th>
-  <th style="padding:0 0px 0 50px;">Public Dorms</th>
-  <th style="padding:0 0px 0 50px;">Private Dorms</th>
-  <th style="padding:0 0px 0 50px;">Apartments</th>
+  <th class="top">Public Dorms</th>
+  <th class="top">Private Dorms</th>
+  <th class="top">Apartments</th>
   </tr>
   <tr><th>Computer Room</th>
   <td>yes</td>
@@ -283,9 +283,9 @@ $(function() {
   <table id="byLocation"  style="display:none">
   <tr>
   <th></th>
-  <th style="padding:0 0px 0 50px;">Public Dorms</th>
-  <th style="padding:0 0px 0 50px;">Private Dorms</th>
-  <th style="padding:0 0px 0 50px;">Apartments</th>
+  <th class="top">Public Dorms</th>
+  <th class="top">Private Dorms</th>
+  <th class="top">Apartments</th>
   </tr>
   <tr><th>Nearby Bus Access</th>
   <td>yes</td>
@@ -314,9 +314,9 @@ $(function() {
   <table id="byFood"  style="display:none">
   <tr>
   <th></th>
-  <th style="padding:0 0px 0 50px;">Public Dorms</th>
-  <th style="padding:0 0px 0 50px;">Private Dorms</th>
-  <th style="padding:0 0px 0 50px;">Apartments</th>
+  <th class="top">Public Dorms</th>
+  <th class="top">Private Dorms</th>
+  <th class="top">Apartments</th>
   </tr>
   <tr><th>Meal Plan</th>
   <td>yes</td>
@@ -351,9 +351,9 @@ $(function() {
   <table id="bySafety"  style="display:none">
   <tr>
   <th></th>
-  <th style="padding:0 0px 0 50px;">Public Dorms</th>
-  <th style="padding:0 0px 0 50px;">Private Dorms</th>
-  <th style="padding:0 0px 0 50px;">Apartments</th>
+  <th class="top">Public Dorms</th>
+  <th class="top">Private Dorms</th>
+  <th class="top">Apartments</th>
   </tr>
   <tr><th>Security Desk</th>
   <td>yes</td>
@@ -391,30 +391,38 @@ $(function() {
     <div id="recommendedHousingFooter">
     <h2>Recommended Housing</h2>
     <br>
-	<center>
-	<div id="item">
-		<h3>Towers</h3>
-		<div style="width:250px; height:130px; border-radius:5px; background-color:grey;"></div>
-		<p>Recommended Application Date</p>
-		<span class="blue">8-10-13</span>
-    </div>
+	
+	<div id="recommended" style="display:inline-block; width:100%; margin:auto; margin-top:-20px; text-align:center;">
+   <div style="display:inline-block; text-align:left; border-right:1px solid rgb(116,116,116); padding-right:25px; margin-right:25px;"> <div id="housingVideo"><img src="../../img/property/place2.png">
+     </div><div style="display:inline-block; margin-top:-4px; margin-left:15px; vertical-align:top">
+    <h2 style="margin:0; text-align:center; ">Towers</h2>
+    <div class="interests" style="margin-top:0px"><a href="">855 People</a>
+	<br><span class="gray" >are looking for a roommate<br>at the Towers</span></div>
+   <button style="margin-left:-2px; margin-top:9px;">Add to <span class="hidetil13" style="margin:0;">Your</span> Roomie Match</button>	
+    </div></div>
 	
 	
-	<div id="item">
-		<h3>Towers</h3>
-		<div style="width:250px; height:130px; border-radius:5px; background-color:grey;"></div>
-		<p>Recommended Application Date</p>
-		<span class="blue">8-10-13</span>
-    </div>
-	
+   <div style="display:inline-block; text-align:left; border-right:1px solid rgb(116,116,116); padding-right:25px; margin-right:25px;"> <div id="housingVideo"><img src="../../img/property/place2.png">
+     </div><div style="display:inline-block; margin-top:-4px; margin-left:15px; vertical-align:top">
+    <h2 style="margin:0; text-align:center;">Towers</h2>
+    <div class="interests" style="margin-top:0px"><a href="">855 People</a>
+	<br><span class="gray" >are looking for a roommate<br>at the Towers</span></div>
+   <button style="margin-left:-2px; margin-top:9px;">Add to <span class="hidetil13" style="margin:0;">Your</span> Roomie Match</button>	
+    </div></div>
 		
-	<div id="item">
-		<h3>Towers</h3>
-		<div style="width:250px; height:130px; border-radius:5px; background-color:grey;"></div>
-		<p>Recommended Application Date</p>
-		<span class="blue">8-10-13</span>
-    </div>
+   <div style="display:inline-block; text-align:left"> <div id="housingVideo"><img src="../../img/property/place2.png">
+     </div><div style="display:inline-block; margin-top:-4px; margin-left:15px; vertical-align:top">
+    <h2 style="margin:0; text-align:center;">Towers</h2>
+    <div class="interests" style="margin-top:0px"><a href="">855 People</a>
+	<br><span class="gray" >are looking for a roommate<br>at the Towers</span></div>
+   <button style="margin-left:-2px; margin-top:9px;">Add to <span class="hidetil13" style="margin:0;">Your</span> Roomie Match</button>	
+    </div></div>
+		
+	
 	</center>
+	
+  </div>
+  </center>
 	
   </div>
 

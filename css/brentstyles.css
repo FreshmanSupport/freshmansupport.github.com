@@ -31,7 +31,7 @@ font-size:14px;
 }
 
 .hbold{
-	font-family:HNB;
+
 }
 .normal{
 	font-weight:normal;
@@ -1391,12 +1391,13 @@ display:inline-block;
 
 #property #left #generalInfo{
 	width:100%;
-	height:240px;
 	background-color:white;
 	margin-top:0px;
 	border-bottom:1px solid  rgb(116,116,116);
 	font-family:Georgia, "Times New Roman", Times, serif;
 	color:rgb(116,116,116);
+	position:relative;
+	padding-bottom:10px;
 }
 
 #property #left #generalInfo h3{
@@ -1504,8 +1505,8 @@ margin:0;
 #property #left #information #selector{
 	width:100%;
 	height:45px;
-	color:rgb(51,62,106);
-	font-size:30px;
+	color:rgb(116,116,116);
+	font-size:24px;
 	font-family:HNL;
 	text-align:center;
 	margin-top:10px;
@@ -1535,7 +1536,7 @@ display:none;
 	}
 
 #property #left #information #selector button, #leasingPro .top button{
-	color:rgb(51,62,106);
+	color:rgb(116,116,116);
 	background-color:white;
 		font-size:inherit;
 	font-family:HNL;
@@ -1798,10 +1799,11 @@ margin-top:0px;
 }
 
 #comparePage .category{
-	color:rgb(51,62,106);
+	color:rgb(116,116,116);
 	font-size:24px;
 	font-family:HNL;
 	text-align:left;
+	margin-left:0;
 }
 #comparePage h2{
 	font-family:HNL;
@@ -1816,12 +1818,24 @@ margin:auto;
 #comparePage table td{
 	width:250px;
 	height:20px;
+	text-align:center;
+	margin:auto;
+	
+}
+#comparePage .cat{
+padding-left:15px;
+text-align:left;
+}
+#comparePage table th{
+text-align:left;
 }
 #comparePage .video{
 	background-color:gray;
 	width:197px;
 	height:130px;
+	margin:auto;
 	margin-top:20px;
+	
 }
 #comparePage .picture{
 	background-color:rgb(51,62,106);
@@ -2307,9 +2321,15 @@ width:94.5%;
 	position:relative;
 	
 }
-#reviewsPage  .submit button{
+#reviewsPage #right .checkAvail{
+	position:relative;
+}
+#reviewsPage #right button{
 position:absolute;
 right:4px;
+}
+#reviewsPage #right .checkAvail button{
+right:8px;
 }
 #housingMain .list, #reviewsPage #right .list{
 	text-align:center;
@@ -2449,7 +2469,7 @@ font-family:Georgia;
 	font-size:24px;
 	text-align:center; 
 	display:inline-block;
-	color:rgb( 51, 62, 106);
+	color:rgb(116, 116, 116);
 }
 
 
@@ -2468,7 +2488,7 @@ border:none;
 margin:auto;
 margin-bottom:20px;
 color:rgb(116,116,116);
-font-family:Georgia;
+font-family:HNL;
 }
 
 
@@ -2477,13 +2497,18 @@ font-family:Georgia;
 	text-align:left;
 	color:rgb(116,116,116);
 	width:170px;
+	padding-left:15px;
+	font-weight:normal;
+}
+#compareTypes .top{
+	text-align:center;
 }
 
 #compareTypes table td{
-	text-align:left;
+	text-align:center;
 	color:rgb(116,116,116);
 		padding:0 50px 0 50px;
-
+width:170px;
 }
 
 
@@ -3119,9 +3144,7 @@ display:none;
 	margin-left:0px;
 }
 
-	#reviewsPage #left  .votes{
-margin-left:100px;
-	}
+
 
 
 /*types of housing */
@@ -3155,6 +3178,22 @@ width:1000px; margin:auto; max-width:100%; min-height:300px;
 }
 
 @media (min-width:1300px){
+#reviewsPage #right button{
+position:absolute;
+right:6px;
+}
+#reviewsPage #right .checkAvail button{
+right:10px;
+}
+
+#reviewsPage #right  button{
+	margin-left:345px;
+
+
+}
+#reviewsPage #right .submit button{
+margin-left:0px;
+}
 
 #reviewsPage #left .propComment{
 		max-width:100%;
@@ -3268,9 +3307,7 @@ width:97.5%;
 #reviewsPage #left{
 width:850px;
 }
-#reviewsPage #right button{
-margin-left:342px;
-}
+
 
 #reviewsPage #right{
 width:400px;
