@@ -1871,7 +1871,7 @@ text-align:left;
 	height:130px;
 	margin:auto;
 	margin-top:20px;
-	
+
 }
 #comparePage .picture{
 	background-color:rgb(51,62,106);
@@ -3417,10 +3417,14 @@ width:430px;
 
 
 #housingMain #left .picCompareWrap .compareWrap, #housingMain #left .picCompareWrap .video, #housingMain #left .picCompareWrap .picWrapper{
-	vertical-align:bottom !important;
 	margin-bottom:0px;
 	
 	
+}
+#housingMain #left .compareWrap{
+position:absolute;
+bottom:0;
+
 }
 #housingMain #left #item{
 position:relative;
@@ -3710,7 +3714,9 @@ display:inline-block;
 width:440px;
 margin-left:214px;
 }
-
+#housingMain .video{
+right:80px;
+}
 }
 
 
