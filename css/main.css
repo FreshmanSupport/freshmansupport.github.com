@@ -50,6 +50,13 @@
 	font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 0;
 }
+h2 {
+	color: rgb(51, 62, 107);
+	font-size: 30px;
+	font-weight: normal;
+	font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
 #maincontent h3 {
 	font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 24px;
@@ -1503,7 +1510,7 @@ padding-top: 9px;
 #maincontent #infoBox h3{}
 
 #deadlineNotification{display:inline-block; width: 500px; padding-left:30px; vertical-align:top;}
-.specialIcon{margin-top:18px;}
+.specialIcon{margin-top:28px;}
 .specialIcon .icon{width:20px; height:15px; background-color:rgb( 51, 62, 106); display:inline-block;margin-right:5px;}
 .specialIcon .iconInfo{
 	display:inline-block; 
@@ -1571,6 +1578,38 @@ padding-top: 9px;
 }
 #calendarWrapper{width:1420px; margin: 0 auto; display:block; font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;}
 #maincontent.calendar{width:100%; margin-left:59; margin-right:auto;}
+.emailPopUpContainer{position:absolute; left:50%; top:300px;}
+.emailPopUp{
+	position:relative;
+	width:700px;
+	height:300px;
+	background-color:white;
+	display:block;
+	margin:0 auto;
+	border:1px solid rgb(51, 62, 106);
+	left:-50%;
+}
+.emailPopUp .dropDown option, .emailPopUp .dropDown select, .emailPopUp .dropDown{
+	width: 400px;
+	margin-bottom: 10px;
+}
+.emailPopUp input[type="text"]{
+	width:400px;
+	margin-bottom:10px;
+}
+.emailPopUp .iAgree{margin-bottom:10px;}
+.emailPopUp button{margin-bottom:10px;}
+.legal{
+	font-size:8px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:rgb(116,116,116);
+}
+.iAgree{
+	display:inline-block;
+	color:rgb( 51, 62, 106);
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+}
 @media(max-width:1000){
 	#maincontent.calendar{width:100%; margin:0 auto;}
 }

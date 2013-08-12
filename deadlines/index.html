@@ -5,6 +5,7 @@
 <link type="text/css" rel="stylesheet" href="../css/headerStyle.css"/>
 <script src="../js/swipe.js"></script>
 <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../js/loginVideoScript.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Deadlines</title>
 </head>
@@ -871,6 +872,30 @@
 </div>
 </div>
 </div>
+<div class="emailPopUpContainer">
+<div class="emailPopUp">
+	<div class="topBar">
+    	<div class="xClose">X</div>
+    </div>
+    <center>
+    	<h2>Sync to Calendar</h2>
+        <div class="dropDown">
+            <select>
+                <option>Gmail or iCal</option>
+                <option>Gmail</option>
+                <option>iCalc</option>
+            </select>
+        </div>
+        <input type="text" placeholder="email" />
+        <div>
+            <input type="checkbox" />
+            <div class="iAgree">I agree to <a href="#">Terms and Condition</a></div>
+        </div>
+        <button>Sync</button>
+        <div class="legal">*We will never inviade your privacy or collect data from syncing</div>
+    </center>
+</div>
+</div>
 </body>
 <script>
 calendarSlider = new Swipe(document.getElementById('calendarSlider'), {
@@ -883,4 +908,9 @@ calendarSlider = new Swipe(document.getElementById('calendarSlider'), {
   callback: function(index, elem) {},
   transitionEnd: function(index, elem) {}
 });
+
+    $('.xClose').click(function(){
+		$('#overlayBackground').hide();
+		$(this).parent().parent().hide();
+	});
 </script>
