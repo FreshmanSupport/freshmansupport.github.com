@@ -681,7 +681,7 @@ position:relative;
 
 #housingMain #left .picCompareWrap{
 position:absolute;
-right:5px;
+right:2px;
 
 }
 #housingMain .picCompareWrap{
@@ -2087,19 +2087,24 @@ display:none;
 
 #housingMain #left .video{
 display:inline-block;
-vertical-align:bottom !important;
+position:absolute;
+bottom:0;
 margin:0 5px;
-margin-left:0px;
+margin-left:1px;
+
 }
 
 #housingMain .picCompareWrap .picWrapper{
-vertical-align:bottom !important;
 position:absolute;
 bottom:0;
+right:5px;
 }
 #housingMain .picCompareWrap{
 display:inline-block;
 width:340px;
+position:absolute;
+bottom:0;
+vertical-align:bottom;
 
 }
 
@@ -2787,7 +2792,7 @@ margin-top:10px;
 
 	#housingMain #left .picCompareWrap{
 	position:absolute;
-	right:15px;
+	right:8px;
 	}
 
 	
@@ -3097,7 +3102,7 @@ width:700px;
 }
 	#housingMain #left .picCompareWrap{
 	position:absolute;
-	right:7	px;
+	right:4px;
 	}
 	#nameBox, #phoneBox{
 	width:130px;
