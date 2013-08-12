@@ -1610,7 +1610,7 @@ margin-left: 25px;}
 }
 #calendarWrapper{width:1420px; margin: 0 auto; display:block; font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;}
 #maincontent.calendar{width:100%; margin-left:59; margin-right:auto;}
-.emailPopUpContainer{position:absolute; left:50%; top:300px;}
+.emailPopUpContainer{position:absolute; left:50%; top:300px; display:none;}
 .emailPopUp{
 	position:relative;
 	width:700px;
