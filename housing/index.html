@@ -107,7 +107,7 @@
 		</div>
 		<div id="checkAvailability">
 		
-		<div onClick=checkAvail('avail1'); style="cursor:pointer"><h2>Check Availability <img src="../img/dropDown.png" width=14px style="margin-left:98.5%; margin-top:-15px; position:relative; top:1px; cursor:pointer; "></h2>
+		<div onClick=checkAvail('avail1','checkDone1'); style="cursor:pointer"><h2>Check Availability <img src="../img/dropDown.png" width=14px style="margin-left:98.5%; margin-top:-15px; position:relative; top:1px; cursor:pointer; "></h2>
 		</div>	
 			<div id="avail1" class="hide">
 			<span class="optional" style="margin-left:10px;">*Optional</span>
@@ -143,8 +143,14 @@ resize:none;  max-width:100%; " placeholder="E-Mail"></textarea>
 			<textarea name="questions" id="qBox" style="font-family:Georgia, 'Times New Roman', Times, serif;
  overflow:auto;" placeholder="*Questions"></textarea>
 			</center></div>
-		<button >Check Availability</button>
+		<button onClick=availSent('avail1','checkDone1'); style="cursor:pointer">Check Availability</button>
 			
+			
+			
+			</div>
+			
+			<div id="checkDone1"  style="display:none; width:100%; margin:auto; text-align:center; padding-bottom:10px;">
+			<span class="gray" style="text-align:center; margin:auto;"><i>Your request has been sent!</i></span>
 			</div>
 			
  </div>
@@ -194,7 +200,7 @@ resize:none;  max-width:100%; " placeholder="E-Mail"></textarea>
 		</div>
 		<div id="checkAvailability">
 		
-	<div onClick=checkAvail('avail2'); style="cursor:pointer"><h2>Check Availability <img src="../img/dropDown.png" width=14px style="margin-left:98.5%; margin-top:-15px; position:relative; top:1px; cursor:pointer; "></h2>
+	<div onClick=checkAvail('avail2','checkDone2'); style="cursor:pointer"><h2>Check Availability <img src="../img/dropDown.png" width=14px style="margin-left:98.5%; margin-top:-15px; position:relative; top:1px; cursor:pointer; "></h2>
 		</div>				
 			<div id="avail2" class="hide">
 			<span class="optional" style="margin-left:10px;">*Optional</span>
@@ -230,23 +236,20 @@ resize:none;  max-width:100%; " placeholder="E-Mail"></textarea>
 			<textarea name="questions" id="qBox" style="font-family:Georgia, 'Times New Roman', Times, serif;
  overflow:auto;" placeholder="*Questions"></textarea>
 			</center></div>
-		<button >Check Availability</button>
+	<button onClick=availSent('avail2','checkDone2'); style="cursor:pointer">Check Availability</button>
+			
+			
 			
 			</div>
 			
+			<div id="checkDone2" style="display:none; width:100%; margin:auto; text-align:center; padding-bottom:10px;">
+			<span class="gray" style="text-align:center; margin:auto;"><i>Your request has been sent!</i></span>
+			</div>
+			
+			
+			
  
-       <div id="availSent2" style="display:none;">
-    
-    <h3>Check Availability</h3>
-    
-    <p>Your availability check request has been successfully submitted!
-    </p>
-    <p>Towers will send you an email shortly with information regarding available units that match your cirteria. If you do not receive an email from Towers after 5 business days, please contact <a href="mailto:support@freshmansupport.com">Support@FreshmanSupport.com</a>.
-    </p>
-    <p>
-    In the meantime, please feel free to check availability for any other properties that you are interested in.
-    </p>
-    </div>
+
   
   </div>
   
@@ -589,10 +592,20 @@ mySwipeSqueeze = new Swipe(document.getElementById('sliderSqueeze'), {
 		}
 	}
 	
-	function checkAvail(x){
+	function checkAvail(x,y){
+		document.getElementById(y).style.display='none';
 		if(document.getElementById(x).style.display=='none'){
 			document.getElementById(x).style.display='block';
 		} else 	document.getElementById(x).style.display='none';
 	
-}
+	}
+	
+	function availSent(y,z){			
+				document.getElementById(y).style.display='none';
+				document.getElementById(z).style.display='block';
+	}
+	
+	
+		
+
 </script>

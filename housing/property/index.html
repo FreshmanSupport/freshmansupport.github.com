@@ -120,7 +120,7 @@
     
   
     
-    <br /><div onClick="availabilitySent();" style="cursor:pointer; "><button>Send</button></div>
+    <br /><div onClick="availabilitySent();" style="cursor:pointer; "><button>Check Availability</button></div>
 
     </div>
     
@@ -147,19 +147,12 @@
     <button onClick="unitFunc();" ><span id="unitButton" style="color:orange; cursor:pointer">Unit</span></button> | <button onClick="commFunc();" id="comButton"><span id="commButton" style="cursor:pointer">Community</span></button> | <button onClick="mapFunc();" id="mapButton"><span id="mapButton" style="cursor:pointer">Map</span></button>
     </div>
    
+<span class="hidetilx"><br></span>
+    <div id="unit" style="display:block; overflow:visible">
+    <ul style="list-style-type:none; overflow:visible ">
+    <li>Full sized kitchen</li>
+    <li>Private rooms available (extra-charge)</li>
 
-    <div id="unit" style="display:hidden">
-    <ul style="list-style-type:none; ">
-    <li>Full sized kitchen</li>
-    <li>Private rooms available (extra-charge)</li>
-    <li>Housekeeping</li>
-    <li>Flexible meal plans</li>
-    <li>HD Cable TV</li>
-    <li>Full sized kitchen</li>
-    <li>Private rooms available (extra-charge)</li>
-    <li>Housekeeping</li>
-    <li>Flexible meal plans</li>
-    <li>HD Cable TV</li>
     
     <li>Full sized kitchen</li>
     <li>Private rooms available (extra-charge)</li>
@@ -392,7 +385,7 @@
 
 <script>
 function availabilitySent() { 
-document.getElementById('availSent').style.display='block';
+document.getElementById('availSent').style.display='inline-block';
 document.getElementById('availability').style.display='none';
 
 }
