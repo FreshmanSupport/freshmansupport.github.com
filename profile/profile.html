@@ -118,7 +118,7 @@
             <div class="viewAllContainer">
             	<a href="#">View All</a>
             </div>
-            <div class="profileGrayOut"></div>
+            <div class="profileGrayOut"><span>You don't have any roomie matches. YetGO to <a href='#'>Roomie Matches to find roomate matches for you.</a></span></div>
         </div>
           <div id="housingResult" class="profileList">
         	<h3>Housing Match Result</h3>
@@ -236,9 +236,100 @@
     </div>
     <div id="profileRight" class="col-3-8">
     	<div id="profileCalendar">
+        	<h2>UT Deadlines</h2>
+            <div id="calendarHeader">
+  <button onClick="calendarSlider.prev()"><img src=../img/arrowLeft.png width=25px height=25px/> </button>
+  <div id="monthContainer">October 2013</div>
+  <button onClick="calendarSlider.next()"> <img src=../img/arrowRight.png width=25px height=25px /></button>
+</div>
+ <center>
+ <table>
+        <tbody>
+          <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+          <tr>
+            <td><span class="date">&nbsp;</span></td>
+            <td><span class="date">&nbsp;</span></td>
+            <td><span class="date">1</span></td>
+            <td class="circleOJ"><span class="date">2</span></td>
+            <td><span class="date">3</span></td>
+            <td><span class="date">4</span></td>
+            <td><span class="date">5</span></td>
+          </tr>
+          <tr>
+            <td><span class="date">6</span></td>
+            <td><span class="date">7</span></td>
+            <td><span class="date">8</span></td>
+            <td><span class="date">9</span></td>
+            <td><span class="date">10</span></td>
+            <td><span class="date">11</span></td>
+            <td><span class="date">12</span></td>
+          </tr>
+          <tr>
+            <td><span class="date">13</span></td>
+            <td><span class="date">14</span></td>
+            <td><span class="date">15</span></td>
+            <td><span class="date">16</span></td>
+            <td><span class="date">17</span></td>
+            <td><span class="date">18</span></td>
+            <td><span class="date">19</span></td>
+          </tr>
+          <tr>
+            <td><span class="date">20</span></td>
+            <td class="circleNavy"><span class="date">21</span></td>
+            <td><span class="date">22</span></td>
+            <td><span class="date">23</span></td>
+            <td><span class="date">24</span></td>
+            <td><span class="date">25</span></td>
+            <td><span class="date">26</span></td>
+          </tr>
+          <tr>
+            <td><span class="date">27</span></td>
+            <td><span class="date">28</span></td>
+            <td><span class="date">29</span></td>
+            <td><span class="date">30</span></td>
+            <td><span class="date">31</span></td>
+            <td><span class="date">&nbsp;</span></td>
+            <td><span class="date">&nbsp;</span></td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      <div class="deadlineLegend">
+  <ul>
+    <li>
+      <div class="circle"></div>
+      <div class="legendText">Admissions</div>
+    </li>
+    <li>
+      <div class="circle"></div>
+      <div class="legendText">Fiancial</div>
+    </li>
+    <li>
+      <div class="circle"></div>
+      <div class="legendText">Academic</div>
+    </li>
+    <li>
+      <div class="circle"></div>
+      <div class="legendText">Housing</div>
+    </li>
+    <li>
+      <div class="circle"></div>
+      <div class="legendText">Other</div>
+    </li>
+  </ul>
+</div>
         </div>
         <div id="answeredQuestions">
-        	<h2>Answered Questions</h2>
+        	<h2 class="marginBot0">Answered Questions</h2>
+            <p class="marginTop10"><i>LYou have no answered question, feel free to ask</i></p>
             <ul>
             	<li><div class="date">
             </ul>

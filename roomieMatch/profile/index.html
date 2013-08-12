@@ -934,3 +934,25 @@
   </div>
 </div>
 </body>
+<script>
+ $('#roommate label').click(function(){
+	 	 var index = $(this).index();
+		 var id = event.target.id;
+			clear();
+			var before = index -1;
+			var after = index + 3;
+			if (before > 0)
+			{
+				$(this).parent().children("label:nth-child("+ before +")").addClass("fuzzy");
+			}
+			if(after < 14)
+			{
+				$(this).parent().children("label:nth-child("+ after +")").addClass("fuzzy");
+			}
+			
+			function clear(){
+				 
+				$(this).parent().children("label").removeClass("fuzzy");
+			}
+	 })
+</script>
