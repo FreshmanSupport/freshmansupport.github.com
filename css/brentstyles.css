@@ -2731,16 +2731,6 @@ padding-bottom:15px;
 .mediapage{
 width:100%;
 }
-.mediapage #videoDiv img{
-	width:250px;
-	height:190px;
-	
-}
-.mediapage #left #videoWrap{
-width:260px;
-display:inline-block;
-vertical-align:top;
-}
 
 .mediapage #left #picsWrap{
 display:inline-block;
@@ -2983,7 +2973,7 @@ width:80%;
 }	
 
 #picsAndVids{
-	max-width:80%;
+	max-width:95%;
 
 	margin-bottom:10px;
 	padding-bottom:15px;
