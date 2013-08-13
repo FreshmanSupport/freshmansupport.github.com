@@ -1905,6 +1905,10 @@ text-align:left;
 .mediapage #upload{
 position:relative;
 }
+.mediapage #videoDiv img{
+	width:370px;
+	height:260px;
+}
 .mediapage #upload button{
 	margin-top:5px;
 	position:absolute;
@@ -2724,7 +2728,23 @@ font-size:14px;
 padding-bottom:15px;
 }
 @media (max-width:1000px) { 
+.mediapage{
+width:100%;
+}
+.mediapage #videoDiv img{
+	width:250px;
+	height:190px;
+	
+}
+.mediapage #left #videoWrap{
+width:260px;
+display:inline-block;
+vertical-align:top;
+}
 
+.mediapage #left #picsWrap{
+display:inline-block;
+}
 .mediapage .dropDown{
 max-width:386px;
 }
@@ -2735,7 +2755,10 @@ width:179px;
 width:375px;
 }
 .mediapage #left #availability button{
-right:50px;
+right:10px;
+}
+.mediapage #left #picsWrap{
+width:460px;
 }
 .mediapage #availability{
 min-height:370px;
