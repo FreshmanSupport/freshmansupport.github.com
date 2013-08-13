@@ -1566,6 +1566,9 @@ display:none;
 	width:auto;
 
 }
+	#leasingPro #recommendedHousingFooter{
+	display:inline-block;
+	}
 
 #property #left #information #unit, #property #left #information #community, #property #left #information #map{
 
@@ -2031,16 +2034,22 @@ button{
 #recommendedHousingFooterSqueeze{
 display:none;
 }
-#recommendedHousingFooterSqueeze img{
+#recommendedHousingFooterSqueeze img, #recommendedHousingFooter img{
 margin:0 20px;
+max-width:150px;
+max-height:135px;
+width:150px;
+height:135px;
 }
+
 #recommendedHousingFooter, #recommendedHousingFooterSqueeze{
 	width:1000px;
 	max-width:100%;
 	border-top:1px solid  rgb(116,116,116);
 	margin-right:auto;
-
 	margin-left:auto;
+	text-align:center;
+	margin:auto;
 }
 
 #recommendedHousingFooter #item, #recommendedHousingFooterSqueeze #item{
@@ -2056,6 +2065,8 @@ margin:0 20px;
 	margin-bottom:0;
 	margin-top:0px;
 	font-size:24px;
+	text-align:center;
+	
 }
 
 #recommendedHousingFooter #item p, #recommendedHousingFooterSqueeze #item p{
@@ -3517,6 +3528,7 @@ margin-left:470px;
 	}
 	#leasingPro {
 		width:1300px;
+		text-align:center;
 	}
 	
 	#leasingPro  #housingMatcherRight {
@@ -3526,6 +3538,9 @@ margin-left:470px;
 
 	}
 	#leasingPro #recommendedHousingFooter{
+	display:none;
+	}
+	 .hideThis{
 	display:none;
 	}
 
@@ -3754,226 +3769,8 @@ right:80px;
 
 
 
-@media (min-width:1580px){
-
-
 
 	
-	
-	
-	
 
-	#leasingPro {
-		width:1500px;
-	}
-	
-	#leasingPro  #housingMatcherRight {
-	display:inline-block;
-	width:400px;
-	border:none;
-
-	}
-	#leasingPro .top{
-		margin:auto;
-text-align:center;
-	padding-right:20px;
-	border-right:1px solid  rgb(116,116,116);
-	margin-top:10px;
-	max-width:1100px;
-	width:1050px;
-	
-}
-#leasingPro img{
-	width:100%;
-}
-	
-#comparePage{
-width:1500px;
-}
-#comparePage table td{
-	width:420px;
-}
-
-
-
-#housingResultsContainer #preferences {
-width:1460px;
-}
-#recommendedHousingFooter{
-	width:1500px;
-}
-#compareTypes{
-	width:1500px;
-}
-#compareTypes table{
-width:1200px;
-}
- #flippers{
- width:1500px;
-}
-#flipWrap{
-	margin-left:50px;
-	margin-right:50px;
-}
-#compareTypes table{
-width:95%;
-}
-#dropMove{
-	margin-left:40px;
-}
-
-#matches {
-	width:1500px;
-	
-}
-#matches #availability{
-	width:1200px;
-}
-#matches #compatibility{
-	width:1200px;
-}
-
-			#recommendedHousingFooterSqueeze{
-	display:none;
-	}
-	#housingMatcherRight{ 
-display:inline-block;
-}
-
-
-
-#maincontent {
-	background: white;
-	width: 1500px;
-	max-width:100%;
-	margin: 0 auto;
-	
-}
-
-#searchwrapper{
-	border:1px solid rgb(51,62,106);
-	margin-left:301px;
-}
-
-#housingMatcherContainer{
-	width:1500px;
-	
-	}
-#housingQ .item1{
-width:400px;
-margin-right:50px;
-}
-
-#housingQ .option{
-	margin-right:110px;
-}
-	#housingMatcherContainer #housingMatcherLeft{
-	width:1000px;
-	}
-	#housingMatcherContainer #housingMatcherRight{
-		width: 480px;
-		max-width:100%;
-	}
-	
-	#reviewsPage{
-	width:1500px;
-	
-}
-#reviewsPage #left{
-width:1050px;
-}
-
-#reviewsPage #right{
-width:400px;
-}
-	#reviewsPage #left  .review{
-
-		width:1030px;
-	}
-	
-	#reviewsPage #left  .votes{
-margin-left:670px;
-	}
-	.mediapage{
-	
-	width:1500px;
-	}
-
-	.mediapage #housingMatcherRight{
-vertical-align:top;
-display:inline-block;
-width:420px;
-border:none;
-}
-.mediapage #left{
-width:1050px;
-} 
-.mediapage #picsWrap{
-margin-left:50px;
-}
-.mediapage #upload{
-margin-left:40px;
-padding-left:30px;
-}
-	
-	
-	
-#propListing{
-width:1500px;
-max-width:100%;
-margin:auto;
-}
-
-
-#propListing #housingMain {
-	width:950px;
-	display:inline-block;
-		vertical-align:top;
-	border-right:1px solid  rgb(116,116,116);
-	padding-right:10px;
-}
-#propListing #top {
-	display:inline-block;
-	width:500px;	
-	vertical-align:top;
-}
-#propListing #housingMain #left .compareWrap{
-margin-left:305px;
-}
-#propListing #name{
-	margin-left:2px;
-	margin-right:2px;
-}
-
-
-
-
-#property{
-	width:1500px;
-}
-#property #right{
-width:950px;
-}
-#property #left{
-width:500px;
-display:inline-block;
-}
-
-#property #right #pricing #wrap #col{
-width:160px;
-
-}
-.hidetil13{
-	margin-right:15px;
-}
-.hidetil15{
-display:inline-block !important;
-	margin-right:15px;
-	}
-	
-
-
-	
-}
 
 
