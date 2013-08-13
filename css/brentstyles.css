@@ -174,6 +174,72 @@ ol li {
 	
 	}
 	
+	#matches #compatibility{
+	max-width:100%;
+	width:1280px;
+	margin:auto;
+	margin-top:10px;
+}
+#housingResultsContainer{
+width:1300px;
+}
+
+
+
+
+
+#matchInfo #thumb{
+position:aboslute;
+right:40px;
+bottom:0;
+}
+
+#matchInfo{
+display:inline-block;
+vertical-align:top;
+}
+#housingResultsContainer .checkAvail{
+	width:450px;
+	display:inline-block;
+	margin-top:15px;
+	padding-left:30px;
+	padding-bottom:35px;
+	position:relative;
+}
+#housingResultsContainer .checkAvail h2{
+color:rgb(116,116,116);
+font-size:24px;
+text-align:left;
+margin:0;
+margin-bottom:10px;
+}
+#housingResultsContainer h2{
+margin-bottom:0;
+}
+#housingResultsContainer #nameM{
+	width:90px;
+}
+#housingResultsContainer #emailM{
+
+	width:120px;
+}
+#housingResultsContainer #phoneM{
+width:90px;
+}
+#housingResultsContainer #question{
+	margin-top:5px;
+	width:435px;
+	height:58px;
+}
+#housingResultsContainer .dropDown{
+max-width:222px;
+}
+#housingResultsContainer .checkAvail button{
+position:absolute;
+right:0px;
+margin-top:5px;
+}
+	
 #housingResultsContainer .button {
 	background-color: rgb(230, 229, 228);
 	color: rgb(51, 62, 106);
@@ -372,7 +438,7 @@ font-family: HNB;
 	margin-right: 10px;
 }
 #matchInfo {
-	width: 350px;
+	width: 500px;
 	max-width:100%;
 	display: inline-block;
 	margin-top:15px;
@@ -508,9 +574,8 @@ margin-bottom:7px;
 }
 
 #housingResultsContainer #compatibility{
-	width: 680px;
+	width:970px;
 	min-height:35px;
-	max-width:80%;
 	display: inline-block;
 	padding-left: 10px;
 	text-align:left;
@@ -2728,6 +2793,7 @@ font-size:14px;
 padding-bottom:15px;
 }
 @media (max-width:1000px) { 
+
 .mediapage{
 width:100%;
 }
@@ -3644,6 +3710,7 @@ vertical-align:top;
 	margin-top:15px;
 	padding-left:30px;
 	padding-bottom:35px;
+	position:relative;
 }
 #housingResultsContainer .checkAvail h2{
 color:rgb(116,116,116);
@@ -3675,7 +3742,7 @@ max-width:358px;
 }
 #housingResultsContainer .checkAvail button{
 position:absolute;
-right:27px;
+right:0px;
 margin-top:5px;
 }
 
