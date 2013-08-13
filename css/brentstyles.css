@@ -171,6 +171,7 @@ ol li {
 #housingResultsContainer {
 	width:1000px;
 	max-width:100%;
+	
 	}
 	
 #housingResultsContainer .button {
@@ -371,8 +372,7 @@ font-family: HNB;
 	margin-right: 10px;
 }
 #matchInfo {
-	width: 300px;
-	height:217px;
+	width: 350px;
 	max-width:100%;
 	display: inline-block;
 	margin-top:15px;
@@ -381,7 +381,7 @@ font-family: HNB;
 	font-size:14px;
 	color:rgb(116,116,116);
 	vertical-align:top;
-	
+	position:relative;
 }
 #matchInfo img{
 	float:right;
@@ -389,7 +389,7 @@ font-family: HNB;
 }
 #matchInfo h3{
 	font-size:24px;
-	margin-right:60px;
+	margin-right:10px;
 	font-family:HNL;
 }
 #matchInfo .compatibility {
@@ -508,17 +508,17 @@ margin-bottom:7px;
 }
 
 #housingResultsContainer #compatibility{
-	height:220px;
 	width: 680px;
+	min-height:35px;
 	max-width:80%;
 	display: inline-block;
 	padding-left: 10px;
 	text-align:left;
 	margin-top:15px;
 	border:1px solid rgb(116,116,116);
-	background-color:rgb(230, 229, 228);
 	padding-top:5px;
 	vertical-align:top;
+	position:relative;
 
 }
 #housingResultsContainer #compatibility h3{
@@ -3614,13 +3614,76 @@ text-align:center;
 	margin-left:273px;
 }
 #matches #compatibility{
-	width:625px;
-	margin-left:5px;
-	margin-right:5px;
+	max-width:100%;
+	width:1280px;
+	margin:auto;
+	margin-top:10px;
 }
+#housingResultsContainer{
+width:1300px;
+}
+
+
+
+
+
+#matchInfo #thumb{
+position:aboslute;
+right:40px;
+bottom:0;
+}
+
 #matchInfo{
-width:320px;
+display:inline-block;
+width:540px;
+vertical-align:top;
 }
+#housingResultsContainer .checkAvail{
+	width:720px;
+	display:inline-block;
+	margin-top:15px;
+	padding-left:30px;
+	padding-bottom:35px;
+}
+#housingResultsContainer .checkAvail h2{
+color:rgb(116,116,116);
+font-size:24px;
+text-align:left;
+margin:0;
+margin-bottom:10px;
+}
+#housingResultsContainer h2{
+margin-bottom:0;
+}
+#housingResultsContainer #nameM{
+	width:153px;
+}
+#housingResultsContainer #emailM{
+
+	width:200px;
+}
+#housingResultsContainer #phoneM{
+width:156px;
+}
+#housingResultsContainer #question{
+	margin-top:5px;
+	width:707px;
+	height:58px;
+}
+#housingResultsContainer .dropDown{
+max-width:358px;
+}
+#housingResultsContainer .checkAvail button{
+position:absolute;
+right:27px;
+margin-top:5px;
+}
+
+
+
+
+
+
 #matches #video{
 width:320px;
 }
@@ -3676,7 +3739,7 @@ text-align:center;
 margin:auto;
 }
 .mediapage #left #availability button{
-right:0px;
+right:10px;
 }
 .mediapage #left #availUpload #upload button{
 
@@ -3716,18 +3779,20 @@ text-align:center;}
 .mediapage #left #picsAndVids{
 	width:100%;
 }
+
+.mediapage .dropDown{
+max-width:95%;
+}
 .mediapage #names{
-width:46.3%;
+width:44%;
 }
 .mediapage #phoneMail{
-width:96.6%;
-margin-bottom:5px;
+width:92%;
 
 
 }
-
 .mediapage #quest{
-width:96.6%;
+width:92%;
 }
 #propListing{
 width:1300px;
