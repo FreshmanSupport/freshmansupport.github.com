@@ -1902,9 +1902,30 @@ text-align:left;
 }
 
 /* property media page*/
+.mediapage #upload{
+position:relative;
+}
+.mediapage #upload button{
+	margin-top:5px;
+	position:absolute;
+	right:23px;
+}
 .mediapage #housingMatcherRight{
 display:none;
 }
+.mediapage #left #availability button{
+right:7px;
+}
+.mediapage #names{
+width:45%;
+}
+.mediapage #phoneMail, .mediapage #quest{
+width:94.2%;
+
+
+}
+
+
 #picsAndVids{
 	width:1000px;
 	max-width:100%;
@@ -2703,6 +2724,22 @@ font-size:14px;
 padding-bottom:15px;
 }
 @media (max-width:1000px) { 
+
+.mediapage .dropDown{
+max-width:386px;
+}
+.mediapage #names{
+width:179px;
+}
+.mediapage #quest, .mediapage #phoneMail{
+width:375px;
+}
+.mediapage #left #availability button{
+right:50px;
+}
+.mediapage #availability{
+min-height:370px;
+}
 #reviewsPage #right{
 display:none;
 }
@@ -3134,6 +3171,7 @@ height:500px;
 }
 
 @media (max-width:850px){
+
 #housingMain #checkAvailability button{
 	position:aboslute;
 	right:85px;
@@ -3624,6 +3662,17 @@ width:1300px;
 text-align:center;
 margin:auto;
 }
+.mediapage #left #availability button{
+right:0px;
+}
+.mediapage #left #availUpload #upload button{
+
+	right:23px;
+}
+.mediapage #left #upload button{
+position:absolute;
+right:7px;
+}
 .mediapage #left{
 margin-top:10px;
 	width:915px;
@@ -3654,14 +3703,26 @@ text-align:center;}
 .mediapage #left #picsAndVids{
 	width:100%;
 }
+.mediapage #names{
+width:46.3%;
+}
+.mediapage #phoneMail{
+width:96.6%;
+margin-bottom:5px;
 
+
+}
+
+.mediapage #quest{
+width:96.6%;
+}
 #propListing{
 width:1300px;
 max-width:100%;
 margin:auto;
 }
 #propListing #checkAvailability button{
-margin-left:713px;
+position:f
 }
 #propListing .viewMoreRight{
 margin-left:430px;
