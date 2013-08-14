@@ -747,11 +747,11 @@ position:relative;
 #housingMain #left .picCompareWrap{
 position:absolute;
 right:2px;
+margin-right:5px;
 
 }
 #housingMain .picCompareWrap{
 display:inline-block;
-height:150px;
 width:521px;
 }
 #housingMain #checkAvailability button{
@@ -2949,6 +2949,7 @@ margin-top:10px;
 	#housingMain #left .picCompareWrap{
 	position:absolute;
 	right:15px;
+	bottom:0;
 	}
 
 	
@@ -2956,6 +2957,7 @@ margin-top:10px;
 	#housingMain #checkAvailability button{
 		position:absolute;
 		right:10px;
+		
 	}
 
 
