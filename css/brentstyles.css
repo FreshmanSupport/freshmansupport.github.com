@@ -4152,7 +4152,7 @@ margin-top:15px;
 
 #individualHotel #picBookWrap #book{
 display:inline-block;
-width:407px;
+width:297px;
 vertical-align:top;
 padding-left:10px;
 }
@@ -4215,6 +4215,12 @@ width:400px;
 display:inline-block;
 position:relative;
 text-align:center;
+}
+#individualHotel #picBookWrap #book{
+display:inline-block;
+width:407px;
+vertical-align:top;
+padding-left:10px;
 }
 }
 
