@@ -1,0 +1,14 @@
+Randy To Do for Housing Section
+
+Housing Matcher 
+(there are three instances of housing matcher, two on index page and one on housing matcher page)
+icons need to turn orange when clicked
+last two slides rating need to be able to click and fill in rating. srslyImportantFilled.png is the filled in exclamation
+
+Reviews Page (housing/reviews and housing/property/review)
+owl rating need to be able to click and fill. whiteOwl.png is empty owl
+
+Media Page
+upload form
+
+
