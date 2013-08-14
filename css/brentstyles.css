@@ -2792,8 +2792,16 @@ font-size:14px;
 #housingMain #left #checkAvailability .hide{
 padding-bottom:15px;
 }
+.picsUnder1000{
+display:none;
+}
 @media (max-width:1000px) { 
-
+.picsOver1000{
+display:none;
+}
+.picsUnder1000{
+display:inline-block;
+}
 .mediapage{
 width:100%;
 }
@@ -3044,13 +3052,12 @@ width:80%;
 	margin-bottom:10px;
 	padding-bottom:15px;
 }
+#matchInfo{
+width:380px;
 
-#matches #videoResp{
-	display:inline-block;
 }
-
-#matches #video{
-	display:none;
+#matches #compatibility{
+width:850px;
 }
 #housingResultsContainer #menu{
 margin-left:10%;
@@ -3250,6 +3257,10 @@ height:500px;
 }
 
 @media (max-width:850px){
+#matches #compatibility{
+width:550px;
+margin:auto;
+}
 
 #housingMain #checkAvailability button{
 	position:aboslute;

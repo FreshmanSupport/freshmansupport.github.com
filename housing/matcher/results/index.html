@@ -132,9 +132,9 @@ Click on circles to change importance.
 
 
 <div id="matchInfo" >
-<h3>Quarters</h3> <span class="gray" >98% Compatibility</span>
-<div >
-<img src="../../../img/property/place2.png" class="thumb" style="position:absolute; right:100px; bottom:0; " width="160px" height="130px" >
+<h3>Quarters</h3> <span class="gray" >98% Compatibility</span><br>
+<div class="picsOver1000">
+<img src="../../../img/property/place2.png"  style="position:absolute; right:100px; bottom:0; " width="160px" height="130px" >
 
 <div style="position:absolute; right:0; bottom:0">
 
@@ -143,6 +143,12 @@ Click on circles to change importance.
 <img src="../../../img/property/place2.png" width="80px" height="60px">
 
 </div></div>
+
+<div class="picsUnder1000" >
+<img src="../../../img/property/place2.png"  style="position:absolute; right:0px; bottom:0; " width="160px" height="130px" >
+
+</div>
+
 
 	<div id="fiveOwls" style="margin-top:5px; margin-bottom:5px;">
 			<img src="../../../img/Owl-Full-Vector.png">
@@ -173,7 +179,7 @@ are looking for a <br>roommate at the Quarters
 		
 		<div class="checkAvail">
 		
-		<h2>Check Availability</h2>
+		<h2>Check Availability</h2><div id="avail1">
 			<center><textarea id="nameM"  placeHolder="First Name"></textarea>
 						<textarea id="nameM"  placeHolder="Last Name"></textarea>
 <textarea id="emailM" placeHolder="E-mail"></textarea>
@@ -197,8 +203,11 @@ are looking for a <br>roommate at the Quarters
 			<textarea id="question"  placeHolder="Questions"></textarea>
 
 </center>
-		<button>Check Availability</button>
+		<button onClick="checkAvail('avail1','sent1');">Check Availability</button>
+</div>
 
+<div id="sent1" style="display:none; text-align:left"><span class="gray"><i>Your request has been sent!</i></span>
+</div>
 		</div>
 	
 		<div id="compatibility">
@@ -250,9 +259,9 @@ are looking for a <br>roommate at the Quarters
 
 
 <div id="matchInfo" >
-<h3>Quarters</h3> <span class="gray" >98% Compatibility</span>
-<div >
-<img src="../../../img/property/place2.png" class="thumb" style="position:absolute; right:100px; bottom:0; " width="160px" height="130px" >
+<h3>Quarters</h3> <span class="gray" >98% Compatibility</span><br>
+<div class="picsOver1000">
+<img src="../../../img/property/place2.png"  style="position:absolute; right:100px; bottom:0; " width="160px" height="130px" >
 
 <div style="position:absolute; right:0; bottom:0">
 
@@ -261,6 +270,11 @@ are looking for a <br>roommate at the Quarters
 <img src="../../../img/property/place2.png" width="80px" height="60px">
 
 </div></div>
+
+<div class="picsUnder1000" >
+<img src="../../../img/property/place2.png"  style="position:absolute; right:0px; bottom:0; " width="160px" height="130px" >
+
+</div>
 
 	<div id="fiveOwls" style="margin-top:5px; margin-bottom:5px;">
 			<img src="../../../img/Owl-Full-Vector.png">
@@ -291,7 +305,7 @@ are looking for a <br>roommate at the Quarters
 		
 		<div class="checkAvail">
 		
-		<h2>Check Availability</h2>
+		<h2>Check Availability</h2><div id="avail2">
 			<center><textarea id="nameM"  placeHolder="First Name"></textarea>
 						<textarea id="nameM"  placeHolder="Last Name"></textarea>
 <textarea id="emailM" placeHolder="E-mail"></textarea>
@@ -315,7 +329,12 @@ are looking for a <br>roommate at the Quarters
 			<textarea id="question"  placeHolder="Questions"></textarea>
 
 </center>
-		<button>Check Availability</button>
+		<button onClick="checkAvail('avail2','sent2');">Check Availability</button>
+</div><div id="sent2" style="display:none">
+<span class="gray"><i>Your request has been sent!</i></span>
+
+
+</div>
 
 		</div>
 	
@@ -400,10 +419,9 @@ function radio(x){
 }
 
 
-function checkAvail(x){
-		if(document.getElementById(x).style.display=='none'){
-			document.getElementById(x).style.display='block';
-		} else 	document.getElementById(x).style.display='none';
+function checkAvail(x,y){
+			document.getElementById(x).style.display='none';
+		 	document.getElementById(y).style.display='inline-block';
 	
 }
 
