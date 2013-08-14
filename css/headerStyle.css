@@ -166,7 +166,7 @@
 	color: white;
 	font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-#subNav .selected{font-family:HNB; text-transform: uppercase;}
+#subNav ul li .selected{background-color:rgb(51,62,106)}
 /* ===Searching=== */
 
 .collegeSearchBox::-webkit-input-placeholder { /* WebKit browsers */
