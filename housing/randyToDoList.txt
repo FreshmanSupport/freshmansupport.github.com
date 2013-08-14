@@ -13,3 +13,6 @@ upload form
 
 Random Media
 video thumbnails will click to video pop up
+
+Leasing Process and Property Page
+Orange toggles need to be correct orange, I could not figure out how to do this in javascript
