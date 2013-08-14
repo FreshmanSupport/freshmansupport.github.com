@@ -171,7 +171,7 @@ ol li {
 #housingResultsContainer {
 	width:1000px;
 	max-width:100%;
-	
+	position:relative;
 	}
 	
 	#matches #compatibility{
@@ -2351,7 +2351,7 @@ font-size:24px;
 	width:950px;
 	max-width:100%;
 	margin:auto;
-	
+	position:relative;
 }
 #reviewsPage .viewMore{
 width:94.5%;
