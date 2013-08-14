@@ -11,4 +11,5 @@ owl rating need to be able to click and fill. whiteOwl.png is empty owl
 Media Page
 upload form
 
-
+Random Media
+video thumbnails will click to video pop up
