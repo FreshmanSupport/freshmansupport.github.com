@@ -784,7 +784,7 @@ width:175px;
 }
 #housingQ .item1 img{
 position:relative;
-top:6px;
+top:8px;
 }
 
 #housingMain #housingQ .option{
@@ -2796,6 +2796,22 @@ padding-bottom:15px;
 display:none;
 }
 @media (max-width:1000px) { 
+.quickFlip {
+    height: 150px;
+    width: 230px;
+    display:inline-block;
+    text-align:center;
+margin:10px;
+font-size:14px;
+font-family:Georgia;
+
+}
+#maincontent{
+max-width:90%;
+}
+#comparePage{
+max-width:90%;
+}
 .picsOver1000{
 display:none;
 }
@@ -3187,6 +3203,9 @@ margin-left:470px;
 #click{
 	margin-left:565px;
 }
+#compareTypes{
+		width:100%;
+	}
 
 }
 
@@ -3204,11 +3223,10 @@ display:none;
 height:500px;
 	}
 	#compareTypes{
-		margin-top:310px;
-		width:80%;
+		width:100%;
 	}
 	#recommendedHousingFooter{
-	width:80%;
+	width:100%;
 	}
 	#flipWrap{
 	margin-top:0px;
@@ -3435,7 +3453,9 @@ display:none;
 #matches #videoResp{
 	margin-left:10%;
 }
-
+	#compareTypes{
+		margin-top:200px;
+		}
 	
 }
 
@@ -3443,6 +3463,7 @@ display:none;
 #housingQ .importance1{
 	display:none;
 	}
+	
 }
 @media (max-width:650px) { 
 
@@ -3474,7 +3495,7 @@ display:none;
 height:1000px;
 	}
 	#compareTypes{
-		margin-top:520px;
+		margin-top:200px;
 		}
 	#flipWrap{
 	margin-top:0px;
