@@ -4293,14 +4293,16 @@ display:inline-block;
 margin-right:30px;
 font-family:Georgia;
 margin-bottom:0;
+padding-right:0;
 }
 #visitPlan #planB table td .clickables{
 position:relative;
 top:-3px;
+margin-right:0;
 
 }
 #visitPlan #planB table td{
-width:700px;
+width:1000px;
 }
 #visitPlan  .clickables img{
 height:20px;
