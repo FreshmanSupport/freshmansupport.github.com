@@ -4256,6 +4256,64 @@ right:0px;
 margin-bottom:10px;
 }
 
+#visitPlan{
+text-align:left;
+}
+#visitPlan table{
+width:100%;
+margin-bottom:30px;
+}
+#visitPlan  table th{
+width:85px;
+margin:0;
+font-weight:normal;
+}
+#visitPlan table td{
+padding-top:10px;
+padding-bottom:10px;
+
+}
+#visitPlan #planT table .recOwl{
+display:none;
+}
+#visitPlan #planT table .recOwl img{
+width:18px;
+margin-left:25px;
+margin-right:5px;
+position:relative;
+top:5px;	
+
+}
+#visitPlan  .clickables{
+color:rgb(51,62,106);
+display:inline-block;
+margin-right:30px;
+font-family:Georgia;
+margin-bottom:0;
+}
+#visitPlan #planB table td .clickables{
+position:relative;
+top:-3px;
+
+}
+#visitPlan #planB table td{
+width:700px;
+}
+#visitPlan  .clickables img{
+height:20px;
+margin-right:7px;
+position:relative;
+top:5px;
+}
+#visitPlan #planT{
+border-bottom:1px solid rgb(116,116,116);
+padding-bottom:20px;
+}
+
+#visitPlan #planB{
+padding-top:10px;
+
+}
 @media (min-width:1300px) { 
 
 #visitContainer{
@@ -4306,22 +4364,29 @@ position:absolute;
 right:49px;
 
 }
+
+
+
+
+#visitPlan #planT table .recOwl{
+display:inline-block;
+}
 }
 
 
 @media (max-width:1000px){
 #visitContainer{
 width:850px;
+text-align:center;
 }
 #visitContainer #visitRight{
 display:none;
 }
-#visitContainer #visitLeft{
-border:none;
-}
+
 
 #visitContainer #visitLeft{
 width:100%;
+border:none;
 }
 .dropDownCalendar{
 width:192px;
@@ -4334,10 +4399,7 @@ height:60px;
 width:60px;
 margin-left:0px;
 }
-#largePic #arrow{
-	position:relative;
-	top:-40px;
-}
+
 #individualHotel #picBookWrap #largePic img{
 height:350px;
 width:350px;
@@ -4360,6 +4422,10 @@ display:inline-block;
 width:407px;
 vertical-align:top;
 padding-left:10px;
+}
+#largePic #arrow{
+	position:relative;
+	top:-23px;
 }
 
 
