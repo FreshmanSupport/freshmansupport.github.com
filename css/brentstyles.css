@@ -4232,7 +4232,7 @@ z-index:-1;
 width:100%;
 }
 
- #picBookWrap button{
+ #picBookWrap #book button{
  margin:0;
 margin-bottom:10px;
 position:absolute;
@@ -4359,8 +4359,9 @@ display:inline-block;
 width:457px;
 vertical-align:top;
 padding-left:10px;
+position:relative;
 }
- #picBookWrap button{
+ #picBookWrap #book button{
 margin-bottom:20px;
 position:absolute;
 right:49px;
@@ -4391,7 +4392,7 @@ width:100%;
 border:none;
 }
 .dropDownCalendar{
-width:192px;
+width:47.15%;
 }
 #visitContainer #individualHotel .dropDown{
 width:408px;
@@ -4406,7 +4407,7 @@ margin-left:0px;
 height:350px;
 width:350px;
 }
- #picBookWrap button{
+ #picBookWrap #book button{
 margin-bottom:20px;
 position:absolute;
 right:79px;
