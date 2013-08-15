@@ -4026,6 +4026,7 @@ font-weight:normal;
 text-align:left;
 }
 #visitContainer{
+max-width:100%;
 width:1000px;
 text-align:center;
 margin:auto;
@@ -4035,6 +4036,7 @@ font-size:14px;
 font-family:Georgia;
 }
 #visitContainer #visitLeft{
+max-width:100%;
 width:630px;
 vertical-align:top;
 border-right:1px solid rgb(116,116,116);
