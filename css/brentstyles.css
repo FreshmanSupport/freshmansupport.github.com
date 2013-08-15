@@ -4429,6 +4429,9 @@ padding-left:10px;
 	position:relative;
 	top:-23px;
 }
+#visitPlan #planT table .recOwl{
+display:inline-block;
+}
 
 
 }
