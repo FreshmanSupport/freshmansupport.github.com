@@ -4065,6 +4065,7 @@ margin-bottom:10px;
 }
 #visitContainer #campusBites .item{
 margin:0;
+display:table;
 }
 #visitContainer #visitRight  .item .words{
 margin-left:5px;
@@ -4073,7 +4074,11 @@ top:6px;
 margin-left:10px;
 }
 #visitContainer #visitRight #campusBites .item .words{
-top:40px;
+position:static;
+padding-left:10px;
+vertical-align:middle;
+width:100px;
+display:table-cell;
 left:110px;
 }
 
@@ -4096,14 +4101,22 @@ top:5px;
 }
 
 #visitContainer .thumb{
-width:105px;
 height:105px;
-background-color:red;
+width:105px;
 display:inline-block;
 }
 #visitContainer .thumb img{
 height:100%;
 width:100%;
+}
+
+#visitContainer #campusBites .thumb{
+height:auto;
+margin-bottom:10px;
+}
+#visitContainer #campusBites .thumb img{
+width:100%;
+height:auto;
 }
 #visitContainer #visitRight #recHotel .hotelInfo{
 display:inline-block;
@@ -4147,7 +4160,7 @@ position:relative;
 #individualHotel #picBookWrap{
 width:100%;
 margin-top:15px;
-
+display:inline-block;
 }
 
 #individualHotel #picBookWrap #book{
@@ -4166,7 +4179,7 @@ text-align:center;
 
 #largePic #arrow{
 	position:relative;
-	top:-30px;
+	top:-23px;
 }
 	#individualHotel #picBookWrap #largePic img{
 	height:320px;
@@ -4178,51 +4191,123 @@ margin-top:10px;
 margin-left:-1px;
 }
 #individualHotel #picBookWrap #largePic .swipe-wrap img{
-height:80px;
-width:80px;
+height:60px;
+width:60px;
 margin-left:5px;
 }
 
 
 
-@media (min-width:1300px){
+.dropDownCalendar{
+display:inline-block;
+width:137px;
+height: 17px;
+overflow: hidden;
+background: url('../img/calendar.png') no-repeat right white;
+background-size:18px auto;
+background-position:98% 50%;
+border: 1px solid rgb(116,116,116);
+font-size: 14px;
+color:rgb(116,116,116);
+font-family:Georgia, "Times New Roman", Times, serif;
+padding:4px;
+cursor:pointer;
+margin-bottom:10px;
+position:relative;
+}
+
+.dropDownCalendar .calBackground{
+min-width:25px;
+min-height:25px;
+background-color:rgb(116,116,116);
+position:absolute;
+top:0;
+right:0;
+z-index:-1;
+}
+
+#visitContainer #individualHotel .dropDown{
+width:100%;
+}
+
+ #picBookWrap button{
+ margin:0;
+margin-bottom:10px;
+position:absolute;
+right:0px;
+}
+#visitContainer #individualHotel #theRest {
+	margin:0;
+	margin-top:30px;
+	width:80%;
+	
+}
+#visitContainer #individualHotel #theRest p{
+	margin-top:10px;
+	margin-bottom:20px;
+}
+#visitContainer #individualHotel table td, #visitContainer #individualHotel table th{
+	padding-right:60px;
+	margin:0;
+}
+#visitContainer #individualHotel table td{
+}
+#visitContainer ul{
+margin-bottom:10px;
+}
+
+@media (min-width:1300px) { 
+
 #visitContainer{
 width:1300px;
 }
 #visitContainer #visitLeft{
 width:820px;
 }
+.dropDownCalendar{
+width:192px;
+}
+#visitContainer #individualHotel .dropDown{
+width:408px;
+}
 #visitContainer #visitRight{
 width:430px;
 }
 #individualHotel #picBookWrap #largePic .swipe-wrap img{
-height:100px;
-width:100px;
-margin-left:5px;
+height:60px;
+width:60px;
+margin-left:7px;
 }
 #largePic #arrow{
 	position:relative;
-	top:-40px;
+	top:-25px;
 }
 #individualHotel #picBookWrap #largePic img{
-height:400px;
-width:400px;
+height:350px;
+width:350px;
 }
 
 
 #individualHotel #picBookWrap #largePic{
-width:400px;
+width:350px;
 display:inline-block;
 position:relative;
 text-align:center;
 }
 #individualHotel #picBookWrap #book{
 display:inline-block;
-width:407px;
+width:457px;
 vertical-align:top;
 padding-left:10px;
 }
+ #picBookWrap button{
+margin-bottom:20px;
+position:absolute;
+right:49px;
+
 }
+}
+
 
 @media (max-width:1000px){
 #visitContainer{
@@ -4234,6 +4319,50 @@ display:none;
 #visitContainer #visitLeft{
 border:none;
 }
+
+#visitContainer #visitLeft{
+width:100%;
+}
+.dropDownCalendar{
+width:192px;
+}
+#visitContainer #individualHotel .dropDown{
+width:408px;
+}
+#individualHotel #picBookWrap #largePic .swipe-wrap img{
+height:60px;
+width:60px;
+margin-left:0px;
+}
+#largePic #arrow{
+	position:relative;
+	top:-40px;
+}
+#individualHotel #picBookWrap #largePic img{
+height:350px;
+width:350px;
+}
+ #picBookWrap button{
+margin-bottom:20px;
+position:absolute;
+right:79px;
+}
+
+
+#individualHotel #picBookWrap #largePic{
+width:350px;
+display:inline-block;
+position:relative;
+text-align:center;
+}
+#individualHotel #picBookWrap #book{
+display:inline-block;
+width:407px;
+vertical-align:top;
+padding-left:10px;
+}
+
+
 }
 
 
