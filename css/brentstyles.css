@@ -4260,13 +4260,14 @@ margin-bottom:10px;
 
 #visitPlan{
 text-align:left;
+min-height:910px;
 }
 #visitPlan table{
 width:100%;
 margin-bottom:30px;
 }
 #visitPlan  table th{
-width:85px;
+width:95px;
 margin:0;
 font-weight:normal;
 }
