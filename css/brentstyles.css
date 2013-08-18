@@ -2738,7 +2738,6 @@ overflow: hidden;
 background: url('../img/dropDown.png') no-repeat right white;
 background-size:14px auto;
 background-position:98% 50%;
-
 }
 
 .dropDown select, .dropDown .pref{
@@ -2753,6 +2752,7 @@ color:rgb(116,116,116);
 font-family:Georgia, "Times New Roman", Times, serif;
 line-height: 14px;
 padding-left:4px;
+
 }
 
 #reviewsPage #submitA{
@@ -4052,12 +4052,18 @@ position:relative;
 padding:0 10px;	
 }
 
-#visitContainer #visitRight #top10, #visitContainer #visitRight #campusBites , #visitContainer #visitRight #recHotel{
+#visitContainer #visitRight #top10, #visitContainer #visitRight #campusBites , #visitContainer #visitRight #recHotel, #visitContainer #visitRight #visitMaps{
 width:100%;
 border-bottom:1px solid rgb(116,116,116);
 text-align:left;
 padding-bottom:10px;
 }
+#visitMaps #mapTemp{
+width:320px;
+height:220px;
+background-color:gray;
+}
+
 #visitContainer #visitRight  .item{
 	color:rgb(116,116,116);
 	font-size:14px;
@@ -4203,7 +4209,7 @@ margin-left:5px;
 .dropDownCalendar{
 display:inline-block;
 width:137px;
-height: 17px;
+height: 15px;
 overflow: hidden;
 background: url('../img/calendar.png') no-repeat right white;
 background-size:18px auto;
@@ -4214,12 +4220,18 @@ color:rgb(116,116,116);
 font-family:Georgia, "Times New Roman", Times, serif;
 padding:4px;
 cursor:pointer;
+margin:0;
+vertical-align:top;
 margin-bottom:10px;
 position:relative;
+text-align:left;
 }
 
 .dropDownCalendar .calBackground{
 min-width:25px;
+height:25px;
+
+
 min-height:25px;
 background-color:rgb(116,116,116);
 position:absolute;
@@ -4384,6 +4396,52 @@ margin-right:10px;
 font-size:24px;
 font-family:HNL;
 }
+#visitLeft #hotelListing .dropDown{
+vertical-align:top;
+
+}
+#visitLeft #hotelListing{
+text-align:left;
+max-width:100%;
+}	
+
+#hotelListing #listing{
+margin-top:10px;
+}
+#listing .item{
+width:345px;
+display:inline-block;
+position:relative;
+margin-bottom:20px;
+margin-right:60px;
+}
+#listing .item .pic{
+width:150px;
+text-align:center;
+background-color:rgb(232, 229, 228);
+display:inline-block;
+}
+#listing .item .pic img{
+width:150px;
+height:150px;
+display:inline-block;
+}
+#listing h3{
+margin:0;
+}
+
+#listing .item .info{
+display:inline-block;
+width:190px;
+vertical-align:top;
+}
+#listing .item p{
+padding:0;
+margin:0;
+position:absolute;
+bottom:17px;
+}
+
 @media (min-width:1300px) { 
 
 #visitContainer{
@@ -4395,11 +4453,17 @@ width:820px;
 .dropDownCalendar{
 width:192px;
 }
+
 #visitContainer #individualHotel .dropDown{
 width:408px;
 }
 #visitContainer #visitRight{
 width:430px;
+}
+#visitMaps #mapTemp{
+width:430px;
+height:330px;
+background-color:gray;
 }
 #individualHotel #picBookWrap #largePic .swipe-wrap img{
 height:60px;
@@ -4451,6 +4515,9 @@ vertical-align:top;
 
 
 @media (max-width:1000px){
+#hotelListing .dropDownCalendar{
+width:192px;
+}d
 #visitContainer{
 width:850px;
 text-align:center;
