@@ -4597,6 +4597,7 @@ font-family:HNL;
 font-size:30px;
 color:rgb(51,62,106);
 text-align:center;
+margin-top:20px;
 }
 #comManager h3{
 font-weight:normal;
@@ -4608,7 +4609,7 @@ text-align:center;
 
 #comManager #top{
 border-bottom:1px solid rgb(116,116,116);
-padding-bottom:10px;
+padding-bottom:30px;
 max-width:100%;
 }
 #comManager  p{
@@ -4628,7 +4629,7 @@ text-align:center;
 }
 
 #comManager #top #right{
-width:475px;
+width:410px;
 display:inline-block;
 vertical-align:top;
 position:relative;
@@ -4676,22 +4677,24 @@ margin-top:10px;
 #comManager #middle{
 border-bottom:1px solid rgb(116,116,116);
 position:relative;
-padding-bottom:35px;
+padding-bottom:55px;
 }
 
 #comManager #middle table{
-width:100%;
+width:80%;
 margin:0;
+margin:auto;
 }
 #comManager #middle table th{
 width:365px;
 vertical-align:top;
 font-size:24px;
 font-family:HNL;
-color:rgb(51,62,106);
+color:rgb(116,116,116);
 font-weight:normal;
 padding-top:5px;
-padding-right:10px;
+padding-right:20px;
+
 text-align:right;
 }
 #comManager #middle table td{
@@ -4709,7 +4712,7 @@ padding-left:25px;
 }
 #comManager #middle button{
 position:absolute;
-right:0;
+right:103px;
 }
 
 #comManager #bottom h2{
@@ -4740,10 +4743,13 @@ height:140px;
 #comManager{
 width:1300px;
 }
-#comManager #top #left, #comManager #top #right{
+#comManager #top #left{
 width:625px;
 
 }
+ #comManager #top #right{
+ width:505px;
+ }
 #comManager #left #sub{
 }
 #comManager #left #infoWrap{
@@ -4760,6 +4766,10 @@ width:295px;
 }
 #comManager #top #comOther{
 width:582px;
+}
+#comManager #middle button{
+position:absolute;
+right:133px;
 }
 
 }
@@ -4811,6 +4821,10 @@ position:absolute;
 right:4px;
 }
 
+#comManager #middle button{
+position:absolute;
+right:88px;
+}
 }
 
 	
