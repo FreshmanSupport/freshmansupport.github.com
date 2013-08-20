@@ -4528,7 +4528,8 @@ display:none;
 
 
 #visitContainer #visitLeft{
-width:100%;
+
+width:850px;
 border:none;
 }
 .dropDownCalendar{
@@ -4582,10 +4583,235 @@ vertical-align:top;
 
 }
 
+/*community manager page */
+#comManager{
+text-align:center;
+margin:auto;
+width:1000px;
+max-width:100%;
+}
 
+#comManager h2{
+font-weight:normal;
+font-family:HNL;
+font-size:30px;
+color:rgb(51,62,106);
+text-align:center;
+}
+#comManager h3{
+font-weight:normal;
+font-family:HNL;
+font-size:24px;
+color:rgb(51,62,106);
+text-align:center;
+}
 
+#comManager #top{
+border-bottom:1px solid rgb(116,116,116);
+padding-bottom:10px;
+max-width:100%;
+}
+#comManager  p{
+text-align:center;
+margin:10px;
+font-family:Georgia;
+color:rgb(116,116,116);
+font-size:14px;
+}
 
+#comManager #top #left{
+width:475px;
+display:inline-block;
+vertical-align:top;
+position:relative;
+text-align:center;
+}
 
+#comManager #top #right{
+width:475px;
+display:inline-block;
+vertical-align:top;
+position:relative;
+text-align:center;
+}
+#comManager #top textarea#comName{
+max-width:200px;
+width:140px;
+vertical-align:top;
+margin-bottom:5px;
+}
+#comManager #top textarea#comEmail, #comManager #top #comOther{
+max-width:600px;
+width:452px;
+vertical-align:top;
+margin-bottom:5px;
+}
+#comManager button{
+margin:0;
+vertical-align:top;
+margin-top:1px;
+}
+#comManager #top .dropDown{
+width:230px;
+margin-top:5px;	
+margin-bottom:0;
+}
+#comManager #left #sub{
+position:absolute;
+right:6px;
+bottom:0;
+}
+#comManager #left #infoWrap{
+text-align:left;
+width:470px;
+margin:auto;
+position:relative;
+}
+#comManager #right img{
+width:420px;
+height:250px;
+margin-top:10px;
+}
+
+#comManager #middle{
+border-bottom:1px solid rgb(116,116,116);
+position:relative;
+padding-bottom:35px;
+}
+
+#comManager #middle table{
+width:100%;
+margin:0;
+}
+#comManager #middle table th{
+width:365px;
+vertical-align:top;
+font-size:24px;
+font-family:HNL;
+color:rgb(51,62,106);
+font-weight:normal;
+padding-top:5px;
+padding-right:10px;
+text-align:right;
+}
+#comManager #middle table td{
+font-size:14px;
+font-family:Georgia;
+color:rgb(116,116,116);
+padding-bottom:10px;
+padding-top:10px;
+border-bottom:1px solid rgb(116,116,116);
+}
+#comManager #middle table td ul{
+text-align:left;
+margin-left:0;
+padding-left:25px;
+}
+#comManager #middle button{
+position:absolute;
+right:0;
+}
+
+#comManager #bottom h2{
+
+margin-bottom:0;
+}
+
+#comManager .swipe-wrap img{
+width:120px;
+height:120px;
+margin-left:5px;
+}
+#comManager #arrow{
+vertical-align:middle;
+position:relative;
+top:-100px;
+}
+@media (min-width:1300px) { 
+#comManager #arrow{
+vertical-align:middle;
+position:relative;
+top:-115px;
+}
+#comManager .swipe-wrap img{
+width:140px;
+height:140px;
+}
+#comManager{
+width:1300px;
+}
+#comManager #top #left, #comManager #top #right{
+width:625px;
+
+}
+#comManager #left #sub{
+}
+#comManager #left #infoWrap{
+width:600px;
+}
+#comManager #top textarea#comEmail{
+width:288px;
+}
+#comManager #top textarea#comName{
+width:183px;
+}
+#comManager #top .dropDown{
+width:295px;
+}
+#comManager #top #comOther{
+width:582px;
+}
+
+}
+
+@media (max-width:1000px){
+#comManager, #comManager #top, #comManager #middle, #comManager #bottom{
+width:850px;
+margin:auto;
+max-width:100%;
+}
+#comManager #arrow{
+vertical-align:middle;
+position:relative;
+top:-95px;
+}
+#comManager .swipe-wrap img{
+width:100px;
+height:100px;
+}
+
+#comManager #top #left, #comManager #top #right{
+width:415px;
+}
+#comManager #left #sub{
+}
+#comManager #left #infoWrap{
+width:415px;
+}
+#comManager #top textarea#comEmail{
+width:400px;
+display:block;
+}
+#comManager #top textarea#comName{
+width:123px;
+}
+#comManager #top .dropDown{
+width:204px;
+}
+#comManager #top #comOther{
+width:400px;
+}
+#comManager #middle table th{
+
+width:40%;
+}
+
+#comManager #top #left #infoWrap #sub{
+position:absolute;
+right:4px;
+}
+
+}
 
 	
 
