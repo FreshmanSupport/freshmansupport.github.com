@@ -2034,6 +2034,9 @@ width:94.2%;
 	top:-15px;
 
 }
+#arrow{
+
+cursor:pointer;}
 #picsAndVids #picsWrap #sWrap{
 	margin-right:auto;
 	margin-left:auto;
@@ -4694,15 +4697,15 @@ color:rgb(116,116,116);
 font-weight:normal;
 padding-top:5px;
 padding-right:20px;
-
+vertical-align:middle;
 text-align:right;
 }
 #comManager #middle table td{
 font-size:14px;
 font-family:Georgia;
 color:rgb(116,116,116);
-padding-bottom:10px;
-padding-top:10px;
+padding-bottom:20px;
+padding-top:20px;
 border-bottom:1px solid rgb(116,116,116);
 }
 #comManager #middle table td ul{
@@ -4827,6 +4830,52 @@ right:88px;
 }
 }
 
+/*Data page*/
+#dataPage{
+width:1000px;
+margin:auto;
+font-family:Georgia;
+font-size:14px;
+color:rgb(116,116,116);
+}
+#dataPage #left textarea{
+width:90px;
+text-align:center;
+}
+#dataPage #left table{
+margin-top:5px;
+text-align:center;
+}
+#dataPage #left, #dataPage #middle, #dataPage #right{
+width:33%;
+display:inline-block;
+vertical-align:top;
+}
+
+#dataPage h3{
+color:rgb(116,116,116);
+font-size:24px;
+text-align:center;
+}
+#dataPage #left, #dataPage #middle{
+border-right:1px solid rgb(116,116,116);
+}
+	
+	
+@media (min-width:1300px){
+#dataPage{
+width:1300px;
+margin:auto;
+}
+#dataPage #left, #dataPage #middle, #dataPage #right{
+width:33%;
+display:inline-block;
+vertical-align:top;
+}
+
+
+
+}	
 	
 
 
