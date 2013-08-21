@@ -464,9 +464,11 @@ font-size:14px;
 }
 #rmMid{
 	border-left:1px solid gray;
-min-height:612px;	
+	min-height:612px;	
+
 }
 #maincontent.roommate{margin:auto; text-align:center;}
+
 
 
 @media(max-width:1300px)
@@ -475,7 +477,9 @@ min-height:612px;
 width:1300px;
 
 }
-
+#rmMid{
+	border-left:1px solid gray;
+min-height:500px;}
 
 
 #maincontent.roommate #essay.col-1-3.essay{
@@ -664,22 +668,54 @@ padding-top: 9px;
 {
 	margin-left:40px;
 }
+@media (max-width:845px){
+
+#maincontent.roommate{
+max-width:90%;
+width:90%;
+}
+#maincontent.roommate #rmSlide{
+width:100%;
+height:450px;
+
+}
+#maincontent.roommate #rmMid.col-1-3{
+margin-top:-30px;
+max-width:90%;
+width:100%;
+padding-top:10px;
+border:none;
+border-top:1px solid rgb(116,116,116);
+}
+#deadlinesMid{
+margin:auto;
+width:100%;
+}
+}
+#deadlinesMid{
+border-bottom:1px solid rgb(116,116,116); margin-right:10px; margin-left:10px; 
+}
 @media (max-width:1300px){
+
 #recommendedHousing{
 display:none;
 }
-}
-@media (max-width:1300px){
 #maincontent.roommate .span05{
 	display:none;
 }
 #maincontent.roommate{
 	margin-left:0px;
+	margin:auto;
+	width:850px;
+	max-width:100%;
 }
 #maincontent.roommate #rmSlide{
-	border-bottom:1px solid rgb(116,116,116);
 	padding-bottom: 50px;
 	margin-bottom: 30px;
+	width:480px;
+}
+#maincontent.roommate #rmMid{
+width:350px;
 }
 }
 @media(max-width:700px){
