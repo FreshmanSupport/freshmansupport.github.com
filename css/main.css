@@ -6,6 +6,24 @@
 	font-family: "HNB";
 	src: url(../fonts/helveticaneue-boldcond.otf);
 }
+textarea{
+resize:none;
+height:25px;
+text-align:center;
+color:rgb(116,116,116);
+font-family:Georgia;
+width:100px;
+font-size:14px;
+margin:auto;
+}
+#maincontent.admissions table{
+	margin:auto;
+	color:rgb(116,116,116);
+	text-align:center;
+	font-family:Georgia;
+	font-size:14px;
+}
+
 /* ==================== MAIN CONTENT =====================*/
 @media (min-width:1500px){
 #maincontent {
@@ -106,9 +124,9 @@ a{font-family:Georgia, "Times New Roman", Times, serif; font-size:14px; text-dec
 	vertical-align: top;
 		border-left: 1px solid rgb(116,116,116);
 }
-.answeredBy{width: 305px; margin:0 auto; margin-top:37px;}
+.answeredBy{width: 305px; margin:0 auto; margin-top:25px;}
 .answeredBy img{display:inline-block; height: 45px; width: 45px; margin-right: 5px;}
-.answeredByInfo{display:inline-block;}
+.answeredByInfo{display:inline-block; margin:auto;}
 .info {
 	display: inline-block;
 }
@@ -240,17 +258,53 @@ a{font-family:Georgia, "Times New Roman", Times, serif; font-size:14px; text-dec
 #maincontent.admissions #inputArea{padding:0 50px;}
 
 }
+@media(-width:850px){
+
+
+#maincontent.admissions #data.col-1-3,#maincontent.admissions #essay.col-1-3.essay{
+	display:block;
+	min-width:100%;
+	padding:0 50px;
+	margin-top:10px;
+	border-top: 1px solid rgb(116,116,116);
+	border-left:0;
+	padding-top:20px;
+}
+
+}
+
+
 @media(max-width:1000px)
 {
+#maincontent.admissions #data #answerNav{
+bottom:0;
+}
+#maincontent.admissions{
+width:900px;
+max-width:100%;
+}
 #maincontent.admissions #recentAnswers.col-1-3
 {
-	display:block;
-	width:100%;
+	min-height:0;
+	height:540px;
+	display:inline-block;
+	width:49%;
+	padding:0 50px;
+	border:0;
+	padding-top:20px;
+	border-right:1px solid rgb(116,116,116);
+}
+#maincontent.admissions #data.col-1-3
+{
+	display:inline-block;
+	width:49%;
 	padding:0 50px;
 	border:0;
 	padding-top:20px;
 }
-#maincontent.admissions #data.col-1-3,#maincontent.admissions #essay.col-1-3.essay{
+
+
+#maincontent.admissions #essay.col-1-3.essay{
 	display:block;
 	width:100%;
 	padding:0 50px;
