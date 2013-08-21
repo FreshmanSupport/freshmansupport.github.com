@@ -4839,38 +4839,117 @@ font-size:14px;
 color:rgb(116,116,116);
 }
 #dataPage #left textarea{
-width:90px;
+width:66px;
 text-align:center;
 }
 #dataPage #left table{
+margin:auto;
 margin-top:5px;
 text-align:center;
+
 }
-#dataPage #left, #dataPage #middle, #dataPage #right{
-width:33%;
+#dataPage #middle table{
+margin:auto;
+text-align:center;
+margin-bottom:15px;
+}
+#dataPage #middle .selected, #dataPage #middle .notSelected{
+cursor:auto;
+margin:0;
+}
+#dataPage #middle table td{
+	margin:0;
+	padding:0;
+	margin:auto;
+}
+ #dataPage #middle{
+width:385px;
 display:inline-block;
 vertical-align:top;
+position:relative;
+text-align:center;
+margin:auto;
+}
+#dataPage #right{
+width:300px;
+display:inline-block;
+vertical-align:top;
+position:relative;
+text-align:center;
+}
+#dataPage #left{
+padding-bottom:30px;
+width:300px;
+position:relative;
+display:inline-block;
+text-align:center;
 }
 
 #dataPage h3{
 color:rgb(116,116,116);
 font-size:24px;
 text-align:center;
+margin-bottom:10px;
+margin-top:0px;
 }
 #dataPage #left, #dataPage #middle{
 border-right:1px solid rgb(116,116,116);
+vertical-align:top;
 }
 	
+	#dataPage #left button{
+	position:absolute;
+	right:79px;
+	margin-top:10px;
+	}
+	
+#dataPage .selected{
+width:75px;
+height:22px;
+color:white;
+background-color: rgb(220, 134, 39);
+	display:inline-block;
+margin:3px;
+text-align:center;
+padding-top:3px;
+vertical-align:top;
+cursor:pointer;
+}
+
+#dataPage .notSelected{
+
+width:75px;
+height:22px;
+color:white;
+background-color:rgb(51,62,106);
+display:inline-block;
+margin:3px;
+text-align:center;
+vertical-align:top;
+padding-top:3px;
+cursor:pointer;
+}
+#dataPage p{
+font-size:14px;
+font-family:Georgia;
+color:rgb(116,116,116);
+font-style:italic;
+}
+
 	
 @media (min-width:1300px){
 #dataPage{
 width:1300px;
 margin:auto;
 }
-#dataPage #left, #dataPage #middle, #dataPage #right{
-width:33%;
-display:inline-block;
-vertical-align:top;
+#dataPage #left, #dataPage #right{
+width:405px;
+min-height:745px;
+}
+
+#dataPage #middle{
+width:460px;
+margin-right:15px;
 }
 
 

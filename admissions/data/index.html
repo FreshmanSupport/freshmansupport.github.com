@@ -65,16 +65,122 @@
 	
 		<h3 style="margin-top:20px">Class Rank</h3>
 
+	<div class="notSelected" id="lower50" onclick="rank(this.id);">Lower 50%</div>
+	<div class="notSelected" onclick="rank(this.id);"id="top50">Top 50%</div>
+	<div class="notSelected" id="top25" onclick="rank(this.id);">Top 25%</div>
+		<h3 style="margin-top:20px;">Extracurricular Activity Strength</h3>
+
+<!--Sliders--->
+			<h3 style="margin-top:20px;">Recommendation Strength</h3>
+			<!--Sliders--->
+
+		<h3 style="margin-top:20px;">Essay Strength</h3>
+
+	<!--Sliders--->
+
+	
+	<button>Recalculate</button>
 	
 	</div>
 	<div id="middle">
 	<h2>Last Year's Accepted Class</h2>
+	
+	<h3>SAT Math</h3>
+	<table><tr><td>-399</td><td>400-499</td><td>500-599</td><td>600-699</td><td>+700</td></tr>
+	<tr><td><div class="notSelected">1%</div></td>
+	<td><div class="notSelected">6%</div></td>
+	<td><div class="notSelected">33%</div></td>
+	<td><div class="selected">41%</div></td>
+	<td><div class="notSelected">19%</div></td>
+	</tr>
+	</table>
+	
+	<h3>SAT Reading</h3>
+	<table><tr><td>-399</td><td>400-499</td><td>500-599</td><td>600-699</td><td>+700</td></tr>
+	<tr><td><div class="notSelected">1%</div></td>
+	<td><div class="notSelected">6%</div></td>
+	<td><div class="selected">33%</div></td>
+	<td><div class="notSelected">41%</div></td>
+	<td><div class="notSelected">19%</div></td>
+	</tr>
+	</table>
+	
+		
+	<h3>SAT Writing</h3>
+	<table><tr><td>-399</td><td>400-499</td><td>500-599</td><td>600-699</td><td>+700</td></tr>
+	<tr><td><div class="notSelected">1%</div></td>
+	<td><div class="notSelected">6%</div></td>
+	<td><div class="notSelected">33%</div></td>
+	<td><div class="notSelected">41%</div></td>
+	<td><div class="selected">19%</div></td>
+	</tr>
+	</table>
+	
+		
+	<h3>ACT Math</h3>
+	<table><tr><td>-399</td><td>400-499</td><td>500-599</td><td>600-699</td><td>+700</td></tr>
+	<tr><td><div class="notSelected">1%</div></td>
+	<td><div class="notSelected">6%</div></td>
+	<td><div class="notSelected">33%</div></td>
+	<td><div class="selected">41%</div></td>
+	<td><div class="notSelected">19%</div></td>
+	</tr>
+	</table>
+	
+		
+	<h3>ACT Reading</h3>
+	<table><tr><td>-399</td><td>400-499</td><td>500-599</td><td>600-699</td><td>+700</td></tr>
+	<tr><td><div class="notSelected">1%</div></td>
+	<td><div class="notSelected">6%</div></td>
+	<td><div class="selected">33%</div></td>
+	<td><div class="notSelected">41%</div></td>
+	<td><div class="notSelected">19%</div></td>
+	</tr>
+	</table>
+	
+	
+		
+	<h3>ACT Writing</h3>
+	<table><tr><td>-399</td><td>400-499</td><td>500-599</td><td>600-699</td><td>+700</td></tr>
+	<tr><td><div class="notSelected">1%</div></td>
+	<td><div class="notSelected">6%</div></td>
+	<td><div class="notSelected">33%</div></td>
+	<td><div class="notSelected">41%</div></td>
+	<td><div class="selected">19%</div></td>
+	</tr>
+	</table>
+	
+	
+		<h3>Class Rank</h3>
+	<table><tr><td>Lower 50%</td><td>Top 50%</td><td>Top 25%</td></tr>
+	<tr><td><div class="notSelected">1%</div></td>
+	<td><div class="selected">6%</div></td>
+	<td><div class="notSelected">33%</div></td>
+
+	</tr>
+	</table>
+	
+	
+	
 	
 	</div>
 	
 	
 	<div id="right">
 	<h2>Results</h2>
+	<h3>Your rank within accepted students<br>The University of Texas:</h3>
+	<!--slider-->
+	<h3>80%-89%</h3>
+	<p style="font-style:normal">Congratulations! You have a very high rank compared to last year's accepted freshman class.</p>
+	
+	
+	<h2>Assumptions</h2>
+	<p>The following slider presets are based on Freshman Support's estimated importance. You can increase/decrease the significance of each slider
+	according to information your school prefers to get a more accurate estimation of your acceptance.</p>
+	
+	
+	
+	
 	
 	</div>
   
@@ -88,24 +194,12 @@
 </body>
 </html>
 <script>
-$("#askAnother").click(function() {
-  $("#questionThannkYou").toggle();
-  $("#inputArea").toggle();
-  $("#officers").toggle();
-});
+function rank(x){
+if(x!='lower50') document.getElementById('lower50').className = 'notSelected';
+if(x!='top50') document.getElementById('top50').className = 'notSelected';
+if(x!='top25') document.getElementById('top25').className = 'notSelected';
+document.getElementById(x).className = 'selected';
 
-$("#sendButton").click(function() {
-  $("#questionThannkYou").toggle();
-  $("#inputArea").toggle();
-  $("#officers").toggle();
-});
-
-$('.editNav span').click(function(e) {
-  var name = event.target.id;
-  name = name.replace('Click', '');
-  $('.editNav span').removeClass('select');
-  $(this).addClass('select');
-  e.preventDefault();
-});
+}
    
 </script>
