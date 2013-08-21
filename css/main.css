@@ -541,6 +541,7 @@ width:470px;	margin:0 auto;
 	line-height: 53px;
 	white-space: nowrap;
 	margin-left:-30px;
+	text-align:center;
 }
 #roomieSlider ul li.hogwartsRow{}
 .rowLabel>span {
@@ -668,35 +669,85 @@ padding-top: 9px;
 {
 	margin-left:40px;
 }
+.roommate #rmSlide .house{
+margin:2px;
+width:100px;
+text-align:left;
+display:inline-block;
+}
+.roommate #rmSlide .house p{
+
+position:relative;
+top:-2px;
+margin:auto;
+}
 @media (max-width:845px){
 
+ #hidetilUnder13{
+
+width:90%;
+}
 #maincontent.roommate{
 max-width:90%;
 width:90%;
 }
 #maincontent.roommate #rmSlide{
-width:100%;
+width:450px;
 height:450px;
+margin:auto;
+}
+#deadlinesMid{
+
 
 }
+#maincontent.roommate #rmSlide ul li{
+margin:0;
+padding:0;
+text-align:center;
+}
+
 #maincontent.roommate #rmMid.col-1-3{
 margin-top:-30px;
 max-width:90%;
-width:100%;
+width:90%;
 padding-top:10px;
 border:none;
 border-top:1px solid rgb(116,116,116);
 }
-#deadlinesMid{
+
+.roommate #deadlinesMid{
 margin:auto;
 width:100%;
+border-bottom: 1px solid rgb(116,116,116);
+}
+.roommate #hidetilUnder13{
+margin-top:-20px;
 }
 }
+
 #deadlinesMid{
-border-bottom:1px solid rgb(116,116,116); margin-right:10px; margin-left:10px; 
+margin-right:10px;
+margin-left:10px;
+border-bottom:1px solid rgb(116,116,116);
+}
+#hidetilUnder13{
+display:none;
+margin:auto;
+}
+#recommendedHousingFooterSqueeze #item{
+display:inline-block;
+margin-left:20px;
+margin-right:20px;
 }
 @media (max-width:1300px){
 
+#hidetilUnder13{
+display:block;
+
+border-top:1px solid rgb(116,116,116);
+margin-top:10px;
+padding-top:10px;
+}
 #recommendedHousing{
 display:none;
 }
@@ -710,9 +761,7 @@ display:none;
 	max-width:100%;
 }
 #maincontent.roommate #rmSlide{
-	padding-bottom: 50px;
-	margin-bottom: 30px;
-	width:480px;
+
 }
 #maincontent.roommate #rmMid{
 width:350px;
