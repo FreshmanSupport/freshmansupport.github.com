@@ -451,6 +451,14 @@ right:4px;
 	margin: 0;
 	text-align:center;
 }
+.disclaimer {
+	font-size: 14px;
+	display: block;
+	color: rgb(116,116,116);
+	margin-bottom: 30px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+}
 .email{width:200px; margin-left:2px;}
 .logWidth{width:240px; margin-left:2px;}
 .schoolBox{

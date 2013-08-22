@@ -36,6 +36,10 @@ font-size:14px;
 .normal{
 	font-weight:normal;
 }
+body{
+width:100%;
+position:relative;
+}
 a {color:rgb(51,62,106); font-size:14px; text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
 
 a:link {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
