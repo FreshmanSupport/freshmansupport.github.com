@@ -25,6 +25,11 @@ margin:auto;
 }
 
 /* ==================== MAIN CONTENT =====================*/
+body{
+position:relative;
+overflow:visible;
+width:100%;
+}
 @media (min-width:1500px){
 #maincontent {
 	background: white;
@@ -32,6 +37,9 @@ margin:auto;
 	margin: 0 auto;
 	padding-top: 25px;
 	padding-bottom: 30px;
+	position:relative;
+	overflow:hidden;
+	
 }
 }
 @media(max-width: 1499px){
@@ -1479,7 +1487,10 @@ height:540px;
 #maincontent.finances #data .ring{
 margin:0;
 }
-
+#maincontent.finances{
+width:900px;
+max-width:100%;
+}
 
 }
 #maincontent.finances #data{

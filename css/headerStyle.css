@@ -314,11 +314,12 @@ h1 {
 	#siteSearchContainer{width:30%;}
 }
 /* ====== Login and Register ========== */
-#overlay, .videoOverlay{
+ #overlay, .videoOverlay{
 	z-index:1001;	
 	position: absolute; 
 	right: 50%;
 }
+
 #overlayBackground{
 	height:100%;
 	width:100%;
@@ -329,17 +330,20 @@ h1 {
 	z-index:1000;}
 #loginRegisterContainer,#videoPlayerContainer{
 	border:2px solid rgb( 51, 62, 106);
-	width:1190px;
+
+	width:1000px;
 	min-height: 300px;
 	background-color:white;
 	margin:0 auto;
 	margin-top: 100px;
 	z-index:14;
 	position: relative; left: 50%;
+	top:-270px;
 }
+
 #registerThankYou{	
 	border:2px solid rgb( 51, 62, 106);
-	width:1190px;
+	width:1000px;
 	min-height: 300px;
 	background-color:white;
 	margin:0 auto;
@@ -387,12 +391,38 @@ h1 {
 	font-size:14px;
 	margin-right: 10px;
 }
-#logIn input{width: 200px;}
+#logIn input{width: 200px; }
+#header input{
+outline:none;
+}
+input{
+padding-left:4px;
+color:rgb(116,116,116);
+font-family:Georgia;
+font-size:14px;
+outline:none;
+border:1px solid rgb(116,116,116);
+-webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+
+}
+input:focus{
+color:rgb(116,116,116);
+font-family:Georgia;
+font-size:14px;
+}
 #register{
 	display:inline-block;
-	width:830px;
+	width:640px;
 	border-left:2px solid rgb(116,116,116);
 	vertical-align:top;
+	position:relative;
+	padding-bottom:30px;
+}
+#register button{
+position:absolute;
+right:4px;
 }
 #register label{
 	width: 150px; 
@@ -403,11 +433,13 @@ h1 {
 	font-size:14px;
 	margin-right: 10px;
 }
-.registerPic{display:inline-block; vertical-align:top;}
+.registerPic{display:inline-block; vertical-align:top; margin-left:-1px;}
 .registerPic img{border:2px solid #eee9e9;}
 #register .registerPic label{display:inline-block; width:70px; height: 70px; vertical-align:top; background-repeat:no-repeat; border: 1px solid rgb(116,116,116);}
 .registerPic input[type="radio"]{display:none;}
-#register .registerPic input[type="radio"]:checked + label{border: 2px solid rgb(220, 134, 39); color:rgb(220, 134, 39);}
+#register .registerPic input[type="radio"]:checked + label{border: 2px solid rgb(220, 134, 39);  color:rgb(220, 134, 39);}
+
+
 .textBot{text-align:center; white-space:nowrap; padding-top: 50px;}
 .registerPic input[type="radio"]:checked +label .textBot{color:rgb(220, 134, 39);}
 
@@ -420,8 +452,8 @@ h1 {
 	margin: 0;
 	text-align:center;
 }
-.email{width:409px;}
-.logWidth{width:240px;}
+.email{width:385px; margin-left:2px;}
+.logWidth{width:240px; margin-left:2px;}
 .schoolBox{
 	width: 150px; 
 	height: 40px; 
@@ -433,7 +465,8 @@ h1 {
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size: 14px;
 	color:rgb(51, 62, 107);
-	margin-right: 20px;
+	margin-right: 5px;
+	margin-left:-1px;
 }
 .schoolBox input[type=text]{
 	background: transparent;
@@ -441,15 +474,16 @@ h1 {
 	font-size: 14px;
 	border: 1px solid  rgb(116,116,116);
 	border-radius: 0;
-	height: 40px;
 	-webkit-appearance: none;
 	color: rgb(116,116,116);
 	font-family: Georgia, "Times New Roman", Times, serif;
 	line-height: 14px;
-	padding-left:1px;
+	padding-left:4px;
+	height:30px;
 }
 #register .disclaimer{padding-left: 160px;}
 .male{background-image:url(../img/profile/male.png);}
+
 .female{background-image:url(../img/profile/female.png); }
 .male, .female{background-size: 37px 43px; background-position:15px 2px;}
 
@@ -458,7 +492,7 @@ h1 {
 .counselor{background-image:url(../img/profile/counselor.png);}
 .student,.family,.counselor{ background-size: 45px 51px; background-position:12px 2px;}
 
-#register .dropDown{display:inline-block; border:1px solid #eee9e9;}
+#register .dropDown{display:inline-block; border:1px solid #eee9e9; margin-left:-1px;}
 #register .dropDown select{border:1px solid #eee9e9;}
 .plus{font-size:28px; color:orange;}
 
