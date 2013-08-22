@@ -132,7 +132,7 @@ a{font-family:Georgia, "Times New Roman", Times, serif; font-size:14px; text-dec
 	vertical-align: top;
 		border-left: 1px solid rgb(116,116,116);
 }
-.answeredBy{width: 305px; margin:0 auto; margin-top:25px;}
+.answeredBy{width: 305px; margin:0 auto; margin-top:25px; text-align:center;}
 .answeredBy img{display:inline-block; height: 45px; width: 45px; margin-right: 5px;}
 .answeredByInfo{display:inline-block; margin:auto;}
 .info {
@@ -1482,7 +1482,7 @@ width:350px;
 }
 @media(max-width:1000px){
 #maincontent.finances #recentAnswers.col-1-3{
-height:540px;
+height:460px;
 }
 #maincontent.finances #data .ring{
 margin:0 15px;
@@ -2033,6 +2033,7 @@ margin-left: 25px;}
 	display: block;
 	border: 1px solid rgb(116, 116, 116);
 	margin-bottom: 5px;
+	text-align:left;
 }
 .footer textarea {
 	height: 200px;
