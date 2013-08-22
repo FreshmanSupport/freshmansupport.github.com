@@ -331,7 +331,7 @@ h1 {
 #loginRegisterContainer,#videoPlayerContainer{
 	border:2px solid rgb( 51, 62, 106);
 
-	width:1000px;
+	width:900px;
 	min-height: 300px;
 	background-color:white;
 	margin:0 auto;
@@ -343,7 +343,7 @@ h1 {
 
 #registerThankYou{	
 	border:2px solid rgb( 51, 62, 106);
-	width:1000px;
+	width:900px;
 	min-height: 300px;
 	background-color:white;
 	margin:0 auto;
@@ -380,8 +380,8 @@ h1 {
 #loginRegisterContainer li{margin-bottom: 10px;}
 .topBar{width:100%; background-color:rgb(51, 62, 106); height: 25px; margin-bottom:20px;}
 .xClose{color:white; font-weight:bold;float:right; cursor:pointer; padding-right: 5px;}
-#logIn{width:350px; display:inline-block; vertical-align:top; overflow:hidden;}
-#logIn button{float:right; margin-right:42px;}
+#logIn{width:330px; display:inline-block; vertical-align:top; overflow:hidden; position:relative; padding-bottom:30px;}
+#logIn button{position:absolute; right:19px;}
 #logIn label{
 	width: 100px; 
 	text-align:right; 
@@ -414,7 +414,7 @@ font-size:14px;
 }
 #register{
 	display:inline-block;
-	width:640px;
+	width:560px;
 	border-left:2px solid rgb(116,116,116);
 	vertical-align:top;
 	position:relative;
@@ -455,7 +455,7 @@ right:4px;
 .email{width:385px; margin-left:2px;}
 .logWidth{width:240px; margin-left:2px;}
 .schoolBox{
-	width: 150px; 
+	width: 124px; 
 	height: 40px; 
 	overflow: hidden; 
 	background: white;
@@ -470,7 +470,7 @@ right:4px;
 }
 .schoolBox input[type=text]{
 	background: transparent;
-	width: 150px;
+	width: 124px;
 	font-size: 14px;
 	border: 1px solid  rgb(116,116,116);
 	border-radius: 0;
