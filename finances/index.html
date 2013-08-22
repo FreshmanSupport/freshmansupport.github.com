@@ -12,47 +12,6 @@
 </head>
 
 <body>
-<div id="header">
-  <div id="loginBar">
-    <div id="loginBarContainer"> <a href="#">Login |</a> <a href="#"> Register</a> </div>
-  </div>
-  <div id="searchBar">
-    <div id="collegeSearchContainer">
-      <form id="collegeSearchbox" action="">
-        <input id="submit" type="submit" value="Search" name="submit"class="collegeSearchButton">
-        <input id="search" type="text" name="collegeSearch" placeholder="The University of Texas at Austin" class="collegeSearchBox">
-      </form>
-    </div>
-    <div id="logoContainer"><a href="/"><img src="../img/logo.png" /></a></div>
-    <div id="siteSearchContainer">
-      <form id="searchbox" action="">
-        <div id="magnify"></div>
-        <input id="search" type="text" placeholder="Search The University of North Texas" class="siteSearchSkin">
-      </form>
-    </div>
-  </div>
-  <div id="newNav">
-    <ul>
-      <li id="home"><a href="../home">HOME</a></li>
-      <li id="housing"><a href="../housing"><span>COMPARE </span>HOUSING</a></li>
-      <li id="roomie"><a href="../roomieMatch">ROOMIE<span> MATCH</span></a></li>
-      <li id="admissions"><a href="../admissions" >ADMISSIONS</a> </li>
-      <li id="financesSelected"><a href="../finances">FINANCES</a> </li>
-      <li id="theRealLife"><a href="../theRealLife"><span>THE </span>REAL LIFE</a> </li>
-      <li id="visit"><a href="../visit">VISIT</a> </li>
-      <li id="deadlines"><a href="../deadlines">DEADLINES</a> </li>
-    </ul>
-  </div>
-  <div id="subNav">
-    <ul>
-      <li><a href="data">Data</a></li>
-      <li><a href="QA">Financial Q&A </a></li>
-      <li><a href="budgetPlanner">Budget Planner</a></li>
-    </ul>
-  </div>
-</div>
-<div id="maincontent" class="finances">
-
 <div id="overlayBackground" style="display:none;"></div>	
 <div id="overlay" style="display:none;">
   	<div id="loginRegisterContainer">
@@ -74,10 +33,11 @@
             
             	<ul>
             		<li>
-                    	<label>First Name:</label><input id="firstName" type="text" />
-                        <label style="width:85px;">Last Name:</label><input id="lastName" type="text" />
+                    	<label>First Name:</label><input id="firstName" type="text" /></li>
+						<li>
+                        <label >Last Name:</label><input id="lastName" type="text" />
                     </li>
-                    <li><label >Email:</label><input id="email" type="text" class="email"/></li>
+                    <li><label >Email:</label><input id="email" type="text" class="logWidth"/></li>
                     <li><label>Gender:</label>
                     	<div class="registerPic">
                         	<input id="male" type="radio" name="gender"/><label for="male" class="male"><div class="textBot">Male</div></label> 
@@ -135,6 +95,46 @@
             </div>
         </div>
   </div>
+<div id="header">
+  <div id="loginBar">
+    <div id="loginBarContainer"> <a href="#">Login |</a> <a href="#"> Register</a> </div>
+  </div>
+  <div id="searchBar">
+    <div id="collegeSearchContainer">
+      <form id="collegeSearchbox" action="">
+        <input id="submit" type="submit" value="Search" name="submit"class="collegeSearchButton">
+        <input id="search" type="text" name="collegeSearch" placeholder="The University of Texas at Austin" class="collegeSearchBox">
+      </form>
+    </div>
+    <div id="logoContainer"><a href="/"><img src="../img/logo.png" /></a></div>
+    <div id="siteSearchContainer">
+      <form id="searchbox" action="">
+        <div id="magnify"></div>
+        <input id="search" type="text" placeholder="Search The University of North Texas" class="siteSearchSkin">
+      </form>
+    </div>
+  </div>
+  <div id="newNav">
+    <ul>
+      <li id="home"><a href="../home">HOME</a></li>
+      <li id="housing"><a href="../housing"><span>COMPARE </span>HOUSING</a></li>
+      <li id="roomie"><a href="../roomieMatch">ROOMIE<span> MATCH</span></a></li>
+      <li id="admissions"><a href="../admissions" >ADMISSIONS</a> </li>
+      <li id="financesSelected"><a href="../finances">FINANCES</a> </li>
+      <li id="theRealLife"><a href="../theRealLife"><span>THE </span>REAL LIFE</a> </li>
+      <li id="visit"><a href="../visit">VISIT</a> </li>
+      <li id="deadlines"><a href="../deadlines">DEADLINES</a> </li>
+    </ul>
+  </div>
+  <div id="subNav">
+    <ul>
+      <li><a href="data">Data</a></li>
+      <li><a href="QA">Financial Q&A </a></li>
+      <li><a href="budgetPlanner">Budget Planner</a></li>
+    </ul>
+  </div>
+</div>
+<div id="maincontent" class="finances">
   <div id="topFinances">
     <div id="recentAnswers" class="col-1-3" style="overflow:hidden;">
     <h2>Financial Q&A </h2>

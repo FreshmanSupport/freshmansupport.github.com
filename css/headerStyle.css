@@ -338,7 +338,6 @@ h1 {
 	margin-top: 100px;
 	z-index:14;
 	position: relative; left: 50%;
-	top:-270px;
 }
 
 #registerThankYou{	
@@ -452,7 +451,7 @@ right:4px;
 	margin: 0;
 	text-align:center;
 }
-.email{width:385px; margin-left:2px;}
+.email{width:200px; margin-left:2px;}
 .logWidth{width:240px; margin-left:2px;}
 .schoolBox{
 	width: 124px; 
