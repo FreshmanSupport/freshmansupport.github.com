@@ -1755,7 +1755,7 @@ margin-left: 25px;}
 /* ============== Deadlines =================== */
 
 .smallCalendar .title{}
-#sideCalendar{display:inline-block; width:200px; height: 555px ;overflow-y:scroll; 	padding-left:20px;}
+#sideCalendar{display:inline-block; width:170px; height: 555px ;overflow-y:scroll; 	padding-left:0px;}
 .calendar .smallCalendar table{}
 .smallCalendar{
 	text-align:center; 
@@ -1766,7 +1766,11 @@ margin-left: 25px;}
 	margin-bottom: 20px;
 	cursor:pointer;
 }
-
+#maincontent.calendar{
+margin:auto;
+width:100%;
+text-align:center;
+}
 #maincontent.calendar ::-webkit-scrollbar {
     width: 12px;
 }
@@ -1777,7 +1781,7 @@ margin-left: 25px;}
 }
 #mainCalendar{
 	display:inline-block; 
-	width: 700px;
+	width: 600px;
 	border-left:1px solid rgb(116, 116, 116);
 	border-right:1px solid rgb(116,116,116);
 	vertical-align:top;
@@ -1807,7 +1811,7 @@ margin-left: 25px;}
 #infoBox li{margin-bottom:10px;}
 #maincontent #infoBox h3{}
 
-#deadlineNotification{display:inline-block; width: 500px; padding-left:30px; vertical-align:top;}
+#deadlineNotification{display:inline-block; width: 480px; padding-left:30px; vertical-align:top; text-align:left;}
 .specialIcon{margin-top:28px;}
 .specialIcon .icon{width:20px; height:15px; background-color:rgb( 51, 62, 106); display:inline-block;margin-right:5px;}
 .specialIcon .iconInfo{
@@ -2076,6 +2080,9 @@ margin-left: 25px;}
 	border: 1px solid rgb(116, 116, 116);
 	margin-bottom: 5px;
 	text-align:left;
+}
+textarea{
+text-align:left;
 }
 .footer textarea {
 	height: 200px;

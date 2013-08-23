@@ -14,6 +14,22 @@
 <script type="text/javascript" src="../js/loginVideoScript.js"></script>
 
 <div id="overlayBackground" style="display:none;"></div>	
+ <div class="videoOverlay" style="display:none;">
+  	<div id="videoPlayerContainer">
+    	<div class="topBar">
+        	<div class="xClose">X</div>
+        </div>
+        <div class="fakeVideo"></div>
+        
+        <div id="videoPlayerText">
+        <h3>Video Title</h3>
+        <p><i>Video Description. This is a test sentence to describe a video<br />
+        1-855-1166 ext. 502<br />
+        801 West 24th Street
+        </i></p>
+        </div>
+    </div>
+  </div>	
 <div id="overlay" style="display:none;">
   	<div id="loginRegisterContainer">
     	<div class="topBar">
@@ -959,9 +975,9 @@
   <div id="recommendedHousing" class="col-1-3">
     <h2>Recommended Housing</h2>
     <div class="recommended marginTop10">
-      <div class="left"> <a href="../housing"><img src="../img/property/place2.png"></a> </div>
+      <div class="left" onclick=showVideo()> <img src="../img/property/place2.png"> </div>
       <div class="right">
-        <h3>Towers</h3>
+        <a href="../housing"><h3>Towers</h3></a>
         <a href="">855 People</a>
         <p>are looking for a roommate<br>
           at the Towers</p>
@@ -969,9 +985,9 @@
       </div>
     </div>
     <div class="recommended ">
-      <div class="left"> <a href="../housing"><img src="../img/property/place2.png"></a> </div>
+            <div class="left" onclick=showVideo()> <img src="../img/property/place2.png"> </div>
       <div class="right">
-        <h3>Towers</h3>
+        <a href="../housing"><h3>Towers</h3></a>
         <a href="">855 People</a>
         <p>are looking for a roommate<br>
           at the Towers</p>
@@ -979,10 +995,11 @@
       </div>
     </div>
     <div class="recommended ">
-      <div class="left"> <a href="../housing"><img src="../img/property/place2.png"></a> </div>
+           <div class="left" onclick=showVideo()> <img src="../img/property/place2.png"> </div>
       <div class="right">
-        <h3>Towers</h3>
-        <a href="">855 People</a> <p>are looking for a roommate<br>
+        <a href="../housing"><h3>Towers</h3></a>
+        <a href="">855 People</a>
+        <p>are looking for a roommate<br>
           at the Towers</p>
         <button>Add to Your Roomie Match</button>
       </div>
@@ -1007,21 +1024,21 @@
 	<center>
 	<div id="item">
     <a href="../property"><h2>Towers</h2></a>
-		<img src="../img/property/place2.png" width="150px" height="135px">
+		<img src="../img/property/place2.png" width="150px" height="135px" onclick=showVideo()>
 	
     </div>
 	
 	
 	<div id="item">
     <a href="../property"><h2>Towers</h2></a>
-		<img src="../img/property/place2.png" width="150px" height="135px">
+		<img src="../img/property/place2.png" width="150px" height="135px" onclick=showVideo()>
 		
     </div>
 	
 		
 	<div id="item">
     <a href="../property"><h2>Towers</h2></a>
-		<img src="../img/property/place2.png" width="150px" height="135px">
+		<img src="../img/property/place2.png" width="150px" height="135px" onclick=showVideo()>
 	
     </div>
 	</center>
