@@ -50,6 +50,8 @@ width:100%;
 	margin: 0 auto;
 	padding-top: 25px;
 	padding-bottom: 30px;
+		position:relative;
+	overflow:hidden;
 }
 }
 @media (max-width:1300px){
@@ -59,6 +61,8 @@ width:100%;
 	margin: 0 auto;
 	padding-top: 25px;
 	padding-bottom: 30px;
+		position:relative;
+	overflow:hidden;
 }
 }
 @media (max-width:1000px){
@@ -68,6 +72,8 @@ width:100%;
 	margin: 0 auto;
 	padding-top: 25px;
 	padding-bottom: 30px;
+		position:relative;
+	overflow:hidden;
 }
 }
 #maincontent h2 {
@@ -1069,6 +1075,7 @@ width:350px;
 	display: inline-block;
 }
 /* ================= The Real Life =================== */
+
 .trlSelectContainer{display:block;}
 .trlSelectContainer .sWrap{display:inline-block; width: 500px;}
 #degreeDrop img{height:50px; width:50px;}
@@ -1115,26 +1122,61 @@ width:350px;
 	font-size: 14px;
 }
 /* ================== Index Remake ==================== */
-#mainContent.realLifeSub {
-	padding-top: 0;
+
+@media(min-width:1300px){
+#maincontent.realLifeSub{
+margin:auto;}
+
+	#maincontent.realLifeSub .realLifeSquare:nth-child(even) {
+	border-left: 1px solid rgb(116,116,116);
 }
-.realLifeSquare {
-	width: 49%;
-	display: inline-block;
+#maincontent.realLifeSub .realLifeSquare {
+width:648px;
+}
+.realLifeSub .realLifeSquare .guide{
+margin-left:15px;
+}
+
+
+.realLifeSub .realLifeSquare .vid {
+	width: 180px;
+	height: 100px;
+	background-color: rgb(116,116,116);
+	margin-left:15px;
+}
+}
+
+@media(min-width:1000px){
+#maincontent.realLifeSub .realLifeSquare {
+width:648px;
+}
+
+}
+
+
+#mainontent.realLifeSub {
+	padding-top: 0;
+	text-align:center;
+	margin:auto;
+}
+.realLifeSub .realLifeSquare {
+margin:auto;
+width:848px;
+height:590px;
+	max-width: 100%;
+display: inline-block;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	border-bottom: 1px solid rgb(116,116,116);
 	margin-bottom: 10px;
 	position:relative;
-}
-.realLifeSquare:nth-child(odd) {
-	padding-right: 20px;
-	padding-left: 14px;
+	padding-left:10px;
+	vertical-align:top;
 }
 .realLifeSquare:nth-child(even) {
-	border-left: 1px solid rgb(116,116,116);
-	padding-left: 20px;
-}
+border-left:0;
+	}
+
 .realLifeSquare .profilePic img {
 	width: 220px;
 	height: 220px;
@@ -1149,10 +1191,20 @@ width:350px;
 .realLifeSquare .profilePic button:last-child {
 	width: 150px;
 }
+.realLifeSub .realLifeSquare .nameBar{
+margin-top:-5px;
+}
+.realLifeSub .realLifeSquare ul{
+margin-top:0px;
+}
+.realLifeSub .realLifeSquare .iconBar ul li{
+padding:2px 0;
+}
+
 .realLifeSub .realLifeSquare li {
 	color: rgb(51,62,106);
 	font-size: 24px;
-	font-family: HNB;
+	font-family: HNL;
 	margin-bottom: 21px;
 }
 .realLifeSub .realLifeSquare.iconBar {
@@ -1166,22 +1218,26 @@ width:350px;
 }
 .realLifeSub .realLifeSquare .nameBar {
 	padding-top: 11px;
-	padding-left: 30px;
+	padding-left: 15px;
 	display: inline-block;
 	vertical-align: top;
 }
 .realLifeSub .realLifeSquare .iconBar li {
 	margin-bottom: 6px;
 }
-.realLifeSquare .guide img {
-	width: 180px;
-	margin-bottom: 50px;
-	height: 100px;
+.realLifeSquare .guide{
+margin-left:15px;
 }
 .realLifeSquare .vid {
 	width: 180px;
 	height: 100px;
 	background-color: rgb(116,116,116);
+	margin-left:15px;
+}
+.realLifeSquare .guide img {
+	width: 180px;
+	margin-bottom: 50px;
+	height: 100px;
 }
 .realLifeSquare #answerNav {
 	margin-left: -8px;
@@ -1192,7 +1248,8 @@ width:350px;
 	margin-bottom: 0;
 }
 #maincontent .realLifeSquare .QA h3:first-child {
-	font-family: HNB;
+	font-family: HNL;
+	color:rgb(51,62,106);
 }
 #maincontent .realLifeSquare .QA p {
 	text-align: left;
