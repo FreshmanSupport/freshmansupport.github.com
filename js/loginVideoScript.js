@@ -40,6 +40,7 @@ $(document).ready(function(e) {
 	
 	
 });
+
 $(document).delegate('#textbox', 'keydown', function(e) { 
   var keyCode = e.keyCode || e.which; 
 
@@ -58,3 +59,8 @@ $(document).delegate('#textbox', 'keydown', function(e) {
     $(this).get(0).selectionEnd = start + 1;
   } 
 });
+
+function showVideo(){
+		$('.videoOverlay').show();
+		$('#overlayBackground').show();
+}

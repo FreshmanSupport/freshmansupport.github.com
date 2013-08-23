@@ -1130,28 +1130,11 @@ margin:auto;}
 	#maincontent.realLifeSub .realLifeSquare:nth-child(even) {
 	border-left: 1px solid rgb(116,116,116);
 }
-#maincontent.realLifeSub .realLifeSquare {
-width:648px;
-}
-.realLifeSub .realLifeSquare .guide{
-margin-left:15px;
+
+
 }
 
 
-.realLifeSub .realLifeSquare .vid {
-	width: 180px;
-	height: 100px;
-	background-color: rgb(116,116,116);
-	margin-left:15px;
-}
-}
-
-@media(min-width:1000px){
-#maincontent.realLifeSub .realLifeSquare {
-width:648px;
-}
-
-}
 
 
 #mainontent.realLifeSub {
@@ -1160,8 +1143,7 @@ width:648px;
 	margin:auto;
 }
 .realLifeSub .realLifeSquare {
-margin:auto;
-width:848px;
+width:648px;
 height:590px;
 	max-width: 100%;
 display: inline-block;
@@ -1176,6 +1158,8 @@ display: inline-block;
 .realLifeSquare:nth-child(even) {
 border-left:0;
 	}
+
+	
 
 .realLifeSquare .profilePic img {
 	width: 220px;

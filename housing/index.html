@@ -7,12 +7,34 @@
     <script src="../js/swipe.js"></script>
 	<script type="text/javascript" src="../js/loginVideoScript.js"></script>
 
+
+
+
+
 </head>
 <body>
 
 
 
-<div id="overlayBackground" style="display:none;"></div>	
+<div id="overlayBackground" style="display:none;"></div>
+ <div class="videoOverlay" style="display:none;">
+  	<div id="videoPlayerContainer">
+    	<div class="topBar">
+        	<div class="xClose">X</div>
+        </div>
+        <div class="fakeVideo"></div>
+        
+        <div id="videoPlayerText">
+        <h3>Video Title</h3>
+        <p><i>Video Description. This is a test sentence to describe a video<br />
+        1-855-1166 ext. 502<br />
+        801 West 24th Street
+        </i></p>
+        </div>
+    </div>
+  </div>	
+  <div id="overlayBackground" style="display:none;"></div>
+
 <div id="overlay" style="display:none;">
   	<div id="loginRegisterContainer">
     	<div class="topBar">
@@ -185,7 +207,7 @@
 		
 		</div>
 		
-<div class="video"><img src="../img/property/place2.png" width="160px" height="143px"></div>
+<div class="video" onclick="showVideo()" ><img src="../img/property/place2.png" width="160px" height="143px" ></div>
 <span class="hidetil13">
 <div class="picWrapper">
 <img src="../img/property/place2.png" style="margin-bottom:5px">
@@ -278,7 +300,7 @@ resize:none;  max-width:100%; " placeholder="E-Mail"></textarea>
 		
 		</div>
 		
-<div class="video"><img src="../img/property/place2.png" width="160px" height="143px"></div>
+<div class="video" onclick="showVideo()"><img src="../img/property/place2.png" width="160px" height="143px"></div>
 <span class="hidetil13">
 <div class="picWrapper">
 <img src="../img/property/place2.png" style="margin-bottom:5px">
