@@ -10,12 +10,13 @@
 textarea{
 resize:none;
 height:25px;
-text-align:center;
+text-align:left;
 color:rgb(116,116,116);
 font-family:Georgia;
 width:100px;
 font-size:14px;
 margin:auto;
+border:1px solid rgb(116,116,116);
 }
 #maincontent.admissions table{
 	margin:auto;
