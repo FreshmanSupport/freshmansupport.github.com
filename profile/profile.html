@@ -172,12 +172,15 @@
       </div>
     </div>
     <div class="memberSince">
-    	Memeber Since: 09/13/2010<br />
+    	Member Since: 09/13/2010<br />
         Last modified: 02/22/2012
     </div>
+	<div id="profile">
     <!-- STart of Main -->
     <div id="profileLeft" class="col-5-8">
     	<div id="roomieResult" class="profileList">
+				            <div class="profileGrayOut"><span>You don't have any roomie matches. YetGO to <a href='#'>Roomie Matches to find roomate matches for you.</a></span></div>
+
         	<h3>Roomie Match Results</h3>
             <p>Looking for a roomate? Use our <a href="#"> Roomie Match</a> to connect to profile matches.</p>
             <div class="profileSquare">
@@ -203,9 +206,10 @@
             <div class="viewAllContainer">
             	<a href="#">View All</a>
             </div>
-            <div class="profileGrayOut"><span>You don't have any roomie matches. YetGO to <a href='#'>Roomie Matches to find roomate matches for you.</a></span></div>
         </div>
+
           <div id="housingResult" class="profileList">
+
         	<h3>Housing Match Result</h3>
             <p>Use <a href="#">Compare Housing</a> to locate the dorm or apartment that best suits you.</p>
             <div class="profileSquare">
@@ -231,8 +235,8 @@
             <div class="viewAllContainer">
             	<a href="#">View All</a>
             </div>
-            <div class="profileGrayOut"></div>
         </div>
+
         <div id="propertyResult" class="profileList">
         	<h3>Properties Chcked for Avaiability</h3>
             <p>TO check availability for a property go to <a href="#">Compare Housing</a></p>
@@ -259,7 +263,6 @@
             <div class="viewAllContainer">
             	<a href="#">View All</a>
             </div>
-            <div class="profileGrayOut"></div>
         </div>
          <div id="suggestedCM" class="profileList">
         	<h3>Suggested Community Managers to Contact</h3>
@@ -287,7 +290,6 @@
             <div class="viewAllContainer">
             	<a href="#">View All</a>
             </div>
-            <div class="profileGrayOut"></div>
         </div>
         <div id="campusVisit" class="profileList">
         	<h3>Plan a Campus Visit</h3>
@@ -315,7 +317,6 @@
             <div class="viewAllContainer">
             	<a href="#">View All</a>
             </div>
-            <div class="profileGrayOut"></div>
         </div>
   
     </div>
@@ -386,7 +387,6 @@
           </tr>
         </tbody>
       </table>
-      </center>
       <div class="deadlineLegend">
   <ul>
     <li>
@@ -410,11 +410,11 @@
       <div class="legendText">Other</div>
     </li>
   </ul>
-</div>
+</div></center>
         </div>
         <div id="answeredQuestions">
         	<h2 class="marginBot0">Answered Questions</h2>
-            <p class="marginTop10"><i>LYou have no answered question, feel free to ask</i></p>
+            <p class="marginTop10"><i>You have no answered question, feel free to ask</i></p>
             <ul>
             	<li><div class="date">
             </ul>
@@ -426,16 +426,16 @@
             video tour or photos of your dorm and  recieve 
             10 dollars or a free pizza. Video or photos may be taken with a phone.</p>
             <ul>
-                <li><input type="text" placeholder="Name"/></li>
-                <li><input type="text" placeholder="Email" /></li>
-                <li><input type="text" placeholder="File Name" /></li>
-                <li><textarea placeholder="Description"></textarea></li>
+                <li><input type="text" class="name" placeholder="Name"/>
+                <input type="text" class="name" placeholder="Email" /></li>
+                <li><input type="text" class="file" placeholder="File Name" /> <button class="browse">Browse</button></li>
+                <li><textarea class="desc" placeholder="Description"></textarea></li>
                 <li><button style="float:right;">Submit</button></li>
             </ul>
         </div>
     </div>
     
-   
+   </div>
   </div>
 </div>
 </body>

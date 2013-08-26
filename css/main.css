@@ -28,7 +28,7 @@ margin:auto;
 /* ==================== MAIN CONTENT =====================*/
 body{
 position:relative;
-overflow:visible;
+overflow:hidden;
 width:100%;
 }
 @media (min-width:1500px){
@@ -39,7 +39,6 @@ width:100%;
 	padding-top: 25px;
 	padding-bottom: 30px;
 	position:relative;
-	overflow:hidden;
 	
 }
 }
@@ -51,7 +50,6 @@ width:100%;
 	padding-top: 25px;
 	padding-bottom: 30px;
 		position:relative;
-	overflow:hidden;
 }
 }
 @media (max-width:1300px){
@@ -62,7 +60,6 @@ width:100%;
 	padding-top: 25px;
 	padding-bottom: 30px;
 		position:relative;
-	overflow:hidden;
 }
 }
 @media (max-width:1000px){
@@ -73,7 +70,6 @@ width:100%;
 	padding-top: 25px;
 	padding-bottom: 30px;
 		position:relative;
-	overflow:hidden;
 }
 }
 #maincontent h2 {
@@ -1833,9 +1829,15 @@ text-align:center;
 	height: 25px;
 	border-radius: 50%;
 }
-.legendText{display:inline-block;margin-top:3px;}
-.deadlineLegend ul{padding-left:117px;}
-.deadlineLegend li{display:inline-block; margin-right:10px;}
+.legendText{display:inline-block;margin-top:3px; margin-left:5px;}
+#profileRight{
+}
+.deadlineLegend ul{
+width:400px;
+margin:auto;
+
+}
+.deadlineLegend li{display:block; margin-right:20px;}
 .deadlineLegend li:first-child .circle{background-color:rgb(221, 135, 39);}
 .deadlineLegend li:nth-child(2) .circle{background-color:green;}
 .deadlineLegend li:nth-child(3) .circle{background-color:purple;}
@@ -1844,15 +1846,15 @@ text-align:center;
 
 
 #monthContainer{
-	width:225px;
+	width:150px;
 	font-family:HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size:30px;
+	font-size:24px;
 	color:rgb( 51, 62, 106);
 	display:inline-block;
 	text-align:center;
 	white-space:nowrap;
 }
-#calendarHeader{margin:0 auto; width:335px; }
+#calendarHeader{margin:0 auto; width:; }
 #calendarHeader button{
 	border: 0;
 	background-color: transparent;
@@ -1860,6 +1862,11 @@ text-align:center;
 	font-size: 14px;
 	color: rgb(51, 62, 107);
 	display: inline-block;
+	
+}
+#calendarHeader button img{
+width:15px;
+height:15px;
 }
 #calendarHeader h2{
 	display:inline-block;
@@ -1933,26 +1940,128 @@ text-align:center;
 	#maincontent.calendar{width:100%; margin:0 auto;}
 }
 /* ============== User Profile ============= */
+.profile #upload, .profile #answeredQuestions{
+padding:10px 0;
+text-align:left;
+}
+.profile #profileCalendar{
+padding-bottom:10px;
+}
+.profileRight .deadlineLegend{
+width:100%;
+text-align:left;
+}
+.profile .deadlineLegend ul{
+margin:auto;
+max-width:100%;
+}
+@media(max-width:1000px){
+.profile .deadlineLegend ul{
+width:300px;
+margin:auto;
+}
+}
+.profile .deadlineLegend ul li{
+display:inline-block;
+}
 .profileTopContainer .portrait{
 	display:inline-block;
 	vertical-align:top;
 	margin-right: 10px;
 }
 .profileTopContainer{
-	height:200px;
+margin:auto;
+text-align:center;
+}
+@media (min-width:1000px){
+.profile .name{
+width:49%;
+height:25px;
+}
+.profile .file{
+width:75.9%;
+height:25px;
+}
+.profile .browse{
+margin-left:0;
+}
+
+.profile .desc{
+width:99.5%;
+height:100px;
+}
+
+}
+@media(max-width:1000px){
+.profile .name{
+width:48.5%;
+height:25px;
+}
+.profile .file{
+width:69.9%;
+height:25px;
+}
+.profile .browse{
+margin-left:0;
+}
+
+.profile .desc{
+width:98.5%;
+height:100px;
+}
+
+}
+
+@media(min-width:1300px){
+.profile .name{
+width:49.3%;
+height:25px;
+}
+.profile .file{
+width:82.5%;
+height:25px;
+}
+.profile .browse{
+margin-left:0;
+}
+
+.profile .desc{
+width:99.5%;
+height:100px;
+}
+}
+@media (min-width:1000px){
+.profileInfo{width:760px; padding-top:0px; height:224px;}
+}
+@media (min-width:1300px){
+.profileInfo{width:1060px}
+#profile{width:1300px; }
+#profileRight{
+width:483px;
+}
+#profileLeft{
+
+}
+}
+@media (max-width:1000px){
+#profileRight{
+width:315px;
+}
+#maincontent{width:850px}
+.profileInfo{width:610px}
 }
 .profileInfo{
 	display:inline-block;
 	vertical-align:top;
 	background-color:rgb(232, 229, 228);
-	width:80%;
 	color:rgb( 51, 62, 106);
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:14px;
 	padding-left:10px;
-	padding-top:5px;
+	padding-top:0px;
 	padding-bottom:5px;
 	position:relative;
+	text-align:left;
 }
 .profileLeft
 .profileInfo ul{margin:0;}
@@ -1963,8 +2072,8 @@ text-align:center;
 	margin-bottom:3.4px;
 }
 .profileTopContainer .portrait img{
-	width:200px; 
-	height:200px;
+	width:224px; 
+	height:224px;
 }
 
 .profileList{
@@ -1979,6 +2088,7 @@ text-align:center;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:14px;
 	color:rgb( 51, 62, 106);
+	text-align:left;
 }
 .profileList .grayOut{
 	position:absolute;
@@ -1986,12 +2096,20 @@ text-align:center;
 }
 .profileSquare{
 	display:inline-block;
-	width: 24%;
+	width: 150px;
+	margin-right:65px;
 }
+@media (min-width:1000px){
+.profileSquare{margin-right:2px}
+}
+@media (min-width:1300px){
+.profileSquare{margin-right:49px; text-align:left;}
+}
+
 .profileSquare img{
 	height:150px;
 	width:150px;
-	display:block;
+	display:inline-block;
 	margin:0 auto;
 }
 #maincontent .profileSquare p{text-align:center; margin:0;}
@@ -1999,24 +2117,30 @@ text-align:center;
 #profileRight{
 	padding:0 35px;	
 }
-.viewAllContainer{display:block; margin-top:10px;}
-.viewAllContainer a{float:right; margin-right:60px;}
+.viewAllContainer{display:block; margin-top:10px; padding-bottom:5px;}
+.viewAllContainer a{position:absolute; right:20px;}
 #profileCalendar, #answeredQuestions{border-bottom:1px solid rgb(116,116,116);}
 #maincontent.profile .deadlineLegend{
-	width:600px;
-	margin-left:-100px;
 }
+
+@media (max-width:1000px){
+.profileGrayOut{height:468px}
+}
+@media (min-width:1000px){
 .profileGrayOut{
+height:281px;
+}
+}
+
+.profileGrayOut{
+margin-top:5px;
 	position:absolute;
 	z-index:1;
 	background-color:rgba(255,255,255,0.8);
-	height:100%;
 	width:100%;
 }
 .profileGrayOut span{
-	height:25px;
 	width:100%;
-	background:white;
 	color:rgb( 51, 62, 106);
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:14px;
