@@ -938,21 +938,21 @@
 <p><i>Receieve deadline reminder, either to your email, phone, or calendar.</i></p>
 <div class="specialIcon">
 <ul>
-<li>
-  <div id="ei1" class="icon"></div>
-  <div class="iconInfo">Sync selected reminders</div>
+<li >
+  <div  class="icon" onclick=syncReminders()></div>
+  <div class="iconInfo" onclick=syncReminders()>Sync selected reminders</div>
   <p>Use our syncing features to remember all your deadline<br />
     Using it again to Remember</p>
 </li>
 <li>
-  <div id="ei2" class="icon"></div>
-  <div class="iconInfo">Receive texts of selected reminders</div>
+  <div onclick=texts(); class="icon"></div>
+  <div onclick=texts(); class="iconInfo">Receive texts of selected reminders</div>
   <p>Use our syncing features to remember all your deadline<br />
     Using it again to Remember</p>
 </li>
 <li>
-  <div id="ei3" class="icon"></div>
-  <div class="iconInfo">Receive emails of selected reminders</div>
+  <div onclick=emails(); class="icon"></div>
+  <div onclick=emails(); class="iconInfo">Receive emails of selected reminders</div>
   <p>Use our syncing features to remember all your deadline<br />
     Using it again to Remember</p>
 </li>
@@ -964,7 +964,7 @@
 <div id="ep1" class="emailPopUpContainer">
   <div class="emailPopUp">
     <div class="topBar">
-      <div class="xClose">X</div>
+      <div class="xClose" onclick=close();>X</div>
     </div>
     <center>
       <h2>Sync to Calendar</h2>
@@ -1048,17 +1048,39 @@ calendarSlider = new Swipe(document.getElementById('calendarSlider'), {
   transitionEnd: function(index, elem) {}
 });
 
+$('#overlayBackground').click(function(){
+$('#ep1').hide();	
+$('#ep2').hide();	
+$('#ep3').hide();	
+
+});
+
     $('.xClose').click(function(){
 		$('#overlayBackground').hide();
 		$(this).parent().parent().hide();
 	});
-	$('#ei1').click(function(){
-		$('#ep1').show();
-		});
-			$('#ei2').click(function(){
-		$('#ep2').show();
-		});
-			$('#ei3').click(function(){
-		$('#ep3').show();
-		});
+
+
+</script>
+<script>
+
+function syncReminders(){
+	document.getElementById('overlayBackground').style.display='block';
+
+	document.getElementById('ep1').style.display='block';
+}
+function texts(){
+document.getElementById('overlayBackground').style.display='block';
+
+	document.getElementById('ep2').style.display='block';
+}
+
+function emails(){
+document.getElementById('overlayBackground').style.display='block';
+
+	document.getElementById('ep3').style.display='block';
+}
+
+
+
 </script>
