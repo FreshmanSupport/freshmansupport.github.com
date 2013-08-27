@@ -7,6 +7,14 @@
 	font-family: "HNB";
 	src: url(../fonts/helveticaneue-boldcond.otf);
 }
+table{
+color:rgb(116,116,116);
+font-family:Georgia;
+font-size:14px;
+}
+input{
+height:25px;
+}
 textarea{
 resize:none;
 height:25px;
@@ -61,17 +69,21 @@ width:100%;
 	padding-top: 25px;
 	padding-bottom: 30px;
 		position:relative;
-}
+
+		}
 }
 @media (max-width:1000px){
 #maincontent {
 	background: white;
-	width: 700px;
+	width: 850px;
+	max-width:100%;
 	margin: 0 auto;
 	padding-top: 25px;
 	padding-bottom: 30px;
 		position:relative;
 }
+}
+#maincontent{
 }
 #maincontent h2 {
 	color: rgb(51, 62, 107);
@@ -1012,14 +1024,36 @@ width:350px;
 	padding-left: 10px;
 }
 /* ======= Send Messages ============ */
+.messages h2{
+margin-top:-10px;
+}
+.messages #buttonContainer{
+margin-left:10px;
+position:relative;
+width:100%;
+
+}
+#buttonContainer #messagesSearchContainer{
+position:absolute;
+right:30px;
+top:0;
+}
+.messages{
+text-align:center;
+width:100%;
+}
+#overallContainer #buttonContainer, #overallContainer #yourContact, #overallContainer #messageContainer, #overallContainer #messageBox, #overallContainer #inboxContainer {
+text-align:left;
+}
 .sendMessages {
 	background-color: rgb(232, 229, 228);
-	width: 94%;
+	width: 100%;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	position: relative;
 	margin-top: -20px;
 	padding-left: 30px;
+	text-align:left;
 }
 .sendMessages .triangle {
 	position: absolute;
@@ -1752,7 +1786,16 @@ margin-left: 25px;}
 /* ============== Deadlines =================== */
 
 .smallCalendar .title{}
-#sideCalendar{display:inline-block; width:170px; height: 555px ;overflow-y:scroll; 	padding-left:0px;}
+.calendar{
+text-align:center;
+margin:auto;
+}
+#sideCalendar{display:inline-block; width:170px; height: 708px ;overflow-y:scroll; 	padding-left:0px; margin:auto; }
+#mainCalendar{ display:inline-block; margin:auto;}
+#deadlineNotification{
+display:inline-block;
+margin:auto;
+}
 .calendar .smallCalendar table{}
 .smallCalendar{
 	text-align:center; 
@@ -1778,7 +1821,6 @@ text-align:center;
 }
 #mainCalendar{
 	display:inline-block; 
-	width: 600px;
 	border-left:1px solid rgb(116, 116, 116);
 	border-right:1px solid rgb(116,116,116);
 	vertical-align:top;
@@ -1808,7 +1850,28 @@ text-align:center;
 #infoBox li{margin-bottom:10px;}
 #maincontent #infoBox h3{}
 
-#deadlineNotification{display:inline-block; width: 480px; padding-left:30px; vertical-align:top; text-align:left;}
+#deadlineNotification{display:inline-block; width: 550px; padding-left:20px; padding-right:10px; vertical-align:top; text-align:left;}
+@media (min-width:1000px){
+.calendar{width:1000px}
+#deadlineNotification{width:460px}
+#mainCalendar{width:520px;}
+#sideCalendar{width:170px;}
+}
+@media(min-width:1300px){
+.calendar{width:1300px}
+
+#deadlineNotification{width:550px}
+#mainCalendar{width:600px;}
+#sideCalendar{width:170px;}
+}
+@media(max-width:1000px){
+.calendar{width:850px}
+
+#deadlineNotification{width:100%; margin-top:10px; border-top:1px solid rgb(116,116,116);}
+#mainCalendar{width:676px; border-right:none;}
+#sideCalendar{width:170px;}
+}
+
 .specialIcon{margin-top:28px;}
 .specialIcon .icon{width:20px; height:15px; background-color:rgb( 51, 62, 106); display:inline-block;margin-right:5px;}
 .specialIcon .iconInfo{
@@ -1837,6 +1900,13 @@ text-align:center;
 width:400px;
 margin:auto;
 
+}
+.calendar .deadlineLegend{
+width:100%;
+}
+.calendar .deadlineLegend ul li{
+width:110px;
+display:inline-block;
 }
 .deadlineLegend li{display:block; margin-right:20px;}
 .deadlineLegend li:first-child .circle{background-color:rgb(221, 135, 39);}
@@ -1886,8 +1956,8 @@ height:15px;
 	background-position:10px 7px;
 	color:white;
 }
-#calendarWrapper{width:1420px; margin: 0 auto; display:block; font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;}
-#maincontent.calendar{width:100%; margin-left:59; margin-right:auto;}
+#calendarWrapper{width:100%; margin: 0 auto; display:block; font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;}
+#maincontent.calendar{max-width:100%; margin-left:59; margin-right:auto;}
 .emailPopUpContainer{position:absolute; left:50%; top:300px; display:none;}
 .emailPopUp{
 	position:relative;
@@ -1937,8 +2007,8 @@ height:15px;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:14px;
 }
-@media(max-width:1000){
-	#maincontent.calendar{width:100%; margin:0 auto;}
+@media(max-width:1000px){
+	#maincontent.calendar{width:850px; margin:0 auto;}
 }
 /* ============== User Profile ============= */
 .profile #upload, .profile #answeredQuestions{
@@ -2424,7 +2494,7 @@ hr {
 	line-height: 14px;
 	padding-left:1px;
 }
-.buttonContainer{display:block; width:100%; overflow:hidden;}
+.buttonContainer{display:block; width:100%; overflow:hidden; }
 .tab{ text-indent:40px;}
 .hr{height:1px; border-bottom: 1px solid rgb(116,116,116); width: 100%; margin:0 auto;}
 .ring{
