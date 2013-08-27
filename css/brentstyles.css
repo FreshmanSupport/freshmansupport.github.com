@@ -66,6 +66,7 @@ a:active {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Time
 	font-family: HNL;
 	margin: 13px;
 }
+
 #maincontent h3 {
 	font-family: HNL;
 	font-size: 30px;
@@ -4026,7 +4027,7 @@ font-weight:normal;
 }
 #visitContainer h3{
 font-size:24px;
-color:rgb(51,62,106);
+color:rgb(116,116,116);
 font-family:HNL;
 margin:0;
 font-weight:normal;
@@ -4838,6 +4839,7 @@ right:88px;
 #dataPage{
 width:1000px;
 margin:auto;
+text-align:center;
 font-family:Georgia;
 font-size:14px;
 color:rgb(116,116,116);
@@ -4867,28 +4869,38 @@ margin:0;
 	margin:auto;
 }
  #dataPage #middle{
-width:385px;
+width:405px;
 display:inline-block;
 vertical-align:top;
 position:relative;
 text-align:center;
 margin:auto;
+vertical-align:top;
 }
 #dataPage #right{
-width:300px;
+width:280px;
 display:inline-block;
 vertical-align:top;
 position:relative;
 text-align:center;
+padding-left:5px;
+min-height:745px;
+
 }
 #dataPage #left{
 padding-bottom:30px;
-width:300px;
+width:280px;
+padding-right:5px;
 position:relative;
 display:inline-block;
 text-align:center;
-}
+vertical-align:top;
+min-height:745px;
 
+}
+#dataPage #top{
+display:none;
+}
 #dataPage h3{
 color:rgb(116,116,116);
 font-size:24px;
@@ -4900,10 +4912,10 @@ margin-top:0px;
 border-right:1px solid rgb(116,116,116);
 vertical-align:top;
 }
+
 	
 	#dataPage #left button{
-	position:absolute;
-	right:79px;
+	margin:auto;
 	margin-top:10px;
 	}
 	
@@ -4941,13 +4953,54 @@ font-style:italic;
 }
 
 	
+@media(max-width:1000px){
+
+#maincontent #dataPage{
+width:850px;
+margin:auto ;
+padding:0;
+text-align:center;
+}
+#dataPage #left{
+display:none;
+}
+#dataPage #middle{
+width:420px
+}
+#dataPage #right{
+	width:420px;
+}
+#dataPage #top{
+display:block;
+width:820px;
+text-align:center;
+margin:auto;
+border-bottom:1px solid rgb(116,116,116);
+margin-bottom:10px;
+}
+#dataPage #topDrop{
+padding-bottom:10px;
+margin-bottom:10px;
+}
+
+#dataPage #top table{
+margin:auto;
+text-align:center;
+}
+#dataPage #top table textarea{
+text-align:center;
+}
+
+
+}	
+	
 @media (min-width:1300px){
 #dataPage{
 width:1300px;
 margin:auto;
 }
 #dataPage #left, #dataPage #right{
-width:405px;
+width:400px;
 min-height:745px;
 }
 
@@ -4958,8 +5011,9 @@ margin-right:15px;
 
 
 
-}	
-	
+}
+
+
 
 
 

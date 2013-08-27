@@ -136,6 +136,44 @@
 </div>
 <div id="maincontent" >
   <div id="dataPage">
+  <div id="top">
+  <h2 style="cursor:pointer; padding:0; margin-bottom:5px" onclick=topDrop();>Your Information <img src="../../img/triangle.png" width=20px style="margin-left:550px; position:relative; top:-1px; cursor:pointer;"></h2>
+  
+  <div id="topDrop" style="display:none">
+  <h3>SAT Scores</h3>
+	<table><tr><td>Math</td><td>Reading</td><td>Writing</td></tr>
+	<tr><td><textarea></textarea></td><td><textarea></textarea></td><td><textarea></textarea></td></tr>
+	</table>
+	
+	<h3 style="margin-top:20px">ACT Scores</h3>
+	
+	<table><tr><td>Math</td><td>Reading</td><td>Writing</td></tr>
+	<tr><td><textarea></textarea></td><td><textarea></textarea></td><td><textarea></textarea></td></tr>
+	</table>
+	
+		<h3 style="margin-top:20px">Class Rank</h3>
+
+	<div class="notSelected" id="lower50" onclick="rank(this.id);">Lower 50%</div>
+	<div class="notSelected" onclick="rank(this.id);"id="top50">Top 50%</div>
+	<div class="notSelected" id="top25" onclick="rank(this.id);">Top 25%</div>
+		<h3 style="margin-top:20px;">Extracurricular Activity Strength</h3>
+
+<!--Sliders--->
+			<h3 style="margin-top:20px;">Recommendation Strength</h3>
+			<!--Sliders--->
+
+		<h3 style="margin-top:20px;">Essay Strength</h3>
+
+	<!--Sliders--->
+
+	
+	<button onclick=topDrop();>Recalculate</button>
+	
+  
+  
+  </div>
+  
+  </div>
 	<div id="left">
 	<h2>Your Information</h2>
 	<h3>SAT Scores</h3>
@@ -286,6 +324,11 @@ if(x!='top50') document.getElementById('top50').className = 'notSelected';
 if(x!='top25') document.getElementById('top25').className = 'notSelected';
 document.getElementById(x).className = 'selected';
 
+}
+function topDrop(){
+	if(document.getElementById('topDrop').style.display=='block')
+		document.getElementById('topDrop').style.display='none';
+	else document.getElementById('topDrop').style.display='block';
 }
    
 </script>
