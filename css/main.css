@@ -76,7 +76,7 @@ width:100%;
 #maincontent {
 	background: white;
 	width: 850px;
-	max-width:100%;
+min-width:850px;
 	margin: 0 auto;
 	padding-top: 25px;
 	padding-bottom: 30px;
@@ -1847,13 +1847,20 @@ margin:auto;
 #maincontent #infoBox h3{}
 
 #deadlineNotification{display:inline-block; padding-left:20px; padding-right:10px; vertical-align:top; text-align:left;}
+#squeezeWrapper{display:inline-block; vertical-align:top;}
 @media (max-width:1300px){
 #maincontent.calendar{width:1000px; }
-#deadlineNotification{width:1000px; border-top:1px solid rgb(116,116,116); margin-top:10px; padding-top:5px;}
-#mainCalendar{width:800px; border-right:none;}
+#deadlineNotification{width:800px; border-bottom:1px solid rgb(116,116,116); padding-bottom:5px;}
+#mainCalendar{width:800px; border:none; padding-top:10px; padding-left:5px;}
 #sideCalendar{width:170px; }
+#deadline13{display:none}
+#deadlineSqueeze{display:block; padding-left:5px;}
+#squeezeWrapper{border-left:1px solid rgb(116,116,116)};
 }
+
 @media(min-width:1300px){
+#deadlineSqueeze{display:none}
+#deadline13{display:inline-block; vertical-align:top;}
 #maincontent.calendar{width:1300px; }
 
 #deadlineNotification{width:520px}
@@ -1863,10 +1870,11 @@ margin:auto;
 
 
 @media(max-width:1000px){
+
 #maincontent.calendar{width:850px; }
 
-#deadlineNotification{width:850px; margin-top:10px; border-top:1px solid rgb(116,116,116);}
-#mainCalendar{width:676px; border-right:none;}
+#deadlineNotification{width:670px; margin-top:10px; border-bottom:1px solid rgb(116,116,116);}
+#mainCalendar{width:670px; border-right:none;}
 #sideCalendar{width:170px;}
 }
 .icon,.iconInfo{cursor:pointer}
@@ -1874,18 +1882,19 @@ margin:auto;
 #maincontent.calendar{width:850px; max-width:850px; min-width:850px;}
 }
 .specialIcon{margin-top:28px;}
-.specialIcon .icon{width:20px; height:15px; background-color:rgb( 51, 62, 106); display:inline-block;margin-right:5px;}
-.specialIcon .iconInfo{
+.calendar .icon{width:10px; height:10px; background-color:rgb( 51, 62, 106); display:inline-block;margin-right:5px;}
+.calendar .iconInfo{
 	display:inline-block; 
 	width: 400px; 
 	color:rgb(51,62,106); 
 	font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size:24px;
+	font-size:14px;
 	vertical-align:top;
-	margin-top:-5px;
+	position:relative;
+	top:2px;
 	
 }
-#maincontent.calendar .specialIcon p{margin-top:10px; margin-bottom:20px; text-align:left; padding-left:30px;}
+#maincontent.calendar #deadlineNotification p{margin-top:10px; margin-bottom:20px; text-align:left; padding-left:30px;}
 .deadlineLegend{color:rgb(51,62,106); font-family:Georgia, "Times New Roman", Times, serif;font-size:14px; margin-top: 30px;}
 
 .deadlineLegend .circle{
@@ -1919,9 +1928,9 @@ display:inline-block;
 
 
 #monthContainer{
-	width:150px;
+	width:182px;
 	font-family:HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size:24px;
+	font-size:30px;
 	color:rgb( 51, 62, 106);
 	display:inline-block;
 	text-align:center;
@@ -1944,28 +1953,33 @@ height:15px;
 #calendarHeader h2{
 	display:inline-block;
 }
-#mainCalendar .circleOJ{
-	background-image:url(../img/BUT/orangeCircle.png);
-	background-size:69% 81%;
-	background-repeat:no-repeat;
-	background-position:10px 7px;
+#mainCalendar .admissionsCircle, .financialCircle, .academicCircle, .housingCircle, .otherCircle{
+	border-radius:50%;
+	height:43px;
+	margin:auto;
+	width:43px;
+	display:block;
 	color:white;
+	vertical-align:bottom;
+text-align:center;
 }
-#mainCalendar .circleNavy{
-	background-image:url(../img/BUT/navyCircle.png);
-	background-size:69% 81%;
-	background-repeat:no-repeat;
-	background-position:10px 7px;
-	color:white;
+.admissionsCircle{
+background-color:rgb(221,135,39);
 }
+.financialCircle{background-color:green}
+.academicCircle{background-color:purple}
+.housingCircle{background-color:rgb(51,62,106)}
+.otherCircle{background-color:rgb(102,0,0)}
+
+
+
+
+
 #calendarWrapper{width:100%; margin: 0 auto; display:block; font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;}
 #maincontent.calendar{max-width:100%; margin-left:59; margin-right:auto;}
-.emailPopUpContainer{position:absolute; left:50%; top:300px; display:none; z-index:100000000;}
+.emailPopUpContainer{position:absolute; left:50%; top:00px; display:none; z-index:100000000;}
 
-@media(max-width:1300px){
-.emailPopUpContainer{position:absolute; left:50%; top:800px; display:none; z-index:100000000;}
 
-}
 .emailPopUp{
 	position:relative;
 	width:700px;

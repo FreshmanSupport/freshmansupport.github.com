@@ -132,7 +132,6 @@
 </div>
 <div id="maincontent" class="calendar">
 <!-- Side Calendar -->
-<div id="calendarWrapper">
 <div id="sideCalendar">
   <div class="smallCalendar">
     <div class="title">January </div>
@@ -759,6 +758,38 @@
     </table>
   </div>
 </div>
+
+
+
+<div id="squeezeWrapper" style="display:inline-block">
+<div id="deadlineSqueeze">
+<div id="deadlineNotification">
+<h2>Receive Deadline
+  Notifications</h2>
+<p><i>Receieve deadline reminder, either to your email, phone, or calendar.</i></p>
+<div class="specialIcon"></div>
+<ul>
+<li >
+  <div  class="icon" onclick=syncReminders()></div>
+  <div class="iconInfo" onclick=syncReminders()>Sync selected reminders</div>
+  <p>Use our syncing features to remember all your deadline<br />
+    Using it again to Remember</p>
+</li>
+<li>
+  <div onclick=texts(); class="icon"></div>
+  <div onclick=texts(); class="iconInfo">Receive texts of selected reminders</div>
+  <p>Use our syncing features to remember all your deadline<br />
+    Using it again to Remember</p>
+</li>
+<li>
+  <div onclick=emails(); class="icon"></div>
+  <div onclick=emails(); class="iconInfo">Receive emails of selected reminders</div>
+  <p>Use our syncing features to remember all your deadline<br />
+    Using it again to Remember</p>
+</li>
+</ul>
+</div>
+</div>
 <div id="mainCalendar">
 <div id="calendarHeader">
   <button onClick="calendarSlider.prev()"><img src=../img/arrowLeft.png width=25px height=25px/> </button>
@@ -784,7 +815,7 @@
             <td><span class="date">&nbsp;</span></td>
             <td><span class="date">&nbsp;</span></td>
             <td><span class="date">1</span></td>
-            <td class="circleOJ"><span class="date">2</span></td>
+            <td ><span class="date"><div class=admissionsCircle>2</div></span></td>
             <td><span class="date">3</span></td>
             <td><span class="date">4</span></td>
             <td><span class="date">5</span></td>
@@ -809,7 +840,7 @@
           </tr>
           <tr>
             <td><span class="date">20</span></td>
-            <td class="circleNavy"><span class="date">21</span></td>
+            <td class="circleNavy"><div class="housingCircle">21</div></td>
             <td><span class="date">22</span></td>
             <td><span class="date">23</span></td>
             <td><span class="date">24</span></td>
@@ -889,7 +920,6 @@
       </table>
     </div>
   </div>
-</div>
 <div class="deadlineLegend">
   <ul>
     <li>
@@ -929,11 +959,19 @@
 <li>
   <div class="infoLabel"><a href="#">Financial:</a></div>
   <div class="infoContent">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor qua</div>
-</li>
-</div>
-</div>
-<div id="deadlineNotification">
-<h2>Receive Deadline<br />
+</li></ul>
+</div></div>
+</div></div>
+
+
+
+
+
+
+
+<div id="deadline13">
+<div id="deadlineNotification" >
+<h2>Receive Deadline
   Notifications</h2>
 <p><i>Receieve deadline reminder, either to your email, phone, or calendar.</i></p>
 <div class="specialIcon">
@@ -956,10 +994,9 @@
   <p>Use our syncing features to remember all your deadline<br />
     Using it again to Remember</p>
 </li>
+</ul>
 </div>
-</div>
-</div>
-</div>
+</div></div>
 
 <div id="ep1" class="emailPopUpContainer">
   <div class="emailPopUp">
@@ -1032,10 +1069,10 @@
       <div class="legal">*We will never inviade your privacy or collect data from syncing</div>
     </center>
   </div>
-</div>
-</div>
-</div>
+</div></div>
+</div></div>
 </body>
+</html>
 <script>
 calendarSlider = new Swipe(document.getElementById('calendarSlider'), {
   startSlide: 0,
