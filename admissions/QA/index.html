@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -160,7 +161,7 @@ $(document).ready(function(){
             <option>Class</option>
           </select>
         </div>
-        <button>Ask a Officer</button>
+        <button id="askQ">Ask a Officer</button>
       </div>
     </div>
     <ul>
@@ -200,11 +201,12 @@ $(document).ready(function(){
       </li>
     </ul>
   </div>
-  <div class="col-3-8 admissionsAsk">
+  <div class="col-3-8 admissionsAsk" id="admissionsAskWide">
     <h2>Ask a Admissions Officer</h2>
     <p class="marginTop10"><i>Our admissions officers have a est limit of question that can be sent each day. If an admissions officer
       is unavailable, please try again the following day, or view previously answered questions.</i></p>
-    <select id="officersSelect">
+<center>   
+   <select id="officersSelect">
       <option value="0"
             data-description="Select the Admissions Officer you would like to message."></option>
       <option value="1" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/facebook-icon-32.png"
@@ -218,9 +220,10 @@ $(document).ready(function(){
     </select>
     <form>
       <textarea name="question" placeholder="Enter your question here."></textarea>
-      <div class="col-1-2">
-      <div id="textareaBelow">
+      <div class="col-1-2" >
+      <div id="textareaBelow" style="position:relative"></center>
         <div class="dropDown">
+	
           <select>
             <option>Select a Category</option>
             <option>Admissions</option>
@@ -228,11 +231,58 @@ $(document).ready(function(){
             <option>Other</option>
           </select>
         </div>
-        <button style="float:right;">Send Question</button>
+        <button >Send Question</button>
         <p style="float:left;">*By submitting a question to one of Freshman Support's Admissions
           Officers, you agree to our <a href="#">Terms & Conditions.</a></p>
       </div>
     </form>
+  
+  
+  <div id="admissionsAskSqueeze" style="display:none; text-align:center; ">  <div class="col-3-8 admissionsAsk" style="margin:auto; width:49%; ">
+    <h2>Ask a Admissions Officer</h2>
+    <p class="marginTop10"><i>Our admissions officers have a est limit of question that can be sent each day. If an admissions officer
+      is unavailable, please try again the following day, or view previously answered questions.</i></p>
+<center>   
+   <select id="officersSelect">
+      <option value="0"
+            data-description="Select the Admissions Officer you would like to message."></option>
+      <option value="1" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/facebook-icon-32.png"
+            data-description="Salesperson<br /> Some Store In The Mall">Lindsay Bluth</option>
+      <option value="2" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/twitter-icon-32.png"
+            data-description="Description with Twitter">Twitter</option>
+      <option value="3" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/linkedin-icon-32.png"
+            data-description="Description with LinkedIn">LinkedIn</option>
+      <option value="4" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/foursquare-icon-32.png"
+            data-description="Description with Foursquare">Foursquare</option>
+    </select>
+    <form>
+      <textarea name="question" placeholder="Enter your question here."></textarea>
+      <div class="col-1-2" >
+      <div id="textareaBelow" style="position:relative"></center>
+        <div class="dropDown">
+	
+          <select>
+            <option>Select a Category</option>
+            <option>Admissions</option>
+            <option>Financial</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <button >Send Question</button>
+        <p style="float:left;">*By submitting a question to one of Freshman Support's Admissions
+          Officers, you agree to our <a href="#">Terms & Conditions.</a></p>
+      </div>
+    </form>
+  </div></div></div></div></div>	
+  
   </div>
-</div>
 </body>
+</html>
+<script>
+$("#askQ").click(function() {
+  $("#recentlyAnswered").toggle();
+  $("#admissionsAskSqueeze").toggle();
+});
+
+
+</script>

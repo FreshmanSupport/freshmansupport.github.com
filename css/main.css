@@ -116,7 +116,7 @@ h2 {
 a{font-family:Georgia, "Times New Roman", Times, serif; font-size:14px; text-decoration:none; color:rgb( 51, 62, 106);}
 /* ======================= Admission =================== */
 .admissions {}
-#recentlyAnswered{padding:0 50px;}
+#recentlyAnswered{padding:0 10px;}
 .admissions #data{border-left: 1px solid rgb(116,116,116);}
 .admissions #essay{border-left: 1px solid rgb(116,116,116); }
 .essay img {
@@ -400,13 +400,17 @@ max-width:100%;
 	border-bottom: 1px solid rgb(116,116,116);
 	margin-top: 20px;
 }
+#recentlyAnswered li:last-child{
+border:0;
+}
 #dropList{}
 #dropDown{width:300px; border: 1px solid rgb(116,116,116);}
 .dropOption div{width: 300px; height: 50px; background-color: rgb(232, 229, 228); border:1px solid rgb(116,116,116);}
 
-.admissionsAsk{padding-left: 50px; padding-right: 50px;}
-.admissionsAsk textarea{width: 420px; height: 100px; margin-top: 20px; margin-bottom: 20px;}
-.admissionsAsk .dropDown,.admissionsAsk .dropDown select{width: 200px;}
+.admissionsAsk{padding-left: 10px; padding-right: 10px; margin:auto;}
+.admissionsAsk textarea{width: 95.5%; height: 100px; margin:auto; margin-top: 20px; margin-bottom: 20px;}
+.admissionsAsk .dropDown,.admissionsAsk .dropDown select{width: 200px; display:inline-block; }
+.admissionsAsk .dropDown{margin-left:10px; margin-right:26.8%;}
 #officerPic{display:inline-block; width:150px; height:150px;}
 #officerDesc{display:inline-block; min-width:150px; height:150px;}
 #officerPic, #officerDesc{margin-bottom: 30px;vertical-align:top;margin-left:10px;}
@@ -2363,8 +2367,9 @@ text-align:left;
 .admissionsAsk #textareaBelow .dropDown{float:left;}
 .admissionsAsk #textareaBelow button{float:right;}
 @media(max-width:1318px){
-	.admissionsAsk.col-3-8{display:none;}
-	#maincontent.admissQA #recentlyAnswered{width:100%; border:0;}
+	#admissionsAskWide{display:none;}
+	.admissQA #recentlyAnswered{width:100%; border:0; }
+	.admissionsAsk .dropDown{margin-left:0; margin-right:28.5%}
 }
 /* ============== COLUMN  ===================*/
 
