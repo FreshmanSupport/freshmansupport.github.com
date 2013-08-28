@@ -29,6 +29,43 @@
         1-855-1166 ext. 502<br />
         801 West 24th Street
         </i></p>
+ <script>
+		function videoAvail(){
+		document.getElementById("videoAvail").style.display='none';
+		document.getElementById("videoAvailSent").style.display='block';
+		}
+		
+		</script>
+			<div id="videoAvail" style="padding-bottom:35px; position:relative;">
+			<h3>Check Availability</h3>
+			<span class="orange">*Optional</span><br>
+		<input style="text" placeHolder="Name"></input><input placeHolder="E-mail" style="width:200px"></input><input placeHolder="Phone #*"></input>
+		
+			
+	<div class="dropDown" id="semDrop" style="display:inline-block; width:242px; margin-left:2px">
+<select style="width:100%;">
+<option>Move In Semester</option>
+<option>Fall</option>
+<option>Spring</option>
+<option>Summer</option>
+</select></div>   
+	
+	
+            	<div class="dropDown" id="leaseDrop" style="display:inline-block; width:242px ">
+<select >
+<option >Leasing Period</option>
+<option>12 Month</option>
+<option>9 Month</option>
+<option>6 Month</option>
+<option>3 Month</option>
+</select></div> 
+
+<textarea placeHolder="Questions" type="text" style="width:476px; height:70px; margin-top:2px;  margin-left:2px"></textarea>
+<button style="position:absolute; right:8px; bottom:5px; " onclick=videoAvail();>Send</button>
+		</div>
+		<div id="videoAvailSent" style="display:none">
+		<p>Thank you, your availability has been sent!</p>
+		</div>
         </div>
     </div>
   </div>	
