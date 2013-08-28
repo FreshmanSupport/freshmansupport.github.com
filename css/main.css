@@ -373,6 +373,7 @@ max-width:100%;
 #recentlyAnswered.col-5-8{border-right:1px solid rgb(116,116,116);}
 #recentlyAnswered p {
 	text-align: left;
+	width:130%;
 }
 #recentlyAnswered img {
 	width: 150px;
@@ -1109,6 +1110,37 @@ text-align:left;
 	display: inline-block;
 }
 /* ================= The Real Life =================== */
+.slideWrap img{
+width:20px;
+height:20px;
+display:inline-block;
+position:relative;
+bottom:100px;
+margin:auto;
+cursor:pointer;
+}
+.slideWrapOrg img{
+width:20px;
+height:20px;
+display:inline-block;
+position:relative;
+bottom:70px;
+margin:auto;
+cursor:pointer;
+
+}
+#sliderDeg, #sliderOrg{
+display:inline-block;
+width:700px;
+margin:auto;
+text-align:center;
+}
+#sliderDeg img, #sliderOrg img{
+width:100px;
+height:auto;
+position:relative;
+bottom:0;
+}
 
 .trlSelectContainer{display:block;}
 .trlSelectContainer .sWrap{display:inline-block; width: 500px;}

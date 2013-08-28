@@ -4,6 +4,7 @@
 <link type="text/css" rel="stylesheet" href="../css/main.css"/>
 <link type="text/css" rel="stylesheet" href="../css/headerStyle.css"/>
 <script src="../js/swipe.js"></script>
+<script src="../js/oneSwipe.js"></script>
 
 <script src="../js/jquery-1.9.1.js" type="text/javascript"></script>
 <script type="text/javascript" src="../js/jquery.ddslick.js"></script>
@@ -164,6 +165,7 @@ $(document).ready(function(){
 </div>
 
 
+
  <!-- <table>
     <tr>
       <td><img src="../img/realLife/academic.png" /></td>
@@ -219,27 +221,65 @@ $(document).ready(function(){
 Use this interactive Real Life Profile Matcher to  match with your interest</i></p>
 <div class="trlSelectContainer">
  <center>
- <div class="sWrap">
- <select id="degreeDrop">
-      <option value="0"
-            data-description="Sort By Degree."></option>
-            <option value="1" data-imagesrc="../img/realLife/academic.png"
-            data-description="">Academicx</option>
-            <option value="2" data-imagesrc="../img/realLife/professional.png"
-            data-description="">Academicx</option>
-    </select>
-    </div>
-    <div class="sWrap">
-     <select id="orgDrop">
-      <option value="0"
-            data-description="Sort By Org."></option>
-            <option value="1" data-imagesrc="../img/realLife/fa.png"
-            data-description="">Academicx</option>
-            <option value="2" data-imagesrc="../img/realLife/b.png"
-            data-description="">Academicx</option>
-    </select>
-    </div></center>
-    </div>
+
+		  	<h3>Sort by Organization</h3>
+<div class="slideWrapOrg">
+			  <img src="../img/arrowLeft.png" onclick=sliderOrg.prev(); />
+
+	
+	  <div id='sliderOrg' class='swipeRecent' style="margin:20px 0;">
+      <div class='swipe-wrap'>
+	  
+	        <div><img src="../img/realLife/academic.png" /><p></p></div>
+      <div><img src="../img/realLife/professional.png" /><p></p></div>
+      <div><img src="../img/realLife/service.png" /><p></p></div>
+      <div><img src="../img/realLife/recreational.png" /><p></p></div>
+      <div><img src="../img/realLife/social.png" /><p></p></div>
+      <div><img src="../img/realLife/culutral.png" /><p></p></div>
+      <div><img src="../img/realLife/greek.png" /><p></p></div>
+      <div><img src="../img/realLife/political.png" /><p></p></div>
+      <div><img src="../img/realLife/artistic.png" /><p></p></div>
+      <div><img src="../img/realLife/spirit.png" /><p></p></div>
+      <div><img src="../img/realLife/spiritual.png" /><p></p></div>
+	   
+	  
+	  </div>
+	  </div>
+	  	  <img src="../img/arrowRight.png" style="margin-left:3px" onclick=sliderOrg.next(); />
+
+	  	</div>
+		<h3>Sort By Degree</h3>
+<div class="slideWrap">
+			  <img src="../img/arrowLeft.png" onclick=sliderDeg.prev(); />
+
+		<div id='sliderDeg' class='swipeRecent' style="margin:20px 0;">
+      <div class='swipe-wrap'>
+	  
+	  <div><img src="../img/realLife/fa.png" id="fa"/><p>Fine Arts</p>
+	   </div>
+	   <div><img src="../img/realLife/b.png" id="b"/><p>Business</p></div>
+	   <div><img src="../img/realLife/hs.png" id="hs"/><p>Health Sciences</p></div>
+	   <div><img src="../img/realLife/c.png" id="c"/><p>Communication</p></div>
+	   <div><img src="../img/realLife/ns.png" id="ns" /><p>Natural Sciences</p></div>
+	   <div><img src="../img/realLife/e.png" id="e" /><p>Engineering</p></div>
+	   <div><img src="../img/realLife/a.png" id="a"/><p>Architecture</p></div>
+	  <div><img src="../img/realLife/cs.png" id="cs"/><p>Computer Science</p></div>
+	  <div><img src="../img/realLife/edu.png" id="edu"/><p>Education</p></div>
+	  <div><img src="../img/realLife/la.png" id="la"/><p>Liberal Arts</p></div>
+	 <div> <img src="../img/realLife/o.png" id="o"/><p>Other</p></div>
+	  
+	  </div>
+	  </div>
+	  <img src="../img/arrowRight.png" style="margin-left:3px" onclick=sliderDeg.next(); />
+	  
+	  </div>
+	  
+	
+	
+	
+	
+	</center></div>
+	
   <div class="realLifeSquare">
       <div class="profilePic"> <img src="../img/port.png" />
         <button>Blog</button>
@@ -499,6 +539,28 @@ slider4 = new Swipe(document.getElementById('slider4'), {
   startSlide: 0,
   speed: 400,
   //auto: 9000000000000,
+  continuous: true,
+  disableScroll: false,
+  stopPropagation: false,
+  callback: function(index, elem) {},
+  transitionEnd: function(index, elem) {}
+});
+sliderOrg = new Swipe(document.getElementById('sliderOrg'), {
+  startSlide: 0,
+  speed: 400,
+  //auto: 9000000000000,
+  items:5,
+  continuous: true,
+  disableScroll: false,
+  stopPropagation: false,
+  callback: function(index, elem) {},
+  transitionEnd: function(index, elem) {}
+});
+sliderDeg = new Swipe(document.getElementById('sliderDeg'), {
+  startSlide: 0,
+  speed: 400,
+  //auto: 9000000000000,
+  items:5,
   continuous: true,
   disableScroll: false,
   stopPropagation: false,
