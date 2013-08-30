@@ -426,6 +426,7 @@ width:100%;
 	list-style-type: none;
 	margin:0;
 	padding:0;
+	text-align:left;
 }
 #recentlyAnswered li {
 	margin: 0;
@@ -482,16 +483,16 @@ border:0;
 	font-size: 14px;
 	color:rgb(51, 62, 107);
 }
-#uploadEssayForm input[type="text"]{width: 300px;}
-#uploadEssayForm li{padding-bottom:5px;}
+#uploadEssayForm input[type="text"]{width: 350px;}
+#uploadEssayForm li{padding-bottom:5px; position:relative; color:rgb(116,116,116); font-size:14px; font-family:Georgia}
 #uploadEssayForm center{
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size: 14px;
 	color:rgb(116,116,116);
 	width:400px;
 }
-#uploadEssayForm textarea{width:400px; height:150px;}
-#uploadEssayForm{margin:0 auto; width:410px;}
+#uploadEssayForm textarea{width:450px; height:150px;}
+#uploadEssayForm{margin:0 auto; width:510px;}
 #uploadEssayForm .agree{
 	width:309px;
 	color:rgb(51, 62, 107);
@@ -1459,6 +1460,7 @@ margin-left:15px;
 }
 .finances #data p {
 	margin-bottom: 0;
+	
 }
 .finances #dataTop .view {
 	margin-bottom: 17px;
@@ -1580,7 +1582,7 @@ margin-left:15px;
 {margin-top: 45px;}
 }
 @media(max-width:1499px){
-	.ring{margin-right:25px;}
+	.ring{margin-right:35px;}
 	#maincontent.finances #budgetPlanner h3
 {margin-top: 45px;}
 }
@@ -2420,7 +2422,7 @@ text-align:left;
 	color: orange;
 }
 .rmSpan{margin-bottom:27px;}
-.admissionsAsk #textareaBelow{width:420px; display:block;}
+.admissionsAsk #textareaBelow{width:420px; display:block; background-color:red}
 .admissionsAsk #textareaBelow .dropDown{float:left;}
 .admissionsAsk #textareaBelow button{float:right;}
 @media(max-width:1318px){

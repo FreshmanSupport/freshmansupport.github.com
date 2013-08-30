@@ -250,8 +250,8 @@
       </div>
     </div>
     <div id="answerNav">
-      <button><img src=../../img/arrowLeft.png width=10px/> Prev</button>
-      <div class="viewAns">View All Essay</div>
+      <button style="position:relative; top:0px"><img src=../../img/arrowLeft.png width=10px/> Prev</button>
+      <div class="viewAns">View All Essays</div>
       <button>Next <img src=../../img/arrowRight.png width=10px /></button>
     </div>
     </div>
@@ -275,12 +275,12 @@
             <label>SAT Score</label>
             <input type="text" id="sat" />
           </li>
-          <li>
+          <li style="margin-left:-93px; margin-top:0;">
             <label>Accepted</label>
             <label for="yes">Yes</label>
-            <input id="yes" type="radio" name="accepted" />
+            <input id="yes" type="radio" name="accepted" style="position:relative; top:8px"/>
             <label for="no">No</label>
-            <input id="no" type="radio" name="accepted"/>
+            <input id="no" type="radio" name="accepted" style="position:relative; top:8px"/>
           </li>
           <li>
             <label>Major</label>
@@ -291,26 +291,24 @@
             <input type="text" id="email"/>
           <li>
             <label>Upload Essay</label>
-            <input type="text" placeholder="Browse Files"/>
+            <input type="text" placeholder=""/>
+			<button style="position:absolute; right:27px; margin-top:30px;">Browse</button>
+
           </li>
           <li>
-            <center>
               -or-
-            </center>
           </li>
           <li>
-            <center>
-              Copy and Paste bellow!
-            </center>
+            Copy and past below!
           </li>
           <li>
             <textarea></textarea>
           </li>
           <li>
-            <input id="agree" type="checkbox"/>
-            <span class="agree">Agree to our Terms of Service of something</span>
+            <input id="agree" type="checkbox" style="margin-right:5p"/>
+            <span class="agree" style="position:relative; top:-8px;">Agree to our Terms of Service of something</span>
             </label>
-            <button id="submit">Submit</button>
+            <button style="position:absolute; right:27px; margin-top:35px" >Submit</button>
           </li>
         </ul>
       </form>
