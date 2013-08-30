@@ -69,6 +69,7 @@ width:100%;
 	padding-top: 25px;
 	padding-bottom: 30px;
 		position:relative;
+		
 
 		}
 }
@@ -84,6 +85,8 @@ min-width:850px;
 }
 }
 #maincontent{
+text-align:center;
+margin:auto;
 }
 #maincontent h2 {
 	color: rgb(51, 62, 107);
@@ -1116,7 +1119,7 @@ width:20px;
 height:20px;
 display:inline-block;
 position:relative;
-bottom:100px;
+bottom:116px;
 margin:auto;
 cursor:pointer;
 }
@@ -1132,12 +1135,12 @@ cursor:pointer;
 }
 #sliderDeg, #sliderOrg{
 display:inline-block;
-width:700px;
+width:550px;
 margin:auto;
 text-align:center;
 }
 #sliderDeg img, #sliderOrg img{
-width:100px;
+width:90px;
 height:auto;
 position:relative;
 bottom:0;
@@ -1550,6 +1553,7 @@ margin-left:15px;
 	margin: 0 auto;
 	margin-top: 20px;
 }
+
 @media(min-width:1500px){
 	.ring{margin-right:55px;}
 	#maincontent.finances #budgetPlanner h3
@@ -2561,7 +2565,7 @@ hr {
 	display:inline-block;
 }
 .ring:last-child{margin-right:0;}
-.ringContainer{padding-left:25px;}
+.ringContainer{}
 .pad50{padding:0 50px; !important}
 .marginBot0{margin-bottom:0;}
 .marginTop0{margin-top:0;}

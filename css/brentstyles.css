@@ -40,6 +40,31 @@ body{
 width:100%;
 position:relative;
 }
+
+#videoAvail #nameBox, #videoAvail #phoneBox{
+width:143px;
+margin-right:2px;
+}
+#videoAvail #mailBox{
+width:180px;
+margin-right:2px;
+
+}
+
+#videoAvail #qBox{
+height:70px;
+width:476px;
+margin-top:2px;
+}
+
+#videoAvail #check{
+position:absolute; right:10px; bottom:5px; 
+
+}
+
+
+
+
 a {color:rgb(51,62,106); font-size:14px; text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
 
 a:link {color:rgb(51,62,106); text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
@@ -1004,7 +1029,7 @@ line-height:20px;
 }
 /* ------- homepage ----------*/
 .homeSwipe{
-		height:305px;	
+		height:305px;	#re
 width:100%;		
 }	
 .leftBlue{
@@ -1727,8 +1752,12 @@ margin-top:10px;
 	background-color:white;
 	margin-left:20px;
 		position:relative;
+		padding-bottom:25px;
 }
-
+#property #recommendedHousingFooter{
+margin-top:10px;
+width:98%;
+}
 #property #right #reviews #item{
 	background-color:white;
 		margin:auto;
@@ -1909,6 +1938,13 @@ margin-top:0px;
 	font-family:HNL;
 	font-weight:normal;
 	font-size:30px;
+	color:rgb(51,62,106);
+	text-align:center;
+}
+#comparePage h3{
+font-family:HNL;
+	font-weight:normal;
+	font-size:24px;
 	color:rgb(51,62,106);
 	text-align:center;
 }
@@ -2801,6 +2837,7 @@ max-width:90%;
 #comparePage{
 max-width:90%;
 }
+
 .picsOver1000{
 display:none;
 }

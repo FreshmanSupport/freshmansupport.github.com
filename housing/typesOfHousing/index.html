@@ -70,12 +70,12 @@ $(function() {
 		
 		</script>
 			<div id="videoAvail" style="padding-bottom:35px; position:relative;">
-			<h3>Check Availability</h3>
+<h3>Check Availability</h3>
 			<span class="orange">*Optional</span><br>
-		<input style="text" placeHolder="Name"></input><input placeHolder="E-mail" style="width:200px"></input><input placeHolder="Phone #*"></input>
+		<input style="text" id="nameBox" placeHolder="Name"></input><input placeHolder="E-mail" id="mailBox" ></input><input id="phoneBox"  placeHolder="Phone #*"></input>
 		
 			
-	<div class="dropDown" id="semDrop" style="display:inline-block; width:242px; margin-left:2px">
+	<div class="dropDown" id="semDrop" style="display:inline-block; width:242px; ">
 <select style="width:100%;">
 <option>Move In Semester</option>
 <option>Fall</option>
@@ -93,8 +93,8 @@ $(function() {
 <option>3 Month</option>
 </select></div> 
 
-<textarea placeHolder="Questions" type="text" style="width:476px; height:70px; margin-top:2px;  margin-left:2px"></textarea>
-<button style="position:absolute; right:8px; bottom:5px; " onclick=videoAvail();>Send</button>
+<textarea placeHolder="Questions" type="text" id="qBox"></textarea>
+<button id="check" onclick=videoAvail();>Check Availability</button>
 		</div>
 		<div id="videoAvailSent" style="display:none">
 		<p>Thank you, your availability has been sent!</p>
@@ -529,7 +529,7 @@ $(function() {
   </div>
 
   <br>
-    <div id="recommendedHousingFooter" class="hidetil13">
+    <div id="recommendedHousingFooter" class="hidetil13" >
     <h2>Recommended Housing</h2>
     <br>
 	
@@ -570,24 +570,23 @@ $(function() {
   
   
   <div id="recommendedHousingFooter" class="hideThis">
-    <h2>Recommended Housing</h2>
-    <br>
+    <h2 style="margin-bottom:0px">Recommended Housing</h2>
 	<center>
-	<div id="item">
+	<div id="item" style="margin-top:-20px">
 		<a href="../property"><h3>Towers</h3></a>
 		<img src="../../img/property/place2.png" width="150px" height="135px" onclick=showVideo();>
 	
     </div>
 	
 	
-	<div id="item">
+	<div id="item" style="margin-top:-20px">
 		<a href="../property"><h3>Towers</h3></a>
 		<img src="../../img/property/place2.png" width="150px" height="135px" onclick=showVideo();>
 		
     </div>
 	
 		
-	<div id="item">
+	<div id="item" style="margin-top:-20px">
 		<a href="../property"><h3>Towers</h3></a>
 		<img src="../../img/property/place2.png" width="150px" height="135px" onclick=showVideo();>
 	

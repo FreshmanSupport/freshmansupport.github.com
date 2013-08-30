@@ -44,10 +44,10 @@
 			<div id="videoAvail" style="padding-bottom:35px; position:relative;">
 			<h3>Check Availability</h3>
 			<span class="orange">*Optional</span><br>
-		<input style="text" placeHolder="Name"></input><input placeHolder="E-mail" style="width:200px"></input><input placeHolder="Phone #*"></input>
+		<input style="text" id="nameBox" placeHolder="Name"></input><input placeHolder="E-mail" id="mailBox" ></input><input id="phoneBox"  placeHolder="Phone #*"></input>
 		
 			
-	<div class="dropDown" id="semDrop" style="display:inline-block; width:242px; margin-left:2px">
+	<div class="dropDown" id="semDrop" style="display:inline-block; width:242px; ">
 <select style="width:100%;">
 <option>Move In Semester</option>
 <option>Fall</option>
@@ -65,9 +65,8 @@
 <option>3 Month</option>
 </select></div> 
 
-<textarea placeHolder="Questions" type="text" style="width:476px; height:70px; margin-top:2px;  margin-left:2px"></textarea>
-<button style="position:absolute; right:8px; bottom:5px; " onclick=videoAvail();>Send</button>
-		</div>
+<textarea placeHolder="Questions" type="text" id="qBox"></textarea>
+<button id="check" onclick=videoAvail();>Check Availability</button>		</div>
 		<div id="videoAvailSent" style="display:none">
 		<p>Thank you, your availability has been sent!</p>
 		</div>
@@ -518,10 +517,81 @@
 	</div>
         
     </div>
+	    <div id="recommendedHousingFooter" class="hidetil13" >
+    <h2>Recommended Housing</h2>
+    <br>
+	
+	<div id="recommended" style="display:inline-block; width:100%; margin:auto; margin-top:-20px; text-align:center;" >
+   <div style="display:inline-block; text-align:center;  padding-right:10px; margin-right:10px;" onclick=showVideo()><img src="../../img/property/place2.png">
+     <div style="display:inline-block; margin-top:-4px;  vertical-align:top" >
+    <a href="../property"><h2 style="margin:0; text-align:center; ">Towers</h2></a>
+    <div class="interests" style="margin-top:10px"><a href="">855 People</a>
+	<span class="gray"  > are looking for <br>a roommate at the Towers</span></div>
+   <button style="margin-left:-2px; margin-top:28px;">Add to <span class="hidetil13" style="margin:0;">Your</span> Roomie Match</button>	
+    </div></div>
+	
+	
+  <div style="display:inline-block; text-align:center;  padding-right:10px; margin-right:10px;" onclick=showVideo()><img src="../../img/property/place2.png">
+     <div style="display:inline-block; margin-top:-4px; margin-left:10px; vertical-align:top" class="hidetil13">
+    <a href="../property"><h2 style="margin:0; text-align:center; ">Towers</h2></a>
+    <div class="interests" style="margin-top:10px"><a href="">855 People</a>
+	<span class="gray"  > are looking for <br>a roommate at the Towers</span></div>
+   <button style="margin-left:-2px; margin-top:28px;">Add to <span class="hidetil13" style="margin:0;">Your</span> Roomie Match</button>	
+    </div></div>
+		
+  <div style="display:inline-block; text-align:center; padding-right:10px; margin-right:10px;" onclick=showVideo()><img src="../../img/property/place2.png">
+     <div style="display:inline-block; margin-top:-4px; margin-left:10px; vertical-align:top" class="hidetil13">
+    <a href="../property"><h2 style="margin:0; text-align:center; ">Towers</h2></a>
+    <div class="interests" style="margin-top:10px"><a href="">855 People</a>
+	<span class="gray"  > are looking for <br>a roommate at the Towers</span></div>
+   <button style="margin-left:-2px; margin-top:28px;">Add to <span class="hidetil13" style="margin:0;">Your</span> Roomie Match</button>	
+    </div></div>
+		
+		
+	
+	</center>
+	
+  </div>
+  </center>
+	
+  </div>
+  
+  
+  <div id="recommendedHousingFooter" class="hideThis">
+    <h2>Recommended Housing</h2>
+    <br>
+	<center>
+	<div id="item">
+		<a href="../property"><h3>Towers</h3></a>
+		<img src="../../img/property/place2.png" width="150px" height="135px" onclick=showVideo();>
+	
+    </div>
+	
+	
+	<div id="item">
+		<a href="../property"><h3>Towers</h3></a>
+		<img src="../../img/property/place2.png" width="150px" height="135px" onclick=showVideo();>
+		
+    </div>
+	
+		
+	<div id="item">
+		<a href="../property"><h3>Towers</h3></a>
+		<img src="../../img/property/place2.png" width="150px" height="135px" onclick=showVideo();>
+	
+    </div>
+	</center>
+	
+  </div>
 	
 	
 </div>
-</div></div></div>
+</div></div>
+
+
+
+</div>
+
 </body></html>
 
 <script>
