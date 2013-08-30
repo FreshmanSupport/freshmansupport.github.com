@@ -26,12 +26,37 @@ font-size:14px;
 margin:auto;
 border:1px solid rgb(116,116,116);
 }
+.orange{
+color:rgb(220, 134, 39);
+}
 #maincontent.admissions table{
 	margin:auto;
 	color:rgb(116,116,116);
 	text-align:center;
 	font-family:Georgia;
 	font-size:14px;
+}
+
+#videoAvail #nameBox, #videoAvail #phoneBox{
+width:152px;
+margin-right:2px;
+margin-bottom:2px;
+}
+#videoAvail #mailBox{
+width:180px;
+margin-right:2px;
+
+}
+
+#videoAvail #qBox{
+height:70px;
+width:488px;
+margin-top:2px;
+}
+
+#videoAvail #check{
+position:absolute; right:10px; bottom:5px; 
+
 }
 
 /* ==================== MAIN CONTENT =====================*/
@@ -388,6 +413,9 @@ max-width:100%;
 #recentlyAnswered .profilePic p {
 	text-align: center;
 }
+#recentlyAnswered ul li p{
+width:100%;
+}
 #recentlyAnswered a {
 	font-size: 14px;
 	color: rgb(51, 62, 106);
@@ -571,9 +599,10 @@ font-size:14px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size:14px;
 	display:block;
+	padding-left:5px;
 }
 #rmMid{
-	border-left:1px solid gray;
+	border-right:1px solid gray;
 	min-height:612px;	
 
 }
@@ -588,7 +617,6 @@ width:1300px;
 
 }
 #rmMid{
-	border-left:1px solid gray;
 min-height:500px;}
 
 
@@ -650,8 +678,7 @@ width:470px;	margin:0 auto;
 	width: 100%;
 	line-height: 53px;
 	white-space: nowrap;
-	margin-left:-30px;
-	text-align:center;
+	text-align:left;
 }
 #roomieSlider ul li.hogwartsRow{}
 .rowLabel>span {
@@ -816,14 +843,6 @@ padding:0;
 text-align:center;
 }
 
-#maincontent.roommate #rmMid.col-1-3{
-margin-top:-30px;
-max-width:90%;
-width:90%;
-padding-top:10px;
-border:none;
-border-top:1px solid rgb(116,116,116);
-}
 
 .roommate #deadlinesMid{
 margin:auto;
@@ -1333,6 +1352,7 @@ margin-left:15px;
 .profilePic img {
 	width: 250px;
 	height: 250px;
+	
 }
 .profilePic button {
 	font-family: Georgia, "Times New Roman", Times, serif;
