@@ -49,7 +49,7 @@ margin-right:2px;
 }
 
 #videoAvail #qBox{
-height:70px;
+height:35px;
 width:488px;
 margin-top:2px;
 }
@@ -1174,7 +1174,7 @@ width:20px;
 height:20px;
 display:inline-block;
 position:relative;
-bottom:116px;
+bottom:106px;
 margin:auto;
 cursor:pointer;
 }
@@ -1183,7 +1183,7 @@ width:20px;
 height:20px;
 display:inline-block;
 position:relative;
-bottom:70px;
+bottom:58.8px;
 margin:auto;
 cursor:pointer;
 
@@ -1192,10 +1192,12 @@ cursor:pointer;
 display:inline-block;
 width:550px;
 margin:auto;
+margin-top:0;
+margin-bottom:0;
 text-align:center;
 }
 #sliderDeg img, #sliderOrg img{
-width:90px;
+width:70px;
 height:auto;
 position:relative;
 bottom:0;
@@ -1270,15 +1272,20 @@ margin:auto;}
 .realLifeSub .realLifeSquare {
 width:648px;
 height:590px;
+margin:auto;
 	max-width: 100%;
 display: inline-block;
-	padding-top: 30px;
+	padding-top: 10px;
 	padding-bottom: 30px;
 	border-bottom: 1px solid rgb(116,116,116);
 	margin-bottom: 10px;
 	position:relative;
 	padding-left:10px;
 	vertical-align:top;
+	position:relative;
+}
+.realLifeSquare .realRapper{
+margin-left:-40px;
 }
 .realLifeSquare:nth-child(even) {
 border-left:0;
@@ -1292,6 +1299,8 @@ border-left:0;
 }
 #maincontent .realLifeSquare .profilePic {
 	width: 225px;
+	position:realtive;
+	left:0;
 }
 .realLifeSquare .profilePic button:nth-child(2) {
 	width: 55px;
@@ -1400,7 +1409,7 @@ margin-left:15px;
 .realLifeSub li {
 	color: rgb(51,62,106);
 	font-size: 24px;
-	font-family: HNB;
+	font-family: HNL;
 	margin-bottom: 28px;
 }
 .realLifeSub .iconBar {
