@@ -924,6 +924,9 @@ width:350px;
 #studentProfile > ul > li {
 	padding-bottom: 30px;
 }
+.profileSubBar{
+
+text-align:left;}
 
 .profileSubBar ul li {
 margin-top:10px;
@@ -975,13 +978,16 @@ margin-top:10px;
 #studentProfile.col-3-4{
 width:72%;
 }
+#spRight.col-1-4{
+width:26%;
+}
+
 #spRight{
 padding:0 5px;
 }
 
 @media(max-width:1300px){
 #maincontent #studentProfile{width:100%; border:0;}
-#maincontent #studentProfile p{display:none;}
 #spRight #date{display:none;}
 #spRight{display:none;}
 }
@@ -1015,16 +1021,18 @@ padding:0 5px;
 	background-color: rgb(232, 229, 228);
 	width: 94%;
 	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 55px;
 	position: relative;
 	margin-top: -50px;
+	margin-left:auto;
+	margin-right:auto;
 }
 .matchDetails .triangle {
 	position: absolute;
 	border: 12px solid transparent;
 	border-bottom-color: rgb(232, 229, 228);
 	position: absolute;
-	left: 216px;
+	left: 196px;
 	top: -24px;
 }
 .mdCircle {
@@ -1048,11 +1056,24 @@ padding:0 5px;
 #roomieSlider .fuzzy {
 	background-color: rgb(89,107,158);
 }
+.matchDetails{
+
+}
+#toggleContainer{
+position:relative;
+}
+#toggleContainer button{
+position:absolute;
+right:18px;
+font-size:14px;
+font-family:Georgia;
+margin-top:4px;
+}
 .matchDetails .mdDrop {
 	color: rgb(116,116,116);
 }
 .matchDetails .list {
-	width: 290px;
+	width: 300px;
 	display: inline-block;
 	font-size: 14px;
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -1062,7 +1083,7 @@ padding:0 5px;
 	text-align: right;
 }
 .matchDetails .list div:last-child {
-	padding-left: 10px;
+	padding-left: 0px;
 }
 /* ======= Send Messages ============ */
 .messages h2{
@@ -1115,6 +1136,7 @@ text-align:left;
 	margin: 0 auto;
 }
 /* ================ RMEdit ================ */
+
 #rmEdit input[type="radio"] {
 	display: none;
 }
