@@ -94,6 +94,7 @@ width:100%;
 	padding-top: 25px;
 	padding-bottom: 30px;
 		position:relative;
+	
 		
 
 		}
@@ -441,10 +442,11 @@ border:0;
 #dropDown{width:300px; border: 1px solid rgb(116,116,116);}
 .dropOption div{width: 300px; height: 50px; background-color: rgb(232, 229, 228); border:1px solid rgb(116,116,116);}
 
-.admissionsAsk{padding-left: 10px; padding-right: 10px; margin:auto;}
+.admissionsAsk{padding-left: 10px; padding-right: 10px;margin:auto; position:relative;}
 .admissionsAsk textarea{width: 95.5%; height: 100px; margin:auto; margin-top: 20px; margin-bottom: 20px;}
 .admissionsAsk .dropDown,.admissionsAsk .dropDown select{width: 200px; display:inline-block; }
-.admissionsAsk .dropDown{margin-left:10px; margin-right:26.8%;}
+.admissionsAsk .dropDown{position:absolute; left:21px;}
+.admissionsAsk button{position:absolute; right:21px;}
 #officerPic{display:inline-block; width:150px; height:150px;}
 #officerDesc{display:inline-block; min-width:150px; height:150px;}
 #officerPic, #officerDesc{margin-bottom: 30px;vertical-align:top;margin-left:10px;}
@@ -908,7 +910,7 @@ width:350px;
 	width: 100%;
 	margin-bottom: 30px;
 }
-#studentProfile{border-right: 1px solid rgb(116,116,116); padding:0 50px; min-height:655px;}
+#studentProfile{border-right: 1px solid rgb(116,116,116); padding:0 0; min-height:655px; text-align:center;}
 #studentProfile #spHeader h2 {
 	text-align: center;font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 30px;
@@ -922,10 +924,13 @@ width:350px;
 #studentProfile > ul > li {
 	padding-bottom: 30px;
 }
+
 .profileSubBar ul li {
+margin-top:10px;
 	display: inline-block;
 	border-right: 1px solid navy;
 	padding-right: 5px;
+	text-align:left;
 }
 .profileSubBar ul li:last-child {
 	border: none;
@@ -939,7 +944,7 @@ width:350px;
 }
 #studentProfile h2 {
 	text-align: left;
-	font-family: HNB;
+	font-family: HNL;
 	font-size: 24px;
 }
 #studentProfile h3, #studentProfile p {
@@ -967,6 +972,14 @@ width:350px;
 	display: block;
 }
 #studentProfile .legend{ border:0;}
+
+#studentProfile.col-3-4{
+width:72%;
+}
+#spRight{
+padding:0 5px;
+}
+
 @media(max-width:1300px){
 #maincontent #studentProfile{width:100%; border:0;}
 #maincontent #studentProfile p{display:none;}
@@ -979,6 +992,7 @@ width:350px;
 	display: block;
 	text-align: center;
 	white-space:nowrap;
+	font-size:14px;
 }
 .editNav li {
 	display: inline-block;
@@ -2131,7 +2145,7 @@ width:49%;
 height:25px;
 }
 .profile .file{
-width:75.9%;
+width:79%;
 height:25px;
 }
 .profile .browse{
@@ -2150,7 +2164,7 @@ width:48.5%;
 height:25px;
 }
 .profile .file{
-width:69.9%;
+width:74.5%;
 height:25px;
 }
 .profile .browse{
@@ -2170,7 +2184,7 @@ width:49.3%;
 height:25px;
 }
 .profile .file{
-width:82.5%;
+width:84%;
 height:25px;
 }
 .profile .browse{
@@ -2267,12 +2281,12 @@ width:315px;
 #maincontent .profileSquare p{text-align:center; margin:0;}
 #profileLeft{border-right:1px solid rgb(116,116,116);}
 #profileRight{
-	padding:0 35px;	
+	padding:0 10px;	
 }
 .viewAllContainer{display:block; margin-top:10px; padding-bottom:5px;}
 .viewAllContainer a{position:absolute; right:20px;}
 #profileCalendar, #answeredQuestions{border-bottom:1px solid rgb(116,116,116);}
-#maincontent.profile .deadlineLegend{
+#maincontent.profile {text-align:center;
 }
 
 @media (max-width:1000px){
@@ -2422,7 +2436,7 @@ text-align:left;
 	color: orange;
 }
 .rmSpan{margin-bottom:27px;}
-.admissionsAsk #textareaBelow{width:420px; display:block; background-color:red}
+.admissionsAsk #textareaBelow{width:100%; display:block; }
 .admissionsAsk #textareaBelow .dropDown{float:left;}
 .admissionsAsk #textareaBelow button{float:right;}
 @media(max-width:1318px){
@@ -2596,7 +2610,7 @@ hr {
 
 
 
-/* Easter Egg for small resolution*/
+/* Easter Egg for small resolution
 @media(max-width:360px){
 #maincontent, #header, #footer, .footer{display:none;}
 body:before{
@@ -2623,7 +2637,7 @@ body:after{
 	font-family:Georgia, "Times New Roman", Times, serif;
 	text-align:center;
 }
-}
+}*/
 /* ============ Slider JS CSS ================== */
 .swipe {
 	overflow: hidden;
