@@ -937,10 +937,9 @@ margin-top:10px;
 }
 #studentProfile ul li a {
 	text-decoration: none;
-	color: rgb(116,116,116);
+
 }
 #studentProfile ul li a:visited {
-	color: rgb(116,116,116);
 }
 #studentProfile h2 {
 	text-align: left;
