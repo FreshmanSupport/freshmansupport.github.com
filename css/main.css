@@ -5,7 +5,7 @@
 }
 @font-face {
 	font-family: "HNB";
-	src: url(../fonts/helveticaneue-boldcond.otf);
+	src: url(../fonts/helveticaneue-light.otf);
 }
 table{
 color:rgb(116,116,116);
@@ -58,7 +58,7 @@ margin-top:2px;
 position:absolute; right:10px; bottom:5px; 
 
 }
-
+button a{color:white}
 /* ==================== MAIN CONTENT =====================*/
 body{
 position:relative;
@@ -612,7 +612,14 @@ font-size:14px;
 #maincontent.roommate{margin:auto; text-align:center;}
 
 
-
+@media (min-width:1300px){
+#rmMid{
+width:390px;
+}
+#rmSlide{
+width:520px;
+}
+}
 @media(max-width:1300px)
 {
 #maincontent .roommate{
@@ -818,7 +825,7 @@ display:inline-block;
 .roommate #rmSlide .house p{
 
 position:relative;
-top:-2px;
+top:-8px;
 margin:auto;
 }
 @media (max-width:845px){
@@ -893,10 +900,10 @@ display:none;
 	max-width:100%;
 }
 #maincontent.roommate #rmSlide{
-
+width:500px;
 }
 #maincontent.roommate #rmMid{
-width:350px;
+width:340px;
 }
 }
 @media(max-width:700px){
@@ -1283,6 +1290,7 @@ display: inline-block;
 	padding-left:10px;
 	vertical-align:top;
 	position:relative;
+
 }
 .realLifeSquare .realRapper{
 margin-left:-40px;
@@ -1351,6 +1359,7 @@ margin-left:15px;
 	height: 100px;
 	background-color: rgb(116,116,116);
 	margin-left:15px;
+	cursor:pointer;
 }
 .realLifeSquare .guide img {
 	width: 180px;
@@ -1410,6 +1419,7 @@ margin-left:15px;
 	color: rgb(51,62,106);
 	font-size: 24px;
 	font-family: HNL;
+	font-weight:normal;
 	margin-bottom: 28px;
 }
 .realLifeSub .iconBar {
@@ -1423,6 +1433,7 @@ margin-left:15px;
 	display: inline-block;
 	vertical-align: top;
 }
+
 .realLifeSub .iconBar li {
 	margin-bottom: 16px;
 }
@@ -2083,7 +2094,7 @@ background-color:rgb(221,135,39);
 
 #calendarWrapper{width:100%; margin: 0 auto; display:block; font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;}
 #maincontent.calendar{max-width:100%; margin-left:59; margin-right:auto;}
-.emailPopUpContainer{position:absolute; left:50%; top:00px; display:none; z-index:100000000;}
+.emailPopUpContainer{position:fixed; left:50%; top:30%; display:none; z-index:100000000;}
 
 
 .emailPopUp{
