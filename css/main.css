@@ -1191,12 +1191,23 @@ text-align:left;
 	display: inline-block;
 }
 /* ================= The Real Life =================== */
+#moreBlog {
+text-align:center;}
+#moreBlog #arrow{
+position:relative;
+top:-130px;
+cursor:pointer;
+}
+#moreBlog .swipeProperty img{
+width:150px;
+height:150px;
+}
 .slideWrap img{
 width:20px;
 height:20px;
 display:inline-block;
 position:relative;
-bottom:106px;
+bottom:107px;
 margin:auto;
 cursor:pointer;
 }
@@ -1205,7 +1216,7 @@ width:20px;
 height:20px;
 display:inline-block;
 position:relative;
-bottom:58.8px;
+bottom:59px;
 margin:auto;
 cursor:pointer;
 
@@ -1293,7 +1304,7 @@ margin:auto;}
 }
 .realLifeSub .realLifeSquare {
 width:648px;
-height:590px;
+height:550px;
 margin:auto;
 	max-width: 100%;
 display: inline-block;
@@ -1334,9 +1345,11 @@ border-left:0;
 }
 .realLifeSub .realLifeSquare .nameBar{
 margin-top:-5px;
+text-align:left;
 }
 .realLifeSub .realLifeSquare ul{
 margin-top:0px;
+
 }
 .realLifeSub .realLifeSquare .iconBar ul li{
 padding:2px 0;
@@ -1346,7 +1359,7 @@ padding:2px 0;
 	color: rgb(51,62,106);
 	font-size: 24px;
 	font-family: HNL;
-	margin-bottom: 21px;
+	margin-bottom: 18px;
 }
 .realLifeSub .realLifeSquare.iconBar {
 	width: 50px;
@@ -1354,15 +1367,16 @@ padding:2px 0;
 	vertical-align: top;
 }
 .realLifeSub .realLifeSquare li img {
-	height: 47px;
-	width: 47px;
+	height: 43px;
+	width: 43px;
 }
 .realLifeSub .realLifeSquare .nameBar {
-	padding-top: 11px;
+	padding-top: 8px;
 	padding-left: 15px;
 	display: inline-block;
 	vertical-align: top;
 }
+
 .realLifeSub .realLifeSquare .iconBar li {
 	margin-bottom: 6px;
 }
@@ -2742,6 +2756,7 @@ body {
 }
 ul{padding:0; list-style-type:none;}
 a img{border:0;}
+
 
 
 /* ======================== EXPERIMENTAL STUFF ======================= */

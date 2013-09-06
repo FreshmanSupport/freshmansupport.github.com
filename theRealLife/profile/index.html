@@ -5,6 +5,8 @@
 <link type="text/css" rel="stylesheet" href="../../css/headerStyle.css"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="text/javascript" src="../../js/jquery-1.9.1.js"></script>
+    <script src="../../js/oneSwipe.js"></script>
+
 
 <title>Profile</title>
 </head>
@@ -228,7 +230,55 @@
 </div>
 <div id="moreBlog">
   <h2>More Blogs</h2>
-  <p>SUPER J QUERY SLIDER BRENT JS SLIDE</p>
+  
+<div id="arrow" style="display:inline-block"><img onClick="swipe3.prev()" src="../../img/arrowLeft.png" style=" width:15px; height:15px;"/></div>
+          <div id='slider3' class='swipeProperty'>
+            <div class='swipe-wrap'>
+             <div ><a href="../profile"> <img src="../../img/property/place2.png" />
+			  <p>Mark Sanchez<br>Engineering</p></a></div>
+              <div ><a href="../profile"><img src="../../img/property/place1.png" />
+			   <p>Lebron<br>French</p></a>
+			  </div>
+              <div ><a href="../profile"><img src="../../img/property/place2.png" />
+			   <p>Albert <br>Poli. Science</p></a>
+			  </div>
+              <div ><a href="../profile"><img src="../../img/property/place1.png" />
+			   <p>Corey <br>Art</p></a>
+			  </div>
+			   <div ><a href="../profile"><img src="../../img/property/place2.png" />
+			    <p>Mark Sanchez<br>Engineering</p></a>
+			   </div>
+              <div ><a href="../profile"><img src="../../img/property/place1.png" />
+			   <p>Mark Sanchez<br>Engineering</p></a>
+			  </div>
+
+			            <div ><a href="../profile"><img src="../../img/property/place1.png" />
+						 <p>Topanga<br>Math</p></a>
+						 </div>
+			   <div ><a href="../profile"><img src="../../img/property/place2.png" />
+			    <p>Mark Sanchez<br>Engineering</p></a>
+			   </div>
+              <div ><a href="../profile"><img src="../../img/property/place1.png" />
+			   <p>Mark Sanchez<br>Engineering</p></a>
+			  </div>
+            </div>
+          </div>
+          <div id="arrow" style="display:inline-block"><img onClick="swipe3.next()" src="../../img/arrowRight.png" style="margin-left:5px; width:15px; height:15px;"/></div>
+
 </div>
 </body>
 </html>
+
+<script type='text/javascript'>
+swipe3 = new Swipe(document.getElementById('slider3'), {
+  startSlide: 0,
+  speed: 400,
+  items:6,
+  auto: 3000000,
+  continuous: true,
+  disableScroll: false,
+  stopPropagation: false,
+  callback: function(index, elem) {},
+  transitionEnd: function(index, elem) {}
+});
+</script>
