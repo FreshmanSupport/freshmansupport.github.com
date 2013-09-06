@@ -172,7 +172,7 @@ a{font-family:Georgia, "Times New Roman", Times, serif; font-size:14px; text-dec
 	width: 46%;
 	min-height: 120px;
 	float: none;
-	margin: auto;
+
 	padding: 0 5px;
 	vertical-align: top;
 		border-left: 1px solid rgb(116,116,116);
@@ -449,7 +449,7 @@ border:0;
 .admissionsAsk button{position:absolute; right:21px;}
 #officerPic{display:inline-block; width:150px; height:150px;}
 #officerDesc{display:inline-block; min-width:150px; height:150px;}
-#officerPic, #officerDesc{margin-bottom: 30px;vertical-align:top;margin-left:10px;}
+ #officerDesc{margin-bottom: 30px;vertical-align:top;margin-left:10px;}
 #maincontent #officerDesc h2{margin: 0;}
 #maincontent #officerDesc p:nth-child(2){margin-top:-1px;}
 .selectButtonContainer{width:100%; overflow:hidden; display:block;}
@@ -994,9 +994,24 @@ padding:0 5px;
 }
 
 @media(max-width:1300px){
-#maincontent #studentProfile{width:100%; border:0;}
-#spRight #date{display:none;}
+#studentProfile.col-3-4{
+width:640px;
+}
+#spRight{
+min-width:354px;
+}
+#studentProfile p{width:430px;}
+}
+
+@media(max-width:1000px){
 #spRight{display:none;}
+#studentProfile.col-3-4{
+border:none;
+width:850px;
+}
+#studentProfile.col-3-4 p{
+width:600px;
+}
 }
 /* ================= Edit Preference =================== */
 .editNav {
@@ -1838,7 +1853,7 @@ margin-left: 25px;}
 #maincontent.budgetPlanner .finale h2{color:rgb(220, 134, 39);}
 #currentNumber{display:inline-block; text-align:center;}
 /* ==================== Data ====================== */
-#maincontent.data #payForCollege h3{font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 24px;color: rgb(116, 116, 116);font-weight: normal; margin-bottom:0;}
+#maincontent.data #payForCollege h3{font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 24px;color: rgb(116, 116, 116);font-weight: normal; margin-bottom:0; }
 #maincontent.data #payForCollege p{margin:0;  font-style:italic;}
 #payForCollege .textWrap{width:200px; display:block; margin:0 auto;}
 #maincontent.data #payForCollege, #maincontent.data #finDataMid, #maincontent.data #financialAid {
@@ -1865,7 +1880,7 @@ margin-left: 25px;}
 #schoolCosts .legend{border:0; overflow:hidden;padding: 0 50px; margin:0 auto;}
 .chartContainer{width: 115px; display:block; margin:0 auto;}
 #studentEmployment{margin-top: 30px;}
-#financialAid {border-left:1px solid rgb(116,116,116);}
+#financialAid {border-left:1px solid rgb(116,116,116); margin-left:5px;}
 #finDataMid a{text-align:center; padding-left:50px; display:block;}
 #finDataMid a{
 	text-decoration:none; 
@@ -2689,6 +2704,7 @@ body:after{
 	overflow: hidden;
 	position: relative;
 }
+
 .swipe-wrap > div {
 	float: left;
 	width: 100%;
