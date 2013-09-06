@@ -3,10 +3,6 @@
 	font-family: "HNL";
 	src: url(../fonts/helveticaneue-light.otf);
 }
-@font-face {
-	font-family: "HNB";
-	src: url(../fonts/helveticaneue-light.otf);
-}
 table{
 color:rgb(116,116,116);
 font-family:Georgia;
@@ -399,11 +395,12 @@ max-width:100%;
 }
 #recentlyAnswered h3 {
 	text-align: left;
+	margin:0;
 }
 #recentlyAnswered.col-5-8{border-right:1px solid rgb(116,116,116);}
 #recentlyAnswered p {
 	text-align: left;
-	width:130%;
+	width:100%;
 }
 #recentlyAnswered img {
 	width: 150px;
@@ -415,7 +412,7 @@ max-width:100%;
 	text-align: center;
 }
 #recentlyAnswered ul li p{
-width:100%;
+width:90%;
 }
 #recentlyAnswered a {
 	font-size: 14px;
@@ -1343,9 +1340,19 @@ border-left:0;
 .realLifeSquare .profilePic button:last-child {
 	width: 150px;
 }
-.realLifeSub .realLifeSquare .nameBar{
-margin-top:-5px;
+.nameBar{
+margin-top:-8px;
 text-align:left;
+padding-top:0;
+}
+.realLifeSub .nameBar ul li{
+
+margin-top:0;
+margin-bottom:25px;
+}
+.realLifeSub  ul li img{
+width:51px;
+height:51px;
 }
 .realLifeSub .realLifeSquare ul{
 margin-top:0px;
@@ -1370,6 +1377,7 @@ padding:2px 0;
 	height: 43px;
 	width: 43px;
 }
+
 .realLifeSub .realLifeSquare .nameBar {
 	padding-top: 8px;
 	padding-left: 15px;
@@ -1416,8 +1424,16 @@ margin-left:15px;
 	vertical-align: top;
 }
 #realLifeHead {
+	margin:auto;
+	width:1243px;
 	display: block;
 	margin-bottom: 50px;
+	position:relative;
+}
+#realLifeHead .profilePic{
+position:absolute;
+left:0;
+padding-right:1000px;
 }
 #realLifeHead img {
 	display: block;
@@ -1458,7 +1474,7 @@ margin-left:15px;
 }
 .realLifeSub .nameBar {
 	padding-top: 11px;
-	padding-left: 30px;
+	padding-left: 20px;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -2144,7 +2160,9 @@ background-color:rgb(221,135,39);
 .emailPopUp :-moz-placeholder { /* Firefox 18- */
    padding-left:5px; 
 }
-
+.emailPopUp h2{
+margin-bottom:10px !important;
+}
 .emailPopUp ::-moz-placeholder {  /* Firefox 19+ */
    padding-left:5px;  
 }
@@ -2161,7 +2179,7 @@ background-color:rgb(221,135,39);
 	width:400px;
 	margin-bottom:10px;
 }
-.emailPopUp .iAgree{margin-bottom:10px;}
+.emailPopUp .iAgree{margin-bottom:10px; position:relative; top:-7px;}
 .emailPopUp button{margin-bottom:10px;}
 .legal{
 	font-size:8px;
@@ -2254,7 +2272,7 @@ width:49.3%;
 height:25px;
 }
 .profile .file{
-width:84%;
+width:81%;
 height:25px;
 }
 .profile .browse{
@@ -2269,14 +2287,15 @@ height:100px;
 @media (min-width:1000px){
 .profileInfo{width:760px; padding-top:0px; height:224px;}
 }
+
 @media (min-width:1300px){
 .profileInfo{width:1060px}
 #profile{width:1300px; }
 #profileRight{
-width:483px;
+width:400px;
 }
 #profileLeft{
-
+width:895px;
 }
 }
 @media (max-width:1000px){
@@ -2332,22 +2351,22 @@ width:315px;
 }
 .profileSquare{
 	display:inline-block;
-	width: 150px;
+	width: 130px;
 	margin-right:65px;
 }
 @media (min-width:1000px){
 .profileSquare{margin-right:2px}
 }
 @media (min-width:1300px){
-.profileSquare{margin-right:49px; text-align:left;}
+.profileSquare{margin-right:60px; text-align:left;}
 }
 
 .profileSquare img{
-	height:150px;
-	width:150px;
+	height:130px;
+	width:130px;
 	display:inline-block;
-	margin:0 auto;
-}
+margin:auto;
+text-align:center;}
 #maincontent .profileSquare p{text-align:center; margin:0;}
 #profileLeft{border-right:1px solid rgb(116,116,116);}
 #profileRight{
@@ -2360,11 +2379,12 @@ width:315px;
 }
 
 @media (max-width:1000px){
-.profileGrayOut{height:468px}
+.profileGrayOut{height:360px; margin-top:-10px;}
 }
 @media (min-width:1000px){
 .profileGrayOut{
-height:281px;
+height:210px;
+margin-top:-10px !important;
 }
 }
 
@@ -2380,7 +2400,7 @@ margin-top:5px;
 	color:rgb( 51, 62, 106);
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:14px;
-	margin-top:16%;
+	margin-top:10%;
 	display:block;
 	text-align:center;
 }
@@ -2509,6 +2529,7 @@ text-align:left;
 .admissionsAsk #textareaBelow{width:100%; display:block; }
 .admissionsAsk #textareaBelow .dropDown{float:left;}
 .admissionsAsk #textareaBelow button{float:right;}
+.admissQA{max-width:1300px}
 @media(max-width:1318px){
 	#admissionsAskWide{display:none;}
 	.admissQA #recentlyAnswered{width:100%; border:0; }
