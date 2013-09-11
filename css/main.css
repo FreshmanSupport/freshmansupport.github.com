@@ -1217,6 +1217,9 @@ display:block; width:90%}
 .wrapperWrap{display:block !important; width:100% !important;}
 
 }
+.wrapperWrap{
+display:inline-block; width:49%; margin-right:10px; vertical-align:top;
+}
 .slideWrap, .slideWrapOrg{
 display:inline-block; width:90%}
 .slideWrap img, .slideWrapOrg img{
@@ -1305,7 +1308,7 @@ margin:auto;}
 @media (max-width:1300px){
 .realLeft{border:none}
 }
-.realLeft ul.squares li, .realRight ul.squares li{border-bottom:1px solid rgb(116,116,116);}
+.realLeft ul.squares li, .realRight ul.squares li{border-bottom:1px solid rgb(116,116,116); }
 
 .realLeft ul.squares li:last-child{border-bottom:none}
 .realRight ul.squares li:last-child{border-bottom:none}
@@ -1316,6 +1319,8 @@ margin:auto;}
 	text-align:center;
 	margin:auto;
 }
+.leftAlign{text-align:left}
+.realLifeSquare a{font-size:14px; font-family:Georgia; position:absolute; bottom:0px; text-align:left;}
 .realLifeSub .realLifeSquare {
 width:658px;
 height:550px;
@@ -1346,9 +1351,11 @@ border-left:0;
 }
 #maincontent .realLifeSquare .profilePic {
 	width: 225px;
-	position:realtive;
+	position:relative;
 	left:0;
+	padding-bottom:20px;
 }
+.profilePic a{position:absolute; bottom:0; width:200px; left:0}
 .realLifeSquare .profilePic button:nth-child(2) {
 	width: 55px;
 	margin-right: 10px;
