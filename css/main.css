@@ -1188,6 +1188,17 @@ text-align:left;
 	display: inline-block;
 }
 /* ================= The Real Life =================== */
+.realLeft{
+display:inline-block;
+border-right:1px solid rgb(116,116,116);
+width:648px;
+padding-right:5px;
+height:auto;
+}
+.realRight{
+display:inline-block;
+width:648px;
+}
 #moreBlog {
 text-align:center;}
 #moreBlog #arrow{
@@ -1232,6 +1243,7 @@ height:auto;
 position:relative;
 bottom:0;
 }
+
 
 .trlSelectContainer{display:block;}
 .trlSelectContainer .sWrap{display:inline-block; width: 500px;}
@@ -1284,14 +1296,14 @@ bottom:0;
 #maincontent.realLifeSub{
 margin:auto;}
 
-	#maincontent.realLifeSub .realLifeSquare:nth-child(even) {
-	border-left: 1px solid rgb(116,116,116);
-}
+
 
 
 }
 
-
+@media (max-width:1300px){
+.realLeft{border:none}
+}
 
 
 #mainontent.realLifeSub {
@@ -1304,8 +1316,6 @@ width:648px;
 height:550px;
 margin:auto;
 	max-width: 100%;
-display: inline-block;
-	padding-top: 10px;
 	padding-bottom: 30px;
 	border-bottom: 1px solid rgb(116,116,116);
 	margin-bottom: 10px;
@@ -1313,6 +1323,7 @@ display: inline-block;
 	padding-left:10px;
 	vertical-align:top;
 	position:relative;
+padding-bottom:560px;
 
 }
 .realLifeSquare .realRapper{
@@ -1361,6 +1372,8 @@ margin-top:0px;
 .realLifeSub .realLifeSquare .iconBar ul li{
 padding:2px 0;
 }
+.realLifeSquare .nameBar ul li{
+margin-bottom:18px;}
 
 .realLifeSub .realLifeSquare li {
 	color: rgb(51,62,106);
