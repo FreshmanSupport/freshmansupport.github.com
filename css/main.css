@@ -1427,6 +1427,7 @@ position:absolute; right:0;
 	height: 75px;
 	background-color: rgb(116,116,116);
 	position:absolute; right:0; top:100px;
+	cursor:pointer;
 }
 .realLifeSquare .guide img {
 	width: 135px;
