@@ -1322,22 +1322,23 @@ margin:auto;}
 .leftAlign{text-align:left}
 .realLifeSquare a{font-size:14px; font-family:Georgia; position:absolute; bottom:0px; text-align:left;}
 .realLifeSub .realLifeSquare {
-width:658px;
+width:600px;
 height:550px;
 margin:auto;
 	max-width: 100%;
 	padding-bottom: 30px;
 	margin-bottom: 10px;
 	position:relative;
-	padding-left:10px;
-	padding-right:10px;
+
 	vertical-align:top;
 	position:relative;
 padding-bottom:560px;
 
 }
 .realLifeSquare .realRapper{
-margin-left:-40px;
+width:100%;
+position:relative;
+padding:0;
 }
 .realLifeSquare:nth-child(even) {
 border-left:0;
@@ -1348,14 +1349,15 @@ border-left:0;
 .realLifeSquare .profilePic img {
 	width: 220px;
 	height: 220px;
+margin-right:10px;
+margin-left:-60px;
 }
 #maincontent .realLifeSquare .profilePic {
-	width: 225px;
-	position:relative;
-	left:0;
+	position:relative	;
+	margin-left:0; padding-left:0;
 	padding-bottom:20px;
 }
-.profilePic a{position:absolute; bottom:0; width:200px; left:0}
+.profilePic a{position:absolute; bottom:0; width:150px; left:0; margin-left:-15px;}
 .realLifeSquare .profilePic button:nth-child(2) {
 	width: 55px;
 	margin-right: 10px;
@@ -1373,6 +1375,7 @@ padding-top:0;
 margin-top:0;
 margin-bottom:25px;
 border:None;
+font-size:14px;
 }
 .realLifeSub  ul li img{
 
@@ -1416,18 +1419,19 @@ margin-bottom:18px;}
 }
 .realLifeSquare .guide{
 margin-left:15px;
+position:absolute; right:0;
 }
+
 .realLifeSquare .vid {
-	width: 180px;
-	height: 100px;
+	width: 135px;
+	height: 75px;
 	background-color: rgb(116,116,116);
-	margin-left:15px;
-	cursor:pointer;
+	position:absolute; right:0; top:100px;
 }
 .realLifeSquare .guide img {
-	width: 180px;
+	width: 135px;
 	margin-bottom: 50px;
-	height: 100px;
+	height: 75px;
 }
 .realLifeSquare #answerNav {
 	margin-left: -8px;
@@ -1456,10 +1460,9 @@ margin-left:15px;
 	margin-bottom: 50px;
 	position:relative;
 }
-#realLifeHead .profilePic{
+#realLifeHead .profilePic img{
 position:absolute;
 left:0;
-padding-right:1000px;
 }
 #realLifeHead img {
 	display: block;
@@ -1475,8 +1478,8 @@ padding-right:1000px;
 	width: 255px;
 }
 .profilePic img {
-	width: 250px;
-	height: 250px;
+	width: 225px;
+	height: 225px;
 	
 }
 .profilePic button {
@@ -2676,7 +2679,7 @@ button {
 }
 .swipeRecent {
 	overflow: hidden;
-}
+margin:auto; width:98%}
 hr {
 	width: 100%;
 	color: rgb(232, 229, 228);
