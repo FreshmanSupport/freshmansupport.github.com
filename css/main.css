@@ -2263,13 +2263,15 @@ text-align:left;
 padding-bottom:10px;
 }
 .profileRight .deadlineLegend{
-width:100%;
 text-align:left;
 }
 .profile .deadlineLegend ul{
-margin:auto;
 max-width:100%;
+width:100%;
+text-align:left;
 }
+.profile .swipe table{width:100%}
+.profile .swipe td, .profile .swipe th{padding:10px 0; text-align:center; font-size:14px;}
 @media(max-width:1000px){
 .profile .deadlineLegend ul{
 width:300px;
@@ -2396,6 +2398,7 @@ width:315px;
 	position:relative;
 	width:100%;
 	margin-bottom:20px;
+	text-align:left;
 }
 #viewEdit{position:absolute; bottom:5px; right:5px;}
 #maincontent .profileList > h3{text-align:left; margin-bottom:0; color:rgb( 51, 62, 106);}
@@ -2419,12 +2422,13 @@ width:315px;
 .profileSquare{margin-right:2px}
 }
 @media (min-width:1300px){
-.profileSquare{margin-right:60px; text-align:left;}
+.profileList > div{margin-right:90px; text-align:left;}
 }
 
+
 .profileSquare img{
-	height:130px;
-	width:130px;
+	height:140px;
+	width:140px;
 	display:inline-block;
 margin:auto;
 text-align:center;}
@@ -2434,7 +2438,7 @@ text-align:center;}
 	padding:0 10px;	
 }
 .viewAllContainer{display:block; margin-top:10px; padding-bottom:5px;}
-.viewAllContainer a{position:absolute; right:20px;}
+.viewAllContainer a{position:absolute; right:85px;}
 #profileCalendar, #answeredQuestions{border-bottom:1px solid rgb(116,116,116);}
 #maincontent.profile {text-align:center;
 }
@@ -2464,6 +2468,8 @@ margin-top:5px;
 	margin-top:10%;
 	display:block;
 	text-align:center;
+	background-color:white;
+	padding:10px 0;
 }
 /* ============== Footer  ===================*/
 .footer {
