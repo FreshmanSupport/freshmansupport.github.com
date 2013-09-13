@@ -1314,8 +1314,8 @@ margin:auto;}
 }
 @media(max-width:1300px){
 #maincontent.realLifeSub{width:1000px}
-.realLeft{width:100%; border:none; border-bottom:1px solid rgb(116,116,116); margin-bottom:20px;}
-.realRight{width:100%;}
+.realLeft{width:648px; border:none; border-bottom:1px solid rgb(116,116,116); margin-bottom:20px;}
+.realRight{width:648px;}
 #sliderDeg, #sliderOrg{
 display:inline-block;
 width:440px;
