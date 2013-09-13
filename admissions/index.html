@@ -230,7 +230,7 @@
   	</div>
         <div id="answerNav">
       <button onClick="acceptSlider.prev()"><img src=../img/arrowLeft.png width=10px/> Prev</button>
-      <button onClick="acceptSlider.next()">Next <img src=../img/arrowRight.png width=10px /></button>
+      <button onClick="acceptNext();"><span id="nextChange">Next</span> <img src=../img/arrowRight.png width=10px /></button>
     </div>
 
     </div>
@@ -472,7 +472,17 @@
   </div>
 </div>
 </body>
-</html>
+</html><script>
+
+function acceptNext(){
+if(acceptSlider.getPos()==2)window.location.href='data';
+continueToData();
+acceptSlider.next();
+}
+function continueToData(){
+if(acceptSlider.getPos()==1) document.getElementById('nextChange').innerHTML = "Continue to Results";
+}
+</script>
 <script type='text/javascript'>
 window.answerSlider = new Swipe(document.getElementById('answerSlider'), {
   startSlide: 0,
@@ -549,4 +559,8 @@ $("#sendButton").click(function() {
   $("#inputArea").toggle();
   $("#officers").toggle();
 });
+
+
 </script>
+
+
