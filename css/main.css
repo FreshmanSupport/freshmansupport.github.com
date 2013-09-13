@@ -109,6 +109,7 @@ min-width:850px;
 #maincontent{
 text-align:center;
 margin:auto;
+max-width:1300px;
 }
 #maincontent h2 {
 	color: rgb(51, 62, 107);
@@ -1299,6 +1300,7 @@ bottom:0;
 @media(min-width:1300px){
 #maincontent.realLifeSub{
 width:1310px;
+max-width:1310px;
 margin:auto;}
 
 
