@@ -221,7 +221,7 @@ $(document).ready(function(){
 <p style="margin-bottom:0px; font-size:24px; font-family:Georgia">Chat with college students from The University of Texas. Read their college guides. Get their advice. This is student life from the student voice.</p>
 <br>
 <div class="trlSelectContainer">
- <center><div class="wrapperWrapsWrapper">
+ <center><div class="wrapperWrapsWrapper" id="wideSort">
 <div  class="wrapperWrap" >
 		  	<p style="text-align:left; margin-left:50px;"><i>Sort student profiles by organization to find someone similar to you!</i></p>
 <div class="slideWrapOrg">
@@ -249,7 +249,7 @@ $(document).ready(function(){
 	  	  <img src="../img/arrowRight.png" style="margin-left:3px" onclick=sliderOrg.next(); />
 
 	  	</div></div>
-		<div class="wrapperWrap">
+		<div class="wrapperWrap" >
 		  	<p style="text-align:left;  margin-left:50px;"><i>Sort student profiles by degree to find someone similar to you!</i></p>
 <div class="slideWrap">
 			  <img src="../img/arrowLeft.png" onclick=sliderDeg.prev(); />
@@ -277,6 +277,80 @@ $(document).ready(function(){
 	  </div>
 	  </div>
 	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="wrapperWrapsWrapper" id="squeezeSort" >
+<div  class="wrapperWrap" >
+		  	<p style="text-align:left; margin-left:50px;"><i>Sort student profiles by organization to find someone similar to you!</i></p>
+<div class="slideWrapOrgSqueeze">
+			  <img src="../img/arrowLeft.png" onclick=sliderOrgSqueeze.prev(); />
+
+	
+	  <div id='sliderOrgSqueeze' class='swipeRecent' style="margin:20px 0;">
+      <div class='swipe-wrap'>
+	  
+	        <div><img src="../img/realLife/academic.png" /><p>Academic</p></div>
+      <div><img src="../img/realLife/professional.png" /><p>Professional</p></div>
+      <div><img src="../img/realLife/service.png" /><p>Service</p></div>
+      <div><img src="../img/realLife/recreational.png" /><p>Recreational</p></div>
+      <div><img src="../img/realLife/social.png" /><p>Social</p></div>
+      <div><img src="../img/realLife/culutral.png" /><p>Cultural</p></div>
+      <div><img src="../img/realLife/greek.png" /><p>Greek</p></div>
+      <div><img src="../img/realLife/political.png" /><p>Political</p></div>
+      <div><img src="../img/realLife/artistic.png" /><p>Artistic</p></div>
+      <div><img src="../img/realLife/spirit.png" /><p>Spirit</p></div>
+      <div><img src="../img/realLife/spiritual.png" /><p>Spiritual</p></div>
+	   
+	  
+	  </div>
+	  </div>
+	  	  <img src="../img/arrowRight.png" style="margin-left:3px" onclick=sliderOrgSqueeze.next(); />
+
+	  	</div></div>
+		<div class="wrapperWrap">
+		  	<p style="text-align:left;  margin-left:50px;"><i>Sort student profiles by degree to find someone similar to you!</i></p>
+<div class="slideWrapSqueeze">
+			  <img src="../img/arrowLeft.png" onclick=sliderDegSqueeze.prev(); />
+
+		<div id='sliderDegSqueeze' class='swipeRecent' style="margin:20px 0;">
+      <div class='swipe-wrap'>
+	  
+	  <div><img src="../img/realLife/fa.png" id="fa"/><p>Fine Arts</p>
+	   </div>
+	   <div><img src="../img/realLife/b.png" id="b"/><p>Business</p></div>
+	   <div><img src="../img/realLife/hs.png" id="hs"/><p>Health Sciences</p></div>
+	   <div><img src="../img/realLife/c.png" id="c"/><p>Communication</p></div>
+	   <div><img src="../img/realLife/ns.png" id="ns" /><p>Natural Sciences</p></div>
+	   <div><img src="../img/realLife/e.png" id="e" /><p>Engineering</p></div>
+	   <div><img src="../img/realLife/a.png" id="a"/><p>Architecture</p></div>
+	  <div><img src="../img/realLife/cs.png" id="cs"/><p>Computer Science</p></div>
+	  <div><img src="../img/realLife/edu.png" id="edu"/><p>Education</p></div>
+	  <div><img src="../img/realLife/la.png" id="la"/><p>Liberal Arts</p></div>
+	 <div> <img src="../img/realLife/o.png" id="o"/><p>Other</p></div>
+	  
+	  </div>
+	  </div>
+	  <img src="../img/arrowRight.png" style="margin-left:3px" onclick=sliderDegSqueeze.next(); />
+	  
+	  </div>
+	  </div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -492,7 +566,20 @@ $(document).ready(function(){
       <div class="vid" onclick=showVideo()></div>
 	  	             <a href="profile" style="width:150px;" >Ask [name] a question</a>
 
-    </div></div>
+    </div>
+	
+	
+	<div class="vidGuide">
+	<div class="guide"> <img src="../img/port.png" /> </div>
+      <div class="vid" onclick=showVideo()></div>
+	</div>
+	
+	
+	</div>
+	
+	
+	
+	
     <div id='slider4' class='swipeRecent' style="margin:20px 0;">
       <div class='swipe-wrap'>
         <div class="QA">
@@ -592,4 +679,31 @@ sliderDeg = new Swipe(document.getElementById('sliderDeg'), {
   callback: function(index, elem) {},
   transitionEnd: function(index, elem) {}
 });
+
+
+sliderOrgSqueeze = new Swipe(document.getElementById('sliderOrgSqueeze'), {
+  startSlide: 0,
+  speed: 400,
+  //auto: 9000000000000,
+  items:3,
+  continuous: true,
+  disableScroll: false,
+  stopPropagation: false,
+  callback: function(index, elem) {},
+  transitionEnd: function(index, elem) {}
+});
+sliderDegSqueeze = new Swipe(document.getElementById('sliderDegSqueeze'), {
+  startSlide: 0,
+  speed: 400,
+  //auto: 9000000000000,
+  items:3,
+  continuous: true,
+  disableScroll: false,
+  stopPropagation: false,
+  callback: function(index, elem) {},
+  transitionEnd: function(index, elem) {}
+});
+
+
+
 </script>

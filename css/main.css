@@ -1213,13 +1213,18 @@ height:150px;
 }
 
 @media (max-width:1300px){
-.slideWrap, .slideWrapOrg{
-display:block; width:90%}
-.wrapperWrap{display:block !important; width:100% !important;}
+#squeezeSort{display:block}
+#wideSort{display:none}
 
 }
+
+@media (min-width:1300px){
+#squeezeSort{display:none}
+#wideSort{display:block}
+}
+
 .wrapperWrap{
-display:inline-block; width:49%; margin-right:10px; vertical-align:top;
+display:inline-block; width:48%; margin-right:10px; vertical-align:top;
 }
 .wrapperWrapsWrapper{border-bottom:1px solid rgb(116,116,116); border-top:1px solid rgb(116,116,116); margin-bottom:10px;}
 .slideWrap, .slideWrapOrg{
@@ -1233,6 +1238,9 @@ bottom:87px;
 margin:auto;
 cursor:pointer;
 }
+.slideWrapSqueeze, .slideWrapOrgSqueeze{display:inline-block; width:100%;}
+.slideWrapSqueeze img, .slideWrapOrgSqueeze img{width:20px; height:20px; display:inline-block; cursor:pointer; position:relative; bottom:87px; }
+
 
 #sliderDeg, #sliderOrg{
 display:inline-block;
@@ -1242,7 +1250,8 @@ margin-top:0;
 margin-bottom:0;
 text-align:center;
 }
-#sliderDeg img, #sliderOrg img{
+#sliderDegSqueeze, #sliderOrgSqueeze{width:380px; display:inline-block;}
+#sliderDeg img, #sliderOrg img, #sliderDegSqueeze img, #sliderOrgSqueeze img{
 width:70px;
 height:auto;
 position:relative;
@@ -1302,14 +1311,24 @@ bottom:0;
 width:1310px;
 max-width:1310px;
 margin:auto;}
-
-
-
+}
+@media(max-width:1300px){
+#maincontent.realLifeSub{width:1000px}
+.realLeft{width:498px;}
+.realRight{width:498px;}
+#sliderDeg, #sliderOrg{
+display:inline-block;
+width:440px;
 
 }
 
+}
+.realLifeSquare .vidGuide{display:none; position:relative; width:100%; height:75px; margin:10px 0; }
 @media (max-width:1300px){
-.realLeft{border:none}
+.realLifeSquare .col-1-4{display:none}
+.realLifeSquare .vidGuide{display:block; width:100%; position:relative;}
+.realLifeSquare .vidGuide .guide{position:absolute; left:-13px; right:auto; bottom:auto; top:0; vertical-align:top;  display:inline-block;}
+.realLifeSquare .vidGuide .vid{position:absolute; right:0; top:0; bottom: vertical-align:top; display:inline-block; }
 }
 .realLeft ul.squares li, .realRight ul.squares li{border-bottom:1px solid rgb(116,116,116); }
 
@@ -1361,6 +1380,8 @@ position:absolute; left:25px; top:0;
 }
 .realLifeSquare .col-1-4 a{position:absolute; top:205px; width:150px; right:-10px; margin-left:-15px;}
 .realLifeSquare .col-1-4{position:absolute; right:0; top:0;}
+
+
 .realLifeSquare .profilePic button:nth-child(2) {
 	width: 55px;
 	margin-right: 10px;
