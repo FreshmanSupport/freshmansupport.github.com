@@ -1220,6 +1220,7 @@ display:block; width:90%}
 .wrapperWrap{
 display:inline-block; width:49%; margin-right:10px; vertical-align:top;
 }
+.wrapperWrapsWrapper{border-bottom:1px solid rgb(116,116,116); border-top:1px solid rgb(116,116,116); margin-bottom:10px;}
 .slideWrap, .slideWrapOrg{
 display:inline-block; width:90%}
 .slideWrap img, .slideWrapOrg img{
@@ -1338,7 +1339,7 @@ padding-bottom:560px;
 .realLifeSquare .realRapper{
 width:100%;
 position:relative;
-padding:0;
+padding-top:220px;
 }
 .realLifeSquare:nth-child(even) {
 border-left:0;
@@ -1349,15 +1350,15 @@ border-left:0;
 .realLifeSquare .profilePic img {
 	width: 220px;
 	height: 220px;
-margin-right:10px;
+margin-right:20px;
 margin-left:-60px;
 }
-#maincontent .realLifeSquare .profilePic {
-	position:relative	;
-	margin-left:0; padding-left:0;
-	padding-bottom:20px;
+ .realLifeSub .profilePic {
+position:absolute; left:25px; top:0;
+
 }
-.profilePic a{position:absolute; bottom:0; width:150px; left:0; margin-left:-15px;}
+.realLifeSquare .col-1-4 a{position:absolute; top:205px; width:150px; right:-10px; margin-left:-15px;}
+.realLifeSquare .col-1-4{position:absolute; right:0; top:0;}
 .realLifeSquare .profilePic button:nth-child(2) {
 	width: 55px;
 	margin-right: 10px;
@@ -1407,12 +1408,7 @@ margin-bottom:18px;}
 	width: 43px;
 }
 
-.realLifeSub .realLifeSquare .nameBar {
-	padding-top: 8px;
-	padding-left: 15px;
-	display: inline-block;
-	vertical-align: top;
-}
+
 
 .realLifeSub .realLifeSquare .iconBar li {
 	margin-bottom: 6px;
@@ -1498,15 +1494,15 @@ left:0;
 	margin-bottom: 28px;
 }
 .realLifeSub .iconBar {
-	width: 50px;
+	width: 40px;
 	display: inline-block;
 	vertical-align: top;
+	position:absolute;
+	left:250px;
+	top:0;
 }
 .realLifeSub .nameBar {
-	padding-top: 11px;
-	padding-left: 20px;
-	display: inline-block;
-	vertical-align: top;
+	position:absolute;  left:310px; top:15px;
 }
 
 .realLifeSub .iconBar li {
@@ -2680,7 +2676,7 @@ button {
 }
 .swipeRecent {
 	overflow: hidden;
-margin:auto; width:98%}
+margin:auto;  padding-top:0px; }
 hr {
 	width: 100%;
 	color: rgb(232, 229, 228);
