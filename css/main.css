@@ -1798,15 +1798,36 @@ margin-right:58px;
 	border-left:0;
 	padding-top:20px;
 }
+
+
 .ring{margin-right: 63px;
 margin-left: 25px;}
+}
+
+.budgetPicWrap{
+cursor:pointer;
+color:rgb(51,62,106);
+text-align:center;
+font-size:14px;
+font-family:HNL;
+display:inline-block;
+margin:0 20px;
+margin-bottom:20px;
+}
+
+.budgetPicWrap img{
+height:70px;	
+width:auto;
+display:inline-block;
+margin-bottom:10px;
+
 }
 
 
 
 /* ========== Budget Planner ===================== */
 .budgetPlanner #budgetPlanner{border-right:2px solid rgb(116,116,116); padding-bottom:20px;position:relative;}
-.budgetPlanner .semesterWrap{display:block; width: 130px; margin: 0 auto;}
+.budgetPlanner .semesterWrap{display:block; width:500px; margin: 0 auto;}
 .budgetPlanner .twoLine{padding-top:1px; line-height: 24px;}
 #budgetPlanner ul, #results ul{list-style-type:none; padding:0;}
 .checkContainer{width: 400px;display: block;margin: 0 auto; margin-top: 30px;}

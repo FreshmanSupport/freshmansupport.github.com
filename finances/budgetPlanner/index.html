@@ -158,14 +158,25 @@
           </div>
           <h3>First Semester Attending?</h3>
           <div class="semesterWrap">
-            <form>
-              <input id="summer" type="radio" name="semester" value="summer">
-              <label for="summer">SUMMER</label>
-              <input id="fall" type="radio" name="semester" value="fall">
-              <label for="fall">FALL</label>
-              <input id="spring" type="radio" name="semester" value="spring">
-              <label for="spring">SPRING</label>
-            </form>
+            
+			<div class="budgetPicWrap" id='leavesDiv' onclick='seasons("leaves")';>
+			<img src="../../img/budget/leaves.png" id="leaves">
+			<br>Fall
+			
+			</div>
+			
+			<div class="budgetPicWrap" id="flowerDiv" onclick='seasons("flower");'>
+			<img src="../../img/budget/flower.png" id="flower">
+			<br>Spring
+			
+			</div>
+			
+			<div class="budgetPicWrap" id="sunDiv" onclick='seasons("sun");'>
+			<img src="../../img/budget/sun.png" id="sun">
+			<br>Summer
+			
+			</div>
+			
           </div>
         </div>
         <div>
@@ -326,16 +337,24 @@
         <div>
           <h3>Transportation</h3>
           <h3>What transportation do you plan on using?</h3>
-          <div class="transWrap">
-            <form>
-              <input id="car" type="radio" name="transportation" value="car">
-              <label for="car">CAR</label>
-              <input id="bike" type="radio" name="transportation" value="bike">
-              <label for="bike">BIKE</label>
-              <input id="publicTrans" type="radio" name="transportation" value="public">
-              <label for="publicTrans" class="twoLine">PUBLIC<br />
-                TRANSPORT</label>
-            </form>
+          <div class="semesterWrap">
+            <div class="budgetPicWrap" id="bikeDiv" onclick="trans('bike');">
+			<img src="../../img/budget/bike.png" id='bike'><br>Bike
+			
+			</div>
+			
+			 <div class="budgetPicWrap" id="carDiv" onclick="trans('car');">
+			<img src="../../img/budget/car.png" id='car'><br>Car
+			
+			</div>
+			
+			 <div class="budgetPicWrap" id="busDiv" onclick="trans('bus');">
+			<img src="../../img/budget/bus.png" id='bus'><br>Bus
+			
+			</div>
+			
+			
+			
           </div>
           <h3>Do you need to buy parking?</h3>
           <form>
@@ -536,4 +555,88 @@ budgetSlider = new Swipe(document.getElementById('budgetSlider'), {
 		var x= budgetSlider.getPos() + 1;
 		document.getElementById('currentNumber').innerHTML= x;
 	}
+</script>
+<script>
+function seasons(x){
+
+
+
+if(x=='leaves'){
+
+document.getElementById('sunDiv').style.color='rgb(116,116,116)';
+document.getElementById('flowerDiv').style.color='rgb(116,116,116)';
+document.getElementById('leavesDiv').style.color='rgb(220, 134, 39)';
+document.getElementById('sun').src='../../img/budget/sun.png';
+document.getElementById('flower').src='../../img/budget/flower.png';
+document.getElementById('leaves').src='../../img/budget/leavesorange.png';
+
+}
+
+if(x=='flower'){
+
+document.getElementById('sunDiv').style.color='rgb(116,116,116)';
+document.getElementById('flowerDiv').style.color='rgb(220, 134, 39)';
+document.getElementById('leavesDiv').style.color='rgb(116,116,116)';
+
+document.getElementById('sun').src='../../img/budget/sun.png';
+document.getElementById('flower').src='../../img/budget/flowerorange.png';
+document.getElementById('leaves').src='../../img/budget/leaves.png';
+
+}
+
+if(x=='sun'){
+
+document.getElementById('sunDiv').style.color='rgb(220, 134, 39)';
+document.getElementById('flowerDiv').style.color='rgb(116,116,116)';
+document.getElementById('leavesDiv').style.color='rgb(116,116,116)';
+
+document.getElementById('sun').src='../../img/budget/sunorange.png';
+document.getElementById('flower').src='../../img/budget/flower.png';
+document.getElementById('leaves').src='../../img/budget/leaves.png';
+
+}
+
+}
+
+
+function trans(x){
+
+if(x=='bike'){
+
+document.getElementById('busDiv').style.color='rgb(116,116,116)';
+document.getElementById('carDiv').style.color='rgb(116,116,116)';
+document.getElementById('bikeDiv').style.color='rgb(220, 134, 39)';
+
+document.getElementById('car').src='../../img/budget/car.png';
+document.getElementById('bus').src='../../img/budget/bus.png';
+document.getElementById('bike').src='../../img/budget/bikeorange.png';
+
+}
+
+if(x=='car'){
+document.getElementById('busDiv').style.color='rgb(116,116,116)';
+document.getElementById('carDiv').style.color='rgb(220, 134, 39)';
+document.getElementById('bikeDiv').style.color='rgb(116,116,116)';
+
+document.getElementById('car').src='../../img/budget/carorange.png';
+document.getElementById('bus').src='../../img/budget/bus.png';
+document.getElementById('bike').src='../../img/budget/bike.png';
+}
+
+if(x=='bus'){
+
+document.getElementById('busDiv').style.color='rgb(220, 134, 39)';
+document.getElementById('carDiv').style.color='rgb(116,116,116)';
+document.getElementById('bikeDiv').style.color='rgb(116,116,116)';
+
+document.getElementById('car').src='../../img/budget/car.png';
+document.getElementById('bus').src='../../img/budget/busorange.png';
+document.getElementById('bike').src='../../img/budget/bike.png';
+
+}
+
+}
+
+
+
 </script>
