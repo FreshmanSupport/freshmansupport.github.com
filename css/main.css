@@ -1826,7 +1826,7 @@ margin-bottom:10px;
 
 
 /* ========== Budget Planner ===================== */
-.budgetPlanner #budgetPlanner{border-right:2px solid rgb(116,116,116); padding-bottom:20px;position:relative;}
+.budgetPlanner #budgetPlanner{ padding-bottom:20px;position:relative;}
 .budgetPlanner .semesterWrap{display:block; width:500px; margin: 0 auto;}
 .budgetPlanner .twoLine{padding-top:1px; line-height: 24px;}
 #budgetPlanner ul, #results ul{list-style-type:none; padding:0;}
@@ -1925,22 +1925,19 @@ margin-bottom:10px;
 #fun{width:170px; font-family:Georgia, "Times New Roman", Times, serif; font-size: 14px; color:rgb(116,116,116); white-space:nowrap;}
 #fun > div{margin-bottom: 10px;	}
 .budgetPlanner #results li{
-	font-family:Georgia, "Times New Roman", Times, serif;
-	font-size:24px;
+	font-family:HNL;
+	font-size:30px;
 	color:rgb(51, 62, 107);
 	margin-bottom: 10px;
+	text-align:left;
 }
-.budgetPlanner #results .left{
-	display:inline-block;
-	color:rgb(51, 62, 107);
-	font-size:24px;
-	border-bottom:1px solid rgb(116,116,116);
-	width:80%;
-	font-family: HNL, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	cursor:pointer;
-}
-.budgetPlanner #results .right{display:inline-block; text-align:right; color:rgb(116, 116, 116); font-size:24px; text-align:right;width:19%; white-space:nowrap;}
-#results{padding: 0 50px;}
+#results .budgetPlanner h3{text-align:left}
+.budgetPlanner{text-align:left}
+#results{padding: 0 50px; position:relative; text-align:left; border-left:1px solid rgb(116,116,116);}
+#results ul li{width:100%; }
+#results .money{position:absolute; right:50px}
+#results p{font-size:14px; text-align:left; margin:0; padding:0;}
+#results ul{width:100%}
 #maincontent.budgetPlanner .finale h2{color:rgb(220, 134, 39);}
 #currentNumber{display:inline-block; text-align:center;}
 /* ==================== Data ====================== */
