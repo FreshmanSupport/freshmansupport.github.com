@@ -2450,13 +2450,18 @@ height:auto;
 }
 
 @media (max-width:1000px){
-.profileGrayOut{height:360px; margin-top:-10px;}
+
+.profileGrayOut{height:360px; margin-top:-10px; width:70%!important}
+.profileGrayOut span{margin-top:30%!important;}
+.long, .longer{height:425px; margin-top:2px!important;}
 }
 @media (min-width:1000px){
 .profileGrayOut{
 height:210px;
 margin-top:-10px !important;
 }
+.long{height:245px}
+.longer{height:250px}
 }
 
 .profileGrayOut{
@@ -2466,6 +2471,7 @@ margin-top:5px;
 	background-color:rgba(255,255,255,0.8);
 	width:100%;
 }
+
 .profileGrayOut span{
 	width:100%;
 	color:rgb(116,116,116);
