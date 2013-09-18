@@ -2412,7 +2412,7 @@ width:315px;
 }
 .profileSquare{
 	display:inline-block;
-	width: 130px;
+	width: 140px;
 	margin-right:65px;
 }
 @media (min-width:1000px){
@@ -2429,13 +2429,22 @@ width:315px;
 	display:inline-block;
 margin:auto;
 text-align:center;}
+.profileSquare #fiveOwls img{
+display:inline-block; 
+width:15px;
+height:auto;
+}
 #maincontent .profileSquare p{text-align:center; margin:0;}
+.profileSquare h4{color:rgb(51,62,106); font-size:14px; font-family:HNL; padding:0; margin:0; text-align:left; font-weight:normal;}
 #profileLeft{border-right:1px solid rgb(116,116,116);}
 #profileRight{
 	padding:0 10px;	
 }
+.sync .desc{margin:0; padding:0; position:relative; top:-5px; margin-left:5px;}
+.sync{text-align:left; margin:10px 0; cursor:pointer;}
+.sync img{width:27px; height:18px;}
 .viewAllContainer{display:block; margin-top:10px; padding-bottom:5px;}
-.viewAllContainer a{position:absolute; right:85px;}
+.viewAllContainer a{position:absolute; right:55px;}
 #profileCalendar, #answeredQuestions{border-bottom:1px solid rgb(116,116,116);}
 #maincontent.profile {text-align:center;
 }
@@ -2459,7 +2468,7 @@ margin-top:5px;
 }
 .profileGrayOut span{
 	width:100%;
-	color:rgb( 51, 62, 106);
+	color:rgb(116,116,116);
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:14px;
 	margin-top:10%;
@@ -2845,39 +2854,54 @@ a img{border:0;}
 
 
 /* jobs */
+#jobs{max-width:1300px; text-align:center;}
 #jobs .left{
 display:inline-block;
 width:49%;
 border-right:1px solid rgb(116,116,116);
 vertical-align:top;
 padding:0 50px;
-
+text-align:left;
 }
 #jobs .right{
 display:inline-block;
 width:49%;
 vertical-align:top;
 padding:0 50px;
+text-align:left;
 
 }
 #jobs h2{text-align:center; padding:0; margin-top:10px;}
 #jobs p{font-size:14px; text-align:left; font-family:Georgia; color:rgb(116,116,116) }
 #jobs .video{background-color:rgb(116,116,116); width:100%; height:300px;}
+
+@media (max-width:1200px){#jobs .video{height:250px}}
+@media (max-width:1000px){#jobs .video{height:200px}}
+@media (max-width:800px){#jobs .video{height:150px}}
+
+
 #jobs h3, #maincontent.application h3{text-align:left; padding:0 0; font-family:HNL; font-size:24px; color:rgb(51,62,106); font-weight:normal;	margin:20px 0;}
 
 #jobs ul{list-style-type:circle; padding:0 20px; color:rgb(116,116,116); font-family:Georgia; font-size:14px;}
-.application .form{width:900px; border-left:1px solid rgb(116,116,116); border-right:1px solid rgb(116,116,116); margin:auto; padding:0 20px; color:rgb(116,116,116); text-align:left; font-size:14px; font-family:Georgia;}
+.application .form{width:900px; border-left:1px solid rgb(116,116,116); border-right:1px solid rgb(116,116,116); margin:auto; padding:0 20px; padding-bottom:30px; color:rgb(116,116,116); text-align:left; font-size:14px; font-family:Georgia;}
 .application{text-align:center}
 .application .left,  .application .right{display:inline-block; width:49%; vertical-align:top;}
 .application li{margin:20px 0; position:relative}
 .inputs{position:absolute; left:70px; top:-2px;}
+.right .inputs{position:absolute; left:120px; top:-3px; cursor:pointer;}
 .application .name{width:140px; margin-right:10px;}
 .application .street{width:210px; margin-right:10px;}
 .application .apt{width:70px; }
 .application .zip{width:90px; margin-left:50px;}
 .application .big{width:293px}
 .application li button{position:absolute; right:55px;}
-.applicatoin li input{position:relative; top:-2px; }
+.applicatoin li input[style="text"]{position:relative; top:-2px; }
 
-
+	
+	.application .right .optwrap{width:100%}
+	.application .right .opt{width:130px; display:inline-block; padding:0;}
+	.application .right .opt p{padding:0 5px; margin:0; text-align:left; vertical-align:top; position:relative; top:6.5px; z-index:0; display:inline-block;}
+	.application .dropDown, .application .dropDown select, .application .start{width:300px;}
+	
+	.application #internOpts{display:none}
 

@@ -159,7 +159,47 @@
 <h3>Position Information</h3>
 
 <ul>
-<li>Position Type: <span class="inputs"></span></li>
+<li>Position Type: <span class="inputs">
+<div class="dropDown">
+<select id="select" onchange="selectPos()">
+
+<option>Select</option>
+<option>Intern</option>
+<option>Community Manager</option>
+
+
+</select></div>
+
+</span></li>
+
+
+<li id="internOpts" >
+<div class="optWrap">
+
+<div class="opt"><input type="checkbox" /> <p>Coding</p>
+</div>
+
+<div class="opt"><input type="checkbox" /> <p>Marketing</p>
+</div>
+
+<div class="opt"><input type="checkbox" /> <p>SEO Research</p>
+</div>
+
+<div class="opt"><input type="checkbox" /> <p>Accounting</p>
+</div>
+<div class="opt"><input type="checkbox" /> <p>Graphic Design</p>
+</div>
+
+
+</div>
+
+</li>
+<li>Available Start: <span class="inputs"><input style="text" class="start" placeholder="MM/DD/YYYY"/></span>
+
+</li>
+<li><button style="position:absolute; right:0">Submit</button>
+</li>
+
 
 </ul>
 
@@ -177,4 +217,15 @@
 
 </div>
 </body>
-</html>
+</html> <script type="text/javascript">
+
+      
+      function selectPos() {
+            if(document.getElementById("select").selectedIndex === 1) {
+                document.getElementById("internOpts").style.display = 'block';
+            } else {
+                 document.getElementById("internOpts").style.display = 'none';
+            }
+        }
+    
+  </script>
