@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link type="text/css" rel="stylesheet" href="../../css/main.css"/>
+<link type="text/css" rel="stylesheet" href="../../css/headerStyle.css"/>
+<script type="text/javascript" src="../../js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="roomieMatchProfileScript.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Apply</title>
+</head>
+
+<body>
+
+<script type="text/javascript" src="../../js/loginVideoScript.js"></script>
+
+<div id="overlayBackground" style="display:none;"></div>	
+<div id="overlay" style="display:none;">
+  	<div id="loginRegisterContainer">
+    	<div class="topBar">
+        	<div class="xClose">X</div>
+        </div>
+        <div id="logIn">
+        	<h2>Log In</h2>
+            <form>
+            	<ul>
+                    <li><label>User Name:</label><input id="logInUserName" type="text"  /></li>
+                    <li><label>Password:</label><input id="logInPassword" type="text" /></li>
+                    <li><button>Sign In</button></li>
+              	</ul>
+            </form>
+        </div>
+        <div id="register">
+        	<h2>Register Account Information</h2>
+            
+            	<ul>
+            		<li>
+                    	<label>First Name:</label><input id="firstName" type="text" /></li>
+						<li>
+                        <label >Last Name:</label><input id="lastName" type="text" />
+                    </li>
+                    <li><label >Email:</label><input id="email" type="text" class="logWidth"/></li>
+                    <li><label>Gender:</label>
+                    	<div class="registerPic">
+                        	<input id="male" type="radio" name="gender"/><label for="male" class="male"><div class="textBot">Male</div></label> 
+                            <input id="female" type="radio" name="gender"/><label for="female" class="female"><div class="textBot">Female</div></label> 
+                        </div>
+                    </li>
+                    <li><label>User Name:</label><input id="registerUserName" type="text" class="logWidth"/></li>
+                    <li><label>Password:</label><input id="registerPassword" type="password" class="logWidth"/></li>
+                    <li><label>Re-Enter Password:</label><input id="reenterPassword" type="password" class="logWidth"/></li>
+                    <li><label>Type of User:</label>
+                   <div class="registerPic">
+                        	<input id="student" type="radio" name="typeOfUser"/><label for="student" class="student"><div class="textBot">Student</div></label> 
+                            <input id="family" type="radio" name="typeOfUser"/><label for="family" class="family"><div class="textBot">Family</div></label>
+                            <input id="counselor" type="radio" name="typeOfUser"/><label for="counselor" class="counselor"><div class="textBot">Counselor</div></label>  
+                        </div>
+                    </li>
+                    <li><label>Planned First Semester:</label>
+                    <div class="dropDown">
+                    <select>
+                    	<option>Fall</option>
+                        <option>Spring</option>
+                        <option>Summer</option>
+                    </select>
+                    </div>
+                    </li>
+                    <li><label>School:</label>
+                    <div class="schoolBox">
+                   		<input type="text" placeholder="Add School"/>    
+                    </div>
+                      <div class="schoolBox">
+                    	<input type="text" placeholder="Add School"/>         
+                    </div>
+                      <div class="schoolBox">
+                   		<input type="text" placeholder="Add School"/>                 
+                    </div>
+                    
+                    </li>
+                    <li><label>Receive Updates:</label><input id="recieveUpdate" type="checkbox" /></li>
+                    <li><div class="disclaimer">By clicking the Register button, you agree to our <a href="#">Terms of Use</a>
+                    	and <a href="#">Privacy Policy</a></div></li>
+                     <li><center><button id="registerButton">Register</button></center></li>
+            	</ul>
+            
+        </div>
+    </div>
+         <div id="registerThankYou">
+         	<div class="topBar">
+        	<div class="xClose">X</div>
+        	</div>
+        	<h2>Thank you for registering with us!</h2>
+            <h3 class="marginTop10">Would you like to...</h3>
+            <div class="buttonWrapper">
+            <button id="return">Return to Current Page</button>
+            <button id="goToProfile">Go To Your Profile</button>
+            </div>
+        </div>
+  </div>
+<div id="header">
+  <div id="loginBar">
+    <div id="loginBarContainer"> <a href="#">Login |</a> <a href="#"> Register</a> </div>
+  </div>
+  <div id="searchBar">
+    <div id="collegeSearchContainer">
+      <form id="collegeSearchbox" action="">
+        <input id="submit" type="submit" value="Search" name="submit"class="collegeSearchButton">
+        <input id="search" type="text" name="collegeSearch" placeholder="The University of Texas at Austin" class="collegeSearchBox">
+      </form>
+    </div>
+    <div id="logoContainer"><a href="/"> <img src="../../img/logo.png" /></a> </div>
+    <div id="siteSearchContainer">
+      <form id="searchbox" action="">
+        <div id="magnify"></div>
+        <input id="search" type="text" placeholder="Search The University of North Texas" class="siteSearchSkin">
+      </form>
+    </div>
+  </div>
+  <div id="newNav">
+    <ul>
+      <li id="home"><a href="../../home">HOME</a></li>
+      <li id="housing"><a href="../../housing"><span>COMPARE </span>HOUSING</a></li>
+      <li id="roomie"><a href="../../roomieMatch">ROOMIE<span> MATCH</span></a></li>
+      <li id="admissions"><a href="../../admissions" >ADMISSIONS</a> </li>
+      <li id="finances"><a href="../../finances">FINANCES</a> </li>
+      <li id="theRealLife"><a href="../../theRealLife"><span>THE </span>REAL LIFE</a> </li>
+      <li id="visit"><a href="../../visit">VISIT</a> </li>
+      <li id="deadlines"><a href="../../deadlines">DEADLINES</a> </li>
+    </ul>
+  </div>
+  <div id="subNav">
+    <ul>
+    </ul>
+  </div>
+</div>
+<div id="maincontent" class="application">
+<h2>Application Form</h2>
+<div class="form">
+<div class="left">
+<h3>Applicant Information</h3>
+<ul>
+<li>Name: <span class="inputs"><input style="text" class="name" placeholder="First"/> <input style="text" class="name" placeholder="Last"/> </span></li>
+<li>Address: <span class="inputs"><input style="text" class="street" placeholder="Street"/> <input style="text" class="apt" placeholder="Apt #"></span></li>
+<li>&nbsp <span class="inputs"><input style="text" class="name" placeholder="State"/> <input style="text" class="zip" placeholder="Zip"/></span></li>
+<li>Email: <span class="inputs"><input style="text" class="big" /></span></li>
+<li>Phone: <span class="inputs"><input style="text" class="big"/></span></li>
+<li>School: <span class="inputs"><input style="text" class="big" placeholder="College or High School"/></span></li>
+<li>Resume: <span class="inputs"><input style="text" class="big" placeholder="Upload Resume"/></span></li>
+<li>&nbsp <button>Browse</button></li>
+<li>Portfolio: <span class="inputs"><input style="text" class="big" placeholder="Link to Online Profile"/></span><br>(Optional)</li>
+<li><span style="position:absolute; right:50%; top:-25px;">or</span> <span class="inputs"><input style="text" class="big" placeholder="Upload PDF"/></span></li>
+<li>&nbsp <br><button style="margin-top:20px">Browse</button></li>
+
+</ul>
+
+
+
+</div>
+<div class="right">
+<h3>Position Information</h3>
+
+<ul>
+<li>Position Type: <span class="inputs"></span></li>
+
+</ul>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+</div>
+</body>
+</html>

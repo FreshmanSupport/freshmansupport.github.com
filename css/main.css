@@ -2863,6 +2863,21 @@ padding:0 50px;
 #jobs h2{text-align:center; padding:0; margin-top:10px;}
 #jobs p{font-size:14px; text-align:left; font-family:Georgia; color:rgb(116,116,116) }
 #jobs .video{background-color:rgb(116,116,116); width:100%; height:300px;}
-#jobs h3{text-align:left; padding:0 0; font-family:HNL; font-size:24px; color:rgb(51,62,106); font-weight:normal;	margin:20px 0;}
+#jobs h3, #maincontent.application h3{text-align:left; padding:0 0; font-family:HNL; font-size:24px; color:rgb(51,62,106); font-weight:normal;	margin:20px 0;}
+
 #jobs ul{list-style-type:circle; padding:0 20px; color:rgb(116,116,116); font-family:Georgia; font-size:14px;}
+.application .form{width:900px; border-left:1px solid rgb(116,116,116); border-right:1px solid rgb(116,116,116); margin:auto; padding:0 20px; color:rgb(116,116,116); text-align:left; font-size:14px; font-family:Georgia;}
+.application{text-align:center}
+.application .left,  .application .right{display:inline-block; width:49%; vertical-align:top;}
+.application li{margin:20px 0; position:relative}
+.inputs{position:absolute; left:70px; top:-2px;}
+.application .name{width:140px; margin-right:10px;}
+.application .street{width:210px; margin-right:10px;}
+.application .apt{width:70px; }
+.application .zip{width:90px; margin-left:50px;}
+.application .big{width:293px}
+.application li button{position:absolute; right:55px;}
+.applicatoin li input{position:relative; top:-2px; }
+
+
 
