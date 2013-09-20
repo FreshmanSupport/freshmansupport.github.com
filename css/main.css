@@ -2959,3 +2959,42 @@ text-align:left;
 .intern .bottom .vid{background-color:rgb(116,116,116); cursor:pointer; height:260px; width:500px; margin-top:10px; }
 .intern .bottom .right ul li{min-height:220px; border-bottom:1px solid rgb(116,116,116);}
 .intern .bottom .right ul li:last-child{border:none}
+
+
+
+.realLifeProf{max-width:1300px; text-align:center;}
+.realLifeProf .left{width:65%; display:inline-block; padding-right:20px; position:relative; text-align:left; border-right:1px solid rgb(116,116,116);}
+.realLifeProf .profPic{width:150px; height:150px; display:inline-block;}
+.realLifeProf .inform{display:inline-block; vertical-align:top; margin-left:20px;}
+.realLifeProf h4{color:rgb(116,116,116); font-size:24px; font-weight:normal; font-family:HNL; margin:0; padding:0; text-align:left; margin-top:1px;}
+.realLifeProf .vid{height:150px; width:225px; background-color:rgb(116,116,116); display:inline-block; margin:0; position:absolute; top:0; right:150px; cursor:pointer;}
+.realLifeProf .flag{position:absolute; right:20px; vertical-align:top; top:0;}
+.realLifeProf .flag img{height:150px; width:auto}
+.realLifeProf .left .blog{margin-top:20px}
+
+.realLifeProf .left .blog .nav{width:25%; display:inline-block; padding-right:20px; vertical-align:top;}
+.realLifeProf .left .blog .content{width:74%; display:inline-block; padding:0; margin:0; padding-left:20px;  vertical-align:top; border-left:1px solid rgb(116,116,116); }
+.realLifeProf .left .blog .nav ul, .blog .content ul{margin:0; padding:0; }
+.realLifeProf .left .blog .nav ul li{margin:0; padding:0; margin-bottom:10px; text-align:right;}
+.blog .content ul li{margin:0; padding:0; margin-bottom:10px; padding-bottom:15px; border-bottom:1px solid rgb(116,116,116);}
+.blog .content ul li:last-child{border:none}
+.realLifeProf .left .blog .content h5{color:rgb(116,116,116); font-size:24px; font-family:HNL; text-align:left; padding:0; margin:0; margin-bottom:10px; font-weight:normal;}
+.realLifeProf .left .blog .content .words{text-align:left; font-size:14px; color:rgb(116,116,116); font-family:Georgia;}
+
+
+.realLifeProf .right{width:34%; display:inline-block; padding:0 20px; vertical-align:top;position:relative;}
+.realLifeProf .right .disclaimer{font-size:14px; color:Rgb(116,116,116); font-style:italic; font-family:Georgia; text-align:center; margin:10px 0;}
+.askRL{width:100%; margin:10px 0; height:125px; border:1px solid rgb(116,116,116);}
+.realLifeProf .right button{position:absolute; right:18px; }
+.realLifeProf .right .ask{border-bottom:1px solid rgb(116,116,116); padding-bottom:10px;}
+.realLifeProf .right .QANDA{padding-top:10px;}
+.realLifeProf .right .QANDA h5{font-size:24px; font-weight:normal; color:rgb(116,116,116);margin:0; padding:0;text-align:left; font-family:HNL;}
+.realLifeProf p{font-family:Georgia; text-align:left!important; font-size:14px;}
+.realLifeProf .right .next img, .realLifeProf .right .prev img{width:10px; position:relative; top:1px; margin:0 5px;}
+.realLifeProf .right .next, .realLifeProf .right .prev{color:rgb(51,62,106); cursor:pointer; font-family:Georgia; font-size:14px; margin: 0 10px; text-align:center;}
+
+
+
+
+
+
