@@ -8,6 +8,7 @@ color:rgb(116,116,116);
 font-family:Georgia;
 font-size:14px;
 }
+strong{margin-right:5px}
 input{
 height:25px;
 }
@@ -140,7 +141,7 @@ h2 {
 	font-size: 14px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
-a{font-family:Georgia, "Times New Roman", Times, serif; font-size:14px; text-decoration:none; color:rgb( 51, 62, 106);}
+a{font-family:Georgia, "Times New Roman", Times, serif; font-size:14px; text-decoration:none; color:rgb( 51, 62, 106);cursor:pointer;}
 /* ======================= Admission =================== */
 .admissions {}
 #recentlyAnswered{padding:0 10px;}
@@ -2378,8 +2379,12 @@ width:315px;
 	position:relative;
 	text-align:left;
 }
+#profEdit{display:none}
 .profileLeft
 .profileInfo ul{margin:0;}
+.profileInfo ul li{position:relative}
+.profInput{width:100px; height:22px; position:absolute; right:15px;}
+
 .profileInfo ul > li:first-child{
 	margin-bottom:10px;
 }
@@ -2397,6 +2402,9 @@ width:315px;
 	margin-bottom:20px;
 	text-align:left;
 }
+#tasks{color:rgb(220, 134, 39); font-size:14px; font-family:Georgia;}
+#tasks ul li{display:inline-block; margin-right:15px; width:280px; vertical-align:top; margin-bottom:15px;}
+#tasks ul li span{color:rgb(116,116,116);}
 #viewEdit{position:absolute; bottom:5px; right:5px;}
 #maincontent .profileList > h3{text-align:left; margin-bottom:0; color:rgb( 51, 62, 106);}
 #maincontent .profileList > p{text-align:left;margin-top:10px; margin-bottom:20px;}
@@ -2860,7 +2868,7 @@ a img{border:0;}
 
 
 /* jobs */
-#jobs{max-width:1300px; text-align:center;}
+#jobs{max-width:1300px; text-align:center; margin:auto;}
 #jobs .left{
 display:inline-block;
 width:49%;
@@ -2910,4 +2918,44 @@ text-align:left;
 	.application .dropDown, .application .dropDown select, .application .start{width:300px;}
 	
 	.application #internOpts{display:none}
+	
+	
+.intern{max-width:1300px; text-align:center;}
+.intern .profPic{width:200px; height:200px; display:inline-block;}
+.intern .top .left{width:65%; text-align:left; display:inline-block;}
+.intern .top .left ul li{color:rgb(51,62,106); font-family:HNL; font-size:24px; margin-bottom:10px; margin-top:0; }
+.intern .top .left ul li.jobD{color:rgb(116,116,116); font-size:14px; font-family:Georgia; margin-top:-10px; width:90%; }
+.intern .top .left ul{display:inline-block; vertical-align:top; margin:0; width:600px; margin-left:5px;}
+@media (max-width:1300px){.intern .top .left ul{width:400px}
+.intern .top .left .badges{position:relative; top:-15px}
+}
+@media (max-width:1000px){.intern .top .left ul{width:300px}
+.intern .top .left .badges{position:relative; top:-30px}
 
+}
+
+.intern .top .left .badges img{width:40px; margin-right:14px;}
+.intern .top .right{width:34%; display:inline-block; text-align:right; color:rgb(116,116,116); font-size:14px; font-family:Georgia; vertical-align:top; }
+.intern .quote{color:rgb(116,116,116); margin-top:20px; margin-bottom:10px; padding:0; font-size:14px; font-family:Georgia; text-align:right; display:block}
+.intern .person{color:rgb(51,62,106); margin:0px 0; font-size:14px; font-family:Georgia; text-align:right; display:block;}
+.intern .bottom .quote{text-align:left}
+.intern .assignments{width:100%; background-color:rgb(232, 229, 228); text-align:left; padding:10px; margin-bottom:20px; margin-top:10px; padding-bottom:1px;}
+.intern .assignments h4{color:rgb(51,62,106); text-align:left; font-weight:normal; font-family:HNL; font-size:24px; padding:0; margin:0;}
+.intern .assignments ul li{width:24%; display:inline-block; margin-bottom:10px; } 
+.intern .assignments ul{}
+
+.intern .bottom .left{width:65%; text-align:left; display:inline-block}
+.intern .bottom .left ul li p{font-size:14px; color:rgb(116,116,116); margin:0; padding:0; text-align:right;}
+.intern .bottom h4{font-size:24px; text-align:left; color:rgb(51,62,106); font-family:HNL; font-weight:normal; margin:0; padding:0; margin-bottom:10px;}
+.intern .bottom .right{width:34%; display:inline-block; text-align:left; padding-left:10px; vertical-align:top; padding-top:10px;}
+.intern .bottom .media{width:100%;}
+.intern .bottom .pics img{width:175px;}
+.intern .bottom .left{border-right:1px solid rgb(116,116,116); padding-right:10px;}
+.intern .bottom .left ul li{margin-top:20px}
+.intern .bottom .left ul {margin-top:-15px;}
+.intern .bottom .assignment ul li{margin-right:40px; display:inline-block; margin-top:10px; }
+.intern .bottom .assignment ul li:last-child{margin-right:0; }
+.intern .bottom .assignment ul{margin-top:0}	
+.intern .bottom .vid{background-color:rgb(116,116,116); cursor:pointer; height:260px; width:500px; margin-top:10px; }
+.intern .bottom .right ul li{min-height:220px; border-bottom:1px solid rgb(116,116,116);}
+.intern .bottom .right ul li:last-child{border:none}

@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link type="text/css" rel="stylesheet" href="../css/main.css"/>
+<link type="text/css" rel="stylesheet" href="../css/headerStyle.css"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+    <script src="../js/swipe.js"></script>
+
+<title>Check this title</title>
+</head>
+
+<body>
+<script type="text/javascript" src="../js/loginVideoScript.js"></script>
+
+<div id="overlayBackground" style="display:none;"></div>	
+<div class="videoOverlay" style="display:none;">
+  	<div id="videoPlayerContainer">
+    	<div class="topBar">
+        	<div class="xClose">X</div>
+        </div>
+        <div class="fakeVideo"></div>
+        
+        <div id="videoPlayerText">
+        <h3>Video Title</h3>
+        <p><i>Video Description. This is a test sentence to describe a video<br />
+        1-855-1166 ext. 502<br />
+        801 West 24th Street
+        </i></p>
+		
+		
+	
+		
+        </div>
+    </div>
+  </div>
+
+<div id="overlay" style="display:none;">
+  	<div id="loginRegisterContainer">
+    	<div class="topBar">
+        	<div class="xClose">X</div>
+        </div>
+        <div id="logIn">
+        	<h2>Log In</h2>
+            <form>
+            	<ul>
+                    <li><label>User Name:</label><input id="logInUserName" type="text"  /></li>
+                    <li><label>Password:</label><input id="logInPassword" type="text" /></li>
+                    <li><button>Sign In</button></li>
+              	</ul>
+            </form>
+        </div>
+        <div id="register">
+        	<h2>Register Account Information</h2>
+            
+            	<ul>
+            		<li>
+                    	<label>First Name:</label><input id="firstName" type="text" /></li>
+						<li>
+                        <label >Last Name:</label><input id="lastName" type="text" />
+                    </li>
+                    <li><label >Email:</label><input id="email" type="text" class="logWidth"/></li>
+                    <li><label>Gender:</label>
+                    	<div class="registerPic">
+                        	<input id="male" type="radio" name="gender"/><label for="male" class="male"><div class="textBot">Male</div></label> 
+                            <input id="female" type="radio" name="gender"/><label for="female" class="female"><div class="textBot">Female</div></label> 
+                        </div>
+                    </li>
+                    <li><label>User Name:</label><input id="registerUserName" type="text" class="logWidth"/></li>
+                    <li><label>Password:</label><input id="registerPassword" type="password" class="logWidth"/></li>
+                    <li><label>Re-Enter Password:</label><input id="reenterPassword" type="password" class="logWidth"/></li>
+                    <li><label>Type of User:</label>
+                   <div class="registerPic">
+                        	<input id="student" type="radio" name="typeOfUser"/><label for="student" class="student"><div class="textBot">Student</div></label> 
+                            <input id="family" type="radio" name="typeOfUser"/><label for="family" class="family"><div class="textBot">Family</div></label>
+                            <input id="counselor" type="radio" name="typeOfUser"/><label for="counselor" class="counselor"><div class="textBot">Counselor</div></label>  
+                        </div>
+                    </li>
+                    <li><label>Planned First Semester:</label>
+                    <div class="dropDown">
+                    <select>
+                    	<option>Fall</option>
+                        <option>Spring</option>
+                        <option>Summer</option>
+                    </select>
+                    </div>
+                    </li>
+                    <li><label>School:</label>
+                    <div class="schoolBox">
+                   		<input type="text" placeholder="Add School"/>    
+                    </div>
+                      <div class="schoolBox">
+                    	<input type="text" placeholder="Add School"/>         
+                    </div>
+                      <div class="schoolBox">
+                   		<input type="text" placeholder="Add School"/>                 
+                    </div>
+                    
+                    </li>
+                    <li><label>Receive Updates:</label><input id="recieveUpdate" type="checkbox" /></li>
+                    <li><div class="disclaimer">By clicking the Register button, you agree to our <a href="#">Terms of Use</a>
+                    	and <a href="#">Privacy Policy</a></div></li>
+                     <li><center><button id="registerButton">Register</button></center></li>
+            	</ul>
+            
+        </div>
+    </div>
+         <div id="registerThankYou">
+         	<div class="topBar">
+        	<div class="xClose">X</div>
+        	</div>
+        	<h2>Thank you for registering with us!</h2>
+            <h3 class="marginTop10">Would you like to...</h3>
+            <div class="buttonWrapper">
+            <button id="return">Return to Current Page</button>
+            <button id="goToProfile">Go To Your Profile</button>
+            </div>
+        </div>
+  </div>
+<div id="header">
+  <div id="loginBar">
+    <div id="loginBarContainer"> <a href="#">Login |</a> <a href="#"> Register</a> </div>
+  </div>
+  <div id="searchBar">
+    <div id="collegeSearchContainer">
+      <form id="collegeSearchbox" action="">
+        <input id="submit" type="submit" value="Search" name="submit"class="collegeSearchButton">
+        <input id="search" type="text" name="collegeSearch" placeholder="The University of Texas at Austin" class="collegeSearchBox">
+      </form>
+    </div>
+    <div id="logoContainer"><a href="/"> <img src="../img/logo.png" /></a> </div>
+    <div id="siteSearchContainer">
+      <form id="searchbox" action="">
+        <div id="magnify"></div>
+        <input id="search" type="text" placeholder="Search The University of North Texas" class="siteSearchSkin">
+      </form>
+    </div>
+  </div>
+  <div id="newNav">
+    <ul>
+      <li id="home"><a href="../home">HOME</a></li>
+      <li id="housing"><a href="../housing"><span>COMPARE </span>HOUSING</a></li>
+      <li id="roomie"><a href="../roomieMatch">ROOMIE<span> MATCH</span></a></li>
+      <li id="admissions"><a href="../admissions" >ADMISSIONS</a> </li>
+      <li id="finances"><a href="../finances">FINANCES</a> </li>
+      <li id="theRealLife"><a href="../theRealLife"><span>THE </span>REAL LIFE</a> </li>
+      <li id="visit"><a href="../visit">VISIT</a> </li>
+      <li id="deadlines"><a href="../deadlines">DEADLINES</a> </li>
+    </ul>
+  </div>
+  <div id="subNav">
+    <ul>
+    </ul>
+  </div>
+</div>
+<div id="maincontent" class="intern">
+<div class="top">
+<div class="left">
+<img class="profPic" src="../img/blankHuman.jpg">
+<ul><li>Name</li><li>Position</li><li>Duration</li><li>Job Description</li>
+<li class="jobD">
+Musée D’Art Moderne est ferme à lundi. Au hui, the musée est populaire. Le aussi a une rampe les personnes handicapées. 
+Sur le premier étage, il y a une exposition de peinture et sculpteur. Du théâtre de la 
+</li></ul>
+<div class="badges">
+<img src="../img/realLife/cs.png"><img src="../img/realLife/greek.png"><img src="../img/realLife/recreational.png"><img src="../img/realLife/social.png">
+
+</div>
+
+</div>
+<div class="right">
+<a >Edit Profile</a> | <a>Add Assignment</a><br>
+<span class="quote" >Musée D’Art Moderne est ferme à lundi. Au hui, the musée est populaire. Le aussi a une rampe les personnes handicapées. 
+</span>
+<span class="person">- Bill Powers, President</span>
+
+<span class="quote">Musée D’Art Moderne est ferme à lundi. Au hui, the musée est populaire. Le aussi a une rampe les personnes handicapées. 
+</span>
+<span class="person">- Bill Powers, President</span>
+
+
+</div>
+</div>
+
+<div class="assignments">
+<h4>All Assignments</h4>
+<ul>
+<li><a >Assignment Name</a></li>
+<li><a >Assignment Name</a></li>
+<li><a >Assignment Name</a></li>
+<li><a >Assignment Name</a></li>
+<li><a >Assignment Name</a></li>
+<li><a >Assignment Name</a></li>
+<li><a >Assignment Name</a></li>
+<li><a >Assignment Name</a></li>
+<li><a >Assignment Name</a></li>
+<li><a >Assignment Name</a></li>
+<li><a >Assignment Name</a></li>
+<li><a >Assignment Name</a></li>
+<li><a >Assignment Name</a></li>
+<li><a >Assignment Name</a></li>
+<li><a >Assignment Name</a></li>
+<li><a >Assignment Name</a></li>
+
+</ul>
+</div>
+
+<div class="bottom"><div class="left">
+<ul><li class="assignment" style="margin-top:10px">
+<h4>Assignment Name</h4>
+<p style="text-align:left">
+Pledging to do all he can for the sickly metropolis, Tigers first baseman Prince Fielder reportedly promised Detroit, a city with a debilitating terminal condition, that the next home run he hits will be for the brave Michigan town, sources confirmed Thursday. “You’ve been a real champ these last few months, little bud, so I’m gonna hit one out of the ballpark just for you,” said Fielder, who admitted that it broke his heart to know the ailing city didn’t have much time left. “You keep watching me up there on the TV screen, okay? You’re so strong. I just need you to hold on a little bit longer.” 
+
+</p>
+<div class="media pics">
+<ul>
+<li>
+<img src="../img/property/place2.png">
+</li>
+<li>
+<img src="../img/property/place2.png">
+</li>
+<li>
+<img src="../img/property/place2.png">
+</li>
+<li>
+<img src="../img/property/place2.png">
+</li>
+
+</ul>
+
+</div>
+
+<div class="media vid" onclick="showVideo()" style="display:none">
+
+
+</div>
+
+</li>
+
+
+<li class="assignment">
+<h4>Assignment Name</h4>
+<p style="text-align:left">
+Pledging to do all he can for the sickly metropolis, Tigers first baseman Prince Fielder reportedly promised Detroit, a city with a debilitating terminal condition, that the next home run he hits will be for the brave Michigan town, sources confirmed Thursday. “You’ve been a real champ these last few months, little bud, so I’m gonna hit one out of the ballpark just for you,” said Fielder, who admitted that it broke his heart to know the ailing city didn’t have much time left. “You keep watching me up there on the TV screen, okay? You’re so strong. I just need you to hold on a little bit longer.” 
+
+</p>
+<div class="media pics" style="display:none">
+<ul>
+<li>
+<img src="../img/property/place2.png">
+</li>
+<li>
+<img src="../img/property/place2.png">
+</li>
+<li>
+<img src="../img/property/place2.png">
+</li>
+<li>
+<img src="../img/property/place2.png">
+</li>
+
+</ul>
+
+</div>
+
+<div class="media vid" onclick="showVideo()" >
+
+
+</div>
+
+</li>
+</ul>
+
+
+
+
+
+</div>
+<div class="right">
+<h4>Endorsements</h4>
+<ul>
+<li>
+<span class="quote" >Musée D’Art Moderne est ferme à lundi. Au hui, the musée est populaire. Le aussi a une rampe les personnes handicapées. 
+</span>
+<span class="person">- Bill Powers, President</span>
+
+<span class="quote">Musée D’Art Moderne est ferme à lundi. Au hui, the musée est populaire. Le aussi a une rampe les personnes handicapées. 
+</span>
+<span class="person">- Bill Powers, President</span>
+
+
+</li>
+
+
+<li>
+<span class="quote" >Musée D’Art Moderne est ferme à lundi. Au hui, the musée est populaire. Le aussi a une rampe les personnes handicapées. 
+</span>
+<span class="person">- Bill Powers, President</span>
+
+<span class="quote">Musée D’Art Moderne est ferme à lundi. Au hui, the musée est populaire. Le aussi a une rampe les personnes handicapées. 
+</span>
+<span class="person">- Bill Powers, President</span>
+
+
+</li>
+
+
+<li>
+<span class="quote" >Musée D’Art Moderne est ferme à lundi. Au hui, the musée est populaire. Le aussi a une rampe les personnes handicapées. 
+</span>
+<span class="person">- Bill Powers, President</span>
+
+<span class="quote">Musée D’Art Moderne est ferme à lundi. Au hui, the musée est populaire. Le aussi a une rampe les personnes handicapées. 
+</span>
+<span class="person">- Bill Powers, President</span>
+
+
+</li>
+
+
+
+
+</ul>
+
+
+</div>
+</div>
+
+
+
+</div>
+</body>
+</html>
