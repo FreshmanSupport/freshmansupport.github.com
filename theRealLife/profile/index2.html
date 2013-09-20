@@ -165,67 +165,8 @@
 	
 	
 	</div>
-	
-	
-	  <div class="right" id="squeezeme">
-  
-  <div class="ask">
-  <h2>Ask Lindsay Bluth</h2>
-  <span class="disclaimer">Our community managers have a set limit of questions that can be sent each day. If a manager officer is unavailable, 
-  please try again the following
-  day, or <a href="">previously answered questions</a>.
-  </span>
-  
-  <textarea placeholder="Enter your question here." class="askRL"></textarea>
-  <button>Send Question</button>
-  
-  <span class="disclaimer" style="margin-top:35px">*By submitting question to of of Freshman Support's Community Mangers, you agree to our <a>Terms & Conditions</a></span>
-  </div>
-  <div class="QANDA">
-  <h2>Q&A </h2>
-  
-  <div id="slider4" class="swipe">
-  <div class="swipe-wrap">
-  <div>
-  <h5>Question:</h5>
-  <p>Should I rush? </p>
-  <h5>Answer</h5>
-  <p>no</p>
-  </div>
-  <div>
-
-  <div>
-  <h5>Question:</h5>
-  <p>Should I rush? </p>
-  <h5>Answer</h5>
-  <p>In a press release issued Friday, Olympic gold medal swimmer Michael Phelps publicly apologized to his fans and Americans 
-  everywhere after actually tasting one of the Subway sandwiches he endorses. "I am embarrassed, ashamed, and quite frankly 
-  disgusted in myself for encouraging other people to eat that bready, semi-meat-flavored amalgamation Subway attempts to pass 
-  off as a meal,".</p>
-  </div>
-
-  </div>
-  </div>
-  
-  </div>
-  <span class="prev" onclick="swipe4.prev()">
-  <img src="../../img/arrowLeft.png">prev</span> <span onclick="swipe4.next()" class="next">next<img src="../../img/arrowRight.png"></span>
-  
-  
-  
-  
-  </div>
-  
-  
-  </div>
-	
-	
-	
-	
-	
-
 	<div class="blog">
-	<h2 style="margin-bottom:20px">This is my Blog!!!</h2>
+	<h2 style="margin-bottom:10px">This is my Blog!!!</h2>
 	
 	<div class="nav">
 	<ul>
@@ -287,7 +228,7 @@ claiming that the former Florida Gators star would be a perfect fit for their fi
 	
 	</div>
  </div>
-  <div class="right" id="profWide">
+  <div class="right">
   
   <div class="ask">
   <h2>Ask Lindsay Bluth</h2>
@@ -321,7 +262,8 @@ claiming that the former Florida Gators star would be a perfect fit for their fi
   <p>In a press release issued Friday, Olympic gold medal swimmer Michael Phelps publicly apologized to his fans and Americans 
   everywhere after actually tasting one of the Subway sandwiches he endorses. "I am embarrassed, ashamed, and quite frankly 
   disgusted in myself for encouraging other people to eat that bready, semi-meat-flavored amalgamation Subway attempts to pass 
-  off as a meal,".</p>
+  off as a meal," the statement read in part, explaining that most commercial shoots only required Phelps to hold sandwiches near
+  his face, and even so, he was under the impression that those were only props.</p>
   </div>
 
   </div>
@@ -338,49 +280,6 @@ claiming that the former Florida Gators star would be a perfect fit for their fi
   
   
   </div>
-  
-  <div class="moreBlogs">
-  <h2>More Blogs</h2>
-  
-  <img src="../../img/arrowLeft.png" class="arrow" onclick="moreBlogSwipe.prev();">
-  <div class="swipe" id="moreBlogs">
-	<div class="swipe-wrap">
-  
-  <div><img src="../../img/property/place2.png">
-  <br>Matt<br>Math
-  </div>
-  
-    <div><img src="../../img/property/place2.png">
-  <br>Matt<br>Math
-  </div>
-    <div><img src="../../img/property/place2.png">
-  <br>Matt<br>Math
-  </div>
-    <div><img src="../../img/property/place2.png">
-  <br>Matt<br>Math
-  </div>
-    <div><img src="../../img/property/place2.png">
-  <br>Matt<br>Math
-  </div>
-    <div><img src="../../img/property/place2.png">
-  <br>Matt<br>Math
-  </div>
-    <div><img src="../../img/property/place2.png">
-  <br>Matt<br>Math
-  </div>
-    <div><img src="../../img/property/place2.png">
-  <br>Matt<br>Math
-  </div>
-
-  
-  
-  </div>
-  </div>
-      <img src="../../img/arrowRight.png" class="arrow" onclick="moreBlogSwipe.next();">
-  </div>
-  
-  
-  
   </div>
 </body>
 </html>
@@ -396,30 +295,4 @@ swipe3 = new Swipe(document.getElementById('slider3'), {
   callback: function(index, elem) {},
   transitionEnd: function(index, elem) {}
 });
-
-swipe4 = new Swipe(document.getElementById('slider4'), {
-  startSlide: 0,
-  speed: 400,
-  auto: 300000000,
-  continuous: true,
-  disableScroll: false,
-  stopPropagation: false,
-  callback: function(index, elem) {},
-  transitionEnd: function(index, elem) {}
-});
-
-
-
-moreBlogSwipe = new Swipe(document.getElementById('moreBlogs'), {
-  startSlide: 0,
-  speed: 400,
-  items:6,
-  auto: 3000000,
-  continuous: true,
-  disableScroll: false,
-  stopPropagation: false,
-  callback: function(index, elem) {},
-  transitionEnd: function(index, elem) {}
-});
-
 </script>
